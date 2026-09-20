@@ -14,6 +14,29 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm run build
+      - name: Run app and check served assets
+        run: |
+          npm run preview -- --port 4173 > /tmp/ponder-preview.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node --input-type=module <<'JS'
+          import { setTimeout } from 'node:timers/promises';
+          let response;
+          for (let attempt = 0; attempt < 30; attempt++) {
+            try { response = await fetch('http://127.0.0.1:4173'); if (response.ok) break; } catch {}
+            await setTimeout(500);
+          }
+          if (!response?.ok) throw new Error('Preview server did not start');
+          const html = await response.text();
+          if (!html.includes('Ponder') || !html.includes('id="root"')) throw new Error('Wrong page served');
+          const assets = [...html.matchAll(/(?:src|href)="([^"]+\.(?:js|css|svg))"/g)].map(match => match[1]);
+          if (assets.length < 3) throw new Error('Missing built assets');
+          for (const asset of assets) {
+            const result = await fetch(new URL(asset, 'http://127.0.0.1:4173/'));
+            if (!result.ok || !(await result.text()).length) throw new Error('Asset unavailable: ' + asset);
+          }
+          console.log('Ponder runs and serves all built assets.');
+          JS
       - uses: actions/upload-artifact@v4
         with:
           name: ponder-web-app
