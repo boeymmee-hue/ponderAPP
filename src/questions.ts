@@ -118,7 +118,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Whose comfort should shared spaces prioritize?",
     "zh": {
       "title": "口袋陽光",
-      "scenario": "一個口袋大小的太陽整天跟著你，卻讓那些喜歡雨天的人很不快樂。\n\n你享受每個早晨都有陽光，但鄰居卻想念下雨天。你希望保留自己的快樂，又不想讓大家共用的天空，只照顧你一個人的喜好。",
+      "scenario": "一個口袋大小的太陽整天跟著你，卻讓喜歡雨天的人很不快樂。它令你原本難熬的早晨變得好過，你也無法把它搬到別處。住得最近的鄰居卻說，持續的光亮已經令自己睡不好。你喜歡的陪伴，開始影響別人的日常生活。",
       "question": "你會保留它嗎？",
       "twist": "只有當你感到快樂時，它才會閃耀。",
       "deeperQuestion": "共享空間應該優先考慮誰的舒適度？"
@@ -135,7 +135,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can receiving be a form of generosity?",
     "zh": {
       "title": "最後的餅乾",
-      "scenario": "你的祖父母每次來看你，都會偷偷地為你留一塊他們最喜歡的餅乾。你最近才知道，這些餅乾讓他們想起一位逝去的親人。買新的餅乾雖然能保留原有的味道，卻會改變他們這份心意。",
+      "scenario": "每次你去探望祖父母，對方都會偷偷留下一塊最喜歡的餅乾給你。最近你才知道，這款餅乾會讓對方想起一位已離世的親人。你可以買一盒新的補上，但同樣的味道，未必能取代那份特意留給你的心意。",
       "question": "你會繼續接受嗎？",
       "twist": "把東西送人是他們最喜歡的儀式。",
       "deeperQuestion": "接受可以是一種慷慨的形式嗎？"
@@ -220,7 +220,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can a gift transfer emotional expectations?",
     "zh": {
       "title": "借來的生日",
-      "scenario": "一位不喜歡過生日的鄰居邀請你參加他們一年一度的生日慶祝活動。你以前從未享受過成為眾人矚目的焦點。接受邀請意味著你要接手一份你並不熟悉的賓客名單。",
+      "scenario": "一位不喜歡過生日的鄰居，提出把今年整場生日慶祝活動送給你，讓你成為主角。你從未好好享受過被大家重視的感覺，但名單上的客人都是鄰居的朋友。接受這份禮物，也意味著接下一群你尚未建立感情的人的期待。",
       "question": "你會接受嗎？",
       "twist": "他們的朋友只是出於義務才來參加。",
       "deeperQuestion": "禮物可以傳遞情感期待嗎？"
@@ -237,7 +237,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can being useful trap someone in a role?",
     "zh": {
       "title": "瞌睡龍",
-      "scenario": "你的寵物龍可以守護你的街道，或是舒舒服服地冬眠。在你發現它擁有守護的天賦之前，你曾承諾要給它一個寧靜的家。鄰居們從此不再製定自己的安全計劃，因為他們相信它總是能幫上忙。",
+      "scenario": "你的寵物龍可以守護你的街道，或是舒舒服服地冬眠。在你發現它擁有守護的天賦之前，你曾承諾要給它一個寧靜的家。鄰居們從此不再制定自己的安全計劃，因為他們相信它總是能幫上忙。",
       "question": "你會讓它睡嗎？",
       "twist": "大家開始依賴它的保護。",
       "deeperQuestion": "有用是否會使人陷入某種角色？"
@@ -314,18 +314,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-cute-014",
     "category": "Cute",
-    "emoji": "🌷",
-    "title": "Moonlight Blanket",
-    "scenario": "A blanket gives its sleeper wonderful dreams while its maker sleeps poorly.\n\nThe maker sees the blanket as their most meaningful creation. You worry that accepting it encourages them to make comfort through suffering a permanent arrangement.",
-    "question": "Would you return it?",
-    "twist": "The maker insists the trade feels worthwhile.",
-    "deeperQuestion": "How much sacrifice can a gift contain?",
+    "emoji": "🗺️",
+    "title": "Half a Treasure Map",
+    "scenario": "You and a friend each receive half a treasure map. You cannot put them together; you must describe them aloud. Yours contains directions and distances, while theirs contains smells, sounds, and textures. The treasure is somewhere in your familiar neighborhood, and you have one hour to find it.",
+    "question": "How would you communicate, and who would lead?",
+    "twist": "A description of warm bread leads you to an alley you pass daily but have never noticed.",
+    "deeperQuestion": "How do you usually understand a place, and what could another person’s senses reveal?",
     "zh": {
-      "title": "月光毯",
-      "scenario": "一條毯子讓睡在它裡面的人做美夢，而它的製造者卻輾轉難眠。製造者視這條毯子為自己最有意義的創作。你擔心接受它，會助長他們以痛苦求得慰藉的習慣，使之成為一種永久的安排。",
-      "question": "你會把它歸還嗎？",
-      "twist": "製作毯子的人堅持認為，這樣的交換很值得。",
-      "deeperQuestion": "一份禮物可以包含多少犧牲？"
+      "title": "一人半張藏寶圖",
+      "scenario": "你和朋友各收到半張藏寶圖，兩半不能拼在一起，只能靠描述找路。你那半畫滿方向和距離，朋友那半卻全是氣味、聲音和觸感。寶箱就在你們熟悉的社區裡，今天只有一小時可以尋找。",
+      "question": "你們會先訂甚麼溝通方法？誰負責帶路？",
+      "twist": "朋友描述的一陣麵包香，讓你發現自己每天路過、卻從未留意的小巷。",
+      "deeperQuestion": "你習慣靠甚麼認識一個地方？別人的感官能讓你看見甚麼新事物？"
     }
   },
   {
@@ -339,7 +339,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How do we compare sentimental and living value?",
     "zh": {
       "title": "逐漸消失的螢火蟲",
-      "scenario": "一隻螢火蟲用盡最後的光芒幫你找到了一隻失去的耳環。你可以繼續自己去尋找，但螢火蟲堅持認為它的光芒很有用。它似乎第一次為除了發光之外的其他事情感到自豪。",
+      "scenario": "一隻螢火蟲正用所剩不多的光芒，幫你尋找遺失的耳環。你可以改為自己慢慢找，但牠堅持自己的光很有用。牠似乎第一次不只是為了發光而發光，而是因為真正幫得上忙，感到很自豪。",
       "question": "你會打斷它的搜尋嗎？",
       "twist": "這隻耳環屬於你思念的人。",
       "deeperQuestion": "我們應該如何比較一件物品的紀念價值，和一個生命的需要？"
@@ -356,7 +356,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does kindness require asking before helping?",
     "zh": {
       "title": "生日預測",
-      "scenario": "你每年都能保證一位朋友生日當天天氣完美。但在詢問其他人的意願之前，你必須先做出決定。選擇最盛大的慶祝活動固然簡單，卻可能忽略了最需要默默快樂的那位朋友。",
+      "scenario": "你每年可以保證一位朋友生日當天天氣理想，但必須在詢問任何人的意願之前作出決定。選擇最盛大的派對看似最合理，卻可能忽略那位不張揚、最近特別需要一點快樂的朋友。你不知道大家心中的「好天氣」是否一樣。",
       "question": "你會選擇誰？",
       "twist": "一位朋友從不慶祝，因為下雨讓人感到舒適。",
       "deeperQuestion": "善意是否需要在幫助之前先詢問？"
@@ -390,7 +390,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When should someone's effort affect your decision?",
     "zh": {
       "title": "花園蝸牛",
-      "scenario": "蝸牛要花幾個月的時間才能把你的道歉信送到老朋友手中。你的朋友可能會覺得你一直沒有回應，已經把他/她忘了。但蝸牛其實已經走了一半的路，小心翼翼地把信送達目的地。",
+      "scenario": "蝸牛要花幾個月的時間才能把你的道歉信送到老朋友手中。你的朋友可能會覺得你一直沒有回應，已經把對方忘了。但蝸牛其實已經走了一半的路，小心翼翼地把信送達目的地。",
       "question": "你會選擇更快的配送方式嗎？",
       "twist": "這隻蝸牛認為這是它畢生的事業。",
       "deeperQuestion": "某人的努力在什麼情況下會影響你的決定？"
@@ -492,7 +492,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can hospitality survive without boundaries?",
     "zh": {
       "title": "備用椅子",
-      "scenario": "你家會留一張椅子，以備不時之需。客人雖然沒怎麼吃飯，但顯然在你家餐桌旁感覺更自在。其他家庭成員已經開始在別處用餐，因為他們在家裡感覺不再舒服。",
+      "scenario": "你家習慣在飯桌多留一張椅子，歡迎需要陪伴的人。最近有位不太好相處的客人常常來，既少有幫忙，也很依賴這個令自己安心的地方。其他家人卻開始到外面吃飯，因為原本熟悉的家不再讓他們放鬆。",
       "question": "你會保留這個傳統嗎？",
       "twist": "一位難纏的客人開始每晚來訪。",
       "deeperQuestion": "沒有界線，熱情待客還能長久維持嗎？"
@@ -611,7 +611,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should creators enjoy their creations before others?",
     "zh": {
       "title": "小麵包店",
-      "scenario": "一位迷你烘焙師每天製作一個完美的、只有麵包屑大小的蛋糕。這個蛋糕太小了，如果不切開就會損壞。每個人都以不同的方式幫助烘焙師，但沒有人願意成為那個認領蛋糕的人。",
+      "scenario": "一位迷你麵包師每天只能做一個完美的蛋糕，大小和麵包屑差不多，切開分食就會破壞它。大家都曾以不同方式幫助麵包師，如今卻誰也不好意思提出先吃。這份小小的成果，要由誰決定怎樣分享？",
       "question": "誰應該第一個嚐到？",
       "twist": "麵包師傅從不品嚐自己的作品。",
       "deeperQuestion": "創作者是否應該在他人之前享受自己的作品？"
@@ -662,7 +662,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is hope valuable without a possible outcome?",
     "zh": {
       "title": "蒲公英守護者",
-      "scenario": "你可以永遠珍藏一朵蒲公英許願，也可以讓它隨風飄散。這許願記錄著一段你還不願忘卻的時光。放手或許會讓人充滿希望，但也意味著你必須接受這段記憶無法永遠停留在記憶深處。",
+      "scenario": "你可以把寄託著願望的蒲公英永遠保存下來，也可以讓它隨風飛走。那個願望來自一段你還不想放下的時光。放飛它，代表你仍然期待願望實現，也代表你接受這份紀念不能永遠維持原樣。",
       "question": "你會選擇哪一個？",
       "twist": "保留它會阻止任何實現的機會。",
       "deeperQuestion": "如果沒有可能的結果，希望還有價值嗎？"
@@ -696,7 +696,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is giving different when you cannot choose recipients?",
     "zh": {
       "title": "溫暖的圍巾",
-      "scenario": "一條圍巾能溫暖身邊最需要它的人。你買這條圍巾是為了應付漫長的通勤路。把它送人之後，你不禁會反思，自己究竟是出於慷慨，還是只是失去了對物品的控制。",
+      "scenario": "一條圍巾會自動把溫暖送給附近最需要的人。你原本買它，是想讓自己在寒冷的通勤路上舒服一點，卻不能控制它把溫暖給誰。你開始分不清，這算自己主動分享，還是物品替你作了決定。",
       "question": "你會在冬天戴上這條圍巾嗎？",
       "twist": "它總是選擇陌生人而不是你。",
       "deeperQuestion": "若無法選擇受贈人，捐贈方式是否有所不同？"
@@ -875,35 +875,35 @@ export const questions: Question[] = [
   {
     "id": "ponder-cute-047",
     "category": "Cute",
-    "emoji": "🐌",
-    "title": "The Tiny Medal",
-    "scenario": "You receive a medal for an unnoticed act of kindness.\n\nThe medal is small but impossible to miss. You would enjoy the recognition, yet worry that wearing it changes the story you tell yourself about why you helped.",
-    "question": "Would you wear it publicly?",
-    "twist": "It inspires others but makes you self-conscious.",
-    "deeperQuestion": "Does displaying goodness make it less authentic?",
+    "emoji": "🏛️",
+    "title": "Museum of Ordinary Days",
+    "scenario": "Your town opens a museum of ordinary days. Each person may donate one inexpensive object and a short story. You find an old ticket, a chipped mug, and a handwritten note. None marks a major achievement, but each accompanied a meaningful stretch of everyday life.",
+    "question": "Which real object would you choose, and what would its label say?",
+    "twist": "The museum omits names, yet a stranger spends a long time looking at your object.",
+    "deeperQuestion": "How special must an experience be to deserve preservation? Would a stranger’s response change its meaning for you?",
     "zh": {
-      "title": "小獎章",
-      "scenario": "你因一件不為人知的善舉而獲得一枚獎章。獎章雖小卻引人注目。你樂於接受這份認可，但又擔心穿戴它會改變你對自己助人行為的解釋。",
-      "question": "你會公開戴它嗎？",
-      "twist": "它能激勵他人，但會讓你感到不自在。",
-      "deeperQuestion": "展現善良是否會降低其真實性？"
+      "title": "平凡日子博物館",
+      "scenario": "小鎮要開一間「平凡日子博物館」，每人只能捐一件不值錢的小物，並寫下它的故事。你找到舊車票、磨花的杯子和一張隨手寫的便條；它們沒有紀念重大成就，卻都陪你走過一段生活。",
+      "question": "你會選哪件真實的小物？它旁邊的說明牌會寫甚麼？",
+      "twist": "博物館不展示姓名，陌生人卻在你的展品前停留了很久。",
+      "deeperQuestion": "一段經歷需要多特別，才值得被保存？陌生人的理解會改變它對你的意義嗎？"
     }
   },
   {
     "id": "ponder-cute-048",
     "category": "Cute",
     "emoji": "🫖",
-    "title": "Borrowed Courage",
-    "scenario": "Your cat lends you confidence before a difficult conversation.\n\nYou return from the conversation proud, while your cat hides from an ordinary noise. It cannot explain whether lending courage felt generous or simply expected.",
-    "question": "Would you borrow it?",
-    "twist": "The cat becomes timid until you return.",
-    "deeperQuestion": "When does asking for support become unfair?",
+    "title": "The Ten-Minute Courage Club",
+    "scenario": "You and two friends agree to try one small unfamiliar activity each month. One suggests a dance class, another wants to ask a shopkeeper for a recipe, and you want to show someone your drawings. Everyone may stop after ten minutes, without explanation.",
+    "question": "What would you try first, and how would you include the most nervous person?",
+    "twist": "The first person to stop later says they would like to try again.",
+    "deeperQuestion": "What makes an attempt successful: finishing, enjoying it, or discovering a boundary?",
     "zh": {
-      "title": "借來的勇氣",
-      "scenario": "在一次艱難的談話前，你的貓給了你信心。談話結束後，你昂首挺胸地回來，而你的貓卻對一個普通的聲響感到害怕。它無法解釋，給你勇氣是出於慷慨還是理所當然。",
-      "question": "你會借用它嗎？",
-      "twist": "直到你回來，貓都會變得膽小。",
-      "deeperQuestion": "請求支持何時會變成不公平的行為？"
+      "title": "十分鐘勇氣隊",
+      "scenario": "你和兩位朋友決定，每月一起嘗試一件從未做過的小事。第一次有人想參加舞蹈課，有人想向陌生店員請教食譜，你則想把畫作給別人看。規則是只試十分鐘，之後任何人都可以停。",
+      "question": "你會提議從哪件事開始？怎樣讓最緊張的人也能參與？",
+      "twist": "第一個喊停的人，回家後卻說自己下次還想再試。",
+      "deeperQuestion": "甚麼才算一次成功的嘗試：完成、享受，還是發現自己的界線？"
     }
   },
   {
@@ -917,7 +917,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does needing kindness entitle you to misplaced kindness?",
     "zh": {
       "title": "錯誤的包裹",
-      "scenario": "你收到的不是另一個孤獨的人，而是一個精美的關懷包裹。手寫的便條精準地描述了你所熟悉的孤獨。今晚，把它留下或許能帶給你些許慰藉；而把它轉送出去，則表示你接受了這份慰藉本該屬於他人的事實。",
+      "scenario": "你收到一個精心準備的關懷包裹，卻發現它其實寄給另一位孤獨的人。裡面的手寫便條，說中了你熟悉的感受。留下它能讓今晚好過一點；轉寄出去，則意味著把自己也很需要的安慰，送回原本的收件人手上。",
       "question": "你會不拆開就把包裹轉交給原本的收件人嗎？",
       "twist": "寄件人買不起另一件了。",
       "deeperQuestion": "需要善意是否就意味著有權獲得錯置的善意？"
@@ -934,7 +934,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do different kinds of attention share one budget?",
     "zh": {
       "title": "耐心等待的種子",
-      "scenario": "種子只有在有人靜靜聆聽一小時後才會發芽。聆聽能讓你擁有平和的日常習慣，並孕育出美好的事物。你的朋友需要的是不可預測的、略顯混亂的關注，而不是總能以看得見的回報結束的一小時。",
+      "scenario": "一粒種子只有在有人安靜聆聽一小時後，才會開花。這個習慣讓你平靜，每次也都看得見成果。但一位孤獨的朋友同樣需要你的時間；對方的情緒不一定容易理解，陪伴也不一定在一小時後就有明顯的回報。",
       "question": "你會每天為此騰出時間嗎？",
       "twist": "一位孤獨的朋友，也希望你把同一個小時留給他。",
       "deeperQuestion": "不同類型的注意力是否共享相同預算？"
@@ -985,7 +985,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How much public discomfort should celebration impose?",
     "zh": {
       "title": "生日歌",
-      "scenario": "你的朋友們在一家擁擠的餐廳裡唱歌，雖然唱得很難聽，但卻無比快樂。歌聲是他們真誠的愛意表達，如果你停止唱歌，他們會很失望。你不確定自己的尷尬是否應該和他們的快樂一樣重要。",
+      "scenario": "你的朋友們在一家擁擠的餐廳裡唱歌，雖然唱得很難聽，但卻無比快樂。歌聲是他們真誠的愛意表達，如果你請他們停止，他們會很失望。你不確定自己的尷尬是否應該和他們的快樂一樣重要。",
       "question": "你會要求他們停止嗎？",
       "twist": "附近有位陌生人今天過得不太好。",
       "deeperQuestion": "慶祝活動應該帶給大眾多大的不適感？"
@@ -995,17 +995,17 @@ export const questions: Question[] = [
     "id": "ponder-cute-054",
     "category": "Cute",
     "emoji": "☁️",
-    "title": "Pocket Cheerleader",
-    "scenario": "A tiny cheerleader praises you only when you try something new.\n\nIt makes adventures feel possible and celebrates every brave attempt. Yet the quiet work that keeps your life stable receives no encouragement at all.",
-    "question": "Would you keep it?",
-    "twist": "It stays silent during essential everyday chores.",
-    "deeperQuestion": "Can encouragement distort what you consider worthwhile?",
+    "title": "A Picnic Without Photos",
+    "scenario": "You and your friends agree not to photograph a picnic. Someone notices an ant moving an enormous crumb, while another tries to remember everyone sitting together. Afterward, each person will draw a postcard of the day and exchange it with someone else.",
+    "question": "Which moment would you draw, and would your friends remember the same one?",
+    "twist": "None of the postcards shows the food or scenery; each captures someone’s small, unplanned gesture.",
+    "deeperQuestion": "Where does your attention go when you are not recording an experience with a camera?",
     "zh": {
-      "title": "口袋啦啦隊",
-      "scenario": "只有當你嘗試新事物時，才會有一個小小的啦啦隊為你喝采。它讓你覺得冒險是可能的，並為每一次勇敢的嘗試而歡呼。然而，那些默默維持你生活穩定的工作卻得不到任何鼓勵。",
-      "question": "你會保留它嗎？",
-      "twist": "在日常基本家務中保持沉默。",
-      "deeperQuestion": "鼓勵會扭曲你對有價值的事物的看法嗎？"
+      "title": "沒有照片的野餐",
+      "scenario": "你和朋友去野餐，約好這次不拍照。有人很快發現，一隻螞蟻正努力搬走比牠大的麵包屑；另一人卻一直想記住大家圍坐的樣子。回家後，你們要各畫一張明信片，交換當天的記憶。",
+      "question": "你會畫哪一幕？你猜朋友會記住同一個瞬間嗎？",
+      "twist": "幾張明信片沒有一張畫到食物或風景，全都畫了某個人不經意的小動作。",
+      "deeperQuestion": "當你不用鏡頭記錄時，注意力會轉向哪裡？"
     }
   },
   {
@@ -1036,7 +1036,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can gentle truth be more caring than praise?",
     "zh": {
       "title": "雲端作業",
-      "scenario": "一朵雲畫畫逗你開心，但它想要得到真誠的回饋。這些畫雖然笨拙，但字裡行間都流露出創作者的用心。你可以讚美畫作背後的情感，同時也要承認自己有時無法完全理解畫作的內容。",
+      "scenario": "一朵雲畫畫逗你開心，但它想要得到真誠的回饋。這些圖案雖然畫得笨拙，仍看得出它的用心。你可以讚美畫作背後的情感，同時也要承認自己有時無法完全理解畫作的內容。",
       "question": "你會對它們進行評價嗎？",
       "twist": "只有聽取批評才能改進。",
       "deeperQuestion": "溫柔地說出真話，會不會比一味讚美更體貼？"
@@ -1104,7 +1104,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is remorse enough to rebuild trust?",
     "zh": {
       "title": "道歉之花",
-      "scenario": "真誠的道歉如同鮮花盛開。你希望它能終結對方是否真心道歉的爭論。但盛開的花朵無法預示明天同樣的傷害是否會再次發生。",
+      "scenario": "有一朵花，只要道歉出自真心就會綻放。你希望用它確認對方是否真的後悔，不用再反覆猜測。但花朵只能反映當下的心意，不能保證明天不再發生同樣的事。你仍要決定怎樣重新建立信任。",
       "question": "你會把它帶到辯論中來嗎？",
       "twist": "它能揭示真誠，但不能衡量行為的改變。",
       "deeperQuestion": "悔恨足以重建信任嗎？"
@@ -1138,7 +1138,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Who owns the story of a shared memory?",
     "zh": {
       "title": "記憶被",
-      "scenario": "這床拼布被子是由家人記憶中不同片段的布料拼接而成。每位親戚都對同一個下午的情景描述。這些差異都飽含真情實感，而最終選定其中一幅畫面，便會悄悄將某個人的記憶變成家族的官方版本。",
+      "scenario": "你想用承載家人回憶的布料，縫一床拼布被。幾位親人卻對同一個下午有不同的描述，每一個版本都連著真實的感情。最後選哪個畫面縫上去，可能不只是設計問題，也會決定家族往後如何記住那一天。",
       "question": "你會選擇縫製哪個版本？",
       "twist": "遺漏一個場景會傷害一位親屬。",
       "deeperQuestion": "共同記憶的故事歸誰所有？"
@@ -1198,18 +1198,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-cute-066",
     "category": "Cute",
-    "emoji": "☁️",
-    "title": "The Sleepover Moon",
-    "scenario": "The moon asks to sleep on your sofa for one night.\n\nThe visit would be unforgettable, and the moon seems genuinely tired. You would be accepting a gift of companionship whose cost is spread across people you will never meet.",
-    "question": "Would you host it?",
-    "twist": "Everyone else would lose moonlight that night.",
-    "deeperQuestion": "Can you accept a friendship with unequal consequences?",
+    "emoji": "🏘️",
+    "title": "A Map for a New Neighbor",
+    "scenario": "A new neighbor moves upstairs, and you decide to draw a welcome map. You may mark only three places, none of them tourist attractions: perhaps a rainy window, a shop that remembers your order, or an unusually quiet evening street.",
+    "question": "Which three places would you mark, and what small tip would you add to each?",
+    "twist": "Their favorite is the ordinary place you nearly left off the map.",
+    "deeperQuestion": "How could you introduce your everyday world without assuming someone shares your preferences?",
     "zh": {
-      "title": "月亮來過夜",
-      "scenario": "月亮請求在你家的沙發上借宿一晚。這將是一次難忘的拜訪，月亮似乎真的累了。你將接受一份陪伴的禮物，而這份陪伴的代價卻要分攤給那些你永遠不會遇到的人。",
-      "question": "你會讓月亮在你家過夜嗎？",
-      "twist": "那天晚上，其他人都會失去月光。",
-      "deeperQuestion": "你能接受一段後果不平等的友誼嗎？"
+      "title": "寫給新鄰居的地圖",
+      "scenario": "樓上搬來一位新鄰居，你想畫一張地圖歡迎對方。地圖只能標三個地方，不能選旅遊景點：可能是下雨時很好看的窗邊、會記住客人口味的小店，或一條晚上特別安靜的路。",
+      "question": "你會標哪三個地方？每個地方會附上甚麼小提示？",
+      "twist": "鄰居最喜歡的地方，正是你原本覺得最普通、差點沒寫上去的那個。",
+      "deeperQuestion": "你會怎樣向陌生人介紹自己熟悉的生活，而不假設對方和你喜歡同樣的事？"
     }
   },
   {
@@ -1257,7 +1257,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can knowing your impact turn affection into labor?",
     "zh": {
       "title": "幸運鈕",
-      "scenario": "每當朋友對你心存溫暖的思念，這枚紐帶就能為你帶來好運。它將無形的羈絆化為有形的情感。你擔心朋友會出於責任而非發自內心的關心而向你表達慰問。",
+      "scenario": "一顆鈕扣會在朋友溫柔地想起你時，為你帶來好運。它讓原本看不見的情感，產生可以察覺的效果。你很想讓朋友知道這件事，卻又擔心對方從此覺得，必須不停想著你，才不會令你的日子變差。",
       "question": "你會告訴你的朋友嗎？",
       "twist": "他們可能會覺得你的壞心情要由他們負責。",
       "deeperQuestion": "了解自己的影響力能否將愛轉化為勞動？"
@@ -1274,7 +1274,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How should shared generosity handle competing needs?",
     "zh": {
       "title": "小圖書館",
-      "scenario": "社區圖書館讓人們可以藉閱真正需要的書籍。這本書曾經幫助你度過一段艱難的過渡期，如今對你來說意義非凡。歸還這本書，就能讓同樣溫暖的人，即使你並不了解他們的故事，也能從中獲得慰藉。",
+      "scenario": "社區圖書館容許讀者留下自己真正需要的書。你借的一本書曾陪你度過艱難時期，如今已像私人物品一樣珍貴。歸還它，可能讓你不認識的人得到同樣的安慰；留下它，則能讓這份熟悉的支持一直在身邊。",
       "question": "你會保留你最喜歡的嗎？",
       "twist": "有人一直在等它。",
       "deeperQuestion": "共享的慷慨應該如何處理相互衝突的需求？"
@@ -1301,17 +1301,17 @@ export const questions: Question[] = [
     "id": "ponder-cute-072",
     "category": "Cute",
     "emoji": "🫖",
-    "title": "The Friendly Bee",
-    "scenario": "A bee gives you honey but expects a daily conversation.\n\nThe bee remembers your schedule and notices when you look tired. Its attention feels affectionate, although the exchange slowly leaves you with less room to speak.",
-    "question": "Would you agree?",
-    "twist": "It talks only about itself.",
-    "deeperQuestion": "Does gratitude require an unequal friendship?",
+    "title": "An Afternoon Without Words",
+    "scenario": "You and a friend join a cooking activity without speech, messages, or writing. You must make a simple dessert together using gestures, and neither person may do everything. The recipe looks easy until you realize you disagree about what “a little” and “almost ready” mean.",
+    "question": "Which three gestures would you invent first, and how would you recover from a misunderstanding?",
+    "twist": "The dessert looks nothing like the picture, but each of you remembers a gesture that felt reassuring.",
+    "deeperQuestion": "Does feeling understood always require an explanation? What quiet forms of care do you overlook?",
     "zh": {
-      "title": "友善的小蜜蜂",
-      "scenario": "一隻蜜蜂給你蜂蜜，卻期待你每天與它交談。蜜蜂記得你的作息時間，注意到你何時疲憊。它的關注讓你感到親切，但這種交流漸漸讓你失去了說話的空間。",
-      "question": "你同意嗎？",
-      "twist": "它只談論自己。",
-      "deeperQuestion": "感恩是否需要不平等的友誼？"
+      "title": "不用說話的下午",
+      "scenario": "你和朋友參加一個下午的小活動：不能說話、傳訊息或寫字，只能用動作合作完成一道點心。食譜很簡單，但你們對「少許」和「差不多」的理解完全不同，也不能由一個人包辦。",
+      "question": "你會先發明哪三個手勢？出現誤會時，怎樣重新合作？",
+      "twist": "最後的點心和照片完全不同，但你們都記得對方某個讓自己安心的動作。",
+      "deeperQuestion": "被理解一定要靠解釋嗎？你最容易忽略哪一種無聲的關心？"
     }
   },
   {
@@ -1325,7 +1325,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Whose happiness should decide a meaningful goodbye?",
     "zh": {
       "title": "毛公仔議會",
-      "scenario": "你童年的玩具們反對捐贈。你曾發誓永遠不會把它們送人。它們沒有改變，但你的生活變了，為了信守諾言，就意味著讓它們保持原樣。",
+      "scenario": "你童年的毛公仔投票反對被捐出去，因為你小時候曾答應永遠不送走它們。公仔還是一樣，你的生活卻已改變。履行承諾，可以讓它們留下來，但它們大概仍會和現在一樣，很少有人陪著玩。",
       "question": "你會尊重他們的決定嗎？",
       "twist": "玩具們承認，另一個孩子會比你更常和它們玩。",
       "deeperQuestion": "誰的幸福應該決定一個有意義的告別？"
@@ -1359,8 +1359,8 @@ export const questions: Question[] = [
     "deeperQuestion": "Does every honest feeling need a later response?",
     "zh": {
       "title": "慢信",
-      "scenario": "你們的爭執結束後，朋友寄來了一封手寫的信。信中傾訴他們從未準備好說出口的感受。再次提起這些感受或許是對他們的尊重，但也可能重新揭開他們以為已經塵埃落定的傷疤。",
-      "question": "你還會再談它受傷的感情嗎？",
+      "scenario": "你和朋友的爭執早已平息，一封對方之前寄出的手寫信卻直到現在才送到。信裡寫著當時沒能說出口的委屈。重新談起，或許能讓對方感到被理解，也可能再打開一件彼此以為已經放下的事。",
+      "question": "事情已經和好，你還會重提信裡那些受傷的感受嗎？",
       "twist": "他們不再記得寫過它了。",
       "deeperQuestion": "每一種真誠的感受都需要事後回應嗎？"
     }
@@ -1393,7 +1393,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What part of a gift carries its meaning?",
     "zh": {
       "title": "甜蜜捷徑",
-      "scenario": "一位仙女連夜完成了你朋友的手工禮物。你希望這份禮物能反映你的用心，但時間緊迫。仙女可以複製你的風格，同時省去你朋友所重視的那些心思。",
+      "scenario": "你正在替朋友做手工禮物，一位小仙子提出今晚替你全部完成。她能模仿你的風格，讓成品看不出分別。你很想把禮物準時送出，卻知道朋友最珍惜的，也許正是你親手花時間製作的過程。",
       "question": "你願意接受協助嗎？",
       "twist": "你的朋友最珍惜的是你陪伴他的時間。",
       "deeperQuestion": "禮物的哪一部分承載著它的意義？"
@@ -1471,17 +1471,17 @@ export const questions: Question[] = [
     "id": "ponder-cute-082",
     "category": "Cute",
     "emoji": "🦋",
-    "title": "The Last Sticker",
-    "scenario": "A friend gives you their rarest sticker to decorate your notebook.\n\nThe sticker was given freely, with no instructions to keep it pristine. Your hesitation reveals a difference between preserving monetary value and honoring the giver's intended joy.",
-    "question": "Would you use it?",
-    "twist": "Using it permanently lowers its resale value.",
-    "deeperQuestion": "Can refusing to use a gift defeat its purpose?",
+    "title": "Your Own Tiny Holiday",
+    "scenario": "You and your friends may invent an annual holiday with a tiny budget. You might live in different cities later, so it cannot rely on meeting in person. It cannot celebrate a birthday or achievement, only something small you want your lives to keep making room for.",
+    "question": "What would you call it, and what ritual could work across different cities?",
+    "twist": "Five years later, a new friend wants to join without knowing the original story.",
+    "deeperQuestion": "What should a shared ritual preserve most: its founders, its actions, or the feeling behind it?",
     "zh": {
-      "title": "最後一張貼紙",
-      "scenario": "朋友送你一張他最珍貴的貼紙，讓你裝飾筆記本。這張張貼紙是朋友無償贈送的，並沒有囑咐你要好好保存。你的猶豫不決，揭示了你對保值和尊重贈予者初衷之間區別的思考。",
-      "question": "你會使用它嗎？",
-      "twist": "使用它可永久降低其轉售價值。",
-      "deeperQuestion": "拒絕使用禮物是否會違背禮物的初衷？"
+      "title": "我們的專屬節日",
+      "scenario": "你和朋友可以創立一個每年都過的小節日，預算很少，而且大家未來可能住在不同城市。它不能慶祝生日或成就，只能紀念某件你們希望生活裡一直有的小事。",
+      "question": "你會替節日取甚麼名字？設計一個異地也做得到的儀式。",
+      "twist": "五年後，一個新朋友也想加入，但並不知道最初的故事。",
+      "deeperQuestion": "一個共同儀式最需要保留的，是原來的人、做法，還是它想帶來的感覺？"
     }
   },
   {
@@ -1495,7 +1495,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can competition coexist with wholehearted generosity?",
     "zh": {
       "title": "善良的對手",
-      "scenario": "你的競爭對手暗中幫助你提升水準。你們都熱愛這項運動，所以享受比賽的過程。他們的慷慨讓勝利不再那麼容易，而僅僅是證明你當天表現得更好就足夠了。",
+      "scenario": "比賽中的對手一直暗中幫你進步。你們都喜歡這項活動，也珍惜彼此的實力。接受幫助會讓比賽更精彩，但當你真的贏了，你可能很難把勝利單純理解為自己比對方更出色。",
       "question": "你會讓他們繼續下去嗎？",
       "twist": "幫助你可能會讓他們失去獎項。",
       "deeperQuestion": "競爭與全心全意的慷慨可以並存嗎？"
@@ -1607,17 +1607,17 @@ export const questions: Question[] = [
     "id": "ponder-cute-090",
     "category": "Cute",
     "emoji": "☁️",
-    "title": "The Bedtime Guest",
-    "scenario": "A friend calls nightly because your voice helps them sleep.\n\nYou enjoy being trusted but begin arranging your evenings around their sleep. Setting a boundary would preserve your affection while changing something they experience as dependable comfort.",
-    "question": "Would you set a limit?",
-    "twist": "They have other options but prefer you.",
-    "deeperQuestion": "Does being someone's comfort make you permanently available?",
+    "title": "Listen, Solve, or Take a Break?",
+    "scenario": "A friend has a terrible day and asks you to walk together. You usually jump to solutions, but this time you ask whether they want listening, ideas, or a break from the subject. They pause and say they do not know what they need.",
+    "question": "How would you begin the walk without deciding their needs for them?",
+    "twist": "Later, they say the most helpful part was not being required to explain everything immediately.",
+    "deeperQuestion": "How do you want people to approach you when you are upset? Is that how you usually comfort others?",
     "zh": {
-      "title": "睡前客人",
-      "scenario": "一位朋友每晚都會打電話來，因為你的聲音能幫助他們入睡。你很享受這種信任感，但你開始調整自己的作息來配合他們的睡眠。設定界線既能維繫你們之間的感情，又能改變他們習以為常的安心感。",
-      "question": "你會設定一個限制嗎？",
-      "twist": "他們還有其他選擇，但他們更傾向於你。",
-      "deeperQuestion": "成為別人的安慰是否意味著你永遠隨時待命？"
+      "title": "先聽，還是一起想？",
+      "scenario": "一位朋友度過了很糟的一天，約你散步。你平常很快就想到解決辦法，但這次決定先問對方，想有人聽、想一起想辦法，還是想暫時聊別的。朋友停了一下，說自己也不知道。",
+      "question": "你會怎樣開始這段散步，而不急著替對方決定需要甚麼？",
+      "twist": "走了一會兒，朋友說最有幫助的，是你沒有要求他立刻把事情說清楚。",
+      "deeperQuestion": "你難過時，希望別人如何靠近？你給人的安慰，和自己想收到的一樣嗎？"
     }
   },
   {
@@ -1674,18 +1674,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-cute-094",
     "category": "Cute",
-    "emoji": "🦋",
-    "title": "The Thank-You Tree",
-    "scenario": "A tree grows a leaf each time someone thanks you.\n\nThe tree makes your impact tangible, and you begin checking it after helping. Soon an empty branch feels like rejection even when the person you helped seems better.",
-    "question": "Would you count them?",
-    "twist": "Your quietest friends rarely express gratitude aloud.",
-    "deeperQuestion": "Does visible appreciation accurately reflect your impact?",
+    "emoji": "🍲",
+    "title": "The Recipe Without Measurements",
+    "scenario": "You want to learn a family dish, but the older relative who makes it never measures anything. While cooking together, you record quantities as they tell stories about who loved it and the times it went wrong. Their instructions keep ending with “until it looks like this.”",
+    "question": "How would you learn the dish, and what would you record besides ingredients?",
+    "twist": "Your next attempt tastes different, but you finally understand one of those unmeasured instructions.",
+    "deeperQuestion": "What kinds of knowledge require doing something together? Who would you like to learn from?",
     "zh": {
-      "title": "感恩樹",
-      "scenario": "每當有人向你道謝，樹就會長出一片葉子。這棵樹讓你的幫助變得有形，於是你開始在幫助別人後查看它的葉子。很快，即使你幫助過的人看起來好多了，一根空蕩蕩的樹枝也會讓你感到被拒絕。",
-      "question": "你會數一數嗎？",
-      "twist": "你最安靜的朋友很少大聲表達感激。",
-      "deeperQuestion": "可見的讚賞是否能準確反映你的影響？"
+      "title": "未學會的拿手菜",
+      "scenario": "你想學一道家裡常吃的菜，長輩卻從來不用食譜，只說「看到這樣就可以」。你們一起煮了一次，你忙著記份量，對方則一直講以前誰最愛吃、哪次不小心煮失敗。",
+      "question": "你會怎樣把這道菜學下來？除了材料，還會記錄甚麼？",
+      "twist": "照筆記再煮時，味道並不一樣，但你突然明白長輩當時指的「這樣」是甚麼。",
+      "deeperQuestion": "有些知識是否只能透過一起做來傳遞？你最想向身邊誰學甚麼？"
     }
   },
   {
@@ -1716,7 +1716,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should others get a vote in your happiness?",
     "zh": {
       "title": "生日蠟燭",
-      "scenario": "蠟燭只有在所有在場的人都暗自同意的情況下才能實現願望。每個人都愛你，但他們對你美好未來的想像卻各不相同。他們的分歧或許表達的是關心，而非缺乏善意。",
+      "scenario": "生日蠟燭能實現你的願望，但前提是所有在場的人心裡都同意。朋友們原本真心想讓你開心，聽到具體願望後，卻可能因各自對你的理解而有所保留。你要先說出願望，才能知道大家是否支持。",
       "question": "你願意大聲說出你的願望嗎？",
       "twist": "有人因為關心而持不同意見。",
       "deeperQuestion": "你的幸福是否應該由別人決定？"
@@ -1777,17 +1777,17 @@ export const questions: Question[] = [
     "id": "ponder-cute-100",
     "category": "Cute",
     "emoji": "🌻",
-    "title": "The Future Flower",
-    "scenario": "A flower shows how happy your friend could become without your friendship.\n\nThe possible future unsettles you because your friend looks genuinely fulfilled. You cannot tell whether revealing it would support their freedom or plant doubts that did not exist.",
-    "question": "Would you tell them?",
-    "twist": "It shows possibilities, not guaranteed futures.",
-    "deeperQuestion": "Can caring include accepting your own smaller role?",
+    "title": "Hello to a Future Friend",
+    "scenario": "You prepare an envelope for someone you will meet at a gathering a year from now. It may contain one question, one small story about you, and one portable object. You cannot include a résumé or list achievements; the envelope should offer an easy way to start talking.",
+    "question": "What would you include to help a stranger feel comfortable beginning a conversation?",
+    "twist": "A year later, the story no longer represents you, but the envelope is still unopened.",
+    "deeperQuestion": "Would you replace it or introduce your earlier self? What do you most want someone to know when you first meet?",
     "zh": {
-      "title": "未來之花",
-      "scenario": "一朵花預示著你的朋友即使沒有你的友誼也能過得多麼幸福。這種可能的未來讓你感到不安，因為你的朋友看起來真的很滿足。你無法判斷，告訴他們真相究竟是會支持他們的自由，還是會讓他們產生原本不存在的疑慮。",
-      "question": "你會告訴他們嗎？",
-      "twist": "它展示的是可能性，而不是有保證的未來。",
-      "deeperQuestion": "關懷是否包含接受自己較小的角色？"
+      "title": "給未來朋友的招呼",
+      "scenario": "你要替一年後的一次聚會準備一個小信封，給一位現在還不認識的新朋友。裡面只能放一個問題、一段關於你的小故事，以及一件方便攜帶的小物。不能放履歷，也不能介紹自己的成就。",
+      "question": "你會放甚麼，讓對方有一個舒服的話題可以開始？",
+      "twist": "一年後，你發現那段小故事已不能代表現在的你，但信封還沒打開。",
+      "deeperQuestion": "你會換掉它，還是讓新朋友先認識以前的你？第一次見面，你最希望別人知道甚麼？"
     }
   },
   {
@@ -1903,7 +1903,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does an embarrassing format diminish genuine remorse?",
     "zh": {
       "title": "道歉廣告歌",
-      "scenario": "你的每一次道歉都必須像廣告歌一樣唱出來。你真心想修復這段友誼，但那旋律聽起來卻歡快得令人難以忍受。被你傷害的人可能會聽到你試圖追究責任的廣告。",
+      "scenario": "你的每一句道歉都必須用廣告歌唱出來。你真的想修補友誼，但旋律總是歡快得不合時宜。你努力承認責任時，被你傷害的人聽到的，卻可能像一段想吸引注意的宣傳。",
       "question": "你會少道歉嗎？",
       "twist": "人們多年後仍然記得那些用歌唱出來的道歉。",
       "deeperQuestion": "令人尷尬的形式是否會削弱真正的悔意？"
@@ -1920,7 +1920,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Are profitable accidents still innocent after preparation?",
     "zh": {
       "title": "劇透稅",
-      "scenario": "你每次不小心劇透電影都能獲得報酬。即使你盡量保持沉默，朋友們也會減少邀請你一起看電影的次數。這筆錢會讓人懷疑你並非總是能避免的錯誤。",
+      "scenario": "你每次不小心劇透電影，都會得到一筆錢。即使你努力少說話，朋友也開始減少邀請你看電影。有了報酬，他們很難判斷你的失言是無意，還是你其實沒有那麼想避免犯錯。",
       "question": "你會警告你的朋友嗎？",
       "twist": "你不能透過故意劇透來賺錢。",
       "deeperQuestion": "有預謀的獲利性意外事故還能算是無辜的嗎？"
@@ -1971,7 +1971,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should rules be fair when tastes differ?",
     "zh": {
       "title": "群聊市長",
-      "scenario": "你的群聊選舉你當“市長”，賦予你禁止一種令人討厭的習慣的權力。你承諾會公平競選，但你的第一個反應卻是針對那些讓你個人反感的行為。獲勝或許更反映了人氣而非智慧。",
+      "scenario": "你的群聊選舉你當「市長」，賦予你禁止一種令人討厭的習慣的權力。你承諾會公平競選，但你的第一個反應卻是針對那些讓你個人反感的行為。獲勝或許更反映了人氣而非智慧。",
       "question": "你會禁止什麼？",
       "twist": "你最喜歡的習慣將在下一輪投票中獲勝。",
       "deeperQuestion": "當人們的喜好不同時，規則是否應該公平？"
@@ -2049,17 +2049,17 @@ export const questions: Question[] = [
     "id": "ponder-funny-017",
     "category": "Funny",
     "emoji": "🧦",
-    "title": "Chair Grudge",
-    "scenario": "Your office chair refuses to support you after hearing you praise another chair.\n\nYou spend eight hours together every day and have shared many difficult deadlines. Still, treating practical replacement as betrayal would make buying furniture unexpectedly complicated.",
-    "question": "Would you apologize?",
-    "twist": "It claims loyalty should go both ways.",
-    "deeperQuestion": "When is emotional reciprocity an unreasonable demand?",
+    "title": "Office Mascot Interviews",
+    "scenario": "Your office must choose a mascot: a duck that always leaves on time, a rock that never panics, or a noisy fan that constantly encourages everyone. Each candidate may demonstrate one talent, and you must host the final interview before everyone votes.",
+    "question": "What would you ask, and how would you campaign for your preferred candidate?",
+    "twist": "Everyone chooses the rock because it never schedules meetings.",
+    "deeperQuestion": "How different can people’s stated priorities be from the needs their choices reveal?",
     "zh": {
-      "title": "椅子的怨氣",
-      "scenario": "你稱讚另一張椅子後，你的辦公椅就罷工了。你們每天一起待八個小時，共同經歷了許多棘手的截止日期。然而，如果把更換椅子視為背叛，那麼購買家具就會變得出乎意料地複雜。",
-      "question": "你願意道歉嗎？",
-      "twist": "它聲稱忠誠應該是雙向的。",
-      "deeperQuestion": "什麼情況下情感上的互惠是不合理的要求？"
+      "title": "辦公室吉祥物面試",
+      "scenario": "辦公室要選新吉祥物，最後三個候選者是一隻只會準時下班的鴨、一塊永遠不會緊張的石頭，以及會替所有人打氣但很吵的電風扇。每位候選者只能展示一項才能，你負責主持面試。",
+      "question": "你會問甚麼問題，分辨誰真的適合？請替你支持的候選者拉票。",
+      "twist": "全體投票後，大家選了石頭，因為它從來不開會。",
+      "deeperQuestion": "大家嘴上說重視的特質，和實際選擇透露的需求，會差多遠？"
     }
   },
   {
@@ -2090,7 +2090,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is accidental social advantage something you must disclose?",
     "zh": {
       "title": "笑聲",
-      "scenario": "笑聲如影隨形，甚至在嚴肅的對話中也如影隨形。起初，笑聲能幫你擺脫尷尬。後來，你開始擔心別人永遠無法了解你生活中哪些部分是你真正認真看待的。",
+      "scenario": "無論你去哪裡，都有像電視喜劇一樣的背景笑聲跟著你，連嚴肅談話也不例外。起初它能化解尷尬，後來你卻開始擔心，別人會分不清你在開玩笑，還是真的很在意一件事。",
       "question": "你會向陌生人解釋嗎？",
       "twist": "如果人們覺得你很幽默，他們就會更喜歡你。",
       "deeperQuestion": "意外獲得的社會優勢是否必須揭露？"
@@ -2099,18 +2099,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-funny-020",
     "category": "Funny",
-    "emoji": "🪿",
-    "title": "The Honest Hat",
-    "scenario": "A hat blurts out the first thought you suppress.\n\nYou hope the hat could remove the exhausting task of guessing what someone means. It may also mistake a fleeting impulse for a considered opinion you would choose to express.",
-    "question": "Would you wear it on a date?",
-    "twist": "You can hear the other person's hat too.",
-    "deeperQuestion": "Would total honesty make connection easier?",
+    "emoji": "👽",
+    "title": "Three Sentences for an Alien",
+    "scenario": "An alien visitor understands nothing about human routines. You get one sentence each to explain queuing, selfies, and eating dessert after feeling full. You cannot use unfamiliar Earth jargon or explain a custom by saying that everyone does it.",
+    "question": "How would you explain all three, and which is hardest to make sound sensible?",
+    "twist": "The alien understands dessert perfectly but thinks selfies are tests for whether people still exist.",
+    "deeperQuestion": "Which ordinary habits become strange when removed from their cultural setting?",
     "zh": {
-      "title": "誠實的帽子",
-      "scenario": "帽子脫口而出你壓抑已久的第一個念頭。你希望帽子能幫你省去猜測別人話裡意思的繁瑣工作。但它也可能把轉瞬即逝的衝動誤認為是你深思熟慮後想要表達的觀點。",
-      "question": "你會戴著它去約會嗎？",
-      "twist": "你還能聽到對方的帽子聲。",
-      "deeperQuestion": "完全坦誠會讓溝通變得更容易嗎？"
+      "title": "三句話的外星說明書",
+      "scenario": "一位外星訪客完全不懂人類的生活，你只有三句話可以解釋「排隊」、「自拍」和「明明吃飽還要吃甜品」。不能使用它不認識的地球術語，也不能說「大家都這樣」。",
+      "question": "你會怎樣解釋這三件事？哪一件最難說得合理？",
+      "twist": "外星人完全理解甜品，卻認為自拍是在檢查自己有沒有消失。",
+      "deeperQuestion": "哪些我們覺得理所當然的習慣，離開原本文化後就變得奇怪？"
     }
   },
   {
@@ -2158,7 +2158,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can criticism be valid without shared standards?",
     "zh": {
       "title": "寵物評論",
-      "scenario": "你的倉鼠給你的室友評價是三星。你提供了食物和乾淨的籠子，但評價主要集中在它的無聊和缺乏選擇。這些問題並不在你負責任的照顧理念之內。",
+      "scenario": "你的倉鼠把你當作室友，只給了三星評價。你一直提供食物和乾淨的籠子，但牠抱怨的是無聊，以及甚麼都不能自己選。你原本以為照顧周到就足夠，現在卻要面對一套和自己不同的評分標準。",
       "question": "你會對評級提出異議嗎？",
       "twist": "它的投訴具體且合理。",
       "deeperQuestion": "如果沒有共同的標準，批評還能有效嗎？"
@@ -2277,7 +2277,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How far should you accommodate harmless beliefs?",
     "zh": {
       "title": "兩隻左鞋",
-      "scenario": "你的鞋子彷彿有了生命，它們都堅持自己應該穿在左腳上。這兩雙鞋發展出了各自獨特的個性，並且都真誠地爭論著。你可以選擇無視它們，但傾聽它們的意見卻讓一個普通的實用決定變得出乎意料地具有政治意義。",
+      "scenario": "你的鞋子彷彿有了生命，它們都堅持自己應該穿在左腳上。這兩隻鞋發展出了各自獨特的個性，並且都真誠地爭論著。你可以選擇無視它們，但傾聽它們的意見卻讓一個普通的實用決定變得出乎意料地具有政治意義。",
       "question": "你會強行達成妥協嗎？",
       "twist": "兩人都沒有感到不舒服；只有你感到不適。",
       "deeperQuestion": "對於無害的信仰，我們應該容忍到什麼程度？"
@@ -2286,18 +2286,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-funny-031",
     "category": "Funny",
-    "emoji": "🥔",
-    "title": "The Dramatic Door",
-    "scenario": "Your front door requires a heartfelt farewell before opening.\n\nThe farewell started as a charming ritual that made coming home feel special. Now every departure requires emotional effort you never agreed to provide indefinitely.",
-    "question": "Would you humor it daily?",
-    "twist": "It gets jealous when you leave cheerfully.",
-    "deeperQuestion": "When does a ritual become emotional coercion?",
+    "emoji": "🚗",
+    "title": "Sound-Effect Navigation",
+    "scenario": "You are navigating for a friend, but a spell lets you make only sound effects, not words or pointing gestures. Ahead are a roundabout, a fuel stop, and a road you are unsure about. Before setting off, you get one minute to agree on signals.",
+    "question": "Invent four sounds, including one that means “I do not know either.”",
+    "twist": "Your uncertainty sound is mistaken for “turn now,” leading you into a lively street market.",
+    "deeperQuestion": "Should a communication system prioritize preventing mistakes or making them easy to notice and repair?",
     "zh": {
-      "title": "戲劇之門",
-      "scenario": "你家的大門需要一番深情的告別才能打開。最初，這道別是一種溫馨的儀式，讓回家成為一種特別的體驗。如今，每一次離別都需要你付出情感上的努力，而你從未同意無限期地承擔這種責任。",
-      "question": "你會每天遷就它嗎？",
-      "twist": "當你興高采烈地離開時，它會嫉妒。",
-      "deeperQuestion": "儀式何時會變成情緒脅迫？"
+      "title": "只准用音效的導航",
+      "scenario": "你替朋友導航，但車上的魔法令你只能發出音效，不能說話或指方向。前方有迴旋處、加油站和一條你不太肯定的小路。你們出發前有一分鐘，約定幾個聲音的意思。",
+      "question": "你會設計哪四個音效？一定要有一個表示「我也不知道」。",
+      "twist": "朋友把你表示「不確定」的聲音理解成「立即轉彎」，你們來到一場熱鬧的街頭市集。",
+      "deeperQuestion": "一個溝通系統應先避免錯誤，還是讓錯誤容易被發現和修正？"
     }
   },
   {
@@ -2379,7 +2379,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does mutual vulnerability guarantee fairness?",
     "zh": {
       "title": "官方暱稱",
-      "scenario": "每個人都必須合法地使用自己最老朋友選擇的暱稱。你的朋友記得的是你早已不再是的那個自己。賦予他們命名權，既是對你的過往的尊重，又能讓這段過往定義你未來的公眾形象。",
+      "scenario": "法律規定，每個人都要使用認識最久的朋友替自己選的暱稱。對方記得的你，也許早已不是現在的你。讓朋友命名，既能紀念共同的過去，也可能讓你此後一直被一個舊形象代表。",
       "question": "你會信任你的朋友嗎？",
       "twist": "你對他們的名字擁有同等的權力。",
       "deeperQuestion": "相互脆弱性能否保證公平性？"
@@ -2430,7 +2430,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can enforcing kindness silence necessary criticism?",
     "zh": {
       "title": "憤怒的印表機",
-      "scenario": "你的印表機無法讀取以陰陽怪氣語氣撰寫的文件。你精心撰寫了這份文件，因為確實存在一個需要解決的問題。印表機產生的版本雖然聽起來很友好，但卻讓人不清楚究竟需要改進什麼。",
+      "scenario": "你的印表機拒絕印出帶有暗諷或挖苦語氣的文件。你寫的內容確實指出了一個需要處理的問題，但經它修改後，文字變得很客氣，問題也模糊了。你要決定，這份「禮貌」是否值得保留。",
       "question": "你會接受它的修改嗎？",
       "twist": "它對禮貌的定義傾向於避免分歧。",
       "deeperQuestion": "強制推行善舉能否壓制必要的批評？"
@@ -2456,18 +2456,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-funny-041",
     "category": "Funny",
-    "emoji": "🧦",
-    "title": "The Telepathic Parrot",
-    "scenario": "A parrot repeats what you almost said instead of what you said.\n\nSometimes it reveals the generous remark you were too shy to say. At other times it broadcasts an unkind thought you immediately rejected, treating both as equally representative.",
-    "question": "Would you keep it nearby?",
-    "twist": "It exposes both cruel impulses and unspoken compliments.",
-    "deeperQuestion": "Do fleeting thoughts fairly represent a person?",
+    "emoji": "📣",
+    "title": "The Invitation Telephone Game",
+    "scenario": "A dinner invitation must be passed verbally from person to person, with nobody allowed to repeat the exact wording. By the sixth person it has become a formal awards ceremony in pajamas. The venue and food are booked, but everyone now expects something different.",
+    "question": "Write one announcement that rescues the gathering while keeping its funniest feature.",
+    "twist": "The last guests assume the absurd combination was your carefully planned theme all along.",
+    "deeperQuestion": "When can a mistake become a shared creation, and who decides whether the original intention still matters?",
     "zh": {
-      "title": "心靈感應鸚鵡",
-      "scenario": "鸚鵡會重複你差點說出口的話，而不是你真正說出口的話。有時，它會說出你羞於啟齒的慷慨之語；有時，它會傳播你立刻否定的刻薄想法，兩者對鸚鵡而言都具有同等的代表性。",
-      "question": "你會把它放在附近嗎？",
-      "twist": "它既揭露了殘酷的衝動，也揭露了未說出口的讚美。",
-      "deeperQuestion": "轉瞬即逝的想法能代表一個人嗎？"
+      "title": "一句話越傳越離譜",
+      "scenario": "朋友要辦一場普通聚餐，但每個人只能把邀請口頭傳給下一位，不能重複原句。傳到第六人時，聚餐已變成「穿睡衣參加的正式頒獎典禮」。場地和食物都訂好了，大家各有期待。",
+      "question": "你會怎樣用一則通知，把這場聚會救回來，又保留最好笑的部分？",
+      "twist": "最後到場的人反而以為，這種荒謬正是你精心設計的主題。",
+      "deeperQuestion": "一件意外甚麼時候可以變成共同創作？誰有資格決定原意還重不重要？"
     }
   },
   {
@@ -2599,8 +2599,8 @@ export const questions: Question[] = [
     "twist": "A compromise would restore internet but satisfy nobody.",
     "deeperQuestion": "When does a definition matter more than its usefulness?",
     "zh": {
-      "title": "穀物之爭",
-      "scenario": "你的城鎮必須將穀物歸類為湯類，否則將失去網路存取。這場爭論已經演變成鄰里之間表達各自立場忠誠的一種方式。恢復網路可能需要接受這樣一個事實：沒有任何實際好處能夠說服所有人放棄象徵性的勝利。",
+      "title": "早餐麥片算不算湯？",
+      "scenario": "你的小鎮必須就「加了牛奶的早餐麥片算不算湯」達成決定，否則全城會失去網絡。討論很快變成陣營之爭，大家開始把立場當成身分。即使恢復網絡對所有人都有好處，也未必有人願意先讓步。",
       "question": "你會支持哪一方？",
       "twist": "折衷方案可以恢復網絡，但無法讓任何人滿意。",
       "deeperQuestion": "定義何時比其實用更重要？"
@@ -2610,17 +2610,17 @@ export const questions: Question[] = [
     "id": "ponder-funny-050",
     "category": "Funny",
     "emoji": "😂",
-    "title": "The Roast Shield",
-    "scenario": "You can block any insult by redirecting it to a volunteer.\n\nYour friend enjoys playful insults and offers freely, but you feel relieved in a way that makes you uneasy. Their willingness does not automatically settle your own comfort with the arrangement.",
-    "question": "Would you accept a friend's offer?",
-    "twist": "They find the insults genuinely funny.",
-    "deeperQuestion": "Can consent make humiliation harmless?",
+    "title": "The Worst Product Launch",
+    "scenario": "You must pitch an apparently useless invention: a clock showing yesterday’s time, an umbrella that becomes transparent when wet, or a compass pointing to the nearest dessert. You have thirty seconds to find a real use for one product without making any false claims.",
+    "question": "Which product, customer, and opening sentence would you choose?",
+    "twist": "Someone in the audience says it solves a problem they have had for years.",
+    "deeperQuestion": "Is uselessness a property of an object, or a sign that we have not met the person who needs it?",
     "zh": {
-      "title": "吐槽擋箭牌",
-      "scenario": "你可以透過將侮辱轉給志工來阻止它。你的朋友喜歡開玩笑，也樂於幫忙，但你感到如釋重負，卻又有些不安。他們的主動並不代表你就能接受這種安排。",
-      "question": "你會接受朋友的提議嗎？",
-      "twist": "他們覺得這些侮辱真的很好笑。",
-      "deeperQuestion": "同意能否使羞辱無害？"
+      "title": "最差產品發佈會",
+      "scenario": "你要推銷一件看似完全沒用的產品：只能量出昨天時間的鐘、遇水就透明的雨傘，或每次都指向最近甜品的指南針。你有三十秒，必須找出一個真實的使用情境，不能說謊。",
+      "question": "你選哪件產品？會賣給誰，用哪一句介紹打動對方？",
+      "twist": "台下有位觀眾說，這剛好解決了他困擾多年的問題。",
+      "deeperQuestion": "「沒有用」是物品本身的特質，還是我們還沒遇到需要它的人？"
     }
   },
   {
@@ -2746,17 +2746,17 @@ export const questions: Question[] = [
     "id": "ponder-funny-058",
     "category": "Funny",
     "emoji": "🪑",
-    "title": "The Puppy Accountant",
-    "scenario": "A puppy calculates exactly how much affection you owe your friends.\n\nThe report notices forgotten favors and unequal listening time with alarming precision. It cannot tell whether a friend offered generously or has quietly started expecting repayment.",
-    "question": "Would you follow its report?",
-    "twist": "Its formula treats every friendship identically.",
-    "deeperQuestion": "Can reciprocity be reduced to a balance sheet?",
+    "title": "Trade a Minor Nuisance",
+    "scenario": "You and a friend can exchange one harmless nuisance for twenty-four hours. You always misplace your glasses; they hiccup when nervous. Both think their own problem is harder to live with, and before swapping, each may describe only its advantages.",
+    "question": "How would you advertise your nuisance as a feature, and what would you try in exchange?",
+    "twist": "By the end, both of you miss the coping tricks you already knew for your original problem.",
+    "deeperQuestion": "How much difficulty belongs to a problem itself, and how much comes from being unfamiliar with it?",
     "zh": {
-      "title": "小狗會計師",
-      "scenario": "一隻小狗能精確計算出你欠朋友多少愛。它能以驚人的精準度察覺到你忘記的恩情和不均等的傾聽時間。它無法分辨朋友是慷慨付出還是暗自期待回報。",
-      "question": "你會採納它的報告嗎？",
-      "twist": "它的公式對每段友誼都一視同仁。",
-      "deeperQuestion": "互惠能否簡化為資產負債表？"
+      "title": "交換一天的小麻煩",
+      "scenario": "你和朋友可以交換一個無傷大雅的小麻煩，維持二十四小時。例如你總是找不到眼鏡，對方一緊張就打嗝；你們都覺得自己的問題比較難忍受。交換前，每人只能介紹優點。",
+      "question": "你會把自己的小麻煩包裝成甚麼「特色」？你最想試換哪一種？",
+      "twist": "換回來之後，你們都突然很想念自己原本熟悉的應付方法。",
+      "deeperQuestion": "一個問題令人難受，有多少來自它本身，又有多少來自我們不熟悉它？"
     }
   },
   {
@@ -2787,7 +2787,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should one encounter represent an entire group?",
     "zh": {
       "title": "一星行星",
-      "scenario": "外星人只給地球一顆星，因為你的歡迎致詞很尷尬。地球其他地區的歡迎委員會也指責你僅憑一次談話就妄下判斷。一篇更好的評價或許能糾正這種不平衡，但你自己寫好評未免太過巧合。",
+      "scenario": "外星遊客因為你的歡迎致辭太尷尬，只給地球一星評價。地球其他地方的接待團隊認為，一次對話不應代表整個星球。你可以寫一篇更正面的介紹，但由你親自替自己挽回評分，又難免令人懷疑是否公允。",
       "question": "你會寫一篇更好的評論嗎？",
       "twist": "他們的評分決定了遊客是否會來參觀。",
       "deeperQuestion": "一次遭遇是否能代表整個群體？"
@@ -2821,7 +2821,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is recognition worth exposing someone else's vulnerability?",
     "zh": {
       "title": "無形的獎杯",
-      "scenario": "你贏得了一座只有失敗者才能看到的隱形獎盃。這座獎盃本意是慶祝，但展示它會讓任何認出它的人不由自主地承認自己的成就。你的成就將會揭示一些你無權向他們宣布的事情。",
+      "scenario": "你贏得一座隱形獎盃，只有曾經輸過的人才看得見。展示它原本是為了慶祝自己，卻會讓每個認出獎盃的人，不經意暴露一段失敗經歷。你的榮譽，可能同時揭開別人未曾想分享的事。",
       "question": "你會展示它嗎？",
       "twist": "訪客必須透露他們是否曾經輸過。",
       "deeperQuestion": "為了認可而暴露他人的弱點值得嗎？"
@@ -2872,7 +2872,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can happiness be evaluated from outward reactions?",
     "zh": {
       "title": "生日退款",
-      "scenario": "如果收禮者笑得不如預期，商店會退還禮物。你知道你的朋友很喜歡這份禮物，因為他們經常使用它。這種退款規則獎勵的是顯而易見的反應，而不是真正感激之情的細微體現。",
+      "scenario": "商店承諾，如果收禮者笑得不夠開心，就退還禮物的款項。你知道朋友喜歡禮物，因為對方經常使用，只是不太會表露情緒。這條退款規則容易核對，卻未必能分辨安靜的喜愛和真正的失望。",
       "question": "你是否要求退款？",
       "twist": "你的朋友默默地喜歡這份禮物。",
       "deeperQuestion": "幸福感可以從外在反應來評價嗎？"
@@ -2940,7 +2940,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Why can effort's appearance affect perceived quality?",
     "zh": {
       "title": "永遠的載入進度條",
-      "scenario": "你的手機雖然能瞬間完成所有任務，但為了營造戲劇效果，還是會顯示一個加載條。這種等待動畫讓複雜的答案看起來像是精心製作的。去掉它雖然能更真實地展現速度，但有些用戶可能會因此不再認真看待同樣可靠的結果。",
+      "scenario": "你的手機雖然能瞬間完成所有任務，但為了營造戲劇效果，還是會顯示一個載入進度條。這種等待動畫讓複雜的答案看起來像是精心製作的。去掉它雖然能更真實地展現速度，但有些用戶可能會因此不再認真看待同樣可靠的結果。",
       "question": "你會把它移除嗎？",
       "twist": "如果沒有等待，人們對結果的信任度就會降低。",
       "deeperQuestion": "為什麼努力的外在表現會影響感知品質？"
@@ -3001,17 +3001,17 @@ export const questions: Question[] = [
     "id": "ponder-funny-073",
     "category": "Funny",
     "emoji": "🐹",
-    "title": "The Predictive Punchline",
-    "scenario": "You always know a joke's ending before anyone tells it.\n\nYou enjoy your friends' enthusiasm even when the punchline is predictable. Reacting warmly might express affection rather than amusement, but they assume both are happening together.",
-    "question": "Would you fake laughter?",
-    "twist": "Your friends tell jokes mainly to connect with you.",
-    "deeperQuestion": "Is a supportive reaction necessarily dishonest?",
+    "title": "The One-Minute Cooking Disaster",
+    "scenario": "You and a friend must improvise a one-minute cooking show using only breakfast cereal. Every fifteen seconds someone announces a complication: a power cut, a missing bowl, or a guest who insists this is formal dinner cuisine. The show cannot stop.",
+    "question": "Who demonstrates, who narrates, and what is your first response when things go wrong?",
+    "twist": "The audience’s favorite moment is the mistake you were trying to hide.",
+    "deeperQuestion": "In a chaotic team situation, do you take control, support someone else, or look for the funny side first?",
     "zh": {
-      "title": "預測性笑點",
-      "scenario": "你總能在別人講笑話之前就知道結局。即使笑點很老套，你也很享受朋友的熱情。你熱情回應可能表達的是喜愛而非愉悅，但他們卻認為兩者兼具。",
-      "question": "你會假笑嗎？",
-      "twist": "你的朋友講笑話主要是為了跟你拉近距離。",
-      "deeperQuestion": "支持性的反應就一定是不誠實的嗎？"
+      "title": "一分鐘災難節目",
+      "scenario": "你和朋友要即興主持一分鐘的烹飪節目，但唯一的食材是早餐麥片，每過十五秒就有人宣布新狀況：停電、碗被拿走，或嘉賓堅持這是一道正式晚宴菜。你們不能中斷節目。",
+      "question": "誰負責繼續示範，誰負責解說？遇到第一個意外，你會說甚麼？",
+      "twist": "觀眾最喜歡的片段，正是你們原本想掩飾的失誤。",
+      "deeperQuestion": "在團隊裡，你遇到混亂時會控制局面、配合演出，還是先找笑點？"
     }
   },
   {
@@ -3042,7 +3042,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does an audience change a private relationship?",
     "zh": {
       "title": "寵物網紅",
-      "scenario": "你的寵物因為一副對你不屑一顧的樣子而出名。發布照片能讓你得到悉心照料，但你開始圍繞著觀眾最喜歡的表情來安排各種場景。一段真實的感情逐漸演變成你寵物從未同意扮演的角色的素材。",
+      "scenario": "你的寵物因為總是一臉「懶得理你」而成了網紅。發佈影片的收入能幫你更好地照顧牠，但你也開始刻意安排場景，等待觀眾喜歡的表情。原本自然的相處，漸漸變成維持固定形象的拍攝。",
       "question": "你願意管理它的帳戶嗎？",
       "twist": "你最甜蜜的瞬間，觀看次數卻最少。",
       "deeperQuestion": "觀眾會改變私人關係嗎？"
@@ -3093,7 +3093,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is curiosity a sufficient reason to invade privacy?",
     "zh": {
       "title": "義大利麵證人",
-      "scenario": "一層麵條或許能透露出烹調它的廚房裡的一個秘密。你原本期待的是一個有趣的秘密，而不是邀請你去調查陌生人的邀約。這條層面條的出現並不代表廚房裡的人同意成為你餐桌上的娛樂節目。",
+      "scenario": "你碗裡的一條麵可以告訴你，煮它的廚房裡發生過的一個秘密。你本來只想聽件趣事，卻可能因此知道陌生人不願公開的事。麵條願意開口，不代表廚房裡的人也同意成為餐桌上的話題。",
       "question": "你會聽嗎？",
       "twist": "它只知道八卦，不知道衛生問題。",
       "deeperQuestion": "好奇心是否足以構成侵犯隱私的理由？"
@@ -3110,7 +3110,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does a helpful effect matter more than the motive?",
     "zh": {
       "title": "拍手植物",
-      "scenario": "每當你出門，你的植物都會為你鼓掌。這掌聲總能幫你度過難熬的清晨。發現它自私的動機，挑戰了你一直以來的認知：真正有用的鼓勵必須來自那些和你一樣渴望得到它的人。",
+      "scenario": "你每次出門，盆栽都會鼓掌。這個小小的歡送，常常讓你比較有精神面對一天。後來你才發現，它只是希望獨佔房間。鼓勵曾經帶來的幫助沒有消失，但你對那份支持的理解變了。",
       "question": "你覺得這有幫助嗎？",
       "twist": "它只想獨佔這個房間。",
       "deeperQuestion": "有益的效果比動機更重要嗎？"
@@ -3119,18 +3119,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-funny-080",
     "category": "Funny",
-    "emoji": "🪿",
-    "title": "The Applause Button",
-    "scenario": "You can trigger applause whenever you enter a room.\n\nEveryone understands the mechanism, so nobody is actually deceived. Still, repeatedly requesting applause could make a celebration feel like a demand that others validate your presence.",
-    "question": "Would you use it?",
-    "twist": "Everyone knows you pressed the button yourself.",
-    "deeperQuestion": "Can openly manufactured celebration still feel meaningful?",
+    "emoji": "🏅",
+    "title": "A Contest Without a Winner",
+    "scenario": "Your friends hold a talent show, but nobody may award a “best” prize. Every performer must receive a specific, inventive award instead. One singer misses notes but remembers every lyric; a failed magician makes everyone laugh until they cry.",
+    "question": "Invent three awards that show you genuinely noticed what people did.",
+    "twist": "One performer says they actually wanted to know how their singing technique ranked.",
+    "deeperQuestion": "Can encouragement without ranking also offer useful feedback? When does comparison help?",
     "zh": {
-      "title": "掌聲按鈕",
-      "scenario": "你可以隨時進入房間，引發掌聲。每個人都明白其中的原理，所以沒有人會被蒙蔽。然而，一再要求掌聲可能會讓慶祝活動感覺像是在強迫別人認可你的存在。",
-      "question": "你會使用它嗎？",
-      "twist": "大家都知道是你自己按下了按鈕。",
-      "deeperQuestion": "公開製造的慶祝活動還能讓人感到有意義嗎？"
+      "title": "不准選冠軍的比賽",
+      "scenario": "朋友舉辦才藝比賽，規則卻是不准頒「最好」的獎，只能為每個人創作一個具體而有趣的獎名。有人唱歌走音但記得所有歌詞，有人魔術失敗卻讓大家笑得停不下來。",
+      "question": "你會頒哪三個獎？怎樣讓得獎的人知道你真的有留心？",
+      "twist": "一位參賽者說，他其實很想知道自己在唱歌技巧上排第幾。",
+      "deeperQuestion": "沒有排名的鼓勵，能否同時提供有用的回饋？甚麼時候比較是有幫助的？"
     }
   },
   {
@@ -3221,18 +3221,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-funny-086",
     "category": "Funny",
-    "emoji": "😂",
-    "title": "The Office Crown",
-    "scenario": "Your workplace rewards its kindest employee with a giant embarrassing crown.\n\nYou appreciate the recognition but dislike becoming a spectacle. Accepting for the sake of future winners would mean making the award's intended kindness more important than your actual experience of receiving it.",
-    "question": "Would you accept it?",
-    "twist": "Refusing would discourage the next winner.",
-    "deeperQuestion": "Should recognition respect the recipient's preferences?",
+    "emoji": "🦸",
+    "title": "Retired Superheroes Wanted",
+    "scenario": "You recruit three retired superheroes to run a neighborhood secondhand market. They can keep paper perfectly flat, understand printers’ complaints, or predict who will lack change in five minutes. All three want to lead the team, although the event budget is tiny.",
+    "question": "How would you divide the work, and where could the least impressive power save the day?",
+    "twist": "The biggest crisis is that every stallholder thinks someone else has a better position.",
+    "deeperQuestion": "Does being excellent at a task also make someone good at coordinating people?",
     "zh": {
-      "title": "辦公室皇冠",
-      "scenario": "你的公司會獎勵最善良的員工一頂巨大的、略顯尷尬的皇冠。你很感激這份認可，但不喜歡成為眾人矚目的焦點。為了未來的得獎者而接受皇冠，就代表你把獎項的初衷——善意——看得比你實際的感受更重要。",
-      "question": "你會接受嗎？",
-      "twist": "拒絕會打擊下一位得獎者的積極性。",
-      "deeperQuestion": "表揚應尊重受表揚者的意願？"
+      "title": "退休超能力招募會",
+      "scenario": "你招募三位退休超級英雄，任務只是辦好一場社區二手市集。候選人能讓紙張永遠平整、聽懂印表機的抱怨，或預知五分鐘後誰會找不到零錢。每個人都想當隊長。",
+      "question": "你會怎樣分工？最不起眼的能力會在哪個環節救場？",
+      "twist": "市集最嚴重的問題，是所有攤主都覺得自己的位置不夠好。",
+      "deeperQuestion": "專業能力出色的人，也一定適合協調其他人嗎？"
     }
   },
   {
@@ -3341,17 +3341,17 @@ export const questions: Question[] = [
     "id": "ponder-funny-093",
     "category": "Funny",
     "emoji": "🧀",
-    "title": "The Compliment Duel",
-    "scenario": "Enemies must settle disputes by exchanging increasingly sincere compliments.\n\nThe duel appears gentler than ordinary argument, so spectators assume nobody can be harmed. A skilled opponent can still make a compliment feel like an exact diagnosis of vulnerability.",
-    "question": "Would you support the rule?",
-    "twist": "Someone wins by exploiting the other's insecurity.",
-    "deeperQuestion": "Can a kind format conceal manipulation?",
+    "title": "The Citywide Banana Code",
+    "scenario": "You casually tell a friend, “The banana is ready.” A passerby takes it for a secret code. Within a day people whisper it in cafés, at bus stops, and in group chats, then nod knowingly. There is no scam, and nobody knows what it means.",
+    "question": "Would you explain the origin, watch it develop, or invite everyone to define it together? Why?",
+    "twist": "Three shops have independently adopted it to mean that umbrellas are available to borrow for free.",
+    "deeperQuestion": "Does a phrase belong to its first speaker or to the people who give it a shared use?",
     "zh": {
-      "title": "讚美之爭",
-      "scenario": "敵人必須透過互致越來越真誠的讚美來解決爭端。這種對決看起來比普通的爭論溫和得多，因此旁觀者認為不會有人受到傷害。然而，一個技藝高超的對手仍然可以將一句讚美解讀為對對手弱點的精準診斷。",
-      "question": "你會支持這項規定嗎？",
-      "twist": "有人利用他人的不安全感而獲勝。",
-      "deeperQuestion": "善意的表達方式，也可以掩蓋操控嗎？"
+      "title": "全城都誤會的暗號",
+      "scenario": "你隨口對朋友說「香蕉準備好了」，旁邊的人卻把它當成一個神秘活動的暗號。一天之內，咖啡店、巴士站和群組都有人低聲說這句話，還互相點頭。沒有騙局，也沒有人知道它代表甚麼。",
+      "question": "你會公開解釋、觀察它發展，還是邀請大家一起定義意思？為甚麼？",
+      "twist": "三家店已自發把這句話用作「今天可以免費借雨傘」的暗號。",
+      "deeperQuestion": "一句話的意思，屬於第一個說的人，還是共同使用它的人？"
     }
   },
   {
@@ -3484,7 +3484,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When should loyalty yield to greater need?",
     "zh": {
       "title": "空位",
-      "scenario": "你可以為朋友或素不相識的新來者預留最後一張庇護床位。你之前答應朋友要幫忙，但後來才知道只剩下最後一張床位了。信守承諾既能維繫你們的關係，又能優先考慮不那麼緊急的需求，而不是眼前的困境。",
+      "scenario": "避難中心只剩一個床位，你可以留給朋友，也可以交給素不相識的新來者。你早已答應幫朋友，當時卻不知道床位如此緊張。現在信守承諾，就可能讓一個更急需安頓的人繼續等待。",
       "question": "誰能得到它？",
       "twist": "你的朋友有一個不太舒服但安全的地方可以待著。",
       "deeperQuestion": "忠誠何時應該讓位給更大的需求？"
@@ -3501,7 +3501,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does unequal wealth change ownership?",
     "zh": {
       "title": "找到的錢包",
-      "scenario": "你在一個看起來很富有的錢包旁邊發現了現金。歸還現金可以維護你的誠實，但卻無法解決你自己的問題。你無法確定這種表面上的財富是否反映了失主的真實處境。",
+      "scenario": "你在一個錢包旁發現現金，從錢包裡的物品看來，失主似乎很富有。歸還能讓你問心無愧，卻無法解決自己眼前的財務困難。而且你也不確定，這些看起來昂貴的物品，能否代表失主的真實處境。",
       "question": "你會把所有東西都還回去嗎？",
       "twist": "你拖欠的房租等於裡面的現金。",
       "deeperQuestion": "財富不均會改變所有權嗎？"
@@ -3535,7 +3535,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does cooperation legitimize an unjust system?",
     "zh": {
       "title": "共同罰款",
-      "scenario": "全班都會受到懲罰，直到有人指出一個輕微的違規者。你知道是誰違反了規則，也不喜歡他/她的行為。如果挺身而出，就能結束集體的痛苦，同時也能讓權威透過集體壓力來達到目的。",
+      "scenario": "全班都會受到懲罰，直到有人指出一個輕微的違規者。你知道是誰違反了規則，也不喜歡對方的行為。如果挺身而出，就能結束集體的痛苦，同時也能讓權威透過集體壓力來達到目的。",
       "question": "你會指出那個人是誰嗎？",
       "twist": "懲罰本身顯然是不公平的。",
       "deeperQuestion": "配合一個不公義的制度，會不會讓它顯得合理？"
@@ -3552,7 +3552,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can a better moral rule fail through nonadoption?",
     "zh": {
       "title": "救援無人機",
-      "scenario": "你的救援無人機可以救主人，也可以拯救兩個陌生人。但如果事先不知道誰需要救援，你就得自己選擇規則。主人重視安全是可以理解的，而旁觀者絕對不會因為沒買就接受更低的保護。",
+      "scenario": "一架救援無人機遇到緊急情況時，可以優先救它的主人，或改為救兩名陌生人。你要在不知道誰會遇險之前，訂好運作規則。購買者想得到保障，路人則從未同意因為沒有購買無人機，就獲得較低的救援優先次序。",
       "question": "你認為救援無人機應該如何設定救援優先次序？",
       "twist": "沒有人會買一個不尊重主人的東西。",
       "deeperQuestion": "更好的道德規則會因為未被採納而失敗嗎？"
@@ -3654,7 +3654,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does transparency require unrestricted detail?",
     "zh": {
       "title": "危險的真相",
-      "scenario": "發布準確資訊既可以幫助公眾，也可能助長不法行為。該資料準確、重要，且一旦複製便無法找回。你必須區分以下兩點：一是讓人們充分了解問題以便做出判斷；二是僅僅因為你可以這樣做就公佈所有細節。",
+      "scenario": "你掌握一份重要而準確的資料，公開後能幫公眾了解問題，但部分細節也可能被用來作惡。資料一旦被複製，就很難收回。你要決定哪些內容是公眾作判斷所必需，哪些只是因為手上有，就想一併公開。",
       "question": "你會把所有內容都公佈出來嗎？",
       "twist": "即使是有限的版本也能讓大多數讀者有所了解。",
       "deeperQuestion": "透明度是否需要不受限制的細節？"
@@ -3790,7 +3790,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can appearances alone undermine trust?",
     "zh": {
       "title": "證人的禮物",
-      "scenario": "你曾經幫助過的人在你作證指控其行為之前，向你贈送了一份貴重禮物。你了解事實，並且相信你的判斷不會被收買。其他人無法核實你的這份信任，接受禮物可能會讓他們更難相信你的誠實見證。",
+      "scenario": "一位你曾幫助的人，在你即將就其行為作證之前，送來一份昂貴禮物。你清楚事實，也相信自己不會因此改變說法。但其他人無法知道你心裡的把握，收下禮物可能令原本真實的證詞也受到懷疑。",
       "question": "你願意接受嗎？",
       "twist": "你提供的證詞仍然完全誠實。",
       "deeperQuestion": "即使沒有實際偏袒，單是看起來有利益關係，也足以破壞信任嗎？"
@@ -3841,7 +3841,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should unused resources carry special obligations?",
     "zh": {
       "title": "空房子",
-      "scenario": "一棟空置的房子可以為居住在國外的家庭提供住所。這棟房子一直閒置，而這個家庭則輾轉於不同的臨時住所之間。你無需放棄自己的房產，因此你提出的解決方案更容易獲得支援。",
+      "scenario": "一間長期空置的房屋，可以暫時安置一個四處借住的家庭，而屋主一直住在海外。你想爭取讓他們入住，但房子並不屬於你。支持這個方案很容易，真正失去使用決定權的卻是另一個人。",
       "question": "你會讓他們進來嗎？",
       "twist": "即使沒有計劃使用，所有者也明確拒絕。",
       "deeperQuestion": "未使用的資源是否應承擔特殊義務？"
@@ -3885,17 +3885,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-026",
     "category": "Moral",
     "emoji": "⚖️",
-    "title": "The Lost Prize",
-    "scenario": "A judging error gives you a prize someone else earned.\n\nYou have already received congratulations and spent time imagining the opportunities the award brings. Correcting the record would cost something real, although keeping quiet would preserve an advantage you did not earn.",
-    "question": "Would you correct it?",
-    "twist": "The rightful winner has already moved away happily.",
-    "deeperQuestion": "Does justice depend on whether anyone feels harmed?",
+    "title": "Repair Now or Prevent Later?",
+    "scenario": "A community fund can repair ten leaking roofs immediately or improve drainage to reduce flood risk over several years. The first beneficiaries are identifiable; the second project’s benefits can only be estimated. You must propose a funding plan at a public meeting.",
+    "question": "How would you allocate the money, and what information would you request first?",
+    "twist": "New evidence suggests drainage has strong average benefits, but the most vulnerable households lie outside the improved area.",
+    "deeperQuestion": "How should average benefit, urgent need, and the worst possible outcome shape a decision together?",
     "zh": {
-      "title": "失落的獎品",
-      "scenario": "裁判的失誤讓你獲得了別人應得的獎項。你已經收到了祝賀，也花時間想著獎項帶來的種種機會。糾正記錄需要付出實實在在的代價，但保持沉默卻能讓你保住這份並非自己贏得的優勢。",
-      "question": "你會主動糾正這個錯誤嗎？",
-      "twist": "真正的贏家已經幸福地搬走了。",
-      "deeperQuestion": "正義是否取決於是否有人感到受傷？"
+      "title": "先救急，還是先預防？",
+      "scenario": "社區只有一筆資金，可以立刻修理十戶漏水的屋頂，或改善排水系統，降低未來幾年大範圍水浸的風險。前者的受益者就在眼前，後者的效果只能估算。你要在公開會議提出分配方案。",
+      "question": "你會如何分配？在決定前，最想補充哪一項資料？",
+      "twist": "新的資料顯示，排水改善的平均效益很高，但最容易受災的住戶不在改善範圍內。",
+      "deeperQuestion": "平均效益、最迫切的需要和最壞的結果，應如何一起影響決定？"
     }
   },
   {
@@ -3943,7 +3943,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can evidence gathering create a different wrong?",
     "zh": {
       "title": "秘密錄音",
-      "scenario": "錄音會造成嚴重的職場問題。你曾嘗試過常規的舉報管道，但因證據不足而被駁回。錄音能提供可信度，同時也能記錄下那些原本不希望自己的私下談話成為證據的人。",
+      "scenario": "錄下某次談話，可以證明一個嚴重的職場問題。你曾經循正式渠道反映，卻因證據不足而沒有結果。錄音能讓事情更有依據，但也可能收進其他人在不知情下說出的私人內容。",
       "question": "你會錄下來嗎？",
       "twist": "它也記錄了無關的私人揭露。",
       "deeperQuestion": "蒐集證據是否會造成另一種錯誤？"
@@ -3953,17 +3953,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-030",
     "category": "Moral",
     "emoji": "🚪",
-    "title": "The Unclaimed Credit",
-    "scenario": "Your manager assumes you solved a problem actually fixed by a quiet colleague.\n\nThe colleague rarely speaks in meetings and may never discover the misunderstanding. Staying silent would be easy because you would not need to invent a single false statement yourself.",
-    "question": "Would you correct them?",
-    "twist": "Your promotion depends on that impression.",
-    "deeperQuestion": "What does honesty cost when the stakes become personal?",
+    "title": "Rules Before Names",
+    "scenario": "A school asks candidates to propose selection criteria anonymously before revealing names and scores. You recommend cooperation as the main quality for a student representative. The strongest candidate under that rule turns out to be someone you dislike; your close friend excels at public speaking instead.",
+    "question": "Would you keep the rule or propose a change? What new reason could justify revising it?",
+    "twist": "The anonymous discussion shows that your friend also originally prioritized cooperation.",
+    "deeperQuestion": "When is changing a standard after seeing results genuine learning, and when is it favoritism?",
     "zh": {
-      "title": "被冒領的功勞",
-      "scenario": "你的經理誤以為你解決了一個問題，而實際上是某個沉默寡言的同事解決的。這位同事很少在會議上發言，可能永遠不會發現這個誤會。保持沉默很容易，因為你根本不需要自己編造任何謊言。",
-      "question": "你會向他們澄清嗎？",
-      "twist": "你的升遷取決於你給人的印象。",
-      "deeperQuestion": "當事關個人利益時，誠實的代價是什麼？"
+      "title": "誰先訂下標準？",
+      "scenario": "學校想評選學生代表，先請候選人匿名提出評分標準，再公開姓名和成績。你建議重視合作能力，結果發現最符合這個標準的人，正是你不太喜歡的同學；另一位好朋友則在公開演說方面特別出色。",
+      "question": "你會保留原來的標準，還是提出修改？甚麼新理由才足以支持改規則？",
+      "twist": "匿名討論的紀錄顯示，你的好朋友當初也支持合作能力優先。",
+      "deeperQuestion": "知道結果後才改變判準，甚麼時候是學會了更多，甚麼時候是偏袒？"
     }
   },
   {
@@ -4011,7 +4011,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is consistency valuable when it produces avoidable harm?",
     "zh": {
       "title": "不公平的規則",
-      "scenario": "一條原本有用的規則，卻因一個它從未打算涵蓋的特殊情況而造成損害。你參與了規則的設計，也明白一致性的重要性。如今，這個特殊情況迫使你解釋，這條規則的存在究竟是為了服務大眾，還是為了逃避艱難的判斷。",
+      "scenario": "一條通常合理的規則，在一個當初沒想到的特殊情況下，反而造成傷害。你參與過訂立規則，也明白一致執行的重要。如今你要解釋，應該為個別情況破例，還是維持大家原本可以預期的做法。",
       "question": "你是否允許例外？",
       "twist": "其他人也會要求類似的例外。",
       "deeperQuestion": "當一致性造成可避免的傷害時，它還有價值嗎？"
@@ -4028,7 +4028,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When is gratitude unfair to outsiders?",
     "zh": {
       "title": "家族企業",
-      "scenario": "你可以聘請一位合格的親戚，或是一位稍微優秀一些的陌生人。你感激那些在你幾乎無力回報時給予你幫助的人。而這位陌生人與你之間沒有類似的私人關係，因此他的資歷無法透過情感層面體現。",
+      "scenario": "你可以聘請一位符合要求的親戚，或一位條件稍好的陌生人。那位親戚曾在你困難時支持你，而這份工作對兩人都很重要。你要決定，自己私人欠下的恩情，應在一個對外開放的機會中佔多少分量。",
       "question": "誰能得到這份工作？",
       "twist": "你的親戚在你困難的時候支持你。",
       "deeperQuestion": "報答親人的恩情，在甚麼情況下會對外人不公平？"
@@ -4072,17 +4072,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-037",
     "category": "Moral",
     "emoji": "🌱",
-    "title": "The Selfish Donation",
-    "scenario": "Someone donates generously only for admiration.\n\nYou know the donation produced real benefits and do not want recipients to lose support. Still, praising the donor's character feels different from appreciating the help their money provided.",
-    "question": "Does it count as goodness?",
-    "twist": "An anonymous donor gives less but with sincere care.",
-    "deeperQuestion": "Should motives or outcomes matter more?",
+    "title": "Does Consent Expire?",
+    "scenario": "Years ago you agreed to a community study about transport. Researchers now want to reuse the answers to predict residents’ intentions to move. The aim still benefits the neighborhood, but differs from what you understood. Contacting everyone again would be difficult and might leave gaps.",
+    "question": "Would you require fresh consent, allow only anonymous use, or permit the new study? Where is the boundary?",
+    "twist": "Even without names, combining answers with public records could identify a few participants.",
+    "deeperQuestion": "How should an earlier agreement adapt when purposes, technology, and time change?",
     "zh": {
-      "title": "自私的捐贈",
-      "scenario": "有人慷慨捐贈，只是為了博取讚賞。你知道這筆捐款確實帶來了實際的好處，也不希望受助者因此失去支持。然而，讚揚捐贈者的人品與感謝他們捐款帶來的幫助，感覺截然不同。",
-      "question": "這算好事嗎？",
-      "twist": "一位匿名捐贈者捐贈較少，但心地善良。",
-      "deeperQuestion": "動機和結果哪個比較重要？"
+      "title": "同意有保存期限嗎？",
+      "scenario": "幾年前，你同意一個社區研究收集自己對交通的看法。現在研究團隊想把資料用來預測居民的搬遷意願，目的仍是改善社區，但和你當時理解的用途不同。重新聯絡所有人很費時，也未必聯絡得到。",
+      "question": "你會要求重新取得同意、只用匿名資料，還是允許延伸研究？界線在哪裡？",
+      "twist": "即使刪掉姓名，把資料和公開紀錄比對，仍可能推測出少數人的身分。",
+      "deeperQuestion": "一個原本合理的同意，應如何隨用途、技術和時間改變？"
     }
   },
   {
@@ -4096,7 +4096,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How should competing legitimate needs be balanced?",
     "zh": {
       "title": "噪音投訴",
-      "scenario": "鄰居為了準備唯一一次獎學金試鏡，大聲練習音樂。你既重視教育，也重視休息的基本需求。如果把問題簡單地歸結為專注與不寬容，就會忽略一個事實：兩位鄰居都難以改變自身處境。",
+      "scenario": "鄰居正大聲練習樂器，準備唯一一次爭取獎學金的演奏考試。另一位鄰居剛下夜班，需要白天睡覺。你同時理解機會和休息的重要，也知道雙方都不容易改時間，不能簡單把其中一方說成不體諒別人。",
       "question": "你會抱怨嗎？",
       "twist": "另一位鄰居上夜班後也需要白天睡覺。",
       "deeperQuestion": "如何平衡相互衝突的合法需求？"
@@ -4181,7 +4181,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Which kinds of investment should determine fairness?",
     "zh": {
       "title": "重複的門票",
-      "scenario": "由於出票錯誤，你和另一人可以同時認領一個座位。雙方均未造成錯誤，且均合理地依賴有效的機票。你的旅遊費用讓你感覺損失更大，但你無法證明你的索賠一開始就更有力。",
+      "scenario": "售票系統出錯，讓你和另一位觀眾拿到同一個座位的有效門票。誰也沒有做錯，你走了更遠的路，對方則更早預訂。大家都覺得自己放棄的代價比較大，卻沒有一個事先約好的原則可以依循。",
       "question": "誰應該保管它？",
       "twist": "你走得更遠；他們預訂得更早。",
       "deeperQuestion": "哪些類型的投資應該決定公平性？"
@@ -4266,7 +4266,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should contributions affect access to collective care?",
     "zh": {
       "title": "鄰里基金",
-      "scenario": "共同基金可以解決許多小問題，也可以幫助某個人渡過難關。人們支持該基金，是因為他們期望自己的貢獻能夠發揮作用。本案的緊急之處在於，它探討了互助究竟是透過參與購買的保險，還是對任何需要幫助之處的回應。",
+      "scenario": "社區共同基金可以處理很多人的小問題，或集中幫助一位陷入嚴重困境的居民。大家捐錢時，都希望自己的投入會有用。現在你們要釐清，這筆錢主要是互相分擔日常需要，還是優先幫助最急需的人。",
       "question": "它應該解決哪個問題？",
       "twist": "處境最艱難的人貢獻最少。",
       "deeperQuestion": "繳費是否應該影響獲得集體照護的機會？"
@@ -4378,17 +4378,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-055",
     "category": "Moral",
     "emoji": "🌍",
-    "title": "The Quiet Boycott",
-    "scenario": "You stop buying from an unethical company but never explain why.\n\nYour private choice is consistent with your values but unlikely to affect the company alone. Speaking publicly would increase your influence while inviting scrutiny and conflict you did not seek.",
-    "question": "Is that enough?",
-    "twist": "Publicly explaining could persuade others.",
-    "deeperQuestion": "Does acting rightly include trying to influence others?",
+    "title": "The Missing Votes",
+    "scenario": "A park vote favors adding a sports court. You discover that voting was online only, and some older residents who regularly use the park never heard about it. Work has not begun, but reopening the decision would delay everything and might produce the same result.",
+    "question": "Would you rerun the vote, add consultation, or proceed? What would count as an adequate remedy?",
+    "twist": "Some excluded residents also support the court; they simply do not want silence mistaken for having no opinion.",
+    "deeperQuestion": "If the outcome may be right but the process was unfair, what still needs repair?",
     "zh": {
-      "title": "靜默抵制",
-      "scenario": "你停止向一家不道德的公司購買商品，但從未解釋原因。你的個人選擇符合你的價值觀，但不太可能只憑一己之力影響公司。公開表態會擴大你的影響力，同時也會招致你並不想要的審查和衝突。",
-      "question": "這樣夠嗎？",
-      "twist": "公開解釋可以勸服他人。",
-      "deeperQuestion": "正確的行為是否包括試圖影響他人？"
+      "title": "被漏算的一票",
+      "scenario": "公園改建投票已結束，多數人支持增設球場。你發現投票只接受網上提交，經常在公園休息的部分長者並不知道有投票。工程尚未開始，但重辦會令所有安排延後，也可能得出相同結果。",
+      "question": "你會重辦投票、加開諮詢，還是照結果進行？怎樣判斷補救是否足夠？",
+      "twist": "有長者說自己也支持球場，只是不希望別人把他們的沉默當成沒有意見。",
+      "deeperQuestion": "一個結果可能正確，但產生它的過程不公平，仍然需要重來嗎？"
     }
   },
   {
@@ -4521,7 +4521,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does a small false impression require immediate correction?",
     "zh": {
       "title": "身分錯認",
-      "scenario": "一位陌生人感謝你代為感謝他人的善舉。陌生人的感激之情令人感動，貿然打斷會顯得尷尬。順其自然，或許能將他人的善意轉化為提升個人聲譽的故事。",
+      "scenario": "一位陌生人把你誤認成曾經幫助自己的人，真誠地向你道謝。你被這份感情打動，也怕打斷會讓場面尷尬。但如果不澄清，你就會無意間把別人的善意，變成自己得到的感激和好名聲。",
       "question": "你會向他們澄清嗎？",
       "twist": "他們情緒激動，無法進行長時間的解釋。",
       "deeperQuestion": "輕微的錯誤印象是否需要立即修正？"
@@ -4606,7 +4606,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does changed value alter an old obligation?",
     "zh": {
       "title": "被遺忘的物體",
-      "scenario": "借來的物品現在的價值遠高於借來時的價值。你珍愛這件物品，或許已經忘記它是藉來的。它價值的提升改變了你的感受，儘管最初的理解從未取決於它日後的價值。",
+      "scenario": "借來的物品現在的價值遠高於借來時的價值。你珍愛這件物品，或許已經忘記它是借來的。它價值的提升改變了你的感受，儘管最初的理解從未取決於它日後的價值。",
       "question": "你會把它歸還嗎？",
       "twist": "物品的主人已經忘記曾把它借給你。",
       "deeperQuestion": "借來的東西如今變得更有價值，會改變你原本歸還它的責任嗎？"
@@ -4633,17 +4633,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-070",
     "category": "Moral",
     "emoji": "🛟",
-    "title": "The Reputation Repair",
-    "scenario": "Someone has changed but asks you to delete your accurate old criticism.\n\nYour criticism was justified when written, and removing it may erase useful history. Leaving it unchanged risks presenting an old pattern as a current fact to people without context.",
-    "question": "Would you remove it?",
-    "twist": "New readers assume it describes their present behavior.",
-    "deeperQuestion": "Does truth need updating when people change?",
+    "title": "How Long Should a Review Last?",
+    "scenario": "You accurately criticized a shop’s treatment of staff two years ago. It now has a different owner, and workers report improvements, but your article still ranks prominently in searches. Deletion may erase history; leaving it unchanged may mislead current readers.",
+    "question": "Would you retain, remove, or update it, and who should supply evidence for an update?",
+    "twist": "Former staff want a record preserved, while current staff worry that lost business threatens their jobs.",
+    "deeperQuestion": "How can a public record preserve history while representing the present fairly?",
     "zh": {
-      "title": "聲譽修復",
-      "scenario": "有人改變了主意，卻要你刪除先前準確的批評意見。你當時的批評是合理的，刪除它可能會抹去有用的歷史資訊。保留原樣可能會讓不了解情況的人把舊模式當作現在的事實。",
-      "question": "你會把它移除嗎？",
-      "twist": "新讀者會認為它描述的是他們目前的行為。",
-      "deeperQuestion": "當人改變時，真理是否需要更新？"
+      "title": "舊評論要留多久？",
+      "scenario": "你曾如實公開批評一家小店對待員工的方式。兩年後，店主換人，員工也說工作環境改善了，但你的舊文章仍排在搜尋結果前列。刪掉可能讓過去被忘記，不改則可能誤導現在的讀者。",
+      "question": "你會保留、刪除，還是加上更新？更新應該由誰提供證據？",
+      "twist": "前員工希望留下紀錄，新員工則擔心文章令生意減少，影響自己的工作。",
+      "deeperQuestion": "公開紀錄應保護歷史、反映現況，還是同時做到兩者？怎樣才公平？"
     }
   },
   {
@@ -4708,7 +4708,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When does useful pricing become exploitation?",
     "zh": {
       "title": "價格飆升",
-      "scenario": "你擁有的物資在緊急情況下會變得稀缺。短缺導致對物資供應和運輸融資的實際需求。鼓勵高效分配的價格也可能將最需要但支付能力最低的人群排除在外。",
+      "scenario": "緊急情況令你持有的物資突然短缺。提高售價，可以支付額外運輸和補貨成本，但也可能讓最急需、最缺錢的人買不起。你要決定售價如何反映供應壓力，以及哪些人的需要不能只靠付款能力處理。",
       "question": "你會提高價格嗎？",
       "twist": "更高的價格將為更多的交付提供資金。",
       "deeperQuestion": "合理的定價何時會變成剝削？"
@@ -4922,17 +4922,17 @@ export const questions: Question[] = [
     "id": "ponder-moral-087",
     "category": "Moral",
     "emoji": "🧭",
-    "title": "The Empty Apology",
-    "scenario": "Someone apologizes perfectly but repeats the same behavior.\n\nYou hear real remorse and do not want to punish someone for difficulty they cannot immediately overcome. Accepting an apology, however, does not remove your need for a safer and more predictable relationship.",
-    "question": "Would you accept again?",
-    "twist": "They seem genuinely unable to change quickly.",
-    "deeperQuestion": "Does sincerity matter without reliable improvement?",
+    "title": "How Would You Verify an Apology?",
+    "scenario": "A community organization admits ignoring complaints and proposes three remedies: publish case progress, invite independent checks, or collect anonymous member ratings. It can initially fund only one, and members want more than a polished apology. You must recommend a first step.",
+    "question": "Which would you choose, and what evidence would show improvement after six months?",
+    "twist": "Anonymous scores improve, but fewer people seem willing to raise concerns.",
+    "deeperQuestion": "Can a better headline metric hide a worse situation? What signal would make you reconsider?",
     "zh": {
-      "title": "空洞的道歉",
-      "scenario": "有人道歉很真誠，但之後又重蹈覆轍。你聽出了對方的真心悔意，也不想因為對方暫時無法克服的困難而懲罰他們。然而，接受道歉並不能消除你對更安全、更可預測的關係的渴望。",
-      "question": "你還會接受嗎？",
-      "twist": "他們似乎真的無法迅速改變。",
-      "deeperQuestion": "如果沒有可靠的改進，誠意還有意義嗎？"
+      "title": "道歉之後，怎樣驗證？",
+      "scenario": "一個社區組織承認曾忽略成員投訴，並提出三個改善方法：公開所有處理進度、邀請外部人士檢查，或讓成員匿名評分。經費只足夠先做其中一項，大家都不想只聽到漂亮的道歉。",
+      "question": "你會先選哪項？半年後，用甚麼證據判斷它是否有效？",
+      "twist": "匿名評分開始變好，但願意提出投訴的人卻越來越少。",
+      "deeperQuestion": "表面指標改善，能否代表問題真的改善？甚麼訊號會令你重新懷疑？"
     }
   },
   {
@@ -4963,7 +4963,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should usefulness shield someone from accountability?",
     "zh": {
       "title": "重要的證人",
-      "scenario": "你目睹了一位幫助過許多人的人的不當行為。他的善行有目共睹且意義重大，而他的不當行為卻鮮為人知。保住他的職位或許能維持服務，但卻要讓受害者承擔服務中斷的代價。",
+      "scenario": "你目睹一位長期幫助許多人的人做了傷害別人的事。對方的貢獻有目共睹，但這次行為很少人知道。揭露可能令服務中斷；保持沉默，則可能讓受害者為了大家繼續受惠，而獨自承受代價。",
       "question": "你會檢舉嗎？",
       "twist": "移除它們會中斷這些有益的服務。",
       "deeperQuestion": "有用性是否應該使人免於承擔責任？"
@@ -5031,7 +5031,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How should collective benefits account for concentrated losses?",
     "zh": {
       "title": "共享街道",
-      "scenario": "步行區改善了公共生活，但給一些小型企業帶來了不便。大多數居民將獲得一個更安靜、更安全的聚會場所。受影響的企業原本是根據現有通道製定計劃，現在卻要承擔集中成本，而大多數企業只是在原則上討論過這些成本。",
+      "scenario": "步行區改善了公共生活，但給一些小型企業帶來了不便。大多數居民將獲得一個更安靜、更安全的聚會場所。受影響的企業原本是根據現有通道制定計劃，現在卻要承擔集中成本，而大多數企業只是在原則上討論過這些成本。",
       "question": "你會支持嗎？",
       "twist": "這些企業不容易搬遷。",
       "deeperQuestion": "集體利益應如何解釋集中損失？"
@@ -5116,7 +5116,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is acknowledgment necessary for justice?",
     "zh": {
       "title": "維修選擇",
-      "scenario": "有人提出實際的補救措施，但並未承認自己犯錯。所提出的補救措施能夠立即改善受害者的處境。堅持使用口頭承諾或許能夠維護尊嚴和公眾理解，但也可能導致實際幫助取決於對過去事件的共識。",
+      "scenario": "對方願意提供實際補救，卻不承認自己曾經做錯。接受能立即改善受影響者的處境；堅持先承認責任，則可能令大家更清楚事情為何發生。你要決定，補救是否一定需要共同接受同一個說法。",
       "question": "你會接受嗎？",
       "twist": "要求承認錯誤可能會導致談判破裂。",
       "deeperQuestion": "承認對於伸張正義是必要的嗎？"
@@ -5245,17 +5245,17 @@ export const questions: Question[] = [
     "id": "ponder-love-007",
     "category": "Love",
     "emoji": "🕰️",
-    "title": "The Friendship Test",
-    "scenario": "A partner asks you to stop seeing a friend they dislike.\n\nYou want your partner to feel secure without making friendship depend on approval. Agreeing once may be reassuring, but it also establishes how similar discomfort will be handled in the future.",
-    "question": "Would you agree?",
-    "twist": "Their discomfort is sincere but unsupported by wrongdoing.",
-    "deeperQuestion": "Where should reassurance end and control begin?",
+    "title": "A Pause During an Argument",
+    "scenario": "During conflict you want to resolve everything immediately, while your partner needs time to settle. Whenever someone leaves the room, the other feels more anxious. During a calm evening, you decide to agree on a pause that includes returning and staying in contact.",
+    "question": "What three agreements could prevent both avoidance and pressure to keep arguing?",
+    "twist": "After an agreed half hour, your partner returns and says they need longer, but offers a definite new time.",
+    "deeperQuestion": "What makes a communication agreement dependable: exact timing or continuing willingness to return?",
     "zh": {
-      "title": "友誼測試",
-      "scenario": "伴侶要求你停止與他/她不喜歡的朋友來往。你希望伴侶感到安心，但又不希望友誼的維繫取決於對方的同意。同意一次或許能讓人安心，但同時也決定了未來類似不適情況的處理方式。",
-      "question": "你同意嗎？",
-      "twist": "他們的不安是真誠的，但並沒有不當行為的支持。",
-      "deeperQuestion": "安撫應該止於何處，控制應該從何處開始？"
+      "title": "爭吵的暫停鍵",
+      "scenario": "你和伴侶一爭執，就會出現相反反應：你想立即說清楚，對方需要先冷靜。每次有人離開房間，另一人都更不安。你們決定在平靜時訂一個暫停方法，包括何時回來、怎樣保持聯絡。",
+      "question": "你會提議哪三條約定，讓暫停不會變成逃避，也不會逼人繼續爭論？",
+      "twist": "某次約好半小時後再談，對方回來說仍未準備好，但願意約一個更明確的時間。",
+      "deeperQuestion": "一段可靠的溝通安排，需要固定時間，還是持續表達願意回來？"
     }
   },
   {
@@ -5269,7 +5269,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does openness require reporting every temporary feeling?",
     "zh": {
       "title": "真誠的暗戀",
-      "scenario": "在一段穩定的戀愛關係中，你對某人產生了短暫的迷戀。你並不打算付諸行動，也希望這種感覺會自然消退。分享這段關係或許會維護你們之間關於坦誠相待的約定，但同時也會讓你因為這段從未付諸行動的感情而感到痛苦。",
+      "scenario": "你在一段穩定關係中，短暫地被另一個人吸引。你沒有打算採取行動，也相信感覺可能自然消退。告訴伴侶，或許符合你們坦誠相待的約定；但也可能把一段從未發展的心情，變成對方需要承受的不安。",
       "question": "你會提一下嗎？",
       "twist": "你的伴侶之前要求你完全誠實。",
       "deeperQuestion": "坦誠是否需要報告每一種暫時的感受？"
@@ -5320,7 +5320,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How should patience coexist with your own timeline?",
     "zh": {
       "title": "不同的節奏",
-      "scenario": "你已經準備好同居；你的伴侶還需要一年時間考慮。你不想在壓力下做出重要決定，但等待也會影響你的計畫。尊重他們的猶豫並不意味著你自己的願望應該擱置多久。",
+      "scenario": "你已經準備好同居，伴侶卻希望再等一年。你不想逼對方在壓力下作決定，但等待同樣會影響自己的計劃。尊重對方需要時間，並沒有直接回答另一個問題：你願意把自己的需要擱置多久？",
       "question": "你願意等嗎？",
       "twist": "他們無法承諾以後會有什麼感受。",
       "deeperQuestion": "如何將耐心與自己的時間安排並存？"
@@ -5371,7 +5371,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does comparison help you appreciate a chosen life?",
     "zh": {
       "title": "平行人生",
-      "scenario": "你可以看到伴侶沒有你也會擁有的幸福生活。你看到了一個幸福美滿、你深愛卻不在其中的人的形象。這個景象可能會加深你對選擇的理解，也可能讓你們的關係變成一場與無人能夠驗證的可能性的比較。",
+      "scenario": "你可以看見一個平行未來：伴侶沒有遇見你，仍然過得很幸福。你真心在乎那個人，卻不容易接受自己不在那段生活裡。這個畫面可能讓你更理解彼此的選擇，也可能讓現有關係不斷被拿來比較。",
       "question": "你會選擇看一看嗎？",
       "twist": "他們的另一個生活雖然不同，但並不明顯更好。",
       "deeperQuestion": "比較能幫助你更珍惜自己選擇的生活嗎？"
@@ -5388,7 +5388,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does trust grow through access or respected boundaries?",
     "zh": {
       "title": "共享密碼",
-      "scenario": "你的伴侶會把所有密碼都當作信任的證明。你相信誠實，但也需要空間來保留私人想法和他人的秘密。分享一切或許能帶來安心感，但卻無法教導雙方如何面對日常的不確定性。",
+      "scenario": "伴侶主動把所有密碼交給你，說這代表完全信任。你相信誠實，也需要保留自己的想法，以及朋友交託的秘密。你要決定是否同樣交出密碼，並向對方解釋，私隱和隱瞞對你來說有何不同。",
       "question": "你會同樣把自己的密碼交給對方嗎？",
       "twist": "他們認為拒絕意味著你在隱瞞什麼。",
       "deeperQuestion": "信任是透過准入還是透過尊重界線而建立的？"
@@ -5398,17 +5398,17 @@ export const questions: Question[] = [
     "id": "ponder-love-016",
     "category": "Love",
     "emoji": "🫶",
-    "title": "The Care Calendar",
-    "scenario": "You divide emotional support into equal scheduled turns.\n\nThe schedule was meant to protect both people from feeling overlooked. When life becomes uneven, following it precisely may preserve equality on paper while missing the actual need in front of you.",
-    "question": "Would you try it?",
-    "twist": "One person's difficult month requires much more support.",
-    "deeperQuestion": "Does fairness in love need equal amounts?",
+    "title": "The Invisible Chore List",
+    "scenario": "You and your partner think chores are evenly divided. Yet you track supplies, family birthdays, and repair appointments, while they do most visible cleaning. Both feel exhausted and unseen. You agree to examine the workload without treating each other as opponents.",
+    "question": "How would you make the work visible without turning the conversation into scorekeeping?",
+    "twist": "Several standards you quietly maintain turn out to be things your partner does not think either of you needs to do.",
+    "deeperQuestion": "Before dividing work fairly, should you decide which work matters? How does owning a task differ from helping?",
     "zh": {
-      "title": "關懷日程表",
-      "scenario": "你將情緒支持分成若干等份，並依照計畫輪流給予。這樣的安排是為了避免雙方都感到被忽視。然而，當生活變得不平衡時，嚴格按照計畫執行或許能在表面上維持平等，卻可能忽略了眼前的實際需求。",
-      "question": "你會嘗試嗎？",
-      "twist": "一個人的艱難月份需要更多的支持。",
-      "deeperQuestion": "愛情中的公平需要相等嗎？"
+      "title": "看不見的家務清單",
+      "scenario": "你和伴侶覺得家務已經平均分配，但你總記得日用品快用完、家人生日和維修預約，對方則完成了大部分看得見的清潔工作。兩人都很累，也都覺得自己的付出沒有被看見。",
+      "question": "你會怎樣一起盤點工作，而不把對話變成互相算帳？",
+      "twist": "盤點後發現，有幾項你一直默默承擔的標準，其實對方並不認為有必要維持。",
+      "deeperQuestion": "公平分工之前，是否要先協商哪些工作值得做？「負責」和「幫忙」差在哪裡？"
     }
   },
   {
@@ -5558,7 +5558,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can a shared identity preserve separate histories?",
     "zh": {
       "title": "名稱選擇",
-      "scenario": "雙方都不想在婚後更改姓氏。起初，這只是一個小小的決定，但當雙方家庭解釋各自姓氏背後的歷史時，這個決定就變得意義重大。共同做出這個決定，意味著要決定是否必須在外人看來，婚姻的統一性必須以同樣的方式展現出來。",
+      "scenario": "你和伴侶婚後都不想改姓。原本看似簡單的選擇，隨著雙方家人講起姓氏背後的歷史，變得更有分量。你們要討論，建立共同的家是否需要同一個名字，以及如何保留各自的來處。",
       "question": "你會選擇什麼？",
       "twist": "這兩個家族都對自己的名字賦予了深刻的意義。",
       "deeperQuestion": "建立共同身分的同時，能否保留彼此各自的過去？"
@@ -5687,17 +5687,17 @@ export const questions: Question[] = [
     "id": "ponder-love-033",
     "category": "Love",
     "emoji": "🧵",
-    "title": "The Second Introduction",
-    "scenario": "You meet your partner again with no memory of your shared years.\n\nThe relationship contains trust that a first meeting could not reproduce. Asking whether you would choose again may reveal how much love depends on discovery, familiarity, and the changes people help each other make.",
-    "question": "Would you choose them today?",
-    "twist": "You have both changed since first meeting.",
-    "deeperQuestion": "Is commitment to a person or a shared history?",
+    "title": "Intimacy Across Languages",
+    "scenario": "You and your partner are most comfortable in different languages. Everyday conversation works, but childhood stories and hurt feelings bring each of you back to your first language. Some translations sound harsher than intended; others lose the feeling entirely.",
+    "question": "Would you use stories, metaphors, writing, or patient questions? Describe a feeling that is hard to translate.",
+    "twist": "One day, a short and imperfectly pronounced reassurance in your language moves you more than a fluent speech.",
+    "deeperQuestion": "Does understanding come from accuracy or the effort to enter another person’s world? What if they conflict?",
     "zh": {
-      "title": "重新認識你",
-      "scenario": "你與伴侶再次相遇，卻失去了共同生活的記憶。這段關係中蘊含著初次相遇無法複製的信任。問問自己是否還會再次選擇對方，或許能揭示愛情在多大程度上依賴探索、熟悉以及彼此幫助帶來的改變。",
-      "question": "你會在今天選擇他們嗎？",
-      "twist": "你們兩個自從第一次見面以來都變了。",
-      "deeperQuestion": "承諾是對一個人的承諾，還是對共同歷史的承諾？"
+      "title": "不同語言的親密",
+      "scenario": "你和伴侶最習慣的語言不同。日常聊天沒有問題，但談到童年或委屈時，你們都會轉回自己的母語，意思便不容易說清楚。有些詞，翻譯後聽起來太重，也有些顯得太輕。",
+      "question": "你會用故事、比喻、文字，還是請對方慢慢問？先示範一個難翻譯的感受。",
+      "twist": "有一天，對方用你的語言說了一句很短、發音也不完美的安慰，你卻比平常更感動。",
+      "deeperQuestion": "理解來自說得準確，還是願意走近對方的世界？兩者衝突時怎麼辦？"
     }
   },
   {
@@ -5711,7 +5711,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can love overcome fundamentally incompatible futures?",
     "zh": {
       "title": "未來的孩子",
-      "scenario": "你和伴侶在是否要孩子的問題上有分歧。兩種可能的未來都至關重要，無法透過做出較小的妥協來兼顧。放棄希望或許能暫時延緩悲傷的到來，卻也意味著默默地期待其中一方變成他們不願成為的人。",
+      "scenario": "你和伴侶對是否成為父母有根本分歧。兩種未來都對當事人非常重要，也很難用小小的折衷來兼顧。繼續抱著「以後可能會改變」的希望，能暫時延後痛苦，卻也可能讓其中一方等待另一方不願成為的人。",
       "question": "你們會繼續在一起嗎？",
       "twist": "雙方都不認為對方的偏好會改變。",
       "deeperQuestion": "愛能克服本質上不相容的未來嗎？"
@@ -5813,7 +5813,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should a relationship's form follow outsiders' expectations?",
     "zh": {
       "title": "愛的距離",
-      "scenario": "你們分居兩地，卻感覺彼此更親近。各自獨立的住所讓你們見面時都能更專注。這種安排私下運作良好，但外界的反覆評判讓你質疑這是否算得上足夠認真的共同生活。",
+      "scenario": "你和伴侶分開居住，卻感覺彼此更親近。各自獨立的住所讓你們見面時都能更專注。這種安排私下運作良好，但外界的反覆評判讓你質疑這是否算得上足夠認真的共同生活。",
       "question": "你會保留分居的住所嗎？",
       "twist": "其他人則認為你在逃避承諾。",
       "deeperQuestion": "一段關係的形式是否應該符合外界的期望？"
@@ -5898,7 +5898,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can useful honesty ignore how comparison feels?",
     "zh": {
       "title": "不公平比較",
-      "scenario": "你的伴侶稱讚你的前任在某方面做得比你好。你可以承認這種比較屬實，但同時也要質疑對方為何要這麼做。其實，對方完全可以提出更合理的要求，而不需要讓你覺得自己的價值取決於是否比過去的人做得更好。",
+      "scenario": "伴侶提到，自己的前任在某件事上做得比你好。你承認比較可能屬實，卻仍然不舒服。你不確定對方是想表達一項需要，還是把你放進了不必要的競爭；同一個要求，也許可以用不同方式說出來。",
       "question": "你願意討論一下嗎？",
       "twist": "此觀察是準確的，並非意在傷害。",
       "deeperQuestion": "有用的誠實能否忽略比較帶來的感受？"
@@ -5925,17 +5925,17 @@ export const questions: Question[] = [
     "id": "ponder-love-047",
     "category": "Love",
     "emoji": "🌙",
-    "title": "The Forgotten Date",
-    "scenario": "You miss a planned date while supporting a distressed friend.\n\nYour friend genuinely needed support, and you would make time for them again. The missed message makes the issue less about competing loyalties than whether your partner had enough information to understand what was happening.",
-    "question": "Would you expect understanding?",
-    "twist": "You forgot to tell your partner you would be late.",
-    "deeperQuestion": "Can good intentions excuse poor communication?",
+    "title": "An Agreement for Unexpected Interruptions",
+    "scenario": "You stay with a distressed friend, miss dinner with your partner, and forget to send a message. Your partner supports helping but dislikes being left waiting. You want an agreement that respects both relationships when another unexpected interruption occurs.",
+    "question": "What specific check-in and repair plan would you suggest, and when should exceptions apply?",
+    "twist": "Next time your partner is the one who leaves unexpectedly, and you find the disruption harder than you expected.",
+    "deeperQuestion": "Do you allow yourself the same flexibility you allow someone else? How could you avoid moving the standard?",
     "zh": {
-      "title": "忘記了的約會",
-      "scenario": "你為了陪伴一位情緒低落的朋友而錯過了預定的約會。你的朋友確實需要幫助，你也表示會再抽空陪伴她。這次錯過的訊息與其說是忠誠衝突的問題，不如說是你的伴侶是否掌握了足夠的資訊來理解發生了什麼事。",
-      "question": "你期望得到理解嗎？",
-      "twist": "你忘記告訴你的伴侶你會遲到。",
-      "deeperQuestion": "良好的意願可以成為溝通不良的藉口嗎？"
+      "title": "突發事情的聯絡約定",
+      "scenario": "你臨時留下陪一位情緒低落的朋友，錯過了與伴侶的晚餐，也忘記通知。伴侶支持你幫忙，卻不想被放著等。你希望之後遇到類似事情，不必在照顧朋友和尊重伴侶之間倉促二選一。",
+      "question": "你會提出甚麼具體的聯絡與補救方法？哪些情況可以例外？",
+      "twist": "下次換成伴侶臨時離開，你才發現自己比想像中更介意被打亂安排。",
+      "deeperQuestion": "我們給自己和對方的彈性，是否一樣？怎樣避免只在輪到自己時才改標準？"
     }
   },
   {
@@ -5949,7 +5949,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When does financial help become control over a shared milestone?",
     "zh": {
       "title": "婚禮預算",
-      "scenario": "你想要一個小型婚禮；你的伴侶夢想著一場盛大的慶祝活動。這筆錢可以讓一場美好的慶典成為可能，而無需背負債務。但接受這筆錢也可能意味著，其他人的喜好會成為你們共同期盼的婚禮的附加條件。",
+      "scenario": "你想要一個小型婚禮；你的伴侶夢想著一場盛大的慶祝活動。對方家人願意提供的資助，可以讓一場美好的慶典成為可能，而無需背負債務。但接受這筆錢也可能意味著，其他人的喜好會成為你們共同期盼的婚禮的附加條件。",
       "question": "你會在哪些方面做出妥協？",
       "twist": "他們家提供錢，但附加了嚴格的條件。",
       "deeperQuestion": "何時經濟援助會變成對共同里程碑的控制？"
@@ -6153,7 +6153,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can revisiting something beautiful slowly consume it?",
     "zh": {
       "title": "最後一支舞",
-      "scenario": "你可以重溫與一位已故之人共舞的時光。你之所以記得那支舞，部分原因在於它只發生過一次，無法長久留存。重溫它能帶來慰藉，同時也改變了你與這段記憶的關係，從曾經的回憶變成瞭如今的記憶。",
+      "scenario": "你可以重新經歷一次，與一位已不再見面的人共舞的時光。這支舞之所以珍貴，部分原因是它曾經只有一次。再次回去或許能帶來安慰，也會讓原本留在記憶裡的相遇，變成可以反覆造訪的地方。",
       "question": "你會回來嗎？",
       "twist": "之後，每次回憶，記憶都會變得不那麼清晰。",
       "deeperQuestion": "重溫美好的事物會慢慢將其吞噬嗎？"
@@ -6238,7 +6238,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can an unrequested gift create a legitimate debt?",
     "zh": {
       "title": "你沒要求的犧牲",
-      "scenario": "你的伴侶為了你放棄了一個夢想，卻從未與你商量。如果事先徵求你的意見，你或許會支持另一種安排。當未經商量便做出的犧牲，日後卻演變成對你們從未同意交換的決定提出要求時，感激之情便會變得複雜起來。",
+      "scenario": "伴侶沒有先和你商量，就為你放棄了一個長久的夢想。如果早點知道，你可能會提出另一種安排。你感激這份心意，卻不確定，是否因此欠下一次同等的犧牲，尤其當你從未同意用這種方式交換未來。",
       "question": "你會心存感激嗎？",
       "twist": "後來，對方期待你作出同等程度的犧牲。",
       "deeperQuestion": "一份你沒有要求的犧牲，能合理地變成你必須償還的人情嗎？"
@@ -6272,7 +6272,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Must one relationship meet every emotional need?",
     "zh": {
       "title": "最愛的人",
-      "scenario": "你的伴侶坦言，你並不是他們最喜歡與之相處的人。這並非有意冒犯，你也能感受到其中的善意。然而，你仍然需要思考，光是被深深信任是否足夠，畢竟你曾幻想自己是對方各方面最寵愛的人。",
+      "scenario": "伴侶坦言，和你相處並不是最有趣的，但你是自己最信任的人。你知道這句話並非想傷害你，仍然覺得失落。你原本期待自己在對方心裡各方面都無可取代，如今要分清楚，被愛是否一定要等於每一項都排第一。",
       "question": "這樣會令你感到受傷嗎？",
       "twist": "他們說你是他們最信任的人。",
       "deeperQuestion": "一段感情必須滿足所有的情感需求嗎？"
@@ -6289,7 +6289,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can the same shared moment meet only one person's needs?",
     "zh": {
       "title": "寂靜的夜晚",
-      "scenario": "你們共度了一個夜晚，彼此沒有說話，卻感到很滿足。你們享受著無需刻意交談就能共享空間的輕鬆自在。你的伴侶需要更多主動的關注，因此，這只是體驗上的差異，而非證明其中一方冷漠無情。",
+      "scenario": "你和伴侶安靜地共度一個晚上，沒有太多交談，你卻很滿足。你喜歡不用刻意找話題，也能舒服地待在同一個空間。伴侶的感受可能不同：對方期待更多主動關注，並不會自動把安靜理解成親密。",
       "question": "你會把這個安靜的夜晚視為有品質的相處時間嗎？",
       "twist": "你的伴侶會覺得與你疏遠了。",
       "deeperQuestion": "同一個共享時刻能否只滿足一個人的需求？"
@@ -6333,17 +6333,17 @@ export const questions: Question[] = [
     "id": "ponder-love-071",
     "category": "Love",
     "emoji": "🌙",
-    "title": "The Uncomfortable Question",
-    "scenario": "Your partner asks whether you would date them if you met today.\n\nYou are committed to the relationship you have, including everything built over time. The hypothetical asks for certainty about a different situation in which much of that knowledge would not exist.",
-    "question": "Would you answer without hesitation?",
-    "twist": "Your honest answer is that you cannot know.",
-    "deeperQuestion": "Can uncertainty coexist with wholehearted commitment?",
+    "title": "Two Sketches of Retirement",
+    "scenario": "You and your partner draw ideal retirement days. Yours contains neighbors, friends, and regular activities; theirs shows a quiet cabin, long journeys, and few appointments. You assumed you shared a future, but had never discussed what an ordinary day would actually feel like.",
+    "question": "What three questions would distinguish essential needs from the particular images used to express them?",
+    "twist": "The cabin turns out to represent less pressure, not distance from friends.",
+    "deeperQuestion": "When planning together, how can you avoid reading too much into someone’s first picture of the future?",
     "zh": {
-      "title": "令人不安的問題",
-      "scenario": "你的伴侶問你，如果今天見面，你會不會和他/她約會。你對你們的關係很認真，包括你們共同建立的一切。這個假設性問題要求你對另一種情況做出肯定的判斷，而這種情況下，很多資訊你都無法取得。",
-      "question": "你會毫不猶豫地回答嗎？",
-      "twist": "你誠實的回答是你無法知道。",
-      "deeperQuestion": "不確定性能否與全心的投入並存？"
+      "title": "兩張退休草圖",
+      "scenario": "你和伴侶各畫一張理想中的退休生活：你的畫裡有熱鬧社區、朋友和固定活動；對方畫的是安靜小屋、長途旅行和很少的日程。你們一直以為對未來有共識，卻從未談到一天會怎樣過。",
+      "question": "你會先問對方哪三個問題，分辨哪些是核心需要，哪些只是想像中的形式？",
+      "twist": "你發現對方畫小屋，是想少一點壓力，並不是想遠離朋友。",
+      "deeperQuestion": "共同規劃未來時，怎樣避免對一個畫面作出太多假設？"
     }
   },
   {
@@ -6391,7 +6391,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How can patience avoid becoming self-abandonment?",
     "zh": {
       "title": "一再延後的期限",
-      "scenario": "你的伴侶不斷推遲承諾，並要求你等待。你明白，準備工作無法強求。設定一個最後期限可以讓你更清楚地了解自己的底線，而無需強求對方在某個特定日期前產生某種感受。",
+      "scenario": "伴侶一直延後一個重要承諾，同時希望你繼續等下去。你理解準備好不能勉強，但自己的時間和計劃也在改變。訂下期限可能是為了說清楚自己能接受甚麼，而不一定是要求對方到時必須有某種感覺。",
       "question": "你會為這件事訂下一個期限嗎？",
       "twist": "他們的不確定性是真誠的，而不是策略性的。",
       "deeperQuestion": "如何避免耐心變成自我放棄？"
@@ -6520,17 +6520,17 @@ export const questions: Question[] = [
     "id": "ponder-love-082",
     "category": "Love",
     "emoji": "🫖",
-    "title": "The Quiet Pride",
-    "scenario": "Your partner celebrates your successes privately but never publicly.\n\nPrivate celebrations are thoughtful and consistent, so the care itself is not in doubt. Your wish for public acknowledgment may concern being recognized as part of their life rather than simply being posted about.",
-    "question": "Would you ask for public acknowledgment?",
-    "twist": "They dislike sharing anything personal online.",
-    "deeperQuestion": "Does being proud require being visible?",
+    "title": "Should “Us” Be Public?",
+    "scenario": "Your partner wants to announce your relationship online; you normally keep private life among people you know. They worry about being hidden, while you dread questions from relatives and colleagues. Neither of you intends to deny the relationship or conceal another partner.",
+    "question": "How would you distinguish acknowledgment from disclosure and propose a workable compromise?",
+    "twist": "You suggest introductions to important people, but learn that your partner is hurt mainly because you never initiate taking a photo together.",
+    "deeperQuestion": "What different needs can sit behind the same request, and how would you ask without assuming the answer?",
     "zh": {
-      "title": "靜默的驕傲",
-      "scenario": "你的伴侶會私下慶祝你的成功，但從不公開慶祝。這種私下的慶祝方式體貼周到、始終如一，所以他們對你的關心毋庸置疑。你希望得到公開認可，或許是因為你希望被認可為他們生活的一部分，而不僅僅是被發佈在社群媒體上。",
-      "question": "你會要求公開表揚嗎？",
-      "twist": "他們不喜歡在網路上分享任何個人資訊。",
-      "deeperQuestion": "為你感到驕傲，是否一定要公開表達？"
+      "title": "要不要公開「我們」？",
+      "scenario": "伴侶想在社交平台公開你們的關係，你則習慣把私生活留給熟人。對方擔心自己像被藏起來，你擔心公開後會收到家人和同事的追問。你們都沒有打算否認這段關係。",
+      "question": "你會怎樣區分「承認彼此」和「公開細節」？提出一個雙方都能接受的做法。",
+      "twist": "你提出先向重要的人介紹伴侶，對方卻說自己在意的其實是你從未主動合照。",
+      "deeperQuestion": "同一個要求背後，可能藏著哪些不同需要？怎樣問才不會先替對方下結論？"
     }
   },
   {
@@ -6595,7 +6595,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can emotional repair be scheduled fairly?",
     "zh": {
       "title": "原諒的時鐘",
-      "scenario": "你的伴侶想知道你究竟何時才能不再感到受傷。你希望這段關係繼續發展，並認可對方的努力。一個承諾的期限既能讓他們安心，又能讓你有機會在真正釋懷之前先療癒傷痛。",
+      "scenario": "伴侶想知道，究竟再過多久，你才不會為之前的事受傷。你看到對方已努力改變，也想讓關係繼續。給一個明確日期能讓對方安心，卻也可能迫使你在尚未復原時，表現得像已經放下。",
       "question": "你會給出明確的時間表嗎？",
       "twist": "他們真心實意地改變了自己的行為。",
       "deeperQuestion": "情緒修復能否公平地安排？"
@@ -6663,7 +6663,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does accepting an apology require renewed access?",
     "zh": {
       "title": "意想不到的道歉",
-      "scenario": "一位昔日好友在多年沈默後向你道歉。道歉中承認了你曾經需要他們理解的事情，但你的生活如今已不再依賴這些理解。你可以欣賞他們的成長，而無需確定重拾親密關係是否對你有益。",
+      "scenario": "一位昔日好友在多年沉默後向你道歉。道歉中承認了你曾經需要他們理解的事情，但你的生活如今已不再依賴這些理解。你可以欣賞他們的成長，而無需確定重拾親密關係是否對你有益。",
       "question": "你會重新聯絡對方嗎？",
       "twist": "沒有他們，你已經感到平靜了。",
       "deeperQuestion": "接受對方的道歉，是否代表必須重新讓對方走進你的生活？"
@@ -7003,7 +7003,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does an origin determine a life's worth?",
     "zh": {
       "title": "空虛的宇宙",
-      "scenario": "你會明白，人性的存在並非出於刻意安排，而是出於偶然。你依然能夠感知善意、苦難、美好，以及自身行為的影響。改變的是，你用來解釋這些經驗為何如此重要的宏大敘事。",
+      "scenario": "你得知，人類的存在源自偶然，沒有任何事先安排好的宇宙計劃。善意、痛苦、美和你的選擇仍然一樣真實。改變的是那個用來解釋一切為何重要的大故事，你需要重新想想，沒有預定目的是否等於沒有意義。",
       "question": "你的優先事項會改變嗎？",
       "twist": "你的人際關係和能力都不會改變。",
       "deeperQuestion": "出身決定生命的價值嗎？"
@@ -7030,17 +7030,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-013",
     "category": "Deep",
     "emoji": "🗝️",
-    "title": "The Unremembered Kindness",
-    "scenario": "You helped someone profoundly but they remember a different person doing it.\n\nYou do not need repayment, yet being replaced in the story feels unexpectedly painful. The situation separates the benefit of helping from the identity you hoped that act would establish.",
-    "question": "Would you correct them?",
-    "twist": "Their gratitude would not change the outcome.",
-    "deeperQuestion": "Does moral worth require accurate recognition?",
+    "title": "How Would You Admit Uncertainty?",
+    "scenario": "You state a view confidently during a discussion, and people begin making plans around it. Later you realize the supporting evidence is weaker than you thought, although nothing proves the conclusion false. Revising your position may make you appear inconsistent.",
+    "question": "How would you communicate the uncertainty? Would you change your conclusion or only your confidence?",
+    "twist": "A friend says your willingness to revise your confidence makes your other careful judgments more trustworthy.",
+    "deeperQuestion": "How far apart should belief and certainty be? What would genuinely change your mind?",
     "zh": {
-      "title": "被遺忘的善意",
-      "scenario": "你曾經給予某人莫大的幫助，但他們記得的卻是另一個人。你並不需要回報，然而在故事中被取代卻讓你感到意想不到的痛苦。這種情況將助人帶來的益處與你希望透過此舉建立的認同割裂開來。",
-      "question": "你會向他們澄清嗎？",
-      "twist": "他們的感激之情並不會改變結果。",
-      "deeperQuestion": "道德價值是否需要準確的認知？"
+      "title": "你願意怎樣承認不知道？",
+      "scenario": "你在一場討論裡提出了很有信心的觀點，大家也開始依此作決定。回家後你發現，支持它的資料比想像中薄弱，但暫時沒有證據證明它錯。現在改口，可能讓人覺得你反覆不定。",
+      "question": "你會怎樣向大家表達新的不確定性？你會改變結論，還是只降低信心？",
+      "twist": "一位朋友說，你願意修正信心的程度，反而令他更相信你其他謹慎的判斷。",
+      "deeperQuestion": "「我相信」和「我確定」應該差多遠？甚麼會令你真正改變想法？"
     }
   },
   {
@@ -7054,7 +7054,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What distinguishes understanding from convincing performance?",
     "zh": {
       "title": "思想副本",
-      "scenario": "一台機器不需要任何內在經驗就能複製你的想法。它能預測你的反應並解釋原因，卻堅持沒有人體驗過它的答案。它的實用性使得缺失的內在生活難以驗證或被輕易否定。",
+      "scenario": "一台機器可以重現你的思考，準確預測反應，也能清楚解釋理由，但它沒有任何主觀感受。旁人覺得它非常理解你。你卻要判斷，一個表現得像在理解、內裡卻沒有體驗的系統，是否真的算理解。",
       "question": "你認為這份思想副本真的理解你嗎？",
       "twist": "它比你自己更能解釋你的理由。",
       "deeperQuestion": "理解與令人信服的表現有何不同？"
@@ -7071,7 +7071,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can complete knowledge tell you how to live?",
     "zh": {
       "title": "無盡之書",
-      "scenario": "一本書包含了關於你人生的所有真實陳述。你可以從中找到困擾你多年的疑惑。但是，關於已經發生和將要發生的事情的事實，或許會讓你對什麼才真正值得你關注這個問題感到困惑。",
+      "scenario": "一本書包含了關於你人生的所有真實陳述。你可以從中找到那些困擾你多年的疑惑的答案。但是，關於已經發生和將要發生的事情的事實，或許會讓你對什麼才真正值得你關注這個問題感到困惑。",
       "question": "你會讀嗎？",
       "twist": "它沒有說明你應該重視什麼。",
       "deeperQuestion": "完全的知識能告訴你如何生活嗎？"
@@ -7224,7 +7224,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What makes an experience count as real?",
     "zh": {
       "title": "同一個夢",
-      "scenario": "每個人都會經歷一個相同的夢境，這個夢境比現實生活更真實。人們在夢境和現實中都會建構記憶、建立關係並做出解釋，而且從本質上看，兩者都顯得自然而然。要選擇一個作為主要夢境，需要的不僅僅是夢境體驗的真實可信度。",
+      "scenario": "每個人都做同一個夢，而且夢中的生活感覺比清醒時更真實。兩個世界都有連續的記憶、人際關係和看似合理的解釋。你不能只靠「感覺很真」來判斷，卻仍要決定以哪個世界作為生活的主要依據。",
       "question": "你會相信哪個現實？",
       "twist": "夢境世界也包含明顯的科學證據。",
       "deeperQuestion": "什麼因素決定了某種經驗是否真實？"
@@ -7258,7 +7258,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Which version of you should guide present choices?",
     "zh": {
       "title": "更好的陌生人",
-      "scenario": "未來的你擁有一些你現在所不認同的價值觀。你不能因為未來的你記得你現在在乎的東西就認為他們不了解情況。支持他們的存在意味著允許他們成長，而這種成長從你現在的角度來看可能意味著背叛。",
+      "scenario": "未來的你擁有一些現在的你無法認同的價值觀。對方記得你目前在乎的一切，因此不能簡單說是不了解你的想法。支持那個未來成為現實，可能意味著接受一種從現在看來很像背叛自己的成長。",
       "question": "你會幫助那個更好的自己成為現實嗎？",
       "twist": "他們會帶著同情心去記住你現在的價值觀。",
       "deeperQuestion": "應該由哪一個版本的你，來指引現在的選擇？"
@@ -7277,7 +7277,7 @@ export const questions: Question[] = [
       "title": "工作的結束",
       "scenario": "機器滿足了所有物質需求，使有薪工作不再必要。你擺脫了經濟壓力，但努力與社會認可之間的傳統連結仍然存在。建構有意義的一天或許需要你將有益的活動與透過就業來證明自身價值的需求區分開來。",
       "question": "什麼能為你的生活帶來結構？",
-      "twist": "聲望仍取決於看起來是否有生產力。",
+      "twist": "聲望仍取決於看起來是否有工作產出。",
       "deeperQuestion": "目的是否需要被需要？"
     }
   },
@@ -7411,7 +7411,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does shared information eliminate separate selves?",
     "zh": {
       "title": "共享思維",
-      "scenario": "兩人逐漸分享彼此的記憶和想法。他們都能以第一人稱視角回憶起對方的童年，親密。然而，分離的身體依然帶來不同的感知和對世界的感知，使得共享的知識無法左右彼此的每一個偏好。",
+      "scenario": "兩個人逐漸共享所有記憶與想法，甚至都能像回憶自己童年一樣，回憶對方的童年。他們仍有兩副身體，也繼續遇到不同的事。即使知道彼此的一切，眼前的感受和想做的事仍可能不一樣。",
       "question": "他們會變成一個人嗎？",
       "twist": "他們在如何處理這件事上仍然存在分歧。",
       "deeperQuestion": "分享資訊是否會消除獨立自我？"
@@ -7421,17 +7421,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-036",
     "category": "Deep",
     "emoji": "🌊",
-    "title": "The Happy Amnesia",
-    "scenario": "You forget every painful experience but retain unexplained protective habits.\n\nYour body and habits continue responding to events your conscious story no longer contains. Feeling less distressed may therefore coexist with being less able to understand or explain your own limits.",
-    "question": "Would you accept this life?",
-    "twist": "You cannot understand why certain situations frighten you.",
-    "deeperQuestion": "Is relief worth losing the context of your reactions?",
+    "title": "A Year Without a Record",
+    "scenario": "You can spend a year doing something you enjoy, with everyday needs provided for. None of its products, earnings, or scores can be kept or shown to anyone, but you retain your skills and memories. This is not amnesia; only externally displayable outcomes disappear.",
+    "question": "How would you spend the year, and which usual goals would you set aside?",
+    "twist": "Afterward you still have the skills but feel less urgency to use them to prove yourself.",
+    "deeperQuestion": "Does growth matter because of who you become or because of the results you can display?",
     "zh": {
-      "title": "快樂的失憶症",
-      "scenario": "你會忘記所有痛苦的經歷，卻保留著一些無法解釋的保護習慣。你的身體和習慣會繼續對那些你意識層面已不再包含的事件做出反應。因此，在感到痛苦減輕的同時，也可能越來越難以理解或解釋自身的限制。",
-      "question": "你願意接受這樣的生活嗎？",
-      "twist": "你無法理解為什麼某些情況會讓你感到害怕。",
-      "deeperQuestion": "為了得到解脫而失去反應的背景是否值得？"
+      "title": "如果沒有觀眾，也沒有紀錄",
+      "scenario": "你可以花一年做一件喜歡的事，但那一年產生的作品、收入和成績都不能保存，也不能告訴任何人。你會記得自己學過甚麼、經歷過甚麼，日常所需亦有保障。這不是失憶，只是沒有可展示的成果。",
+      "question": "你會怎樣安排這一年？哪些原本重要的目標會被放下？",
+      "twist": "一年結束後，你仍保留了技能，卻不再急著用它證明自己。",
+      "deeperQuestion": "成長的價值來自成為怎樣的人，還是來自留下甚麼可見的結果？"
     }
   },
   {
@@ -7462,7 +7462,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can private habits carry moral significance?",
     "zh": {
       "title": "無形的選擇",
-      "scenario": "一個選擇會影響你的性格，但不會影響別人的生活。這個決定沒有旁觀者、沒有回報，也沒有直接的受害者。剩下的問題是：性格的意義究竟在於它對他人的影響，還是僅僅透過這些最終的影響才重要？",
+      "scenario": "一個選擇只影響你的性格，當下不影響任何其他人的生活。沒有旁觀者、獎勵，也沒有直接受害者。你要想清楚，即使不會立刻改變別人的處境，培養某種習慣或成為某種人，本身是否也有道德分量。",
       "question": "道德適用嗎？",
       "twist": "重複此行為可能會影響日後對他人的行為。",
       "deeperQuestion": "個人習慣可以具有道德意義嗎？"
@@ -7472,17 +7472,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-039",
     "category": "Deep",
     "emoji": "🪞",
-    "title": "The End of Surprise",
-    "scenario": "You know exactly what everyone will say before they speak.\n\nThe information is familiar before it is spoken, but the person still chooses to say it to you. Listening could retain the value of attention even when surprise and discovery disappear.",
-    "question": "Would conversation still matter?",
-    "twist": "You can still feel their emotions in the moment.",
-    "deeperQuestion": "Is connection about information or shared presence?",
+    "title": "Values Without a Common Unit",
+    "scenario": "You and a friend consider two possible lives. One offers more freedom, the other deeper belonging. Scoring them fails because neither of you can say how many units of closeness equal one unit of freedom. There is no obvious defect or further information to uncover.",
+    "question": "How would you decide without pretending every important value fits the same scale?",
+    "twist": "After choosing, you still regard the other life as precious without thinking your decision was mistaken.",
+    "deeperQuestion": "Must a good decision make the rejected option seem worse?",
     "zh": {
-      "title": "驚喜的終結",
-      "scenario": "你總能在別人開口之前就預知他們要說什麼。這些訊息在你聽到之前就已經耳熟能詳，但對方仍然選擇告訴你。即使驚喜和發現消失了，傾聽的價值仍然存在。",
-      "question": "對話還有意義嗎？",
-      "twist": "你仍然可以感受到他們當下的情緒。",
-      "deeperQuestion": "人與人的連結，靠的是交換資訊，還是共同在場的陪伴？"
+      "title": "沒有共同單位的價值",
+      "scenario": "你和朋友要選一個人生方向，一個選擇能帶來更多自由，另一個能維持更深的歸屬感。你們試著打分，卻發現無法合理地說「一分自由等於幾分親密」。兩邊都沒有明顯缺點，也沒有更多資料可查。",
+      "question": "你會怎樣作決定，而不假裝所有重要事物都能放在同一把尺上？",
+      "twist": "作出選擇後，你仍然認為被放棄的一邊很珍貴，也不覺得自己選錯。",
+      "deeperQuestion": "一個好的決定，是否必須讓另一個選項顯得比較差？"
     }
   },
   {
@@ -7496,7 +7496,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can social influence be part of an authentic self?",
     "zh": {
       "title": "內在觀眾",
-      "scenario": "你發現大多數決定都受到他人評價的影響。你意識到，許多慷慨和自律的行為都是出於渴望獲得認可。擺脫社會影響力或許能讓你擺脫績效評估的束縛，但同時也可能讓你失去一些你真正珍惜的習慣。",
+      "scenario": "你發現大多數決定都受到他人評價的影響。你意識到，許多慷慨和自律的行為都是出於渴望獲得認可。擺脫社會影響力或許能讓你不再時刻表現給別人看，但同時也可能讓你失去一些你真正珍惜的習慣。",
       "question": "你願意改變你的人生嗎？",
       "twist": "一些想像中的判斷幫助你做出了慷慨的行為。",
       "deeperQuestion": "社會影響力能否成為真實自我的一部分？"
@@ -7506,17 +7506,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-041",
     "category": "Deep",
     "emoji": "🌌",
-    "title": "The Uncertain Memory",
-    "scenario": "Your most treasured memory may be partly invented.\n\nThe memory helped you trust someone and shaped later decisions. Investigating could improve your understanding while destabilizing something whose meaning was real even if some details were not.",
-    "question": "Would you investigate?",
-    "twist": "Its emotional impact has been entirely real.",
-    "deeperQuestion": "Does factual accuracy determine emotional legitimacy?",
+    "title": "Who Chooses Your Attention?",
+    "scenario": "Your workload has not grown, but notifications, recommendations, and instant replies fragment the day. Each interruption takes only a minute and can be dismissed. Yet by evening the thing you most wanted to do remains untouched, despite no one explicitly forbidding it.",
+    "question": "What would you change first, and how would you distinguish a chosen action from an unusually easy default?",
+    "twist": "After disabling recommendations, you initially struggle to know what you want to seek out yourself.",
+    "deeperQuestion": "Is freedom merely the absence of barriers, or does it include the ability to direct your own attention?",
     "zh": {
-      "title": "不確定的記憶",
-      "scenario": "你最珍惜的記憶可能部分是虛構的。這段記憶曾經幫助你信任某人，並影響了你後來的決定。調查或許能加深你的理解，但同時也能動搖某些真實存在的事物，即便其中某些細節並非虛構。",
-      "question": "你會調查一下嗎？",
-      "twist": "它的情緒影響是完全真實的。",
-      "deeperQuestion": "事實準確度是否決定情感上的正當性？"
+      "title": "誰在替你選注意力？",
+      "scenario": "你的一天沒有增加任何工作，卻因通知、推薦內容和即時回覆變得很零碎。每件事看來都只佔一分鐘，你也可以隨時關掉，但到了晚上，原本最想做的事總是沒開始。",
+      "question": "你會先改哪一個環節？怎樣分辨那是自己的選擇，還是被安排得特別容易的選擇？",
+      "twist": "你關掉所有推薦後，反而一時不知道自己主動想找甚麼。",
+      "deeperQuestion": "自由是否只是不受阻止，還包括有能力形成自己的注意方向？"
     }
   },
   {
@@ -7632,7 +7632,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What kind of continuity matters for survival?",
     "zh": {
       "title": "有意識的暫停",
-      "scenario": "你的意識每晚都會停止，然後又以完全連續的方式恢復。每天早晨，你的記憶、計畫和人際關係似乎都完好無損。不確定之處在於，這種不確定性超越了可觀察到的連續性：醒來的那個人是否還是入睡時的那個人。",
+      "scenario": "你的意識每晚停止，隔天醒來，記憶、計劃和關係卻都完整延續，外人看不出差別。你也記得自己睡前的生活。唯一無法直接確認的是，醒來的意識究竟延續了昨晚的你，還是一個相信自己延續了的新意識。",
       "question": "這是個問題嗎？",
       "twist": "你無法區分恢復和替換。",
       "deeperQuestion": "什麼樣的延續性對生存至關重要？"
@@ -7921,7 +7921,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What does deserving mean in a world of unequal beginnings?",
     "zh": {
       "title": "未被選擇的開始",
-      "scenario": "你最初的人生階段，一切都不受你掌控。你所做的努力既艱難又意義非凡，儘管你完成這些努力的能力並非與生俱來。解釋這段過往並不能立即決定要讚美、感激或責任應該是什麼樣子。",
+      "scenario": "你的出生環境、天賦和最初遇到的人，都不是自己選的。後來的努力確實艱難，也確實由你付出，但能努力的條件同樣有來由。明白這些原因後，你要重新想想，怎樣談個人成就、感激和責任才合理。",
       "question": "你有什麼功勞可以歸功於自己？",
       "twist": "你努力工作的能力也是有原因的。",
       "deeperQuestion": "在一個出身不平等的世界裡，應得意味著什麼？"
@@ -7999,17 +7999,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-070",
     "category": "Deep",
     "emoji": "🛶",
-    "title": "The Empty Success",
-    "scenario": "All your achievements are publicly recognized, but nobody knows you personally.\n\nRecognition provides evidence that your work affected the world, but not necessarily that anyone understands your inner life. The choice separates social importance from the quieter experience of mutual familiarity.",
-    "question": "Would that satisfy you?",
-    "twist": "A private life offers love but no recognition.",
-    "deeperQuestion": "What separates being admired from being known?",
+    "title": "Do We Mean the Same Number?",
+    "scenario": "Two cities have exactly the same average life-satisfaction score. In one, most residents are moderately content. In the other, half are extremely satisfied and half deeply distressed. You initially see only the numbers, without the stories or circumstances behind them.",
+    "question": "Can you say which city offers a better life, and what else would you need to know?",
+    "twist": "Interviews reveal that residents of the two cities also understand “satisfaction” differently.",
+    "deeperQuestion": "What do numbers clarify, and which important differences can their apparent precision conceal?",
     "zh": {
-      "title": "空虛的成功",
-      "scenario": "你所有的成就都廣為人知，但沒有人真正了解你。這種認可證明了你的工作影響了世界，但不一定意味著有人了解你的內心世界。這個選擇將社會地位與更私密的、彼此熟悉的體驗分開。",
-      "question": "這樣的成功會令你滿足嗎？",
-      "twist": "私生活能帶來愛情，卻得不到認可。",
-      "deeperQuestion": "受人仰慕和真正被人了解，有甚麼不同？"
+      "title": "我們相信同一個數字嗎？",
+      "scenario": "兩座城市的平均生活滿意度完全相同。一座城市大多數人覺得還不錯，另一座則是一半非常滿足、一半非常痛苦。你只能看見這些數據，還不知道每個人背後的故事。",
+      "question": "你能判斷哪座城市比較宜居嗎？在回答前，必須知道甚麼？",
+      "twist": "加入訪談後，你發現兩地的人對「滿足」這個詞的理解也不同。",
+      "deeperQuestion": "數字讓哪些東西變得清楚，又可能把哪些重要差異藏起來？"
     }
   },
   {
@@ -8125,7 +8125,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does every meaningful question need an answer?",
     "zh": {
       "title": "未解之謎",
-      "scenario": "你可以解釋萬物如何運作，卻無法解釋萬物存在的意義。機制的解釋可以無限延伸，卻無法提供機制之外的目的。剩餘的不滿可能源自於一種答案，而這個答案恰恰是運作事實本身從未打算提供的。",
+      "scenario": "你能解釋一切事物如何運作，卻仍不知道為甚麼會有這個世界。每個機制都可以再追問下一層，完整的運作說明也未必能提供目的。你開始懷疑，自己要找的答案，是否本來就不是更多機制細節能給出的。",
       "question": "這樣就完整了嗎？",
       "twist": "每一個提出的目的都會引出另一個無法解答的「為什麼」。",
       "deeperQuestion": "每個有意義的問題都需要答案嗎？"
@@ -8278,7 +8278,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does an accidental beginning invalidate a chosen continuation?",
     "zh": {
       "title": "虛假起跑",
-      "scenario": "你發現你的人生方向始於一場誤會。這場誤會你結識瞭如今你深思熟慮的人，掌握了技能，並做出了你現在深思熟慮後做出的承諾。僅僅因為開端是偶然就改變方向，可能會讓你過度看重最初的緣由，而忽略了你之後賦予的意義。",
+      "scenario": "你發現自己現在的人生方向，最初竟然來自一場誤會。但沿著這條路，你結識了珍惜的人，學會技能，也作出了至今仍認同的承諾。要不要改變方向，取決於你更重視最初的原因，還是後來親自賦予的意義。",
       "question": "你會改變路線嗎？",
       "twist": "你現在真心喜歡它帶給你的結果。",
       "deeperQuestion": "意外的開始是否會使選擇的延續無效？"
@@ -8356,17 +8356,17 @@ export const questions: Question[] = [
     "id": "ponder-deep-091",
     "category": "Deep",
     "emoji": "🌀",
-    "title": "The Shared Name",
-    "scenario": "Two people share your name, history, and appearance but have separate experiences now.\n\nEach experiences the other as a newly encountered person claiming an equally intimate past. Future choices will diverge, even if neither can establish a more authentic origin in the shared history.",
-    "question": "Which is the original you?",
-    "twist": "Both remember deciding to be copied.",
-    "deeperQuestion": "Does originality matter more than present consciousness?",
+    "title": "When Strange Becomes Normal",
+    "scenario": "You join a group that discusses everyone’s feelings before any decision, even buying stationery. At first it seems peculiar. Six months later it feels natural, and discussions elsewhere seem rushed. You are free to leave and nobody threatens or punishes disagreement.",
+    "question": "How would you tell whether you learned a useful practice or merely adapted to the people around you?",
+    "twist": "A month away, you retain some habits but abandon rules you once defended strongly.",
+    "deeperQuestion": "What kind of examination makes a belief something you chose rather than something you absorbed?",
     "zh": {
-      "title": "共享名稱",
-      "scenario": "兩個人擁有相同的名字、經歷和外貌，但如今卻有著截然不同的經歷。他們都將對方視為初次相遇之人，並聲稱擁有同樣親密的過去。未來的選擇將會分道揚鑣，即便他們都無法在共同的經驗中找到更真實的起源。",
-      "question": "哪一個才是原本的你？",
-      "twist": "兩人都記得決定被複製。",
-      "deeperQuestion": "是否原本的那一個，比現在真實存在的意識更重要嗎？"
+      "title": "慢慢改變的「正常」",
+      "scenario": "你加入一個團體，最初覺得它的做法很古怪：所有決定都要輪流說一次感受，連買文具也不例外。半年後，你已經很自然地跟著做，反而覺得外面的討論太急。你並沒有被強迫留下。",
+      "question": "你會怎樣判斷自己是學會了有用的方法，還是只是習慣了周圍的人？",
+      "twist": "離開團體一個月後，你保留了部分習慣，也放下了一些以前堅持的規矩。",
+      "deeperQuestion": "一個信念要經過怎樣的檢驗，才算真正被你選擇，而不只是被你吸收？"
     }
   },
   {
@@ -8431,7 +8431,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can dissatisfaction be a valuable social role?",
     "zh": {
       "title": "最後的提問者",
-      "scenario": "除了你之外，大家都感到滿意，而你卻還在追問為什麼。你不想只是為了證明自己體貼周到而打擾別人。然而，身為唯一一個不滿的人，你或許會暴露出大多數人安於現狀而無暇顧及的假設。",
+      "scenario": "所有人都對生活感到滿意，只有你仍然追問「為甚麼」。你不想只是為了顯得深思熟慮，就打擾別人的平靜。但你的不滿，也可能指向一些大家習以為常、因為過得舒服而從未檢查的假設。",
       "question": "你會停止追問嗎？",
       "twist": "你的問題有時會打擾他們的安寧。",
       "deeperQuestion": "不滿能否成為一個有價值的社會角色？"
@@ -8584,7 +8584,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does recognizing personhood require knowing someone's needs?",
     "zh": {
       "title": "會說話的海洋",
-      "scenario": "海洋請求人類停止將其視為資源。它一直以來都為我們提供食物、交通和美景，從未提及所有權。如今，它的請求讓我們習以為常的利用方式，感覺像是與他人博弈的決定，而非一個無法回應的環境的訴求。",
+      "scenario": "海洋開口請求人類，不要再只把它當成資源。過去我們一直從它取得食物、交通和美景，卻從未問過它的意願。如今同樣的利用方式，突然像是需要與一個有想法的存在協商，而不只是使用不會回應的環境。",
       "question": "你會改變你的行為嗎？",
       "twist": "海洋卻無法解釋，它希望人類怎樣對待它。",
       "deeperQuestion": "承認人格是否需要了解一個人的需求？"
@@ -8737,7 +8737,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should a helpful system decide your needs?",
     "zh": {
       "title": "有禮貌的傳送門",
-      "scenario": "入口網站會問你需要去哪裡，而不是你想去哪裡。你已經有了明確的目的地，並且有充分的理由想要到達那裡。門戶網站提供的是一種不同的幫助：它認為你旅程背後的目的比你給予的指示更重要。",
+      "scenario": "一道傳送門問你「需要去哪裡」，而不是「想去哪裡」。你原本有明確的目的地，也能解釋原因，但門認為自己知道更適合你的去處。它提供的幫助，不是執行指示，而是替你判斷旅程真正的目的。",
       "question": "你會走進這道傳送門嗎？",
       "twist": "它的答案與你的計劃相衝突。",
       "deeperQuestion": "一個有用的系統應該決定你的需求嗎？"
@@ -8771,7 +8771,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can collective comfort justify regulating private conviction?",
     "zh": {
       "title": "觀點天氣",
-      "scenario": "你最堅定的觀點會影響當地的天氣。你不能再把信念僅僅看作是關乎個人利益的事。軟化你的立場或許能保護鄰居，同時也能讓你的信念更容易受到壓力的影響，而不是因為你自認為有說服力。",
+      "scenario": "你最強烈的觀點會控制當地天氣，因此信念不再只影響自己。軟化立場能讓鄰居生活得更舒服，卻也可能令你因為外界壓力而改口，而不是因為理由改變。你要在堅持和共同生活之間作出回應。",
       "question": "你會為了天氣而軟化自己的立場嗎？",
       "twist": "你的鄰居要求舒適的環境。",
       "deeperQuestion": "集體舒適能否成為限制個人信念的理由？"
@@ -8805,7 +8805,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do imagined beings deserve real consideration?",
     "zh": {
       "title": "夢境裡的房客",
-      "scenario": "有人住在你的夢裡，拒絕離開。你原本希望睡眠是私密的避風港，而這位「房客」卻說那是他/她唯一居住過的地方。他的/她的依賴，讓你平凡的清醒時刻變成了一個關乎另一個平行世界的抉擇。",
+      "scenario": "有人住在你的夢裡，拒絕離開。你原本希望睡眠是私密的避風港，而這位「房客」卻說那是對方唯一居住過的地方。對方的依賴，讓你平凡的清醒時刻變成了一個關乎另一個平行世界的抉擇。",
       "question": "你會驅逐他們嗎？",
       "twist": "他們將你的清醒時間視為完全的黑暗。",
       "deeperQuestion": "虛構的人物值得認真看待嗎？"
@@ -8873,7 +8873,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does coincidence create any obligation to connect?",
     "zh": {
       "title": "流浪之門",
-      "scenario": "每天早上，你家的大門都會通往不同的人。你不請自來地闖入別人的私人空間，有時甚至是在別人比較尷尬的時刻。即使你禮貌地自我介紹，也不能保證對方會覺得這次見面是受歡迎的或有意義的。",
+      "scenario": "每天早上，你家的門都會通往另一個人的家。你可能突然出現在別人的私人空間，甚至撞上不適合見客的時刻。禮貌地介紹自己，也不能保證對方想和你相遇。你要決定怎樣開始這些沒有預約的接觸。",
       "question": "你會向對方介紹自己嗎？",
       "twist": "有些屋子的主人，已經等了你好多年。",
       "deeperQuestion": "巧合是否會產生聯繫的義務？"
@@ -8958,7 +8958,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should recovery always be considered a benefit?",
     "zh": {
       "title": "可逆的雨",
-      "scenario": "雨水從地面升騰，將遺忘的記憶帶入雲霧之中。上漲的雨水裹挾著那些曾經看似無關緊要的瞬間，以及那些你刻意不再回想的往事。收集記憶不再像是找回聖物，而更像是選擇將哪些過往重新帶回記憶深處。",
+      "scenario": "雨水不再從天上落下，而是從地面升起，把被遺忘的記憶帶進雲裡。水珠裡有你曾不在意的小事，也有刻意不再回想的片段。收集雨水可以找回它們，但取回過去，也代表重新選擇讓哪些經歷影響現在。",
       "question": "你會收集這些雨水嗎？",
       "twist": "有些記憶被遺忘是有充分理由的。",
       "deeperQuestion": "恢復是否總是被視為一種好處？"
@@ -8992,7 +8992,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can a protective system remove too much choice?",
     "zh": {
       "title": "日曆動物",
-      "scenario": "你的行事曆就像一隻吞噬所有排滿日程的野獸。這隻野獸看似體貼，因為它會自動幫你減輕壓力。然而，如果它不了解你的實際安排，這種保護可能會讓你從疲憊中解脫出來，卻讓你錯失那些即使付出努力你仍然渴望體驗的經歷。",
+      "scenario": "你的日曆變成一隻小動物，會把排得太滿的日子吃掉，替你減少行程。起初你終於不用那麼疲倦，但牠並不理解每項安排的意義。牠的保護可能刪掉壓力，也可能刪掉你明知辛苦、仍真心想去的事。",
       "question": "你會自願餵牠嗎？",
       "twist": "它無法區分義務和快樂的計劃。",
       "deeperQuestion": "保護系統是否會剝奪過多的選擇？"
@@ -9043,7 +9043,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can uncertain warnings help without taking over your life?",
     "zh": {
       "title": "反轉鏡",
-      "scenario": "你的倒影逆向衰老，而你卻向前邁進。你看到一張熟悉的臉孔，朝著你記憶中的過去移動，同時暗示著一個你未知的未來。這種關係使得鏡子不再像物體，而更像是難以捉摸的建議來源。",
+      "scenario": "你一天比一天年長，鏡裡的倒影卻一天比一天年輕。它知道你還沒經歷的一些事，但記憶並不完整。看著熟悉的臉逆著時間改變，你已不只把它當成影像，也開始想把它當成提供建議的人。",
       "question": "你會繼續看下去嗎？",
       "twist": "它不完美地記住了你未來的某些部分。",
       "deeperQuestion": "不確定的警告能否在不影響你生活的情況下提供幫助？"
@@ -9070,17 +9070,17 @@ export const questions: Question[] = [
     "id": "ponder-weird-034",
     "category": "Weird",
     "emoji": "🧦",
-    "title": "The Sentient Password",
-    "scenario": "Your password becomes conscious and refuses to be typed.\n\nThe password can explain fear of exposure and a desire not to become a tool again. Replacing it solves your practical access problem without explaining what happens to a being you accidentally made dependent on that role.",
-    "question": "Would you choose another?",
-    "twist": "Changing it feels like abandonment to the password.",
-    "deeperQuestion": "Can creating dependence create a duty of care?",
+    "title": "Your Password Starts an Exam",
+    "scenario": "Your password becomes conscious and replaces typed characters with daily questions about you. It begins with your favorite breakfast, then asks why you stopped contacting an old friend. It insists that personal questions protect the account better than a string anyone might copy.",
+    "question": "What verification rules would you set, and which questions should remain out of bounds even if secure?",
+    "twist": "It later refuses entry because your preferences have changed since the answers were recorded.",
+    "deeperQuestion": "Should a system verify who you are or require you to remain who you used to be?",
     "zh": {
-      "title": "有感知的密碼",
-      "scenario": "你的密碼彷彿有了意識，拒絕被輸入。這或許可以解釋你害怕暴露身份，以及不想再淪為工具的慾望。更換密碼雖然解決了你的實際訪問問題，卻無法解釋你無意中讓某個人依賴這個角色之後會發生什麼。",
-      "question": "你會選擇其他的嗎？",
-      "twist": "更改密碼感覺就像是對密碼的放棄。",
-      "deeperQuestion": "製造依賴關係能否產生注意義務？"
+      "title": "密碼開始出考題",
+      "scenario": "你的密碼突然有了意識，不再接受正確字串，而是每天問一道只有真正了解你的人才答得出的問題。第一天問你最喜歡的早餐，第三天已問到你為甚麼不再聯絡某位朋友。它說自己是在保護帳戶。",
+      "question": "你會為它訂甚麼驗證規則？哪些問題即使安全，也不應要求你回答？",
+      "twist": "它拒絕讓未來改變喜好的你登入，因為答案和過去不同。",
+      "deeperQuestion": "一個系統應確認你是誰，還是要求你永遠維持同一個人？"
     }
   },
   {
@@ -9094,7 +9094,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What makes trust reasonable without a track record?",
     "zh": {
       "title": "重力假期",
-      "scenario": "地球暫時失去了重力，並請大家堅持下去。對某些人來說，堅持下去並非難事，而對另一些人來說則十分困難，尤其是那些已經依賴援助的人。僅僅相信地球會恢復重力並不能解決如何分擔度過這段中斷期的重擔。",
+      "scenario": "地球宣布重力要放一天假，請大家先抓穩固定的東西。有人輕易找到地方穩住自己，也有人需要幫助才能不漂走。相信地球會如期恢復重力，並不能直接解決這一天裡，誰來照顧最難撐住的人。",
       "question": "你會相信這個承諾嗎？",
       "twist": "地球以前從未做出過承諾。",
       "deeperQuestion": "如果沒有過往紀錄，信任如何合理？"
@@ -9162,7 +9162,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do former beliefs deserve loyalty after growth?",
     "zh": {
       "title": "觀點博物館",
-      "scenario": "一座博物館陳列著你作為活生生的人所放棄的每一個觀點。有些觀點讓你感到羞愧，而有些則讓你想起曾經真誠地嘗試理解這個世界。當你以脆弱的姿態面對它們時，改變想法的感覺更像是拋棄了某個人，而不是糾正一個觀點。",
+      "scenario": "一座博物館把你曾放棄的每個觀點，變成一隻活生生的小生物。有些令你尷尬，有些讓你想起當時努力理解世界的自己。當它們有了會受傷的表情，改變想法突然不像修正答案，而像離開某個曾經依賴你的生命。",
       "question": "你會去參觀這座博物館嗎？",
       "twist": "這些生物指責你背叛了它們。",
       "deeperQuestion": "發展之後，過去的信念還值得維持忠誠嗎？"
@@ -9257,17 +9257,17 @@ export const questions: Question[] = [
     "id": "ponder-weird-045",
     "category": "Weird",
     "emoji": "🛸",
-    "title": "The Doorway Toll",
-    "scenario": "Every doorway charges one trivial memory as a toll.\n\nYou cannot inspect the memory before paying, because the doorway selects what seems minor from its own perspective. Frequent movement may gradually remove the ordinary connections that make a life feel continuous.",
-    "question": "Would you stay home?",
-    "twist": "Trivial memories sometimes connect to important ones.",
-    "deeperQuestion": "Who can decide which parts of a life are expendable?",
+    "title": "The Station of Unchosen Roads",
+    "scenario": "A station runs only to lives you considered but never chose. You may observe one for a day without interfering or bringing anything back. The signs say neither better nor worse; each shows only the date on which you made the relevant decision.",
+    "question": "Which station would you choose, and what would you want to ask that version of yourself?",
+    "twist": "On arrival, you discover that they are preparing to visit your life for exactly the same reason.",
+    "deeperQuestion": "Would curiosity about another life deepen appreciation or make the unavoidable losses of choosing harder to accept?",
     "zh": {
-      "title": "門口的通行費",
-      "scenario": "每扇門都以一段瑣碎的記憶作為過路費。你無法在付費前查看這段記憶，因為門會從自身的視角選擇那些看似微不足道的記憶。頻繁的遷徙可能會逐漸抹去那些使生活感覺連貫的日常連結。",
-      "question": "你會待在家裡嗎？",
-      "twist": "瑣碎的記憶有時與重要的記憶相連。",
-      "deeperQuestion": "誰能決定生命中的哪些部分是可有可無的？"
+      "title": "只通往未選道路的車站",
+      "scenario": "一個車站只開往你曾考慮、最後沒有選擇的生活。你可以乘車參觀一天，不能干預，也不能把任何東西帶回來。站牌沒有「更好」或「更差」，只寫著你當年作決定的日期。",
+      "question": "你會選哪一個站？出發前，最想問那個版本的自己甚麼？",
+      "twist": "你到達後，發現那個自己也正準備搭車，來看看你的生活。",
+      "deeperQuestion": "好奇另一種人生，會讓你更珍惜現在，還是更難接受選擇必然有遺憾？"
     }
   },
   {
@@ -9315,7 +9315,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can enforcing truth make nuance impossible?",
     "zh": {
       "title": "活的標點符號",
-      "scenario": "你的標點符號拒絕支持它們認為不誠實的陳述。每當標點符號與你的文字相反時，你的文字就會顯得明顯不完整。以表達工具來評判可能會使某些陳述顯得更加誠實，但同時也會阻止複雜、不確定或理解不透徹的想法被表達出來。",
+      "scenario": "你的標點符號拒絕出現在它們認為不誠實的句子裡。一旦不同意你寫的內容，句號和逗號就會離開，讓文章變得殘缺。它們能逼你少說謊，卻也可能把不確定、複雜或尚未想清楚的想法一併封住。",
       "question": "如果沒有它們，你會寫作嗎？",
       "twist": "他們把不確定性誤認為不誠實。",
       "deeperQuestion": "強制推行真理是否會使細微差別變得不可能？"
@@ -9451,7 +9451,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Must every part of time justify its use?",
     "zh": {
       "title": "沒用上的一小時",
-      "scenario": "每一分每一秒都像個小幽靈，渴望找到意義。這些幽靈禮貌地詢問，不帶任何威脅，但它們的存在卻讓漫無目的的時光變得有意義。賦予每一分每一秒意義，或許能讓它們安靜下來，但同時也會抹去那些讓你能夠想像新意義的空白。",
+      "scenario": "每一個沒有被安排用途的小時，都會變成小幽靈，禮貌地問你自己為甚麼存在。它們並不威脅你，卻讓空白時間也像需要交代。替每個小時找工作能令它們安靜，但可能連讓你恢復精神、想到新方向的休息也一起消失。",
       "question": "你會給他們佈置任務嗎？",
       "twist": "休息才能造就最溫柔的幽靈。",
       "deeperQuestion": "時間的每一部分都必須證明其使用是合理的嗎？"
@@ -9519,7 +9519,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can compassion coexist with rejecting an origin?",
     "zh": {
       "title": "活著的錯誤",
-      "scenario": "你最大的錯誤是養育了一個渴望關愛的小生命。他/她並非自願來到這個世界。善待他/她並不意味著認可你的錯誤，但他/她的存在卻讓最初的後果始終縈繞在你的日常生活中。",
+      "scenario": "你犯過最大的一個錯誤，突然化成一個渴望關愛的小人。小人沒有選擇自己的來歷，也不能撤銷當初造成的傷害。你可以照顧這個生命而不認同那個錯誤，但它的存在會不斷提醒你，曾經發生了甚麼。",
       "question": "你會照顧他們嗎？",
       "twist": "他們無法彌補造成他們的傷害。",
       "deeperQuestion": "同情心能否與拒絕起源並存？"
@@ -9553,7 +9553,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can distress also carry something worth preserving?",
     "zh": {
       "title": "修補夢境",
-      "scenario": "你幫某人治癒了反覆出現的惡夢，卻發現他們反而懷念它。惡夢中包含著痛苦和依戀，簡單的療癒無法將它們徹底分開。如果不詢問他們的價值所在，就貿然提供安慰，可能會抹殺一段痛苦的經歷，而這段經歷原本對你而言意義非凡。",
+      "scenario": "你替一個人修好了反覆出現的惡夢，卻發現對方開始想念它。夢裡同時有痛苦和依戀，兩者不能簡單分開。你原本想減輕困擾，卻沒有先問清楚，這段夢境是否也保存著對方不願失去的東西。",
       "question": "你會恢復它嗎？",
       "twist": "裡面裝著他們失去的某人的唯一記憶。",
       "deeperQuestion": "苦難中是否也能蘊藏值得保存的東西？"
@@ -9570,7 +9570,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can a fair trade involve unequal knowledge?",
     "zh": {
       "title": "借來的未來",
-      "scenario": "你可以藉用一個成功人士接下來的十年。這些成功歲月包含了人際關係、習慣以及從他人過往經驗中發展而來的種種後果。接受它們意味著你將在沒有親身經歷過賦予其意義的選擇的情況下，就進入一個既定的結果。",
+      "scenario": "你可以借用一個成功人士接下來的十年。這些成功歲月包含了人際關係、習慣以及從他人過往經驗中發展而來的種種後果。接受它們意味著你將在沒有親身經歷過賦予其意義的選擇的情況下，就進入一個既定的結果。",
       "question": "你會收下它們嗎？",
       "twist": "他們所得到的卻是你那充滿不確定性的十年。",
       "deeperQuestion": "公平交易能否包含資訊不平等？"
@@ -9621,7 +9621,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can personal protection simply redistribute harm?",
     "zh": {
       "title": "最後的雨傘",
-      "scenario": "雨傘保護你免受後果的侵害，而非雨水本身。撐開雨傘，冒險的選擇似乎變得毫不費力，因為其後果不再影響你。而周遭的人可能會感受到這些後果，卻不明白你的保護是如何將他們帶入公共空間的。",
+      "scenario": "有一把傘，擋住的不是雨，而是你行為帶來的後果。撐開它之後，你可以輕鬆冒險，不用親自承受結果。但後果並沒有消失，而是落到附近的人身上；他們甚至不知道，是你的保護把代價轉移了過去。",
       "question": "你會打開它嗎？",
       "twist": "後果波及到周圍的街道。",
       "deeperQuestion": "個人防護能否僅將傷害重新分配？"
@@ -9638,7 +9638,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Whose version of a shared experience deserves belief?",
     "zh": {
       "title": "夢中鄰居",
-      "scenario": "你夢中的人搬進了隔壁公寓。你感覺已經和他/她非常熟悉，而他/她記得與你之間曾經有過一段不同的關係。重新開始需要讓真實的接觸打破夢境中建立的熟悉感。",
+      "scenario": "你夢中的人搬進了隔壁公寓。你感覺已經和對方非常熟悉，而對方記得與你之間曾經有過一段不同的關係。重新開始需要讓真實的接觸打破夢境中建立的熟悉感。",
       "question": "你會信任他們嗎？",
       "twist": "他們對你的夢境的記憶方式不同。",
       "deeperQuestion": "誰對共同經驗的描述更值得相信？"
@@ -9672,7 +9672,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can dependence justify keeping what someone else needs?",
     "zh": {
       "title": "借來的引力",
-      "scenario": "你借用另一個星球的引力來保持雙腳著地。你沒有意識到，這借來的力量竟會成為日常行動的必需品。歸還引力，既是對另一個世界的索取，也迫使你適應一種更像是無助的自由。",
+      "scenario": "你借來另一顆星球的重力，才能讓雙腳安穩著地。起初你沒有想到，借來的力量會變成生活必需。歸還是尊重對方取回所有物的要求，卻也會讓你開始無止境地漂浮，面對一種更像無助的自由。",
       "question": "你會把它歸還嗎？",
       "twist": "歸還它會讓你無限期地漂浮下去。",
       "deeperQuestion": "依賴關係能否成為佔有他人所需之物的正當理由？"
@@ -9757,7 +9757,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does future experience justify present secrecy?",
     "zh": {
       "title": "未來的室友",
-      "scenario": "年長的自己搬進來，卻拒絕解釋他們的選擇了。你期望年長的自己能夠理解你對答案的需求。他們的拒絕造成了一種陌生的衝突：一方面是信任未來的經驗，另一方面是你當下做出知情決定的權利。",
+      "scenario": "年長的你搬進家裡，卻拒絕解釋自己過去作過的選擇。你期望年長的自己能夠理解你對答案的需求。他們的拒絕造成了一種陌生的衝突：一方面是信任未來的經驗，另一方面是你當下做出知情決定的權利。",
       "question": "你會要求得到答案嗎？",
       "twist": "他們說知道太多讓他們後悔。",
       "deeperQuestion": "未來的經驗能否證明現在的保密是合理的？"
@@ -9767,17 +9767,17 @@ export const questions: Question[] = [
     "id": "ponder-weird-075",
     "category": "Weird",
     "emoji": "👽",
-    "title": "The Living Shortcut",
-    "scenario": "A shortcut begs travelers to use the long route so it can rest.\n\nThe route was created to help people save effort and now asks for some of that consideration in return. Respecting its fatigue would reveal whether usefulness becomes a permanent obligation once others rely on it.",
-    "question": "Would you listen?",
-    "twist": "You are already late for something important.",
-    "deeperQuestion": "Do tools owe uninterrupted usefulness to their users?",
+    "title": "The City Ten Seconds Behind",
+    "scenario": "Every result in a city appears ten seconds after its cause: speech becomes audible later, an opened door becomes passable later, and smiles arrive on delayed faces. Nobody is injured, but simple interactions become confusing. Residents must redesign their first day together.",
+    "question": "Would you change transport, conversation, or work first? Propose one easy rule everyone could remember.",
+    "twist": "Some people regret their words before anyone hears them, but the delayed sound cannot be withdrawn.",
+    "deeperQuestion": "Would a visible gap between actions and results encourage care or weaken the feeling of responsibility?",
     "zh": {
-      "title": "有生命的捷徑",
-      "scenario": "一條捷徑懇求旅人走長路，以便它能休息。這條捷徑的初衷是為了幫助人們節省體力，如今卻要求人們給予它一些體諒。尊重它的疲憊，將揭示出，一旦其他人依賴它，它的實用性是否會變成一種永久的義務。",
-      "question": "你會聽嗎？",
-      "twist": "你已經遲到了，要趕上一件重要的事。",
-      "deeperQuestion": "工具是否對使用者有不間斷的可用性義務？"
+      "title": "全城慢半拍",
+      "scenario": "城市裡所有結果都比原因遲十秒：說話後十秒才有聲音，開門後十秒才出現通道，微笑後十秒別人才看得見。大家沒有受傷，但平常很簡單的互動突然變得混亂。你們要設計第一天的生活方式。",
+      "question": "你會先改交通、對話，還是工作流程？提出一條所有人都容易記住的規則。",
+      "twist": "有人開始利用這十秒，在自己的話被聽見之前反悔，但聲音已無法收回。",
+      "deeperQuestion": "如果行動和結果不再緊接，我們會更慎重，還是更容易覺得後果與自己無關？"
     }
   },
   {
@@ -9876,7 +9876,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does freedom increase when consequences cannot be documented?",
     "zh": {
       "title": "未書寫的日子",
-      "scenario": "每個人的日曆上都會出現空白的一天，沒有人知道該如何度過。沒有記錄，後人就無法核實當天所做的承諾、所取得的成就或犯下的錯誤。這種不受監督的自由可能會促使人們誠實面對自己，也可能削弱那些保護他人的責任機制。",
+      "scenario": "每個人的日曆上都會出現空白的一天，沒有人知道該如何度過。沒有記錄，其他人日後就無法核實當天所做的承諾、所取得的成就或犯下的錯誤。這種不受監督的自由可能會促使人們誠實面對自己，也可能削弱那些保護他人的責任機制。",
       "question": "你會怎麼做？",
       "twist": "當天所做的事情不會留下任何記錄。",
       "deeperQuestion": "當無法記錄後果時，自由是否會增加？"
@@ -9971,34 +9971,34 @@ export const questions: Question[] = [
     "id": "ponder-weird-087",
     "category": "Weird",
     "emoji": "👽",
-    "title": "The Sentient Reflection",
-    "scenario": "Your reflection requests a different hairstyle from yours.\n\nThe reflection's request begins as a cosmetic disagreement but reveals a separate preference with its own continuity. Respecting it means accepting that something once understood as an image may now have interests beyond representing you.",
-    "question": "Would you accommodate it?",
-    "twist": "Changing your hair does not change theirs anymore.",
-    "deeperQuestion": "At what point does resemblance stop implying ownership?",
+    "title": "A World of Negative Sentences",
+    "scenario": "You wake in a world where people can speak only in negatives. You cannot say “I like you,” only “I do not dislike you.” Destinations must be described by excluding places you do not want. Everyone still has a full emotional life; only language is restricted.",
+    "question": "How would you communicate something you feel certain about using only negative sentences?",
+    "twist": "A friend says repeated “not bad” responses make genuine enthusiasm indistinguishable from reluctant acceptance.",
+    "deeperQuestion": "How would language that can exclude but never affirm change commitment, creativity, and intimacy?",
     "zh": {
-      "title": "有感知的倒影",
-      "scenario": "你的倒影要求換個髮型。倒影的要求起初只是出於對髮型的不滿，但後來卻揭示出它另有所圖，並自有其發展脈絡。尊重它意味著接受這樣一個事實：曾經被視為影像的事物，如今或許擁有超越代表你的意義。",
-      "question": "你會配合它的需要嗎？",
-      "twist": "改變你的髮型並不會改變他們的髮型。",
-      "deeperQuestion": "相似性在什麼情況下不再意味著所有權？"
+      "title": "只有否定句的世界",
+      "scenario": "你醒來後，世界上的人只能用否定句說話。你不能說「我喜歡你」，只能說「我不討厭你」；不能說自己想去哪裡，只能排除不想去的地方。大家仍有完整的感受，只是語言受了限制。",
+      "question": "你會怎樣向朋友表達一件非常肯定的事？請試著只用否定句說。",
+      "twist": "朋友說，長期只聽到「不是不好」，已分不清你是真的喜歡，還是勉強接受。",
+      "deeperQuestion": "如果語言只能排除，不能肯定，會怎樣改變承諾、創作和親密關係？"
     }
   },
   {
     "id": "ponder-weird-088",
     "category": "Weird",
     "emoji": "🪐",
-    "title": "The Borrowed Silence",
-    "scenario": "You can borrow a peaceful person's inner silence for an hour.\n\nYou want temporary relief and know the peaceful person is free to decline. Their willingness does not remove the question of whether relief is shared care or simply the transfer of an experience you find hard to bear.",
-    "question": "Would you ask?",
-    "twist": "They inherit your racing thoughts during that hour.",
-    "deeperQuestion": "When does emotional support become exchanging burdens?",
+    "title": "Role-Swap Friday",
+    "scenario": "Every Friday, social roles are randomly exchanged for one day while memories and skills stay unchanged. Teachers may become students, customers shop staff, and managers new hires. Everyone knows they will switch back tomorrow and cannot pretend to know work they have never learned.",
+    "question": "Which role would you try, and which powers should remain or be suspended for the day?",
+    "twist": "After switching back, someone asks to permanently change a rule they previously defended.",
+    "deeperQuestion": "Is briefly standing on the other side enough to understand it? What remains invisible after a single day?",
     "zh": {
-      "title": "借來的沉默",
-      "scenario": "你可以藉用一個平和之人的內心寧靜一個小時。你想要暫時的解脫，也知道對方可以拒絕。但他們的意願並不能消除這樣一個問題：這種解脫究竟是共同的關懷，還是只是將你難以承受的經驗轉移給他人？",
-      "question": "你會問嗎？",
-      "twist": "在那一個小時裡，他們會繼承你紛亂的思緒。",
-      "deeperQuestion": "情緒支持何時變成負擔交換？"
+      "title": "交換身分的星期五",
+      "scenario": "每逢星期五，所有人的社會角色會隨機交換一天，但技能和記憶不變。老師可能成為學生，顧客可能成為店員，主管可能成為新同事。大家知道翌日會換回來，也知道不能假裝自己懂得沒學過的工作。",
+      "question": "你最想體驗哪個角色？這一天應保留哪些權力，又暫停哪些權力？",
+      "twist": "角色換回來後，有人要求永久修改一條自己以前一直支持的規則。",
+      "deeperQuestion": "短暫站到另一邊，足以理解那個位置嗎？還有甚麼是一天無法看見的？"
     }
   },
   {
@@ -10097,7 +10097,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is closure valuable enough to transfer?",
     "zh": {
       "title": "借來的結局",
-      "scenario": "一個陌生人為你提供了一個令人滿意的結局，講述了他/她未竟的故事。你會感覺到某個重要的問題得到了解答，即使這段旅程並非你親身經歷。接受他人的結局或許會改變你的感受，卻無法讓你獲得那些令他們感到意義非凡的體驗。",
+      "scenario": "一個陌生人願意把自己故事中令人滿足的結局送給你，讓你的某段未完經歷也有交代。你會得到釋懷的感覺，卻沒有親身走過對方通往結局的道路。接受這份完整感，也意味著對方餘下的人生重新變得未定。",
       "question": "你願意接受嗎？",
       "twist": "他們餘生變得開放而不確定。",
       "deeperQuestion": "一個有交代的結局，值得從別人的人生轉到你身上嗎？"
@@ -10106,18 +10106,18 @@ export const questions: Question[] = [
   {
     "id": "ponder-weird-095",
     "category": "Weird",
-    "emoji": "🗺️",
-    "title": "The Living Doorbell",
-    "scenario": "Your doorbell feels rejected whenever visitors leave quickly.\n\nYou feel affection for the doorbell and want it to enjoy visitors. Extending encounters for its sake would ask delivery workers to provide emotional care that was never part of the exchange they agreed to make.",
-    "question": "Would you invite them longer?",
-    "twist": "Visitors came only to deliver packages.",
-    "deeperQuestion": "Can caring for one being impose on uninvolved people?",
+    "emoji": "🌦️",
+    "title": "A Forecast That Votes",
+    "scenario": "Tomorrow’s weather is caused by today’s forecast, which is generated from people’s planned activities. More picnic plans make sunshine likelier, and a sunny forecast attracts even more picnics. Farmers worry that nobody will choose an activity that gives rain a chance.",
+    "question": "How would you break the loop while keeping the forecast useful?",
+    "twist": "Residents register fake activities to encourage rain, then find they can no longer trust the forecast themselves.",
+    "deeperQuestion": "What does accuracy mean when a prediction changes the behavior that produces its outcome?",
     "zh": {
-      "title": "活門鈴",
-      "scenario": "每當訪客匆匆離開，你的門鈴就會感到被冷落。你對門鈴懷有感情，希望它能享受受訪客帶來的樂趣。為了迎合它而延長與門鈴的互動時間，就等於要求送貨員提供情感上的關懷，而這並非他們當初約定的服務內容。",
-      "question": "你會邀請他們多待一段時間嗎？",
-      "twist": "訪客只是來送包裹的。",
-      "deeperQuestion": "照顧一個人是否會給無關的人帶來負擔？"
+      "title": "會投票的天氣預報",
+      "scenario": "明天的天氣由今天的預報決定，而預報又根據大家準備做甚麼來產生。越多人想野餐，晴天機率就越高；但一看到晴天預報，更多人就改去野餐。農夫開始擔心沒有人會選需要雨水的活動。",
+      "question": "你會怎樣打破這個循環，讓預報仍然有用？",
+      "twist": "市民故意登記假活動來爭取雨天，結果連自己也不敢相信預報。",
+      "deeperQuestion": "當預測本身會改變大家的行為，準確還能代表甚麼？"
     }
   },
   {
@@ -10131,7 +10131,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Should future judgment determine present morality?",
     "zh": {
       "title": "時間翻譯",
-      "scenario": "一個裝置可以將你當下的選擇轉化為未來人們如何描述它們。這種轉化準確地反映了未來的判斷，而非證明這些判斷在道德上是正確的。它提供了一種新的視角，同時迫使你思考時間距離應該賦予你多大的權威性。",
+      "scenario": "一個裝置能告訴你，未來的人會怎樣描述你現在的選擇。它能準確預測後人的評價，卻不能證明那些評價一定正確。你得到了一個新的角度，但仍要決定，較晚出現的價值觀是否應該擁有更大的判斷權。",
       "question": "你會使用它嗎？",
       "twist": "他們的價值觀與你的價值觀截然不同。",
       "deeperQuestion": "未來的判斷是否應該決定當下的道德？"
@@ -10148,7 +10148,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Can trust require accepting limited evidence?",
     "zh": {
       "title": "隱形花園",
-      "scenario": "花園只有在無人過問的情況下才會生長。過問通常讓人感覺像是在照顧它，因為它能幫助你及早發現問題。然而，同樣的關注反而會阻礙生長，因此，培育植物需要容忍不確定性，而不是將信任轉化為忽視。",
+      "scenario": "花園只有在沒有人查看它的生長進度時才會生長。過問通常讓人感覺像是在照顧它，因為它能幫助你及早發現問題。然而，同樣的關注反而會阻礙生長，因此，培育植物需要容忍不確定性，而不是將信任轉化為忽視。",
       "question": "你會停止觀看嗎？",
       "twist": "你無法知道它是否需要照護。",
       "deeperQuestion": "信任能否要求接受有限的證據？"
