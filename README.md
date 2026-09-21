@@ -2,11 +2,13 @@
 
 Questions worth arguing about. A mobile-first conversation game built with React, TypeScript, Vite, and plain CSS.
 
+Play now: https://boeymmee-hue.github.io/ponderAPP/
+
 ## Play
 
 Choose Cute, Funny, Moral, Love, Deep, or Weird. Read the dilemma aloud, discuss it, then tap **Go Deeper** for the twist and follow-up. **Next Question** and **Shuffle** draw again. **Surprise Me** draws across all categories.
 
-Includes all six original starter cards. Each category currently has one card, so it repeats after that category resets; Surprise Me offers the full six-card deck. Add more cards to expand each category.
+Includes 600 conversation cards: 100 each in Cute, Funny, Moral, Love, Deep, and Weird. All six original starter cards are preserved. Every card includes a scenario, main question, twist, and deeper follow-up. Each category prioritizes unseen cards before resetting.
 
 Seen question IDs are stored locally on your device. Unseen cards take priority, and an exhausted category resets when drawn again. If browser storage is unavailable, the game keeps an in-memory history. There is no backend, login, or external API.
 
@@ -28,7 +30,7 @@ npm run build
 npm run preview
 ```
 
-The build checks TypeScript and generates the static app in `dist/`. The GitHub Actions workflow also runs this build on pushes and pull requests and saves the result as a downloadable artifact. This does not deploy a website automatically.
+The build checks TypeScript and generates the static app in `dist/`. The GitHub Actions workflow also runs this build on pushes and pull requests and saves the result as a downloadable artifact. Successful builds on main automatically publish the app to GitHub Pages.
 
 ## Edit questions
 
@@ -43,4 +45,4 @@ Edit `src/questions.ts`. Each card requires a unique, stable `id`, a category fr
 
 ## Validation status
 
-Dependencies were not downloaded locally at the user's request. The GitHub workflow performs the full TypeScript and production-build checks after push. Installable/offline PWA support is not included in this initial version.
+Dependencies were not downloaded locally at the user's request. GitHub checks TypeScript, builds the production app, and verifies that the preview serves its assets before publishing. Installable/offline PWA support is not included in this initial version.
