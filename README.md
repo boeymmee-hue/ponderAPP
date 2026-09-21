@@ -46,3 +46,7 @@ Edit `src/questions.ts`. Each card requires a unique, stable `id`, a category fr
 ## Validation status
 
 Dependencies were not downloaded locally at the user's request. GitHub checks TypeScript, builds the production app, and verifies that the preview serves its assets before publishing. Installable/offline PWA support is not included in this initial version.
+
+## Bilingual cards
+
+600 expanded scenarios, with 100 cards in each of six categories. Traditional Chinese appears first, followed by English, including the question, reveal, and deeper discussion. Chinese translations were drafted with Google Translate and edited for context. Stable card IDs preserve existing browsing history.
