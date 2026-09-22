@@ -50,3 +50,15 @@ Dependencies were not downloaded locally at the user's request. GitHub checks Ty
 ## Bilingual cards
 
 600 expanded scenarios, with 100 cards in each of six categories. Traditional Chinese appears first, followed by English, including the question, reveal, and deeper discussion. Chinese translations were drafted with Google Translate and edited for context. Stable card IDs preserve existing browsing history.
+
+## Make real connections
+
+Ponder turns overthinking into perspective, and conversation into connection.
+Every card has a Traditional Chinese-first share panel with Chinese/English PNG
+postcards, a device share action, image download, and a copyable link. Links use
+`?q=<stable-card-id>` so friends open the exact question with its twist initially
+hidden. Images contain the scenario and opening question, keeping the reveal for
+the conversation. Image generation stays on the device; no image service is used.
+If native sharing or clipboard access is unavailable, the panel provides an image
+link and a selectable card URL. Social link previews use a common Ponder brand
+image; individual card posters are generated when the user opens the share panel.
