@@ -1,10 +1,10 @@
 import { categories, type Category, type GroupSize, type Question } from './questions';
 import approved from './approved-questions.json';
 export const moods: Record<Category, {emoji:string;name:string;en:string;description:string;detail:string}> = {
-  Couple:{emoji:'💗',name:'情侶',en:'Couples',description:'從日常小事，多懂對方一點。',detail:'2 人 · 相處、陪伴、生活習慣'},
-  Family:{emoji:'🏠',name:'家庭',en:'Family',description:'飯桌、回憶，還有平常沒說的話。',detail:'2 人以上 · 家人一起慢慢聊'},
-  Party:{emoji:'🎉',name:'朋友聚會',en:'Friends',description:'短故事、小選擇，一起打開話匣子。',detail:'按人數選玩法 · 不熟也能加入'},
-  Solo:{emoji:'🌿',name:'一人思考',en:'Solo',description:'一個小問題，整理今天的想法。',detail:'1 人 · 想一想就好，不必寫答案'},
+  Couple:{emoji:'💗',name:'情侶',en:'Couples',description:'在奇妙的假設裡，看見愛的模樣。',detail:'2 人 · 愛情、信任、一起的未來'},
+  Family:{emoji:'🏠',name:'家庭',en:'Family',description:'如果家變成童話，你會怎樣選？',detail:'2 人以上 · 關心、自由、公平'},
+  Party:{emoji:'🎉',name:'朋友聚會',en:'Friends',description:'一個奇怪世界，幾種意想不到的答案。',detail:'按人數選玩法 · 不熟也能加入'},
+  Solo:{emoji:'🌿',name:'一人思考',en:'Solo',description:'走進小小幻想，遇見心裡的自己。',detail:'1 人 · 願望、金錢、自己的方向'},
 };
 export const groupSizes: {id:GroupSize;name:string;description:string}[] = [
   {id:'small',name:'2–3 人',description:'輪流分享，慢慢了解'},

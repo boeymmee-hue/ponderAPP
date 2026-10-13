@@ -3,6906 +3,6906 @@ export type Category = typeof categories[number];
 export type GroupSize = 'small' | 'medium' | 'large';
 export interface CardText { title: string; scenario: string; question: string; twist: string; deeperQuestion: string; }
 export interface Question extends CardText { id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
-// Active, independently edited everyday conversation cards. Archived links live in archive.ts.
+// Imaginative what-ifs with simple choices and connected follow-ups.
 export const questions: Question[] = [
   {
-    "id": "ponder-v2-couple-001",
+    "id": "ponder-v3-couple-001",
     "category": "Couple",
     "emoji": "💗",
-    "title": "After work",
-    "scenario": "You are tired after work, but your partner wants to talk.",
-    "question": "What would feel helpful right now?",
+    "title": "Worry pet",
+    "scenario": "Your pet can eat one person's worries, but the other must stay awake with it.",
+    "question": "Whose worries should it eat tonight?",
     "twist": "",
-    "deeperQuestion": "What sentence would you use to explain what you need?",
+    "deeperQuestion": "What if the same person stays awake all week?",
     "zh": {
-      "title": "放工之後",
-      "scenario": "你放工後很累，伴侶卻想聊天。",
-      "question": "你希望對方怎樣陪你？",
+      "title": "煩惱小獸",
+      "scenario": "你們養的小獸每天能吃掉一人的煩惱，另一人要陪牠失眠一晚。",
+      "question": "今晚你會讓牠吃誰的？",
       "twist": "",
-      "deeperQuestion": "你會用哪一句話講清楚自己的需要？"
+      "deeperQuestion": "如果連續一星期都是同一人失眠呢？"
     }
   },
   {
-    "id": "ponder-v2-couple-002",
+    "id": "ponder-v3-couple-002",
     "category": "Couple",
     "emoji": "💗",
-    "title": "Running late",
-    "scenario": "Your partner is ten minutes late without a message.",
-    "question": "How would you bring it up?",
+    "title": "Memory rent",
+    "scenario": "A forest cottage charges one shared memory each month instead of money.",
+    "question": "Would you move in?",
     "twist": "",
-    "deeperQuestion": "What message would you like next time they are late?",
+    "deeperQuestion": "Which memory could you give up first?",
     "zh": {
-      "title": "遲到十分鐘",
-      "scenario": "伴侶遲到十分鐘，沒有提早通知。",
-      "question": "你會怎樣開口？",
+      "title": "回憶租金",
+      "scenario": "森林小屋不用錢，每月收走你們一段共同回憶當租金。",
+      "question": "你會搬進去嗎？",
       "twist": "",
-      "deeperQuestion": "下次遲到時，你希望收到甚麼消息？"
+      "deeperQuestion": "第一段你捨得交出的回憶是甚麼？"
     }
   },
   {
-    "id": "ponder-v2-couple-003",
+    "id": "ponder-v3-couple-003",
     "category": "Couple",
     "emoji": "💗",
-    "title": "A free weekend",
-    "scenario": "You both have a free weekend.",
-    "question": "What would you like to do together?",
+    "title": "Honest umbrella",
+    "scenario": "Under this umbrella you hear each other's thoughts; outside it you get wet.",
+    "question": "Would you share it?",
     "twist": "",
-    "deeperQuestion": "If you only had two hours, what part would you keep?",
+    "deeperQuestion": "When would you agree to close it?",
     "zh": {
-      "title": "週末空白",
-      "scenario": "這個週末你們都沒有安排。",
-      "question": "你最想一起做甚麼？",
+      "title": "透明雨傘",
+      "scenario": "傘下的人會聽見彼此當下的想法，走出去就會淋雨。",
+      "question": "你想一起撐嗎？",
       "twist": "",
-      "deeperQuestion": "如果只剩兩小時，你會保留哪個部分？"
+      "deeperQuestion": "你會先約定哪種時候收起傘？"
     }
   },
   {
-    "id": "ponder-v2-couple-004",
+    "id": "ponder-v3-couple-004",
     "category": "Couple",
     "emoji": "💗",
-    "title": "Comfort that helps",
-    "scenario": "You complain about something and your partner immediately offers advice.",
-    "question": "What would you rather receive?",
+    "title": "Waiting island",
+    "scenario": "You receive your dream island, but your partner cannot join for five years.",
+    "question": "Would you go first?",
     "twist": "",
-    "deeperQuestion": "What signal could mean that you just want them to listen?",
+    "deeperQuestion": "What if staying means losing the island forever?",
     "zh": {
-      "title": "安慰方式",
-      "scenario": "你向伴侶抱怨一件事，對方馬上給建議。",
-      "question": "你當時更想要甚麼？",
+      "title": "等你小島",
+      "scenario": "你得到一座夢想小島，但伴侶要五年後才能搬來。",
+      "question": "你會先去住嗎？",
       "twist": "",
-      "deeperQuestion": "下次可以用甚麼暗號，表示你只想被聆聽？"
+      "deeperQuestion": "如果留低就永遠失去小島呢？"
     }
   },
   {
-    "id": "ponder-v2-couple-005",
+    "id": "ponder-v3-couple-005",
     "category": "Couple",
     "emoji": "💗",
-    "title": "Dinner plans",
-    "scenario": "You want inexpensive noodles; your partner wants a fancy restaurant.",
-    "question": "How could tonight work for both of you?",
+    "title": "Love subtitles",
+    "scenario": "One honest thought appears above your partner's head, once a day.",
+    "question": "When would you look?",
     "twist": "",
-    "deeperQuestion": "How much feels comfortable for an ordinary dinner?",
+    "deeperQuestion": "Would you tell them you looked?",
     "zh": {
-      "title": "一頓晚餐",
-      "scenario": "你想吃便宜的麵，伴侶想去高級餐廳。",
-      "question": "今晚怎樣安排，兩人都舒服？",
+      "title": "愛情字幕",
+      "scenario": "對方頭上會顯示一句真心話，但每天只能看一次。",
+      "question": "你會選甚麼時候看？",
       "twist": "",
-      "deeperQuestion": "你們願意為一頓普通晚餐花多少錢？"
+      "deeperQuestion": "你想讓對方知道你看過嗎？"
     }
   },
   {
-    "id": "ponder-v2-couple-006",
+    "id": "ponder-v3-couple-006",
     "category": "Couple",
     "emoji": "💗",
-    "title": "Phone time",
-    "scenario": "Your partner keeps looking at their phone while you talk.",
-    "question": "How would you get their attention?",
+    "title": "Sorry bread",
+    "scenario": "Magic bread ends your partner's anger without an explanation.",
+    "question": "Would you buy it?",
     "twist": "",
-    "deeperQuestion": "When would you both like to put your phones away?",
+    "deeperQuestion": "What if the same thing happens next week?",
     "zh": {
-      "title": "手機時段",
-      "scenario": "你說話時，伴侶一直看手機。",
-      "question": "你會怎樣提醒對方？",
+      "title": "道歉麵包",
+      "scenario": "吃下魔法麵包，對方就不再生你的氣，但你不用解釋。",
+      "question": "你會買嗎？",
       "twist": "",
-      "deeperQuestion": "你們想在哪個時段一起放下手機？"
+      "deeperQuestion": "如果同一件事下星期又發生呢？"
     }
   },
   {
-    "id": "ponder-v2-couple-007",
+    "id": "ponder-v3-couple-007",
     "category": "Couple",
     "emoji": "💗",
-    "title": "A small surprise",
-    "scenario": "You have a small budget to brighten your partner's day.",
-    "question": "How would you use it?",
-    "twist": "",
-    "deeperQuestion": "What could you do without spending money?",
-    "zh": {
-      "title": "小小驚喜",
-      "scenario": "你有一百元，想讓伴侶今天開心一點。",
-      "question": "你會怎樣用？",
-      "twist": "",
-      "deeperQuestion": "如果完全不花錢，你會做甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-008",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Cancelled plans",
-    "scenario": "A date you were looking forward to is cancelled.",
-    "question": "What could your partner do to soften the disappointment?",
-    "twist": "",
-    "deeperQuestion": "Would you prefer a new date right away or an apology first?",
-    "zh": {
-      "title": "約會取消",
-      "scenario": "你期待的約會臨時取消了。",
-      "question": "對方做甚麼，會讓你好受一點？",
-      "twist": "",
-      "deeperQuestion": "你希望馬上改期，還是先聽一句道歉？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-009",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Small chores",
-    "scenario": "You always remember to replace household supplies; your partner does not notice.",
-    "question": "How would you divide this task?",
-    "twist": "",
-    "deeperQuestion": "What unnoticed task does your partner already handle?",
-    "zh": {
-      "title": "家務小事",
-      "scenario": "你總是記得補買日用品，伴侶卻沒有留意。",
-      "question": "你會怎樣分配這件事？",
-      "twist": "",
-      "deeperQuestion": "有哪件看不見的家務，是對方一直在做？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-010",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Taking a pause",
-    "scenario": "During an argument, you need quiet and your partner wants to finish talking.",
-    "question": "How could you take a pause?",
-    "twist": "",
-    "deeperQuestion": "When could you agree to return to the conversation?",
-    "zh": {
-      "title": "吵架暫停",
-      "scenario": "爭吵時，你想安靜一下，伴侶卻想馬上談清楚。",
-      "question": "你們可以怎樣暫停？",
-      "twist": "",
-      "deeperQuestion": "你們約好多久後再談，會比較安心？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-011",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An anniversary",
-    "scenario": "Your anniversary is coming up.",
-    "question": "Would you prefer a gift, an outing, or time at home?",
-    "twist": "",
-    "deeperQuestion": "What small detail would make it feel thoughtful?",
-    "zh": {
-      "title": "紀念日",
-      "scenario": "紀念日快到了。",
-      "question": "你比較想收到禮物、一起出門，還是留在家？",
-      "twist": "",
-      "deeperQuestion": "哪一個細節會讓你覺得對方有用心？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-012",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Time with friends",
-    "scenario": "Your partner wants to go out with friends; you thought you would meet that day.",
-    "question": "How would you discuss it?",
-    "twist": "",
-    "deeperQuestion": "How far ahead would you like to know each other's plans?",
-    "zh": {
-      "title": "朋友時間",
-      "scenario": "伴侶想和朋友單獨出去，你本來以為那天會見面。",
-      "question": "你會怎樣商量？",
-      "twist": "",
-      "deeperQuestion": "你希望提早多久知道彼此的安排？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-013",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Posting a photo",
-    "scenario": "Your partner wants to post a photo together, but you dislike how you look.",
-    "question": "What would you say?",
-    "twist": "",
-    "deeperQuestion": "Would you like to ask each other before posting photos?",
-    "zh": {
-      "title": "公開合照",
-      "scenario": "伴侶想上載合照，但你不喜歡自己的表情。",
-      "question": "你會怎樣說？",
-      "twist": "",
-      "deeperQuestion": "你們想在分享照片前問過對方嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-014",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Replying to messages",
-    "scenario": "You are busy for hours and your partner worries when you do not reply.",
-    "question": "What check-in would work?",
-    "twist": "",
-    "deeperQuestion": "When would you prefer a phone call instead?",
-    "zh": {
-      "title": "回覆訊息",
-      "scenario": "你忙了幾小時沒有回覆，伴侶開始擔心。",
-      "question": "你們可以約定怎樣報個平安？",
-      "twist": "",
-      "deeperQuestion": "哪種情況下，你希望對方直接打電話？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-015",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Travel pace",
-    "scenario": "On holiday, one of you wants an early start and the other wants to sleep in.",
-    "question": "What is tomorrow's plan?",
-    "twist": "",
-    "deeperQuestion": "Would you be comfortable spending half a day separately?",
-    "zh": {
-      "title": "旅行步調",
-      "scenario": "旅行時，一人想早起看景點，一人想睡晚一點。",
-      "question": "明早怎樣安排？",
-      "twist": "",
-      "deeperQuestion": "你們介意分開活動半天嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-016",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Birthday wishes",
-    "scenario": "Your partner asks what you want for your birthday.",
-    "question": "Would you tell them or leave room for a surprise?",
-    "twist": "",
-    "deeperQuestion": "Is there a kind of celebration you do not enjoy?",
-    "zh": {
-      "title": "生日想要",
-      "scenario": "生日快到了，伴侶問你想要甚麼。",
-      "question": "你會直接講，還是想留點驚喜？",
-      "twist": "",
-      "deeperQuestion": "有甚麼慶祝方式是你不喜歡的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-017",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A compliment",
-    "scenario": "Think of something small your partner did recently.",
-    "question": "What would you like to appreciate?",
-    "twist": "",
-    "deeperQuestion": "How could you say that compliment now?",
-    "zh": {
-      "title": "一句稱讚",
-      "scenario": "想起伴侶最近做的一件小事。",
-      "question": "你最想稱讚哪一點？",
-      "twist": "",
-      "deeperQuestion": "現在可以怎樣把這句稱讚說出來？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-018",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Meeting family",
-    "scenario": "Your partner is having dinner with your family for the first time.",
-    "question": "What would you tell them beforehand?",
-    "twist": "",
-    "deeperQuestion": "How would you help if they felt uncomfortable?",
-    "zh": {
-      "title": "見家人",
-      "scenario": "伴侶第一次和你的家人吃飯。",
-      "question": "你會先提醒對方甚麼？",
-      "twist": "",
-      "deeperQuestion": "當對方不自在時，你會怎樣幫忙？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-019",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Living together",
-    "scenario": "You like things tidy and your partner leaves things around.",
-    "question": "Which space matters most to you?",
-    "twist": "",
-    "deeperQuestion": "Where could you be more flexible?",
-    "zh": {
-      "title": "同住習慣",
-      "scenario": "你喜歡東西放整齊，伴侶習慣隨手放。",
-      "question": "你最在意家中哪個地方？",
-      "twist": "",
-      "deeperQuestion": "哪個地方你願意放寬一點？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-020",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Five minutes",
-    "scenario": "You are both busy and have only five minutes to talk each day.",
-    "question": "What would you spend it on?",
-    "twist": "",
-    "deeperQuestion": "When would this be easiest to keep up?",
-    "zh": {
-      "title": "每天五分鐘",
-      "scenario": "你們最近都很忙，每天只有五分鐘好好說話。",
-      "question": "你想用來聊甚麼？",
-      "twist": "",
-      "deeperQuestion": "甚麼時間最容易真的做到？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-021",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "After sorry",
-    "scenario": "Your partner apologizes for something small, but you still feel hurt.",
-    "question": "What would help next?",
-    "twist": "",
-    "deeperQuestion": "How much time do you usually need before talking again?",
-    "zh": {
-      "title": "道歉之後",
-      "scenario": "伴侶為一件小事道歉了，但你還有點不開心。",
-      "question": "你希望接下來發生甚麼？",
-      "twist": "",
-      "deeperQuestion": "你通常需要多久才準備好再聊天？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-022",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A shared budget",
-    "scenario": "You want to save for a trip together.",
-    "question": "What expense would you cut first?",
-    "twist": "",
-    "deeperQuestion": "What small pleasure would you want to keep?",
-    "zh": {
-      "title": "兩人的預算",
-      "scenario": "你們想一起儲錢去旅行。",
-      "question": "你願意先減少哪一項開支？",
-      "twist": "",
-      "deeperQuestion": "哪一項小享受，你不想放棄？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-023",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Comfortable silence",
-    "scenario": "You sit together without speaking for ten minutes.",
-    "question": "Does that feel comfortable or awkward?",
-    "twist": "",
-    "deeperQuestion": "During what activity does silence feel easiest?",
-    "zh": {
-      "title": "沉默也舒服",
-      "scenario": "你們一起坐著，已經十分鐘沒有說話。",
-      "question": "你覺得舒服，還是需要找話題？",
-      "twist": "",
-      "deeperQuestion": "一起做甚麼事時，你最不怕冷場？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-024",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Being misunderstood",
-    "scenario": "Your partner takes a joke seriously and feels mocked.",
-    "question": "How would you respond?",
-    "twist": "",
-    "deeperQuestion": "What kind of joke would you prefer to avoid?",
-    "zh": {
-      "title": "被誤會",
-      "scenario": "伴侶把你的玩笑當真，覺得被取笑。",
-      "question": "你會怎樣回應？",
-      "twist": "",
-      "deeperQuestion": "有哪類玩笑，你希望彼此少開？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-025",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Different hobbies",
-    "scenario": "Your partner loves a hobby you do not understand.",
-    "question": "How could you try joining in once?",
-    "twist": "",
-    "deeperQuestion": "Which of your hobbies would you like them to try?",
-    "zh": {
-      "title": "各自的興趣",
-      "scenario": "伴侶很喜歡一項你不太懂的興趣。",
-      "question": "你願意怎樣參與一次？",
-      "twist": "",
-      "deeperQuestion": "你希望對方試試你的哪一項興趣？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-026",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Forgetting something",
-    "scenario": "Your partner forgets a small wish you mentioned.",
-    "question": "Would you remind them or feel disappointed?",
-    "twist": "",
-    "deeperQuestion": "What is something you really want them to remember?",
-    "zh": {
-      "title": "忘記小事",
-      "scenario": "伴侶忘了你提過的小願望。",
-      "question": "你會再講一次，還是有點失望？",
-      "twist": "",
-      "deeperQuestion": "有甚麼事是你很希望對方記得的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-027",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A sick day",
-    "scenario": "You are home with a cold.",
-    "question": "What one thing would make you feel cared for?",
-    "twist": "",
-    "deeperQuestion": "What well-meant action might interrupt your rest?",
-    "zh": {
-      "title": "生病的一天",
-      "scenario": "你感冒在家。",
-      "question": "伴侶做哪一件事，會讓你覺得被照顧？",
-      "twist": "",
-      "deeperQuestion": "有甚麼好意反而會打擾你休息？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-028",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An evening apart",
-    "scenario": "You live far apart and can only call tonight.",
-    "question": "What would help you feel together?",
-    "twist": "",
-    "deeperQuestion": "What small activity could you do together on the call?",
-    "zh": {
-      "title": "遠距離晚上",
-      "scenario": "你們住得很遠，今晚只能通電話。",
-      "question": "怎樣聊會比較像在一起？",
-      "twist": "",
-      "deeperQuestion": "除了聊天，你們可以同步做甚麼小事？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-029",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "How often to meet",
-    "scenario": "You want to meet daily; your partner is happy with three times a week.",
-    "question": "How could you find a balance?",
-    "twist": "",
-    "deeperQuestion": "What kind of contact feels enough on other days?",
-    "zh": {
-      "title": "相處節奏",
-      "scenario": "你想每天見面，伴侶一星期見三次就很滿足。",
-      "question": "你會怎樣找中間位置？",
-      "twist": "",
-      "deeperQuestion": "沒有見面的日子，甚麼聯繫方式已經足夠？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-030",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Affection in public",
-    "scenario": "Your partner wants a hug in public and you do not feel like it.",
-    "question": "How would you say so?",
-    "twist": "",
-    "deeperQuestion": "What kind of affection feels most comfortable to you?",
-    "zh": {
-      "title": "親密界線",
-      "scenario": "伴侶在人多的地方想擁抱你。",
-      "question": "你當下不太想，會怎樣表達？",
-      "twist": "",
-      "deeperQuestion": "哪種表達親密的方式，讓你最自在？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-031",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Good news",
-    "scenario": "You have good news and want to tell your partner immediately.",
-    "question": "What response would you enjoy?",
-    "twist": "",
-    "deeperQuestion": "What small ritual could you use to celebrate good news?",
-    "zh": {
-      "title": "好消息",
-      "scenario": "你得到一個好消息，馬上想告訴伴侶。",
-      "question": "你希望對方怎樣回應？",
-      "twist": "",
-      "deeperQuestion": "你們想用甚麼小儀式慶祝好消息？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-032",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A difficult task",
-    "scenario": "You try something unfamiliar and your partner keeps giving instructions.",
-    "question": "Do you want help or room to try?",
-    "twist": "",
-    "deeperQuestion": "How could you ask them to wait before helping?",
-    "zh": {
-      "title": "不擅長的事",
-      "scenario": "你做一件不擅長的事，伴侶一直指導。",
-      "question": "你想要幫忙，還是先自己試？",
-      "twist": "",
-      "deeperQuestion": "你可以用甚麼說法請對方先等等？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-033",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Social energy",
-    "scenario": "An hour into a party, you want to leave and your partner wants to stay.",
-    "question": "What would work?",
-    "twist": "",
-    "deeperQuestion": "What could you agree on before going out?",
-    "zh": {
-      "title": "社交電量",
-      "scenario": "聚會才過一小時，你已經想回家，伴侶還很投入。",
-      "question": "你們會怎樣安排？",
-      "twist": "",
-      "deeperQuestion": "出門前可以先約定甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-034",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A new habit",
-    "scenario": "You want your time together to feel better.",
-    "question": "What small habit could you try this week?",
-    "twist": "",
-    "deeperQuestion": "If you miss a day, how would you restart?",
-    "zh": {
-      "title": "一個新習慣",
-      "scenario": "你們想讓相處舒服一點。",
-      "question": "這星期最想一起試哪個小習慣？",
-      "twist": "",
-      "deeperQuestion": "如果忘了一天，你希望怎樣重新開始？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-035",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A shared corner",
-    "scenario": "There is room for one piece of furniture at home.",
-    "question": "What would you like that corner to be for?",
-    "twist": "",
-    "deeperQuestion": "Who most needs a place to rest there?",
-    "zh": {
-      "title": "共同空間",
-      "scenario": "家中多了一個小角落，只能放一件家具。",
-      "question": "你們想把它用來做甚麼？",
-      "twist": "",
-      "deeperQuestion": "這個角落最需要讓誰休息一下？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-036",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Different tastes",
-    "scenario": "You love spicy food and your partner does not.",
-    "question": "How would you cook dinner together?",
-    "twist": "",
-    "deeperQuestion": "What dish do you both keep coming back to?",
-    "zh": {
-      "title": "不同口味",
-      "scenario": "你愛吃辣，伴侶完全不吃辣。",
-      "question": "一起煮晚餐時怎樣安排？",
-      "twist": "",
-      "deeperQuestion": "有哪道菜是你們都吃不厭的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-037",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Staying in",
-    "scenario": "You planned to go out, but today you want to stay home.",
-    "question": "How would you tell your partner?",
-    "twist": "",
-    "deeperQuestion": "What simple alternative could you offer?",
-    "zh": {
-      "title": "不想出門",
-      "scenario": "約好了出去，但你今天只想留在家。",
-      "question": "你會怎樣跟伴侶說？",
-      "twist": "",
-      "deeperQuestion": "你可以提出哪個簡單的替代安排？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-038",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A busy week",
-    "scenario": "Your partner has a very busy work week.",
-    "question": "How could you help without adding another task?",
-    "twist": "",
-    "deeperQuestion": "What would you ask first to check what they need?",
-    "zh": {
-      "title": "忙碌的一週",
-      "scenario": "伴侶這星期工作很忙。",
-      "question": "你想怎樣支持，又不增加對方負擔？",
-      "twist": "",
-      "deeperQuestion": "你會先問哪一句，確認對方真的需要？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-039",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Deciding together",
-    "scenario": "You have spent twenty minutes choosing a restaurant.",
-    "question": "What simple rule would help you decide?",
-    "twist": "",
-    "deeperQuestion": "Who could offer two choices next time?",
-    "zh": {
-      "title": "一起做決定",
-      "scenario": "你們挑餐廳挑了二十分鐘。",
-      "question": "你想訂甚麼小規則，快一點決定？",
-      "twist": "",
-      "deeperQuestion": "下次輪到誰先提出兩個選擇？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-040",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Saying no",
-    "scenario": "Your partner invites you to an activity you do not enjoy.",
-    "question": "How would you decline?",
-    "twist": "",
-    "deeperQuestion": "If it matters a lot to them, how would you discuss it?",
-    "zh": {
-      "title": "說不的時候",
-      "scenario": "伴侶邀你參加一個活動，你其實沒興趣。",
-      "question": "你會怎樣拒絕？",
-      "twist": "",
-      "deeperQuestion": "如果活動對對方很重要，你會怎樣商量？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-041",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "The first meeting",
-    "scenario": "Think back to your first meeting.",
-    "question": "What small thing did you notice first?",
-    "twist": "",
-    "deeperQuestion": "What later turned out differently from your first impression?",
-    "zh": {
-      "title": "記得初見",
-      "scenario": "回想第一次見面。",
-      "question": "你最先注意到對方哪個小地方？",
-      "twist": "",
-      "deeperQuestion": "後來發現有哪一點跟第一印象不同？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-042",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A walk together",
-    "scenario": "You can take a half-hour walk tonight.",
-    "question": "What would you like to talk about?",
-    "twist": "",
-    "deeperQuestion": "Which route would help you relax?",
-    "zh": {
-      "title": "一起走路",
-      "scenario": "今晚你們可以散步半小時。",
-      "question": "你想沿途聊甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪條路會讓你比較放鬆？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-043",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An unsuitable gift",
-    "scenario": "Your partner gives you a thoughtful gift you will rarely use.",
-    "question": "What would you do?",
-    "twist": "",
-    "deeperQuestion": "Would you rather be asked what you need or be surprised?",
-    "zh": {
-      "title": "收到不合用的禮物",
-      "scenario": "伴侶送的禮物很有心意，但你不太會用。",
-      "question": "你會怎樣處理？",
-      "twist": "",
-      "deeperQuestion": "你希望禮物可以直接問需要，還是保留驚喜？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-044",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Splitting a bill",
-    "scenario": "Your incomes differ, but you usually split bills equally.",
-    "question": "Does that feel comfortable?",
-    "twist": "",
-    "deeperQuestion": "How would you start a conversation about the budget?",
-    "zh": {
-      "title": "分開付款",
-      "scenario": "你們收入不同，卻常常平均分帳。",
-      "question": "你覺得這樣舒服嗎？",
-      "twist": "",
-      "deeperQuestion": "你想怎樣開口談一次預算？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-045",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Bedtime habits",
-    "scenario": "One of you wants to talk at bedtime; the other wants to sleep.",
-    "question": "What arrangement could work?",
-    "twist": "",
-    "deeperQuestion": "When else could you make time to talk?",
-    "zh": {
-      "title": "睡前習慣",
-      "scenario": "一人睡前想聊天，一人躺下就想睡。",
-      "question": "你們可以怎樣安排？",
-      "twist": "",
-      "deeperQuestion": "可以把聊天移到哪個時間？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-046",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Being interrupted",
-    "scenario": "Halfway through your story, your partner starts their own.",
-    "question": "How would you continue?",
-    "twist": "",
-    "deeperQuestion": "What follow-up would show you they are listening?",
-    "zh": {
-      "title": "被打斷",
-      "scenario": "你講到一半，伴侶接過話題說自己的故事。",
-      "question": "你會怎樣繼續？",
-      "twist": "",
-      "deeperQuestion": "你想聽到對方問哪一句跟進問題？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-047",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Time alone",
-    "scenario": "You want an evening to yourself.",
-    "question": "How would you explain it to your partner?",
-    "twist": "",
-    "deeperQuestion": "What solo activity helps you return with more energy?",
-    "zh": {
-      "title": "各自充電",
-      "scenario": "你想留一個晚上給自己。",
-      "question": "怎樣跟伴侶說，對方比較容易理解？",
-      "twist": "",
-      "deeperQuestion": "獨處時做甚麼，會讓你更有精神相處？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-048",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A different date",
-    "scenario": "Your dates have started to feel repetitive.",
-    "question": "What simple change would you try next time?",
-    "twist": "",
-    "deeperQuestion": "Is there a place you keep mentioning but never visit?",
-    "zh": {
-      "title": "約會新鮮感",
-      "scenario": "你們最近每次約會都吃同一類飯。",
-      "question": "下一次想試甚麼簡單的新安排？",
-      "twist": "",
-      "deeperQuestion": "有哪個一直說想去、卻還沒去的地方？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-049",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Sharing stress",
-    "scenario": "You are stressed but do not want every meeting to become a complaint session.",
-    "question": "How would you let your partner know?",
-    "twist": "",
-    "deeperQuestion": "What one thing could they take off your plate today?",
-    "zh": {
-      "title": "分享壓力",
-      "scenario": "你最近壓力很大，但不想每次見面都在抱怨。",
-      "question": "你會怎樣讓伴侶知道？",
-      "twist": "",
-      "deeperQuestion": "今天你最希望對方幫你減少哪一件事？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-050",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A photo together",
-    "scenario": "You are choosing one photo together to display at home.",
-    "question": "Which moment would you pick?",
-    "twist": "",
-    "deeperQuestion": "What happened that day that the photo does not show?",
-    "zh": {
-      "title": "兩人的照片",
-      "scenario": "你要挑一張合照放在房間。",
-      "question": "你會選哪個時刻？",
-      "twist": "",
-      "deeperQuestion": "那天有甚麼照片拍不到的小事？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-051",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Different opinions",
-    "scenario": "You watch the same film and have opposite reactions.",
-    "question": "What would you ask your partner?",
-    "twist": "",
-    "deeperQuestion": "Did they enjoy anything you had not noticed?",
-    "zh": {
-      "title": "意見不同",
-      "scenario": "你們看完同一部電影，喜好完全相反。",
-      "question": "你想問對方哪個問題？",
-      "twist": "",
-      "deeperQuestion": "對方喜歡的部分，有沒有一點是你原本沒留意的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-052",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An extra hour",
-    "scenario": "You unexpectedly get an extra hour together.",
-    "question": "What would you do that usually gets skipped?",
-    "twist": "",
-    "deeperQuestion": "Could you make time for this next week?",
-    "zh": {
-      "title": "時間變多了",
-      "scenario": "今天突然多了一小時可以相處。",
-      "question": "你想用來做甚麼平常沒空做的事？",
-      "twist": "",
-      "deeperQuestion": "你們可以把這件事排進下星期嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-053",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Outfit advice",
-    "scenario": "Your partner asks about an outfit you do not like.",
-    "question": "How would you answer?",
-    "twist": "",
-    "deeperQuestion": "Would you prefer a direct opinion or encouragement first?",
-    "zh": {
-      "title": "衣著建議",
-      "scenario": "伴侶問你這件衣服好不好看，你不太喜歡。",
-      "question": "你會怎樣回答？",
-      "twist": "",
-      "deeperQuestion": "你自己想聽直接意見，還是先聽鼓勵？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-054",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Family comments",
-    "scenario": "A relative criticizes your plans in front of both of you.",
-    "question": "How would you like your partner to respond?",
-    "twist": "",
-    "deeperQuestion": "What sentence could you agree to use to support each other?",
-    "zh": {
-      "title": "家人插話",
-      "scenario": "家人當著伴侶的面批評你們的安排。",
-      "question": "你希望伴侶怎樣回應？",
-      "twist": "",
-      "deeperQuestion": "事前可以約定哪一句話，幫彼此解圍？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-055",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An important day",
-    "scenario": "You have something nerve-racking tomorrow.",
-    "question": "What could your partner do tonight that would help most?",
-    "twist": "",
-    "deeperQuestion": "How would you like to unwind together afterward?",
-    "zh": {
-      "title": "重要的日子",
-      "scenario": "明天你有一件很緊張的事。",
-      "question": "伴侶今晚怎樣陪你會最有用？",
-      "twist": "",
-      "deeperQuestion": "明天結束後，你想一起怎樣放鬆？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-056",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Who makes the plans",
-    "scenario": "You planned the last three dates.",
-    "question": "How would you invite your partner to take a turn?",
-    "twist": "",
-    "deeperQuestion": "What would you agree on before taking turns?",
-    "zh": {
-      "title": "誰來安排",
-      "scenario": "最近三次約會都是你安排的。",
-      "question": "你想怎樣請對方也參與？",
-      "twist": "",
-      "deeperQuestion": "如果輪流安排，你們需要先講清楚甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-057",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Different schedules",
-    "scenario": "You wake early and your partner stays up late.",
-    "question": "What time together would you protect?",
-    "twist": "",
-    "deeperQuestion": "What noise or habit might disturb the other's rest?",
-    "zh": {
-      "title": "不同作息",
-      "scenario": "你早起，伴侶很晚才睡。",
-      "question": "你們一天裡最想保留哪段共同時間？",
-      "twist": "",
-      "deeperQuestion": "有哪個聲音或習慣會打擾彼此休息？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-058",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Your own friends",
-    "scenario": "Your partner has friends you barely know.",
-    "question": "How would you like to get to know them?",
-    "twist": "",
-    "deeperQuestion": "Would meeting one or two people feel easier than a whole group?",
-    "zh": {
-      "title": "自己的朋友",
-      "scenario": "伴侶的朋友圈有很多你不認識的人。",
-      "question": "你想怎樣慢慢熟悉？",
-      "twist": "",
-      "deeperQuestion": "先見一兩個人，還是一起聚會，你比較自在？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-059",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "An unfinished task",
-    "scenario": "Your partner promised to clean the kitchen but forgot.",
-    "question": "How would you remind them?",
-    "twist": "",
-    "deeperQuestion": "What kind of reminder is easiest for you to receive?",
-    "zh": {
-      "title": "忘了收拾",
-      "scenario": "伴侶答應收拾廚房，結果忘記了。",
-      "question": "你會怎樣提醒？",
-      "twist": "",
-      "deeperQuestion": "哪種提醒方式最容易讓你聽得進去？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-060",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A shared goal",
-    "scenario": "You want to accomplish something small together in three months.",
-    "question": "What would you suggest?",
-    "twist": "",
-    "deeperQuestion": "What first step could you take tomorrow?",
-    "zh": {
-      "title": "一項共同目標",
-      "scenario": "你們想在三個月內完成一件小事。",
-      "question": "你會提議甚麼？",
-      "twist": "",
-      "deeperQuestion": "第一步小到明天就能做的話，會是甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-061",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Worth keeping",
-    "scenario": "You have a habit that may seem ordinary to others.",
-    "question": "Which one would you like to keep?",
-    "twist": "",
-    "deeperQuestion": "How did that habit begin?",
-    "zh": {
-      "title": "值得留住",
-      "scenario": "你們有一個別人看來很普通的習慣。",
-      "question": "哪一個你最想一直保留？",
-      "twist": "",
-      "deeperQuestion": "它是從哪一次開始的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-062",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Your turn to care",
-    "scenario": "Your partner usually looks after you.",
-    "question": "What would you like to take care of this time?",
-    "twist": "",
-    "deeperQuestion": "What would you need to learn so they do not have to remind you?",
-    "zh": {
-      "title": "換你照顧",
-      "scenario": "平常多數是伴侶照顧你。",
-      "question": "這次你想接手哪一件事？",
-      "twist": "",
-      "deeperQuestion": "你需要先學會甚麼，才不用對方再提醒？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-063",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A small surprise to learn",
-    "scenario": "You want to share a harmless little discovery about yourself.",
-    "question": "What have you been enjoying lately?",
-    "twist": "",
-    "deeperQuestion": "Would you like them to try it with you?",
-    "zh": {
-      "title": "一個小秘密",
-      "scenario": "你想讓伴侶知道一件無傷大雅的小事。",
-      "question": "你最近迷上了甚麼？",
-      "twist": "",
-      "deeperQuestion": "你想邀對方一起試一次嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-064",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Different expectations",
-    "scenario": "You thought tonight was a date, but your partner invited friends.",
-    "question": "What would you ask first?",
-    "twist": "",
-    "deeperQuestion": "How could you distinguish couple time from group plans next time?",
-    "zh": {
-      "title": "期待落差",
-      "scenario": "你以為今晚是約會，伴侶卻約了其他朋友。",
-      "question": "你會先問甚麼？",
-      "twist": "",
-      "deeperQuestion": "以後怎樣分清楚「兩人時間」和「朋友聚會」？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-065",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Not your fault",
-    "scenario": "Your partner seems upset and speaks more coldly than usual.",
-    "question": "Would you give space or ask about it?",
-    "twist": "",
-    "deeperQuestion": "How could you explain that your bad mood is not aimed at them?",
-    "zh": {
-      "title": "不是你的錯",
-      "scenario": "伴侶心情差，說話比平常冷淡。",
-      "question": "你會先給空間，還是問一句？",
-      "twist": "",
-      "deeperQuestion": "你心情差時，想怎樣提醒對方不是針對他？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-066",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Feeling noticed",
-    "scenario": "Think of something small you have worked hard on recently.",
-    "question": "What would you like your partner to notice?",
-    "twist": "",
-    "deeperQuestion": "What recent effort of theirs deserves a thank-you?",
-    "zh": {
-      "title": "想被看見",
-      "scenario": "想起最近一件你很努力的小事。",
-      "question": "你希望伴侶注意到甚麼？",
-      "twist": "",
-      "deeperQuestion": "對方最近的哪份努力，是你想補一句謝謝的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-067",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A different setting",
-    "scenario": "You need to discuss something a little difficult.",
-    "question": "Where would you feel more relaxed talking?",
-    "twist": "",
-    "deeperQuestion": "Would you prefer a message beforehand or to start in person?",
-    "zh": {
-      "title": "換個地方",
-      "scenario": "你們想談一件有點難開口的事。",
-      "question": "在哪裡談，你會比較放鬆？",
-      "twist": "",
-      "deeperQuestion": "你想先傳訊息提一下，還是見面才說？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-068",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Keeping a promise",
-    "scenario": "Your partner keeps agreeing to exercise together but rarely does.",
-    "question": "How would you reset the plan?",
-    "twist": "",
-    "deeperQuestion": "What smaller goal would you both genuinely choose?",
-    "zh": {
-      "title": "口頭承諾",
-      "scenario": "伴侶答應一起做運動，但常常沒有實行。",
-      "question": "你會怎樣重新安排？",
-      "twist": "",
-      "deeperQuestion": "怎樣的小目標，是你們都真的願意做的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-069",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Alike and different",
-    "scenario": "You are alike in some ways and different in others.",
-    "question": "Which difference makes life more interesting?",
-    "twist": "",
-    "deeperQuestion": "What small skill have you learned from them?",
-    "zh": {
-      "title": "相似與不同",
-      "scenario": "你們有些地方很像，有些很不同。",
-      "question": "哪一個不同反而令生活更有趣？",
-      "twist": "",
-      "deeperQuestion": "你從對方身上學會了甚麼小技能？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-070",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "When you miss them",
-    "scenario": "You cannot meet for a few days.",
-    "question": "What small thing reminds you of your partner?",
-    "twist": "",
-    "deeperQuestion": "What would you send them to share that moment?",
-    "zh": {
-      "title": "想念的時候",
-      "scenario": "你們幾天不能見面。",
-      "question": "甚麼小事最容易讓你想起對方？",
-      "twist": "",
-      "deeperQuestion": "你會想傳甚麼給對方分享那一刻？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-071",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Learning together",
-    "scenario": "You can take one free class together.",
-    "question": "What would you like to learn?",
-    "twist": "",
-    "deeperQuestion": "Who would ask more questions, and who would practise more?",
-    "zh": {
-      "title": "一起學習",
-      "scenario": "你們可以免費上一次課。",
-      "question": "你最想和伴侶學甚麼？",
-      "twist": "",
-      "deeperQuestion": "誰會比較敢問問題，誰會比較肯練習？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-072",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Unexpected visitors",
-    "scenario": "Your partner brings friends home when you planned to rest.",
-    "question": "What would you say?",
-    "twist": "",
-    "deeperQuestion": "What would you like to know before someone visits?",
-    "zh": {
-      "title": "臨時訪客",
-      "scenario": "伴侶突然帶朋友回家，而你原本想休息。",
-      "question": "你會怎樣講？",
-      "twist": "",
-      "deeperQuestion": "家裡有訪客前，你希望提早知道哪些事？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-073",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "After a small argument",
-    "scenario": "You have cooled down after a small argument.",
-    "question": "How would you reconnect?",
-    "twist": "",
-    "deeperQuestion": "Would words, a hug, or a little time help most?",
-    "zh": {
-      "title": "小吵之後",
-      "scenario": "你們剛為小事吵過，現在都冷靜了。",
-      "question": "你會怎樣開始和好？",
-      "twist": "",
-      "deeperQuestion": "你比較接受一句話、一個擁抱，還是一點時間？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-074",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Shopping together",
-    "scenario": "You are buying something to share and prefer different designs.",
-    "question": "What would you compare first?",
-    "twist": "",
-    "deeperQuestion": "Which matters most to each of you: looks, price, or durability?",
-    "zh": {
-      "title": "一起購物",
-      "scenario": "你們要買一件共用的東西，喜歡的款式不同。",
-      "question": "你會先比較哪一點？",
-      "twist": "",
-      "deeperQuestion": "外觀、價格、耐用程度，你們各自最在意哪個？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-075",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Reassurance",
-    "scenario": "Your partner has been doubting themselves.",
-    "question": "What specific thing would you remind them of?",
-    "twist": "",
-    "deeperQuestion": "What encouragement helps when you feel low?",
-    "zh": {
-      "title": "一句安心話",
-      "scenario": "伴侶最近對自己沒有信心。",
-      "question": "你想告訴對方哪件具體的小事？",
-      "twist": "",
-      "deeperQuestion": "你低落時，哪一句鼓勵通常最有用？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-076",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Names we use",
-    "scenario": "Think about the names you use for each other.",
-    "question": "Which feels most affectionate?",
-    "twist": "",
-    "deeperQuestion": "Do you prefer the same name in public and in private?",
-    "zh": {
-      "title": "喜歡的稱呼",
-      "scenario": "你們平常有自己的稱呼。",
-      "question": "哪個稱呼最讓你覺得親近？",
-      "twist": "",
-      "deeperQuestion": "在人前和私下，你喜歡的稱呼一樣嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-077",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Something to keep",
-    "scenario": "While moving, you can keep one object tied to a shared memory.",
-    "question": "What would you choose?",
-    "twist": "",
-    "deeperQuestion": "What little moment does it bring back?",
-    "zh": {
-      "title": "重要物件",
-      "scenario": "搬家時只能留下一件有共同回憶的物品。",
-      "question": "你會選甚麼？",
-      "twist": "",
-      "deeperQuestion": "它讓你記起哪個小片段？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-078",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Getting lost",
-    "scenario": "You take a wrong turn on a trip.",
-    "question": "Would you find the route immediately or explore a little?",
-    "twist": "",
-    "deeperQuestion": "Who usually settles first when plans change?",
-    "zh": {
-      "title": "一起迷路",
-      "scenario": "旅行時你們走錯了路。",
-      "question": "你想先找路，還是順便逛一下？",
-      "twist": "",
-      "deeperQuestion": "遇到意外時，誰通常先冷靜下來？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-079",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A new job",
-    "scenario": "Your partner starts a job with different hours.",
-    "question": "What would you need to rearrange first?",
-    "twist": "",
-    "deeperQuestion": "What existing habit would you most like to protect?",
-    "zh": {
-      "title": "新工作",
-      "scenario": "伴侶換了工作，生活時間跟以前不同。",
-      "question": "你們最需要重新安排甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪個原有習慣，是你最想保住的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-080",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Cooking together",
-    "scenario": "You are cooking together tonight.",
-    "question": "Which part would you like to handle?",
-    "twist": "",
-    "deeperQuestion": "What would be your backup dinner if it goes wrong?",
-    "zh": {
-      "title": "一起煮飯",
-      "scenario": "你們今晚一起煮飯。",
-      "question": "你最想負責哪個部分？",
-      "twist": "",
-      "deeperQuestion": "如果煮失敗了，你們的後備晚餐是甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-081",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Our list",
-    "scenario": "You each list three things to do together this year.",
-    "question": "Which would be easiest to start with?",
-    "twist": "",
-    "deeperQuestion": "Could you choose a date for it now?",
-    "zh": {
-      "title": "兩人的清單",
-      "scenario": "你們各寫三件今年想一起做的事。",
-      "question": "哪一件最容易先完成？",
-      "twist": "",
-      "deeperQuestion": "可以現在就定一個日期嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-082",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Being compared",
-    "scenario": "Your partner mentions how another couple does things.",
-    "question": "What would you rather not be compared on?",
-    "twist": "",
-    "deeperQuestion": "What is one habit you like about your own relationship?",
-    "zh": {
-      "title": "被比較",
-      "scenario": "伴侶提起另一對情侶的相處方式。",
-      "question": "你最不想被拿來比較甚麼？",
-      "twist": "",
-      "deeperQuestion": "你喜歡你們自己哪一個獨特習慣？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-083",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Keeping memories",
-    "scenario": "You want to keep everyday memories without always taking photos.",
-    "question": "How would you do it?",
-    "twist": "",
-    "deeperQuestion": "What moment from this week is worth keeping?",
-    "zh": {
-      "title": "收好回憶",
-      "scenario": "你們想記錄日常，又不想每次都拍照。",
-      "question": "你會用甚麼方法？",
-      "twist": "",
-      "deeperQuestion": "這星期有哪一刻值得記下來？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-084",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A new friendship",
-    "scenario": "Your partner often mentions a new friend and you are curious.",
-    "question": "How would you ask without interrogating them?",
-    "twist": "",
-    "deeperQuestion": "What do you usually like to know about someone's friends?",
-    "zh": {
-      "title": "新的朋友",
-      "scenario": "伴侶常提起一位新朋友，你有點好奇。",
-      "question": "你會怎樣問，才像聊天而不是盤問？",
-      "twist": "",
-      "deeperQuestion": "你通常想知道朋友的哪些事？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-085",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Moving together",
-    "scenario": "You want to exercise together but have different energy levels.",
-    "question": "What would keep it comfortable?",
-    "twist": "",
-    "deeperQuestion": "What activity would let you each move at your own pace?",
-    "zh": {
-      "title": "運動步調",
-      "scenario": "你們想一起散步或運動，但體力不同。",
-      "question": "怎樣安排才不會有人勉強？",
-      "twist": "",
-      "deeperQuestion": "哪個活動可以讓你們各自用自己的速度？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-086",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Family weekends",
-    "scenario": "Both families want to see you this weekend.",
-    "question": "How could you arrange it without rushing?",
-    "twist": "",
-    "deeperQuestion": "How much time would you reserve for yourselves next time?",
-    "zh": {
-      "title": "週末家人",
-      "scenario": "兩邊家人都想約你們這個週末吃飯。",
-      "question": "你們怎樣安排比較不趕？",
-      "twist": "",
-      "deeperQuestion": "下次你們想先留多少時間給自己？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-087",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A rainy date",
-    "scenario": "Rain interrupts your outdoor date.",
-    "question": "What indoor plan would you suggest?",
-    "twist": "",
-    "deeperQuestion": "Could you keep the part you were most looking forward to?",
-    "zh": {
-      "title": "突然下雨",
-      "scenario": "準備好的戶外約會遇上下雨。",
-      "question": "你會提議甚麼室內替代活動？",
-      "twist": "",
-      "deeperQuestion": "原本最期待的部分，可以用另一種方式做到嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-088",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Knowing when to stop",
-    "scenario": "Your partner shares an embarrassing story about you with friends.",
-    "question": "How would you signal discomfort?",
-    "twist": "",
-    "deeperQuestion": "What stories would you like them to ask about before sharing?",
-    "zh": {
-      "title": "知道分寸",
-      "scenario": "伴侶在朋友面前講了你一件糗事。",
-      "question": "你覺得不舒服，會怎樣提醒？",
-      "twist": "",
-      "deeperQuestion": "哪些故事你希望先問過再分享？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-089",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Caring for a pet",
-    "scenario": "You are looking after a friend's pet for three days.",
-    "question": "What tasks would you divide beforehand?",
-    "twist": "",
-    "deeperQuestion": "What is the backup plan if one of you has to work late?",
-    "zh": {
-      "title": "照顧寵物",
-      "scenario": "你們打算替朋友照顧寵物三天。",
-      "question": "你想先分清楚哪些工作？",
-      "twist": "",
-      "deeperQuestion": "如果其中一人臨時加班，後備安排是甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-090",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Talking about money",
-    "scenario": "You want to discuss expenses but worry it will feel awkward.",
-    "question": "How would you begin?",
-    "twist": "",
-    "deeperQuestion": "Which shared expense would you clarify first?",
-    "zh": {
-      "title": "講錢的方式",
-      "scenario": "你想跟伴侶談開支，但怕氣氛尷尬。",
-      "question": "你會怎樣開始？",
-      "twist": "",
-      "deeperQuestion": "你最想先講清楚哪一筆共同開支？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-091",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Where to live",
-    "scenario": "If you move together, one values a short commute and the other quiet.",
-    "question": "What would you check in person first?",
-    "twist": "",
-    "deeperQuestion": "What could you try being flexible about?",
-    "zh": {
-      "title": "住在哪裡",
-      "scenario": "如果一起搬家，一人重視上班近，一人重視環境安靜。",
-      "question": "你會先實地看甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪一點是你可以試著讓步的？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-092",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Growing together",
-    "scenario": "Compared with when you first met, something now feels easier between you.",
-    "question": "What is it?",
-    "twist": "",
-    "deeperQuestion": "What small change helped you get there?",
-    "zh": {
-      "title": "相處的改變",
-      "scenario": "和剛認識時相比，你們有一件事變得更容易了。",
-      "question": "你想到甚麼？",
-      "twist": "",
-      "deeperQuestion": "是誰做了哪個小改變，幫到了你們？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-093",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Just being there",
-    "scenario": "Your partner faces a problem you cannot solve.",
-    "question": "How could you still be there for them?",
-    "twist": "",
-    "deeperQuestion": "Would you ask whether they want company or time alone?",
-    "zh": {
-      "title": "不是解決問題",
-      "scenario": "伴侶遇到一件你幫不上忙的事。",
-      "question": "你還可以怎樣陪著對方？",
-      "twist": "",
-      "deeperQuestion": "你會先問對方想獨處，還是想有人陪嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-094",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "A small invitation",
-    "scenario": "You want to know more about your partner's childhood.",
-    "question": "What light question would you start with?",
-    "twist": "",
-    "deeperQuestion": "What memory of your own would you share first?",
-    "zh": {
-      "title": "一個邀請",
-      "scenario": "你想多了解伴侶的童年。",
-      "question": "你會先問哪件輕鬆的小事？",
-      "twist": "",
-      "deeperQuestion": "你願意先分享自己的哪個片段？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-095",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Two wishes",
-    "scenario": "You want to travel; your partner wants to save for a course.",
-    "question": "How would you plan the year?",
-    "twist": "",
-    "deeperQuestion": "Is there a smaller version that could get both wishes started?",
-    "zh": {
-      "title": "兩個夢想",
-      "scenario": "你想旅行，伴侶想先存錢上課。",
-      "question": "你們會怎樣安排今年的計劃？",
-      "twist": "",
-      "deeperQuestion": "有沒有一個較小的版本，能讓兩件事都開始？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-096",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Small things adding up",
-    "scenario": "A small issue keeps happening and starts to bother you.",
-    "question": "When would you bring it up?",
-    "twist": "",
-    "deeperQuestion": "How could you stay with this issue without listing every past mistake?",
-    "zh": {
-      "title": "累積的小事",
-      "scenario": "一件小事重複幾次後，你開始介意。",
-      "question": "你會選甚麼時候說出來？",
-      "twist": "",
-      "deeperQuestion": "你可以怎樣只談這件事，不翻舊帳？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-097",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Asking for help",
-    "scenario": "There is something you hesitate to ask your partner for help with.",
-    "question": "What small request could you make?",
-    "twist": "",
-    "deeperQuestion": "What reaction are you worried about?",
-    "zh": {
-      "title": "向對方求助",
-      "scenario": "你有一件事一直不好意思請伴侶幫忙。",
-      "question": "你願意提出甚麼小請求？",
-      "twist": "",
-      "deeperQuestion": "你怕對方會怎樣想？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-098",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Our private joke",
-    "scenario": "You share a joke that only the two of you understand.",
-    "question": "How did it begin?",
-    "twist": "",
-    "deeperQuestion": "Does it still make you laugh now?",
-    "zh": {
-      "title": "我們的玩笑",
-      "scenario": "你們之間有一個只有彼此懂的笑點。",
-      "question": "它是怎樣開始的？",
-      "twist": "",
-      "deeperQuestion": "現在提起來，還會讓你笑嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-099",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "Today's thank-you",
-    "scenario": "Think of a moment together today.",
-    "question": "What small thing would you thank your partner for?",
-    "twist": "",
-    "deeperQuestion": "What did they do that made your day a little easier?",
-    "zh": {
-      "title": "今天的感謝",
-      "scenario": "回想今天相處的一刻。",
-      "question": "你想為哪件小事跟對方說謝謝？",
-      "twist": "",
-      "deeperQuestion": "對方做了甚麼，讓你的日子輕鬆一點？"
-    }
-  },
-  {
-    "id": "ponder-v2-couple-100",
-    "category": "Couple",
-    "emoji": "💗",
-    "title": "The next conversation",
-    "scenario": "After today's questions, think about what stayed with you.",
-    "question": "Which topic would you like more time on?",
-    "twist": "",
-    "deeperQuestion": "When would you like to pick it up again?",
-    "zh": {
-      "title": "下次再談",
-      "scenario": "今天聊過幾個問題後。",
-      "question": "你最想在哪個話題多停留一下？",
-      "twist": "",
-      "deeperQuestion": "你希望下次在甚麼時候繼續聊？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-001",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A family meal",
-    "scenario": "Everyone is eating together tonight.",
-    "question": "Which home-cooked dish would you request?",
-    "twist": "",
-    "deeperQuestion": "Whose version do you miss most?",
-    "zh": {
-      "title": "一頓家常飯",
-      "scenario": "今晚全家一起吃飯。",
-      "question": "你最想點哪道家常菜？",
-      "twist": "",
-      "deeperQuestion": "誰煮的版本最讓你想念？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-002",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Childhood games",
-    "scenario": "No phones and no new toys are allowed.",
-    "question": "What game would you teach your family?",
-    "twist": "",
-    "deeperQuestion": "Could you try it for one minute now?",
-    "zh": {
-      "title": "小時候的遊戲",
-      "scenario": "不用手機，也不用買玩具。",
-      "question": "你會教家人玩甚麼？",
-      "twist": "",
-      "deeperQuestion": "現在可以試玩一分鐘嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-003",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Sharing chores",
-    "scenario": "Everyone has some free time today.",
-    "question": "Which chore would you take on?",
-    "twist": "",
-    "deeperQuestion": "Who usually does it without being noticed?",
-    "zh": {
-      "title": "分工一天",
-      "scenario": "今天大家都有空。",
-      "question": "你願意接手哪件家務？",
-      "twist": "",
-      "deeperQuestion": "平常是誰默默做這件事？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-004",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "An old photo",
-    "scenario": "You find an old family photo.",
-    "question": "What would you ask someone in it?",
-    "twist": "",
-    "deeperQuestion": "What happened that the photo did not capture?",
-    "zh": {
-      "title": "舊照片",
-      "scenario": "你找到一張以前的家庭照。",
-      "question": "最想問照片裡的人甚麼？",
-      "twist": "",
-      "deeperQuestion": "照片外還發生過甚麼事？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-005",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "An outing",
-    "scenario": "You have half a day for a family outing.",
-    "question": "Where would you suggest going?",
-    "twist": "",
-    "deeperQuestion": "How could someone who walks slowly enjoy it too?",
-    "zh": {
-      "title": "一起出門",
-      "scenario": "全家只有半天時間出門。",
-      "question": "你會提議去哪裡？",
-      "twist": "",
-      "deeperQuestion": "怎樣安排，走得慢的人也能享受？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-006",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Feeling at home",
-    "scenario": "You come home to a familiar smell.",
-    "question": "What smell comes to mind?",
-    "twist": "",
-    "deeperQuestion": "Who or what moment does it remind you of?",
-    "zh": {
-      "title": "回家的感覺",
-      "scenario": "你回到家，聞到熟悉的味道。",
-      "question": "你想到的是甚麼？",
-      "twist": "",
-      "deeperQuestion": "它讓你記起哪個人或時刻？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-007",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Phones at dinner",
-    "scenario": "Everyone is looking at phones during dinner.",
-    "question": "What small change would you suggest?",
-    "twist": "",
-    "deeperQuestion": "What easy topic would you start with?",
-    "zh": {
-      "title": "飯桌手機",
-      "scenario": "大家吃飯時都在看手機。",
-      "question": "你會提議甚麼小改變？",
-      "twist": "",
-      "deeperQuestion": "你想先聊哪個輕鬆話題？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-008",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Different times",
-    "scenario": "Ask a relative from another generation about weekends growing up.",
-    "question": "What would you like to know?",
-    "twist": "",
-    "deeperQuestion": "Which activity would you like to try together?",
-    "zh": {
-      "title": "不同年代",
-      "scenario": "問一位跟你不同年紀的家人。",
-      "question": "你最想知道他那時怎樣過週末？",
-      "twist": "",
-      "deeperQuestion": "有哪個活動你想一起試？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-009",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Waking up",
-    "scenario": "Everyone needs to wake early tomorrow.",
-    "question": "How would you prefer to be woken?",
-    "twist": "",
-    "deeperQuestion": "What would make getting up harder?",
-    "zh": {
-      "title": "被叫起床",
-      "scenario": "明天全家要早起。",
-      "question": "你最能接受哪種叫醒方式？",
-      "twist": "",
-      "deeperQuestion": "哪種方式會讓你更不想起床？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-010",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A thank-you",
-    "scenario": "Think of a small favour a relative did recently.",
-    "question": "What would you thank them for?",
-    "twist": "",
-    "deeperQuestion": "Do they know it helped you?",
-    "zh": {
-      "title": "一句謝謝",
-      "scenario": "想起家人最近幫過你的小忙。",
-      "question": "你想為甚麼說謝謝？",
-      "twist": "",
-      "deeperQuestion": "對方知不知道這件事幫到你？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-011",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A family signal",
-    "scenario": "Someone at home needs quiet.",
-    "question": "What simple signal could let everyone know?",
-    "twist": "",
-    "deeperQuestion": "What would you stop doing when you saw it?",
-    "zh": {
-      "title": "家庭暗號",
-      "scenario": "家中有人需要安靜休息。",
-      "question": "你們可以用甚麼簡單暗號提醒大家？",
-      "twist": "",
-      "deeperQuestion": "看到暗號後，你會先停止哪件事？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-012",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Teach me something",
-    "scenario": "Everyone has something they do well.",
-    "question": "Who would you like to learn a skill from?",
-    "twist": "",
-    "deeperQuestion": "Could they show you the simplest first step?",
-    "zh": {
-      "title": "教我一招",
-      "scenario": "每個家人都有擅長的事。",
-      "question": "你最想向誰學一招？",
-      "twist": "",
-      "deeperQuestion": "對方可以先示範最簡單的一步嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-013",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Food preferences",
-    "scenario": "A relative cooks something you dislike.",
-    "question": "How would you respond politely?",
-    "twist": "",
-    "deeperQuestion": "What alternative could you help prepare?",
-    "zh": {
-      "title": "不喜歡的菜",
-      "scenario": "家人煮了你不愛吃的菜。",
-      "question": "你會怎樣說得有禮貌？",
-      "twist": "",
-      "deeperQuestion": "你願意幫忙準備甚麼替代食物？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-014",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A corner at home",
-    "scenario": "You can reorganize one corner of your home.",
-    "question": "Which would you choose?",
-    "twist": "",
-    "deeperQuestion": "What change would make it easier for everyone to use?",
-    "zh": {
-      "title": "家中一角",
-      "scenario": "你可以重新整理家裡一個角落。",
-      "question": "你會選哪裡？",
-      "twist": "",
-      "deeperQuestion": "怎樣改，大家都會更方便？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-015",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A familiar phrase",
-    "scenario": "Your family has familiar sayings.",
-    "question": "Which phrase instantly brings someone to mind?",
-    "twist": "",
-    "deeperQuestion": "Have you started saying it too?",
-    "zh": {
-      "title": "誰的口頭禪",
-      "scenario": "家人常說一些熟悉的話。",
-      "question": "哪一句你一聽就知道是誰？",
-      "twist": "",
-      "deeperQuestion": "你自己也開始說這句話了嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-016",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Birthday plans",
-    "scenario": "A relative's birthday is coming.",
-    "question": "How would you celebrate in a way they enjoy?",
-    "twist": "",
-    "deeperQuestion": "Have you asked what they would like?",
-    "zh": {
-      "title": "生日安排",
-      "scenario": "家人生日快到了。",
-      "question": "你會怎樣慶祝，讓主角舒服？",
-      "twist": "",
-      "deeperQuestion": "你有沒有先問過對方想怎樣過？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-017",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Grocery shopping",
-    "scenario": "You are grocery shopping and can add one snack.",
-    "question": "How would you choose together?",
-    "twist": "",
-    "deeperQuestion": "How could you take turns if tastes differ?",
-    "zh": {
-      "title": "一起買菜",
-      "scenario": "你們一起買菜，只能多買一樣零食。",
-      "question": "大家會怎樣選？",
-      "twist": "",
-      "deeperQuestion": "如果口味不同，可以怎樣輪流？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-018",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Let me finish",
-    "scenario": "A relative interrupts your story.",
-    "question": "How would you ask to finish?",
-    "twist": "",
-    "deeperQuestion": "What gesture could be a comfortable reminder?",
-    "zh": {
-      "title": "被打斷",
-      "scenario": "你分享事情時被家人打斷。",
-      "question": "你會怎樣請對方先聽完？",
-      "twist": "",
-      "deeperQuestion": "你可以用哪個手勢提醒，又不尷尬？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-019",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A childhood home",
-    "scenario": "Ask a relative to describe their childhood home.",
-    "question": "Which part would you want to see?",
-    "twist": "",
-    "deeperQuestion": "What was there that is uncommon now?",
-    "zh": {
-      "title": "童年住處",
-      "scenario": "請一位家人描述小時候住的地方。",
-      "question": "你最想看哪個角落？",
-      "twist": "",
-      "deeperQuestion": "那裡有甚麼現在很少見的東西？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-020",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "House rules",
-    "scenario": "There is a house rule you do not understand.",
-    "question": "What would you ask about it?",
-    "twist": "",
-    "deeperQuestion": "What alternative would you suggest?",
-    "zh": {
-      "title": "家裡的規則",
-      "scenario": "有一條家規你不太明白。",
-      "question": "你想先問清楚甚麼？",
-      "twist": "",
-      "deeperQuestion": "如果要改，你會提出甚麼替代辦法？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-021",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A rainy day",
-    "scenario": "Rain cancels a family outing.",
-    "question": "What could you do together at home?",
-    "twist": "",
-    "deeperQuestion": "Which activity would cost nothing?",
-    "zh": {
-      "title": "雨天安排",
-      "scenario": "原定的家庭活動因下雨取消了。",
-      "question": "留在家可以一起做甚麼？",
-      "twist": "",
-      "deeperQuestion": "不用花錢的話，你會選哪個活動？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-022",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "The busy one",
-    "scenario": "Someone in your family is especially busy.",
-    "question": "What small task could you take off their hands?",
-    "twist": "",
-    "deeperQuestion": "How would you check whether it would help?",
-    "zh": {
-      "title": "忙碌的一位",
-      "scenario": "家裡有人最近特別忙。",
-      "question": "你可以幫他減少哪件小事？",
-      "twist": "",
-      "deeperQuestion": "你會先怎樣問對方需不需要？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-023",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "The story of a name",
-    "scenario": "You want to know the story behind a relative's name.",
-    "question": "Who would you ask?",
-    "twist": "",
-    "deeperQuestion": "Are there any unusual nicknames in the family?",
-    "zh": {
-      "title": "名字的故事",
-      "scenario": "你想知道家人的名字怎樣來。",
-      "question": "你會問誰？",
-      "twist": "",
-      "deeperQuestion": "家裡有沒有特別的暱稱？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-024",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Choosing a show",
-    "scenario": "Everyone wants to watch a different show.",
-    "question": "How would you choose tonight?",
-    "twist": "",
-    "deeperQuestion": "Is there a show everyone would be willing to try?",
-    "zh": {
-      "title": "一起看節目",
-      "scenario": "大家想看的節目不同。",
-      "question": "今晚可以怎樣選？",
-      "twist": "",
-      "deeperQuestion": "有沒有一個節目是全家都願意試的？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-025",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "No rush",
-    "scenario": "A relative asks about something you have not decided.",
-    "question": "How would you ask for time?",
-    "twist": "",
-    "deeperQuestion": "When would you be more ready to talk?",
-    "zh": {
-      "title": "不用急著答",
-      "scenario": "家人問你一件你還沒想好的事。",
-      "question": "你會怎樣請對方給點時間？",
-      "twist": "",
-      "deeperQuestion": "甚麼時候再談，你會比較準備好？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-026",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A little note",
-    "scenario": "You want to leave a note to brighten a relative's day.",
-    "question": "What would it say?",
-    "twist": "",
-    "deeperQuestion": "Where would they be most likely to find it?",
-    "zh": {
-      "title": "一張便條",
-      "scenario": "你想留張便條讓家人開心。",
-      "question": "你會寫甚麼？",
-      "twist": "",
-      "deeperQuestion": "放在哪裡，對方最容易看到？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-027",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A family trip",
-    "scenario": "On a trip, some want photos and others want to move on.",
-    "question": "How would you arrange it?",
-    "twist": "",
-    "deeperQuestion": "Which stop deserves a little more time?",
-    "zh": {
-      "title": "家庭旅行",
-      "scenario": "旅行時有人想拍照，有人想趕下一站。",
-      "question": "你會怎樣安排？",
-      "twist": "",
-      "deeperQuestion": "哪一站值得大家慢一點？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-028",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Different words",
-    "scenario": "Different relatives use different words for the same thing.",
-    "question": "What example comes to mind?",
-    "twist": "",
-    "deeperQuestion": "What word from another dialect would you like to learn?",
-    "zh": {
-      "title": "不同叫法",
-      "scenario": "同一樣東西，不同家人叫法不同。",
-      "question": "你想到哪個例子？",
-      "twist": "",
-      "deeperQuestion": "你想學會哪個方言用語？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-029",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Something is missing",
-    "scenario": "A shared item is missing.",
-    "question": "How would you ask about it without blaming anyone?",
-    "twist": "",
-    "deeperQuestion": "What regular place would make it easier to find?",
-    "zh": {
-      "title": "東西不見了",
-      "scenario": "共用的東西找不到了。",
-      "question": "你會先怎樣問，而不是怪人？",
-      "twist": "",
-      "deeperQuestion": "放在哪個固定位置會比較好找？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-030",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Breakfast together",
-    "scenario": "Everyone has time for breakfast together.",
-    "question": "What would you like it to be like?",
-    "twist": "",
-    "deeperQuestion": "Who would prepare one part of the meal?",
-    "zh": {
-      "title": "全家早餐",
-      "scenario": "難得全家都有時間吃早餐。",
-      "question": "你想怎樣安排這一餐？",
-      "twist": "",
-      "deeperQuestion": "誰願意負責其中一樣食物？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-031",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Being compared",
-    "scenario": "A relative compares you with someone else.",
-    "question": "How would you explain how you feel?",
-    "twist": "",
-    "deeperQuestion": "What progress of yours would you like them to notice?",
-    "zh": {
-      "title": "被拿來比較",
-      "scenario": "家人把你跟別人比較。",
-      "question": "你想怎樣說出自己的感受？",
-      "twist": "",
-      "deeperQuestion": "你希望對方留意你哪一個進步？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-032",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "An old object",
-    "scenario": "There is something at home that has been kept for years.",
-    "question": "What story would you ask about it?",
-    "twist": "",
-    "deeperQuestion": "Is it still useful today?",
-    "zh": {
-      "title": "老物件",
-      "scenario": "家中有件東西用了很多年。",
-      "question": "你最想知道它哪段故事？",
-      "twist": "",
-      "deeperQuestion": "它現在還派得上用場嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-033",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A proper rest",
-    "scenario": "A relative finally has a free day.",
-    "question": "What would make it genuinely restful?",
-    "twist": "",
-    "deeperQuestion": "What quiet time could you help protect?",
-    "zh": {
-      "title": "好好休息",
-      "scenario": "今天家人難得不用忙。",
-      "question": "怎樣的一天會讓他真正休息到？",
-      "twist": "",
-      "deeperQuestion": "你可以幫忙守住哪一段安靜時間？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-034",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Growing something",
-    "scenario": "You want to grow a plant together.",
-    "question": "Who would like to handle each part?",
-    "twist": "",
-    "deeperQuestion": "How could you remind each other to water it?",
-    "zh": {
-      "title": "一起種東西",
-      "scenario": "你們想一起種一盆植物。",
-      "question": "誰想負責哪一部分？",
-      "twist": "",
-      "deeperQuestion": "如果忘記澆水，可以怎樣互相提醒？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-035",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A family album",
-    "scenario": "You are making an album with just five photos.",
-    "question": "Which one must be included?",
-    "twist": "",
-    "deeperQuestion": "What caption would you give it?",
-    "zh": {
-      "title": "家庭相簿",
-      "scenario": "只選五張照片做一本小相簿。",
-      "question": "你一定會放哪張？",
-      "twist": "",
-      "deeperQuestion": "你想替那張照片寫甚麼說明？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-036",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Volume at home",
-    "scenario": "Someone is on a call while another watches television.",
-    "question": "How could both hear comfortably?",
-    "twist": "",
-    "deeperQuestion": "Where could you make a quiet area?",
-    "zh": {
-      "title": "說話音量",
-      "scenario": "有人在通電話，有人在看電視。",
-      "question": "你會怎樣讓兩邊都聽得清楚？",
-      "twist": "",
-      "deeperQuestion": "家中哪個地方可以留作安靜區？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-037",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "No photo today",
-    "scenario": "You do not want to be in a family photo today.",
-    "question": "How would you say so?",
-    "twist": "",
-    "deeperQuestion": "How would you respect someone else's choice not to join?",
-    "zh": {
-      "title": "不想被拍",
-      "scenario": "聚會合照時，你今天不想入鏡。",
-      "question": "你會怎樣說？",
-      "twist": "",
-      "deeperQuestion": "如果別人不想拍，你會怎樣尊重？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-038",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A first job",
-    "scenario": "Ask a relative about their first job.",
-    "question": "What would you like to know?",
-    "twist": "",
-    "deeperQuestion": "What small skill did the job teach them?",
-    "zh": {
-      "title": "第一次工作",
-      "scenario": "問一位家人第一次工作的經歷。",
-      "question": "你最想知道哪件事？",
-      "twist": "",
-      "deeperQuestion": "那份工作教會了他哪個小本領？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-039",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Holiday time",
-    "scenario": "Some want to go out on a holiday; others want to stay home.",
-    "question": "What would avoid pressure?",
-    "twist": "",
-    "deeperQuestion": "Could you spend part of the day apart and eat together later?",
-    "zh": {
-      "title": "假日分配",
-      "scenario": "假日有人想出門，有人想在家。",
-      "question": "怎樣安排，大家都不勉強？",
-      "twist": "",
-      "deeperQuestion": "可不可以分開半天，再一起吃飯？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-040",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Checking in",
-    "scenario": "You want to check on a relative without interrogating them.",
-    "question": "What would you ask first?",
-    "twist": "",
-    "deeperQuestion": "What could you ask besides whether they have eaten?",
-    "zh": {
-      "title": "一句關心",
-      "scenario": "你想關心家人，又不想像在查問。",
-      "question": "你會先問哪一句？",
-      "twist": "",
-      "deeperQuestion": "除了「吃飯了嗎」，還可以問甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-041",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Having guests",
-    "scenario": "Guests are coming tomorrow.",
-    "question": "What would you like to help prepare?",
-    "twist": "",
-    "deeperQuestion": "What does not need to be perfect?",
-    "zh": {
-      "title": "有客人來",
-      "scenario": "家裡明天有客人來。",
-      "question": "你最願意幫忙準備甚麼？",
-      "twist": "",
-      "deeperQuestion": "甚麼不用準備得太完美？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-042",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A family song",
-    "scenario": "Everyone gets to play a favourite song.",
-    "question": "Which would you choose?",
-    "twist": "",
-    "deeperQuestion": "What time in your life does it bring back?",
-    "zh": {
-      "title": "大家的歌",
-      "scenario": "每人放一首自己喜歡的歌。",
-      "question": "你會選哪首？",
-      "twist": "",
-      "deeperQuestion": "這首歌讓你想起甚麼時候？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-043",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Borrowing things",
-    "scenario": "You want to borrow something from a relative.",
-    "question": "What would you explain first?",
-    "twist": "",
-    "deeperQuestion": "What would you always want to be asked about before it is borrowed?",
-    "zh": {
-      "title": "借用東西",
-      "scenario": "你想借家人的一件物品。",
-      "question": "你會先講清楚甚麼？",
-      "twist": "",
-      "deeperQuestion": "甚麼東西你希望別人一定先問過？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-044",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "An early memory",
-    "scenario": "Think of an early memory at home.",
-    "question": "What detail can you remember?",
-    "twist": "",
-    "deeperQuestion": "Does anyone else remember that day?",
-    "zh": {
-      "title": "最早的記憶",
-      "scenario": "想起一個小時候在家的畫面。",
-      "question": "你記得哪個細節？",
-      "twist": "",
-      "deeperQuestion": "有沒有家人也記得那一天？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-045",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Making a mistake",
-    "scenario": "You accidentally break something at home.",
-    "question": "How would you tell your family?",
-    "twist": "",
-    "deeperQuestion": "How would you help put things right?",
-    "zh": {
-      "title": "做錯了事",
-      "scenario": "你不小心弄壞了家中的東西。",
-      "question": "你會怎樣開口說？",
-      "twist": "",
-      "deeperQuestion": "你願意怎樣一起處理後續？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-046",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A gift of time",
-    "scenario": "You want to give a relative a gift without buying anything.",
-    "question": "What would you make or do?",
-    "twist": "",
-    "deeperQuestion": "Where would your time help them most?",
-    "zh": {
-      "title": "不用買的禮物",
-      "scenario": "你要送家人一份不用買的禮物。",
-      "question": "你會做甚麼？",
-      "twist": "",
-      "deeperQuestion": "對方最需要你的時間用在哪裡？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-047",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Sorting belongings",
-    "scenario": "Your family is sorting old belongings.",
-    "question": "Who would you ask about what to keep?",
-    "twist": "",
-    "deeperQuestion": "What could you photograph and then pass on?",
-    "zh": {
-      "title": "整理舊物",
-      "scenario": "家中準備整理舊物。",
-      "question": "你最想先問誰哪件東西不能丟？",
-      "twist": "",
-      "deeperQuestion": "有甚麼可以拍照留念，再送給有需要的人？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-048",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Swapping tasks",
-    "scenario": "You swap household tasks for a day.",
-    "question": "Which task would teach you the most?",
-    "twist": "",
-    "deeperQuestion": "Who might you want to thank afterward?",
-    "zh": {
-      "title": "一天交換",
-      "scenario": "你跟家人交換一天的家務。",
-      "question": "哪一件會讓你最有新發現？",
-      "twist": "",
-      "deeperQuestion": "做完後你可能想跟誰說謝謝？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-049",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A local favourite",
-    "scenario": "You want to show a relative a place you often visit.",
-    "question": "Where would you take them?",
-    "twist": "",
-    "deeperQuestion": "What do you especially like about it?",
-    "zh": {
-      "title": "門外的世界",
-      "scenario": "你想帶家人看看你常去的地方。",
-      "question": "你會帶他去哪裡？",
-      "twist": "",
-      "deeperQuestion": "那裡有甚麼是你特別喜歡的？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-050",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A new tradition",
-    "scenario": "Your family wants a small monthly tradition.",
-    "question": "What would you suggest?",
-    "twist": "",
-    "deeperQuestion": "How could busy family members join in?",
-    "zh": {
-      "title": "新家庭習慣",
-      "scenario": "你們想每月固定做一件小事。",
-      "question": "你會提議甚麼？",
-      "twist": "",
-      "deeperQuestion": "怎樣安排，忙的人也能參與？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-051",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Getting to know you",
-    "scenario": "Ask your family to guess your current favourite breakfast.",
-    "question": "Who might get it right?",
-    "twist": "",
-    "deeperQuestion": "How has your taste changed?",
-    "zh": {
-      "title": "誰最了解",
-      "scenario": "請家人猜猜你最近最喜歡的早餐。",
-      "question": "你覺得誰會猜中？",
-      "twist": "",
-      "deeperQuestion": "你的口味跟以前有甚麼不同？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-052",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A useful trick",
-    "scenario": "You know a trick that makes daily life easier.",
-    "question": "What would you teach your family?",
-    "twist": "",
-    "deeperQuestion": "Where could they put it to use?",
-    "zh": {
-      "title": "生活小技巧",
-      "scenario": "你有一個讓生活方便的小方法。",
-      "question": "你想教家人哪一招？",
-      "twist": "",
-      "deeperQuestion": "大家可以在哪件事上用到它？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-053",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Coming home late",
-    "scenario": "You will be home later than usual.",
-    "question": "How would you keep your family from waiting up?",
-    "twist": "",
-    "deeperQuestion": "Do they mainly need your arrival time or to know whether to save dinner?",
-    "zh": {
-      "title": "晚回家",
-      "scenario": "你今晚會比平常晚回家。",
-      "question": "你會怎樣讓家人不用一直等？",
-      "twist": "",
-      "deeperQuestion": "大家最需要知道時間，還是是否留飯？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-054",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A familiar scent",
-    "scenario": "Picture a corner of your home.",
-    "question": "Which smell makes it vivid?",
-    "twist": "",
-    "deeperQuestion": "Do you enjoy that smell?",
-    "zh": {
-      "title": "家中的氣味",
-      "scenario": "閉上眼想一想家中的角落。",
-      "question": "哪種氣味最有畫面？",
-      "twist": "",
-      "deeperQuestion": "你喜歡那種氣味嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-055",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Learning a recipe",
-    "scenario": "You want to learn a relative's signature dish.",
-    "question": "Which would you choose?",
-    "twist": "",
-    "deeperQuestion": "Would you learn by video, notes, or cooking together?",
-    "zh": {
-      "title": "想學的一道菜",
-      "scenario": "你想學家人的一道拿手菜。",
-      "question": "你會先挑哪道？",
-      "twist": "",
-      "deeperQuestion": "你想用影片、筆記，還是一起煮來學？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-056",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Just listening",
-    "scenario": "A relative shares a worry and you want to offer advice.",
-    "question": "What could you ask first?",
-    "twist": "",
-    "deeperQuestion": "What kind of response makes it harder for you to open up?",
-    "zh": {
-      "title": "不用解釋",
-      "scenario": "家人分享煩惱，你很想給建議。",
-      "question": "你可以先問甚麼？",
-      "twist": "",
-      "deeperQuestion": "你自己傾訴時，最怕聽到哪類回應？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-057",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Someone you miss",
-    "scenario": "Think of a relative you rarely see.",
-    "question": "What would you like to tell them lately?",
-    "twist": "",
-    "deeperQuestion": "Would you prefer a message, a call, or meeting in person?",
-    "zh": {
-      "title": "想念的人",
-      "scenario": "想起一位不常見面的家人。",
-      "question": "你最近想跟他分享甚麼？",
-      "twist": "",
-      "deeperQuestion": "你想用文字、電話，還是見面聊？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-058",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A closed door",
-    "scenario": "Someone closes their door for some time alone.",
-    "question": "How would you like people to knock?",
-    "twist": "",
-    "deeperQuestion": "When would it be important to interrupt?",
-    "zh": {
-      "title": "房間的門",
-      "scenario": "有人把房門關上，想自己待一下。",
-      "question": "你希望大家怎樣敲門？",
-      "twist": "",
-      "deeperQuestion": "甚麼情況才需要馬上找對方？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-059",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A brave moment",
-    "scenario": "Share something you were afraid to try but eventually did.",
-    "question": "What comes to mind?",
-    "twist": "",
-    "deeperQuestion": "Who gave you a little courage then?",
-    "zh": {
-      "title": "一次勇敢",
-      "scenario": "請家人講一件曾經不敢做、後來試了的事。",
-      "question": "你想先分享哪件？",
-      "twist": "",
-      "deeperQuestion": "當時誰給了你一點勇氣？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-060",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Night-time sounds",
-    "scenario": "Someone needs an early night while others are still awake.",
-    "question": "How could you avoid disturbing each other?",
-    "twist": "",
-    "deeperQuestion": "What small change could happen tonight?",
-    "zh": {
-      "title": "睡前聲音",
-      "scenario": "有人要早睡，其他人還想活動。",
-      "question": "你們怎樣減少互相打擾？",
-      "twist": "",
-      "deeperQuestion": "哪個小改變今晚就能做到？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-061",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Fixing something",
-    "scenario": "Something small at home breaks.",
-    "question": "Who would you like to investigate it with?",
-    "twist": "",
-    "deeperQuestion": "When would you decide to get help?",
-    "zh": {
-      "title": "一起修理",
-      "scenario": "家裡有件小東西壞了。",
-      "question": "你願意跟誰一起研究怎樣修？",
-      "twist": "",
-      "deeperQuestion": "如果修不好，甚麼時候該找人幫忙？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-062",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Holiday customs",
-    "scenario": "Your family has a holiday custom.",
-    "question": "Which part do you enjoy most?",
-    "twist": "",
-    "deeperQuestion": "What could be simplified so everyone can relax?",
-    "zh": {
-      "title": "節日做法",
-      "scenario": "家裡有一個過節習慣。",
-      "question": "你最喜歡哪個部分？",
-      "twist": "",
-      "deeperQuestion": "哪個部分可以簡化，讓大家輕鬆一點？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-063",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "A missed message",
-    "scenario": "You miss a plan in the family group chat.",
-    "question": "How would you ask about it?",
-    "twist": "",
-    "deeperQuestion": "How could important plans be easier to find?",
-    "zh": {
-      "title": "忘了交代",
-      "scenario": "家庭群組裡漏看了一個安排。",
-      "question": "你會怎樣補問？",
-      "twist": "",
-      "deeperQuestion": "重要安排可以怎樣寫得更容易找到？"
-    }
-  },
-  {
-    "id": "ponder-v2-family-064",
-    "category": "Family",
-    "emoji": "🏠",
-    "title": "Choosing a route",
-    "scenario": "On an outing, some want speed and others need an easy route.",
+    "title": "Two moons",
+    "scenario": "You each own a moon, but a shared home has room for only one.",
     "question": "How would you choose?",
     "twist": "",
-    "deeperQuestion": "Where could you stop to rest?",
+    "deeperQuestion": "What if the other goes to a stranger?",
     "zh": {
-      "title": "誰來選路",
-      "scenario": "全家出門，有人想快，有人想走平路。",
-      "question": "你會怎樣選路？",
+      "title": "兩顆月亮",
+      "scenario": "你們各有一顆月亮，一起住就只能留下其中一顆。",
+      "question": "你會怎樣選？",
       "twist": "",
-      "deeperQuestion": "路上可以在哪裡休息？"
+      "deeperQuestion": "如果另一顆會送給陌生人呢？"
     }
   },
   {
-    "id": "ponder-v2-family-065",
+    "id": "ponder-v3-couple-008",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Spark savings",
+    "scenario": "Each romantic spark can become money, but its feeling disappears.",
+    "question": "Would you cash any in?",
+    "twist": "",
+    "deeperQuestion": "What if it could fund your shared dream?",
+    "zh": {
+      "title": "心動存款",
+      "scenario": "每存下一次心動，就能換一百元，但會忘記那次感覺。",
+      "question": "你會存嗎？",
+      "twist": "",
+      "deeperQuestion": "如果那筆錢能實現你們的夢想呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-009",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Future ring",
+    "scenario": "A ring reveals your breakup date, but not the reason.",
+    "question": "Would you wear it?",
+    "twist": "",
+    "deeperQuestion": "What if it says fifty years from now?",
+    "zh": {
+      "title": "預知戒指",
+      "scenario": "戒指會告訴你們分手的日期，卻不會說原因。",
+      "question": "你會戴上嗎？",
+      "twist": "",
+      "deeperQuestion": "如果日期是五十年後呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-010",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Private weather",
+    "scenario": "Your home's weather follows one person's mood.",
+    "question": "Whose mood should it follow?",
+    "twist": "",
+    "deeperQuestion": "What could the other do when they need sunshine?",
+    "zh": {
+      "title": "專屬天氣",
+      "scenario": "你們的家會跟著其中一人的心情變天。",
+      "question": "你想由誰控制天氣？",
+      "twist": "",
+      "deeperQuestion": "另一人想曬太陽時，可以怎樣辦？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-011",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Stand-in lover",
+    "scenario": "A doll can perfectly play you while you travel.",
+    "question": "Would you leave it with your partner?",
+    "twist": "",
+    "deeperQuestion": "What if they find the doll more thoughtful?",
+    "zh": {
+      "title": "代班戀人",
+      "scenario": "你出遠門時，玩偶能完美扮演你陪伴對方。",
+      "question": "你會留下它嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方覺得玩偶更體貼呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-012",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Secret garden",
+    "scenario": "Your partner gives you a garden only you can enter.",
+    "question": "Would you offer them a second key?",
+    "twist": "",
+    "deeperQuestion": "Would you keep one corner private?",
+    "zh": {
+      "title": "秘密花園",
+      "scenario": "伴侶送你一座花園，只有你能進入。",
+      "question": "你會主動邀他拿另一條鑰匙嗎？",
+      "twist": "",
+      "deeperQuestion": "你會留一個不開放的角落嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-013",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Dream swap",
+    "scenario": "You can swap ambitions and truly want each other's chosen life.",
+    "question": "Would you agree?",
+    "twist": "",
+    "deeperQuestion": "Would you choose one day or forever?",
+    "zh": {
+      "title": "交換夢想",
+      "scenario": "你們能交換一次人生夢想，換完就會真心想過對方的生活。",
+      "question": "你願意嗎？",
+      "twist": "",
+      "deeperQuestion": "你想只換一天，還是永遠？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-014",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Happy album",
+    "scenario": "An album replays your happiest day, costing one future date each time.",
+    "question": "Would you watch often?",
+    "twist": "",
+    "deeperQuestion": "How many viewings would you save for old age?",
+    "zh": {
+      "title": "幸福相簿",
+      "scenario": "相簿能重播最幸福的一天，但每看一次就少一個新的約會日。",
+      "question": "你會常看嗎？",
+      "twist": "",
+      "deeperQuestion": "你會留多少次給年老的你們？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-015",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Honest parrot",
+    "scenario": "Your parrot repeats your partner's unspoken complaints.",
+    "question": "Would you keep it in the living room?",
+    "twist": "",
+    "deeperQuestion": "Could your partner cover its cage?",
+    "zh": {
+      "title": "誠實鸚鵡",
+      "scenario": "你們的鸚鵡會重複對方沒說出口的不滿。",
+      "question": "你會讓牠住客廳嗎？",
+      "twist": "",
+      "deeperQuestion": "你會准許對方替牠蓋上布嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-016",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "One winner",
+    "scenario": "A fairy offers lifelong luck to one of you; the other stays ordinary.",
+    "question": "Who should receive it?",
+    "twist": "",
+    "deeperQuestion": "Must the lucky person share the rewards?",
+    "zh": {
+      "title": "一人中獎",
+      "scenario": "精靈只給你們其中一人終身好運，另一人維持原樣。",
+      "question": "你會讓誰拿？",
+      "twist": "",
+      "deeperQuestion": "得到好運的人需要分享成果嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-017",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Slow hug",
+    "scenario": "Time stops when you hug, but you still age.",
+    "question": "How long would you hug each day?",
+    "twist": "",
+    "deeperQuestion": "Would you tell your partner the cost?",
+    "zh": {
+      "title": "慢速擁抱",
+      "scenario": "擁抱時時間會停止，但只有你會變老。",
+      "question": "你還想每天抱多久？",
+      "twist": "",
+      "deeperQuestion": "你會告訴對方這個代價嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-018",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Lost first love",
+    "scenario": "You can erase your partner's ex, along with some kindness that relationship taught them.",
+    "question": "Would you press it?",
+    "twist": "",
+    "deeperQuestion": "What if your partner asks you to?",
+    "zh": {
+      "title": "忘記初戀",
+      "scenario": "你能刪掉伴侶對前任的回憶，但也會刪掉他學會的一份溫柔。",
+      "question": "你會按嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方主動要求呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-019",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Perfect gift shop",
+    "scenario": "A shop picks perfect gifts, but you must take the credit.",
+    "question": "Would you use it?",
+    "twist": "",
+    "deeperQuestion": "Would knowing make the gift less special?",
+    "zh": {
+      "title": "最懂你的店",
+      "scenario": "小店總能替你挑到完美禮物，但不准你說是店員選的。",
+      "question": "你會光顧嗎？",
+      "twist": "",
+      "deeperQuestion": "收到的人知道後，禮物會變差嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-020",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love battery",
+    "scenario": "One shared battery powers one person's adventure while the other recharges at home.",
+    "question": "How would you take turns?",
+    "twist": "",
+    "deeperQuestion": "What if one adventure takes ten years?",
+    "zh": {
+      "title": "愛的電池",
+      "scenario": "你們共用一顆電池，只夠支持一人的冒險。另一人要留在家充電。",
+      "question": "你們會怎樣輪流？",
+      "twist": "",
+      "deeperQuestion": "如果一人的冒險要十年呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-021",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Argument rewind",
+    "scenario": "You can rewind an argument; your partner forgets, but you remember every hurtful word.",
+    "question": "Would you use it?",
+    "twist": "",
+    "deeperQuestion": "Would you bring those words up again?",
+    "zh": {
+      "title": "吵架倒帶",
+      "scenario": "你能倒帶一場吵架，對方會忘記，你卻記得所有傷人的話。",
+      "question": "你會用嗎？",
+      "twist": "",
+      "deeperQuestion": "你會再提那些話嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-022",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Pocket partner",
+    "scenario": "Your partner becomes thumb-sized but otherwise unchanged.",
+    "question": "Would you carry them everywhere or build them a home?",
+    "twist": "",
+    "deeperQuestion": "What if they want to travel alone?",
+    "zh": {
+      "title": "口袋伴侶",
+      "scenario": "伴侶變成拇指大小，說話做事仍一樣。",
+      "question": "你會帶他到處去，還是替他造一個家？",
+      "twist": "",
+      "deeperQuestion": "如果他想獨自旅行呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-023",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Match machine",
+    "scenario": "A machine rates you a 60% match and offers a 90% match.",
+    "question": "Would you view the profile?",
+    "twist": "",
+    "deeperQuestion": "Would you look at it together?",
+    "zh": {
+      "title": "完美配對機",
+      "scenario": "機器說你們只有六成合拍，卻能介紹九成合拍的人。",
+      "question": "你想看那人的資料嗎？",
+      "twist": "",
+      "deeperQuestion": "你想讓伴侶一起看嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-024",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Different wishes",
+    "scenario": "Only one of your two wishes can come true.",
+    "question": "Would you say yours first or hear theirs?",
+    "twist": "",
+    "deeperQuestion": "Could their wish make you change yours?",
+    "zh": {
+      "title": "願望不同路",
+      "scenario": "你們各許一個願，精靈說兩個只能成真一個。",
+      "question": "你先說出自己的，還是先聽對方的？",
+      "twist": "",
+      "deeperQuestion": "你會因為聽過對方的願望而改口嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-025",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Feeling post",
+    "scenario": "You can mail your partner one day's feelings to experience fully.",
+    "question": "Which day would you send?",
+    "twist": "",
+    "deeperQuestion": "Would you want a reply or quiet company?",
+    "zh": {
+      "title": "情緒郵差",
+      "scenario": "你能把一天的感受寄給伴侶，讓他完整體驗。",
+      "question": "你會寄哪一天？",
+      "twist": "",
+      "deeperQuestion": "你希望他回信，還是陪你坐一會？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-026",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Tenfold pay",
+    "scenario": "A moon job pays your partner ten times more, with one day together yearly.",
+    "question": "Would you want them to go?",
+    "twist": "",
+    "deeperQuestion": "What if it lasts only three years?",
+    "zh": {
+      "title": "十倍收入",
+      "scenario": "伴侶接下月球工作，收入十倍，但一年只能見你一天。",
+      "question": "你希望他去嗎？",
+      "twist": "",
+      "deeperQuestion": "如果只做三年呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-027",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Lasting flower",
+    "scenario": "A plant blooms whenever your partner lies and never wilts.",
+    "question": "Would you keep it at home?",
+    "twist": "",
+    "deeperQuestion": "What about a lie to prepare a surprise?",
+    "zh": {
+      "title": "不凋的花",
+      "scenario": "花永不凋謝，但只有在對方說謊時才開花。",
+      "question": "你會把它放家裡嗎？",
+      "twist": "",
+      "deeperQuestion": "如果只是為了準備驚喜呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-028",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Fresh start",
+    "scenario": "Tomorrow you forget each other and may each leave one sentence.",
+    "question": "What would you write?",
+    "twist": "",
+    "deeperQuestion": "Would you leave a promise or room to choose?",
+    "zh": {
+      "title": "一起失憶",
+      "scenario": "你們明天會忘記彼此，只能各留一句話。",
+      "question": "你會寫甚麼？",
+      "twist": "",
+      "deeperQuestion": "你會寫承諾，還是留下選擇的空間？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-029",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Two-seat carpet",
+    "scenario": "Your carpet seats two, and your pet wants to come.",
+    "question": "Would one of you stay or would nobody fly?",
+    "twist": "",
+    "deeperQuestion": "What if this is your only flight ever?",
+    "zh": {
+      "title": "雙人魔毯",
+      "scenario": "魔毯只能載兩人，你們的寵物也想同行。",
+      "question": "你會少去一人，還是放棄飛行？",
+      "twist": "",
+      "deeperQuestion": "如果一生只能飛一次呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-030",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Kindness filter",
+    "scenario": "Glasses make every flaw in your partner look like a strength.",
+    "question": "Would you wear them?",
+    "twist": "",
+    "deeperQuestion": "When would you insist on taking them off?",
+    "zh": {
+      "title": "善意濾鏡",
+      "scenario": "眼鏡會把伴侶的每個缺點都看成優點。",
+      "question": "你想戴嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪個時候你一定要脫下？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-031",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Date copy",
+    "scenario": "You can repeat your best date forever, but never visit somewhere new together.",
+    "question": "Would you trade?",
+    "twist": "",
+    "deeperQuestion": "What if your partner really wants the trade?",
+    "zh": {
+      "title": "約會複製券",
+      "scenario": "你能永遠重複最好的約會，代價是不能一起去新地方。",
+      "question": "你會換嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方很想換呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-032",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love ranking",
+    "scenario": "Everyone displays their three dearest people.",
+    "question": "Would you want to know your rank?",
+    "twist": "",
+    "deeperQuestion": "What if family comes before you?",
+    "zh": {
+      "title": "愛的排名",
+      "scenario": "每人頭上都顯示最在乎的三個人。",
+      "question": "你想知道自己排第幾嗎？",
+      "twist": "",
+      "deeperQuestion": "如果你排在家人之後呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-033",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Alone room",
+    "scenario": "A room gives you a day alone while one minute passes outside.",
+    "question": "Would you use it daily?",
+    "twist": "",
+    "deeperQuestion": "Should your partner know how long you stayed?",
+    "zh": {
+      "title": "獨處房間",
+      "scenario": "家裡有個房間，進去一天，外面只過一分鐘。",
+      "question": "你會每天進去嗎？",
+      "twist": "",
+      "deeperQuestion": "對方需要知道你待了多久嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-034",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Goldfish promises",
+    "scenario": "Promises become goldfish; broken promises must be released by hand.",
+    "question": "Would your tank be large?",
+    "twist": "",
+    "deeperQuestion": "Would you promise less or grow the tank?",
+    "zh": {
+      "title": "金魚承諾",
+      "scenario": "每個承諾會變成一條金魚，沒做到就要親手放走。",
+      "question": "你們的魚缸會大嗎？",
+      "twist": "",
+      "deeperQuestion": "你會少許願，還是努力養大魚缸？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-035",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "One sentence",
+    "scenario": "Magic allows one sentence to your partner each day, but unlimited gestures.",
+    "question": "What would you say today?",
+    "twist": "",
+    "deeperQuestion": "Would you leave “I love you” to gestures?",
+    "zh": {
+      "title": "只剩一句",
+      "scenario": "魔法讓你每天只能對伴侶說一句話，動作不限。",
+      "question": "你今天會說甚麼？",
+      "twist": "",
+      "deeperQuestion": "你會把「我愛你」留給動作嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-036",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Memory auction",
+    "scenario": "Someone offers a fortune for your first meeting; both of you would forget it.",
+    "question": "Would you sell?",
+    "twist": "",
+    "deeperQuestion": "Could the sale go ahead if only you agree?",
+    "zh": {
+      "title": "記憶拍賣",
+      "scenario": "有人高價買你們第一次見面的回憶，兩人都會忘記。",
+      "question": "你願意賣嗎？",
+      "twist": "",
+      "deeperQuestion": "如果只有你願意，能成交嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-037",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "The return door",
+    "scenario": "A door leads to your partner before they knew you.",
+    "question": "Would you pursue them again?",
+    "twist": "",
+    "deeperQuestion": "Would you use what you already know to win them over?",
+    "zh": {
+      "title": "轉身門",
+      "scenario": "一扇門能讓你遇見還未認識你的伴侶。",
+      "question": "你會再追求他嗎？",
+      "twist": "",
+      "deeperQuestion": "你會用已知的喜好來打動他嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-038",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Loyal robot cat",
+    "scenario": "A robot cat always sides with its buyer during arguments.",
+    "question": "Would you buy it as a referee?",
+    "twist": "",
+    "deeperQuestion": "What if your partner buys one first?",
+    "zh": {
+      "title": "忠心機器貓",
+      "scenario": "機器貓會在每次爭執時支持買下牠的人。",
+      "question": "你會買來當裁判嗎？",
+      "twist": "",
+      "deeperQuestion": "如果伴侶先買了一隻呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-039",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Two endings",
+    "scenario": "A book offers an ordinary stable future or an exciting one often apart.",
+    "question": "Which page would you turn?",
+    "twist": "",
+    "deeperQuestion": "Could you accept your partner choosing the other?",
+    "zh": {
+      "title": "兩種結局",
+      "scenario": "一本書有你們的兩種未來：平穩但普通，精彩卻常分隔。",
+      "question": "你會翻哪一頁？",
+      "twist": "",
+      "deeperQuestion": "你能接受對方選另一頁嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-040",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Sweet-word tax",
+    "scenario": "Every sweet remark costs a coin; quiet care is free.",
+    "question": "Would you say fewer sweet things?",
+    "twist": "",
+    "deeperQuestion": "What if hearing them matters most to your partner?",
+    "zh": {
+      "title": "甜言稅",
+      "scenario": "每句甜言蜜語都要付一元，默默照顧不用錢。",
+      "question": "你們會少說甜話嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方最需要聽見那些話呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-041",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Dream meetings",
+    "scenario": "You can date in dreams, remembering only the feeling by day.",
+    "question": "Does that count as time together?",
+    "twist": "",
+    "deeperQuestion": "What if dreams feel happier than real life?",
+    "zh": {
+      "title": "夢中相見",
+      "scenario": "你們能在夢裡約會，但白天會忘記內容，只留下感覺。",
+      "question": "這樣算相處過嗎？",
+      "twist": "",
+      "deeperQuestion": "如果夢裡比現實開心呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-042",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Dragon guard",
+    "scenario": "A tiny dragon drives away anyone who hurts your partner, including you.",
+    "question": "Would you gift it to them?",
+    "twist": "",
+    "deeperQuestion": "Should it allow one apology?",
+    "zh": {
+      "title": "小龍保鑣",
+      "scenario": "一隻小龍會趕走所有讓伴侶傷心的人，包括你。",
+      "question": "你願意送牠給對方嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望牠容許一次道歉嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-043",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Care ledger",
+    "scenario": "Every act of care appears on a wall that cannot be erased.",
+    "question": "Would you want this wall at home?",
+    "twist": "",
+    "deeperQuestion": "What if it records only things that cost money?",
+    "zh": {
+      "title": "愛心記帳",
+      "scenario": "每次付出都會記在牆上，誰都不能刪。",
+      "question": "你想家裡有這面牆嗎？",
+      "twist": "",
+      "deeperQuestion": "如果牆只記得花錢的事呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-044",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Different clocks",
+    "scenario": "You can both live longer, but one ages twenty years first.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "Who should decide which person ages first?",
+    "zh": {
+      "title": "變老速度",
+      "scenario": "你們可以一起長壽，但其中一人會先變老二十年。",
+      "question": "你會接受嗎？",
+      "twist": "",
+      "deeperQuestion": "誰來決定由哪一人先變老？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-045",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Tomorrow's letter",
+    "scenario": "Your future partner sends a letter marked “Do not open yet”.",
+    "question": "Would you open it?",
+    "twist": "",
+    "deeperQuestion": "What if the envelope keeps crying?",
+    "zh": {
+      "title": "明天的信",
+      "scenario": "未來的伴侶寄來一封信，封面寫「現在別拆」。",
+      "question": "你會拆嗎？",
+      "twist": "",
+      "deeperQuestion": "如果信封一直在哭呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-046",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Shared luck",
+    "scenario": "You can split your luck equally, never having one lucky and one unlucky partner.",
+    "question": "Would you agree?",
+    "twist": "",
+    "deeperQuestion": "What if you were the luckier one?",
+    "zh": {
+      "title": "共享運氣",
+      "scenario": "你們可以平分運氣，從此不會一人特別順、一人特別倒楣。",
+      "question": "你願意嗎？",
+      "twist": "",
+      "deeperQuestion": "如果你原本是比較幸運的那個呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-047",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love translator",
+    "scenario": "Earphones translate complaints into what your partner actually wants.",
+    "question": "Would you keep them on?",
+    "twist": "",
+    "deeperQuestion": "Would you hear the original words first?",
+    "zh": {
+      "title": "愛的翻譯",
+      "scenario": "耳機會把對方每句抱怨翻成他真正想要的東西。",
+      "question": "你會一直戴著嗎？",
+      "twist": "",
+      "deeperQuestion": "你想先聽原話，還是直接聽翻譯？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-048",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Goodbye boat",
+    "scenario": "A hundred goodbyes become paper boats you can trade for never being apart.",
+    "question": "Would you trade?",
+    "twist": "",
+    "deeperQuestion": "Would you agree if solo travel became impossible?",
+    "zh": {
+      "title": "離別小船",
+      "scenario": "每次道別都能存成一艘紙船，一百艘可換永不分開。",
+      "question": "你想兌換嗎？",
+      "twist": "",
+      "deeperQuestion": "永不分開包括不能獨自旅行，你還願意嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-049",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Growing gift",
+    "scenario": "A gift grows only when its recipient truly likes it.",
+    "question": "Would you give one to your partner?",
+    "twist": "",
+    "deeperQuestion": "If it stays tiny, would you ask why?",
+    "zh": {
+      "title": "會長大的禮物",
+      "scenario": "一份禮物只有在你真心喜歡時才長大。",
+      "question": "你會送給伴侶嗎？",
+      "twist": "",
+      "deeperQuestion": "如果它一直很小，你想問原因嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-050",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Strangers today",
+    "scenario": "One day each year you become strangers to each other.",
+    "question": "How would you arrange to meet?",
+    "twist": "",
+    "deeperQuestion": "Would it bother you if no spark appeared that day?",
+    "zh": {
+      "title": "一日陌生人",
+      "scenario": "每年一天，你們會忘記是情侶，只記得對方是陌生人。",
+      "question": "你會安排怎樣相遇？",
+      "twist": "",
+      "deeperQuestion": "如果那天沒有心動，你會介意嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-051",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Mood remote",
+    "scenario": "You can secretly press a button to cheer your partner up.",
+    "question": "Would you use it?",
+    "twist": "",
+    "deeperQuestion": "What if they want time to feel sad?",
+    "zh": {
+      "title": "情緒遙控器",
+      "scenario": "你能一按就讓伴侶開心，但只有你知道按過。",
+      "question": "你會用嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方想認真難過一會呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-052",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Two breakfasts",
+    "scenario": "A magic kitchen makes only your favourite breakfast, never your partner's.",
+    "question": "Would you keep it?",
+    "twist": "",
+    "deeperQuestion": "Would you cook their portion yourself?",
+    "zh": {
+      "title": "兩份早餐",
+      "scenario": "魔法廚房只會煮你最愛的早餐，對方想吃的永遠沒有。",
+      "question": "你會留下廚房嗎？",
+      "twist": "",
+      "deeperQuestion": "你願意自己煮對方那份嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-053",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Happy broadcast",
+    "scenario": "Your happy moments would be broadcast citywide; sad ones stay private.",
+    "question": "Would you switch it on?",
+    "twist": "",
+    "deeperQuestion": "What if the broadcasts earn you money?",
+    "zh": {
+      "title": "幸福廣播",
+      "scenario": "你們每次幸福的時刻都會全城直播，難過時不會。",
+      "question": "你會開啟嗎？",
+      "twist": "",
+      "deeperQuestion": "如果直播能替你們賺錢呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-054",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "One-only ticket",
+    "scenario": "Your partner gives you a dream concert ticket but cannot attend.",
+    "question": "Would you go alone?",
+    "twist": "",
+    "deeperQuestion": "What if they secretly hope you stay?",
+    "zh": {
+      "title": "獨一無二票",
+      "scenario": "伴侶送你一張夢想演唱會票，但他不能進場。",
+      "question": "你會自己去嗎？",
+      "twist": "",
+      "deeperQuestion": "如果他其實希望你留下呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-055",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Talking savings",
+    "scenario": "Your shared piggy bank asks whether each purchase is worthwhile.",
+    "question": "Who should answer?",
+    "twist": "",
+    "deeperQuestion": "Can money leave when you disagree?",
+    "zh": {
+      "title": "會說話的存錢筒",
+      "scenario": "共同存錢筒每次都問「這筆錢值得花嗎」。",
+      "question": "你想讓誰回答？",
+      "twist": "",
+      "deeperQuestion": "如果兩人答案不同，錢能拿走嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-056",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Joy exchange",
+    "scenario": "You can give your partner half your joy, without replacing it.",
+    "question": "When would you do it?",
+    "twist": "",
+    "deeperQuestion": "Would you accept the same gift from them?",
+    "zh": {
+      "title": "幸福交換所",
+      "scenario": "你能把自己的快樂分一半給伴侶，但不能補回。",
+      "question": "你會在甚麼時候換？",
+      "twist": "",
+      "deeperQuestion": "你會接受對方這樣送你嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-057",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "First kiss forever",
+    "scenario": "Every kiss can feel like the first, but earlier kisses are forgotten.",
+    "question": "Would you try?",
+    "twist": "",
+    "deeperQuestion": "Is there one kiss you would insist on keeping?",
+    "zh": {
+      "title": "永遠的初吻",
+      "scenario": "魔法能讓每次接吻都像初吻，但會忘記以前的吻。",
+      "question": "你想試嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪一次你一定想留下？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-058",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Argument plant",
+    "scenario": "Unspoken complaints become thorns in a plant.",
+    "question": "Would you trim them or talk things through?",
+    "twist": "",
+    "deeperQuestion": "What if talking temporarily makes the flowers wilt?",
+    "zh": {
+      "title": "吵架花盆",
+      "scenario": "每次沒說出口的不滿都會長成一根刺。",
+      "question": "你會剪刺，還是把事情說開？",
+      "twist": "",
+      "deeperQuestion": "如果說開會令花暫時凋謝呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-059",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Whose map",
+    "scenario": "A travel map follows only one person's deepest wishes.",
+    "question": "Who should hold it?",
+    "twist": "",
+    "deeperQuestion": "Would you ask to swap halfway?",
+    "zh": {
+      "title": "誰的地圖",
+      "scenario": "雙人旅行地圖只會帶你們去其中一人最想去的地方。",
+      "question": "你想誰拿地圖？",
+      "twist": "",
+      "deeperQuestion": "你會在途中要求交換嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-060",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Breakup insurance",
+    "scenario": "Insurance removes breakup pain, along with the joy of having loved.",
+    "question": "Would you buy it?",
+    "twist": "",
+    "deeperQuestion": "Would you buy a policy for your partner too?",
+    "zh": {
+      "title": "分手保險",
+      "scenario": "保險能保證分手後不傷心，但也會抹去相愛的快樂。",
+      "question": "你會買嗎？",
+      "twist": "",
+      "deeperQuestion": "你會替伴侶也買一份嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-061",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Quiet world",
+    "scenario": "You can live where arguments never happen, but disagreements cannot be spoken.",
+    "question": "Would you move there?",
+    "twist": "",
+    "deeperQuestion": "What would you most fear being unable to say?",
+    "zh": {
+      "title": "靜音世界",
+      "scenario": "你們可住進沒有爭吵的世界，但所有不同意見都說不出口。",
+      "question": "你會搬去嗎？",
+      "twist": "",
+      "deeperQuestion": "你最怕哪句話因此說不出口？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-062",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Weekend double",
+    "scenario": "Your double can enjoy a date with your partner while you go elsewhere.",
+    "question": "Would you send it?",
+    "twist": "",
+    "deeperQuestion": "Would you tell your partner beforehand?",
+    "zh": {
+      "title": "週末分身",
+      "scenario": "你可以派分身陪伴侶，自己去玩，分身也會真心享受約會。",
+      "question": "你會派嗎？",
+      "twist": "",
+      "deeperQuestion": "你會事先告訴伴侶嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-063",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Inner child",
+    "scenario": "You meet your partner's inner child, who will trust one promise.",
+    "question": "What would you promise?",
+    "twist": "",
+    "deeperQuestion": "What would you refuse to promise, even to comfort them?",
+    "zh": {
+      "title": "心裡的小孩",
+      "scenario": "你能見到伴侶心裡的小孩，他只肯相信一個承諾。",
+      "question": "你會答應甚麼？",
+      "twist": "",
+      "deeperQuestion": "有甚麼你再想安慰他也不會答應？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-064",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love expiry",
+    "scenario": "A potion gives you a year of intense romance, then returns things to normal.",
+    "question": "Would you drink it?",
+    "twist": "",
+    "deeperQuestion": "Would ordinary love feel insufficient afterwards?",
+    "zh": {
+      "title": "愛情期限",
+      "scenario": "藥水讓你們熱戀一年，之後回到現在的感情。",
+      "question": "你想喝嗎？",
+      "twist": "",
+      "deeperQuestion": "你會怕一年後覺得現在不夠好嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-065",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Home beacon",
+    "scenario": "A beacon shines whenever you wait for your partner.",
+    "question": "Would you want them to see it?",
+    "twist": "",
+    "deeperQuestion": "Would you hope it makes them come home sooner?",
+    "zh": {
+      "title": "回家燈塔",
+      "scenario": "只要你等伴侶回家，天空就會亮起燈塔。",
+      "question": "你想讓他看見嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望他因此早點回來嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-066",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Shared name",
+    "scenario": "A couple may keep only one original name; the other must choose a new one.",
+    "question": "How would you decide?",
+    "twist": "",
+    "deeperQuestion": "What if you could both change names?",
+    "zh": {
+      "title": "共同名字",
+      "scenario": "一對情侶只能保留一人的名字，另一人要選新名字。",
+      "question": "你會怎樣決定？",
+      "twist": "",
+      "deeperQuestion": "如果可以兩人都改呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-067",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Remembering cafe",
+    "scenario": "A cafe keeps every date's conversation, even after a breakup.",
+    "question": "Would you visit often?",
+    "twist": "",
+    "deeperQuestion": "Could your partner return alone to listen?",
+    "zh": {
+      "title": "不會忘的餐廳",
+      "scenario": "餐廳會保存每次約會的對話，分手後也不刪。",
+      "question": "你願意常去嗎？",
+      "twist": "",
+      "deeperQuestion": "你會准許對方獨自回去聽嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-068",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love score",
+    "scenario": "Each morning you see your partner's score for yesterday together.",
+    "question": "Would you enable it?",
+    "twist": "",
+    "deeperQuestion": "After a low score, would you ask why or need time first?",
+    "zh": {
+      "title": "戀愛評分",
+      "scenario": "每天醒來，你會看到伴侶給昨天相處的分數。",
+      "question": "你想開啟嗎？",
+      "twist": "",
+      "deeperQuestion": "低分那天，你先問原因還是先難過？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-069",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Only yours",
+    "scenario": "Your flowers bloom only for your partner.",
+    "question": "Does that feel romantic or disappointing?",
+    "twist": "",
+    "deeperQuestion": "What if your friends want to see them too?",
+    "zh": {
+      "title": "只給你的花",
+      "scenario": "你種的花只對伴侶盛開，他不在就合起來。",
+      "question": "你會覺得浪漫還是可惜？",
+      "twist": "",
+      "deeperQuestion": "如果朋友也很想看花呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-070",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Missed moment",
+    "scenario": "You can watch one moment you missed in your partner's life, without joining it.",
+    "question": "Which one?",
+    "twist": "",
+    "deeperQuestion": "Would you want them watching beside you?",
+    "zh": {
+      "title": "錯過重播",
+      "scenario": "你能補看伴侶人生中一個你錯過的時刻，卻不能參與。",
+      "question": "你想看哪個？",
+      "twist": "",
+      "deeperQuestion": "你想讓他陪你一起看嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-071",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Another love",
+    "scenario": "Every decade your personalities change, but memories stay.",
+    "question": "Would you promise to stay together?",
+    "twist": "",
+    "deeperQuestion": "Would you want the chance to choose again?",
+    "zh": {
+      "title": "換一種愛",
+      "scenario": "每十年，你們會變成不同性格的人，但記得全部回憶。",
+      "question": "你還會承諾一直在一起嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望保留重新選擇的機會嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-072",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Thought balloons",
+    "scenario": "Unspoken feelings become balloons beside the bed.",
+    "question": "Would you ask to open one of your partner's?",
+    "twist": "",
+    "deeperQuestion": "If they refuse, could you leave it floating?",
+    "zh": {
+      "title": "心事氣球",
+      "scenario": "沒說的心事會變成氣球飄在床邊。",
+      "question": "你會問伴侶可不可以拆一個嗎？",
+      "twist": "",
+      "deeperQuestion": "如果他說不，你能讓它一直飄著嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-073",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "One shared dream",
+    "scenario": "You must share one nightly dream: adventure or quiet.",
+    "question": "Which would you choose tonight?",
+    "twist": "",
+    "deeperQuestion": "Would you alternate nights?",
+    "zh": {
+      "title": "兩人一夢",
+      "scenario": "你們每晚只能做同一個夢，一人喜歡冒險、一人喜歡安靜。",
+      "question": "今晚選哪種？",
+      "twist": "",
+      "deeperQuestion": "你願意隔晚輪流嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-074",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "No fear",
+    "scenario": "You can lose all fear of losing your partner, but also stop missing them.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "What if your partner chooses it?",
+    "zh": {
+      "title": "不怕失去",
+      "scenario": "你能永遠不怕失去伴侶，但也不再感到想念。",
+      "question": "你會接受嗎？",
+      "twist": "",
+      "deeperQuestion": "如果對方選了這個魔法呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-075",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Walking home",
+    "scenario": "Your home walks toward one person's dream city each day.",
+    "question": "Whose wish should guide it?",
+    "twist": "",
+    "deeperQuestion": "Would you ask it to stop halfway?",
+    "zh": {
+      "title": "會走的房子",
+      "scenario": "你們的房子每天走向其中一人的夢想城市。",
+      "question": "你希望它跟誰走？",
+      "twist": "",
+      "deeperQuestion": "你會讓它停在中間嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-076",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Forgiveness eraser",
+    "scenario": "An eraser removes hurt, but the forgiven person forgets their mistake.",
+    "question": "Would you use it?",
+    "twist": "",
+    "deeperQuestion": "Whose memory would you rather preserve?",
+    "zh": {
+      "title": "原諒橡皮擦",
+      "scenario": "橡皮擦能擦走傷心，但被原諒的人會忘記自己做錯了甚麼。",
+      "question": "你會用嗎？",
+      "twist": "",
+      "deeperQuestion": "你更想留下哪一方的記憶？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-077",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Secret park",
+    "scenario": "You find a park for just the two of you; telling anyone makes it vanish.",
+    "question": "Could you keep it secret?",
+    "twist": "",
+    "deeperQuestion": "What if a friend needs a refuge?",
+    "zh": {
+      "title": "秘密樂園",
+      "scenario": "你們找到只屬於兩人的樂園，告訴第三個人就會消失。",
+      "question": "你能守住嗎？",
+      "twist": "",
+      "deeperQuestion": "如果朋友正需要一個避風港呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-078",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Attention hourglass",
+    "scenario": "You share one fully attentive hour each day; otherwise distractions return.",
+    "question": "What would you save it for?",
+    "twist": "",
+    "deeperQuestion": "Would you spend it playing or solving a problem?",
+    "zh": {
+      "title": "專心沙漏",
+      "scenario": "你們每天共用一小時完全專心的時間，其餘時候都容易分心。",
+      "question": "你想留給哪件事？",
+      "twist": "",
+      "deeperQuestion": "你會用來玩，還是解決難題？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-079",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Reunion ticket",
+    "scenario": "A ticket brings your distant partner instantly, but costs them an important opportunity.",
+    "question": "Would you send it?",
+    "twist": "",
+    "deeperQuestion": "Would you explain the cost first?",
+    "zh": {
+      "title": "重逢車票",
+      "scenario": "車票能讓遠方的伴侶立刻來到你身邊，但他會錯過一個重要機會。",
+      "question": "你會寄出嗎？",
+      "twist": "",
+      "deeperQuestion": "你會先告訴他代價嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-080",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Honest discount",
+    "scenario": "A restaurant discounts every honest admission, even awkward ones.",
+    "question": "Would you talk until dinner is free?",
+    "twist": "",
+    "deeperQuestion": "What would you never reveal for a discount?",
+    "zh": {
+      "title": "真心折扣",
+      "scenario": "餐廳每說出一個真心話就打折，包括不太好聽的話。",
+      "question": "你們會說到免費嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪類話你不想為折扣說出口？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-081",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Different seasons",
+    "scenario": "You can each live in your favourite season, meeting for only one season yearly.",
+    "question": "Would you choose that?",
+    "twist": "",
+    "deeperQuestion": "Who should choose your season together?",
+    "zh": {
+      "title": "不同的四季",
+      "scenario": "你們可以各住最喜歡的季節，但一年只能相聚一季。",
+      "question": "你會選嗎？",
+      "twist": "",
+      "deeperQuestion": "相聚的一季由誰決定？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-082",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love receipt",
+    "scenario": "Gifts include a receipt of the giver's feelings while preparing them.",
+    "question": "Would you read it?",
+    "twist": "",
+    "deeperQuestion": "What if it says “I bought this to avoid upsetting you”?",
+    "zh": {
+      "title": "愛的收據",
+      "scenario": "每份禮物附有對方準備時的心情，可能疲倦也可能期待。",
+      "question": "你會讀嗎？",
+      "twist": "",
+      "deeperQuestion": "如果上面寫「怕你不開心才買」呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-083",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Tail feelings",
+    "scenario": "Your partner grows a tail that reveals their mood but wants to hide it.",
+    "question": "Would you ask to see it?",
+    "twist": "",
+    "deeperQuestion": "Would you agree to grow one too?",
+    "zh": {
+      "title": "長尾巴戀人",
+      "scenario": "伴侶長出會暴露心情的尾巴，但他想藏起來。",
+      "question": "你會請他露出來嗎？",
+      "twist": "",
+      "deeperQuestion": "你願意也有一條嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-084",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Half a treasure",
+    "scenario": "You find treasure that can be claimed only by living apart.",
+    "question": "Would you leave it behind?",
+    "twist": "",
+    "deeperQuestion": "What if it could solve a family problem?",
+    "zh": {
+      "title": "一半寶藏",
+      "scenario": "你們找到寶藏，只有分開生活才能各取一半。",
+      "question": "你會留下寶藏嗎？",
+      "twist": "",
+      "deeperQuestion": "如果錢能解決家人的困難呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-085",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Company clock",
+    "scenario": "A clock adds time together by subtracting your time alone.",
+    "question": "How far would you turn it?",
+    "twist": "",
+    "deeperQuestion": "Would you let your partner set it for you?",
+    "zh": {
+      "title": "陪伴時鐘",
+      "scenario": "一個時鐘能增加相處時間，但會扣掉你獨處的時間。",
+      "question": "你想調快多少？",
+      "twist": "",
+      "deeperQuestion": "你願意讓伴侶代你調嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-086",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Unfamiliar success",
+    "scenario": "Magic fulfils your partner's dream but changes them in unfamiliar ways.",
+    "question": "Would you encourage it?",
+    "twist": "",
+    "deeperQuestion": "What would you most hope stays the same?",
+    "zh": {
+      "title": "陌生的成功",
+      "scenario": "魔法令伴侶夢想成真，但他會變成你不熟悉的樣子。",
+      "question": "你會鼓勵他用嗎？",
+      "twist": "",
+      "deeperQuestion": "你最希望哪一點不要改變？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-087",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Memory colours",
+    "scenario": "The same memory looks golden to one of you and grey to the other.",
+    "question": "Which version would you trust?",
+    "twist": "",
+    "deeperQuestion": "Would you want to change their colour?",
+    "zh": {
+      "title": "回憶顏色",
+      "scenario": "你們看到同一段回憶，一人是金色、一人是灰色。",
+      "question": "你會相信哪個版本？",
+      "twist": "",
+      "deeperQuestion": "你會想把對方的顏色改掉嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-088",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Bear's choice",
+    "scenario": "Your shared teddy wants to move to the forest and visit only one of you.",
+    "question": "How should it choose?",
+    "twist": "",
+    "deeperQuestion": "Would the other person love it less?",
+    "zh": {
+      "title": "小熊的選擇",
+      "scenario": "共同養大的小熊想搬去森林，只會探望其中一人。",
+      "question": "你希望牠怎樣選？",
+      "twist": "",
+      "deeperQuestion": "另一人會少愛牠一點嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-089",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Fair coin",
+    "scenario": "A perfectly fair coin can settle every disagreement.",
+    "question": "Would you always use it?",
+    "twist": "",
+    "deeperQuestion": "What would you never leave to the coin?",
+    "zh": {
+      "title": "公平硬幣",
+      "scenario": "每次意見不同，都能用一枚絕對公平的硬幣決定。",
+      "question": "你想一直用嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪件事你不肯交給硬幣？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-090",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Courage potion",
+    "scenario": "A potion reveals what you most want to say, but you cannot choose the tone.",
+    "question": "Would you drink it on a date?",
+    "twist": "",
+    "deeperQuestion": "Would you warn your partner first?",
+    "zh": {
+      "title": "勇敢藥水",
+      "scenario": "藥水能讓你說出最想說的話，卻不能選擇語氣。",
+      "question": "你會在約會時喝嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望對方先準備好聽嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-091",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Spark compass",
+    "scenario": "A compass points to whoever excites you most, sometimes not your partner.",
+    "question": "Would you keep it?",
+    "twist": "",
+    "deeperQuestion": "Do you think you must follow it?",
+    "zh": {
+      "title": "心動導航",
+      "scenario": "導航會指出讓你最心動的人，方向偶爾不是伴侶。",
+      "question": "你還想留著嗎？",
+      "twist": "",
+      "deeperQuestion": "你覺得需要跟著它走嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-092",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Small together",
+    "scenario": "You can shrink into a carefree dollhouse life, but cannot hug family again.",
+    "question": "Would you move?",
+    "twist": "",
+    "deeperQuestion": "What if you could return for one day yearly?",
+    "zh": {
+      "title": "一起變小",
+      "scenario": "你們可以變小住進玩具屋，生活無憂，但無法再抱家人。",
+      "question": "你會搬嗎？",
+      "twist": "",
+      "deeperQuestion": "如果每年能變回來一天呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-093",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Bedtime truth",
+    "scenario": "A pillow asks one relationship question nightly and keeps you awake until answered.",
+    "question": "Would you buy a pair?",
+    "twist": "",
+    "deeperQuestion": "What would you want it to ask first?",
+    "zh": {
+      "title": "睡前一句真話",
+      "scenario": "枕頭每天問一個關於感情的問題，不回答就不讓你睡。",
+      "question": "你會買一對嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望它先問甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-094",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Love backup",
+    "scenario": "You can restore today's relationship later, losing newer memories.",
+    "question": "Would you make a backup?",
+    "twist": "",
+    "deeperQuestion": "When would restoring it be worthwhile?",
+    "zh": {
+      "title": "幸福備份",
+      "scenario": "你能備份現在的感情，以後不順就恢復，但新回憶會消失。",
+      "question": "你會存檔嗎？",
+      "twist": "",
+      "deeperQuestion": "甚麼情況才值得按恢復？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-095",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "The florist",
+    "scenario": "A florist can make your partner love any hobby you choose.",
+    "question": "Would you choose one?",
+    "twist": "",
+    "deeperQuestion": "What if they choose one for you too?",
+    "zh": {
+      "title": "花店老闆",
+      "scenario": "花店能讓伴侶愛上你挑的任何興趣。",
+      "question": "你會替他挑一個嗎？",
+      "twist": "",
+      "deeperQuestion": "如果他也替你挑呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-096",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Silent thanks",
+    "scenario": "Each thank-you becomes a star, but your partner cannot know you sent it.",
+    "question": "Would you send as many?",
+    "twist": "",
+    "deeperQuestion": "Would you want them to learn the truth someday?",
+    "zh": {
+      "title": "無聲的謝謝",
+      "scenario": "你每次感謝對方，他就收到一顆星，但不知道是你送的。",
+      "question": "你還會送一樣多嗎？",
+      "twist": "",
+      "deeperQuestion": "你想有一天讓他知道嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-097",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Same destination",
+    "scenario": "Two trains reach happiness: a slow one together or fast separate ones.",
+    "question": "Which would you board?",
+    "twist": "",
+    "deeperQuestion": "What if your partner chooses the other train?",
+    "zh": {
+      "title": "同路終點",
+      "scenario": "兩班車都到幸福，一班一起慢慢走，一班各自很快到。",
+      "question": "你會上哪班？",
+      "twist": "",
+      "deeperQuestion": "如果對方選了另一班呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-098",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Last sweet",
+    "scenario": "The last magic sweet lets one of you fully understand the other.",
+    "question": "Who should eat it?",
+    "twist": "",
+    "deeperQuestion": "Does the person understood owe anything back?",
+    "zh": {
+      "title": "最後一顆糖",
+      "scenario": "最後一顆魔法糖能讓一人完全理解另一人。",
+      "question": "你想誰吃？",
+      "twist": "",
+      "deeperQuestion": "被理解的人需要回報甚麼嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-099",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Forgotten promise",
+    "scenario": "You can keep every promise but forget whom each fulfilled promise was for.",
+    "question": "Would you agree?",
+    "twist": "",
+    "deeperQuestion": "Would your partner still feel loved?",
+    "zh": {
+      "title": "會忘的承諾",
+      "scenario": "你能保證永不失約，但每完成一個承諾就忘記是為誰做的。",
+      "question": "你願意嗎？",
+      "twist": "",
+      "deeperQuestion": "你覺得對方還會感受到愛嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-couple-100",
+    "category": "Couple",
+    "emoji": "💗",
+    "title": "Choose tomorrow",
+    "scenario": "Each morning you choose love again without relying on yesterday's answer.",
+    "question": "Would you feel scared or hopeful?",
+    "twist": "",
+    "deeperQuestion": "Would you want to hear their answer first?",
+    "zh": {
+      "title": "明天再選",
+      "scenario": "你們每天醒來都要重新選擇是否相愛，不能靠昨天的答案。",
+      "question": "你會害怕還是期待？",
+      "twist": "",
+      "deeperQuestion": "你想先知道對方的答案嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-001",
     "category": "Family",
     "emoji": "🏠",
-    "title": "An unwanted nickname",
-    "scenario": "A relative uses a nickname you dislike.",
-    "question": "How would you ask them to stop?",
+    "title": "Family tree",
+    "scenario": "A family tree grows a leaf for every rule, until it blocks the sky.",
+    "question": "Which rule would you remove?",
     "twist": "",
-    "deeperQuestion": "What would you like to be called?",
+    "deeperQuestion": "Who should be allowed to remove leaves?",
     "zh": {
-      "title": "不愛的稱呼",
-      "scenario": "家人用了你不太喜歡的暱稱。",
-      "question": "你會怎樣請他改口？",
+      "title": "家族小樹",
+      "scenario": "家族樹每多一條家規就多一片葉，葉太密會遮住天空。",
+      "question": "你會先摘掉哪條規則？",
       "twist": "",
-      "deeperQuestion": "你喜歡別人怎樣稱呼你？"
+      "deeperQuestion": "誰應該有權摘葉？"
     }
   },
   {
-    "id": "ponder-v2-family-066",
+    "id": "ponder-v3-family-002",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A hidden skill",
-    "scenario": "You discover a relative has a skill you never knew about.",
-    "question": "What would you ask them to demonstrate?",
+    "title": "Grandma at eighteen",
+    "scenario": "Grandma can be eighteen for a year and chase her own dreams.",
+    "question": "Would you want her to stay or go?",
     "twist": "",
-    "deeperQuestion": "Who taught them?",
+    "deeperQuestion": "Would you join her or let her go alone?",
     "zh": {
-      "title": "意外的本領",
-      "scenario": "你發現家人會一項你不知道的技能。",
-      "question": "你最想看甚麼示範？",
+      "title": "奶奶的十八歲",
+      "scenario": "奶奶能變回十八歲一年，但會去追自己的夢想。",
+      "question": "你希望她留下還是出發？",
       "twist": "",
-      "deeperQuestion": "他是跟誰學的？"
+      "deeperQuestion": "你會想陪她去，還是讓她自己玩？"
     }
   },
   {
-    "id": "ponder-v2-family-067",
+    "id": "ponder-v3-family-003",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A keepsake",
-    "scenario": "You will be away from home for a week.",
-    "question": "What small item would feel comforting?",
+    "title": "An extra seat",
+    "scenario": "Your table gains a seat for someone no longer in your life.",
+    "question": "Whom would you invite?",
     "twist": "",
-    "deeperQuestion": "Where do you usually keep it?",
+    "deeperQuestion": "What if another relative does not want them there?",
     "zh": {
-      "title": "選一件帶走",
-      "scenario": "你暫時要離家住一星期。",
-      "question": "你會帶哪件小東西讓自己安心？",
+      "title": "飯桌空位",
+      "scenario": "飯桌每晚多一個空位，能請一位已離開生活的人回來吃飯。",
+      "question": "你想邀誰？",
       "twist": "",
-      "deeperQuestion": "它平常放在哪裡？"
+      "deeperQuestion": "其他家人不想見他時怎麼辦？"
     }
   },
   {
-    "id": "ponder-v2-family-068",
+    "id": "ponder-v3-family-004",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A family stall",
-    "scenario": "Your family is running a stall for one day.",
-    "question": "What would you sell?",
+    "title": "Chore fairy",
+    "scenario": "A fairy does every chore, provided nobody says thank you.",
+    "question": "Would you hire it?",
     "twist": "",
-    "deeperQuestion": "What role could each person take?",
+    "deeperQuestion": "What could your family use instead?",
     "zh": {
-      "title": "家庭小店",
-      "scenario": "全家要擺一天小攤檔。",
-      "question": "你們最適合賣甚麼？",
+      "title": "家務精靈",
+      "scenario": "精靈包辦所有家務，條件是全家不能說謝謝。",
+      "question": "你會請牠嗎？",
       "twist": "",
-      "deeperQuestion": "每人可以負責哪一份工作？"
+      "deeperQuestion": "你們會用甚麼代替那句話？"
     }
   },
   {
-    "id": "ponder-v2-family-069",
+    "id": "ponder-v3-family-005",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A tiring day",
-    "scenario": "A relative says they have had an exhausting day.",
-    "question": "What small thing would you do first?",
+    "title": "Memory tins",
+    "scenario": "You can take three tins of family memories when moving; the rest fade.",
+    "question": "What would you keep?",
     "twist": "",
-    "deeperQuestion": "How could you check that your help is wanted?",
+    "deeperQuestion": "Should everyone get a tin of their own?",
     "zh": {
-      "title": "家人說辛苦",
-      "scenario": "家人說今天很累。",
-      "question": "你會先做一件甚麼小事？",
+      "title": "回憶罐頭",
+      "scenario": "搬家只能帶三罐家庭回憶，其餘會淡去。",
+      "question": "你會保留哪三種？",
       "twist": "",
-      "deeperQuestion": "怎樣才知道你的幫忙是對方想要的？"
+      "deeperQuestion": "每人都應該有一罐嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-070",
+    "id": "ponder-v3-family-006",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Meeting a new friend",
-    "scenario": "You want to invite a friend for dinner.",
-    "question": "What would you tell your family first?",
+    "title": "Role Sunday",
+    "scenario": "Adults and children swap decision-making power every Sunday.",
+    "question": "Would you try it?",
     "twist": "",
-    "deeperQuestion": "Is there a topic you would prefer not to bring up at dinner?",
+    "deeperQuestion": "Which decision should not be swapped?",
     "zh": {
-      "title": "認識新朋友",
-      "scenario": "你想帶朋友回家吃飯。",
-      "question": "會先跟家人講清楚甚麼？",
+      "title": "角色星期天",
+      "scenario": "每個星期天，家中大人和小孩交換決定權。",
+      "question": "你想試嗎？",
       "twist": "",
-      "deeperQuestion": "有甚麼話題你希望飯桌上先不要問？"
+      "deeperQuestion": "有哪項決定不適合交換？"
     }
   },
   {
-    "id": "ponder-v2-family-071",
+    "id": "ponder-v3-family-007",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Different memories",
-    "scenario": "Everyone remembers a family story differently.",
-    "question": "Which detail would you compare?",
+    "title": "Talking house",
+    "scenario": "Your ancestral house wants to retire and travel as reclaimed wood.",
+    "question": "Would you respect its wish?",
     "twist": "",
-    "deeperQuestion": "Which version is the funniest?",
+    "deeperQuestion": "Which part would you most want to keep?",
     "zh": {
-      "title": "記憶不同",
-      "scenario": "同一件家庭趣事，每個人記得的版本不同。",
-      "question": "你最想核對哪個細節？",
+      "title": "會說話的祖屋",
+      "scenario": "祖屋說它想退休，被拆成木材去旅行。",
+      "question": "你會尊重它的願望嗎？",
       "twist": "",
-      "deeperQuestion": "不同版本裡，哪一個最有趣？"
+      "deeperQuestion": "你最想留下它哪一部分？"
     }
   },
   {
-    "id": "ponder-v2-family-072",
+    "id": "ponder-v3-family-008",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A future home",
-    "scenario": "Imagine having a home of your own.",
-    "question": "What habit from your current home would you keep?",
+    "title": "Happy family chart",
+    "scenario": "A family chart records acts of happiness, not careers or grades.",
+    "question": "Would you want one?",
     "twist": "",
-    "deeperQuestion": "What would you like to do differently?",
+    "deeperQuestion": "How would a quiet relative be remembered?",
     "zh": {
-      "title": "給未來的家",
-      "scenario": "如果以後有自己的家。",
-      "question": "你最想保留現在家裡哪個習慣？",
+      "title": "幸福家譜",
+      "scenario": "家譜只記下讓別人幸福的事，不記職業和成績。",
+      "question": "你想用這種家譜嗎？",
       "twist": "",
-      "deeperQuestion": "又有哪一點想用自己的方式做？"
+      "deeperQuestion": "很少說話的家人會怎樣被記住？"
     }
   },
   {
-    "id": "ponder-v2-family-073",
+    "id": "ponder-v3-family-009",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Taking turns",
-    "scenario": "Everyone needs the same bathroom.",
-    "question": "How could you take turns without rushing each other?",
+    "title": "Sweet machine",
+    "scenario": "A machine gives everyone equal sweets, including people who dislike them.",
+    "question": "Is that fair?",
     "twist": "",
-    "deeperQuestion": "What could be prepared outside the bathroom?",
+    "deeperQuestion": "How could someone ask for more?",
     "zh": {
-      "title": "排隊輪流",
-      "scenario": "全家都要用同一間浴室。",
-      "question": "你們怎樣排，才不用一直催？",
+      "title": "分糖機器",
+      "scenario": "機器把糖平均分給全家，連不愛吃糖的人也有一份。",
+      "question": "你覺得這樣公平嗎？",
       "twist": "",
-      "deeperQuestion": "哪一件準備可以先在外面做？"
+      "deeperQuestion": "想多吃的人可以怎樣換？"
     }
   },
   {
-    "id": "ponder-v2-family-074",
+    "id": "ponder-v3-family-010",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A thank-you letter",
-    "scenario": "You want to write three sentences to a relative.",
-    "question": "What would the first one say?",
+    "title": "Obedient pup",
+    "scenario": "A pup obeys every house rule but never chooses its own games.",
+    "question": "Would you want it naughtier?",
     "twist": "",
-    "deeperQuestion": "What specific little moment would you mention?",
+    "deeperQuestion": "Which rule could it break first?",
     "zh": {
-      "title": "一封感謝信",
-      "scenario": "你想寫三句話給一位家人。",
-      "question": "第一句會寫甚麼？",
+      "title": "聽話小狗",
+      "scenario": "小狗從不違反家規，卻也不會自己想玩甚麼。",
+      "question": "你希望牠變得調皮一點嗎？",
       "twist": "",
-      "deeperQuestion": "你想提到哪件具體的小事？"
+      "deeperQuestion": "牠第一個打破的規則可以是甚麼？"
     }
   },
   {
-    "id": "ponder-v2-family-075",
+    "id": "ponder-v3-family-011",
     "category": "Family",
     "emoji": "🏠",
-    "title": "The sound of home",
-    "scenario": "You can tell someone is home before opening the door.",
-    "question": "What do you usually hear?",
+    "title": "Table time machine",
+    "scenario": "Your table can take everyone to dinner in one past year.",
+    "question": "Which year would you choose?",
     "twist": "",
-    "deeperQuestion": "Which sound feels most reassuring?",
+    "deeperQuestion": "Should relatives not yet born come too?",
     "zh": {
-      "title": "家裡的聲音",
-      "scenario": "你在門外就知道有人在家。",
-      "question": "你通常聽到甚麼？",
+      "title": "餐桌時光機",
+      "scenario": "餐桌能帶全家回到同一年的晚餐，但只能選一年。",
+      "question": "你想回哪年？",
       "twist": "",
-      "deeperQuestion": "哪種聲音最讓你覺得安心？"
+      "deeperQuestion": "還沒出生的人應該一起去嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-076",
+    "id": "ponder-v3-family-012",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A new device",
-    "scenario": "A relative is learning a new device feature.",
-    "question": "How would you make it easy to follow?",
+    "title": "Heirloom speaks",
+    "scenario": "An heirloom asks to go to whoever treasures it most, not necessarily the eldest.",
+    "question": "Would you listen?",
     "twist": "",
-    "deeperQuestion": "Would you write steps or let them try once themselves?",
+    "deeperQuestion": "How would you tell care from wanting ownership?",
     "zh": {
-      "title": "新科技",
-      "scenario": "家人不太會用一個新功能。",
-      "question": "你怎樣教會比較容易跟上？",
+      "title": "傳家寶開口",
+      "scenario": "傳家寶說它想送給最珍惜它的人，不一定是長子。",
+      "question": "你會聽它的嗎？",
       "twist": "",
-      "deeperQuestion": "你會寫步驟，還是讓他自己試一次？"
+      "deeperQuestion": "怎樣才算珍惜，不只是想擁有？"
     }
   },
   {
-    "id": "ponder-v2-family-077",
+    "id": "ponder-v3-family-013",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A family film",
-    "scenario": "You are choosing a film for everyone.",
-    "question": "Whose preferences would you check first?",
+    "title": "Child's kingdom",
+    "scenario": "A child finds a kingdom adults cannot enter or monitor.",
+    "question": "Would you let them visit?",
     "twist": "",
-    "deeperQuestion": "Is there any type of content someone would rather avoid?",
+    "deeperQuestion": "What signal would you agree on for coming home?",
     "zh": {
-      "title": "選家庭電影",
-      "scenario": "你要選一部適合大家看的電影。",
-      "question": "你會先問誰的口味？",
+      "title": "小孩的王國",
+      "scenario": "小孩發現一個只有孩子能進的王國，大人無法監看。",
+      "question": "你會讓他去玩嗎？",
       "twist": "",
-      "deeperQuestion": "有哪類內容是有人不想看的？"
+      "deeperQuestion": "你希望約定甚麼回家訊號？"
     }
   },
   {
-    "id": "ponder-v2-family-078",
+    "id": "ponder-v3-family-014",
     "category": "Family",
     "emoji": "🏠",
-    "title": "My own choice",
-    "scenario": "Your family eagerly makes plans for you, but you want to choose.",
-    "question": "What would you say?",
+    "title": "Birthday box",
+    "scenario": "A birthday box grants only wishes the whole family agrees on.",
+    "question": "Would you want it?",
     "twist": "",
-    "deeperQuestion": "What would you still like their advice on?",
+    "deeperQuestion": "What if the same person's wishes keep losing?",
     "zh": {
-      "title": "自己的選擇",
-      "scenario": "家人很熱心替你安排，但你想自己決定。",
-      "question": "你會怎樣說？",
+      "title": "生日願望箱",
+      "scenario": "生日願望箱只實現全家都同意的願望。",
+      "question": "你想要這個箱子嗎？",
       "twist": "",
-      "deeperQuestion": "哪些事你仍然想聽他們的意見？"
+      "deeperQuestion": "如果總是同一人的願望被否決呢？"
     }
   },
   {
-    "id": "ponder-v2-family-079",
+    "id": "ponder-v3-family-015",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Noticing progress",
-    "scenario": "A relative is learning something new.",
-    "question": "What small improvement have you noticed?",
+    "title": "Dream farm",
+    "scenario": "Family dreams grow as plants, some very slowly.",
+    "question": "Which would you tend first?",
     "twist": "",
-    "deeperQuestion": "How could you describe it more specifically than saying they are great?",
+    "deeperQuestion": "Would you pull out one that never bears fruit?",
     "zh": {
-      "title": "稱讚進步",
-      "scenario": "家人正在學一件新事。",
-      "question": "你看到哪個小進步？",
+      "title": "夢想農場",
+      "scenario": "家人種下的夢想會長成植物，有些長得很慢。",
+      "question": "你會先照顧哪棵？",
       "twist": "",
-      "deeperQuestion": "怎樣說，會比「你好厲害」更具體？"
+      "deeperQuestion": "你會拔掉一直不結果的那棵嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-080",
+    "id": "ponder-v3-family-016",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Story time",
-    "scenario": "Everyone shares one small thing from today.",
-    "question": "What would you start with?",
+    "title": "Family cue cards",
+    "scenario": "At dinner, a card names the role your family usually expects you to play.",
+    "question": "Would you act it out?",
     "twist": "",
-    "deeperQuestion": "What detail from someone else's story would you ask about?",
+    "deeperQuestion": "Whose card would you like to swap for a while?",
     "zh": {
-      "title": "一起聽故事",
-      "scenario": "今晚每人講一件今天的小事。",
-      "question": "你想先講哪件？",
+      "title": "家人的字幕卡",
+      "scenario": "全家吃飯時，每人面前出現一句大家習慣叫他扮演的角色。",
+      "question": "你會照著演嗎？",
       "twist": "",
-      "deeperQuestion": "你想追問別人的哪個細節？"
+      "deeperQuestion": "你想跟哪位家人交換卡片試試？"
     }
   },
   {
-    "id": "ponder-v2-family-081",
+    "id": "ponder-v3-family-017",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Before leaving",
-    "scenario": "Your family leaves in five minutes.",
-    "question": "What do you tend to forget?",
+    "title": "Dad's secret door",
+    "scenario": "Dad has a door to his own world and has never invited anyone in.",
+    "question": "Would you knock?",
     "twist": "",
-    "deeperQuestion": "How could you remind each other without blaming?",
+    "deeperQuestion": "Could you accept it if he wants privacy?",
     "zh": {
-      "title": "出門前五分鐘",
-      "scenario": "全家快出門，還有五分鐘。",
-      "question": "你最常忘記帶甚麼？",
+      "title": "爸爸的秘密門",
+      "scenario": "爸爸有一道只通往他自己世界的門，從未邀人進去。",
+      "question": "你會敲門嗎？",
       "twist": "",
-      "deeperQuestion": "大家可以怎樣提醒，又不變成責備？"
+      "deeperQuestion": "他說想獨處時，你能接受嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-082",
+    "id": "ponder-v3-family-018",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Enough food",
-    "scenario": "A relative keeps serving you food, but you are full.",
-    "question": "How would you respond?",
+    "title": "Time allowance",
+    "scenario": "Allowances become time: play for children, rest for adults.",
+    "question": "How would you divide it?",
     "twist": "",
-    "deeperQuestion": "How could you show appreciation without eating more?",
+    "deeperQuestion": "Should people doing chores receive more?",
     "zh": {
-      "title": "不想再吃",
-      "scenario": "家人一直夾菜給你，但你已經飽了。",
-      "question": "你會怎樣說？",
+      "title": "時間零用錢",
+      "scenario": "零用錢變成時間，小孩可以買遊戲時間，大人可以買休息。",
+      "question": "你會怎樣分？",
       "twist": "",
-      "deeperQuestion": "除了多吃一點，你可以怎樣表達感謝？"
+      "deeperQuestion": "做家務的人應該多一點嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-083",
+    "id": "ponder-v3-family-019",
     "category": "Family",
     "emoji": "🏠",
-    "title": "School memories",
-    "scenario": "Ask a relative about their favourite school subject.",
-    "question": "Do you think your answers will match?",
+    "title": "Family weather",
+    "scenario": "Your home follows its saddest person's weather.",
+    "question": "Would you find them first or turn on the heating?",
     "twist": "",
-    "deeperQuestion": "What teacher or event made that class special?",
+    "deeperQuestion": "How would you help if they do not want to talk?",
     "zh": {
-      "title": "學校回憶",
-      "scenario": "問家人以前最喜歡的課。",
-      "question": "你猜你們會有一樣的答案嗎？",
+      "title": "家族天氣站",
+      "scenario": "家裡天氣跟著最難過的人變化。",
+      "question": "下雨時，你會先找他還是先開暖氣？",
       "twist": "",
-      "deeperQuestion": "是哪位老師或哪件事讓那堂課特別？"
+      "deeperQuestion": "他不想說話，你會怎樣陪？"
     }
   },
   {
-    "id": "ponder-v2-family-084",
+    "id": "ponder-v3-family-020",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Our local guide",
-    "scenario": "A relative from far away visits for two days.",
-    "question": "What local experience would you share?",
+    "title": "Age-free ticket",
+    "scenario": "An older relative can start school anew, forgetting their age.",
+    "question": "Would you support using family savings?",
     "twist": "",
-    "deeperQuestion": "Which meal would best show your everyday life?",
+    "deeperQuestion": "What if the course will never earn money?",
     "zh": {
-      "title": "家中的旅遊指南",
-      "scenario": "一位遠方家人來住兩天。",
-      "question": "你最想帶他體驗甚麼本地小事？",
+      "title": "長輩忘年票",
+      "scenario": "長輩可以忘記年齡，重新報名任何學校。",
+      "question": "你會支持他花家中積蓄嗎？",
       "twist": "",
-      "deeperQuestion": "哪一餐最能介紹你的日常生活？"
+      "deeperQuestion": "如果學的東西完全賺不到錢呢？"
     }
   },
   {
-    "id": "ponder-v2-family-085",
+    "id": "ponder-v3-family-021",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Small celebrations",
-    "scenario": "A relative finishes something that was difficult for them.",
-    "question": "How could you celebrate simply?",
+    "title": "Money tree",
+    "scenario": "A family money tree grows one banknote daily, whoever waters it.",
+    "question": "Who should get it?",
     "twist": "",
-    "deeperQuestion": "Would they enjoy attention or prefer something quiet?",
+    "deeperQuestion": "Should its caretaker have first claim?",
     "zh": {
-      "title": "一起慶祝小事",
-      "scenario": "家人完成了一件平常不容易的事。",
-      "question": "你們可以怎樣小小慶祝？",
+      "title": "共享錢樹",
+      "scenario": "家中錢樹每天只長一張鈔票，誰澆水都一樣。",
+      "question": "你會把錢給誰？",
       "twist": "",
-      "deeperQuestion": "你想讓主角被大家注意，還是低調一點？"
+      "deeperQuestion": "照顧樹的人應該先拿嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-086",
+    "id": "ponder-v3-family-022",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Keeping close",
-    "scenario": "You rarely talk with one relative.",
-    "question": "What light topic could help you start?",
+    "title": "Home magnet",
+    "scenario": "A magnet brings distant relatives home but disrupts their plans.",
+    "question": "Would you use it?",
     "twist": "",
-    "deeperQuestion": "Would doing something together feel easier than sitting down to talk?",
+    "deeperQuestion": "What if they keep saying they are busy?",
     "zh": {
-      "title": "親近的方法",
-      "scenario": "你跟一位家人不太常聊天。",
-      "question": "可以從哪個輕鬆話題開始？",
+      "title": "回家磁鐵",
+      "scenario": "磁鐵能把搬遠的家人拉回身邊，但會打亂他的計劃。",
+      "question": "你會用嗎？",
       "twist": "",
-      "deeperQuestion": "一起做事會不會比面對面聊天更容易？"
+      "deeperQuestion": "如果他最近一直說沒空呢？"
     }
   },
   {
-    "id": "ponder-v2-family-087",
+    "id": "ponder-v3-family-023",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Different speeds",
-    "scenario": "Some family members eat quickly and others slowly.",
-    "question": "What would you like to happen after eating?",
+    "title": "Argument museum",
+    "scenario": "Every family argument becomes a replayable museum exhibit.",
+    "question": "Would you keep the museum?",
     "twist": "",
-    "deeperQuestion": "How could slower eaters avoid feeling rushed?",
+    "deeperQuestion": "Who should be allowed to close an exhibit?",
     "zh": {
-      "title": "各自的節奏",
-      "scenario": "有人吃飯快，有人慢。",
-      "question": "你希望飯後時間怎樣安排？",
+      "title": "吵架博物館",
+      "scenario": "家裡每場吵架都會變成展品，大家能重看。",
+      "question": "你會保留這間博物館嗎？",
       "twist": "",
-      "deeperQuestion": "怎樣讓慢慢吃的人不用覺得在拖時間？"
+      "deeperQuestion": "誰有權關掉某一場？"
     }
   },
   {
-    "id": "ponder-v2-family-088",
+    "id": "ponder-v3-family-024",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Saving a little",
-    "scenario": "Your family wants to save for something together.",
-    "question": "What would you choose?",
+    "title": "Different report card",
+    "scenario": "A school grades only helping others, not exams.",
+    "question": "Would you send a child there?",
     "twist": "",
-    "deeperQuestion": "How could each person contribute without necessarily giving money?",
+    "deeperQuestion": "Could a child choose a low grade by saying no?",
     "zh": {
-      "title": "存下一小筆",
-      "scenario": "家裡想一起存錢做一件事。",
-      "question": "你最想存來做甚麼？",
+      "title": "另一種成績表",
+      "scenario": "學校只評「有沒有幫助別人」，不評考試。",
+      "question": "你希望孩子讀嗎？",
       "twist": "",
-      "deeperQuestion": "每人可以怎樣參與，不一定要出錢？"
+      "deeperQuestion": "孩子不想幫忙時，可以拿低分嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-089",
+    "id": "ponder-v3-family-025",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Making room",
-    "scenario": "One relative tends to say little.",
-    "question": "How would you invite them into the conversation?",
+    "title": "Cat's vote",
+    "scenario": "Your cat learns to speak and asks for a family vote.",
+    "question": "Would you agree?",
     "twist": "",
-    "deeperQuestion": "How would you make it comfortable if they only want to listen?",
+    "deeperQuestion": "Could it veto adopting another cat?",
     "zh": {
-      "title": "留一個位置",
-      "scenario": "有位家人常常比較少說話。",
-      "question": "你會怎樣邀請他加入？",
+      "title": "家貓投票",
+      "scenario": "家貓能說話後，要求家庭投票也有牠一票。",
+      "question": "你會答應嗎？",
       "twist": "",
-      "deeperQuestion": "如果他只想聽，你會怎樣讓他自在？"
+      "deeperQuestion": "關於要不要再養貓，牠能否決嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-090",
+    "id": "ponder-v3-family-026",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A new discovery",
-    "scenario": "You learn about a relative's preference today.",
-    "question": "What surprises you a little?",
+    "title": "Forever little",
+    "scenario": "A doll keeps a child at their cutest age, stopping growth.",
+    "question": "Would you keep it?",
     "twist": "",
-    "deeperQuestion": "How could you use that knowledge when planning something next time?",
+    "deeperQuestion": "What if the child wants to stay little?",
     "zh": {
-      "title": "一件新發現",
-      "scenario": "今天才知道家人的一個喜好。",
-      "question": "是哪件事讓你有點意外？",
+      "title": "永遠幼小",
+      "scenario": "玩偶能讓孩子永遠保持最可愛的年紀，但不再長大。",
+      "question": "你會留下玩偶嗎？",
       "twist": "",
-      "deeperQuestion": "下次安排活動時，你可以怎樣記住它？"
+      "deeperQuestion": "如果孩子自己不想長大呢？"
     }
   },
   {
-    "id": "ponder-v2-family-091",
+    "id": "ponder-v3-family-027",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A tiny cookbook",
-    "scenario": "You are making a cookbook with just three recipes.",
-    "question": "What would the first one be?",
+    "title": "Family swap day",
+    "scenario": "Everyone can spend a day in a different family.",
+    "question": "Would you try it?",
     "twist": "",
-    "deeperQuestion": "What family-style tip would you add?",
+    "deeperQuestion": "What new habit would you hope to bring home?",
     "zh": {
-      "title": "家庭小食譜",
-      "scenario": "你們要寫一本三道菜的小食譜。",
-      "question": "第一道會是哪一道？",
+      "title": "親情交換日",
+      "scenario": "你能到另一個家庭住一天，自己的家人也會去別家。",
+      "question": "你想試嗎？",
       "twist": "",
-      "deeperQuestion": "可以加哪句只有家人才懂的提示？"
+      "deeperQuestion": "你最想帶回哪種新習慣？"
     }
   },
   {
-    "id": "ponder-v2-family-092",
+    "id": "ponder-v3-family-028",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Asking for a hand",
-    "scenario": "You need a relative's help with something.",
-    "question": "How would you ask?",
+    "title": "Family power",
+    "scenario": "Your family may heal minor illnesses, teleport, or understand animals.",
+    "question": "Which gets your vote?",
     "twist": "",
-    "deeperQuestion": "Would explaining the task and timing make it easier to help?",
+    "deeperQuestion": "Would you change your vote for one relative?",
     "zh": {
-      "title": "求助的方式",
-      "scenario": "你有件事需要家人幫忙。",
-      "question": "你最想怎樣開口？",
+      "title": "家族超能力",
+      "scenario": "全家只能選一種超能力：治小病、瞬間移動或聽懂動物。",
+      "question": "你會投哪個？",
       "twist": "",
-      "deeperQuestion": "講清楚時間和內容，會不會更容易幫忙？"
+      "deeperQuestion": "你會為某位家人改票嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-093",
+    "id": "ponder-v3-family-029",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A relative's wish",
-    "scenario": "Ask a relative what new thing they want to try.",
-    "question": "Whose answer are you curious about?",
+    "title": "Walking table",
+    "scenario": "A table moves weekly to the home most people want to gather in.",
+    "question": "Would you try to keep it?",
     "twist": "",
-    "deeperQuestion": "What small step could you join them for?",
+    "deeperQuestion": "What if the usual cook wants a break?",
     "zh": {
-      "title": "家人的夢想",
-      "scenario": "問一位家人最近想試的新事。",
-      "question": "你最想聽誰的答案？",
+      "title": "會走的餐桌",
+      "scenario": "餐桌只會停在有最多人想聚的家，每週自動搬走。",
+      "question": "你想讓它留下嗎？",
       "twist": "",
-      "deeperQuestion": "你可以陪他做哪個小步驟？"
+      "deeperQuestion": "總是煮飯的人想休息怎麼辦？"
     }
   },
   {
-    "id": "ponder-v2-family-094",
+    "id": "ponder-v3-family-030",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Trying again",
-    "scenario": "A family activity did not go well last time.",
-    "question": "How would you try again?",
+    "title": "Sibling shadow",
+    "scenario": "Your shadow reveals kind things siblings have done for you.",
+    "question": "Would you want to see them?",
     "twist": "",
-    "deeperQuestion": "If you changed one part, what would it be?",
+    "deeperQuestion": "Would knowing make you feel indebted?",
     "zh": {
-      "title": "重來一次",
-      "scenario": "全家一起做的活動上次不太順利。",
-      "question": "你願意怎樣再試一次？",
+      "title": "兄弟姊妹影子",
+      "scenario": "你的影子會顯示手足為你做過的好事。",
+      "question": "你想看見嗎？",
       "twist": "",
-      "deeperQuestion": "只改一個安排，你會先改甚麼？"
+      "deeperQuestion": "知道後，你會覺得欠了他嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-095",
+    "id": "ponder-v3-family-031",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Waiting together",
-    "scenario": "Your family has a twenty-minute wait.",
-    "question": "What could you do together?",
+    "title": "Roof stars",
+    "scenario": "Each relative may hang one life choice as a star above the home.",
+    "question": "What would yours be?",
     "twist": "",
-    "deeperQuestion": "What game needs no equipment?",
+    "deeperQuestion": "Could a failed choice deserve a star?",
     "zh": {
-      "title": "一起等候",
-      "scenario": "全家要等候二十分鐘。",
-      "question": "你會提議做甚麼打發時間？",
+      "title": "屋頂星星",
+      "scenario": "每人只能把一個人生選擇掛成屋頂的星。",
+      "question": "你希望掛上哪件事？",
       "twist": "",
-      "deeperQuestion": "有甚麼不用道具的小遊戲？"
+      "deeperQuestion": "失敗的選擇也能掛嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-096",
+    "id": "ponder-v3-family-032",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Something unsaid",
-    "scenario": "A relative has a small habit that makes you feel cared for.",
-    "question": "What is it?",
+    "title": "Safety bubble",
+    "scenario": "A bubble protects a child from harm but prevents climbing and adventures.",
+    "question": "Would you use it?",
     "twist": "",
-    "deeperQuestion": "Would you like to tell them now?",
+    "deeperQuestion": "Could the child decide when to step out?",
     "zh": {
-      "title": "平常沒說",
-      "scenario": "有件家人的小習慣讓你覺得溫暖。",
-      "question": "你想起哪一件？",
+      "title": "安全泡泡",
+      "scenario": "泡泡能保護孩子不受傷，但也不准他爬樹和冒險。",
+      "question": "你會讓他住裡面嗎？",
       "twist": "",
-      "deeperQuestion": "你願意現在告訴他嗎？"
+      "deeperQuestion": "你會讓孩子自己決定何時走出來嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-097",
+    "id": "ponder-v3-family-033",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A funny mishap",
-    "scenario": "Recall a family mishap that became funny later.",
-    "question": "What happened?",
+    "title": "Crying keepsakes",
+    "scenario": "Discarded keepsakes cry, but keeping everything fills the house.",
+    "question": "How would you choose?",
     "twist": "",
-    "deeperQuestion": "Who laughed first?",
+    "deeperQuestion": "Would you make space for someone else's keepsakes?",
     "zh": {
-      "title": "出錯的笑話",
-      "scenario": "想起一次全家手忙腳亂，後來覺得好笑的事。",
-      "question": "你記得甚麼？",
+      "title": "會哭的舊物",
+      "scenario": "舊物被丟掉會哭，但留下會把家塞滿。",
+      "question": "你會怎樣決定去留？",
       "twist": "",
-      "deeperQuestion": "當時誰最先笑出來？"
+      "deeperQuestion": "你願意替別人的舊物騰位置嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-098",
+    "id": "ponder-v3-family-034",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Not fully understanding",
-    "scenario": "A relative loves something you know nothing about.",
-    "question": "What could you ask to understand it a little?",
+    "title": "Mum's other life",
+    "scenario": "A mirror shows Mum's happy life without children.",
+    "question": "Would you invite her to watch?",
     "twist": "",
-    "deeperQuestion": "Would you give them five minutes to show you?",
+    "deeperQuestion": "What if she wants to keep watching?",
     "zh": {
-      "title": "不用全懂",
-      "scenario": "家人喜歡一件你完全不懂的事。",
-      "question": "你會問甚麼來了解一點？",
+      "title": "媽媽的平行人生",
+      "scenario": "鏡子能看見媽媽沒有生孩子的人生，她似乎過得很快樂。",
+      "question": "你想邀她一起看嗎？",
       "twist": "",
-      "deeperQuestion": "你願意讓他介紹五分鐘嗎？"
+      "deeperQuestion": "如果她很想多看一會呢？"
     }
   },
   {
-    "id": "ponder-v2-family-099",
+    "id": "ponder-v3-family-035",
     "category": "Family",
     "emoji": "🏠",
-    "title": "The next gathering",
-    "scenario": "This family gathering is ending.",
-    "question": "What small activity would you add next time?",
+    "title": "No good-child week",
+    "scenario": "A fairy gives everyone a week off being considerate.",
+    "question": "Who should go first?",
     "twist": "",
-    "deeperQuestion": "Who would like to help organize it?",
+    "deeperQuestion": "Should everyone else handle the consequences?",
     "zh": {
-      "title": "下次見面",
-      "scenario": "這次家庭聚會快結束了。",
-      "question": "下次你想加一個甚麼小安排？",
+      "title": "一週不用懂事",
+      "scenario": "精靈讓每人有一週不用顧全大局。",
+      "question": "你希望哪位家人先用？",
       "twist": "",
-      "deeperQuestion": "誰願意幫忙一起安排？"
+      "deeperQuestion": "其他人需要替他收拾後果嗎？"
     }
   },
   {
-    "id": "ponder-v2-family-100",
+    "id": "ponder-v3-family-036",
     "category": "Family",
     "emoji": "🏠",
-    "title": "A thought to keep",
-    "scenario": "After hearing your family share, think about what stayed with you.",
-    "question": "What sentence would you like to remember?",
+    "title": "Make-up clock",
+    "scenario": "A bell restores family harmony without solving the problem.",
+    "question": "Would you ring it daily?",
     "twist": "",
-    "deeperQuestion": "What would you like to ask that person next time?",
+    "deeperQuestion": "After what argument would you refuse?",
     "zh": {
-      "title": "今天帶走的話",
-      "scenario": "家人剛分享了各自的想法。",
-      "question": "你最想記住哪一句話？",
+      "title": "自動和好鐘",
+      "scenario": "鐘聲一響全家就和好，卻沒人解決問題。",
+      "question": "你會每天敲嗎？",
       "twist": "",
-      "deeperQuestion": "你下次想再問那個人甚麼？"
+      "deeperQuestion": "你會在哪次爭執後拒絕敲鐘？"
     }
   },
   {
-    "id": "ponder-v2-party-001",
+    "id": "ponder-v3-family-037",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Achievement cookies",
+    "scenario": "Achievements become cookies the family can share.",
+    "question": "Would you ever keep yours alone?",
+    "twist": "",
+    "deeperQuestion": "Would quietly surviving difficulty earn a cookie?",
+    "zh": {
+      "title": "成就餅乾",
+      "scenario": "每個成就都變成餅乾，家人可以分享吃掉。",
+      "question": "你會想留自己的不分嗎？",
+      "twist": "",
+      "deeperQuestion": "默默撐過難關能算一塊嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-038",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Rest coupon",
+    "scenario": "One coupon frees a relative from caring for others for a week.",
+    "question": "Who gets it?",
+    "twist": "",
+    "deeperQuestion": "What if the most tired person refuses it?",
+    "zh": {
+      "title": "家庭休息券",
+      "scenario": "全家只有一張休息券，持有人一星期不用照顧別人。",
+      "question": "你會給誰？",
+      "twist": "",
+      "deeperQuestion": "最累的人不肯拿，你會怎樣？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-039",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Dog chooses",
+    "scenario": "The family dog gains a choice and wants to live with a sibling who moved out.",
+    "question": "Would you let it?",
+    "twist": "",
+    "deeperQuestion": "Does who paid for food matter?",
+    "zh": {
+      "title": "狗狗選主人",
+      "scenario": "家犬得到選擇住處的權利，牠想跟搬走的手足住。",
+      "question": "你會讓牠去嗎？",
+      "twist": "",
+      "deeperQuestion": "誰付過最多飼料費重要嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-040",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Rule translator",
+    "scenario": "A machine translates each house rule into an adult's worry.",
+    "question": "Which would you translate?",
+    "twist": "",
+    "deeperQuestion": "Must you obey once you understand the worry?",
+    "zh": {
+      "title": "家規翻譯機",
+      "scenario": "每條家規都能翻譯成大人的擔心。",
+      "question": "你最想翻哪一條？",
+      "twist": "",
+      "deeperQuestion": "知道擔心後，就一定要守嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-041",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Giving spring",
+    "scenario": "A spring makes you happy to care for family without wanting anything back.",
+    "question": "Would you drink?",
+    "twist": "",
+    "deeperQuestion": "Would you offer it to the busiest carer?",
+    "zh": {
+      "title": "不求回報泉",
+      "scenario": "泉水讓你樂於照顧家人，但再也不希望得到回報。",
+      "question": "你會喝嗎？",
+      "twist": "",
+      "deeperQuestion": "你會勸最辛苦的家人喝嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-042",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Memory soup",
+    "scenario": "Soup recalls one shared memory, tasting different to everyone.",
+    "question": "Which memory would you cook?",
+    "twist": "",
+    "deeperQuestion": "Would you ask why if someone finds it bitter?",
+    "zh": {
+      "title": "記得的味道",
+      "scenario": "湯能讓全家想起同一段回憶，但每人味道不同。",
+      "question": "你想煮哪段？",
+      "twist": "",
+      "deeperQuestion": "有人覺得苦，你會想知道原因嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-043",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Relative radar",
+    "scenario": "A radar lights up people who truly care, possibly leaving some relatives dark.",
+    "question": "Would you turn it on?",
+    "twist": "",
+    "deeperQuestion": "Would it change whom you keep seeing?",
+    "zh": {
+      "title": "親戚雷達",
+      "scenario": "雷達能找出真正關心你的人，可能有些親戚不會亮燈。",
+      "question": "你會開嗎？",
+      "twist": "",
+      "deeperQuestion": "你會因此改變來往嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-044",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Shared room",
+    "scenario": "A magic room takes any form but serves one relative daily.",
+    "question": "How would you schedule it?",
+    "twist": "",
+    "deeperQuestion": "Should birthdays always come first?",
+    "zh": {
+      "title": "共享房間",
+      "scenario": "魔法房間能變成任何模樣，但每天只能滿足一位家人。",
+      "question": "你會怎樣排次序？",
+      "twist": "",
+      "deeperQuestion": "生日的人一定優先嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-045",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Memory substitute",
+    "scenario": "A robot chats with an older relative and remembers every family story.",
+    "question": "Can it replace your visits?",
+    "twist": "",
+    "deeperQuestion": "What if the relative prefers the robot?",
+    "zh": {
+      "title": "回憶代班",
+      "scenario": "機器人能陪長輩聊天，還記得所有家事。",
+      "question": "它能代替你探望嗎？",
+      "twist": "",
+      "deeperQuestion": "如果長輩更喜歡跟它聊呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-046",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Elder pupil",
+    "scenario": "You can teach an elder a skill, but they fear mistakes like a child.",
+    "question": "How would you teach?",
+    "twist": "",
+    "deeperQuestion": "Would you wish adults had taught you that way?",
+    "zh": {
+      "title": "長輩小學生",
+      "scenario": "你能教長輩一項新技能，但他會像小學生一樣怕做錯。",
+      "question": "你會怎樣教？",
+      "twist": "",
+      "deeperQuestion": "你會希望以前的大人也這樣教你嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-047",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Photo blank",
+    "scenario": "A photo can add an absent relative by removing someone else.",
+    "question": "Would you change it?",
+    "twist": "",
+    "deeperQuestion": "What if the person removed agrees?",
+    "zh": {
+      "title": "相片空白處",
+      "scenario": "一張合照能補上當天缺席的人，但會刪走另一人的位置。",
+      "question": "你會改嗎？",
+      "twist": "",
+      "deeperQuestion": "如果被刪的人願意呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-048",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Family secret box",
+    "scenario": "A box holds every secret of the previous generation; opening reveals them to everyone.",
+    "question": "Would you open it?",
+    "twist": "",
+    "deeperQuestion": "Would it matter if those people were still alive?",
+    "zh": {
+      "title": "家族秘密箱",
+      "scenario": "箱子裝著上一代所有秘密，打開後全家都會知道。",
+      "question": "你想開嗎？",
+      "twist": "",
+      "deeperQuestion": "當事人還在世會改變你的選擇嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-049",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Love portions",
+    "scenario": "Love can be weighed, and your family's portions differ.",
+    "question": "Would you demand equal amounts?",
+    "twist": "",
+    "deeperQuestion": "Could someone in difficulty receive extra?",
+    "zh": {
+      "title": "愛的份量",
+      "scenario": "愛能秤重，你發現家人給每人的份量不同。",
+      "question": "你想要求一樣多嗎？",
+      "twist": "",
+      "deeperQuestion": "有人正遇上難關，可以多拿嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-050",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Ageless pet",
+    "scenario": "A pet can live a century if every generation cares for it.",
+    "question": "Would you promise for future generations?",
+    "twist": "",
+    "deeperQuestion": "What if the next generation says no?",
+    "zh": {
+      "title": "不老寵物",
+      "scenario": "寵物能陪全家一百年，但每代人都要答應照顧牠。",
+      "question": "你會替下一代答應嗎？",
+      "twist": "",
+      "deeperQuestion": "下一代不想養時怎麼辦？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-051",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "New surname",
+    "scenario": "Your family can choose a new surname for what it hopes to become.",
+    "question": "What would you suggest?",
+    "twist": "",
+    "deeperQuestion": "How would you include someone keeping the old name?",
+    "zh": {
+      "title": "新姓氏",
+      "scenario": "全家可以一起選一個新姓氏，代表想成為怎樣的一家人。",
+      "question": "你會提甚麼？",
+      "twist": "",
+      "deeperQuestion": "有人想保留舊姓，你會怎樣安排？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-052",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Cloud move",
+    "scenario": "Your family can live free on a cloud, but one relative fears heights.",
+    "question": "Would you decline?",
+    "twist": "",
+    "deeperQuestion": "What if you could build a path to the ground?",
+    "zh": {
+      "title": "搬去雲上",
+      "scenario": "全家能免費搬到雲上，但一位怕高的家人不想去。",
+      "question": "你會放棄嗎？",
+      "twist": "",
+      "deeperQuestion": "如果能為他造一條地面通道呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-053",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Praise radio",
+    "scenario": "A radio plays only praise your relatives say behind your back.",
+    "question": "Would you listen daily?",
+    "twist": "",
+    "deeperQuestion": "How would you feel on a silent day?",
+    "zh": {
+      "title": "只聽好話",
+      "scenario": "收音機只播放家人背後稱讚你的話。",
+      "question": "你會想每天聽嗎？",
+      "twist": "",
+      "deeperQuestion": "沒有聲音的一天，你會怎樣想？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-054",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Parent doubles",
+    "scenario": "Parents can send doubles to each child, but never gain their memories.",
+    "question": "Does it count as being there?",
+    "twist": "",
+    "deeperQuestion": "Would it matter if the child knows?",
+    "zh": {
+      "title": "分身父母",
+      "scenario": "父母可以分身陪每個孩子，但分身的回憶不會傳回本尊。",
+      "question": "這算陪伴嗎？",
+      "twist": "",
+      "deeperQuestion": "孩子知道是分身會有不同嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-055",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Wish queue",
+    "scenario": "Family wishes come true in a queue with children first.",
+    "question": "Is that reasonable?",
+    "twist": "",
+    "deeperQuestion": "Could a lifelong carer move ahead?",
+    "zh": {
+      "title": "願望輪候室",
+      "scenario": "家中願望要輪流成真，小孩的排在大人前面。",
+      "question": "你覺得合理嗎？",
+      "twist": "",
+      "deeperQuestion": "一直照顧人的大人可以插隊嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-056",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Courage heirloom",
+    "scenario": "An heirloom passes on courage along with the previous generation's fears.",
+    "question": "Would you pass it down?",
+    "twist": "",
+    "deeperQuestion": "Which fear would you explain first?",
+    "zh": {
+      "title": "勇敢傳家寶",
+      "scenario": "傳家寶能傳下勇氣，也會傳下上一代的恐懼。",
+      "question": "你會交給孩子嗎？",
+      "twist": "",
+      "deeperQuestion": "你想先告訴他哪個恐懼？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-057",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Parents' childhood",
+    "scenario": "You can spend a day with your parents as children without revealing yourself.",
+    "question": "What would you bring?",
+    "twist": "",
+    "deeperQuestion": "Would you try to change one experience?",
+    "zh": {
+      "title": "父母的童年",
+      "scenario": "你能陪年幼的父母玩一天，卻不能告訴他你是誰。",
+      "question": "你會帶甚麼去？",
+      "twist": "",
+      "deeperQuestion": "你會想改變他們的一段經歷嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-058",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "No-comparison mirror",
+    "scenario": "A mirror shows differences but never who is better.",
+    "question": "Would you put it at home?",
+    "twist": "",
+    "deeperQuestion": "What would you want your family to notice?",
+    "zh": {
+      "title": "不用比較的鏡",
+      "scenario": "鏡子看不見誰比誰優秀，只看見每人的不同。",
+      "question": "你想放在家中嗎？",
+      "twist": "",
+      "deeperQuestion": "你最希望家人從鏡中看見甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-059",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Choice voucher",
+    "scenario": "Everyone may make one life decision for another relative.",
+    "question": "Would you use your voucher?",
+    "twist": "",
+    "deeperQuestion": "Would you give the choice back to them?",
+    "zh": {
+      "title": "家人的選擇券",
+      "scenario": "每人能替另一位家人作一個人生決定。",
+      "question": "你會使用自己的券嗎？",
+      "twist": "",
+      "deeperQuestion": "你想把券交還給對方嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-060",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Runaway cake",
+    "scenario": "A traditional cake adds chocolate because it dislikes being predictable.",
+    "question": "Would you serve it at the reunion dinner?",
+    "twist": "",
+    "deeperQuestion": "Who gets to change a family recipe?",
+    "zh": {
+      "title": "會逃跑的年糕",
+      "scenario": "祖傳年糕不想年年同一味，偷偷加了巧克力。",
+      "question": "你會讓它留在年夜飯嗎？",
+      "twist": "",
+      "deeperQuestion": "誰有權改祖傳食譜？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-061",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Home password",
+    "scenario": "Your door opens only to an honest account of today's feelings.",
+    "question": "Would you install it?",
+    "twist": "",
+    "deeperQuestion": "Could someone who wants privacy have a spare key?",
+    "zh": {
+      "title": "家門密碼",
+      "scenario": "家門密碼是「今天最真實的心情」，答錯就進不了。",
+      "question": "你想換這種門嗎？",
+      "twist": "",
+      "deeperQuestion": "不想說的人可以有備用鑰匙嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-062",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Happiness foster",
+    "scenario": "A child can join an always-happy magic home but forget the old family.",
+    "question": "Would you send them?",
+    "twist": "",
+    "deeperQuestion": "Should the child know the cost?",
+    "zh": {
+      "title": "幸福寄養",
+      "scenario": "一個孩子能去永遠幸福的魔法家，卻不再記得原本家人。",
+      "question": "你會送他去嗎？",
+      "twist": "",
+      "deeperQuestion": "孩子自己應該知道代價嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-063",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Noisy cloud",
+    "scenario": "The loudest relative can become a quiet cloud for three days.",
+    "question": "Would you press the switch?",
+    "twist": "",
+    "deeperQuestion": "Would you start missing their voice?",
+    "zh": {
+      "title": "吵鬧雲朵",
+      "scenario": "家中最吵的人會變成一朵安靜雲，三天後變回來。",
+      "question": "你會按開關嗎？",
+      "twist": "",
+      "deeperQuestion": "你會不會開始想念他的聲音？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-064",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Room lottery",
+    "scenario": "Bedrooms are assigned monthly by lottery; anyone can get the largest.",
+    "question": "Would you support it?",
+    "twist": "",
+    "deeperQuestion": "Should special needs create exceptions?",
+    "zh": {
+      "title": "公平分房",
+      "scenario": "家中房間每月抽籤，誰都有機會住最大那間。",
+      "question": "你會支持嗎？",
+      "twist": "",
+      "deeperQuestion": "有特別需要的人要不要例外？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-065",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Work magnifier",
+    "scenario": "A magnifier reveals a relative's invisible daily work.",
+    "question": "Whose day would you inspect?",
+    "twist": "",
+    "deeperQuestion": "Would you swap days after watching?",
+    "zh": {
+      "title": "忙碌放大鏡",
+      "scenario": "放大鏡會顯示家人每天做的隱形工作。",
+      "question": "你最想看誰的一天？",
+      "twist": "",
+      "deeperQuestion": "看完後你願意交換一天嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-066",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Wish kites",
+    "scenario": "Each relative's kite flies toward their desired destination; holding its string stops it.",
+    "question": "Would you hold on?",
+    "twist": "",
+    "deeperQuestion": "Would you leave a line for their return?",
+    "zh": {
+      "title": "心願風箏",
+      "scenario": "每個家人的風箏飛向想去的地方，拉住線就能阻止。",
+      "question": "你會拉嗎？",
+      "twist": "",
+      "deeperQuestion": "你願意留一條讓他回來的線嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-067",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Forgiveness post",
+    "scenario": "A letter guarantees forgiveness, but its reader cannot refuse.",
+    "question": "Would you send it?",
+    "twist": "",
+    "deeperQuestion": "Do you want forgiveness or to show understanding?",
+    "zh": {
+      "title": "寬恕郵局",
+      "scenario": "你能寄一封一定被原諒的信，但收件人不能選擇拒絕。",
+      "question": "你會寄嗎？",
+      "twist": "",
+      "deeperQuestion": "你更想得到原諒，還是讓他知道你明白了？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-068",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Family chest",
+    "scenario": "Only the least-heard relative can open the family chest.",
+    "question": "Who might get the key?",
+    "twist": "",
+    "deeperQuestion": "What would you change after opening it?",
+    "zh": {
+      "title": "家庭寶箱",
+      "scenario": "寶箱只能由最少被聽見的家人打開。",
+      "question": "你猜鑰匙會落在誰手上？",
+      "twist": "",
+      "deeperQuestion": "開完箱後，你想改變甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-069",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Always together",
+    "scenario": "A reunion can last forever if everyone leaves their outside life.",
+    "question": "Would you stay?",
+    "twist": "",
+    "deeperQuestion": "Would you support someone leaving first?",
+    "zh": {
+      "title": "永遠團圓",
+      "scenario": "一年一度的聚會能延長到永遠，但每人都要放下外面的生活。",
+      "question": "你會留下嗎？",
+      "twist": "",
+      "deeperQuestion": "你會支持想先離開的人嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-070",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "No-regret camera",
+    "scenario": "A camera creates a convincing photo of a gathering that never happened.",
+    "question": "Would you make one?",
+    "twist": "",
+    "deeperQuestion": "Would you tell children it was imagined?",
+    "zh": {
+      "title": "不留遺憾相機",
+      "scenario": "相機能拍下任何錯過的合照，看起來真的發生過。",
+      "question": "你想補拍嗎？",
+      "twist": "",
+      "deeperQuestion": "你會告訴孩子這是想像的嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-071",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Dream pool",
+    "scenario": "Family dreams can combine into one grand dream, erasing individual ones.",
+    "question": "Would you contribute yours?",
+    "twist": "",
+    "deeperQuestion": "Who decides what the grand dream looks like?",
+    "zh": {
+      "title": "家族儲夢池",
+      "scenario": "全家能把夢想合成一個大夢，但各人的小夢會消失。",
+      "question": "你願意投入嗎？",
+      "twist": "",
+      "deeperQuestion": "誰決定大夢的樣子？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-072",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Growing button",
+    "scenario": "A child can skip a difficult year and grow a year older instantly.",
+    "question": "Would you allow it?",
+    "twist": "",
+    "deeperQuestion": "What if that year also holds a wonderful friendship?",
+    "zh": {
+      "title": "成長按鈕",
+      "scenario": "孩子能跳過最辛苦的一年，直接長大一歲。",
+      "question": "你會讓他按嗎？",
+      "twist": "",
+      "deeperQuestion": "如果那年也有最好的朋友呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-073",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Singing wall",
+    "scenario": "A wall sings gratitude relatives are too shy to say.",
+    "question": "Would you want it singing at dinner?",
+    "twist": "",
+    "deeperQuestion": "Would you feel shy or happy when it sings about you?",
+    "zh": {
+      "title": "會唱歌的牆",
+      "scenario": "牆會唱出家人不好意思說的感謝。",
+      "question": "你想它在飯桌上唱嗎？",
+      "twist": "",
+      "deeperQuestion": "唱到你時，你會害羞還是開心？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-074",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Borrowed youth",
+    "scenario": "You can lend an elder youthful days by ageing those days yourself.",
+    "question": "How many would you lend?",
+    "twist": "",
+    "deeperQuestion": "Should they spend it with you or on themselves?",
+    "zh": {
+      "title": "借一天青春",
+      "scenario": "你可借一天青春給長輩，自己就老一天。",
+      "question": "你願意借多少？",
+      "twist": "",
+      "deeperQuestion": "你希望他用來陪你還是做自己的事？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-075",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Changing road",
+    "scenario": "The road home lengthens whenever a relative feels rejected.",
+    "question": "Should everyone see its length?",
+    "twist": "",
+    "deeperQuestion": "Whose path would you shorten first?",
+    "zh": {
+      "title": "回家路會變",
+      "scenario": "每次家人不被接納，回家的路就長一點。",
+      "question": "你想讓大家看見路有多長嗎？",
+      "twist": "",
+      "deeperQuestion": "你會先替誰鋪一段短路？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-076",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Family holiday",
+    "scenario": "Your family can create a holiday for the whole town.",
+    "question": "What would it celebrate?",
+    "twist": "",
+    "deeperQuestion": "Could an ordinary peaceful day deserve a holiday?",
+    "zh": {
+      "title": "家族紀念日",
+      "scenario": "你們能新增一個全城放假的家庭紀念日。",
+      "question": "你會紀念甚麼？",
+      "twist": "",
+      "deeperQuestion": "普通平安的一天值得放假嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-077",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Money cat",
+    "scenario": "A cat divides a family bonus by need, ignoring who earned it.",
+    "question": "Would you let it?",
+    "twist": "",
+    "deeperQuestion": "Would you agree if you receive the least?",
+    "zh": {
+      "title": "會分錢的貓",
+      "scenario": "貓會按牠認為的需要分配家中獎金，不理誰賺回來。",
+      "question": "你會交給牠嗎？",
+      "twist": "",
+      "deeperQuestion": "你拿得最少時還會同意嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-078",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "New friend",
+    "scenario": "An elder befriends an invisible fairy and grows happier.",
+    "question": "Would you insist on meeting it?",
+    "twist": "",
+    "deeperQuestion": "Would being left out make you sad?",
+    "zh": {
+      "title": "家人的新朋友",
+      "scenario": "長輩交了一位只有他看得見的精靈朋友，變得很快樂。",
+      "question": "你會要求見精靈嗎？",
+      "twist": "",
+      "deeperQuestion": "你會因為無法參與而失落嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-079",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Home bird",
+    "scenario": "Your bird's door stays open, yet it returns daily.",
+    "question": "Would that reassure you more than a lock?",
+    "twist": "",
+    "deeperQuestion": "If it misses a day, would you close the door?",
+    "zh": {
+      "title": "不會離家的鳥",
+      "scenario": "家鳥的門一直開著，牠仍每天回來。",
+      "question": "你會比鎖門時更安心嗎？",
+      "twist": "",
+      "deeperQuestion": "有一天沒回來，你會關門嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-080",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Family shop",
+    "scenario": "Every family kindness can earn money, even hugs.",
+    "question": "Would you run this shop?",
+    "twist": "",
+    "deeperQuestion": "What must remain free?",
+    "zh": {
+      "title": "家庭商店",
+      "scenario": "家人做的小事都能換錢，連擁抱也標價。",
+      "question": "你想經營這間店嗎？",
+      "twist": "",
+      "deeperQuestion": "有甚麼一定要免費？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-081",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Bear's surname",
+    "scenario": "An adopted bear wants to keep its forest surname.",
+    "question": "Is it fully part of the family?",
+    "twist": "",
+    "deeperQuestion": "What if it wants annual holidays in the forest?",
+    "zh": {
+      "title": "小熊的姓",
+      "scenario": "收養的小熊想保留森林的姓氏。",
+      "question": "你覺得牠仍是完整的一家人嗎？",
+      "twist": "",
+      "deeperQuestion": "牠想每年回森林過節呢？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-082",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Growing room",
+    "scenario": "Your childhood room wants to become a family studio, forgetting your traces.",
+    "question": "Would you agree?",
+    "twist": "",
+    "deeperQuestion": "What one thing would you keep there?",
+    "zh": {
+      "title": "長大的房間",
+      "scenario": "你的童年房間想改成家人的工作室，卻會忘記你的痕跡。",
+      "question": "你會答應嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望留下一件甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-083",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Who remembers",
+    "scenario": "A person can remember only ten relatives; the rest slowly fade.",
+    "question": "How would you choose?",
+    "twist": "",
+    "deeperQuestion": "Should frequency of visits decide the places?",
+    "zh": {
+      "title": "誰記住誰",
+      "scenario": "一個人只能記住十位家人，遠親會慢慢被忘記。",
+      "question": "你會怎樣選？",
+      "twist": "",
+      "deeperQuestion": "見面次數應該決定名額嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-084",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Mood sign",
+    "scenario": "Each bedroom door displays its owner's real mood.",
+    "question": "Would you switch it off?",
+    "twist": "",
+    "deeperQuestion": "Would knowing help you knock more gently?",
+    "zh": {
+      "title": "心情門牌",
+      "scenario": "每個房門都會顯示主人的真實心情。",
+      "question": "你想關掉這功能嗎？",
+      "twist": "",
+      "deeperQuestion": "敲門前知道心情會令你更體貼嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-085",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Family lottery",
+    "scenario": "A lottery prize requires unanimous agreement on its use.",
+    "question": "What would you propose?",
+    "twist": "",
+    "deeperQuestion": "Could a dissenter receive a smaller share?",
+    "zh": {
+      "title": "家族彩票",
+      "scenario": "彩票中了獎，但必須全家一致同意用途才能領。",
+      "question": "你會先提甚麼？",
+      "twist": "",
+      "deeperQuestion": "有人不肯同意，可以少分給他嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-086",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Forget comparison",
+    "scenario": "A pill erases comparisons with others and memories of pride in you.",
+    "question": "Would you offer it?",
+    "twist": "",
+    "deeperQuestion": "Would you let them get to know you again?",
+    "zh": {
+      "title": "忘記比較",
+      "scenario": "藥丸會讓家人忘記拿你跟別人比較，也忘記曾為你驕傲。",
+      "question": "你會給他吃嗎？",
+      "twist": "",
+      "deeperQuestion": "你願意重新讓他認識你嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-087",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Dinner stranger",
+    "scenario": "A magic table invites a stranger weekly and permits no refusal.",
+    "question": "Would you like the rule?",
+    "twist": "",
+    "deeperQuestion": "What if the family wants a quiet evening alone?",
+    "zh": {
+      "title": "晚餐陌生客",
+      "scenario": "魔法餐桌每週請一位陌生人來吃飯，不准拒絕。",
+      "question": "你會喜歡這規矩嗎？",
+      "twist": "",
+      "deeperQuestion": "家人只想安靜相聚時怎麼辦？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-088",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Pet diary",
+    "scenario": "Your pet writes a family diary that may reveal favouritism.",
+    "question": "Would you read it together?",
+    "twist": "",
+    "deeperQuestion": "Who should read it first?",
+    "zh": {
+      "title": "寵物的日記",
+      "scenario": "寵物寫了一本家庭日記，可能揭露偏心。",
+      "question": "你會全家一起讀嗎？",
+      "twist": "",
+      "deeperQuestion": "你想先讓誰看？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-089",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Courage box",
+    "scenario": "An older generation hands you a box of adventures they never dared to try.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "Does accepting mean finishing everything?",
+    "zh": {
+      "title": "家傳勇氣盒",
+      "scenario": "上一代把沒敢做的事放進盒子，交給你完成。",
+      "question": "你會接嗎？",
+      "twist": "",
+      "deeperQuestion": "接了盒子就一定要全部完成嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-090",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Secret holiday",
+    "scenario": "The main family carer can vanish for a day without being found.",
+    "question": "Would you support this holiday?",
+    "twist": "",
+    "deeperQuestion": "Should they have to prepare meals before leaving?",
+    "zh": {
+      "title": "悄悄休假",
+      "scenario": "家中最常照顧人的一位可隱身一天，大家找不到他。",
+      "question": "你會支持這個假期嗎？",
+      "twist": "",
+      "deeperQuestion": "他需要先把飯煮好才走嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-091",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Different happiness",
+    "scenario": "Everyone has a happiness button leading down a different path.",
+    "question": "Would you let each person press theirs?",
+    "twist": "",
+    "deeperQuestion": "Would you ask everyone to promise a reunion?",
+    "zh": {
+      "title": "不同的幸福",
+      "scenario": "家中每人都有一個幸福按鈕，按下後想走的路都不同。",
+      "question": "你會讓大家各自按嗎？",
+      "twist": "",
+      "deeperQuestion": "你會要求大家約定重聚嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-092",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Saying-no doll",
+    "scenario": "A doll voices a child's unspoken “no”.",
+    "question": "Would you let it stay at dinner?",
+    "twist": "",
+    "deeperQuestion": "Should adults have one too?",
+    "zh": {
+      "title": "會說不的玩偶",
+      "scenario": "孩子的玩偶會替他說出不敢說的「不要」。",
+      "question": "你會讓玩偶留在飯桌嗎？",
+      "twist": "",
+      "deeperQuestion": "大人也應該有一隻嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-093",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "An island each",
+    "scenario": "Each relative has an island; bridges appear only with mutual agreement.",
+    "question": "Would you like living there?",
+    "twist": "",
+    "deeperQuestion": "What if someone avoids bridges for a long time?",
+    "zh": {
+      "title": "一人一座島",
+      "scenario": "全家各有一座小島，橋要雙方同意才會出現。",
+      "question": "你喜歡這樣住嗎？",
+      "twist": "",
+      "deeperQuestion": "有人長期不架橋，你會怎樣？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-094",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Memory keeper",
+    "scenario": "One relative keeps every family story; others must borrow them.",
+    "question": "Would you take the role?",
+    "twist": "",
+    "deeperQuestion": "Should painful stories be available too?",
+    "zh": {
+      "title": "記憶保管員",
+      "scenario": "家族只能選一人記住所有故事，其餘人要向他借。",
+      "question": "你想當保管員嗎？",
+      "twist": "",
+      "deeperQuestion": "難過的故事應該借出去嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-095",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Useless genius",
+    "scenario": "A child could be the world's best paper-plane maker without earning money.",
+    "question": "Would you fully support it?",
+    "twist": "",
+    "deeperQuestion": "How much family time would you spend practising?",
+    "zh": {
+      "title": "沒用的小天才",
+      "scenario": "孩子能成為摺紙飛機的世界第一，卻不會因此賺錢。",
+      "question": "你會全力支持嗎？",
+      "twist": "",
+      "deeperQuestion": "你願意花多少家庭時間陪他練？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-096",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Apology day",
+    "scenario": "One day yearly, apologies become real chances to repair things.",
+    "question": "What would you mend first?",
+    "twist": "",
+    "deeperQuestion": "Could the other person choose not to accept yet?",
+    "zh": {
+      "title": "家庭道歉日",
+      "scenario": "一年一天，說對不起會變成真正補救的機會。",
+      "question": "你想先修補哪件事？",
+      "twist": "",
+      "deeperQuestion": "對方可以選擇暫時不接受嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-097",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Breathing home",
+    "scenario": "Your home expands when people are themselves and shrinks when they suppress themselves.",
+    "question": "Would it feel spacious?",
+    "twist": "",
+    "deeperQuestion": "Whom would you make more space for?",
+    "zh": {
+      "title": "會呼吸的家",
+      "scenario": "家在每人做自己時變大，在有人委屈自己時縮小。",
+      "question": "你們會住得寬敞嗎？",
+      "twist": "",
+      "deeperQuestion": "你最想替誰多留一個角落？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-098",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Last recipe",
+    "scenario": "A family recipe can be shared freely worldwide or kept within the family.",
+    "question": "How would you pass it on?",
+    "twist": "",
+    "deeperQuestion": "Would you mind others changing the recipe?",
+    "zh": {
+      "title": "最後的配方",
+      "scenario": "祖傳食譜可以免費分享全世界，或只留給家人。",
+      "question": "你想怎樣傳下去？",
+      "twist": "",
+      "deeperQuestion": "別人改了配方，你會介意嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-099",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Two porch lights",
+    "scenario": "One porch light says “Come home”; another says “Go freely”.",
+    "question": "Which would you light?",
+    "twist": "",
+    "deeperQuestion": "Whom would you want to see it?",
+    "zh": {
+      "title": "門口的兩盞燈",
+      "scenario": "一盞燈說「記得回家」，另一盞說「放心去吧」。",
+      "question": "你想家門亮哪盞？",
+      "twist": "",
+      "deeperQuestion": "你希望哪位家人看見它？"
+    }
+  },
+  {
+    "id": "ponder-v3-family-100",
+    "category": "Family",
+    "emoji": "🏠",
+    "title": "Moving festival",
+    "scenario": "A festival moves to the date its loneliest relative needs it, not necessarily a holiday.",
+    "question": "Would you follow it?",
+    "twist": "",
+    "deeperQuestion": "How could someone who cannot attend take part?",
+    "zh": {
+      "title": "會搬家的節日",
+      "scenario": "節日會跟著最想團聚的人搬日期，不一定在假期。",
+      "question": "你們會跟它走嗎？",
+      "twist": "",
+      "deeperQuestion": "來不了的人可以用甚麼方式參與？"
+    }
+  },
+  {
+    "id": "ponder-v3-party-001",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A local escape",
-    "scenario": "You suddenly have half a day free.",
-    "question": "What nearby place would each person recommend?",
+    "title": "Feeling shop",
+    "scenario": "A shop sells courage, calm and curiosity; each person may buy one can.",
+    "question": "Which would you pick?",
     "twist": "",
-    "deeperQuestion": "After hearing the ideas, which route would you try?",
+    "deeperQuestion": "Would you swap a sip with a friend?",
     "zh": {
-      "title": "附近半日遊",
-      "scenario": "你們突然多出半天空檔。",
-      "question": "每人會推薦附近哪個地方？",
+      "title": "情緒便利店",
+      "scenario": "便利店賣勇氣、安心和好奇心，每人只能買一罐。",
+      "question": "你會拿哪罐？",
       "twist": "",
-      "deeperQuestion": "聽完介紹，你最想跟誰的路線走？"
+      "deeperQuestion": "你願意跟朋友交換一口嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-002",
+    "id": "ponder-v3-party-002",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A small-budget outing",
-    "scenario": "You each have a small budget for an afternoon out.",
-    "question": "What would you plan?",
+    "title": "Dog mayor",
+    "scenario": "A kind dog runs for mayor but understands only walks and meals.",
+    "question": "Would you vote for it?",
     "twist": "",
-    "deeperQuestion": "Which part could be completely free?",
+    "deeperQuestion": "What deputy would you choose for it?",
     "zh": {
-      "title": "一百元挑戰",
-      "scenario": "你們每人只有一百元玩一個下午。",
-      "question": "你會怎樣安排？",
+      "title": "小狗市長",
+      "scenario": "城市選出一隻善良小狗當市長，但牠只懂散步和吃飯。",
+      "question": "你會投牠嗎？",
       "twist": "",
-      "deeperQuestion": "哪一項活動可以完全免費？"
+      "deeperQuestion": "你想替牠找哪種副手？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-003",
+    "id": "ponder-v3-party-003",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A curious fact",
-    "scenario": "Take turns sharing something you only learned recently.",
-    "question": "What would you say?",
+    "title": "Memory change",
+    "scenario": "You can pay with memories and receive strangers' memories as change.",
+    "question": "Would you try?",
     "twist": "",
-    "deeperQuestion": "Which part surprised you most?",
+    "deeperQuestion": "What sort of memory would you least want back?",
     "zh": {
-      "title": "一個冷知識",
-      "scenario": "輪流分享一件你最近才知道的小事。",
-      "question": "你會講甚麼？",
+      "title": "回憶找續",
+      "scenario": "買東西可以用回憶付款，店員會找回陌生人的回憶。",
+      "question": "你會試買嗎？",
       "twist": "",
-      "deeperQuestion": "哪個部分讓你最意外？"
+      "deeperQuestion": "你最不想收到哪種回憶？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-004",
+    "id": "ponder-v3-party-004",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Childhood snacks",
-    "scenario": "Each person picks a childhood snack.",
-    "question": "What would you choose?",
+    "title": "Lucky seat",
+    "scenario": "One cafe seat makes the rest of your day lucky.",
+    "question": "Would you give it to a friend?",
     "twist": "",
-    "deeperQuestion": "Who did you usually eat it with?",
+    "deeperQuestion": "Would you offer it without receiving thanks?",
     "zh": {
-      "title": "童年的零食",
-      "scenario": "每人選一款童年常吃的零食。",
-      "question": "你會選哪款？",
+      "title": "幸運座位",
+      "scenario": "咖啡店有個座位讓今天一切順利，但只剩一個。",
+      "question": "你會讓給朋友嗎？",
       "twist": "",
-      "deeperQuestion": "你通常跟誰一起吃？"
+      "deeperQuestion": "對方不用謝你，你還會讓嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-005",
+    "id": "ponder-v3-party-005",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Odd but tasty",
-    "scenario": "You enjoy a food combination others might find unusual.",
-    "question": "What would you recommend?",
+    "title": "Truth discount",
+    "scenario": "Dessert gets cheaper for each small flaw you admit.",
+    "question": "How far would you go?",
     "twist": "",
-    "deeperQuestion": "How would you introduce it to someone willing to taste it?",
+    "deeperQuestion": "Could friends add suggestions?",
     "zh": {
-      "title": "怪但好吃",
-      "scenario": "你有一個別人可能覺得奇怪的食物配搭。",
-      "question": "你會推薦甚麼？",
+      "title": "說真話打折",
+      "scenario": "每說一個自己的小缺點，甜品就便宜一點。",
+      "question": "你會說到甚麼程度？",
       "twist": "",
-      "deeperQuestion": "朋友願意試一口的話，你會怎樣介紹？"
+      "deeperQuestion": "朋友可以替你補充嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-006",
+    "id": "ponder-v3-party-006",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Swap a weekend",
-    "scenario": "You swap leisure routines for a day.",
-    "question": "What would you have your friend try?",
+    "title": "Borrowed talent",
+    "scenario": "You can borrow a friend's talent for a day, leaving them without it.",
+    "question": "What would you borrow?",
     "twist": "",
-    "deeperQuestion": "Which activity might change their mind?",
+    "deeperQuestion": "What would you offer in return?",
     "zh": {
-      "title": "週末交換",
-      "scenario": "你們交換一天的休閒習慣。",
-      "question": "你會帶朋友做甚麼？",
+      "title": "借用天賦",
+      "scenario": "你能借朋友一項天賦一天，但他那天不能使用。",
+      "question": "你想借甚麼？",
       "twist": "",
-      "deeperQuestion": "哪一項最可能讓對方改觀？"
+      "deeperQuestion": "你會用甚麼回禮？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-007",
+    "id": "ponder-v3-party-007",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A tiny shop",
-    "scenario": "You run a tiny shop together for one day.",
-    "question": "What would each person handle?",
+    "title": "Letter from a cat",
+    "scenario": "A stranger cat asks to borrow money to move to the moon.",
+    "question": "Would you lend it?",
     "twist": "",
-    "deeperQuestion": "What would you call it?",
+    "deeperQuestion": "Would moon rocks count as repayment?",
     "zh": {
-      "title": "朋友小店",
-      "scenario": "你們合開一天的小店。",
-      "question": "每人會負責哪件事？",
+      "title": "陌生貓來信",
+      "scenario": "陌生貓寄來求助信，說要借一百元搬去月球。",
+      "question": "你會借嗎？",
       "twist": "",
-      "deeperQuestion": "你們想取甚麼店名？"
+      "deeperQuestion": "牠寄回月球石算還錢嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-008",
+    "id": "ponder-v3-party-008",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A silly skill",
-    "scenario": "Share a skill that is not very useful but you do well.",
-    "question": "What is yours?",
+    "title": "Friendship expiry",
+    "scenario": "A card shows your friendship's remaining days, which today's choices can change.",
+    "question": "Would you look?",
     "twist": "",
-    "deeperQuestion": "Could you demonstrate it now?",
+    "deeperQuestion": "Would you share what you saw?",
     "zh": {
-      "title": "沒用的小本領",
-      "scenario": "輪流講一項沒甚麼用、但你很拿手的技能。",
-      "question": "你的答案是甚麼？",
+      "title": "朋友保存期限",
+      "scenario": "一張卡能顯示友誼還剩多少天，卻可能因今天的選擇改變。",
+      "question": "你想看嗎？",
       "twist": "",
-      "deeperQuestion": "可以現場示範一下嗎？"
+      "deeperQuestion": "你會告訴朋友看到甚麼嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-009",
+    "id": "ponder-v3-party-009",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A song to share",
-    "scenario": "Each person recommends a song for the current mood.",
-    "question": "What would you choose?",
+    "title": "Used dreams",
+    "scenario": "A shop sells abandoned dreams; buying makes you truly want to fulfil them.",
+    "question": "Would you browse?",
     "twist": "",
-    "deeperQuestion": "Which part would you want them to listen for?",
+    "deeperQuestion": "Would you ask why the owner gave up?",
     "zh": {
-      "title": "一首推薦",
-      "scenario": "每人推薦一首適合現在氣氛的歌。",
-      "question": "你會選哪首？",
+      "title": "夢想二手店",
+      "scenario": "有人便宜出售放棄的夢想，你買了就會真心想完成它。",
+      "question": "你會逛嗎？",
       "twist": "",
-      "deeperQuestion": "哪一段最想讓朋友仔細聽？"
+      "deeperQuestion": "你會先問原主人為何放棄嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-010",
+    "id": "ponder-v3-party-010",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Leaving the house",
-    "scenario": "There is one thing you always check before going out.",
-    "question": "What is it?",
+    "title": "Anonymous help",
+    "scenario": "Magic solves a friend's problem, but they credit someone else.",
+    "question": "Would you use it?",
     "twist": "",
-    "deeperQuestion": "Was there a funny time you forgot?",
+    "deeperQuestion": "Could you resist revealing the truth?",
     "zh": {
-      "title": "出門習慣",
-      "scenario": "你出門前一定會檢查一樣東西。",
-      "question": "那是甚麼？",
+      "title": "不記名幫忙",
+      "scenario": "魔法能替朋友解決一個麻煩，但他會以為是別人幫的。",
+      "question": "你會用嗎？",
       "twist": "",
-      "deeperQuestion": "有沒有一次忘記了，結果很搞笑？"
+      "deeperQuestion": "你會忍得住不揭穿嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-011",
+    "id": "ponder-v3-party-011",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A tiny true story",
-    "scenario": "You have thirty seconds for a recent funny story.",
-    "question": "What would you tell?",
+    "title": "Joke toll",
+    "scenario": "A bridge toll is a story that makes its guard laugh.",
+    "question": "Would you tell an embarrassing story about yourself?",
     "twist": "",
-    "deeperQuestion": "What detail could your friend ask about?",
+    "deeperQuestion": "Would you use a friend's story instead?",
     "zh": {
-      "title": "真實小故事",
-      "scenario": "你有三十秒講一件最近的趣事。",
-      "question": "你會講哪件？",
+      "title": "笑話收費站",
+      "scenario": "橋的過路費是一個能逗守衛笑的故事。",
+      "question": "你會講自己的糗事嗎？",
       "twist": "",
-      "deeperQuestion": "朋友可以再問你哪個細節？"
+      "deeperQuestion": "你會不會借用朋友的糗事？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-012",
+    "id": "ponder-v3-party-012",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Something unfamiliar",
-    "scenario": "A friend suggests a type of film you rarely watch.",
-    "question": "Which would you try?",
+    "title": "Whose treasure",
+    "scenario": "You find treasure a friend buried and forgot as a child.",
+    "question": "Would you claim it as your discovery?",
     "twist": "",
-    "deeperQuestion": "What would make you more willing to watch it?",
+    "deeperQuestion": "Would hours spent digging change your answer?",
     "zh": {
-      "title": "沒看過的類型",
-      "scenario": "朋友要推薦你一種平常不看的電影。",
-      "question": "你願意試哪種類型？",
+      "title": "誰的寶藏",
+      "scenario": "你找到朋友小時候埋的寶藏，他已完全忘記。",
+      "question": "你會當成自己的發現嗎？",
       "twist": "",
-      "deeperQuestion": "甚麼條件會讓你更願意看？"
+      "deeperQuestion": "你花了很多時間挖掘會改變答案嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-013",
+    "id": "ponder-v3-party-013",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A childhood ambition",
-    "scenario": "Think of the job you wanted as a child.",
-    "question": "What was it?",
+    "title": "Invisible applause",
+    "scenario": "Every good deed earns applause only you can hear.",
+    "question": "Would you do more good?",
     "twist": "",
-    "deeperQuestion": "What did you imagine doing all day?",
+    "deeperQuestion": "What if the applause stops one day?",
     "zh": {
-      "title": "小時候的夢",
-      "scenario": "想起小時候想做的工作。",
-      "question": "你的答案是甚麼？",
+      "title": "隱形掌聲",
+      "scenario": "每做一件好事都有掌聲，只有你聽見。",
+      "question": "你會更常做好事嗎？",
       "twist": "",
-      "deeperQuestion": "那時你以為每天都在做甚麼？"
+      "deeperQuestion": "如果掌聲有一天停了呢？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-014",
+    "id": "ponder-v3-party-014",
     "category": "Party",
     "emoji": "🎉",
-    "title": "When we met",
-    "scenario": "Think back to when you first met.",
-    "question": "What little moment do you remember?",
+    "title": "Bad-luck swap",
+    "scenario": "You can take a friend's bad luck so an important day goes well.",
+    "question": "Would you agree?",
     "twist": "",
-    "deeperQuestion": "Do you remember it the same way?",
+    "deeperQuestion": "Would you ask how bad it could be first?",
     "zh": {
-      "title": "相識的畫面",
-      "scenario": "回想你們剛認識的時候。",
-      "question": "你最記得哪個小片段？",
+      "title": "交換一天倒楣",
+      "scenario": "你能替朋友承受一天倒楣，換他一個重要日子順利。",
+      "question": "你會答應嗎？",
       "twist": "",
-      "deeperQuestion": "大家記得的版本一樣嗎？"
+      "deeperQuestion": "你會先問有多倒楣嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-015",
+    "id": "ponder-v3-party-015",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A friendly nickname",
-    "scenario": "Describe yourself today as a food.",
-    "question": "What would you be?",
+    "title": "Cloud mailbox",
+    "scenario": "A mailbox sends a letter to your friend ten years ahead, with no reply.",
+    "question": "What would you write?",
     "twist": "",
-    "deeperQuestion": "What quality made you choose it?",
+    "deeperQuestion": "Would you include a request?",
     "zh": {
-      "title": "一個新綽號",
-      "scenario": "用一種食物形容今天的自己。",
-      "question": "你會是哪種？",
+      "title": "雲端信箱",
+      "scenario": "信箱能寄一封信給十年後的朋友，但你永遠看不到回信。",
+      "question": "你會寫甚麼？",
       "twist": "",
-      "deeperQuestion": "哪個特點讓你選了它？"
+      "deeperQuestion": "你會留下一個請求嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-016",
+    "id": "ponder-v3-party-016",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Our playlist",
-    "scenario": "You are making a trip playlist together.",
-    "question": "What is your first pick?",
+    "title": "Comfort translator",
+    "scenario": "A machine supplies the comfort your friend wants, even if you disagree.",
+    "question": "Would you read it aloud?",
     "twist": "",
-    "deeperQuestion": "What would you switch to on the way home?",
+    "deeperQuestion": "Would you add your own honest thought?",
     "zh": {
-      "title": "共用播放清單",
-      "scenario": "你們一起做一張出遊歌單。",
-      "question": "你的第一首會放甚麼？",
+      "title": "安慰翻譯機",
+      "scenario": "機器能說出朋友最想聽的安慰，即使你不認同。",
+      "question": "你會照讀嗎？",
       "twist": "",
-      "deeperQuestion": "回程時你會換哪種音樂？"
+      "deeperQuestion": "你會加一句自己的真心話嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-017",
+    "id": "ponder-v3-party-017",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Walking conversation",
-    "scenario": "You are taking a twenty-minute walk.",
-    "question": "What recent little thing would you ask about?",
+    "title": "No-price day",
+    "scenario": "All prices vanish for a day; customers decide what to pay.",
+    "question": "Would you pay the usual price?",
     "twist": "",
-    "deeperQuestion": "What update of your own would you share first?",
+    "deeperQuestion": "Would you treat small shops and big companies alike?",
     "zh": {
-      "title": "散步的話題",
-      "scenario": "你們要散步二十分鐘。",
-      "question": "你想問朋友哪件最近的小事？",
+      "title": "價錢消失日",
+      "scenario": "一天所有價錢都消失，付多少由客人決定。",
+      "question": "你會照原價付嗎？",
       "twist": "",
-      "deeperQuestion": "你想先分享自己的哪件近況？"
+      "deeperQuestion": "小店和大公司，你會付一樣嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-018",
+    "id": "ponder-v3-party-018",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A short trip",
-    "scenario": "You have a relaxed overnight trip.",
-    "question": "What one thing would each of you want to do?",
+    "title": "Friend copy",
+    "scenario": "You can copy a friend for company, giving the original more freedom.",
+    "question": "Would you use it?",
     "twist": "",
-    "deeperQuestion": "How could the plan include personal downtime?",
+    "deeperQuestion": "Should the copy know what it is?",
     "zh": {
-      "title": "理想小旅行",
-      "scenario": "你們有兩天一夜，不想太累。",
-      "question": "各自最想做哪一件事？",
+      "title": "朋友複製券",
+      "scenario": "你能複製一位朋友陪你，原本的他就有更多自由。",
+      "question": "你會用嗎？",
       "twist": "",
-      "deeperQuestion": "怎樣安排，大家都有自己的時間？"
+      "deeperQuestion": "你需要讓複製人知道嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-019",
+    "id": "ponder-v3-party-019",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Guess my choice",
-    "scenario": "One person silently chooses a dinner dish and the others guess.",
-    "question": "Will your friends get it?",
+    "title": "Temper locker",
+    "scenario": "You can store your temper for a day but must feel it all that evening.",
+    "question": "Would you do it?",
     "twist": "",
-    "deeperQuestion": "What clue led to that guess?",
+    "deeperQuestion": "Would you want company when collecting it?",
     "zh": {
-      "title": "猜我的選擇",
-      "scenario": "一人先想好今晚想吃的菜，其他人猜。",
-      "question": "你的朋友會猜中嗎？",
+      "title": "脾氣寄存",
+      "scenario": "你能寄存壞脾氣一天，但晚上要一次過拿回。",
+      "question": "你會寄嗎？",
       "twist": "",
-      "deeperQuestion": "是甚麼線索讓你猜這個？"
+      "deeperQuestion": "你想有人陪你取回嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-020",
+    "id": "ponder-v3-party-020",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Worth revisiting",
-    "scenario": "There is a film, book, or show you would revisit.",
-    "question": "What would you recommend?",
+    "title": "Magic treat",
+    "scenario": "Treating friends doubles your money only if their gratitude is genuine.",
+    "question": "Would you treat often?",
     "twist": "",
-    "deeperQuestion": "Would you notice something different now?",
+    "deeperQuestion": "Would gratitude count if they know the rule?",
     "zh": {
-      "title": "重看一次",
-      "scenario": "有一部作品你願意再看一次。",
-      "question": "你會推薦哪部？",
+      "title": "神奇請客券",
+      "scenario": "你請客花的錢會加倍回來，但朋友必須真心感激。",
+      "question": "你會常請嗎？",
       "twist": "",
-      "deeperQuestion": "第一次看和現在，你可能會留意不同地方嗎？"
+      "deeperQuestion": "朋友知道規則後還算感激嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-021",
+    "id": "ponder-v3-party-021",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A friend's lesson",
-    "scenario": "You have five minutes to teach a friend something small.",
-    "question": "What would you teach?",
+    "title": "Visible loneliness",
+    "scenario": "Loneliness becomes a cloud above each person.",
+    "question": "Would you approach the biggest cloud first?",
     "twist": "",
-    "deeperQuestion": "Could you try the first step now?",
+    "deeperQuestion": "Would you want yours to be visible?",
     "zh": {
-      "title": "朋友教室",
-      "scenario": "你有五分鐘教朋友一件小事。",
-      "question": "你會教甚麼？",
+      "title": "看得見的孤單",
+      "scenario": "孤單會變成頭上的小雲。",
+      "question": "你會先走近最大的那朵嗎？",
       "twist": "",
-      "deeperQuestion": "第一步可以現在就試嗎？"
+      "deeperQuestion": "你希望自己的雲被看見嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-022",
+    "id": "ponder-v3-party-022",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Choosing a seat",
-    "scenario": "You walk into an empty café.",
-    "question": "Where would each person sit?",
+    "title": "Forgetful ice cream",
+    "scenario": "Ice cream erases one worry and everything it taught you.",
+    "question": "Would you eat it?",
     "twist": "",
-    "deeperQuestion": "Do you value a window, quiet, or easy conversation?",
+    "deeperQuestion": "Would you recommend it to a sad friend?",
     "zh": {
-      "title": "咖啡店選位",
-      "scenario": "你們進了一間空咖啡店。",
-      "question": "每人最想坐哪個位置？",
+      "title": "忘憂冰淇淋",
+      "scenario": "冰淇淋會抹掉一件煩惱，也抹掉你從中學到的事。",
+      "question": "你會吃嗎？",
       "twist": "",
-      "deeperQuestion": "你看重窗邊、安靜，還是方便聊天？"
+      "deeperQuestion": "你會推薦給正難過的朋友嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-023",
+    "id": "ponder-v3-party-023",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Guide for a day",
-    "scenario": "A friend visits your neighbourhood for the first time.",
-    "question": "What ordinary place would you show them?",
+    "title": "Secret exchange",
+    "scenario": "Hearing a friend's secret costs one equally personal secret of your own.",
+    "question": "Would you trade?",
     "twist": "",
-    "deeperQuestion": "What detail would only a regular know?",
+    "deeperQuestion": "Who decides what counts as equal?",
     "zh": {
-      "title": "當一天導遊",
-      "scenario": "朋友第一次來你的生活圈。",
-      "question": "你最想帶他去哪個平常地方？",
+      "title": "秘密交換站",
+      "scenario": "想聽一個朋友的秘密，就要交出自己的同等秘密。",
+      "question": "你會交換嗎？",
       "twist": "",
-      "deeperQuestion": "那裡有哪個細節只有常客會知道？"
+      "deeperQuestion": "誰來判斷甚麼叫同等？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-024",
+    "id": "ponder-v3-party-024",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A small recommendation",
-    "scenario": "Something inexpensive has pleased you lately.",
-    "question": "What would you recommend?",
+    "title": "Friendship pass",
+    "scenario": "A pass guarantees monthly meetings but expires after one absence.",
+    "question": "Would you buy it for a friend?",
     "twist": "",
-    "deeperQuestion": "If not an object, what habit would you recommend?",
+    "deeperQuestion": "What exceptions would you want?",
     "zh": {
-      "title": "小小推薦",
-      "scenario": "最近有件平價好物讓你滿意。",
-      "question": "你會推薦甚麼？",
+      "title": "友情年票",
+      "scenario": "年票保證每月見面，但缺席一次就失效。",
+      "question": "你想買給朋友嗎？",
       "twist": "",
-      "deeperQuestion": "如果不推薦物品，你會推薦哪個習慣？"
+      "deeperQuestion": "你希望有甚麼例外？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-025",
+    "id": "ponder-v3-party-025",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A funny misunderstanding",
-    "scenario": "You once misheard something and found it funny later.",
-    "question": "What happened?",
+    "title": "Grudge umbrella",
+    "scenario": "An umbrella shelters only people who have lent you something.",
+    "question": "Would you keep it?",
     "twist": "",
-    "deeperQuestion": "What did you think they meant?",
+    "deeperQuestion": "Would you find a way to shelter strangers?",
     "zh": {
-      "title": "有趣的誤會",
-      "scenario": "你曾經聽錯一句話，後來覺得好笑。",
-      "question": "你記得哪次？",
+      "title": "會記仇的傘",
+      "scenario": "傘只肯替曾借過你東西的人擋雨。",
+      "question": "你會留著它嗎？",
       "twist": "",
-      "deeperQuestion": "當時你以為對方說甚麼？"
+      "deeperQuestion": "你會偷偷幫陌生人擋雨嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-026",
+    "id": "ponder-v3-party-026",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Introducing each other",
-    "scenario": "You are introducing your friend to someone new.",
-    "question": "What interesting strength would you mention?",
+    "title": "Monster neighbour",
+    "scenario": "A friendly monster next door sings happily at midnight.",
+    "question": "Would you complain or knock first?",
     "twist": "",
-    "deeperQuestion": "What would the person being introduced add?",
+    "deeperQuestion": "What if it can sing only then?",
     "zh": {
-      "title": "互相介紹",
-      "scenario": "你要把朋友介紹給新朋友。",
-      "question": "你會先講哪個有趣優點？",
+      "title": "小怪獸鄰居",
+      "scenario": "隔壁小怪獸很友善，但每天半夜才開心唱歌。",
+      "question": "你會先投訴還是敲門？",
       "twist": "",
-      "deeperQuestion": "被介紹的人想補充哪一句？"
+      "deeperQuestion": "如果那是牠唯一能唱的時段呢？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-027",
+    "id": "ponder-v3-party-027",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A tiny swap",
-    "scenario": "You each bring one useful idea to trade.",
-    "question": "What time-saving trick have you found?",
+    "title": "Wish tip",
+    "scenario": "A server's tips become wishes you cannot see.",
+    "question": "Would you tip more?",
     "twist": "",
-    "deeperQuestion": "Where could your friend use it?",
+    "deeperQuestion": "What if their wishes are more luxurious than yours?",
     "zh": {
-      "title": "迷你交換",
-      "scenario": "你們各自帶一個好點子交換。",
-      "question": "你最近找到哪個省事方法？",
+      "title": "願望小費",
+      "scenario": "服務員的小費能變成他的願望，你看不到他會許甚麼。",
+      "question": "你會給多一點嗎？",
       "twist": "",
-      "deeperQuestion": "對方可以在哪個場合用到？"
+      "deeperQuestion": "如果他的願望比你的奢侈呢？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-028",
+    "id": "ponder-v3-party-028",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Trying together",
-    "scenario": "There is something you feel shy trying alone.",
-    "question": "What would you invite a friend to try?",
+    "title": "One-day fame",
+    "scenario": "You can be famous for a day, solely for your most embarrassing moment.",
+    "question": "Would you accept?",
     "twist": "",
-    "deeperQuestion": "What small version would be easiest to start with?",
+    "deeperQuestion": "What if it earns a fortune?",
     "zh": {
-      "title": "想一起試",
-      "scenario": "有件事自己試有點害羞。",
-      "question": "你最想約朋友一起試甚麼？",
+      "title": "一日名人",
+      "scenario": "你可出名一天，但大家只記得你最丟臉的事。",
+      "question": "你會接受嗎？",
       "twist": "",
-      "deeperQuestion": "怎樣的小版本最容易開始？"
+      "deeperQuestion": "如果能因此賺一大筆錢呢？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-029",
+    "id": "ponder-v3-party-029",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A weather report",
-    "scenario": "Describe your mood as weather.",
-    "question": "What is your forecast right now?",
+    "title": "Roadside wish",
+    "scenario": "You find an unnamed wish that costs your holiday to fulfil.",
+    "question": "Would you help?",
     "twist": "",
-    "deeperQuestion": "What small thing could improve the forecast?",
+    "deeperQuestion": "Would you want to know whose it is first?",
     "zh": {
-      "title": "今天天氣",
-      "scenario": "用天氣形容今天心情。",
-      "question": "你現在是甚麼天氣？",
+      "title": "路邊願望",
+      "scenario": "你撿到一個沒寫名字的願望，替它實現會花掉你的假期。",
+      "question": "你會幫嗎？",
       "twist": "",
-      "deeperQuestion": "哪件小事可能讓天氣轉好一點？"
+      "deeperQuestion": "你想先知道是誰的嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-030",
+    "id": "ponder-v3-party-030",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A little collection",
-    "scenario": "You could collect something inexpensive.",
-    "question": "What would you choose?",
+    "title": "Honest selfie",
+    "scenario": "A camera captures how others see you, not your face.",
+    "question": "Would you let a friend take your portrait?",
     "twist": "",
-    "deeperQuestion": "Where would you look for the first item?",
+    "deeperQuestion": "Would you delete a portrait you dislike?",
     "zh": {
-      "title": "一件收藏",
-      "scenario": "你可以收集一種不昂貴的東西。",
-      "question": "你想收集甚麼？",
+      "title": "誠實自拍",
+      "scenario": "相機拍下別人眼中的你，而不是你的外貌。",
+      "question": "你想讓朋友拍嗎？",
       "twist": "",
-      "deeperQuestion": "第一件會從哪裡開始找？"
+      "deeperQuestion": "你會想刪掉不喜歡的一張嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-031",
+    "id": "ponder-v3-party-031",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Help me choose",
-    "scenario": "Ask your friends to suggest a new hobby.",
-    "question": "Which suggestion appeals to you?",
+    "title": "Wish library",
+    "scenario": "A library lends different lives; overdue borrowers cannot return.",
+    "question": "Which life would you borrow?",
     "twist": "",
-    "deeperQuestion": "Why did they think it would suit you?",
+    "deeperQuestion": "Would you ask a friend to remind you to return?",
     "zh": {
-      "title": "幫我選一個",
-      "scenario": "你想試一個新興趣，請朋友提議。",
-      "question": "哪個建議你最想試？",
+      "title": "心願借書證",
+      "scenario": "圖書館借出不同人生，逾期就回不來。",
+      "question": "你敢借哪一本？",
       "twist": "",
-      "deeperQuestion": "對方為甚麼覺得它適合你？"
+      "deeperQuestion": "你希望朋友提醒你還書嗎？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-032",
+    "id": "ponder-v3-party-032",
     "category": "Party",
     "emoji": "🎉",
-    "title": "When there is time",
-    "scenario": "You unexpectedly get an extra hour today.",
-    "question": "What would you do alone or with a friend?",
+    "title": "Thank-you sweets",
+    "scenario": "Each sweet contains an unspoken thank-you.",
+    "question": "Would you eat them all yourself?",
     "twist": "",
-    "deeperQuestion": "Why does it often get pushed aside?",
+    "deeperQuestion": "Who would you most want to give one to?",
     "zh": {
-      "title": "有空就做",
-      "scenario": "今天突然多了一小時。",
-      "question": "你想獨自做甚麼，或邀朋友做甚麼？",
+      "title": "謝謝糖果",
+      "scenario": "每顆糖都藏著一個別人沒說出口的謝謝。",
+      "question": "你會全部自己吃嗎？",
       "twist": "",
-      "deeperQuestion": "這件事平常為甚麼容易被擱下？"
+      "deeperQuestion": "你最想送一顆給誰？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-033",
+    "id": "ponder-v3-party-033",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A nice surprise",
-    "scenario": "A friend once did something small that helped you.",
-    "question": "What comes to mind?",
+    "title": "Brief power",
+    "scenario": "You can fly for ten minutes and carry one friend.",
+    "question": "How would you choose?",
     "twist": "",
-    "deeperQuestion": "Do they know it mattered to you?",
+    "deeperQuestion": "What if someone afraid of heights wants to try?",
     "zh": {
-      "title": "朋友的驚喜",
-      "scenario": "朋友做過一件讓你很受用的小事。",
-      "question": "你想起哪件？",
+      "title": "短暫超能力",
+      "scenario": "你能飛十分鐘，卻只能載一位朋友。",
+      "question": "你會怎樣選？",
       "twist": "",
-      "deeperQuestion": "他知道那件事對你有用嗎？"
+      "deeperQuestion": "怕高的人反而想挑戰自己呢？"
     },
     "groupSize": "small"
   },
   {
-    "id": "ponder-v2-party-034",
+    "id": "ponder-v3-party-034",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Next time",
-    "scenario": "Today's gathering is ending.",
-    "question": "What simple activity would you try next time?",
-    "twist": "",
-    "deeperQuestion": "Who would like to suggest a date?",
-    "zh": {
-      "title": "下次再聚",
-      "scenario": "今天聚會快完了。",
-      "question": "下次你想一起試哪個簡單活動？",
-      "twist": "",
-      "deeperQuestion": "誰願意先提出一個日期？"
-    },
-    "groupSize": "small"
-  },
-  {
-    "id": "ponder-v2-party-035",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A themed restaurant",
-    "scenario": "You are opening a themed restaurant; everyone offers an idea.",
-    "question": "Which theme would you choose?",
-    "twist": "",
-    "deeperQuestion": "What would you name the signature dish?",
-    "zh": {
-      "title": "一間主題餐廳",
-      "scenario": "你們合開一間主題餐廳，每人提一個點子。",
-      "question": "最後想選甚麼主題？",
-      "twist": "",
-      "deeperQuestion": "招牌菜要叫甚麼名字？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-036",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A story relay",
-    "scenario": "Start with: We opened the fridge and found a train ticket.",
-    "question": "Add one sentence each; what happens next?",
-    "twist": "",
-    "deeperQuestion": "How could the last person end the story?",
-    "zh": {
-      "title": "故事接龍",
-      "scenario": "故事由「我們打開冰箱，發現一張車票」開始。",
-      "question": "每人接一句，接下來發生甚麼？",
-      "twist": "",
-      "deeperQuestion": "最後一人可以怎樣收尾？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-037",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A silly product",
-    "scenario": "You have to sell an umbrella that does not block rain.",
-    "question": "What use would each person invent?",
-    "twist": "",
-    "deeperQuestion": "Pick one use and give it a slogan.",
-    "zh": {
-      "title": "荒謬產品",
-      "scenario": "你們要推銷一把不擋雨的雨傘。",
-      "question": "各人會想出甚麼用途？",
-      "twist": "",
-      "deeperQuestion": "選一個用途，替它寫一句廣告詞。"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-038",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A dinner agreement",
-    "scenario": "Everyone suggests one food.",
-    "question": "How would you make a meal that works for everyone?",
-    "twist": "",
-    "deeperQuestion": "Could one item be served separately for different tastes?",
-    "zh": {
-      "title": "晚餐共識",
-      "scenario": "每人提出一種想吃的食物。",
-      "question": "你們怎樣組成大家都接受的一餐？",
-      "twist": "",
-      "deeperQuestion": "有沒有一樣可以分開上桌，照顧不同口味？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-039",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A minute-long travel pitch",
-    "scenario": "Split into two groups and design a local outing.",
-    "question": "How would you pitch it?",
-    "twist": "",
-    "deeperQuestion": "Could you combine one strength from each plan?",
-    "zh": {
-      "title": "一分鐘旅行社",
-      "scenario": "分成兩組，各設計一個不用出城的行程。",
-      "question": "你們想怎樣吸引大家？",
-      "twist": "",
-      "deeperQuestion": "兩個行程能不能各取一個優點？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-040",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Finding common ground",
-    "scenario": "Take one minute to find three shared preferences.",
-    "question": "What did you find?",
-    "twist": "",
-    "deeperQuestion": "Which shared preference surprised you most?",
-    "zh": {
-      "title": "共同點搜尋",
-      "scenario": "用一分鐘找出全組三個共同喜好。",
-      "question": "你們找到了甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪個共同點最讓大家意外？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-041",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Three things only",
-    "scenario": "For a picnic, your group can bring three extra items.",
-    "question": "What would you choose?",
-    "twist": "",
-    "deeperQuestion": "Which item could serve two purposes?",
-    "zh": {
-      "title": "只能帶三樣",
-      "scenario": "你們去野餐，只能共同帶三種額外用品。",
-      "question": "大家會選甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪個物品可以一物兩用？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-042",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A useless invention fair",
-    "scenario": "Invent an exaggerated solution to a tiny annoyance.",
-    "question": "What would yours do?",
-    "twist": "",
-    "deeperQuestion": "Which idea would you almost want to buy?",
-    "zh": {
-      "title": "無用發明展",
-      "scenario": "每人想一個解決小麻煩的誇張發明。",
-      "question": "你的發明是甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪個點子讓你有一點想買？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-043",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A shared menu",
-    "scenario": "Each person chooses one ingredient.",
-    "question": "What dish could you make from them?",
-    "twist": "",
-    "deeperQuestion": "What seasoning might rescue an odd combination?",
-    "zh": {
-      "title": "合作菜單",
-      "scenario": "每人選一樣食材。",
-      "question": "你們可以拼出甚麼菜式？",
-      "twist": "",
-      "deeperQuestion": "如果味道太奇怪，可以加哪樣調味救場？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-044",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A new ending",
-    "scenario": "Choose a fairy tale everyone knows.",
-    "question": "How would you change the ending?",
-    "twist": "",
-    "deeperQuestion": "Which character would be happiest with the new ending?",
-    "zh": {
-      "title": "童話新結局",
-      "scenario": "選一個大家知道的童話。",
-      "question": "你們想把結局改成怎樣？",
-      "twist": "",
-      "deeperQuestion": "新結局最開心的是哪個角色？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-045",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A new show",
-    "scenario": "You are hosting a show together.",
-    "question": "What would the first episode cover?",
-    "twist": "",
-    "deeperQuestion": "What segment could each person handle?",
-    "zh": {
-      "title": "開場三十秒",
-      "scenario": "你們要一起主持一個節目。",
-      "question": "第一集想聊甚麼？",
-      "twist": "",
-      "deeperQuestion": "每人可以負責哪個小環節？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-046",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Trip roles",
-    "scenario": "You are planning a trip together.",
-    "question": "What preparation would each person choose?",
-    "twist": "",
-    "deeperQuestion": "How could you split a task nobody wants?",
-    "zh": {
-      "title": "旅行分工",
-      "scenario": "你們一起去旅行。",
-      "question": "每人最想負責哪一份準備？",
-      "twist": "",
-      "deeperQuestion": "哪個工作大家都不想做，可以怎樣分小？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-047",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A party rule",
-    "scenario": "Add one fun rule for tonight that does not put anyone on the spot.",
-    "question": "What would it be?",
-    "twist": "",
-    "deeperQuestion": "How could someone opt out comfortably?",
-    "zh": {
-      "title": "聚會新規則",
-      "scenario": "你們可以為今晚加一條有趣又不為難人的規則。",
-      "question": "會是甚麼？",
-      "twist": "",
-      "deeperQuestion": "有人不想參與時，可以怎樣跳過？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-048",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A mascot meeting",
-    "scenario": "Your friend group needs a mascot.",
-    "question": "What animal would it be?",
-    "twist": "",
-    "deeperQuestion": "What would its signature move be?",
-    "zh": {
-      "title": "吉祥物會議",
-      "scenario": "這個朋友圈需要一隻吉祥物。",
-      "question": "你們會選哪種動物？",
-      "twist": "",
-      "deeperQuestion": "牠會有甚麼招牌動作？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-049",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Everyday awards",
-    "scenario": "Give an award to an ordinary little thing.",
+    "title": "Take a star",
+    "scenario": "Each person may leave with a star for one new idea from tonight.",
     "question": "What would yours be called?",
     "twist": "",
-    "deeperQuestion": "Who or what deserves that award this year?",
+    "deeperQuestion": "Whom would you show it to?",
     "zh": {
-      "title": "平凡事頒獎",
-      "scenario": "每人替一件平凡小事頒獎。",
-      "question": "你的獎項叫甚麼？",
+      "title": "帶走一顆星",
+      "scenario": "散場時每人可帶走一顆星，代表今晚得到的一個新想法。",
+      "question": "你的星會叫甚麼？",
       "twist": "",
-      "deeperQuestion": "今年誰或甚麼東西值得拿這個獎？"
+      "deeperQuestion": "你想把它送給哪位朋友看看？"
+    },
+    "groupSize": "small"
+  },
+  {
+    "id": "ponder-v3-party-035",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Turtle bank",
+    "scenario": "Your bank gets a seed deposit from a turtle expecting a forest in a century.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "Each suggest one promise you can actually keep.",
+    "zh": {
+      "title": "烏龜銀行",
+      "scenario": "你們開銀行，烏龜客人存一顆種子，想百年後領森林。",
+      "question": "你們會接嗎？",
+      "twist": "",
+      "deeperQuestion": "先各提一項你們真的能承諾的事。"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-050",
+    "id": "ponder-v3-party-036",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A free day",
-    "scenario": "Everyone unexpectedly has tomorrow off.",
-    "question": "Suggest activities and make a plan; what goes in?",
+    "title": "Dream hotel",
+    "scenario": "Your hotel charges guests one dream per night.",
+    "question": "What dreams would you accept?",
     "twist": "",
-    "deeperQuestion": "How could you leave room to relax?",
+    "deeperQuestion": "How could someone without good dreams stay?",
     "zh": {
-      "title": "明天放假",
-      "scenario": "大家明天突然都放假。",
-      "question": "每人提一個活動，最後怎樣排？",
+      "title": "夢想旅館",
+      "scenario": "你們開旅館，房租是住客的一個夢。",
+      "question": "你們會收哪種夢？",
       "twist": "",
-      "deeperQuestion": "怎樣保留一段不用趕行程的時間？"
+      "deeperQuestion": "沒有好夢的客人可以怎樣入住？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-051",
+    "id": "ponder-v3-party-037",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A visitor's guide",
-    "scenario": "An alien tries hotpot for the first time.",
-    "question": "What three things would you explain first?",
+    "title": "Tiny-town budget",
+    "scenario": "Your town can afford a slide, a rest house or a stray-cat home.",
+    "question": "Which would you build?",
     "twist": "",
-    "deeperQuestion": "Which custom would be hardest to explain?",
+    "deeperQuestion": "Hear the least popular choice's reasons first.",
     "zh": {
-      "title": "外星人指南",
-      "scenario": "一位外星人第一次來吃火鍋。",
-      "question": "你們會先教他哪三件事？",
+      "title": "小鎮預算",
+      "scenario": "小鎮只有錢造一樣：滑梯、休息屋或流浪貓家。",
+      "question": "你們會選哪個？",
       "twist": "",
-      "deeperQuestion": "哪個習慣最難解釋？"
+      "deeperQuestion": "先聽最少票的一方說理由。"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-052",
+    "id": "ponder-v3-party-038",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A tiny superpower",
-    "scenario": "Invent a superpower useful only for small everyday tasks.",
-    "question": "What would yours be?",
+    "title": "Monster hiring",
+    "scenario": "Hire a fast, chilly rabbit or a slow, kind bear for your shop.",
+    "question": "Whom would you choose?",
     "twist": "",
-    "deeperQuestion": "What problem could your combined powers solve?",
+    "deeperQuestion": "Could you offer the other a different role?",
     "zh": {
-      "title": "辦公室超能力",
-      "scenario": "每人想一個只在日常小事有用的超能力。",
-      "question": "你會選甚麼？",
+      "title": "怪獸招聘",
+      "scenario": "你們要聘一位店員：很快但冷淡的兔，或很慢但溫柔的熊。",
+      "question": "會選誰？",
       "twist": "",
-      "deeperQuestion": "全組能力加起來，可以解決甚麼麻煩？"
+      "deeperQuestion": "你們能替落選者安排另一份工作嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-053",
+    "id": "ponder-v3-party-039",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Our ideal park",
-    "scenario": "Design a small local park.",
-    "question": "Each person can add one feature; what would it be?",
+    "title": "Treasure rules",
+    "scenario": "A chest grows coins daily but stops if anyone takes extra.",
+    "question": "What rule would you make?",
     "twist": "",
-    "deeperQuestion": "How could people of different ages enjoy it?",
+    "deeperQuestion": "Could urgent need change the rule?",
     "zh": {
-      "title": "一間理想公園",
-      "scenario": "你們替附近設計一個小公園。",
-      "question": "每人只能加一樣設施，會加甚麼？",
+      "title": "共享寶箱規則",
+      "scenario": "寶箱每天生金幣，但只要一人多拿就停產。",
+      "question": "你們會訂甚麼規則？",
       "twist": "",
-      "deeperQuestion": "不同年紀的人怎樣都能用到？"
+      "deeperQuestion": "遇上急需用錢的人，規則能改嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-054",
+    "id": "ponder-v3-party-040",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A simple slogan",
-    "scenario": "Choose an ordinary object on the table.",
-    "question": "What exaggerated slogan would you give it?",
+    "title": "Lost-item fairy",
+    "scenario": "A fairy sends lost things to people who need them more, never their owners.",
+    "question": "Would you support it?",
     "twist": "",
-    "deeperQuestion": "What would an extremely honest version say?",
+    "deeperQuestion": "What if it takes your favourite possession?",
     "zh": {
-      "title": "一句廣告",
-      "scenario": "挑桌上一件普通物品。",
-      "question": "你們會替它寫甚麼誇張廣告？",
+      "title": "失物小精靈",
+      "scenario": "精靈把失物送到更需要的人手上，從不還原主。",
+      "question": "你們會支持牠嗎？",
       "twist": "",
-      "deeperQuestion": "換成非常誠實的版本，又會怎樣說？"
+      "deeperQuestion": "如果送走的是你最珍惜的東西呢？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-055",
+    "id": "ponder-v3-party-041",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Three small pleasures",
-    "scenario": "Everyone names an inexpensive pleasure.",
-    "question": "Which three would you put into a weekend?",
+    "title": "Story tax",
+    "scenario": "Your town taxes one true story monthly instead of money.",
+    "question": "What counts as enough?",
     "twist": "",
-    "deeperQuestion": "Which could you do right now?",
+    "deeperQuestion": "Would people with quiet lives be disadvantaged?",
     "zh": {
-      "title": "三樣小幸福",
-      "scenario": "大家各講一件不用太多錢的快樂。",
-      "question": "你們會選哪三件排進週末？",
+      "title": "故事稅",
+      "scenario": "你們城裡不用交錢，每月交一個真實故事。",
+      "question": "甚麼故事才算交足？",
       "twist": "",
-      "deeperQuestion": "哪一件現在就能做到？"
+      "deeperQuestion": "生活平淡的人會吃虧嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-056",
+    "id": "ponder-v3-party-042",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Working in pairs",
-    "scenario": "Work in pairs to design a breakfast.",
-    "question": "What combination would you offer?",
+    "title": "Cloud co-op",
+    "scenario": "Your group farms clouds with different preferences for rain and sun.",
+    "question": "How would you schedule weather?",
     "twist": "",
-    "deeperQuestion": "How did you choose between sweet and savoury?",
+    "deeperQuestion": "Would you still vote during a drought?",
     "zh": {
-      "title": "雙人搭檔",
-      "scenario": "分成兩人一組，設計一份早餐。",
-      "question": "你們想推出甚麼組合？",
+      "title": "雲朵合作社",
+      "scenario": "你們一起養雲，一人喜歡雨、一人喜歡陽光。",
+      "question": "會怎樣安排天氣？",
       "twist": "",
-      "deeperQuestion": "你們怎樣決定甜的還是鹹的？"
+      "deeperQuestion": "農作物快乾死時，還要投票嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-057",
+    "id": "ponder-v3-party-043",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A group playlist",
-    "scenario": "Each person adds a song for an outing.",
-    "question": "What mood would the playlist have?",
+    "title": "Smile currency",
+    "scenario": "Your town uses smiles as money, leaving quiet smilers poor.",
+    "question": "Would you keep the system?",
     "twist": "",
-    "deeperQuestion": "Whose choice surprised you pleasantly?",
+    "deeperQuestion": "What basic service would you make free?",
     "zh": {
-      "title": "共同歌單",
-      "scenario": "每人放一首適合出門玩的歌。",
-      "question": "這張歌單會是甚麼氣氛？",
+      "title": "微笑貨幣",
+      "scenario": "小鎮用微笑付錢，笑得少的人會窮。",
+      "question": "你們會保留這制度嗎？",
       "twist": "",
-      "deeperQuestion": "誰的選曲最出乎你意料？"
+      "deeperQuestion": "你們想加哪種免費基本服務？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-058",
+    "id": "ponder-v3-party-044",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A light debate",
-    "scenario": "Half argue for early starts on holiday and half for sleeping in.",
-    "question": "What reason would you offer?",
+    "title": "Monster pageant",
+    "scenario": "You judge a pageant of monsters unlike human beauty standards.",
+    "question": "What would you reward?",
     "twist": "",
-    "deeperQuestion": "Can you design a morning that suits both sides?",
+    "deeperQuestion": "Could contestants choose the standards?",
     "zh": {
-      "title": "迷你辯論",
-      "scenario": "一半人支持旅行早起，一半人支持睡晚。",
-      "question": "你會用哪個理由說服對方？",
+      "title": "怪物選美",
+      "scenario": "你們當評判，參賽怪物都不符合人類審美。",
+      "question": "你們會評甚麼？",
       "twist": "",
-      "deeperQuestion": "可以設計一個兩邊都滿意的早上嗎？"
+      "deeperQuestion": "可以讓參賽者決定標準嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-059",
+    "id": "ponder-v3-party-045",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A new holiday",
-    "scenario": "Invent a yearly holiday celebrating something ordinary.",
-    "question": "What would it honour?",
+    "title": "Shared cloak",
+    "scenario": "Your group shares an invisibility cloak with different reasons to use it.",
+    "question": "Who goes first?",
     "twist": "",
-    "deeperQuestion": "What small ritual would everyone do that day?",
+    "deeperQuestion": "Should users report where they went?",
     "zh": {
-      "title": "一個新節日",
-      "scenario": "你們可以創一個一年一次的小節日。",
-      "question": "想慶祝甚麼普通事情？",
+      "title": "共享隱形斗篷",
+      "scenario": "你們有一件隱形斗篷，每人想用的原因不同。",
+      "question": "誰先用？",
       "twist": "",
-      "deeperQuestion": "當天大家要做的一個小儀式是甚麼？"
+      "deeperQuestion": "使用的人需要匯報去過哪裡嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-060",
+    "id": "ponder-v3-party-046",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A memory map",
-    "scenario": "Name places tied to memories with friends.",
-    "question": "Which stops would you connect into a route?",
+    "title": "Robot leave",
+    "scenario": "Your chore robot requests two days off weekly.",
+    "question": "Would you approve?",
     "twist": "",
-    "deeperQuestion": "Which stop would you most like to revisit?",
+    "deeperQuestion": "Could it earn extra money elsewhere on days off?",
     "zh": {
-      "title": "共同回憶地圖",
-      "scenario": "輪流說一個跟朋友有回憶的地方。",
-      "question": "你們想把哪幾站連成路線？",
+      "title": "會請假的機器",
+      "scenario": "你們的家務機器人要求每週放假兩天。",
+      "question": "你們會批准嗎？",
       "twist": "",
-      "deeperQuestion": "哪一站最值得再去一次？"
+      "deeperQuestion": "休假時它可以去另一家賺外快嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-061",
+    "id": "ponder-v3-party-047",
     "category": "Party",
     "emoji": "🎉",
-    "title": "One instruction",
-    "scenario": "Teach someone to make tea, one sentence per person.",
-    "question": "What is the first instruction?",
+    "title": "Happiness factory",
+    "scenario": "A factory bottles laughter, leaving workers unable to laugh after work.",
+    "question": "Would you buy it?",
     "twist": "",
-    "deeperQuestion": "Did anyone assume a step was too obvious to mention?",
+    "deeperQuestion": "What change would make buying acceptable?",
     "zh": {
-      "title": "只有一句指示",
-      "scenario": "你們要教人怎樣沖一杯茶，但每人只能說一句。",
-      "question": "第一句會是甚麼？",
+      "title": "快樂工廠",
+      "scenario": "工廠把笑聲裝瓶賣，但工人下班就笑不出。",
+      "question": "你們會買嗎？",
       "twist": "",
-      "deeperQuestion": "有沒有哪一步被大家以為不用說？"
+      "deeperQuestion": "怎樣改規則你們才願意買？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-062",
+    "id": "ponder-v3-party-048",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A welcome gift",
-    "scenario": "A new friend joins.",
-    "question": "Make a symbolic welcome gift from objects nearby; what would you use?",
+    "title": "Last spaceship",
+    "scenario": "A spaceship has three seats for four people with urgent reasons.",
+    "question": "How should you decide?",
     "twist": "",
-    "deeperQuestion": "What welcome message would you add?",
+    "deeperQuestion": "Who would offer an alternative first?",
     "zh": {
-      "title": "一份歡迎禮",
-      "scenario": "有新朋友加入聚會。",
-      "question": "你們用現場物品設計一份象徵式歡迎禮，會用甚麼？",
+      "title": "末班飛船",
+      "scenario": "飛船只餘三個座位，你們四人各有非去不可的理由。",
+      "question": "怎樣決定？",
       "twist": "",
-      "deeperQuestion": "你想附上哪一句歡迎的話？"
+      "deeperQuestion": "誰願意先提出替代方案？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-063",
+    "id": "ponder-v3-party-049",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A silly sports day",
-    "scenario": "Invent a competition that needs no running or jumping.",
-    "question": "What is your event?",
+    "title": "Kind-lie shop",
+    "scenario": "Your shop sells only comforting lies.",
+    "question": "What is its first product?",
     "twist": "",
-    "deeperQuestion": "How could everyone join easily?",
+    "deeperQuestion": "What lie would you refuse to sell?",
     "zh": {
-      "title": "荒謬運動會",
-      "scenario": "每人設計一個不用跑跳的比賽。",
-      "question": "你的項目是甚麼？",
+      "title": "善意謊話店",
+      "scenario": "你們開店，只能賣讓人好受的謊話。",
+      "question": "第一件商品會是甚麼？",
       "twist": "",
-      "deeperQuestion": "怎樣讓所有人都容易參加？"
+      "deeperQuestion": "哪種謊話你們拒絕上架？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-064",
+    "id": "ponder-v3-party-050",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A restaurant panel",
-    "scenario": "You are reviewing a restaurant with only three criteria.",
-    "question": "What would they be?",
+    "title": "Voting trees",
+    "scenario": "Park trees request city votes and live far longer than humans.",
+    "question": "How would you assign votes?",
     "twist": "",
-    "deeperQuestion": "Which criterion had you not considered before?",
+    "deeperQuestion": "Would a sapling get a full vote?",
     "zh": {
-      "title": "餐廳評審團",
-      "scenario": "你們評一家餐廳，只能訂三個標準。",
-      "question": "會選哪三個？",
+      "title": "會投票的樹",
+      "scenario": "公園樹木要求參與城市投票，但每棵樹活得比人久。",
+      "question": "你們會怎樣分票？",
       "twist": "",
-      "deeperQuestion": "哪個標準是你們原本沒想到的？"
+      "deeperQuestion": "新種的小樹也有完整一票嗎？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-065",
+    "id": "ponder-v3-party-051",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Two-sentence introductions",
-    "scenario": "Introduce a hobby in two sentences.",
-    "question": "What would you want everyone to know?",
+    "title": "Friendship shares",
+    "scenario": "Your friendship becomes a company, with shares based on time contributed.",
+    "question": "Would you list it?",
     "twist": "",
-    "deeperQuestion": "Which hobby made you want to ask more?",
+    "deeperQuestion": "How would you count a busy but valued friend?",
     "zh": {
-      "title": "兩句介紹",
-      "scenario": "每人用兩句話介紹一項興趣。",
-      "question": "你最想讓大家知道甚麼？",
+      "title": "友誼股份",
+      "scenario": "朋友圈變成公司，付出時間最多的人股份最多。",
+      "question": "你們會上市嗎？",
       "twist": "",
-      "deeperQuestion": "哪個興趣讓你想多問一句？"
+      "deeperQuestion": "忙碌但重要的朋友怎樣算？"
     },
     "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-066",
+    "id": "ponder-v3-party-052",
     "category": "Party",
     "emoji": "🎉",
-    "title": "An unexpected task",
-    "scenario": "You have ten minutes before a guest arrives.",
-    "question": "What three things would you do first?",
-    "twist": "",
-    "deeperQuestion": "What could you leave alone?",
-    "zh": {
-      "title": "突發小任務",
-      "scenario": "你們要在十分鐘內迎接一位客人。",
-      "question": "先做哪三件事？",
-      "twist": "",
-      "deeperQuestion": "哪件事可以不用管？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-067",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "An idea to keep",
-    "scenario": "You have heard everyone's ideas.",
-    "question": "Which would you like to try?",
-    "twist": "",
-    "deeperQuestion": "Who would you invite to join you?",
-    "zh": {
-      "title": "帶走一個點子",
-      "scenario": "大家剛分享了各自的點子。",
-      "question": "你最想試哪個人的一個點子？",
-      "twist": "",
-      "deeperQuestion": "你想邀誰一起做？"
-    },
-    "groupSize": "medium"
-  },
-  {
-    "id": "ponder-v2-party-068",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Sweet or savoury",
-    "scenario": "Everyone chooses a sweet or savoury breakfast at once.",
-    "question": "Which side are you on?",
-    "twist": "",
-    "deeperQuestion": "Ask one person from each side for a recommendation.",
-    "zh": {
-      "title": "甜鹹投票",
-      "scenario": "大家同時選甜早餐或鹹早餐。",
-      "question": "你站哪一邊？",
-      "twist": "",
-      "deeperQuestion": "請兩邊各一人推薦一款早餐。"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-069",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Early or late",
-    "scenario": "Everyone chooses early mornings or late nights.",
-    "question": "Which group is larger?",
-    "twist": "",
-    "deeperQuestion": "Invite one person from each side to say what they enjoy about it.",
-    "zh": {
-      "title": "早鳥夜貓",
-      "scenario": "大家同時選早起或晚睡。",
-      "question": "哪一邊人比較多？",
-      "twist": "",
-      "deeperQuestion": "各請一人講一個喜歡那段時間的理由。"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-070",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A one-line update",
-    "scenario": "Each person gives a one-sentence update about a small discovery.",
-    "question": "What would yours be?",
-    "twist": "",
-    "deeperQuestion": "Which answer would you like to hear more about later?",
-    "zh": {
-      "title": "一句近況",
-      "scenario": "每人只用一句話講最近的小發現。",
-      "question": "你會分享甚麼？",
-      "twist": "",
-      "deeperQuestion": "有哪個答案讓你想稍後再聊？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-071",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Find a shared interest",
-    "scenario": "Pair up and take thirty seconds to find a shared interest.",
-    "question": "What did you find?",
-    "twist": "",
-    "deeperQuestion": "Could you find a different shared interest with a new partner?",
-    "zh": {
-      "title": "快速找同好",
-      "scenario": "兩人一組，用三十秒找一個共同喜好。",
-      "question": "你們找到了甚麼？",
-      "twist": "",
-      "deeperQuestion": "換一位搭檔，能不能找到不同的共同點？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-072",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Sea or hills",
-    "scenario": "For your next outing, choose the seaside or the hills.",
-    "question": "What is your vote?",
-    "twist": "",
-    "deeperQuestion": "Can anyone think of a place with a little of both?",
-    "zh": {
-      "title": "海邊山上",
-      "scenario": "下一次出遊，大家選海邊或山上。",
-      "question": "你會怎樣投？",
-      "twist": "",
-      "deeperQuestion": "誰想到一個兩者都能沾邊的地方？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-073",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Party soundtrack",
-    "scenario": "Use one word each for the music you want.",
-    "question": "What direction would the playlist take?",
-    "twist": "",
-    "deeperQuestion": "Could each taste get a turn for one song?",
-    "zh": {
-      "title": "聚會配樂",
-      "scenario": "每人用一個詞形容想聽的音樂。",
-      "question": "今晚的歌單會偏向甚麼？",
-      "twist": "",
-      "deeperQuestion": "可以輪流讓不同口味都有一首嗎？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-074",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Our group gesture",
-    "scenario": "In small groups, invent a simple gesture.",
-    "question": "Which would work for tonight's group photo?",
-    "twist": "",
-    "deeperQuestion": "What alternative could someone use if they prefer not to pose?",
-    "zh": {
-      "title": "全場招牌動作",
-      "scenario": "分成小組，各想一個簡單手勢。",
-      "question": "哪個最適合做今晚的合照動作？",
-      "twist": "",
-      "deeperQuestion": "不想做動作的人可以用甚麼替代？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-075",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A quick recommendation",
-    "scenario": "Each person gets ten seconds to recommend something they enjoy.",
-    "question": "What is yours?",
-    "twist": "",
-    "deeperQuestion": "Which recommendation attracts the most interest?",
-    "zh": {
-      "title": "最短推薦",
-      "scenario": "每人十秒推薦一樣最近喜歡的事物。",
-      "question": "你想介紹甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪一項最多人想試？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-076",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Snack final",
-    "scenario": "Nominate four snacks, then vote for one favourite.",
-    "question": "What is your pick?",
-    "twist": "",
-    "deeperQuestion": "What alternative could include different dietary needs?",
-    "zh": {
-      "title": "零食決賽",
-      "scenario": "大家提名四款零食，再選最想吃的一款。",
-      "question": "你會投哪款？",
-      "twist": "",
-      "deeperQuestion": "如果要照顧不同飲食需要，可以加甚麼選擇？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-077",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Two choices",
-    "scenario": "The host offers two choices: planned or spontaneous.",
-    "question": "Everyone answers at once; which are you?",
-    "twist": "",
-    "deeperQuestion": "Invite one person from each side to share a good experience.",
-    "zh": {
-      "title": "左右手選擇",
-      "scenario": "主持人問「計劃好，還是隨興玩」。",
-      "question": "大家同時選，你偏哪種？",
-      "twist": "",
-      "deeperQuestion": "各請一人分享一次玩得開心的例子。"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-078",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A word relay",
-    "scenario": "Add one word each to create an outrageous event name.",
-    "question": "What would you add?",
-    "twist": "",
-    "deeperQuestion": "What would this event actually involve?",
-    "zh": {
-      "title": "活動名字接龍",
-      "scenario": "每人加一個詞，合寫一個誇張活動名稱。",
-      "question": "輪到你會加甚麼？",
-      "twist": "",
-      "deeperQuestion": "最後這個活動到底在做甚麼？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-079",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Teams of three",
-    "scenario": "Form small teams of about three and choose a name.",
-    "question": "What is yours?",
-    "twist": "",
-    "deeperQuestion": "What simple gesture would introduce your team?",
-    "zh": {
-      "title": "三人小隊",
-      "scenario": "分成三人左右的小組，替小隊取一個名字。",
-      "question": "你們想叫甚麼？",
-      "twist": "",
-      "deeperQuestion": "用哪個小動作介紹你們？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-080",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Tiny powers",
-    "scenario": "Each person names an everyday superpower in one sentence.",
-    "question": "What is yours?",
-    "twist": "",
-    "deeperQuestion": "Which powers would work well together?",
-    "zh": {
-      "title": "最小的超能力",
-      "scenario": "每人用一句話說一個日常超能力。",
-      "question": "你的能力是甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪些能力組合起來最方便？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-081",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "Guess the number",
-    "scenario": "Guess how many people here enjoy rainy days, then reveal the answers.",
-    "question": "What is your guess?",
-    "twist": "",
-    "deeperQuestion": "Ask someone who likes rain what they enjoy doing then.",
-    "zh": {
-      "title": "猜數量",
-      "scenario": "先猜今晚有多少人喜歡下雨天，再揭曉。",
-      "question": "你的估計是多少？",
-      "twist": "",
-      "deeperQuestion": "請一位喜歡雨天的人分享最愛做的事。"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-082",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A shared list",
-    "scenario": "Go around naming free activities without repeating.",
-    "question": "What would you add?",
-    "twist": "",
-    "deeperQuestion": "Which could become your next gathering?",
-    "zh": {
-      "title": "共同清單",
-      "scenario": "全場輪流說一個不用花錢的活動，不能重複。",
-      "question": "你會加甚麼？",
-      "twist": "",
-      "deeperQuestion": "哪個可以留作下次聚會？"
-    },
-    "groupSize": "large"
-  },
-  {
-    "id": "ponder-v2-party-083",
-    "category": "Party",
-    "emoji": "🎉",
-    "title": "A colour check-in",
-    "scenario": "Each person describes today with a colour.",
+    "title": "Memory gallery",
+    "scenario": "Each person exhibits one memory with everyone involved consenting.",
     "question": "Which would you choose?",
     "twist": "",
-    "deeperQuestion": "Would anyone like to explain their choice in one sentence?",
+    "deeperQuestion": "If someone objects, would anonymity be enough?",
     "zh": {
-      "title": "今天像甚麼",
-      "scenario": "每人用一種顏色形容今天。",
-      "question": "你會選甚麼顏色？",
+      "title": "記憶展覽館",
+      "scenario": "你們合辦展覽，每人只展一段回憶，但要得到當中所有人同意。",
+      "question": "你會選哪段？",
       "twist": "",
-      "deeperQuestion": "想解釋的人，可以用一句話說原因嗎？"
+      "deeperQuestion": "有人反對，能改成匿名嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-084",
+    "id": "ponder-v3-party-053",
     "category": "Party",
     "emoji": "🎉",
-    "title": "City or countryside",
-    "scenario": "For a day off, choose exploring the city or relaxing outside it.",
-    "question": "Which do you prefer?",
+    "title": "Dragon fire brigade",
+    "scenario": "A hardworking fire-breathing dragon wants to join the fire brigade but hiccups often.",
+    "question": "Would you accept it?",
     "twist": "",
-    "deeperQuestion": "Let each side suggest an easy destination.",
+    "deeperQuestion": "What role could it start with?",
     "zh": {
-      "title": "城市還是郊外",
-      "scenario": "有一日假期，大家選城市閒逛或郊外放空。",
-      "question": "你想去哪邊？",
+      "title": "小龍消防隊",
+      "scenario": "噴火小龍想當消防員，牠很努力卻容易打嗝。",
+      "question": "你們會收牠嗎？",
       "twist": "",
-      "deeperQuestion": "兩邊各提一個不用太多準備的去處。"
+      "deeperQuestion": "可以讓牠先做哪項工作？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-085",
+    "id": "ponder-v3-party-054",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A group poster",
-    "scenario": "In small groups, create a poster slogan for tonight.",
-    "question": "What would it say?",
+    "title": "Fair cake",
+    "scenario": "A cake divides by need or by contribution, never both.",
+    "question": "Which would your group choose?",
     "twist": "",
-    "deeperQuestion": "Which best matches the actual mood?",
+    "deeperQuestion": "How would a child and the baker fare?",
     "zh": {
-      "title": "合作海報",
-      "scenario": "分成小組，替今晚聚會想一句海報標語。",
-      "question": "你們會寫甚麼？",
+      "title": "公平蛋糕",
+      "scenario": "魔法蛋糕能按需要或按付出分配，兩種只能選一種。",
+      "question": "你們選哪種？",
       "twist": "",
-      "deeperQuestion": "哪句最貼近今晚真實氣氛？"
+      "deeperQuestion": "小孩和做蛋糕的人怎樣分？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-086",
+    "id": "ponder-v3-party-055",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Everyday bingo",
-    "scenario": "Name one small thing you did today; others signal if they did it too.",
-    "question": "What is yours?",
+    "title": "Sleepless town",
+    "scenario": "Only a bear's song can soothe a sleepless town, but the bear is exhausted.",
+    "question": "Would you wake it?",
     "twist": "",
-    "deeperQuestion": "Which turned out to be most common?",
+    "deeperQuestion": "What would you offer in return?",
     "zh": {
-      "title": "小事賓果",
-      "scenario": "每人說一件今天做過的小事，有做過的人示意。",
-      "question": "你會說哪件？",
+      "title": "全城失眠",
+      "scenario": "全城睡不著，只有一隻熊唱歌能幫忙，但牠也很累。",
+      "question": "你們會叫醒牠嗎？",
       "twist": "",
-      "deeperQuestion": "哪件事原來最多人都做過？"
+      "deeperQuestion": "你們願意給牠甚麼交換？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-087",
+    "id": "ponder-v3-party-056",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A welcome line",
-    "scenario": "In small groups, think of an opening line that helps a newcomer relax.",
-    "question": "What is yours?",
+    "title": "Pet district",
+    "scenario": "Pets want a self-governing district where humans need invitations.",
+    "question": "Would you support it?",
     "twist": "",
-    "deeperQuestion": "What common opening question can feel pressuring?",
+    "deeperQuestion": "What if they still request food deliveries?",
     "zh": {
-      "title": "一句歡迎",
-      "scenario": "分成小組，想一句讓新人放鬆的開場白。",
-      "question": "你們會怎樣說？",
+      "title": "寵物自治區",
+      "scenario": "寵物要成立自治區，人類只能受邀進入。",
+      "question": "你們支持嗎？",
       "twist": "",
-      "deeperQuestion": "哪種常見問題反而容易讓人有壓力？"
+      "deeperQuestion": "牠們仍要求人類送食物呢？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-088",
+    "id": "ponder-v3-party-057",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Our own holiday",
-    "scenario": "Each small group proposes a fun holiday, then everyone picks one.",
-    "question": "What would yours celebrate?",
+    "title": "Wish raffle",
+    "scenario": "One person's wish wins a raffle, but everyone pays its cost.",
+    "question": "Would you join?",
     "twist": "",
-    "deeperQuestion": "What is the simplest way to celebrate it?",
+    "deeperQuestion": "Must the costs be revealed before drawing?",
     "zh": {
-      "title": "共同節日",
-      "scenario": "各小組提議一個有趣節日，再全場選一個。",
-      "question": "你們想慶祝甚麼？",
+      "title": "願望抽獎",
+      "scenario": "每人寫一個願望，只抽中一人，但大家一起付代價。",
+      "question": "你們願意參加嗎？",
       "twist": "",
-      "deeperQuestion": "當天最簡單的慶祝動作是甚麼？"
+      "deeperQuestion": "要先公開代價才抽嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-089",
+    "id": "ponder-v3-party-058",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A direction to go",
-    "scenario": "Everyone names one place they want to visit.",
-    "question": "What pattern appears in the answers?",
+    "title": "Island laws",
+    "scenario": "Your group receives an island with only three laws.",
+    "question": "What would you protect first?",
     "twist": "",
-    "deeperQuestion": "Could a few people plan the same small outing?",
+    "deeperQuestion": "Which law could newcomers change?",
     "zh": {
-      "title": "想去的方向",
-      "scenario": "每人只說一個想去的地方。",
-      "question": "大家的答案最常落在哪一類？",
+      "title": "秘密小島法律",
+      "scenario": "你們得到一座小島，只能訂三條法律。",
+      "question": "你最想保護甚麼？",
       "twist": "",
-      "deeperQuestion": "有沒有幾個人可以約同一個小行程？"
+      "deeperQuestion": "哪條法律可以讓新人修改？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-090",
+    "id": "ponder-v3-party-059",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Ten-second introductions",
-    "scenario": "Give the person beside you a ten-second introduction to a hobby.",
-    "question": "What would you say?",
+    "title": "Bear millionaire",
+    "scenario": "A wealthy bear buys everyone's jobs so the village can rest.",
+    "question": "Would you support it?",
     "twist": "",
-    "deeperQuestion": "What did they most want you to know?",
+    "deeperQuestion": "What could someone who still wants to work do?",
     "zh": {
-      "title": "十秒介紹",
-      "scenario": "跟身旁的人各用十秒介紹一項興趣。",
-      "question": "你想講甚麼？",
+      "title": "小熊富豪",
+      "scenario": "小熊中了巨獎，想把全村工作都買下讓大家休息。",
+      "question": "你們會支持嗎？",
       "twist": "",
-      "deeperQuestion": "你記得對方最想讓你知道哪一點？"
+      "deeperQuestion": "還想工作的人可以怎樣做？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-091",
+    "id": "ponder-v3-party-060",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Quiet or lively",
-    "scenario": "For an ideal weekend, choose quiet or lively.",
-    "question": "What is your answer today?",
+    "title": "Bad-luck wheel",
+    "scenario": "One person can take the group's bad luck for a year.",
+    "question": "Would you choose by lottery?",
     "twist": "",
-    "deeperQuestion": "Would your answer change after a busy week?",
+    "deeperQuestion": "Would volunteering make it acceptable?",
     "zh": {
-      "title": "安靜或熱鬧",
-      "scenario": "理想週末，大家選安靜還是熱鬧。",
-      "question": "你今天的答案是甚麼？",
+      "title": "倒楣輪盤",
+      "scenario": "一人承受小組所有倒楣，其他人就順利一年。",
+      "question": "你們會用抽籤選嗎？",
       "twist": "",
-      "deeperQuestion": "你的答案會隨這星期忙不忙而改嗎？"
+      "deeperQuestion": "有人自願就可以嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-092",
+    "id": "ponder-v3-party-061",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Create a character",
-    "scenario": "Each group invents a character who only helps with tiny tasks.",
-    "question": "What do they do?",
+    "title": "Good-person badge",
+    "scenario": "Badges count good deeds but hide motives.",
+    "question": "Would you use them to choose teammates?",
     "twist": "",
-    "deeperQuestion": "What tiny problem is the character afraid of?",
+    "deeperQuestion": "Do deeds done for the badge count?",
     "zh": {
-      "title": "一起創角色",
-      "scenario": "每個小組設計一個只會幫小忙的角色。",
-      "question": "他會做甚麼？",
+      "title": "好人徽章",
+      "scenario": "徽章會顯示一人做過多少好事，但不顯示原因。",
+      "question": "你們會用來選隊友嗎？",
       "twist": "",
-      "deeperQuestion": "這個角色最怕哪種小麻煩？"
+      "deeperQuestion": "為拿徽章而做的好事算嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-093",
+    "id": "ponder-v3-party-062",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Casting a team",
-    "scenario": "Each group is making a short adventure film.",
-    "question": "What setting would you choose?",
+    "title": "Angry park",
+    "scenario": "A littered park wants to admit only well-behaved visitors.",
+    "question": "Would you grant that right?",
     "twist": "",
-    "deeperQuestion": "Describe the first scene in one sentence.",
+    "deeperQuestion": "How could someone earn another chance?",
     "zh": {
-      "title": "電影選角",
-      "scenario": "每個小組要拍一部冒險短片。",
-      "question": "你們想選甚麼場景？",
+      "title": "會生氣的公園",
+      "scenario": "公園厭倦被弄髒，想只讓守規矩的人進去。",
+      "question": "你們會給它這個權利嗎？",
       "twist": "",
-      "deeperQuestion": "用一句話說明第一幕發生甚麼。"
+      "deeperQuestion": "犯過錯的人怎樣重新入場？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-094",
+    "id": "ponder-v3-party-063",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A breakfast map",
-    "scenario": "Each person names a local or usual breakfast.",
-    "question": "Which would people most like to try?",
+    "title": "Different endings",
+    "scenario": "You watch a film together but each sees a different desired ending.",
+    "question": "Is it a shared experience?",
     "twist": "",
-    "deeperQuestion": "What would its recommender serve with it?",
+    "deeperQuestion": "Would you swap endings for another viewing?",
     "zh": {
-      "title": "早餐地圖",
-      "scenario": "每人說一款家鄉或常吃的早餐。",
-      "question": "全場最想試哪款？",
+      "title": "一人一個結局",
+      "scenario": "你們同看一部電影，每人只會看見自己最想要的結局。",
+      "question": "看完還算一起看嗎？",
       "twist": "",
-      "deeperQuestion": "介紹者會建議怎樣配搭？"
+      "deeperQuestion": "你們想交換結局再看嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-095",
+    "id": "ponder-v3-party-064",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A day to repeat",
-    "scenario": "Each person names a kind of good day they would repeat.",
-    "question": "What is yours?",
+    "title": "Slow day",
+    "scenario": "You can slow the town for a day, delaying every order.",
+    "question": "Would you press it?",
     "twist": "",
-    "deeperQuestion": "Do the answers share any elements?",
+    "deeperQuestion": "Should urgent needs be exceptions?",
     "zh": {
-      "title": "想重來的一天",
-      "scenario": "每人只講一種想再過一次的好日子。",
-      "question": "你會選甚麼？",
+      "title": "全城慢一天",
+      "scenario": "你們能讓全城慢下來一天，但所有訂單都延遲。",
+      "question": "你們會按嗎？",
       "twist": "",
-      "deeperQuestion": "大家的答案裡，有沒有共同元素？"
+      "deeperQuestion": "急用東西的人應該有例外嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-096",
+    "id": "ponder-v3-party-065",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Design a game",
-    "scenario": "Each group designs a game using only one sheet of paper.",
-    "question": "How does it work?",
+    "title": "Naming the moon",
+    "scenario": "A donor will clear the town's debts if the moon takes their name.",
+    "question": "Would you agree?",
     "twist": "",
-    "deeperQuestion": "Could you teach another group in thirty seconds?",
+    "deeperQuestion": "What if the name is a brand?",
     "zh": {
-      "title": "簡單遊戲設計",
-      "scenario": "每個小組設計一個只需一張紙的遊戲。",
-      "question": "你們的玩法是甚麼？",
+      "title": "月亮冠名",
+      "scenario": "有人願意替小鎮付清欠款，條件是月亮改成他的名字。",
+      "question": "你們會答應嗎？",
       "twist": "",
-      "deeperQuestion": "能不能用三十秒教懂另一組？"
+      "deeperQuestion": "如果名字只是廣告品牌呢？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-097",
+    "id": "ponder-v3-party-066",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A new idea",
-    "scenario": "Talk with someone you have not spoken to tonight and trade a small recommendation.",
-    "question": "What is yours?",
+    "title": "Shared shoes",
+    "scenario": "Wearing another's shoes for an hour reveals their life's weight.",
+    "question": "Who would swap first?",
     "twist": "",
-    "deeperQuestion": "What new idea did you get from them?",
+    "deeperQuestion": "Could you take them off early if overwhelmed?",
     "zh": {
-      "title": "聽見新點子",
-      "scenario": "找一位今晚還沒聊過的人，互相推薦一件小事。",
-      "question": "你想推薦甚麼？",
+      "title": "同一雙鞋",
+      "scenario": "你們各穿一小時別人的魔法鞋，就會感受到他的生活重量。",
+      "question": "誰先交換？",
       "twist": "",
-      "deeperQuestion": "你從對方那裡得到哪個新點子？"
+      "deeperQuestion": "感到太重時可以提早脫嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-098",
+    "id": "ponder-v3-party-067",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Vote for next time",
-    "scenario": "Each group proposes an activity for next time, then everyone votes.",
-    "question": "What is your proposal?",
+    "title": "Last wish",
+    "scenario": "A fairy has one wish left; everyone proposes one but cannot vote for themselves.",
+    "question": "Whom would you support?",
     "twist": "",
-    "deeperQuestion": "How could people with limited time join?",
+    "deeperQuestion": "Should the least popular wish get more time?",
     "zh": {
-      "title": "下一場投票",
-      "scenario": "每組提一個下次聚會活動，再全場投票。",
-      "question": "你們會提議甚麼？",
+      "title": "最後的願望",
+      "scenario": "精靈只餘一個願望，你們能各提一案但不能投自己。",
+      "question": "你會支持誰？",
       "twist": "",
-      "deeperQuestion": "怎樣讓時間不多的人也能加入？"
+      "deeperQuestion": "最少人支持的願望值得聽多一點嗎？"
     },
-    "groupSize": "large"
+    "groupSize": "medium"
   },
   {
-    "id": "ponder-v2-party-099",
+    "id": "ponder-v3-party-068",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A positive word",
-    "scenario": "Use one word each for a feeling from tonight you would like to keep.",
-    "question": "What is yours?",
+    "title": "Memories or coins",
+    "scenario": "Everyone chooses a bag of coins or reliving a happy afternoon.",
+    "question": "Which side are you on?",
     "twist": "",
-    "deeperQuestion": "What activity helped create that feeling?",
+    "deeperQuestion": "Ask one person per side what they hope to gain.",
     "zh": {
-      "title": "一個好詞",
-      "scenario": "每人用一個詞形容今晚想保留的感覺。",
-      "question": "你會用哪個詞？",
+      "title": "記憶還是金幣",
+      "scenario": "全場選：拿一袋金幣，或重過一個快樂下午。",
+      "question": "你站哪邊？",
       "twist": "",
-      "deeperQuestion": "哪一個活動帶來了這種感覺？"
+      "deeperQuestion": "兩邊各請一人講最想換到甚麼。"
     },
     "groupSize": "large"
   },
   {
-    "id": "ponder-v2-party-100",
+    "id": "ponder-v3-party-069",
     "category": "Party",
     "emoji": "🎉",
-    "title": "Before goodbye",
-    "scenario": "Before leaving, have one more exchange with someone.",
-    "question": "Which topic would you continue?",
+    "title": "Flight or invisibility",
+    "scenario": "Magic offers flight or invisibility.",
+    "question": "Everyone picks together; which is yours?",
     "twist": "",
-    "deeperQuestion": "How could you arrange to continue another time?",
+    "deeperQuestion": "Each side share one use unrelated to money.",
     "zh": {
-      "title": "告別前一問",
-      "scenario": "離開前，跟一個人再聊一句。",
-      "question": "你最想延續今晚哪個話題？",
+      "title": "飛行還是隱形",
+      "scenario": "魔法只送一種能力：飛行或隱形。",
+      "question": "大家同時選，你選哪個？",
       "twist": "",
-      "deeperQuestion": "你們想怎樣約下一次再聊？"
+      "deeperQuestion": "各邊分享一個不為賺錢的用途。"
     },
     "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-001",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Today's energy",
-    "scenario": "Pause and check in with yourself.",
-    "question": "How full does your battery feel today?",
+    "id": "ponder-v3-party-070",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Endless spring",
+    "scenario": "The town votes on endless spring at the cost of snow.",
+    "question": "Would you vote yes?",
     "twist": "",
-    "deeperQuestion": "What would help in the next ten minutes?",
+    "deeperQuestion": "Ask someone in the minority what they want to keep.",
     "zh": {
-      "title": "今天的電量",
-      "scenario": "停下來看看今天的自己。",
-      "question": "你現在的精神像幾成滿的電池？",
+      "title": "永遠春天",
+      "scenario": "全城投票要不要永遠春天，代價是再沒有雪。",
+      "question": "你投贊成嗎？",
       "twist": "",
-      "deeperQuestion": "接下來十分鐘，做甚麼會幫到你？"
-    }
+      "deeperQuestion": "請一位少數派講想保留甚麼。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-002",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Something finished",
-    "scenario": "Look back on today without searching for a big achievement.",
-    "question": "What small thing did you finish?",
+    "id": "ponder-v3-party-071",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Dreams or luck",
+    "scenario": "Choose a hat for lovely dreams or good daytime luck.",
+    "question": "Which would you wear?",
     "twist": "",
-    "deeperQuestion": "How would you acknowledge that effort?",
+    "deeperQuestion": "What would make you change hats?",
     "zh": {
-      "title": "一件完成的事",
-      "scenario": "回想今天，不用挑大事。",
-      "question": "你完成了哪一件小事？",
+      "title": "好夢還是好運",
+      "scenario": "每人選一頂帽：夜夜好夢，或白天小事順利。",
+      "question": "你戴哪頂？",
       "twist": "",
-      "deeperQuestion": "你想怎樣肯定這份努力？"
-    }
+      "deeperQuestion": "甚麼條件會令你換帽？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-003",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "The loudest thought",
-    "scenario": "One topic has been on your mind lately.",
-    "question": "What sentence keeps coming back?",
+    "id": "ponder-v3-party-072",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Dragon teams",
+    "scenario": "A dragon joins only people who let it fly away freely.",
+    "question": "Discuss in teams: would you adopt it?",
     "twist": "",
-    "deeperQuestion": "Which part of that sentence do you know is true?",
+    "deeperQuestion": "Each team offer one promise that does not trap it.",
     "zh": {
-      "title": "腦裡最吵",
-      "scenario": "你最近一直想著一件事。",
-      "question": "最常冒出來的是哪一句話？",
+      "title": "小龍分隊",
+      "scenario": "小龍只跟願意讓牠自由飛走的人回家。",
+      "question": "分組商量，你們會領養嗎？",
       "twist": "",
-      "deeperQuestion": "這句話裡，哪一部分你已經知道是真的？"
-    }
+      "deeperQuestion": "每組說一條不綁住牠的約定。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-004",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "One first step",
-    "scenario": "There is something you keep putting off.",
-    "question": "What is the smallest step you could take today?",
+    "id": "ponder-v3-party-073",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Free bread",
+    "scenario": "A bakery gives free bread for public admissions of failure.",
+    "question": "Who would queue?",
     "twist": "",
-    "deeperQuestion": "What would you need to prepare first?",
+    "deeperQuestion": "Would anonymous stories be enough?",
     "zh": {
-      "title": "先做一步",
-      "scenario": "有一件事你一直拖著。",
-      "question": "今天最小的一步可以是甚麼？",
+      "title": "免費麵包",
+      "scenario": "麵包店免費送麵包，但每人要公開說一件失敗。",
+      "question": "全場誰願意排隊？",
       "twist": "",
-      "deeperQuestion": "你需要先準備哪樣東西？"
-    }
+      "deeperQuestion": "可以用匿名故事代替嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-005",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A rest menu",
-    "scenario": "You have twenty minutes with no obligations.",
-    "question": "How would you spend them?",
+    "id": "ponder-v3-party-074",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Time or money",
+    "scenario": "Choose an extra day off or a cash bonus, never both.",
+    "question": "Which do you want?",
     "twist": "",
-    "deeperQuestion": "Would it restore your energy or simply pass time?",
+    "deeperQuestion": "First hear someone who chose differently.",
     "zh": {
-      "title": "休息選單",
-      "scenario": "你有二十分鐘不用交代給任何人。",
-      "question": "你最想怎樣過？",
+      "title": "時間還是錢",
+      "scenario": "每人選多一天假期或一筆獎金，兩者不能兼得。",
+      "question": "你想要哪個？",
       "twist": "",
-      "deeperQuestion": "這件事會讓你充電，還是只是打發時間？"
-    }
+      "deeperQuestion": "先聽跟你不同選擇的人說原因。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-006",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A good moment",
-    "scenario": "Think of a decent moment this week.",
-    "question": "Where were you?",
+    "id": "ponder-v3-party-075",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Honest town",
+    "scenario": "Everyone considers moving to a town where lying is impossible.",
+    "question": "Would you move?",
     "twist": "",
-    "deeperQuestion": "What detail made it pleasant?",
+    "deeperQuestion": "Each side name one situation that worries you.",
     "zh": {
-      "title": "一個好時刻",
-      "scenario": "想起這星期一個還不錯的時刻。",
-      "question": "當時你在哪裡？",
+      "title": "不會說謊的鎮",
+      "scenario": "全場決定要不要搬進不能說謊的小鎮。",
+      "question": "你會搬嗎？",
       "twist": "",
-      "deeperQuestion": "哪個細節讓那一刻舒服？"
-    }
+      "deeperQuestion": "每邊各提一個你擔心的場面。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-007",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What I want",
-    "scenario": "You have been wanting to buy something.",
-    "question": "What do you hope it will help with?",
+    "id": "ponder-v3-party-076",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "One star each",
+    "scenario": "Everyone can light a star for a stranger, never themselves.",
+    "question": "Who would yours be for?",
     "twist": "",
-    "deeperQuestion": "Is there another way without buying it?",
+    "deeperQuestion": "Did anyone's answer change your choice?",
     "zh": {
-      "title": "真的想要",
-      "scenario": "你最近想買一樣東西。",
-      "question": "你希望它幫你解決甚麼？",
+      "title": "每人一顆星",
+      "scenario": "每人能替陌生人點亮一顆星，但不能替自己。",
+      "question": "你想給哪種人？",
       "twist": "",
-      "deeperQuestion": "不用買它，有沒有別的方法？"
-    }
+      "deeperQuestion": "有誰的答案讓你想改選？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-008",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "People who help",
-    "scenario": "Think of people you have seen recently.",
-    "question": "Who left you feeling more energized?",
+    "id": "ponder-v3-party-077",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Island teams",
+    "scenario": "Teams found islands named for their most important value.",
+    "question": "What is yours called?",
     "twist": "",
-    "deeperQuestion": "What do you like about your time together?",
+    "deeperQuestion": "Could someone who disagrees live there?",
     "zh": {
-      "title": "跟誰相處",
-      "scenario": "想起最近見過的人。",
-      "question": "跟誰見面後，你比較有精神？",
+      "title": "小島隊名",
+      "scenario": "分組建立一座小島，名字必須代表最重要的一個價值。",
+      "question": "你們叫甚麼？",
       "twist": "",
-      "deeperQuestion": "你喜歡你們相處的哪一點？"
-    }
+      "deeperQuestion": "不同意那價值的人能住嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-009",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A small no",
-    "scenario": "There is an invitation you do not really want to accept.",
-    "question": "How would you decline?",
+    "id": "ponder-v3-party-078",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Slow or fast",
+    "scenario": "Choose a free slow train or a paid fast one to the same place.",
+    "question": "Which would you board?",
     "twist": "",
-    "deeperQuestion": "What worries you most about saying no?",
+    "deeperQuestion": "What if your friends take the other?",
     "zh": {
-      "title": "一次拒絕",
-      "scenario": "最近有個邀請你不太想接受。",
-      "question": "你想怎樣婉拒？",
+      "title": "慢車快車",
+      "scenario": "大家選免費慢車或付錢快車，目的地相同。",
+      "question": "你上哪班？",
       "twist": "",
-      "deeperQuestion": "你最擔心拒絕後會發生甚麼？"
-    }
+      "deeperQuestion": "如果朋友都在另一班呢？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-010",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What I need",
-    "scenario": "Set aside what you should do for a moment.",
-    "question": "Do you most need rest, company, or order right now?",
+    "id": "ponder-v3-party-079",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "See ahead",
+    "scenario": "Vote for knowing tomorrow completely or keeping every surprise.",
+    "question": "Which side are you on?",
     "twist": "",
-    "deeperQuestion": "Who could you ask for a small favour?",
+    "deeperQuestion": "Would being able to change it alter your vote?",
     "zh": {
-      "title": "今天的需要",
-      "scenario": "先不想應該做甚麼。",
-      "question": "你現在最需要的是休息、陪伴，還是整理事情？",
+      "title": "看見未來",
+      "scenario": "全場舉手選：知道明天所有事，或完全保留驚喜。",
+      "question": "你選哪邊？",
       "twist": "",
-      "deeperQuestion": "你可以向誰提出一個小請求？"
-    }
+      "deeperQuestion": "知道了還可以改，會換邊嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-011",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A shorter list",
-    "scenario": "Your to-do list is long.",
-    "question": "If you did just one thing today, what would it be?",
+    "id": "ponder-v3-party-080",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Magic gifts",
+    "scenario": "Each team gives a gift box to the hardest-working, neediest or luckiest person.",
+    "question": "Which rule wins?",
     "twist": "",
-    "deeperQuestion": "What could safely wait until tomorrow?",
+    "deeperQuestion": "Would those left out accept the reason?",
     "zh": {
-      "title": "一張清單",
-      "scenario": "你的待辦清單很長。",
-      "question": "今天只做一件，你會選哪件？",
+      "title": "魔法禮物箱",
+      "scenario": "每組一箱禮物，要選送給最努力、最需要或最幸運的人。",
+      "question": "你們選誰？",
       "twist": "",
-      "deeperQuestion": "哪件事可以安心移到明天？"
-    }
+      "deeperQuestion": "收不到的人會接受你們的理由嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-012",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "After scrolling",
-    "scenario": "You have spent some time scrolling.",
-    "question": "Do you feel better or more unsettled afterward?",
+    "id": "ponder-v3-party-081",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Panda leave",
+    "scenario": "A zoo panda wants a year's holiday, disappointing visitors.",
+    "question": "Would you approve?",
     "twist": "",
-    "deeperQuestion": "What kind of content would you like less of?",
+    "deeperQuestion": "What should happen for people holding tickets?",
     "zh": {
-      "title": "手機之後",
-      "scenario": "剛看完一段時間手機。",
-      "question": "你的心情比之前好，還是更亂？",
+      "title": "熊貓請假",
+      "scenario": "動物園熊貓想放一年假，遊客會失望。",
+      "question": "大家投票准不准？",
       "twist": "",
-      "deeperQuestion": "哪類內容你想少看一點？"
-    }
+      "deeperQuestion": "票已買好的人應該怎樣安排？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-013",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A past version",
-    "scenario": "Think of yourself a year ago.",
-    "question": "What feels less intimidating now?",
+    "id": "ponder-v3-party-082",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Clear wallets",
+    "scenario": "Wallets can display how much money you have.",
+    "question": "Choose public or hidden; which is yours?",
     "twist": "",
-    "deeperQuestion": "What experience helped you take a step forward?",
+    "deeperQuestion": "Would you change it when treating others?",
     "zh": {
-      "title": "以前的自己",
-      "scenario": "想起一年前的自己。",
-      "question": "現在有甚麼事比較不怕了？",
+      "title": "透明錢包",
+      "scenario": "錢包會顯示你有多少錢，全場選公開或隱藏。",
+      "question": "你選哪個？",
       "twist": "",
-      "deeperQuestion": "哪次練習幫你跨出了一步？"
-    }
+      "deeperQuestion": "請客時你會想換設定嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-014",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A comfortable place",
-    "scenario": "You can spend half an hour somewhere familiar.",
-    "question": "Where would you go?",
+    "id": "ponder-v3-party-083",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Town statue",
+    "scenario": "Teams choose a statue for a hero, carer or ordinary resident.",
+    "question": "Who deserves it?",
     "twist": "",
-    "deeperQuestion": "What is special about its sounds, light, or smells?",
+    "deeperQuestion": "Would changing it yearly be fairer?",
     "zh": {
-      "title": "舒服的地方",
-      "scenario": "你可以去一個熟悉的地方待半小時。",
-      "question": "你會去哪裡？",
+      "title": "小鎮雕像",
+      "scenario": "分組替小鎮選雕像：英雄、照顧者或普通居民。",
+      "question": "你們會選誰？",
       "twist": "",
-      "deeperQuestion": "那裡的聲音、光線或氣味有甚麼特別？"
-    }
+      "deeperQuestion": "每年輪換會更公平嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-015",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Other people's expectations",
-    "scenario": "You agreed to something you did not want to do.",
-    "question": "What were you worried about?",
-    "twist": "",
-    "deeperQuestion": "What could you say next time to give yourself time to think?",
-    "zh": {
-      "title": "別人的期待",
-      "scenario": "有件事你說了「好」，其實並不想做。",
-      "question": "你當時在顧慮甚麼？",
-      "twist": "",
-      "deeperQuestion": "下次你可以先說哪一句，給自己時間想？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-016",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An open question",
-    "scenario": "You are unsure about something.",
-    "question": "What one piece of information would help most?",
-    "twist": "",
-    "deeperQuestion": "Where could you find it, or whom could you ask?",
-    "zh": {
-      "title": "一個疑問",
-      "scenario": "你有件事想不通。",
-      "question": "現在最需要補上的一個資料是甚麼？",
-      "twist": "",
-      "deeperQuestion": "你可以從哪裡查到，或問到誰？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-017",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Good enough",
-    "scenario": "You are working on something you want to do well.",
-    "question": "What would be enough for today?",
-    "twist": "",
-    "deeperQuestion": "What small detail could wait?",
-    "zh": {
-      "title": "不必完美",
-      "scenario": "你正在做一件想做好看的事。",
-      "question": "做到甚麼程度，今天就可以停？",
-      "twist": "",
-      "deeperQuestion": "哪個小細節其實可以留到以後？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-018",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An old enjoyment",
-    "scenario": "There is a small activity you used to enjoy but have not done lately.",
-    "question": "What comes to mind?",
-    "twist": "",
-    "deeperQuestion": "Could you try it for ten minutes this week?",
-    "zh": {
-      "title": "熟悉的快樂",
-      "scenario": "有件以前喜歡的小事，很久沒做了。",
-      "question": "你想到甚麼？",
-      "twist": "",
-      "deeperQuestion": "這星期可以試十分鐘嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-019",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "One worry",
-    "scenario": "Write down one recent worry.",
-    "question": "What small part can you influence today?",
-    "twist": "",
-    "deeperQuestion": "What part simply needs more information or time?",
-    "zh": {
-      "title": "一個擔心",
-      "scenario": "寫下一個最近的擔心。",
-      "question": "你今天能影響的是哪一小部分？",
-      "twist": "",
-      "deeperQuestion": "哪一部分暫時只能等消息？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-020",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "My pace",
-    "scenario": "Lately you have felt behind.",
-    "question": "Who are you comparing yourself with?",
-    "twist": "",
-    "deeperQuestion": "What progress can you see when you look only at your own path?",
-    "zh": {
-      "title": "自己的步調",
-      "scenario": "最近你覺得自己落後了。",
-      "question": "你是拿自己跟誰比較？",
-      "twist": "",
-      "deeperQuestion": "如果只看自己的進展，你看到甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-021",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Today's soundtrack",
-    "scenario": "Imagine today had a soundtrack.",
-    "question": "What style would it be?",
-    "twist": "",
-    "deeperQuestion": "What pace would you like tomorrow's music to have?",
-    "zh": {
-      "title": "今天的聲音",
-      "scenario": "如果今天有一首配樂。",
-      "question": "你會選甚麼風格？",
-      "twist": "",
-      "deeperQuestion": "明天你想換成甚麼節奏？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-022",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Dropping a task",
-    "scenario": "There is something you feel you should do.",
-    "question": "What would actually happen if you did not?",
-    "twist": "",
-    "deeperQuestion": "Does it still deserve a place on your list?",
-    "zh": {
-      "title": "放下小任務",
-      "scenario": "有件事你一直覺得應該做。",
-      "question": "其實不做，會有甚麼影響？",
-      "twist": "",
-      "deeperQuestion": "這件事還值得留在清單上嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-023",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Feeling safe enough",
-    "scenario": "Recall a conversation where you felt able to speak honestly.",
-    "question": "What helped you feel comfortable?",
-    "twist": "",
-    "deeperQuestion": "How could you offer the same comfort to someone else?",
-    "zh": {
-      "title": "讓人安心",
-      "scenario": "回想一次你敢說真話的聊天。",
-      "question": "對方做了甚麼讓你放心？",
-      "twist": "",
-      "deeperQuestion": "你也可以怎樣把這種感覺給別人？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-024",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Learning something small",
-    "scenario": "You want to learn a skill.",
-    "question": "What beginner version fits your life right now?",
-    "twist": "",
-    "deeperQuestion": "How short could your first practice be?",
-    "zh": {
-      "title": "學一件小事",
-      "scenario": "你想學一項新技能。",
-      "question": "哪個入門版本最適合現在的你？",
-      "twist": "",
-      "deeperQuestion": "第一次練習可以短到幾分鐘？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-025",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Making room",
-    "scenario": "Your room or desk feels crowded.",
-    "question": "What small area would make the biggest difference?",
-    "twist": "",
-    "deeperQuestion": "What item could have a regular home?",
-    "zh": {
-      "title": "一點空間",
-      "scenario": "你的房間或桌面有點擠。",
-      "question": "先整理哪一小塊會最有感？",
-      "twist": "",
-      "deeperQuestion": "有甚麼東西可以換個固定位置？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-026",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A decision",
-    "scenario": "You are choosing between two options.",
-    "question": "What factor matters most?",
-    "twist": "",
-    "deeperQuestion": "Which would you choose if you could test it for a week?",
-    "zh": {
-      "title": "一個選擇",
-      "scenario": "你正猶豫兩個選擇。",
-      "question": "最影響你決定的是哪一點？",
-      "twist": "",
-      "deeperQuestion": "如果先試一星期，你會選哪個？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-027",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A physical cue",
-    "scenario": "Notice how you are sitting.",
-    "question": "What part of your body wants a change of position?",
-    "twist": "",
-    "deeperQuestion": "Would standing, stretching, or a short walk feel useful?",
-    "zh": {
-      "title": "身體提醒",
-      "scenario": "留意現在的坐姿。",
-      "question": "身體哪個地方想換個姿勢？",
-      "twist": "",
-      "deeperQuestion": "你可以站起來、伸展，還是走幾步？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-028",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Reaching out",
-    "scenario": "Someone has been on your mind, but you have not contacted them.",
-    "question": "What simple message would you send?",
-    "twist": "",
-    "deeperQuestion": "Would you like a quick check-in or to arrange a meeting?",
-    "zh": {
-      "title": "值得聯絡",
-      "scenario": "有個人你想起很久，卻還未聯絡。",
-      "question": "你想傳哪一句簡單訊息？",
-      "twist": "",
-      "deeperQuestion": "你希望這次只是問候，還是約見面？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-029",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Saving effort",
-    "scenario": "An everyday task takes too much energy.",
-    "question": "How could you remove one step?",
-    "twist": "",
-    "deeperQuestion": "What small imperfection could you accept?",
-    "zh": {
-      "title": "省下力氣",
-      "scenario": "日常有件小事很耗精神。",
-      "question": "你可以怎樣讓它少一步？",
-      "twist": "",
-      "deeperQuestion": "你願意接受甚麼小小的不完美？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-030",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Being understood",
-    "scenario": "People often misunderstand something about you.",
-    "question": "What example could explain it?",
-    "twist": "",
-    "deeperQuestion": "Who might be willing to listen carefully?",
-    "zh": {
-      "title": "想被了解",
-      "scenario": "別人常常誤會你的一點。",
-      "question": "你會怎樣用一個例子說明？",
-      "twist": "",
-      "deeperQuestion": "哪個人可能願意認真聽？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-031",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A worthwhile expense",
-    "scenario": "Think of recent small purchases.",
-    "question": "Which felt worthwhile?",
-    "twist": "",
-    "deeperQuestion": "Did it bring convenience, enjoyment, or more time?",
-    "zh": {
-      "title": "一筆開支",
-      "scenario": "回想最近一筆小開支。",
-      "question": "哪一筆讓你覺得花得值得？",
-      "twist": "",
-      "deeperQuestion": "它帶來的是方便、快樂，還是多一點時間？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-032",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "No more waiting",
-    "scenario": "You keep waiting for the right time to do something small.",
-    "question": "What do you actually need to begin?",
-    "twist": "",
-    "deeperQuestion": "What do you already have?",
-    "zh": {
-      "title": "不想再等",
-      "scenario": "有件小事你一直等合適時機。",
-      "question": "其實需要具備甚麼才可以開始？",
-      "twist": "",
-      "deeperQuestion": "目前已經具備哪一樣？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-033",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "The end of the day",
-    "scenario": "Work or study often stretches late.",
-    "question": "What action could mark the end of your day?",
-    "twist": "",
-    "deeperQuestion": "What would you leave until morning?",
-    "zh": {
-      "title": "一天的界線",
-      "scenario": "工作或學習常常拖到很晚。",
-      "question": "你想用甚麼動作表示今天結束？",
-      "twist": "",
-      "deeperQuestion": "你想把甚麼留到明早再看？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-034",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A second try",
-    "scenario": "Something did not go well on your first attempt.",
-    "question": "What would you change next time?",
-    "twist": "",
-    "deeperQuestion": "Who could offer one useful suggestion?",
-    "zh": {
-      "title": "再給一次機會",
-      "scenario": "有件事你第一次試得不好。",
-      "question": "你想換甚麼方法再試？",
-      "twist": "",
-      "deeperQuestion": "你需要誰給一個具體建議？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-035",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Unexpected delight",
-    "scenario": "Something unplanned brightened your day recently.",
-    "question": "What was it?",
-    "twist": "",
-    "deeperQuestion": "How could you notice moments like that more often?",
-    "zh": {
-      "title": "意外的開心",
-      "scenario": "最近有件沒計劃的小事讓你開心。",
-      "question": "那是甚麼？",
-      "twist": "",
-      "deeperQuestion": "你下次可以怎樣更容易留意這類小事？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-036",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A small goal",
-    "scenario": "Choose one manageable goal for this week.",
-    "question": "What would it be?",
-    "twist": "",
-    "deeperQuestion": "How will you know when it is done?",
-    "zh": {
-      "title": "一個小目標",
-      "scenario": "這星期只訂一個容易完成的目標。",
-      "question": "你會選甚麼？",
-      "twist": "",
-      "deeperQuestion": "完成時你會怎樣知道？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-037",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What I would tell a friend",
-    "scenario": "Imagine a friend had your current worry.",
-    "question": "What would you say first?",
-    "twist": "",
-    "deeperQuestion": "Which part of that also applies to you?",
-    "zh": {
-      "title": "說給朋友聽",
-      "scenario": "如果朋友遇到你現在的煩惱。",
-      "question": "你會先跟他說甚麼？",
-      "twist": "",
-      "deeperQuestion": "那句話有哪一部分也適合你？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-038",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "My morning",
-    "scenario": "Think about your recent mornings.",
-    "question": "What most affects the rest of your mood?",
-    "twist": "",
-    "deeperQuestion": "What small change could you try tomorrow morning?",
-    "zh": {
-      "title": "我的早晨",
-      "scenario": "想想你最近的早晨。",
-      "question": "哪一件事最影響接下來的心情？",
-      "twist": "",
-      "deeperQuestion": "明早可以先改哪一小步？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-039",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What to keep",
-    "scenario": "You are writing one sentence about today.",
-    "question": "What moment would you keep?",
-    "twist": "",
-    "deeperQuestion": "What three words would describe it?",
-    "zh": {
-      "title": "留下甚麼",
-      "scenario": "你要把今天寫成一句日記。",
-      "question": "最想留下哪個片段？",
-      "twist": "",
-      "deeperQuestion": "你會用哪三個字形容那一刻？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-040",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Accepting help",
-    "scenario": "Someone offers to help with a task.",
-    "question": "What part is hardest to hand over?",
-    "twist": "",
-    "deeperQuestion": "What instruction would help you feel more comfortable?",
-    "zh": {
-      "title": "一份幫忙",
-      "scenario": "有人願意幫你做一件事。",
-      "question": "你最難放心交出去的是哪部分？",
-      "twist": "",
-      "deeperQuestion": "講清楚哪個要求後，你會放心一點？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-041",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "My own taste",
-    "scenario": "Set aside ratings and rankings.",
-    "question": "What have you personally enjoyed lately?",
-    "twist": "",
-    "deeperQuestion": "What specific part do you enjoy?",
-    "zh": {
-      "title": "自己的喜好",
-      "scenario": "暫時不看評價和排行榜。",
-      "question": "你最近真心喜歡甚麼？",
-      "twist": "",
-      "deeperQuestion": "你喜歡的具體地方是甚麼？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-042",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A little less",
-    "scenario": "Tomorrow you want to do less of something tiring.",
-    "question": "What would you choose?",
-    "twist": "",
-    "deeperQuestion": "How could you remind yourself to stop?",
-    "zh": {
-      "title": "今天少一點",
-      "scenario": "明天你想少做一件讓自己累的事。",
-      "question": "你會選哪件？",
-      "twist": "",
-      "deeperQuestion": "你可以怎樣提醒自己停下來？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-043",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Next time we meet",
-    "scenario": "Think of a relationship you value.",
-    "question": "What would you like to ask next time you meet?",
-    "twist": "",
-    "deeperQuestion": "What update about yourself would you share first?",
-    "zh": {
-      "title": "下一次見面",
-      "scenario": "想起一段你珍惜的關係。",
-      "question": "下次見面，你想多問對方甚麼？",
-      "twist": "",
-      "deeperQuestion": "你願意先分享自己哪件近況？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-044",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Changing a plan",
-    "scenario": "Your original plan no longer works.",
-    "question": "Which part would you most like to keep?",
-    "twist": "",
-    "deeperQuestion": "What smaller version could work?",
-    "zh": {
-      "title": "重新安排",
-      "scenario": "原本的計劃做不下去了。",
-      "question": "你最想保留哪個部分？",
-      "twist": "",
-      "deeperQuestion": "可以縮小成甚麼版本？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-045",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A moment of focus",
-    "scenario": "Recently you lost yourself in an activity.",
-    "question": "What were you doing?",
-    "twist": "",
-    "deeperQuestion": "What distraction was absent then?",
-    "zh": {
-      "title": "一次專心",
-      "scenario": "最近有一段時間你很投入。",
-      "question": "當時你在做甚麼？",
-      "twist": "",
-      "deeperQuestion": "當時少了哪種打擾？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-046",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A question to ask",
-    "scenario": "You avoided asking something because it felt awkward.",
-    "question": "How could you ask simply?",
-    "twist": "",
-    "deeperQuestion": "How difficult would the worst likely response actually be?",
-    "zh": {
-      "title": "想問的問題",
-      "scenario": "你有件事因為怕尷尬而沒問。",
-      "question": "你可以怎樣簡單地問清楚？",
-      "twist": "",
-      "deeperQuestion": "最壞的回應真的會有多嚴重？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-047",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Worth celebrating",
-    "scenario": "You finished something difficult.",
-    "question": "How would you celebrate a little?",
-    "twist": "",
-    "deeperQuestion": "Who would you tell the good news to?",
-    "zh": {
-      "title": "值得慶祝",
-      "scenario": "你完成了一件不容易的事。",
-      "question": "你想怎樣小小慶祝？",
-      "twist": "",
-      "deeperQuestion": "你想跟誰分享這個好消息？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-048",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An old promise",
-    "scenario": "You once promised yourself you would do something.",
-    "question": "Do you still want to?",
-    "twist": "",
-    "deeperQuestion": "If not, how would you change the promise?",
-    "zh": {
-      "title": "舊承諾",
-      "scenario": "你以前答應自己做一件事。",
-      "question": "現在還想做嗎？",
-      "twist": "",
-      "deeperQuestion": "如果不想了，你願意怎樣修改承諾？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-049",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Setting it aside",
-    "scenario": "There is a problem you cannot solve tonight.",
-    "question": "How would you note it for tomorrow?",
-    "twist": "",
-    "deeperQuestion": "When tomorrow would be a good time to return to it?",
-    "zh": {
-      "title": "先放旁邊",
-      "scenario": "有個問題今晚解決不了。",
-      "question": "你會怎樣記下來，明天再處理？",
-      "twist": "",
-      "deeperQuestion": "明天甚麼時間回來看最合適？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-050",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An everyday choice",
-    "scenario": "Think of a small decision today.",
-    "question": "Which choice looked after your own needs?",
-    "twist": "",
-    "deeperQuestion": "Would you like to make the same choice again?",
-    "zh": {
-      "title": "日常的選擇",
-      "scenario": "想起今天一個小決定。",
-      "question": "哪個選擇其實是照顧了自己？",
-      "twist": "",
-      "deeperQuestion": "下次你還想這樣選嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-051",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A different route",
-    "scenario": "You could take a slightly different way home today.",
-    "question": "What would you like to pass?",
-    "twist": "",
-    "deeperQuestion": "What small detail would be worth stopping for?",
-    "zh": {
-      "title": "一條新路",
-      "scenario": "今天回家的路可以稍微不同。",
-      "question": "你想經過甚麼地方？",
-      "twist": "",
-      "deeperQuestion": "哪個小景物值得你停一下？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-052",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "My definition",
-    "scenario": "Someone asks what living well means to you.",
-    "question": "What everyday example would you give?",
-    "twist": "",
-    "deeperQuestion": "Would you have given the same example a few years ago?",
-    "zh": {
-      "title": "自己的定義",
-      "scenario": "有人問你怎樣才算過得不錯。",
-      "question": "你現在會舉哪個生活例子？",
-      "twist": "",
-      "deeperQuestion": "這個例子跟幾年前一樣嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-053",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "No immediate reply",
-    "scenario": "A non-urgent message arrives and you feel you must reply at once.",
-    "question": "What worries you?",
-    "twist": "",
-    "deeperQuestion": "How long would you like to give yourself before replying?",
-    "zh": {
-      "title": "不必馬上回",
-      "scenario": "你收到一個不急的訊息，卻想立刻回。",
-      "question": "你在擔心甚麼？",
-      "twist": "",
-      "deeperQuestion": "你想給自己多久再回？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-054",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A good conversation",
-    "scenario": "A recent conversation left you feeling lighter.",
-    "question": "What helped most?",
-    "twist": "",
-    "deeperQuestion": "How could you help someone else feel that way next time?",
-    "zh": {
-      "title": "一段好對話",
-      "scenario": "最近有一次聊天讓你輕鬆了一點。",
-      "question": "哪個部分最有用？",
-      "twist": "",
-      "deeperQuestion": "下次你想怎樣讓別人也有這種感覺？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-055",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "The right amount",
-    "scenario": "Something you enjoy becomes tiring when you overdo it.",
-    "question": "What amount feels right?",
-    "twist": "",
-    "deeperQuestion": "How would you recognize it is time to stop?",
-    "zh": {
-      "title": "剛好就好",
-      "scenario": "有件你喜歡的事，做太多反而累。",
-      "question": "多少份量對你剛好？",
-      "twist": "",
-      "deeperQuestion": "你會怎樣知道該停了？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-056",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A change of scene",
-    "scenario": "You have been sitting in the same place for a long time.",
-    "question": "Where could you move to clear your head?",
-    "twist": "",
-    "deeperQuestion": "Would changing the light or your seat be enough?",
-    "zh": {
-      "title": "換個環境",
-      "scenario": "你坐在同一地方很久了。",
-      "question": "換去哪裡會讓思路清楚一點？",
-      "twist": "",
-      "deeperQuestion": "只換光線或座位也有幫助嗎？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-057",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A misunderstanding",
-    "scenario": "You recently guessed what someone meant.",
-    "question": "What other explanation is possible?",
-    "twist": "",
-    "deeperQuestion": "What could you ask to check?",
-    "zh": {
-      "title": "一次誤會",
-      "scenario": "最近你猜測了別人的意思。",
-      "question": "你還可以想到哪個解釋？",
-      "twist": "",
-      "deeperQuestion": "你可以問哪一句來確認？"
-    }
-  },
-  {
-    "id": "ponder-v2-solo-058",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Nothing to prove",
-    "scenario": "You have time with no need to show a result.",
+    "id": "ponder-v3-party-084",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Hour of power",
+    "scenario": "Everyone gets an hour of power to help someone else.",
     "question": "What would you do?",
     "twist": "",
-    "deeperQuestion": "Would you still enjoy it if nobody knew?",
+    "deeperQuestion": "Would you ask first or surprise them?",
     "zh": {
-      "title": "不用證明",
-      "scenario": "你有一段完全不用展示成果的時間。",
-      "question": "你最想拿來做甚麼？",
+      "title": "一小時超能力",
+      "scenario": "全場每人有一小時超能力，但必須用來幫另一人。",
+      "question": "你會做甚麼？",
       "twist": "",
-      "deeperQuestion": "如果沒人知道，你還會享受嗎？"
-    }
+      "deeperQuestion": "先問對方要不要，還是直接驚喜？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-059",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What matters now",
-    "scenario": "There are many demands this month.",
-    "question": "What deserves most of your attention?",
+    "id": "ponder-v3-party-085",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Happy colours",
+    "scenario": "Each person chooses an emotional colour the town can feel.",
+    "question": "Which would you choose?",
     "twist": "",
-    "deeperQuestion": "What could remain as it is for now?",
+    "deeperQuestion": "Could one area remain unaffected?",
     "zh": {
-      "title": "現在的重點",
-      "scenario": "這個月有很多事。",
-      "question": "你最想把心力放在哪一件？",
+      "title": "快樂顏色",
+      "scenario": "每人選一種能讓全城感受的情緒顏色。",
+      "question": "你會選甚麼？",
       "twist": "",
-      "deeperQuestion": "哪件事可以先維持現狀？"
-    }
+      "deeperQuestion": "可以留一區不受影響嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-060",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An invitation",
-    "scenario": "You want to invite a friend to do something.",
-    "question": "What plan would be easy to say yes to?",
+    "id": "ponder-v3-party-086",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Forgiving door",
+    "scenario": "A city gate forgives every first mistake.",
+    "question": "Would you support the rule?",
     "twist": "",
-    "deeperQuestion": "What two possible times could you offer?",
+    "deeperQuestion": "First hear what opponents worry about.",
     "zh": {
-      "title": "一項邀請",
-      "scenario": "你想邀一個朋友一起做點事。",
-      "question": "哪個安排最容易答應？",
+      "title": "會原諒的門",
+      "scenario": "城門會原諒所有第一次犯錯的人。",
+      "question": "全場支持還是反對？",
       "twist": "",
-      "deeperQuestion": "你會提供哪兩個時間選擇？"
-    }
+      "deeperQuestion": "先聽反對的人擔心甚麼。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-061",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Room to disagree",
-    "scenario": "You disagree with someone.",
-    "question": "What response would make you willing to keep talking?",
+    "id": "ponder-v3-party-087",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Keep or release",
+    "scenario": "Choose keeping all memories or erasing the saddest one.",
+    "question": "Which would you choose?",
     "twist": "",
-    "deeperQuestion": "Could you use that response yourself?",
+    "deeperQuestion": "Without sharing the event, say what you want to protect.",
     "zh": {
-      "title": "不同意也可以",
-      "scenario": "你跟別人意見不同。",
-      "question": "對方說哪一句會讓你仍願意聊？",
+      "title": "記住還是放下",
+      "scenario": "每人選保留全部回憶，或刪走最難過的一段。",
+      "question": "你會選哪個？",
       "twist": "",
-      "deeperQuestion": "你自己也可以先用這句話嗎？"
-    }
+      "deeperQuestion": "不用說經歷，只說你想保住甚麼。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-062",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A little curiosity",
-    "scenario": "You recently encountered something unfamiliar.",
-    "question": "What small question would you look into?",
+    "id": "ponder-v3-party-088",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Free mansion",
+    "scenario": "A mansion is free if strangers tour it daily.",
+    "question": "Would you move in?",
     "twist": "",
-    "deeperQuestion": "Would you start with a demonstration or an explanation?",
+    "deeperQuestion": "Would one hour daily change your vote?",
     "zh": {
-      "title": "好奇一點",
-      "scenario": "最近你遇到一件不懂的事。",
-      "question": "你最想查清楚哪個小問題？",
+      "title": "免費豪宅",
+      "scenario": "豪宅免費，但每天要讓陌生人參觀。",
+      "question": "大家想住還是不想住？",
       "twist": "",
-      "deeperQuestion": "你想先看示範，還是讀解釋？"
-    }
+      "deeperQuestion": "每天只開放一小時會換邊嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-063",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Today's courage",
-    "scenario": "There was a moment today when you acted despite nerves.",
-    "question": "What was it?",
+    "id": "ponder-v3-party-089",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Cloud studio",
+    "scenario": "Teams open cloud shops; each coin earned consumes a cloud.",
+    "question": "What would you sell?",
     "twist": "",
-    "deeperQuestion": "What helped you take that step?",
+    "deeperQuestion": "Would you cap daily earnings?",
     "zh": {
-      "title": "今天的勇氣",
-      "scenario": "今天有一刻你雖然緊張，還是做了。",
-      "question": "那是甚麼？",
+      "title": "雲上工作室",
+      "scenario": "分組開一間雲上店，每賺一元就少一朵雲。",
+      "question": "你們會賣甚麼？",
       "twist": "",
-      "deeperQuestion": "甚麼幫你踏出那一步？"
-    }
+      "deeperQuestion": "你們會訂每天收入上限嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-064",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "My standard",
-    "scenario": "You feel something you did was not good enough.",
-    "question": "Whose standard are you using?",
+    "id": "ponder-v3-party-090",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Monster names",
+    "scenario": "Teams name a misunderstood monster to help people approach it.",
+    "question": "What name would you choose?",
     "twist": "",
-    "deeperQuestion": "Looking at the original goal, what did it already accomplish?",
+    "deeperQuestion": "Could it reject a name it dislikes?",
     "zh": {
-      "title": "自己的標準",
-      "scenario": "你覺得一件事做得不夠好。",
-      "question": "你用的是誰的標準？",
+      "title": "小妖怪的名字",
+      "scenario": "每組替怕被誤會的小妖怪取名，讓人願意靠近。",
+      "question": "你們取甚麼？",
       "twist": "",
-      "deeperQuestion": "按原本目的看，它已經做到甚麼？"
-    }
+      "deeperQuestion": "牠不喜歡名字時可以拒絕嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-065",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Listening again",
-    "scenario": "Think of feedback someone recently gave you.",
-    "question": "What part would you try?",
+    "id": "ponder-v3-party-091",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Free forever",
+    "scenario": "Your group can make one thing free forever.",
+    "question": "What would you nominate?",
     "twist": "",
-    "deeperQuestion": "How could one small trial show whether it helps?",
+    "deeperQuestion": "Who benefits most, and who might bear the cost?",
     "zh": {
-      "title": "再聽一次",
-      "scenario": "想起別人最近給你的意見。",
-      "question": "哪一點你願意試試？",
+      "title": "最重要的免費物",
+      "scenario": "全場只能讓一樣東西永遠免費。",
+      "question": "每人提一案，你會提甚麼？",
       "twist": "",
-      "deeperQuestion": "怎樣試一次，就能知道有沒有用？"
-    }
+      "deeperQuestion": "誰最受惠，誰可能付出代價？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-066",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A comforting habit",
-    "scenario": "You have a small daily habit that comforts you.",
-    "question": "What is it?",
+    "id": "ponder-v3-party-092",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Friend portal",
+    "scenario": "A portal visits friends at the cost of a holiday day each time.",
+    "question": "How often would you use it?",
     "twist": "",
-    "deeperQuestion": "What part could you keep on a busy day?",
+    "deeperQuestion": "Would distance change your choice?",
     "zh": {
-      "title": "一個舒適習慣",
-      "scenario": "你每天有一個讓自己舒服的小習慣。",
-      "question": "是哪一個？",
+      "title": "友情傳送門",
+      "scenario": "傳送門能見朋友，但每次會扣一天假期。",
+      "question": "大家願意用多常？",
       "twist": "",
-      "deeperQuestion": "忙的時候可以保留它的哪部分？"
-    }
+      "deeperQuestion": "遠方的朋友跟同城朋友有不同嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-067",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Leaving a debate",
-    "scenario": "You see an argument online.",
-    "question": "When would you decide not to join?",
+    "id": "ponder-v3-party-093",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Bear's trophy",
+    "scenario": "A bear finishes last despite trying hardest.",
+    "question": "Vote on a special award; what is your vote?",
     "twist": "",
-    "deeperQuestion": "What would be a better use of those ten minutes?",
+    "deeperQuestion": "What name would make it feel sincere?",
     "zh": {
-      "title": "不想爭了",
-      "scenario": "你在網上看到一場爭論。",
-      "question": "甚麼時候你會決定不參與？",
+      "title": "小熊的獎盃",
+      "scenario": "小熊最後一名卻最努力，大家投票要不要頒特別獎。",
+      "question": "你投甚麼？",
       "twist": "",
-      "deeperQuestion": "把那十分鐘用在哪裡會更值得？"
-    }
+      "deeperQuestion": "獎叫甚麼才不會像安慰？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-068",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Receiving praise",
-    "scenario": "Someone gives you a sincere compliment.",
-    "question": "How do you usually respond?",
+    "id": "ponder-v3-party-094",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Free mind-reading",
+    "scenario": "Choose a day of mind-reading, knowing others can read you too.",
+    "question": "Would you accept?",
     "twist": "",
-    "deeperQuestion": "Could you simply say thank you and let it land?",
+    "deeperQuestion": "Whom would you speak to first?",
     "zh": {
-      "title": "被稱讚",
-      "scenario": "有人真心稱讚你。",
-      "question": "你通常怎樣回答？",
+      "title": "免費讀心",
+      "scenario": "全場同時決定要不要讀心一天，選了也會被讀。",
+      "question": "你會選嗎？",
       "twist": "",
-      "deeperQuestion": "你能不能只說一句謝謝，先收下？"
-    }
+      "deeperQuestion": "你會先找誰聊天？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-069",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "An activity I miss",
-    "scenario": "You have stopped doing an activity you liked.",
-    "question": "Is it lack of time or a change of interest?",
+    "id": "ponder-v3-party-095",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Ideal park",
+    "scenario": "Teams add one feature to a park without buying their way out of disagreement.",
+    "question": "What would you add?",
     "twist": "",
-    "deeperQuestion": "Would you like to restart it or let it end?",
+    "deeperQuestion": "Whose needs are easiest to overlook?",
     "zh": {
-      "title": "想念的活動",
-      "scenario": "你最近少做了一件喜歡的活動。",
-      "question": "是時間不夠，還是心情變了？",
+      "title": "理想公園",
+      "scenario": "每組只能替公園加一樣設施，不能用錢解決爭議。",
+      "question": "你們加甚麼？",
       "twist": "",
-      "deeperQuestion": "你想重新安排，還是讓它告一段落？"
-    }
+      "deeperQuestion": "誰的需要最容易被忘記？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-070",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "One boundary",
-    "scenario": "People often ask you to do a particular task.",
-    "question": "What limit would you like to explain?",
+    "id": "ponder-v3-party-096",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Replace a rule",
+    "scenario": "Your group can replace one real rule with a fairy-tale rule.",
+    "question": "What would you suggest?",
     "twist": "",
-    "deeperQuestion": "What amount of help would you be willing to offer?",
+    "deeperQuestion": "Who might face a new problem because of it?",
     "zh": {
-      "title": "一個界線",
-      "scenario": "有件事別人常常請你做。",
-      "question": "你想把哪個限制說清楚？",
+      "title": "換掉一條規矩",
+      "scenario": "全場能用童話規矩取代一條現實規矩。",
+      "question": "你會提議換甚麼？",
       "twist": "",
-      "deeperQuestion": "你願意提供甚麼範圍內的幫忙？"
-    }
+      "deeperQuestion": "它會替誰帶來新麻煩？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-071",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "A meal alone",
-    "scenario": "You are having a meal alone today.",
-    "question": "What would make it feel caring?",
+    "id": "ponder-v3-party-097",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Moon dinner",
+    "scenario": "Dinner on the moon is free, but only volunteer dishwashers can return.",
+    "question": "Would you go?",
     "twist": "",
-    "deeperQuestion": "Would you like music or a quiet meal?",
+    "deeperQuestion": "Should chores be agreed before leaving?",
     "zh": {
-      "title": "一個人吃飯",
-      "scenario": "今天你自己吃一餐。",
-      "question": "怎樣安排會讓它像照顧自己？",
+      "title": "月球晚餐",
+      "scenario": "大家可免費去月球吃飯，但只有自願洗碗的人能回來。",
+      "question": "你還會去嗎？",
       "twist": "",
-      "deeperQuestion": "你想配甚麼音樂，還是安靜吃？"
-    }
+      "deeperQuestion": "應該出發前就分工嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-072",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Worth keeping",
-    "scenario": "You recently made a change that improved daily life.",
-    "question": "What was it?",
+    "id": "ponder-v3-party-098",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "One blessing each",
+    "scenario": "Give the person to your right courage, stability or freedom.",
+    "question": "Which would you choose?",
     "twist": "",
-    "deeperQuestion": "How could you make it easy to maintain?",
+    "deeperQuestion": "Let them say which they actually want.",
     "zh": {
-      "title": "值得保留",
-      "scenario": "你最近做了一個讓生活變好的調整。",
-      "question": "是哪一個？",
+      "title": "一人一個祝福",
+      "scenario": "每人替右邊的人選祝福：勇氣、安穩或自由。",
+      "question": "你會選哪個？",
       "twist": "",
-      "deeperQuestion": "怎樣讓它容易持續？"
-    }
+      "deeperQuestion": "讓對方說他其實想要哪個。"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-073",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "Looking too far ahead",
-    "scenario": "You are worrying about something far away.",
-    "question": "What actually needs deciding this week?",
+    "id": "ponder-v3-party-099",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Going-home gift",
+    "scenario": "Leaving tonight, choose money, a memory or a new friend's understanding.",
+    "question": "What would you take?",
     "twist": "",
-    "deeperQuestion": "Which decision could wait for more information?",
+    "deeperQuestion": "Whose choice surprised you?",
     "zh": {
-      "title": "想得太遠",
-      "scenario": "你正替很久以後的事擔心。",
-      "question": "眼前一星期真正要決定甚麼？",
+      "title": "回家紀念品",
+      "scenario": "散場時只能帶走錢、回憶或一位新朋友的理解。",
+      "question": "你會拿甚麼？",
       "twist": "",
-      "deeperQuestion": "哪個決定可以等資料更多再做？"
-    }
+      "deeperQuestion": "有誰的選擇跟你想像不同？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-074",
-    "category": "Solo",
-    "emoji": "🌿",
-    "title": "What blocks rest",
-    "scenario": "You have free time but cannot settle.",
-    "question": "What reminder keeps coming into your mind?",
+    "id": "ponder-v3-party-100",
+    "category": "Party",
+    "emoji": "🎉",
+    "title": "Monster runner-up",
+    "scenario": "A monster contest gives money to the winner and a friends' trip to second place.",
+    "question": "Which rank would you want?",
     "twist": "",
-    "deeperQuestion": "Would writing it down make it easier to set aside?",
+    "deeperQuestion": "Would you slow down to let a friend win?",
     "zh": {
-      "title": "休息的阻力",
-      "scenario": "你已經有空，卻仍停不下來。",
-      "question": "腦裡最常出現甚麼提醒？",
+      "title": "怪獸的第二名",
+      "scenario": "怪獸比賽的冠軍能拿錢，第二名能帶所有朋友旅行。",
+      "question": "全場想爭第幾？",
       "twist": "",
-      "deeperQuestion": "把它寫下來，會不會比較容易放一放？"
-    }
+      "deeperQuestion": "你會故意放慢讓朋友拿第一嗎？"
+    },
+    "groupSize": "large"
   },
   {
-    "id": "ponder-v2-solo-075",
+    "id": "ponder-v3-solo-001",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Thanks to past me",
-    "scenario": "A choice you made earlier still helps you now.",
-    "question": "What comes to mind?",
+    "title": "Pocket planet",
+    "scenario": "A pocket planet holds three things that make you feel safe.",
+    "question": "What would you put there?",
     "twist": "",
-    "deeperQuestion": "What small thing could you do today for next week's you?",
+    "deeperQuestion": "Which would you release if one had to go?",
     "zh": {
-      "title": "謝謝以前的我",
-      "scenario": "以前的你做過一件事，現在仍幫到你。",
-      "question": "你想到甚麼？",
+      "title": "口袋星球",
+      "scenario": "你口袋裡有一顆小星球，只能放三樣讓你安心的東西。",
+      "question": "你會放甚麼？",
       "twist": "",
-      "deeperQuestion": "今天可以為下星期的自己做甚麼小事？"
+      "deeperQuestion": "其中一樣必須送走時，你選哪樣？"
     }
   },
   {
-    "id": "ponder-v2-solo-076",
+    "id": "ponder-v3-solo-002",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A small adventure",
-    "scenario": "You want something new without a major change.",
-    "question": "What small adventure appeals to you?",
+    "title": "Worry plant",
+    "scenario": "Each worry becomes a plant, and some have bloomed.",
+    "question": "Which would you pull out?",
     "twist": "",
-    "deeperQuestion": "Would you like company or to try it alone?",
+    "deeperQuestion": "Which would you leave to see what happens?",
     "zh": {
-      "title": "小小冒險",
-      "scenario": "你想試點新事，但不想太大改變。",
-      "question": "哪個小冒險最吸引你？",
+      "title": "煩惱盆栽",
+      "scenario": "每個煩惱會長成一棵植物，有些已經開花。",
+      "question": "你會拔掉哪棵？",
       "twist": "",
-      "deeperQuestion": "你需要找人陪，還是想自己試？"
+      "deeperQuestion": "有哪棵你想先留著看看？"
     }
   },
   {
-    "id": "ponder-v2-solo-077",
+    "id": "ponder-v3-solo-003",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "After comparing",
-    "scenario": "Someone's update makes you feel envious.",
-    "question": "What exactly are you drawn to?",
+    "title": "Future post",
+    "scenario": "Your future self sends a letter; you may read only its first line.",
+    "question": "What do you hope it says?",
     "twist": "",
-    "deeperQuestion": "Is there a smaller version that fits your life?",
+    "deeperQuestion": "Would “Take your time” be enough?",
     "zh": {
-      "title": "比較之後",
-      "scenario": "你看完別人的近況，有點羨慕。",
-      "question": "你羨慕的具體是甚麼？",
+      "title": "未來小郵差",
+      "scenario": "未來的你寄來一封信，只准看第一句。",
+      "question": "你希望寫著甚麼？",
       "twist": "",
-      "deeperQuestion": "有沒有一個小版本適合自己的生活？"
+      "deeperQuestion": "如果只是「慢慢來」會夠嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-078",
+    "id": "ponder-v3-solo-004",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Something outgrown",
-    "scenario": "An old habit used to help but no longer fits.",
-    "question": "What is it?",
+    "title": "Unknown town",
+    "scenario": "Nobody in this town knows your past.",
+    "question": "What is your first sentence introducing yourself?",
     "twist": "",
-    "deeperQuestion": "What simpler approach could replace it?",
+    "deeperQuestion": "What old name or identity would you keep?",
     "zh": {
-      "title": "不再合用",
-      "scenario": "有個舊習慣以前有用，現在卻不太適合。",
-      "question": "是哪一個？",
+      "title": "無人認識的小鎮",
+      "scenario": "小鎮沒人知道你的過去，你可以重新介紹自己。",
+      "question": "你第一句會說甚麼？",
       "twist": "",
-      "deeperQuestion": "你想換成甚麼更簡單的做法？"
+      "deeperQuestion": "你想帶來哪個舊名字或身分？"
     }
   },
   {
-    "id": "ponder-v2-solo-079",
+    "id": "ponder-v3-solo-005",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Something to anticipate",
-    "scenario": "Think about the next seven days.",
-    "question": "What small thing can you look forward to?",
+    "title": "Calm machine",
+    "scenario": "A machine sells complete peace at the cost of wanting new experiences.",
+    "question": "Would you buy it?",
     "twist": "",
-    "deeperQuestion": "If nothing comes to mind, what could you plan?",
+    "deeperQuestion": "Would you buy just one night?",
     "zh": {
-      "title": "一份期待",
-      "scenario": "想想往後七天。",
-      "question": "你有甚麼小事值得期待？",
+      "title": "安心售賣機",
+      "scenario": "機器賣百分百安心，代價是再不想嘗試新事。",
+      "question": "你會買嗎？",
       "twist": "",
-      "deeperQuestion": "如果目前沒有，你可以安排甚麼？"
+      "deeperQuestion": "你願意只買一晚嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-080",
+    "id": "ponder-v3-solo-006",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "An honest sentence",
-    "scenario": "Take a moment to be honest with yourself today.",
+    "title": "Regret creature",
+    "scenario": "A creature fed by your regrets has grown large enough to shelter you.",
+    "question": "Would you still send it away?",
+    "twist": "",
+    "deeperQuestion": "What would you want it to eat from tomorrow?",
+    "zh": {
+      "title": "後悔小獸",
+      "scenario": "一隻小獸靠你的後悔長大，現在已能替你擋風。",
+      "question": "你還想趕走牠嗎？",
+      "twist": "",
+      "deeperQuestion": "你希望牠從明天起吃甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-007",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Other side of success",
+    "scenario": "A mirror shows your successful self but hides the costs.",
+    "question": "Would you follow that path?",
+    "twist": "",
+    "deeperQuestion": "What would you ask that person first?",
+    "zh": {
+      "title": "成功的另一面",
+      "scenario": "鏡子讓你看見成功的自己，卻不顯示付出了甚麼。",
+      "question": "你想照著走嗎？",
+      "twist": "",
+      "deeperQuestion": "你最想先問鏡中人哪件事？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-008",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Daily coin",
+    "scenario": "A tree gives a daily coin for naming a dream you will stop chasing.",
+    "question": "Would you visit daily?",
+    "twist": "",
+    "deeperQuestion": "Which dream would you never trade?",
+    "zh": {
+      "title": "每天一枚金幣",
+      "scenario": "樹每天給你一枚金幣，但每次要說出一個不再追的夢。",
+      "question": "你會天天去嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪個夢你不想拿來換？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-009",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Inner lodger",
+    "scenario": "Your anxiety becomes a lodger claiming to protect you.",
+    "question": "How long would you let it stay?",
+    "twist": "",
+    "deeperQuestion": "What house rule would you agree on first?",
+    "zh": {
+      "title": "心裡的房客",
+      "scenario": "你的不安變成小房客，總說自己是來保護你。",
+      "question": "你會讓牠住多久？",
+      "twist": "",
+      "deeperQuestion": "你想先跟牠訂哪條同住規則？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-010",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Life fitting room",
+    "scenario": "You try three lives for a day each and keep only one feeling.",
+    "question": "What would you keep?",
+    "twist": "",
+    "deeperQuestion": "Could that feeling exist in your current life?",
+    "zh": {
+      "title": "人生試穿間",
+      "scenario": "你能試穿三種人生各一天，離開時只能留一樣感覺。",
+      "question": "你想留下甚麼？",
+      "twist": "",
+      "deeperQuestion": "那份感覺能在現在的生活找到嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-011",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Priced dream",
+    "scenario": "Your dream gets an affordable price tag, removing all effort.",
+    "question": "Do you still want it?",
+    "twist": "",
+    "deeperQuestion": "Do you want the result or the path toward it?",
+    "zh": {
+      "title": "夢想標價",
+      "scenario": "你最想要的夢想突然標上可負擔的價錢，買了就不用努力。",
+      "question": "你還想要嗎？",
+      "twist": "",
+      "deeperQuestion": "你期待的是結果，還是走過去的路？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-012",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Invisible medal",
+    "scenario": "You receive a medal only you can see.",
+    "question": "What should it honour?",
+    "twist": "",
+    "deeperQuestion": "Is it worth celebrating if nobody knows?",
+    "zh": {
+      "title": "看不見的獎牌",
+      "scenario": "你得到一枚只有自己看得見的獎牌。",
+      "question": "你想它表揚哪件事？",
+      "twist": "",
+      "deeperQuestion": "沒有別人知道，還值得慶祝嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-013",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Time thief",
+    "scenario": "A thief steals your daydreaming time and replaces it with productivity.",
+    "question": "Would you report them?",
+    "twist": "",
+    "deeperQuestion": "Which ten minutes would you reclaim first?",
+    "zh": {
+      "title": "時間小偷",
+      "scenario": "小偷偷走你的發呆時間，換成完成更多事情。",
+      "question": "你會報警嗎？",
+      "twist": "",
+      "deeperQuestion": "你想先拿回哪十分鐘？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-014",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Refusing shadow",
+    "scenario": "Your shadow refuses everything you do not want to agree to.",
+    "question": "Would you let it speak?",
+    "twist": "",
+    "deeperQuestion": "Whom would you fear it refusing?",
+    "zh": {
+      "title": "會拒絕的影子",
+      "scenario": "影子會替你拒絕所有不想答應的事。",
+      "question": "你會讓它開口嗎？",
+      "twist": "",
+      "deeperQuestion": "你最怕它拒絕誰？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-015",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Unfinished museum",
+    "scenario": "Your unfinished projects become exhibits, some unexpectedly beautiful.",
+    "question": "Which would you display?",
+    "twist": "",
+    "deeperQuestion": "Would you finish it or leave it as it is?",
+    "zh": {
+      "title": "未完成博物館",
+      "scenario": "你沒完成的事都變成展品，有些意外地美。",
+      "question": "你想展出哪件？",
+      "twist": "",
+      "deeperQuestion": "你仍想完成它，還是這樣就好？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-016",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Someone's script",
+    "scenario": "You discover someone else wrote your life script; you may change one page.",
+    "question": "Which page?",
+    "twist": "",
+    "deeperQuestion": "Which original line would you keep?",
+    "zh": {
+      "title": "別人的劇本",
+      "scenario": "你發現人生劇本是別人替你寫的，現在可改一頁。",
+      "question": "你會改哪頁？",
+      "twist": "",
+      "deeperQuestion": "你想保留哪句原本的台詞？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-017",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Lost-wish office",
+    "scenario": "A lost-property office finds a childhood wish and asks whether you still want it.",
+    "question": "Would you collect it?",
+    "twist": "",
+    "deeperQuestion": "Would you feel guilty for no longer wanting it?",
+    "zh": {
+      "title": "心願失物處",
+      "scenario": "失物處找回你小時候遺失的願望，問你還要不要。",
+      "question": "你會領回嗎？",
+      "twist": "",
+      "deeperQuestion": "你會因為不再想要而內疚嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-018",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Courage rental",
+    "scenario": "Courage can be rented for a day; afterwards you remember what you did.",
+    "question": "What would you do?",
+    "twist": "",
+    "deeperQuestion": "Would you hope to do it without renting next time?",
+    "zh": {
+      "title": "勇氣只租不賣",
+      "scenario": "勇氣可以租一天，退還後會記得自己做到過。",
+      "question": "你想用來做甚麼？",
+      "twist": "",
+      "deeperQuestion": "你希望下次不用再租也敢嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-019",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Always enough",
+    "scenario": "Magic makes what you have always feel enough, removing the desire for more.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "Would you worry about stopping?",
+    "zh": {
+      "title": "永遠剛剛好",
+      "scenario": "魔法讓你永遠覺得擁有的剛剛好，但再也不渴望更多。",
+      "question": "你願意嗎？",
+      "twist": "",
+      "deeperQuestion": "你會怕因此停下來嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-020",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Secret name",
+    "scenario": "Everyone has an unspoken name for their truest self.",
+    "question": "What might yours sound like?",
+    "twist": "",
+    "deeperQuestion": "Whom would you let use it?",
+    "zh": {
+      "title": "秘密名字",
+      "scenario": "每人心裡都有一個沒被叫過的名字，代表最真的自己。",
+      "question": "你的名字像甚麼？",
+      "twist": "",
+      "deeperQuestion": "你願意讓誰用它叫你？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-021",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Bad-luck collection",
+    "scenario": "Bad luck can be bottled; ten bottles buy one lucky break.",
+    "question": "Would you keep them?",
+    "twist": "",
+    "deeperQuestion": "What would you spend the lucky break on?",
+    "zh": {
+      "title": "壞運氣收藏",
+      "scenario": "壞運氣能裝瓶收藏，十瓶換一次大好運。",
+      "question": "你會保留它們嗎？",
+      "twist": "",
+      "deeperQuestion": "你想把好運用在哪件事？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-022",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Memory salon",
+    "scenario": "A salon gives your favourite hairstyle by trimming a memory.",
+    "question": "Would you sit down?",
+    "twist": "",
+    "deeperQuestion": "Would you agree if it removes only embarrassment?",
+    "zh": {
+      "title": "回憶剪髮店",
+      "scenario": "剪掉一段回憶，頭髮就變成你最喜歡的樣子。",
+      "question": "你會坐下嗎？",
+      "twist": "",
+      "deeperQuestion": "如果只剪掉尷尬，你願意嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-023",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Confidence coat",
+    "scenario": "A coat makes everyone trust you, even when you doubt your ability.",
+    "question": "Would you wear it to an interview?",
+    "twist": "",
+    "deeperQuestion": "Would you disclose your limitations?",
+    "zh": {
+      "title": "自信外套",
+      "scenario": "外套讓所有人信任你，但你知道自己未必做得到。",
+      "question": "你會穿去面試嗎？",
+      "twist": "",
+      "deeperQuestion": "你會主動說出自己的不足嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-024",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Another path",
+    "scenario": "You can see the life path you did not choose but cannot return to it.",
+    "question": "Would you look?",
+    "twist": "",
+    "deeperQuestion": "How would you care for yourself if it looks better?",
+    "zh": {
+      "title": "另一條小路",
+      "scenario": "你能看見沒選的那條人生路，卻不能回去。",
+      "question": "你想看嗎？",
+      "twist": "",
+      "deeperQuestion": "看到更好的人生，你會怎樣照顧現在的自己？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-025",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Tiny retirement",
+    "scenario": "You can retire early to a comfortable village where nobody needs your help.",
+    "question": "Would you go?",
+    "twist": "",
+    "deeperQuestion": "Would you seek a role or enjoy the quiet?",
+    "zh": {
+      "title": "小小退休",
+      "scenario": "你能提早退休到童話村，生活舒服但再沒人需要你幫忙。",
+      "question": "你會去嗎？",
+      "twist": "",
+      "deeperQuestion": "你會想找事情做，還是享受清閒？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-026",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Feeling wardrobe",
+    "scenario": "You can wear one mood daily, but the old feeling waits underneath.",
+    "question": "What would you wear today?",
+    "twist": "",
+    "deeperQuestion": "Would you face the original feeling that evening?",
+    "zh": {
+      "title": "情緒衣櫃",
+      "scenario": "你能每天挑一種心情穿上，但脫下後原本心情仍在。",
+      "question": "你今天挑甚麼？",
+      "twist": "",
+      "deeperQuestion": "晚上你願意看一看原本的心情嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-027",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "One window",
+    "scenario": "Your home has one window facing past, present or future.",
+    "question": "Which direction would you choose?",
+    "twist": "",
+    "deeperQuestion": "Would you add curtains?",
+    "zh": {
+      "title": "只剩一扇窗",
+      "scenario": "你的房子只准留一扇窗，可望向過去、現在或未來。",
+      "question": "你會朝哪邊？",
+      "twist": "",
+      "deeperQuestion": "你會替它裝窗簾嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-028",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Forget scores",
+    "scenario": "The world forgets your achievements but remembers how being with you feels.",
+    "question": "Would you feel relieved?",
+    "twist": "",
+    "deeperQuestion": "Which achievement would you most miss being known for?",
+    "zh": {
+      "title": "忘掉成績",
+      "scenario": "世界忘記你所有成績，但仍記得跟你相處的感覺。",
+      "question": "你會鬆一口氣嗎？",
+      "twist": "",
+      "deeperQuestion": "你最捨不得哪個成績被忘記？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-029",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Wish sun",
+    "scenario": "Your ambition becomes a sun that grows hotter with effort, drying your garden.",
+    "question": "Would you dim it?",
+    "twist": "",
+    "deeperQuestion": "What in the garden would you protect?",
+    "zh": {
+      "title": "願望太陽",
+      "scenario": "你的願望變成太陽，越努力就越熱，快把花園曬乾。",
+      "question": "你會調暗嗎？",
+      "twist": "",
+      "deeperQuestion": "花園裡有甚麼你不想曬壞？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-030",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "No-explanation pass",
+    "scenario": "You have a pass allowing one choice without explaining yourself.",
+    "question": "What would you use it for?",
+    "twist": "",
+    "deeperQuestion": "Could you make that choice without the pass?",
+    "zh": {
+      "title": "不必解釋券",
+      "scenario": "你有一張不用向任何人解釋的通行證。",
+      "question": "你最想用在哪件事？",
+      "twist": "",
+      "deeperQuestion": "沒有通行證，你也有權這樣選嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-031",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Inner shop",
+    "scenario": "You open a shop selling only what you treasure.",
+    "question": "What is its first item?",
+    "twist": "",
+    "deeperQuestion": "What would you display but never sell?",
+    "zh": {
+      "title": "心裡的小店",
+      "scenario": "你開一家只賣自己珍惜之物的小店。",
+      "question": "第一件商品是甚麼？",
+      "twist": "",
+      "deeperQuestion": "有甚麼你會展示但不出售？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-032",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Likeable mask",
+    "scenario": "A mask makes everyone like you; removing it erases their memories together.",
+    "question": "How long would you wear it?",
+    "twist": "",
+    "deeperQuestion": "Who should first meet you without it?",
+    "zh": {
+      "title": "被喜歡的面具",
+      "scenario": "面具讓所有人喜歡你，摘下後他們會忘記相處。",
+      "question": "你想戴多久？",
+      "twist": "",
+      "deeperQuestion": "你想讓誰先見到沒面具的你？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-033",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Dream ceiling",
+    "scenario": "Your ceiling rises with your dreams, making everyday repairs harder.",
+    "question": "How high should it go?",
+    "twist": "",
+    "deeperQuestion": "Would you lower it for everyday ease?",
+    "zh": {
+      "title": "夢的天花板",
+      "scenario": "天花板會隨夢想升高，卻讓你更難換燈泡。",
+      "question": "你希望它升多高？",
+      "twist": "",
+      "deeperQuestion": "你願意為日常方便調低一點嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-034",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Save today",
+    "scenario": "You can save a moment from today, replaying it without new discoveries.",
+    "question": "Which moment?",
+    "twist": "",
+    "deeperQuestion": "Could an ordinary moment be worth saving?",
+    "zh": {
+      "title": "今天存檔",
+      "scenario": "今天能永久存檔，日後重播不會再有新發現。",
+      "question": "你想存哪一刻？",
+      "twist": "",
+      "deeperQuestion": "普通的一刻也值得存嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-035",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Pressure porter",
+    "scenario": "A porter carries all your pressure but chooses your direction too.",
+    "question": "Would you hire them?",
+    "twist": "",
+    "deeperQuestion": "Which decision would you keep for yourself?",
+    "zh": {
+      "title": "壓力搬運工",
+      "scenario": "搬運工能替你背所有壓力，但也替你決定方向。",
+      "question": "你會雇他嗎？",
+      "twist": "",
+      "deeperQuestion": "你想留下哪個決定權？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-036",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Yesterday apologizes",
+    "scenario": "Yesterday becomes a person and apologizes for not caring for you well.",
     "question": "What would you say?",
     "twist": "",
-    "deeperQuestion": "Does it ask for action, or simply acknowledgment?",
+    "deeperQuestion": "Would you invite them to sit and rest?",
     "zh": {
-      "title": "一句真話",
-      "scenario": "如果今天只對自己講一句真話。",
-      "question": "你會說甚麼？",
+      "title": "會道歉的昨天",
+      "scenario": "昨天變成人，來為沒照顧好你道歉。",
+      "question": "你想對他說甚麼？",
       "twist": "",
-      "deeperQuestion": "這句話需要你做甚麼，還是只需要承認？"
+      "deeperQuestion": "你會讓他坐下休息嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-081",
+    "id": "ponder-v3-solo-037",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Choosing help",
-    "scenario": "You want to talk about a problem.",
-    "question": "Do you need experience or a willing listener?",
+    "title": "Joy compass",
+    "scenario": "A compass points only to joy, never duty.",
+    "question": "Would you carry it?",
     "twist": "",
-    "deeperQuestion": "Who fits what you need right now?",
+    "deeperQuestion": "When would you choose not to follow?",
     "zh": {
-      "title": "選擇幫手",
-      "scenario": "你有個問題想找人談。",
-      "question": "你需要有經驗的人，還是願意聽的人？",
+      "title": "快樂指南針",
+      "scenario": "指南針只指向快樂，不指向責任。",
+      "question": "你會帶它出門嗎？",
       "twist": "",
-      "deeperQuestion": "誰比較符合你現在的需要？"
+      "deeperQuestion": "你會在哪種時候不跟它走？"
     }
   },
   {
-    "id": "ponder-v2-solo-082",
+    "id": "ponder-v3-solo-038",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A daily highlight",
-    "scenario": "Something today went more smoothly than expected.",
-    "question": "What was it?",
+    "title": "Blank square",
+    "scenario": "Your calendar gains an empty space nobody knows about.",
+    "question": "How long would you make it?",
     "twist": "",
-    "deeperQuestion": "What preparation helped?",
+    "deeperQuestion": "Would you be tempted to fill it?",
     "zh": {
-      "title": "一天的亮點",
-      "scenario": "今天有一件事比想像中順利。",
-      "question": "是哪件？",
+      "title": "一格空白",
+      "scenario": "人生行事曆能多出一格沒人知道的空白。",
+      "question": "你想留多久？",
       "twist": "",
-      "deeperQuestion": "有哪個準備幫上忙？"
+      "deeperQuestion": "你會忍不住替它安排事情嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-083",
+    "id": "ponder-v3-solo-039",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "One less notification",
-    "scenario": "Some notifications keep interrupting you.",
-    "question": "Which type would you turn off first?",
+    "title": "Worry trailer",
+    "scenario": "Your worries show trailers, but only one in ten comes true.",
+    "question": "Would you watch them all?",
     "twist": "",
-    "deeperQuestion": "What are you afraid of missing, and does it need an immediate response?",
+    "deeperQuestion": "How would you choose which deserves attention?",
     "zh": {
-      "title": "少一個通知",
-      "scenario": "手機有些通知總是打斷你。",
-      "question": "你最想先關掉哪一類？",
+      "title": "擔心預告片",
+      "scenario": "你擔心的事會播預告片，但十部只有一部成真。",
+      "question": "你會看完全部嗎？",
       "twist": "",
-      "deeperQuestion": "你擔心錯過甚麼，真的需要即時知道嗎？"
+      "deeperQuestion": "你會怎樣決定哪部值得看？"
     }
   },
   {
-    "id": "ponder-v2-solo-084",
+    "id": "ponder-v3-solo-040",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Choosing again",
-    "scenario": "You agreed to a commitment long ago.",
-    "question": "How would you adjust it to fit life now?",
+    "title": "Honest mirror",
+    "scenario": "A mirror names one strength daily without repeating.",
+    "question": "Could you believe it for a year?",
     "twist": "",
-    "deeperQuestion": "Who would you need to discuss it with?",
+    "deeperQuestion": "Which strength might you argue against?",
     "zh": {
-      "title": "重選一次",
-      "scenario": "有個安排是很久前答應的。",
-      "question": "按現在的生活，你會怎樣調整？",
+      "title": "誠實的小鏡",
+      "scenario": "鏡子每天只說一個你的優點，不能重複。",
+      "question": "你相信它能說一年嗎？",
       "twist": "",
-      "deeperQuestion": "你需要跟誰重新商量？"
+      "deeperQuestion": "哪個優點你可能會跟它爭辯？"
     }
   },
   {
-    "id": "ponder-v2-solo-085",
+    "id": "ponder-v3-solo-041",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Noticing change",
-    "scenario": "Something small that once bothered you matters less now.",
-    "question": "What is it?",
+    "title": "Remembering shoes",
+    "scenario": "Your shoes weigh down with past hardship; replacing them erases your sense of distance travelled.",
+    "question": "Would you change them?",
     "twist": "",
-    "deeperQuestion": "What experience changed your view?",
+    "deeperQuestion": "Could you keep a small memento?",
     "zh": {
-      "title": "看見變化",
-      "scenario": "以前很在意的一件小事，現在沒那麼介意了。",
-      "question": "是甚麼？",
+      "title": "記住疼痛的鞋",
+      "scenario": "鞋記得你走過的辛苦，穿著很重，丟掉卻會忘記自己走多遠。",
+      "question": "你會換嗎？",
       "twist": "",
-      "deeperQuestion": "是哪段經歷讓你看法不同？"
+      "deeperQuestion": "你能留下一個小紀念嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-086",
+    "id": "ponder-v3-solo-042",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A comfortable evening",
-    "scenario": "You have no special plans tonight.",
-    "question": "What ordinary activity could feel more comfortable?",
+    "title": "Unseen success",
+    "scenario": "You can achieve your greatest goal, but nobody will know.",
+    "question": "Would you still want it?",
     "twist": "",
-    "deeperQuestion": "Would that need preparation, tidying, or doing less?",
+    "deeperQuestion": "How would you celebrate yourself?",
     "zh": {
-      "title": "一個舒服的晚上",
-      "scenario": "今晚沒有特別安排。",
-      "question": "你想把哪件普通小事做得舒服一點？",
+      "title": "不被看見的成功",
+      "scenario": "你能完成最重要的目標，但沒人會知道。",
+      "question": "你還想完成嗎？",
       "twist": "",
-      "deeperQuestion": "你需要先收拾、準備，還是少做一件事？"
+      "deeperQuestion": "你想怎樣替自己慶祝？"
     }
   },
   {
-    "id": "ponder-v2-solo-087",
+    "id": "ponder-v3-solo-043",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Making it clear",
-    "scenario": "You have an idea that is hard to explain.",
-    "question": "What everyday example could describe it?",
+    "title": "Slow arrival",
+    "scenario": "A train guarantees your desired life without saying how long it takes.",
+    "question": "Would you board?",
     "twist": "",
-    "deeperQuestion": "How would you put it in one sentence?",
+    "deeperQuestion": "Would you get off to explore along the way?",
     "zh": {
-      "title": "清楚一點",
-      "scenario": "你有個想法很難說清楚。",
-      "question": "可以用哪個生活例子來形容？",
+      "title": "慢慢到達",
+      "scenario": "火車保證帶你去想去的生活，卻不告訴你要多久。",
+      "question": "你會上車嗎？",
       "twist": "",
-      "deeperQuestion": "如果只用一句話，你會怎樣說？"
+      "deeperQuestion": "途中可以下車看看，你會下嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-088",
+    "id": "ponder-v3-solo-044",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "An empty slot",
-    "scenario": "Half a day unexpectedly opens up.",
-    "question": "Is your first instinct to work or rest?",
+    "title": "No fear of failure",
+    "scenario": "A potion removes fear of failure but also your urge to prepare.",
+    "question": "How much would you drink?",
     "twist": "",
-    "deeperQuestion": "What would you actually like to choose this time?",
+    "deeperQuestion": "What caution would you keep?",
     "zh": {
-      "title": "一段空白",
-      "scenario": "行程突然空出半天。",
-      "question": "你第一個念頭是補工作，還是休息？",
+      "title": "忘記怕失敗",
+      "scenario": "藥水讓你不怕失敗，但也不再事先準備。",
+      "question": "你會喝多少？",
       "twist": "",
-      "deeperQuestion": "這次你真正想怎樣選？"
+      "deeperQuestion": "你想保留哪一點小心？"
     }
   },
   {
-    "id": "ponder-v2-solo-089",
+    "id": "ponder-v3-solo-045",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A small impression",
-    "scenario": "Someone has just met you.",
-    "question": "What small quality would you like them to remember?",
+    "title": "Lonely light",
+    "scenario": "A light shines when you are alone, inviting people to visit.",
+    "question": "Would you switch it on?",
     "twist": "",
-    "deeperQuestion": "Does that side of you show around people you know well?",
+    "deeperQuestion": "Would being able to switch it off help?",
     "zh": {
-      "title": "你想怎樣被記得",
-      "scenario": "剛認識的人跟你聊完。",
-      "question": "你希望他記得你哪個小特點？",
+      "title": "孤單的燈",
+      "scenario": "你獨處時會亮起一盞燈，別人可以選擇來陪。",
+      "question": "你想讓燈亮嗎？",
       "twist": "",
-      "deeperQuestion": "你在熟人面前也有這個樣子嗎？"
+      "deeperQuestion": "你能自己關燈會更願意嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-090",
+    "id": "ponder-v3-solo-046",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Keeping curiosity",
-    "scenario": "You tried something you expected to dislike and changed your mind.",
-    "question": "What was it?",
+    "title": "Strength exchange",
+    "scenario": "You can trade your greatest strength for what you most envy in others.",
+    "question": "Would you trade?",
     "twist": "",
-    "deeperQuestion": "What else might deserve one try?",
+    "deeperQuestion": "What might your friends miss about you?",
     "zh": {
-      "title": "保留好奇",
-      "scenario": "你原本以為不喜歡一件事，試過後改觀了。",
-      "question": "是哪件？",
+      "title": "交換一個優點",
+      "scenario": "你能把最擅長的事換成最羨慕別人的事。",
+      "question": "你會交換嗎？",
       "twist": "",
-      "deeperQuestion": "還有哪件小事值得給一次機會？"
+      "deeperQuestion": "原本喜歡你的朋友會想念甚麼？"
     }
   },
   {
-    "id": "ponder-v2-solo-091",
+    "id": "ponder-v3-solo-047",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A message not sent",
-    "scenario": "There is a message you have not sent.",
-    "question": "What do you want it to accomplish?",
+    "title": "Repeated day",
+    "scenario": "You can repeat a day until satisfied, remembering every attempt alone.",
+    "question": "Which day would you choose?",
     "twist": "",
-    "deeperQuestion": "How could it be more direct and rely less on assumptions?",
+    "deeperQuestion": "How would you know it is good enough?",
     "zh": {
-      "title": "想說未說",
-      "scenario": "你有一句話一直想傳出去。",
-      "question": "它最想達到甚麼目的？",
+      "title": "重複的一天",
+      "scenario": "你可以重過一天直到滿意，但只有你記得重來幾次。",
+      "question": "你會選哪天？",
       "twist": "",
-      "deeperQuestion": "怎樣寫會更直接，又少一點猜測？"
+      "deeperQuestion": "你怎樣知道已經夠好了？"
     }
   },
   {
-    "id": "ponder-v2-solo-092",
+    "id": "ponder-v3-solo-048",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "My own corner",
-    "scenario": "You want a spot for an activity you enjoy.",
-    "question": "What does it need most?",
+    "title": "Thought beach",
+    "scenario": "Waves carry a thought away, possibly to a stranger.",
+    "question": "Which would you release?",
     "twist": "",
-    "deeperQuestion": "What could you use that you already own?",
+    "deeperQuestion": "How would you hope they treat it?",
     "zh": {
-      "title": "自己的角落",
-      "scenario": "你想留一個地方做喜歡的事。",
-      "question": "那裡最需要放甚麼？",
+      "title": "心事海灘",
+      "scenario": "海浪能沖走一個念頭，也能把它帶到陌生人那裡。",
+      "question": "你會交出哪個？",
       "twist": "",
-      "deeperQuestion": "有甚麼可以先用現成的東西代替？"
+      "deeperQuestion": "你會希望那人怎樣對待它？"
     }
   },
   {
-    "id": "ponder-v2-solo-093",
+    "id": "ponder-v3-solo-049",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A shorter explanation",
-    "scenario": "You often over-explain to avoid being misunderstood.",
-    "question": "What recent situation needed only one sentence?",
+    "title": "Inner judge",
+    "scenario": "Your inner critic becomes a tiny judge asking for a job.",
+    "question": "What would you assign?",
     "twist": "",
-    "deeperQuestion": "What would that shorter sentence be?",
+    "deeperQuestion": "What would you keep outside their authority?",
     "zh": {
-      "title": "把話說短",
-      "scenario": "你常常解釋很多，怕別人誤會。",
-      "question": "最近哪件事其實一句話就夠？",
+      "title": "內心小評判",
+      "scenario": "腦裡的批評聲變成小評判，要你給他一份工作。",
+      "question": "你會安排甚麼？",
       "twist": "",
-      "deeperQuestion": "那句簡短的說法會是甚麼？"
+      "deeperQuestion": "有哪個地方你不讓他管？"
     }
   },
   {
-    "id": "ponder-v2-solo-094",
+    "id": "ponder-v3-solo-050",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Before concluding",
-    "scenario": "Something just happened and you imagined many outcomes.",
-    "question": "What is actually known so far?",
+    "title": "Proof-free door",
+    "scenario": "A door admits only people who stop proving themselves.",
+    "question": "What would you put down to enter?",
     "twist": "",
-    "deeperQuestion": "What is still only a guess?",
+    "deeperQuestion": "What pressure might be absent beyond it?",
     "zh": {
-      "title": "不急著下結論",
-      "scenario": "一件事剛發生，你就替它想了很多結果。",
-      "question": "現在已經確定的事有哪些？",
+      "title": "不需證明的門",
+      "scenario": "一扇門只讓不再證明自己的人通過。",
+      "question": "你能放下甚麼才進去？",
       "twist": "",
-      "deeperQuestion": "還有哪件事只是你的猜測？"
+      "deeperQuestion": "你猜門後會少了甚麼壓力？"
     }
   },
   {
-    "id": "ponder-v2-solo-095",
+    "id": "ponder-v3-solo-051",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "For tomorrow",
-    "scenario": "There is something tomorrow you are not looking forward to.",
-    "question": "What could make it easier tonight?",
+    "title": "Smaller dream",
+    "scenario": "A big dream can shrink into something doable today, losing its impressive appearance.",
+    "question": "Would you shrink it?",
     "twist": "",
-    "deeperQuestion": "What sentence would you like to remind yourself of?",
+    "deeperQuestion": "Which small version would you try first?",
     "zh": {
-      "title": "留給明天",
-      "scenario": "明天有一件你不太想面對的事。",
-      "question": "今晚可以做甚麼讓它容易一點？",
+      "title": "夢想縮小術",
+      "scenario": "你能把大夢縮成今天就能做的小事，卻看起來不再厲害。",
+      "question": "你會縮嗎？",
       "twist": "",
-      "deeperQuestion": "你需要提醒自己哪一句？"
+      "deeperQuestion": "你想先做哪個小版本？"
     }
   },
   {
-    "id": "ponder-v2-solo-096",
+    "id": "ponder-v3-solo-052",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A new side of me",
-    "scenario": "You have noticed a new preference lately.",
-    "question": "What is it?",
+    "title": "Choice echoes",
+    "scenario": "After each choice, you hear laughter from the other path.",
+    "question": "Would you want that power?",
     "twist": "",
-    "deeperQuestion": "How much time would you like to give this interest?",
+    "deeperQuestion": "Might you overlook the sounds on your own path?",
     "zh": {
-      "title": "再認識自己",
-      "scenario": "最近你發現自己有一個新喜好。",
-      "question": "是哪一個？",
+      "title": "選擇的回音",
+      "scenario": "每次選擇後，你都能聽見沒選那邊的歡笑。",
+      "question": "你還想要這種能力嗎？",
       "twist": "",
-      "deeperQuestion": "你想花多少時間了解這個興趣？"
+      "deeperQuestion": "你會忘記自己這邊也有聲音嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-097",
+    "id": "ponder-v3-solo-053",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A helpful no",
-    "scenario": "Recall a time saying no brought relief.",
-    "question": "What did it protect?",
+    "title": "Wish cleaner",
+    "scenario": "A cleaner removes wishes other people gave you.",
+    "question": "Would you worry about the empty space?",
     "twist": "",
-    "deeperQuestion": "What sign could remind you next time?",
+    "deeperQuestion": "What would you put back yourself first?",
     "zh": {
-      "title": "有用的拒絕",
-      "scenario": "想起一次你拒絕後反而鬆一口氣。",
-      "question": "你保住了甚麼？",
+      "title": "心願清潔工",
+      "scenario": "清潔工替你掃走別人塞給你的願望。",
+      "question": "你擔心地板會變得太空嗎？",
       "twist": "",
-      "deeperQuestion": "下次有甚麼訊號可以提醒你？"
+      "deeperQuestion": "你想自己放回第一樣甚麼？"
     }
   },
   {
-    "id": "ponder-v2-solo-098",
+    "id": "ponder-v3-solo-054",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Enough for today",
-    "scenario": "Imagine stopping here for today.",
-    "question": "What unfinished task could you put down?",
+    "title": "Tomorrow's hero",
+    "scenario": "Tomorrow you become a hero; today you are ordinary.",
+    "question": "What would you tell tomorrow's you?",
     "twist": "",
-    "deeperQuestion": "What would be the first step when you return?",
+    "deeperQuestion": "What ordinary need should they remember?",
     "zh": {
-      "title": "今天夠了",
-      "scenario": "今天已經忙了一段時間。",
-      "question": "你願意先放下哪件未完成的事？",
+      "title": "明天的勇者",
+      "scenario": "你明天會變成勇者，今天仍是普通人。",
+      "question": "你想先把甚麼告訴他？",
       "twist": "",
-      "deeperQuestion": "重新開始時，第一步要做甚麼？"
+      "deeperQuestion": "你希望他別忘記哪個平凡需要？"
     }
   },
   {
-    "id": "ponder-v2-solo-099",
+    "id": "ponder-v3-solo-055",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A note for tomorrow",
-    "scenario": "You are writing one sentence for tomorrow's you.",
-    "question": "What would it say?",
+    "title": "Priced rest",
+    "scenario": "Rest turns directly into coins.",
+    "question": "Would you still call yourself lazy?",
     "twist": "",
-    "deeperQuestion": "Where could you leave it so you see it?",
+    "deeperQuestion": "Would rest still matter without coins?",
     "zh": {
-      "title": "給明天一句話",
-      "scenario": "你想寫一句話給明天的自己。",
-      "question": "你會提醒甚麼？",
+      "title": "有價的休息",
+      "scenario": "休息會直接變成金幣。",
+      "question": "你還會覺得自己懶嗎？",
       "twist": "",
-      "deeperQuestion": "把它放在哪裡才看得到？"
+      "deeperQuestion": "沒有金幣之後，休息還值得嗎？"
     }
   },
   {
-    "id": "ponder-v2-solo-100",
+    "id": "ponder-v3-solo-056",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "One thing to take away",
-    "scenario": "You have spent a little time reflecting today.",
-    "question": "What small discovery would you like to keep?",
+    "title": "Companion shadow",
+    "scenario": "Your shadow wants to stay whether you succeed or fail.",
+    "question": "Would you believe it?",
     "twist": "",
-    "deeperQuestion": "Would you like to simply remember it or try one small action?",
+    "deeperQuestion": "What would you most want it beside you for?",
     "zh": {
-      "title": "帶走一件事",
-      "scenario": "你剛花了一點時間整理想法。",
-      "question": "你最想帶走哪個小發現？",
+      "title": "會陪你的影子",
+      "scenario": "影子說無論你成功與否都想陪你。",
+      "question": "你會相信它嗎？",
       "twist": "",
-      "deeperQuestion": "你想只記住它，還是試做一件小事？"
+      "deeperQuestion": "你最想讓它陪你面對甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-057",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "No regret",
+    "scenario": "You can stop regretting choices but lose the wish to repair them.",
+    "question": "Would you accept?",
+    "twist": "",
+    "deeperQuestion": "Which regret would you keep?",
+    "zh": {
+      "title": "無法後悔",
+      "scenario": "你能不再後悔任何選擇，但也不會想補救。",
+      "question": "你會接受嗎？",
+      "twist": "",
+      "deeperQuestion": "有哪份後悔你想留下？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-058",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Growth tickets",
+    "scenario": "Every change leaves a ticket stub while others see only the destination.",
+    "question": "Which would you show?",
+    "twist": "",
+    "deeperQuestion": "Does the journey count without showing it?",
+    "zh": {
+      "title": "成長的票根",
+      "scenario": "每次改變都留下一張票根，別人只看見目的地。",
+      "question": "你想展示哪張？",
+      "twist": "",
+      "deeperQuestion": "不展示也算走過嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-059",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Lend to yesterday",
+    "scenario": "Yesterday's you asks for money to avoid a detour.",
+    "question": "Would you lend it?",
+    "twist": "",
+    "deeperQuestion": "What did that detour teach you?",
+    "zh": {
+      "title": "給昨天借錢",
+      "scenario": "昨天的你來借一筆錢，說能少走一段彎路。",
+      "question": "你會借嗎？",
+      "twist": "",
+      "deeperQuestion": "那段彎路教過你甚麼？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-060",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Half perfect",
+    "scenario": "You can perfect half your life, leaving the other half unchanged.",
+    "question": "Which half?",
+    "twist": "",
+    "deeperQuestion": "Which imperfection would you leave?",
+    "zh": {
+      "title": "完美的一半",
+      "scenario": "你能把人生一半變得完美，另一半維持原樣。",
+      "question": "你想選哪一半？",
+      "twist": "",
+      "deeperQuestion": "你願意讓哪個不足留下？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-061",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Thought hourglass",
+    "scenario": "Thinking about one topic drains an hourglass; when empty, you forget it.",
+    "question": "Would you ration your thoughts?",
+    "twist": "",
+    "deeperQuestion": "What would you least want to use up?",
+    "zh": {
+      "title": "心事沙漏",
+      "scenario": "每天想同一件事會消耗沙漏，沙完就忘記它。",
+      "question": "你會節省著想嗎？",
+      "twist": "",
+      "deeperQuestion": "你最不想把哪件事想完？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-062",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Pocket shelter",
+    "scenario": "A tent blocks every demand, but long stays make you forget the exit.",
+    "question": "How long would you stay?",
+    "twist": "",
+    "deeperQuestion": "Whom would you ask to remind you to leave?",
+    "zh": {
+      "title": "隨身避風港",
+      "scenario": "小帳篷能隔絕一切要求，但待久了會忘記怎樣出去。",
+      "question": "你想住多久？",
+      "twist": "",
+      "deeperQuestion": "你會請誰提醒你出來？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-063",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Your own audience",
+    "scenario": "You become the only audience for your life performance.",
+    "question": "Would you keep the same show?",
+    "twist": "",
+    "deeperQuestion": "Which scene would you remove first?",
+    "zh": {
+      "title": "自己的觀眾",
+      "scenario": "你的人生表演只剩自己一位觀眾。",
+      "question": "你還想演原本那齣戲嗎？",
+      "twist": "",
+      "deeperQuestion": "你會先刪去哪一幕？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-064",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Borrowed light",
+    "scenario": "People borrow your light for warmth, dimming you each time.",
+    "question": "When would you stop lending?",
+    "twist": "",
+    "deeperQuestion": "Who could help you shine again?",
+    "zh": {
+      "title": "被借走的光",
+      "scenario": "別人能借你的光取暖，但每次你會暗一點。",
+      "question": "你會借到甚麼時候？",
+      "twist": "",
+      "deeperQuestion": "誰能幫你重新亮起來？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-065",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Mistake guide",
+    "scenario": "Each mistake adds a safe route to your map.",
+    "question": "Would that make you try more?",
+    "twist": "",
+    "deeperQuestion": "What cost would you still avoid?",
+    "zh": {
+      "title": "錯誤指南",
+      "scenario": "每次犯錯，地圖就多一條安全路。",
+      "question": "你會因此敢試嗎？",
+      "twist": "",
+      "deeperQuestion": "你仍會避開哪種代價？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-066",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Useless day",
+    "scenario": "A fairy gives you a day that ends when you do anything useful.",
+    "question": "How would you spend it?",
+    "twist": "",
+    "deeperQuestion": "Would you use it up quickly?",
+    "zh": {
+      "title": "一日不用有用",
+      "scenario": "精靈送你一天，做任何有用的事就會結束。",
+      "question": "你想怎樣過？",
+      "twist": "",
+      "deeperQuestion": "你會很快把它用完嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-067",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Wish temperature",
+    "scenario": "Every wish has a temperature, some too hot to hold.",
+    "question": "Would you grip the hottest one?",
+    "twist": "",
+    "deeperQuestion": "Would putting it down briefly mean giving up?",
+    "zh": {
+      "title": "心願溫度",
+      "scenario": "每個願望有溫度，有些熱得燙手。",
+      "question": "你會握緊最熱的那個嗎？",
+      "twist": "",
+      "deeperQuestion": "放下一會會等於放棄嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-068",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Misread letter",
+    "scenario": "You can send a letter that will never be misunderstood, but only to yourself.",
+    "question": "What would you write?",
+    "twist": "",
+    "deeperQuestion": "Which sentence do you most need to believe?",
+    "zh": {
+      "title": "被誤解的信",
+      "scenario": "你能寄一封永不被誤解的信，但只能寄給自己。",
+      "question": "你會寫甚麼？",
+      "twist": "",
+      "deeperQuestion": "你最需要相信哪一句？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-069",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Beginner badge",
+    "scenario": "A badge earns patience for mistakes but removes others' admiration.",
+    "question": "Would you wear it?",
+    "twist": "",
+    "deeperQuestion": "Where would you most want to wear it?",
+    "zh": {
+      "title": "新手徽章",
+      "scenario": "戴上徽章，大家會容許你犯錯，但不會覺得你厲害。",
+      "question": "你願意戴嗎？",
+      "twist": "",
+      "deeperQuestion": "你最想在哪個地方戴？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-070",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Comparison-free eyes",
+    "scenario": "New eyes see things themselves but never rankings.",
+    "question": "Would you swap?",
+    "twist": "",
+    "deeperQuestion": "Would choosing become easier or harder?",
+    "zh": {
+      "title": "不再比較的眼睛",
+      "scenario": "新眼睛看不見排名，只看見事物本身。",
+      "question": "你想換嗎？",
+      "twist": "",
+      "deeperQuestion": "你會更容易還是更難選擇？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-071",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Choice island",
+    "scenario": "Your island can keep only one “should” each day.",
+    "question": "Which would you keep today?",
+    "twist": "",
+    "deeperQuestion": "Is it yours or someone else's?",
+    "zh": {
+      "title": "選擇的小島",
+      "scenario": "你的小島每天只能留一個「應該」。",
+      "question": "今天你想留下哪個？",
+      "twist": "",
+      "deeperQuestion": "那是你自己的，還是別人給的？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-072",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Expiring praise",
+    "scenario": "Praise fades after a day while criticism stays.",
+    "question": "How would you preserve kind words?",
+    "twist": "",
+    "deeperQuestion": "Would you trust your written version?",
+    "zh": {
+      "title": "會過期的讚美",
+      "scenario": "讚美一天後就從記憶消失，批評卻能留下。",
+      "question": "你想怎樣保存好話？",
+      "twist": "",
+      "deeperQuestion": "你會相信自己寫下的版本嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-073",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Dream maintenance",
+    "scenario": "Your dream needs regular rest to keep glowing.",
+    "question": "How many days off would you give it?",
+    "twist": "",
+    "deeperQuestion": "Would you still know who you are while it rests?",
+    "zh": {
+      "title": "夢想保養日",
+      "scenario": "夢想要定期休息才能繼續發光。",
+      "question": "你會給它放幾天假？",
+      "twist": "",
+      "deeperQuestion": "休假時你還認得自己嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-074",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Book of answers",
+    "scenario": "A book answers every life question but ends your curiosity.",
+    "question": "Would you open it?",
+    "twist": "",
+    "deeperQuestion": "Would you take just one page?",
+    "zh": {
+      "title": "所有答案的書",
+      "scenario": "書知道你人生所有答案，但讀完就不再好奇。",
+      "question": "你會翻開嗎？",
+      "twist": "",
+      "deeperQuestion": "你想只撕下一頁嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-075",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Life volume",
+    "scenario": "You can lower outside noise, making your thoughts louder.",
+    "question": "Would you turn it down?",
+    "twist": "",
+    "deeperQuestion": "Which voice would you want to hear clearly first?",
+    "zh": {
+      "title": "生活音量",
+      "scenario": "你能調低外界聲音，自己的念頭卻會變大。",
+      "question": "你會轉低嗎？",
+      "twist": "",
+      "deeperQuestion": "你最想先聽清哪個聲音？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-076",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Luck's cost",
+    "scenario": "A luck fairy will stay if you never claim personal credit.",
+    "question": "Would you agree?",
+    "twist": "",
+    "deeperQuestion": "Would success still feel satisfying?",
+    "zh": {
+      "title": "幸運的代價",
+      "scenario": "好運精靈願意常駐，但每件事都不能說是靠自己。",
+      "question": "你會答應嗎？",
+      "twist": "",
+      "deeperQuestion": "成功仍會讓你滿足嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-077",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Nameless work",
+    "scenario": "Your work could move many people but must remain anonymous.",
+    "question": "Would you create it?",
+    "twist": "",
+    "deeperQuestion": "What private mark would you leave?",
+    "zh": {
+      "title": "不帶名字的作品",
+      "scenario": "你的作品能感動很多人，但永遠不能署名。",
+      "question": "你還想創作嗎？",
+      "twist": "",
+      "deeperQuestion": "你想留下哪個只有自己懂的記號？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-078",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Growing courage",
+    "scenario": "Courage is a bird that grows only when allowed to fly away.",
+    "question": "Would you open the cage?",
+    "twist": "",
+    "deeperQuestion": "Would you wait if it did not return soon?",
+    "zh": {
+      "title": "長大的勇氣",
+      "scenario": "勇氣是一隻小鳥，只有你准許它飛走才會長大。",
+      "question": "你會開籠嗎？",
+      "twist": "",
+      "deeperQuestion": "它暫時不回來，你會等嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-079",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Two selves",
+    "scenario": "You spend a day with your ideal self, who also envies you.",
+    "question": "What might they envy?",
+    "twist": "",
+    "deeperQuestion": "Do you value that thing now?",
+    "zh": {
+      "title": "一天兩個自己",
+      "scenario": "你能跟理想中的自己住一天，他卻也羨慕你。",
+      "question": "你猜他羨慕甚麼？",
+      "twist": "",
+      "deeperQuestion": "你現在有把那件事看得重要嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-080",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Past exit",
+    "scenario": "An old-memory room gains an exit; leaving keeps the memory but ends your stay.",
+    "question": "Would you walk out?",
+    "twist": "",
+    "deeperQuestion": "What small thing would you take?",
+    "zh": {
+      "title": "過去的出口",
+      "scenario": "舊回憶房間多了一扇出口，出去不會忘記，只是不再住在裡面。",
+      "question": "你準備走嗎？",
+      "twist": "",
+      "deeperQuestion": "你想帶哪件小東西同行？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-081",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Time bouquet",
+    "scenario": "Your free time becomes flowers to keep or give away.",
+    "question": "How would you divide them?",
+    "twist": "",
+    "deeperQuestion": "Would you keep your favourite flower?",
+    "zh": {
+      "title": "時間花束",
+      "scenario": "你剩餘的空閒時間變成花束，只能送人或自己留。",
+      "question": "你會怎樣分？",
+      "twist": "",
+      "deeperQuestion": "你會替自己留最喜歡的一朵嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-082",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Without being understood",
+    "scenario": "People on an island do not fully understand you but treat you kindly.",
+    "question": "Would you stay?",
+    "twist": "",
+    "deeperQuestion": "Would you keep trying to explain yourself?",
+    "zh": {
+      "title": "不必被懂",
+      "scenario": "小島上的人不完全理解你，卻一直善待你。",
+      "question": "你願意住下嗎？",
+      "twist": "",
+      "deeperQuestion": "你會繼續解釋自己嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-083",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Worry wages",
+    "scenario": "Every minute of worrying earns a coin.",
+    "question": "Would you worry more?",
+    "twist": "",
+    "deeperQuestion": "Would you set a time to stop working?",
+    "zh": {
+      "title": "擔心的薪水",
+      "scenario": "每擔心一分鐘就賺一元。",
+      "question": "你會想得更多嗎？",
+      "twist": "",
+      "deeperQuestion": "你會為自己訂下班時間嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-084",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Kindness border",
+    "scenario": "Visitors pick flowers freely from your garden, leaving few for you.",
+    "question": "Would you add a gate?",
+    "twist": "",
+    "deeperQuestion": "What would the sign on it say?",
+    "zh": {
+      "title": "善良的界線",
+      "scenario": "你的花園免費讓人採花，但快沒花留給自己。",
+      "question": "你會裝門嗎？",
+      "twist": "",
+      "deeperQuestion": "你想怎樣寫門上的告示？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-085",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Another summit",
+    "scenario": "At the summit you discover a higher mountain behind it.",
+    "question": "Would you climb on or sit?",
+    "twist": "",
+    "deeperQuestion": "How long could you sit comfortably?",
+    "zh": {
+      "title": "不是終點的山頂",
+      "scenario": "你爬到山頂，卻發現後面還有一座更高的。",
+      "question": "你會繼續還是坐下？",
+      "twist": "",
+      "deeperQuestion": "坐下多久你才會安心？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-086",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Mood boat",
+    "scenario": "You can sail through sadness or bypass it on a bridge without a view.",
+    "question": "Which route?",
+    "twist": "",
+    "deeperQuestion": "How much rowing energy do you have today?",
+    "zh": {
+      "title": "心情小船",
+      "scenario": "你可坐船穿過難過，或走橋繞開，但橋上看不到風景。",
+      "question": "你選哪條路？",
+      "twist": "",
+      "deeperQuestion": "今天的你有多少力氣划船？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-087",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Others' wish list",
+    "scenario": "You receive others' expectations of you and may return three.",
+    "question": "Which would you return?",
+    "twist": "",
+    "deeperQuestion": "Which expectation do you genuinely share?",
+    "zh": {
+      "title": "別人的願望清單",
+      "scenario": "你收到一份大家對你的期待，能退回三項。",
+      "question": "你會退甚麼？",
+      "twist": "",
+      "deeperQuestion": "有哪項你其實也真心想要？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-088",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Stopping clock",
+    "scenario": "An alarm tells you when you have done enough rather than when to wake.",
+    "question": "Would you trust it?",
+    "twist": "",
+    "deeperQuestion": "Would you secretly set it later?",
+    "zh": {
+      "title": "會停下的鬧鐘",
+      "scenario": "鬧鐘不叫你起床，只提醒你今天已經做夠。",
+      "question": "你會相信它嗎？",
+      "twist": "",
+      "deeperQuestion": "你會偷偷把它調晚嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-089",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Liking yourself again",
+    "scenario": "Magic lets you see yourself as a stranger for a day.",
+    "question": "Which side would you introduce first?",
+    "twist": "",
+    "deeperQuestion": "Would you treat yourself more kindly than usual?",
+    "zh": {
+      "title": "重新喜歡自己",
+      "scenario": "魔法讓你用陌生人的眼光看自己一天。",
+      "question": "你想先介紹哪一面？",
+      "twist": "",
+      "deeperQuestion": "你會比平常對自己客氣嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-090",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Waiting to grow",
+    "scenario": "A seed promises to sprout without saying how many years it needs.",
+    "question": "Would you keep watering?",
+    "twist": "",
+    "deeperQuestion": "Would you plant other things meanwhile?",
+    "zh": {
+      "title": "等待發芽",
+      "scenario": "種子保證會發芽，卻不說要等幾年。",
+      "question": "你會一直澆水嗎？",
+      "twist": "",
+      "deeperQuestion": "你會同時種別的東西嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-091",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Life's blank space",
+    "scenario": "An artist paints your life and offers a blank space.",
+    "question": "Where would you leave it?",
+    "twist": "",
+    "deeperQuestion": "Could you accept never filling it?",
+    "zh": {
+      "title": "生命的留白",
+      "scenario": "畫家替你畫人生，問你要不要留一塊空白。",
+      "question": "你想留在哪裡？",
+      "twist": "",
+      "deeperQuestion": "你能接受永遠不填滿嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-092",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Failure suitcase",
+    "scenario": "Failure becomes a suitcase too heavy to carry, holding useful tools.",
+    "question": "What would you take out?",
+    "twist": "",
+    "deeperQuestion": "What could you leave behind?",
+    "zh": {
+      "title": "裝得下的失敗",
+      "scenario": "失敗變成行李箱，太大就帶不動，但裡面有你需要的工具。",
+      "question": "你會拿走甚麼？",
+      "twist": "",
+      "deeperQuestion": "有甚麼可以留在原地？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-093",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Unhurried star",
+    "scenario": "A star took a century to shine and never felt late.",
+    "question": "What would you ask it?",
+    "twist": "",
+    "deeperQuestion": "Where would you keep its reply as a reminder?",
+    "zh": {
+      "title": "不急的星星",
+      "scenario": "一顆星說它遲了一百年才發光，卻從不覺得晚。",
+      "question": "你想問它甚麼？",
+      "twist": "",
+      "deeperQuestion": "你想把它的話放在哪裡提醒自己？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-094",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Tiny progress",
+    "scenario": "A magnifier reveals tiny daily progress invisible to the eye.",
+    "question": "Would you look daily?",
+    "twist": "",
+    "deeperQuestion": "Could you allow a day without progress?",
+    "zh": {
+      "title": "看見小小進步",
+      "scenario": "放大鏡能看見每天極小的進步，肉眼仍看不出。",
+      "question": "你會每天看嗎？",
+      "twist": "",
+      "deeperQuestion": "有一天沒進步，你會容許嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-095",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Reversible choice",
+    "scenario": "You can try a choice for three months then return, leaving the results behind.",
+    "question": "What would you try?",
+    "twist": "",
+    "deeperQuestion": "Would knowing you tried already have value?",
+    "zh": {
+      "title": "可逆的選擇",
+      "scenario": "你能試一個選擇三個月後退回原點，但不能帶走成果。",
+      "question": "你想試甚麼？",
+      "twist": "",
+      "deeperQuestion": "知道自己試過，已經有價值嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-096",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Own doorbell",
+    "scenario": "Your neglected self rings your inner doorbell.",
+    "question": "How would you welcome them?",
+    "twist": "",
+    "deeperQuestion": "Would you ask questions or offer rest first?",
+    "zh": {
+      "title": "自己的門鈴",
+      "scenario": "有人按響內心門鈴，是很久沒被照顧的你。",
+      "question": "你會怎樣迎接？",
+      "twist": "",
+      "deeperQuestion": "你想先問話，還是先給他休息？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-097",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Joy without proof",
+    "scenario": "You get your happiest day without photos or telling anyone.",
+    "question": "How would you spend it?",
+    "twist": "",
+    "deeperQuestion": "Would not sharing make it less joyful?",
+    "zh": {
+      "title": "幸福不留證據",
+      "scenario": "你能過最幸福的一天，卻不能拍照或告訴任何人。",
+      "question": "你會怎樣過？",
+      "twist": "",
+      "deeperQuestion": "不能分享會令快樂少一點嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-098",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Last small wish",
+    "scenario": "A bedtime fairy grants one very small wish.",
+    "question": "What should be different tomorrow morning?",
+    "twist": "",
+    "deeperQuestion": "Which part could you do for yourself tonight?",
+    "zh": {
+      "title": "最後的小願望",
+      "scenario": "睡前精靈只肯實現一個很小的願望。",
+      "question": "你希望明早有甚麼不同？",
+      "twist": "",
+      "deeperQuestion": "有哪部分你今晚就能替自己做到？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-099",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Life narrator",
+    "scenario": "Your life narrator can be a strict coach, kind friend or curious child.",
+    "question": "Whom would you hire?",
+    "twist": "",
+    "deeperQuestion": "Would you keep that narrator after a failure?",
+    "zh": {
+      "title": "人生的旁白",
+      "scenario": "人生旁白可以換成嚴格教練、溫柔朋友或好奇小孩。",
+      "question": "你想請誰？",
+      "twist": "",
+      "deeperQuestion": "遇上失敗時，你還想聽同一位嗎？"
+    }
+  },
+  {
+    "id": "ponder-v3-solo-100",
+    "category": "Solo",
+    "emoji": "🌿",
+    "title": "Moon's holiday",
+    "scenario": "The moon asks you to cover a shift by simply being there, without shining.",
+    "question": "Would that feel like enough?",
+    "twist": "",
+    "deeperQuestion": "Could you offer tomorrow's self the same kindness?",
+    "zh": {
+      "title": "月亮的休假",
+      "scenario": "月亮邀你代班一晚，不用發光，只要安靜待著。",
+      "question": "你會覺得自己做得夠嗎？",
+      "twist": "",
+      "deeperQuestion": "你能把同一份寬容留給明天的自己嗎？"
     }
   }
 ];
