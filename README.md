@@ -1,64 +1,40 @@
 # Ponder 🌷
 
-Questions worth arguing about. A mobile-first conversation game built with React, TypeScript, Vite, and plain CSS.
+**多想一點，靠近一點。Make real connections.**
 
-Play now: https://boeymmee-hue.github.io/ponderAPP/
+[Play Ponder](https://boeymmee-hue.github.io/ponderAPP/)
 
-## Play
+400 short, bilingual conversation cards: 100 each for Couples, Family, Friends and Solo reflection. Friends includes 34 cards for 2–3 people, 33 for 4–6, and 33 for 7 or more. Traditional Chinese appears first; English is available with a toggle.
 
-Choose Cute, Funny, Moral, Love, Deep, or Weird. Read the dilemma aloud, discuss it, then tap **Go Deeper** for the twist and follow-up. **Next Question** and **Shuffle** draw again. **Surprise Me** draws across all categories.
+Read the situation and answer one simple question. “One more” reveals an optional, concrete follow-up. “Next question” is always available. Players can skip any question without explanation. Cards prioritize unseen questions within the selected category and group size. Progress stays on the device, with an in-memory fallback if storage is unavailable.
 
-Includes 600 conversation cards: 100 each in Cute, Funny, Moral, Love, Deep, and Weird. All six original starter cards are preserved. Every card includes a scenario, main question, twist, and deeper follow-up. Each category prioritizes unseen cards before resetting.
+## Sharing
 
-Seen question IDs are stored locally on your device. Unseen cards take priority, and an exhausted category resets when drawn again. If browser storage is unavailable, the game keeps an in-memory history. There is no backend, login, or external API.
+Every card has a sharing panel with Chinese or English PNG postcards, device sharing, image download, and a copyable link. Links use `?q=<stable-card-id>` to open the exact card. Older links still resolve through an archived 600-card collection, clearly marked as the previous edition. Archived cards are excluded from the new random decks.
 
-## Preview locally
+Posters are generated on the device. Social link previews use a common brand image; exact-card posters are available inside the app.
 
-With Node.js 22 or newer installed:
+## Feedback and reviewed submissions
 
-```sh
-npm install
-npm run dev
-```
+Feedback and question suggestions open the owner's published Google Form. They are not submitted until the player presses Submit in Google Forms. The form does not collect email addresses. Responses are private to the owner, and submitting does not publish a question.
 
-Open the local address printed in your terminal, normally http://127.0.0.1:5173.
+Community questions are a separate section. It starts empty. This static website does not read private form responses and has no automatic approval integration. The owner reviews responses in Google Forms, edits approved questions for clarity, then adds only approved content to `src/approved-questions.json` and publishes a new website build. Never place pending submissions or private form responses in this public repository.
 
-## Production build
+See [REVIEW.md](REVIEW.md) for the publication procedure and record format.
 
-```sh
-npm run build
-npm run preview
-```
+## Development and publishing
 
-The build checks TypeScript and generates the static app in `dist/`. The GitHub Actions workflow also runs this build on pushes and pull requests and saves the result as a downloadable artifact. Successful builds on main automatically publish the app to GitHub Pages.
+React, TypeScript, Vite and plain CSS. With Node.js 22 or newer, `npm install` followed by `npm run dev` starts a local preview. `npm run build` checks TypeScript and builds static files. GitHub Actions builds and verifies assets; successful main builds deploy to GitHub Pages. Dependencies were not downloaded locally during this update, as requested by the owner.
 
-## Edit questions
+## Files
 
-Edit `src/questions.ts`. Each card requires a unique, stable `id`, a category from the existing list, an `emoji`, `title`, `scenario`, `question`, `twist`, and `deeperQuestion`.
+- `src/questions.ts`: 400 current cards and types
+- `src/archive.ts`: previous cards for old links only
+- `src/deck.ts`: selection, filters and local history
+- `src/main.tsx`: game, feedback, submission and community screens
+- `src/catalog.ts`: category descriptions, form URL and approved-record validation
+- `src/approved-questions.json`: public, reviewed community cards only
+- `src/share.ts` and `src/ShareCard.tsx`: links and share posters
+- `src/style.css`: responsive styles
 
-## Project layout
-
-- `src/main.tsx` — screens and reusable `QuestionCard` component
-- `src/questions.ts` — local question content
-- `src/deck.ts` — unseen-first selection and storage
-- `src/style.css` — responsive layout and reduced-motion support
-
-## Validation status
-
-Dependencies were not downloaded locally at the user's request. GitHub checks TypeScript, builds the production app, and verifies that the preview serves its assets before publishing. Installable/offline PWA support is not included in this initial version.
-
-## Bilingual cards
-
-600 expanded scenarios, with 100 cards in each of six categories. Traditional Chinese appears first, followed by English, including the question, reveal, and deeper discussion. Chinese translations were drafted with Google Translate and edited for context. Stable card IDs preserve existing browsing history.
-
-## Make real connections
-
-Ponder turns overthinking into perspective, and conversation into connection.
-Every card has a Traditional Chinese-first share panel with Chinese/English PNG
-postcards, a device share action, image download, and a copyable link. Links use
-`?q=<stable-card-id>` so friends open the exact question with its twist initially
-hidden. Images contain the scenario and opening question, keeping the reveal for
-the conversation. Image generation stays on the device; no image service is used.
-If native sharing or clipboard access is unavailable, the panel provides an image
-link and a selectable card URL. Social link previews use a common Ponder brand
-image; individual card posters are generated when the user opens the share panel.
+No login, backend or offline installation is required for the game. Google Forms is an external service used only when a player opens feedback or submission.
