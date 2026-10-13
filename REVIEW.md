@@ -1,8 +1,8 @@
 # 玩家投稿審核
 
 1. 在你的 Google 雲端硬碟開啟「Ponder｜玩家意見與題目投稿」，選「回覆」。
-2. 分開處理改善意見與題目投稿。投稿先看是否容易理解、貼近生活、有不同角度，並刪去私人資料。
-3. 你決定批准後，整理成繁體中文和英文。一個簡短情境、一個主問題、一句具體追問即可。公開暱稱只用玩家自願提供的資料；沒有就省略 `author`。
+2. 分開處理改善意見與題目投稿。投稿先看是否容易理解、有可愛的假設、有真正不同的選擇與取捨，並刪去私人資料。
+3. 你決定批准後，整理成繁體中文和英文。一個可愛假設、一個有取捨的主問題，再改一個條件作追問。避免只換角色或物件、重複同一套邏輯。公開暱稱只用玩家自願提供的資料；沒有就省略 `author`。
 4. 只把已批准的內容加入 `src/approved-questions.json` 陣列。未審核內容留在 Google 表單，不要上傳到公開 repository。
 5. 發布更新並等 GitHub Actions 成功後，題目才會出現在「玩家題目」。你也可以把批准的題目交給維護網站的人代為整理和發布。
 
@@ -20,17 +20,17 @@
     "category": "Party",
     "groupSize": "small",
     "emoji": "☕",
-    "title": "One free hour",
-    "scenario": "You and a friend have an unexpected hour free.",
-    "question": "What nearby place would you visit together?",
+    "title": "Memory cottage",
+    "scenario": "A forest cottage charges one happy memory monthly instead of money.",
+    "question": "Would you move in?",
     "twist": "",
-    "deeperQuestion": "What would you like to do there?",
+    "deeperQuestion": "What if only you forget while everyone else remembers?",
     "zh": {
-      "title": "空出一小時",
-      "scenario": "你和朋友突然多了一小時空檔。",
-      "question": "你會提議一起去哪個附近的地方？",
+      "title": "回憶小屋",
+      "scenario": "森林小屋不用錢，每月收走一段快樂回憶當租金。",
+      "question": "你會搬進去嗎？",
       "twist": "",
-      "deeperQuestion": "去到那裡，你最想做甚麼？"
+      "deeperQuestion": "如果忘記的只有你，其他人仍然記得呢？"
     }
   }
 ]

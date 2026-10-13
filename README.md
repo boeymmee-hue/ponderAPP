@@ -4,13 +4,13 @@
 
 [Play Ponder](https://boeymmee-hue.github.io/ponderAPP/)
 
-400 short, bilingual conversation cards: 100 each for Couples, Family, Friends and Solo reflection. Friends includes 34 cards for 2–3 people, 33 for 4–6, and 33 for 7 or more. Traditional Chinese appears first; English is available with a toggle.
+400 imaginative, bilingual what-if cards with cute premises, meaningful choices and simple language: 100 each for Couples, Family, Friends and Solo reflection. Friends includes 34 cards for 2–3 people, 33 for 4–6, and 33 for 7 or more. Traditional Chinese appears first; English is available with a toggle.
 
-Read the situation and answer one simple question. “One more” reveals an optional, concrete follow-up. “Next question” is always available. Players can skip any question without explanation. Cards prioritize unseen questions within the selected category and group size. Progress stays on the device, with an in-memory fallback if storage is unavailable.
+Enter a playful hypothetical world and make a choice that opens up values, money, love or inner life. “One more” reveals an optional follow-up that changes a condition or explores the same story. “Next question” is always available. Players can skip any question without explanation. Cards prioritize unseen questions within the selected category and group size. Progress stays on the device, with an in-memory fallback if storage is unavailable.
 
 ## Sharing
 
-Every card has a sharing panel with Chinese or English PNG postcards, device sharing, image download, and a copyable link. Links use `?q=<stable-card-id>` to open the exact card. Older links still resolve through an archived 600-card collection, clearly marked as the previous edition. Archived cards are excluded from the new random decks.
+Every card has a sharing panel with Chinese or English PNG postcards, device sharing, image download, and a copyable link. Links use `?q=<stable-card-id>` to open the exact card. Older links still resolve through an archived 1,000-card collection, clearly marked as the previous edition. Archived cards are excluded from the new random decks.
 
 Posters are generated on the device. Social link previews use a common brand image; exact-card posters are available inside the app.
 
@@ -29,7 +29,7 @@ React, TypeScript, Vite and plain CSS. With Node.js 22 or newer, `npm install` f
 ## Files
 
 - `src/questions.ts`: 400 current cards and types
-- `src/archive.ts`: previous cards for old links only
+- `src/archive.ts`: previous editions for old links only
 - `src/deck.ts`: selection, filters and local history
 - `src/main.tsx`: game, feedback, submission and community screens
 - `src/catalog.ts`: category descriptions, form URL and approved-record validation
