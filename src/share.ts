@@ -1,8 +1,10 @@
 import { questions, type Question } from './questions';
+import { archivedQuestions } from './archive';
+import { communityQuestions } from './catalog';
 
 export function questionFromUrl(href: string): Question | null {
   const id = new URL(href).searchParams.get('q');
-  return questions.find(card => card.id === id) ?? null;
+  return [...questions, ...communityQuestions, ...archivedQuestions].find(card => card.id === id) ?? null;
 }
 export function questionUrl(id: string, href = window.location.href): string {
   const url = new URL(href);
@@ -19,8 +21,8 @@ export function updateQuestionUrl(id?: string) {
   window.history.replaceState(null, '', url);
 }
 
-const palettes = {Cute:'#f6dfdc', Funny:'#f6e8b4', Moral:'#e4e8d7', Love:'#f1dce6', Deep:'#e2def0', Weird:'#dbe9ea'};
-const names = {Cute:'可愛', Funny:'搞笑', Moral:'道德', Love:'愛情', Deep:'深度', Weird:'奇想'};
+const palettes = {Couple:'#f1dce6', Family:'#f6e8b4', Party:'#dbe9ea', Solo:'#e4e8d7'};
+const names = {Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
 const sans = 'Arial, "PingFang TC", "Microsoft JhengHei", sans-serif';
 const serif = 'Georgia, "Songti TC", serif';
 
@@ -86,6 +88,6 @@ export async function makeShareImage(card: Question, language: 'zh' | 'en'): Pro
   ctx.font = `bold 30px ${sans}`; ctx.fillText(language === 'zh' ? '我想聽聽，你會怎樣想？' : 'I’d love to hear your perspective.', 64, footerY);
   ctx.font = `22px ${sans}`; ctx.fillStyle = '#826570';
   ctx.fillText('Overthinking → perspective → connection', 64, footerY+53);
-  ctx.textAlign = 'right'; ctx.font = `22px ${sans}`; ctx.fillText(`PONDER / ${card.id.toUpperCase()}`, 1016, footerY+53);
+  ctx.textAlign = 'right'; ctx.font = `22px ${sans}`; ctx.fillText('PONDER / LET’S TALK', 1016, footerY+53);
   return new Promise((resolve,reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Image unavailable')), 'image/png'));
 }

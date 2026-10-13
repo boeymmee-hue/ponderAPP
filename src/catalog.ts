@@ -1,0 +1,30 @@
+import { categories, type Category, type GroupSize, type Question } from './questions';
+import approved from './approved-questions.json';
+export const moods: Record<Category, {emoji:string;name:string;en:string;description:string;detail:string}> = {
+  Couple:{emoji:'💗',name:'情侶',en:'Couples',description:'從日常小事，多懂對方一點。',detail:'2 人 · 相處、陪伴、生活習慣'},
+  Family:{emoji:'🏠',name:'家庭',en:'Family',description:'飯桌、回憶，還有平常沒說的話。',detail:'2 人以上 · 家人一起慢慢聊'},
+  Party:{emoji:'🎉',name:'朋友聚會',en:'Friends',description:'短故事、小選擇，一起打開話匣子。',detail:'按人數選玩法 · 不熟也能加入'},
+  Solo:{emoji:'🌿',name:'一人思考',en:'Solo',description:'一個小問題，整理今天的想法。',detail:'1 人 · 想一想就好，不必寫答案'},
+};
+export const groupSizes: {id:GroupSize;name:string;description:string}[] = [
+  {id:'small',name:'2–3 人',description:'輪流分享，慢慢了解'},
+  {id:'medium',name:'4–6 人',description:'一起選擇，合作想點子'},
+  {id:'large',name:'7 人以上',description:'快速投票或分小組'},
+];
+export const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf7J6WV1a64O9N4-Arg4FwbjWrL8KAF3j-e1gpLExUR8QHlCQ/viewform';
+const isRecord = (value: unknown): value is Record<string,unknown> => Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+// Only explicitly approved, complete records are eligible for publication.
+function isApproved(value: unknown): value is Question & {status:'approved'} {
+  if (!isRecord(value) || value.status !== 'approved' || typeof value.id !== 'string' || !/^community-[a-z0-9-]+$/.test(value.id)) return false;
+  if (!categories.includes(value.category as Category) || typeof value.emoji !== 'string' || !isRecord(value.zh)) return false;
+  const fields = ['title','scenario','question','deeperQuestion'];
+  return fields.every(key => typeof value[key] === 'string' && (value[key] as string).trim() && typeof (value.zh as Record<string,unknown>)[key] === 'string' && ((value.zh as Record<string,unknown>)[key] as string).trim())
+    && typeof value.twist === 'string' && typeof value.zh.twist === 'string'
+    && (value.author === undefined || typeof value.author === 'string')
+    && (value.groupSize === undefined || ['small','medium','large'].includes(String(value.groupSize)));
+}
+const ids = new Set<string>();
+export const communityQuestions: Question[] = (approved as unknown[]).filter(isApproved).filter(card => {
+  if (ids.has(card.id)) return false;
+  ids.add(card.id); return true;
+}).map(card=>({...card,legacy:false}));

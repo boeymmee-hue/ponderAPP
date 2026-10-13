@@ -1,34 +1,28 @@
-import { questions, type Category, type Question } from './questions';
-
-const KEY = 'ponder.seen.v1';
-type History = Partial<Record<Category, string[]>>;
-let memory: History = {};
-function readHistory(): History {
+import { questions, type Category, type GroupSize, type Question } from './questions';
+const KEY = 'ponder.seen.v2';
+let memory: string[] = [];
+function readHistory(): string[] {
   try {
-    const value: unknown = JSON.parse(localStorage.getItem(KEY) || '{}');
-    if (!value || typeof value !== 'object' || Array.isArray(value)) return memory;
-    const result: History = {};
-    for (const category of new Set(questions.map(q => q.category))) {
-      const ids = (value as Record<string, unknown>)[category];
-      if (Array.isArray(ids)) result[category] = ids.filter((id): id is string => typeof id === 'string');
-    }
-    return result;
+    const value: unknown = JSON.parse(localStorage.getItem(KEY) || '[]');
+    return Array.isArray(value) ? value.filter((id): id is string=>typeof id==='string') : memory;
   } catch { return memory; }
 }
-
-export function drawQuestion(category: Category | 'Surprise', previousId?: string): Question {
-  const history = readHistory();
-  const selected = category === 'Surprise' ? [...new Set(questions.map(q => q.category))] : [category];
-  let available = questions.filter(q => selected.includes(q.category) && !history[q.category]?.includes(q.id));
+export function questionPool(category: Category, groupSize?: GroupSize): Question[] {
+  return questions.filter(q=>q.category===category && (category!=='Party' || !groupSize || q.groupSize===groupSize));
+}
+export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize): Question {
+  const pool = questionPool(category,groupSize);
+  if (!pool.length) throw new Error('No questions for this selection');
+  let history = readHistory();
+  let available = pool.filter(q=>!history.includes(q.id));
   if (!available.length) {
-    for (const name of selected) history[name] = [];
-    available = questions.filter(q => selected.includes(q.category));
+    const poolIds=new Set(pool.map(q=>q.id));
+    history=history.filter(id=>!poolIds.has(id)); available=pool;
   }
-  const different = available.filter(q => q.id !== previousId);
-  if (different.length) available = different;
-  const question = available[Math.floor(Math.random() * available.length)];
-  history[question.category] = [...new Set([...(history[question.category] || []), question.id])];
-  memory = history;
-  try { localStorage.setItem(KEY, JSON.stringify(history)); } catch { /* Private browsing can restrict storage; keep playing in memory. */ }
-  return question;
+  const different=available.filter(q=>q.id!==previousId);
+  if(different.length)available=different;
+  const card=available[Math.floor(Math.random()*available.length)];
+  memory=[...new Set([...history,card.id])];
+  try {localStorage.setItem(KEY,JSON.stringify(memory));}catch{/* Keep the same behavior when storage is blocked. */}
+  return card;
 }
