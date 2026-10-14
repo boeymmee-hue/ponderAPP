@@ -4,7 +4,7 @@
 
 [Play Ponder](https://boeymmee-hue.github.io/ponderAPP/)
 
-12 reviewed bilingual pilot cards, three each for Couples, Family, Friends and Solo. Friends has one card for each group size: 2–3, 4–6 and 7+. This focused edition replaces the previous 400-card random deck after reader feedback. Each card uses a clear, relatable hypothetical, a meaningful choice and a connected follow-up. Traditional Chinese appears first, with optional English. The single-card Friends decks return to the group selector instead of silently repeating.
+400 bilingual connection-first cards: 100 each for Couples, Family, Friends and Solo. The 12 reader-approved originals retain their IDs, joined by 388 individually written cards. Friends has 34 cards for 2–3 people, 33 for 4–6 and 33 for 7+. Clear situations invite different choices, followed by a connected question. Chinese appears first, with optional English.
 
 Enter a playful hypothetical world and make a choice that opens up values, money, love or inner life. “One more” reveals an optional follow-up that changes a condition or explores the same story. “Next question” is always available. Players can skip any question without explanation. Cards prioritize unseen questions within the selected category and group size. Progress stays on the device, with an in-memory fallback if storage is unavailable.
 
@@ -13,6 +13,10 @@ Enter a playful hypothetical world and make a choice that opens up values, money
 Every card has a sharing panel with Chinese or English PNG postcards, device sharing, image download, and a copyable link. Links use `?q=<stable-card-id>` to open the exact card. Older links still resolve through an archived 1,400-card collection, clearly marked as the previous edition. Archived cards are excluded from the new random decks.
 
 Posters are generated on the device. Social link previews use a common brand image; exact-card posters are available inside the app.
+
+## Voluntary support
+
+The header and homepage offer an optional support link to the owner-provided Stripe Payment Link. All questions remain free; no payment is needed to play. The link opens Stripe in a separate tab. The app neither collects payment details nor initiates a charge.
 
 ## Feedback and reviewed submissions
 
@@ -28,7 +32,7 @@ React, TypeScript, Vite and plain CSS. With Node.js 22 or newer, `npm install` f
 
 ## Files
 
-- `src/questions.ts`: 12 reviewed pilot cards and types
+- `src/questions.ts`: 400 current cards and types
 - `src/archive.ts`: previous editions for old links only
 - `src/deck.ts`: selection, filters and local history
 - `src/main.tsx`: game, feedback, submission and community screens
