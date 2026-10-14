@@ -21,11 +21,11 @@ function QuestionCard({card, number, onNext}: {card:Question; number:number; onN
     <div className="question-body"><span className="question-emoji" aria-hidden="true">{card.emoji}</span>
       <h1 tabIndex={-1} ref={heading}>{card.zh.title}</h1>
       {card.author && <p className="contributor">玩家提供 · {card.author}</p>}
-      <p className="simple-scenario">{card.zh.scenario}</p><h2>{card.zh.question}</h2>
+      <div className="simple-scenario">{card.zh.scenario.split(/\n\n+/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}</div><h2>{card.zh.question}</h2>
       <button className="language-toggle" aria-expanded={english} aria-controls="english-question" onClick={()=>setEnglish(!english)} lang="en">{english?'Hide English':'Read in English'} <span aria-hidden="true">{english?'−':'+'}</span></button>
-      {english && <div id="english-question" lang="en" className="english-question"><p className="english-title">{card.title}</p><p>{card.scenario}</p><p><strong>{card.question}</strong></p></div>}
+      {english && <div id="english-question" lang="en" className="english-question"><p className="english-title">{card.title}</p>{card.scenario.split(/\n\n+/).map((paragraph,index)=><p key={index}>{paragraph}</p>)}<p><strong>{card.question}</strong></p></div>}
     </div>
-    {!card.legacy && <div className="follow-up"><button className="follow-button" onClick={()=>setFollow(!follow)} aria-expanded={follow} aria-controls="follow-up"><span>再聊一句 <span lang="en">One more</span></span><span aria-hidden="true">{follow?'−':'+'}</span></button>
+    {!card.legacy && <div className="follow-up"><button className="follow-button" onClick={()=>setFollow(!follow)} aria-expanded={follow} aria-controls="follow-up"><span className="follow-label"><span className="follow-title">{follow?'收起追問':'再聊一句'}</span><span className="follow-subtitle" lang="en">{follow?'Close follow-up':'One more · explore this story'}</span></span><span className="follow-symbol" aria-hidden="true">{follow?'−':'＋'}</span></button>
       {follow && <div id="follow-up" className="follow-copy"><p>{card.zh.deeperQuestion}</p>{english && <p lang="en" className="inline-en">{card.deeperQuestion}</p>}</div>}
     </div>}
     <div className="card-actions"><button className="primary" onClick={onNext}><span>下一題 <span lang="en" className="button-en">Next question</span></span><span aria-hidden="true">→</span></button><p className="skip-note">唔想答？直接下一題就得。<span lang="en" className="inline-en">You can always skip. No explanation needed.</span></p></div>
