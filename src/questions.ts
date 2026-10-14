@@ -1523,17 +1523,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-couple-090",
     "category": "Couple",
     "emoji": "💗",
-    "title": "An apology that reaches me",
-    "scenario": "A small disagreement is understood and your partner wants to apologise. They can talk face to face, write a message or first repair things through action.",
-    "question": "Which would help you feel their sincerity first?",
+    "title": "After saying sorry",
+    "scenario": "After a small argument, your partner apologises for speaking harshly. You believe them but still feel unsettled. They ask what would help now.",
+    "question": "Would you want to talk further, have some quiet or do something together?",
     "twist": "",
-    "deeperQuestion": "What wording helps you receive an apology, and what wording gets in the way?",
+    "deeperQuestion": "What makes an issue feel resolved rather than merely unmentioned?",
     "zh": {
-      "title": "不一樣的道歉",
-      "scenario": "你們的小摩擦已弄清楚，對方願意道歉。可以當面慢慢說、寫一段訊息，或先用行動補回，但你只能先選一種。",
-      "question": "哪一種最容易讓你感受到誠意？",
-      "twist": "",
-      "deeperQuestion": "道歉裡，哪句話對你有用，哪句反而會讓你卡住？"
+      "title": "對不起，之後呢？",
+      "scenario": "一次小爭執後，伴侶傳來「對不起，我剛才說話太重了」。你知道他有誠意，心裡卻還有點卡住。他問你，現在怎樣做會讓你好過一點。",
+      "question": "你希望再談清楚、先安靜一會，還是一起做點甚麼？",
+      "deeperQuestion": "對你來說，怎樣才算一件事真的翻篇了，而不只是沒再提？",
+      "twist": ""
     }
   },
   {
@@ -3376,17 +3376,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-family-099",
     "category": "Family",
     "emoji": "🏠",
-    "title": "Hearing what they love",
-    "scenario": "For ten minutes, everyone shares something they currently love. Listeners may ask curious questions without judging its usefulness.",
-    "question": "What would you share?",
+    "title": "So this is what you enjoy now",
+    "scenario": "After dinner, each person shares a recent enthusiasm: a song, plant, game or place. Everyone listens and asks genuine questions before judging its usefulness.",
+    "question": "Which recent interest would you introduce to your family?",
     "twist": "",
-    "deeperQuestion": "How do you feel listening to excitement about something unfamiliar?",
+    "deeperQuestion": "What response from family would make you want to say more?",
     "zh": {
-      "title": "聽家人說一次我喜歡",
-      "scenario": "你們有十分鐘輪流介紹最近真心喜歡的一件事，其他人只能問好奇的問題。不能立即評價有沒有價值。",
-      "question": "你會分享甚麼？",
-      "twist": "",
-      "deeperQuestion": "聽別人興奮地講一件你不熟悉的事，你通常有甚麼感覺？"
+      "title": "原來你最近喜歡這個",
+      "scenario": "今晚吃完飯，每人輪流介紹最近迷上的一件事，可能是歌曲、植物、遊戲或一個地方。其他人先聽完，再問自己真的好奇的部分，不急著評論有沒有用。",
+      "question": "你想讓家人認識你最近的哪個喜好？",
+      "deeperQuestion": "家人怎樣回應，會讓你更想繼續講下去？",
+      "twist": ""
     }
   },
   {
@@ -3770,17 +3770,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-party-021",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A private reference",
-    "scenario": "A friend joins a welcoming activity and asks for a three-sentence introduction. Only they will read it, so no exaggeration or job-style language is needed.",
-    "question": "What three things would you mention?",
+    "title": "Three lines from a friend",
+    "scenario": "Write three lines about each other for the other person to keep. This is neither a job reference nor a public post, just your view of your friend.",
+    "question": "What would you write? Include one small experience you actually shared.",
     "twist": "",
-    "deeperQuestion": "How might your friend's view of you differ from your own?",
+    "deeperQuestion": "Which line surprises you most? Did you know your friend noticed that side?",
     "zh": {
-      "title": "一張不公開的推薦信",
-      "scenario": "朋友要參加一個沒有門檻的小活動，請你寫三句介紹。這封信只給朋友看，不用誇大，也不用像求職。",
-      "question": "你會介紹他的哪三點？",
-      "twist": "",
-      "deeperQuestion": "朋友眼中的你，跟你自己看到的有甚麼不同？"
+      "title": "請朋友替你寫三句",
+      "scenario": "你們互相寫三句介紹，交給對方留著。不是求職，也不會公開，只是讓朋友知道：在你眼裡，他是個怎樣的人。",
+      "question": "你會寫哪三句？至少一句提到你們真的經歷過的小事。",
+      "deeperQuestion": "哪一句最讓你意外？你以前知道朋友有留意這一面嗎？",
+      "twist": ""
     },
     "groupSize": "small"
   },
@@ -4616,17 +4616,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-party-068",
     "category": "Party",
     "emoji": "🎉",
-    "title": "A smaller next time",
-    "scenario": "You keep planning a reunion but cannot find a whole day. Choose an easy thirty-minute activity without needing everyone every time.",
-    "question": "What would you suggest?",
+    "title": "No need for a whole free day",
+    "scenario": "A long-promised reunion never finds a whole free day. Instead of a trip or dinner, you plan something that takes half an hour, for whoever can join.",
+    "question": "What would you suggest to make meeting more likely?",
     "twist": "",
-    "deeperQuestion": "Do brief frequent meetings or longer rare ones sustain friendship better for you?",
+    "deeperQuestion": "Do you currently need frequent short meetings or rare, longer conversations?",
     "zh": {
-      "title": "把下次約定變小",
-      "scenario": "你們一直說要再聚，卻總湊不到完整一天。現在只能約一個三十分鐘、容易出現的活動，不要求每次全員到齊。",
-      "question": "你會提議甚麼？",
-      "twist": "",
-      "deeperQuestion": "對你來說，短但常見和久但深入，哪種更能維持友情？"
+      "title": "不用等大家都有空一整天",
+      "scenario": "你們說了很久要再聚，卻總湊不到完整一天。這次先不約旅行或大餐，只找一件半小時就能一起做的小事，有空的人來就好。",
+      "question": "你會提議做甚麼，讓大家比較容易真的見上一面？",
+      "deeperQuestion": "短短見面但比較常，和難得見面卻聊很久，你現在更需要哪一種？",
+      "twist": ""
     },
     "groupSize": "medium"
   },
@@ -5329,17 +5329,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-008",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Another person's day",
-    "scenario": "You can experience a completely different working day with enough ability to avoid harming anyone. Your usual life waits unchanged afterwards.",
-    "question": "What work would you try, and what would you want to understand?",
+    "title": "Borrow a working day",
+    "scenario": "You win a chance to try any kind of work for a day, guided by someone experienced, without first earning qualifications. The next day you return to your usual life.",
+    "question": "What work would you try, and which part would you most want to do?",
     "twist": "",
-    "deeperQuestion": "Is it the work itself or the life around it that attracts you?",
+    "deeperQuestion": "Do you envy the work itself or the life you imagine around it?",
     "zh": {
-      "title": "試做別人的一天",
-      "scenario": "你可以試過一個完全不同的工作日，能力暫時足夠，不會出錯害到人。晚上回來，原本生活不受影響。",
-      "question": "你想試哪種工作，最想了解哪部分？",
-      "twist": "",
-      "deeperQuestion": "吸引你的是工作內容，還是那種生活的樣子？"
+      "title": "借一份工作過一天",
+      "scenario": "你抽中一次「換工作體驗」：可以到任何一種工作現場待一天，有熟手帶著你做，不用先考證照。隔天照常回到自己的生活。",
+      "question": "你想試甚麼工作？最想親自做哪一部分？",
+      "deeperQuestion": "你羨慕的是那份工作本身，還是你想像中從事它的生活？",
+      "twist": ""
     }
   },
   {
@@ -5414,17 +5414,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-013",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Permission to be average",
-    "scenario": "A permit lets you remain average at one thing without needing constant improvement or neglecting anyone's basic needs.",
-    "question": "What would you use it for?",
+    "title": "Enjoying without improving",
+    "scenario": "On the first day of a hobby class, the teacher says there are no tests or comparisons. You can stay a beginner as long as you enjoy it.",
+    "question": "What would you most want to learn in a class like this?",
     "twist": "",
-    "deeperQuestion": "What would stopping that pursuit make room for?",
+    "deeperQuestion": "Would you still want to continue after a year without becoming particularly good?",
     "zh": {
-      "title": "一件可以做得普通的事",
-      "scenario": "你得到一張許可證，可以在一件事情上只做到普通，不用一直進步。別人的基本需要不會因此受影響。",
-      "question": "你想把它用在哪件事？",
-      "twist": "",
-      "deeperQuestion": "不再追求做得更好，會替你騰出甚麼？"
+      "title": "不進步，也可以喜歡",
+      "scenario": "你報名一個興趣班，老師第一天就說：「這裡沒有考試，也不比較誰進步得快。你可以一直做新手，只要自己玩得開心。」",
+      "question": "如果是這樣的課，你最想學甚麼？",
+      "deeperQuestion": "如果學了一年還是普通，你還會想繼續嗎？",
+      "twist": ""
     }
   },
   {
@@ -5465,34 +5465,34 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-016",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A new classmate",
-    "scenario": "You join a short course where nobody knows your usual reputation as reliable, quiet or capable. You need not maintain an old impression.",
-    "question": "What side of yourself would you let appear first?",
+    "title": "A weekend among strangers",
+    "scenario": "You join a weekend workshop where nobody knows your usual reputation as dependable, quiet or caring.",
+    "question": "How might you behave differently from usual?",
     "twist": "",
-    "deeperQuestion": "What familiar role sometimes tires you?",
+    "deeperQuestion": "Which impression of you sometimes makes it harder to be yourself?",
     "zh": {
-      "title": "沒有標籤的新同學",
-      "scenario": "你加入一個短期課程，沒有人知道你平常是可靠、安靜或能幹的那個人。你可以自然表現，不用接住任何舊印象。",
-      "question": "你想讓哪一面先出現？",
-      "twist": "",
-      "deeperQuestion": "哪個大家習慣的角色，有時會讓你累？"
+      "title": "沒有人認識你的週末",
+      "scenario": "你參加一個週末工作坊，現場沒有人認識你。大家不知道你平常是「最可靠的」「很安靜的」，還是「很會照顧人」的那一位。",
+      "question": "你猜自己會跟平常有甚麼不同？",
+      "deeperQuestion": "別人對你的哪個印象，偶爾會讓你覺得不能做自己？",
+      "twist": ""
     }
   },
   {
     "id": "ponder-v4-solo-017",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Three little freedoms",
-    "scenario": "For a month, choose freedom over your schedule, your location or explaining small personal choices. Responsibilities remain properly covered.",
-    "question": "Which would you take first?",
+    "title": "Which freedom comes first?",
+    "scenario": "A little shop offers a month of one freedom: arranging your days, living somewhere you want to try, or making small choices without explaining them. Necessary work and household arrangements are covered.",
+    "question": "Which freedom would you choose, and what would you do first?",
     "twist": "",
-    "deeperQuestion": "What most limits that freedom in your life now?",
+    "deeperQuestion": "Do you most lack time, choices or room not to explain yourself?",
     "zh": {
-      "title": "三種小自由",
-      "scenario": "你可以獲得一個月的其中一種自由：時間可自己排、去處可自己選，或不需要解釋自己的小決定。責任仍有人妥善承接。",
-      "question": "你最想先拿哪一種？",
-      "twist": "",
-      "deeperQuestion": "這種自由在你現在生活裡，最常被甚麼限制？"
+      "title": "自由，先選哪一種？",
+      "scenario": "有間小店送你一張一個月有效的自由券，可以選一種：每天自己排時間、住到想試的地方，或作小決定時不用向人解釋。工作和家裡需要你處理的事，都已有人幫忙安排好。",
+      "question": "你最想換哪一種自由？得到之後，第一件事會做甚麼？",
+      "deeperQuestion": "你現在最缺的，是時間、選擇，還是不必交代的空間？",
+      "twist": ""
     }
   },
   {
@@ -5669,17 +5669,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-028",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Leaving something unfinished",
-    "scenario": "You may leave one non-urgent task until tomorrow without losing an opportunity or affecting anyone. The freed evening has no replacement task.",
-    "question": "What would you leave, and how would you spend tonight?",
+    "title": "Must everything be done first?",
+    "scenario": "At nine in the evening, you plan to tidy your room when a film you have wanted to see becomes available. Tidying can wait until tomorrow, but the clutter on your desk makes switching off difficult.",
+    "question": "Would you tidy first or leave the room messy for one evening? Why?",
     "twist": "",
-    "deeperQuestion": "What is hardest about letting a task stay unfinished overnight?",
+    "deeperQuestion": "Can you rest when you are tired, or do you need things finished to feel at ease?",
     "zh": {
-      "title": "留下一個未完成",
-      "scenario": "你可以把一件不緊急的事放到明天，不會因此失去機會或影響別人。今晚多出的時間沒有新任務。",
-      "question": "你會放下甚麼，怎樣過今晚？",
-      "twist": "",
-      "deeperQuestion": "讓事情未完成地過夜，對你最難的是甚麼？"
+      "title": "收拾完，才可以休息？",
+      "scenario": "晚上九點，你本來打算收拾房間，卻發現一部很想看的電影剛剛上架。房間明天再整理也來得及，但桌上的雜物還在眼前，讓你有點放不下。",
+      "question": "你會先收拾好再看電影，還是讓房間亂一晚？為甚麼？",
+      "deeperQuestion": "對你來說，休息是累了就可以，還是把事情做完才安心？",
+      "twist": ""
     }
   },
   {
@@ -5856,17 +5856,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-039",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "A simple no",
-    "scenario": "You may decline one extra invitation or request without harming the relationship. Existing basic commitments remain yours.",
-    "question": "Where would you use the card?",
+    "title": "No excuse needed",
+    "scenario": "A weekend invitation sounds pleasant, but you would rather stay home. Before you reply, the friend says you can rest without an excuse and meet another time.",
+    "question": "How would you respond after hearing that?",
     "twist": "",
-    "deeperQuestion": "How would you decline in one sentence without a long explanation?",
+    "deeperQuestion": "Even with their reassurance, would you still feel you owed an explanation?",
     "zh": {
-      "title": "一張簡單的拒絕卡",
-      "scenario": "你可以對一個額外邀請或請求說不，對方會理解，也不影響關係。不能拒絕已承諾的基本責任。",
-      "question": "你最想把卡用在哪裡？",
-      "twist": "",
-      "deeperQuestion": "如果不用詳細解釋，你會怎樣用一句話婉拒？"
+      "title": "不用編理由的拒絕",
+      "scenario": "週末有個你還沒答應的邀請，內容不差，但你其實很想留在家。對方補了一句：「想休息就休息，不用找理由，我們下次再約。」",
+      "question": "聽到這句話，你會怎樣回覆？",
+      "deeperQuestion": "別人已經說不介意時，你還會不會覺得自己欠一個解釋？",
+      "twist": ""
     }
   },
   {
@@ -6230,17 +6230,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-061",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "Change one evening",
-    "scenario": "For a month, replace one weekly evening routine without neglecting responsibilities. Choose something you want, not merely greater discipline.",
-    "question": "What would you replace it with?",
+    "title": "A free weekday evening",
+    "scenario": "A regular weekly commitment pauses for a month, leaving four free evenings. You can try something new or sign up for nothing.",
+    "question": "How would you like to spend those four evenings?",
     "twist": "",
-    "deeperQuestion": "What do you fear losing by doing less of the old routine?",
+    "deeperQuestion": "Would you first ask what you want or look for something useful to fill the time?",
     "zh": {
-      "title": "只改一個晚上",
-      "scenario": "你可以把每星期一個晚上的例行安排換掉一個月，不影響基本責任。新安排必須是你真心想試的，不是應該更自律。",
-      "question": "你想換成甚麼？",
-      "twist": "",
-      "deeperQuestion": "你最怕少做原本那件事會失去甚麼？"
+      "title": "平日晚上，多了一點空閒",
+      "scenario": "你每星期有一晚固定安排，這個月剛好暫停了，於是連續四週多出一個晚上。你可以試點新東西，也可以甚麼都不報名。",
+      "question": "你想讓這四個晚上怎樣過？",
+      "deeperQuestion": "你會先想到自己想做甚麼，還是先找一件「有用」的事填進去？",
+      "twist": ""
     }
   },
   {
@@ -6332,17 +6332,17 @@ export const questions: Question[] = [
     "id": "ponder-v4-solo-067",
     "category": "Solo",
     "emoji": "🌿",
-    "title": "How you introduce yourself",
-    "scenario": "Write a one-line introduction using three things you care about now, without titles or a promise to stay the same.",
-    "question": "What three things would you name?",
+    "title": "A bio that sounds like you",
+    "scenario": "You are writing a one-line website introduction without a job title. You want visitors to know which people, interests or concerns matter in your life now.",
+    "question": "Which three things would you put in that introduction?",
     "twist": "",
-    "deeperQuestion": "Which gets less of your time than you assumed?",
+    "deeperQuestion": "Which important thing you named keeps getting too little time?",
     "zh": {
-      "title": "重新安排自己的名字",
-      "scenario": "有人請你寫一行個人簡介，只能放現在在意的三件事。不能列頭銜，也不必承諾以後都不變。",
-      "question": "你會寫哪三件？",
-      "twist": "",
-      "deeperQuestion": "其中哪件你花的時間，比自己以為的少？"
+      "title": "一行比較像你的簡介",
+      "scenario": "你要替自己的小網站寫一句介紹，這次不放職業或頭銜。你想讓第一次來的人知道，最近有哪些人、事情或興趣，真正在你生活裡佔位置。",
+      "question": "你會在這句介紹裡放進哪三件事？",
+      "deeperQuestion": "你寫下的事裡，有哪件很重要，卻一直分不到時間？",
+      "twist": ""
     }
   },
   {
@@ -8690,16 +8690,16 @@ export const questions: Question[] = [
   },
   {
     "category": "Couple",
-    "title": "A future thank-you",
-    "scenario": "Imagine a thank-you card from you both in ten years, naming one difficult decision made today.",
-    "question": "Which decision would you hope the card names?",
-    "deeperQuestion": "What fear currently stops you from starting that conversation?",
+    "title": "A thank-you from ten years ahead",
+    "scenario": "Imagine a card from you both ten years ahead: “We are glad we talked about this properly back then.” It names no issue, only shows where you live now.",
+    "question": "Which unresolved conversation today might it mean?",
+    "deeperQuestion": "If you discussed just a small part tonight, what would you say first?",
     "twist": "",
     "zh": {
-      "title": "未來的我們會謝謝誰",
-      "scenario": "假如十年後的你們能寄回一張感謝卡，只能感謝今天一個不容易的決定。它可能是留下、改變，也可能是放慢。",
-      "question": "你希望卡片上寫的是甚麼決定？",
-      "deeperQuestion": "現在有哪個害怕，讓你一直不敢開始談？",
+      "title": "十年後寄來的感謝卡",
+      "scenario": "假如十年後的你們寄回一張卡，寫著：「幸好那時我們有好好談這件事。」卡上沒說是哪件事，只畫了你們現在住的地方。",
+      "question": "你猜它指的是你們現在還沒談清楚的哪件事？",
+      "deeperQuestion": "如果今晚只談一小部分，你願意先說出甚麼？",
       "twist": ""
     },
     "id": "ponder-v5-couple-100",
@@ -13020,16 +13020,16 @@ export const questions: Question[] = [
   },
   {
     "category": "Solo",
-    "title": "One comparison to keep",
-    "scenario": "You may keep one measure of living well, excluding other people's pace and achievements.",
-    "question": "What observable measure would you choose?",
-    "deeperQuestion": "Would it change your view of the past month?",
+    "title": "Was this a good week?",
+    "scenario": "You finish no major goal this week, but sleep better and meet someone you have missed. Many boxes on your task list remain unchecked.",
+    "question": "How would you judge this week, and what should count?",
+    "deeperQuestion": "Do your usual measures overlook things that genuinely help you live well?",
     "twist": "",
     "zh": {
-      "title": "只剩一個比較標準",
-      "scenario": "假如你只能保留一個衡量自己過得好不好的標準，其他人的速度和成果都暫時不能算。",
-      "question": "你會選甚麼可以真實觀察的標準？",
-      "deeperQuestion": "它會讓你對最近一個月有不同評價嗎？",
+      "title": "這星期，算過得好嗎？",
+      "scenario": "這星期你沒有完成甚麼大事，卻睡得比較好，也跟一個很久沒見的人吃了飯。翻開待辦清單時，很多格子仍然是空的。",
+      "question": "你會怎樣評價這個星期？哪些事應該算進去？",
+      "deeperQuestion": "你平常用來衡量生活的標準，有沒有漏掉真正讓你好過的事？",
       "twist": ""
     },
     "id": "ponder-v5-solo-035",
@@ -13344,16 +13344,16 @@ export const questions: Question[] = [
   },
   {
     "category": "Solo",
-    "title": "Letting go of control",
-    "scenario": "Preparation is complete and the outcome belongs to others. Checking messages cannot move it forward.",
-    "question": "Where would you return a small part of your attention while waiting?",
-    "deeperQuestion": "Does looking away feel like not trying hard enough?",
+    "title": "Waiting for a reply",
+    "scenario": "You submit an application prepared with care. Results arrive next week, yet you keep checking your inbox today.",
+    "question": "How would you spend tonight without keeping watch for the reply?",
+    "deeperQuestion": "Would checking less feel relieving, or like you had neglected something?",
     "twist": "",
     "zh": {
-      "title": "放下最後的控制",
-      "scenario": "你已完成能做的準備，結果要等別人決定。你不斷檢查訊息，卻沒有任何能推進的事。",
-      "question": "你會把等待期間的一小段注意力還給甚麼？",
-      "deeperQuestion": "不再盯著結果，是否讓你覺得自己不夠努力？",
+      "title": "等一個還沒來的回覆",
+      "scenario": "你交出一份很用心準備的申請，對方說下星期才有結果。你知道今天不會收到答案，卻每隔一會就忍不住打開信箱。",
+      "question": "你會怎樣安排今晚，讓自己不用一直守著那個回覆？",
+      "deeperQuestion": "不再一直查看時，你會比較輕鬆，還是覺得自己好像少做了甚麼？",
       "twist": ""
     },
     "id": "ponder-v5-solo-053",
@@ -13506,16 +13506,16 @@ export const questions: Question[] = [
   },
   {
     "category": "Solo",
-    "title": "Room for average work",
-    "scenario": "Several tasks compete, and only one can be excellent while others are sufficient.",
-    "question": "Which task deserves the highest standard, and why?",
-    "deeperQuestion": "Is good enough a practical judgement or an uncomfortable verdict?",
+    "title": "Not everything needs top marks",
+    "scenario": "Tonight includes work, dinner and exercise. There is not time for your highest standard in all three, though clear work, a simple meal and a shorter workout would be acceptable.",
+    "question": "Which would you simplify most easily, and where is lowering the standard hardest?",
+    "deeperQuestion": "Does that standard protect something important, or your image of who you are?",
     "twist": "",
     "zh": {
-      "title": "給普通表現的位置",
-      "scenario": "你有幾件事同時要做，只能選一件做到很好，其他做到足夠。你卻習慣每件都用最高標準。",
-      "question": "你會把最高標準放在哪一件，為甚麼？",
-      "deeperQuestion": "足夠好對你是實際判斷，還是難以接受的評語？",
+      "title": "今晚，不用每件都拿滿分",
+      "scenario": "今晚你要交一份工作、準備晚餐，也想做平常的運動。時間不夠三件都照最高標準完成，但工作只要資料清楚、晚餐簡單一點、運動短一點，也都可以。",
+      "question": "你最願意在哪件事上簡化？哪件最難放鬆標準？",
+      "deeperQuestion": "你守住那個標準，是因為真的重要，還是怕做少一點就不像自己？",
       "twist": ""
     },
     "id": "ponder-v5-solo-062",
