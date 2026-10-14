@@ -8048,7 +8048,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do occasional exceptions feel flexible or unreliable to you?",
     "twist": "",
     "zh": {
-      "title": "只能救一個晚上",
+      "title": "留住一個晚上",
       "scenario": "你們都很忙，只能固定保留一晚。你想那晚完全不碰工作，伴侶偶爾需要接一通重要電話。",
       "question": "你們怎樣定義「重要」，才不會每次都重新爭？",
       "deeperQuestion": "少量例外會讓你自在，還是讓承諾失去可靠感？",
@@ -8997,13 +8997,13 @@ export const questions: Question[] = [
   {
     "category": "Family",
     "title": "A name choice",
-    "scenario": "You want a name that fits you better. Family sees the change as weakening a bond.",
+    "scenario": "You want a name that feels more like you. Your family treasures your birth name and feels the change rejects their original affection.",
     "question": "How would you explain the difference between a name and a relationship?",
     "deeperQuestion": "Which family connections would you actively choose to keep?",
     "twist": "",
     "zh": {
-      "title": "改掉的姓氏",
-      "scenario": "家人對你的姓名安排有強烈期待，你卻想用一個更符合自己的名字。對你是認同，對他們像切斷連結。",
+      "title": "想用的新名字",
+      "scenario": "你想改一個更符合自己的名字，家人卻很珍惜你出生時取的名字。對你來說是認識自己，對他們卻像否定當年的心意。",
       "question": "你會怎樣說明名字和關係不是同一件事？",
       "deeperQuestion": "哪些家族連結，你會主動選擇保留？",
       "twist": ""
