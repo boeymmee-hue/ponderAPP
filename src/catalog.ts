@@ -11,6 +11,7 @@ export const groupSizes: {id:GroupSize;name:string;description:string}[] = [
   {id:'medium',name:'4–6 人',description:'一起選擇，合作想點子'},
   {id:'large',name:'7 人以上',description:'快速投票或分小組'},
 ];
+export const SUPPORT_URL = 'https://buy.stripe.com/bJe4gA9Elaksbq33hc2Fa0c';
 export const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf7J6WV1a64O9N4-Arg4FwbjWrL8KAF3j-e1gpLExUR8QHlCQ/viewform';
 const isRecord = (value: unknown): value is Record<string,unknown> => Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 // Only explicitly approved, complete records are eligible for publication.
