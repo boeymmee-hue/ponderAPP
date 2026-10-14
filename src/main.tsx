@@ -28,7 +28,7 @@ function QuestionCard({card, number, onNext, singleCard}: {card:Question; number
     {!card.legacy && <div className="follow-up"><button className="follow-button" onClick={()=>setFollow(!follow)} aria-expanded={follow} aria-controls="follow-up"><span className="follow-label"><span className="follow-title">{follow?'收起追問':'再聊一句'}</span><span className="follow-subtitle" lang="en">{follow?'Close follow-up':'One more · explore this story'}</span></span><span className="follow-symbol" aria-hidden="true">{follow?'−':'＋'}</span></button>
       {follow && <div id="follow-up" className="follow-copy"><p>{card.zh.deeperQuestion}</p>{english && <p lang="en" className="inline-en">{card.deeperQuestion}</p>}</div>}
     </div>}
-    <div className="card-actions"><button className="primary" onClick={onNext}><span>{singleCard?'揀另一種玩法':'下一題'} <span lang="en" className="button-en">{singleCard?'Choose another group':'Next question'}</span></span><span aria-hidden="true">→</span></button><p className="skip-note">唔想答？直接下一題就得。<span lang="en" className="inline-en">You can always skip. No explanation needed.</span></p></div>
+    <div className="card-actions"><button className="primary" onClick={onNext}><span>{singleCard?'揀另一種玩法':'下一題'} <span lang="en" className="button-en">{singleCard?'Choose another group':'Next question'}</span></span><span aria-hidden="true">→</span></button><p className="skip-note">唔想答？隨時換題或揀另一類就得。<span lang="en" className="inline-en">You can always skip. No explanation needed.</span></p></div>
   </article>;
 }
 
