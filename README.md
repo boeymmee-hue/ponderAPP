@@ -4,7 +4,7 @@
 
 [Play Ponder](https://boeymmee-hue.github.io/ponderAPP/)
 
-800 bilingual cards: 200 each for Couples, Family, Friends and Solo. Each audience offers 100 original cards and 100 deeper cards, selected on the homepage. The original 400 cards retain their content and stable IDs. The deeper edition includes the 12 approved preview cards and 388 individually authored additions. Each Friends depth has 34 cards for 2–3 people, 33 for 4–6 and 33 for 7+. Chinese appears first, with optional English and an optional connected follow-up.
+800 bilingual cards: 200 each for Couples, Family, Friends and Solo. Each audience offers 100 original cards and 100 deeper cards, selected on the homepage. The original 400 cards retain their stable IDs, with editorial refinements for clearer situations and more natural wording. The deeper edition includes the 12 approved preview cards and 388 individually authored additions. Each Friends depth has 34 cards for 2–3 people, 33 for 4–6 and 33 for 7+. Chinese appears first, with optional English and an optional connected follow-up.
 
 Enter a playful hypothetical world and make a choice that opens up values, money, love or inner life. “One more” reveals an optional follow-up that changes a condition or explores the same story. “Next question” is always available. Players can skip any question without explanation. Cards prioritize unseen questions within the selected category and group size. Progress stays on the device, with an in-memory fallback if storage is unavailable.
 
