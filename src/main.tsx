@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { categories, questions, type Category, type GroupSize, type Question } from './questions';
+import { categories, questions, type Category, type GroupSize, type Level, type Question } from './questions';
 import { drawQuestion, questionPool } from './deck';
 import { moods, groupSizes, FORM_URL, SUPPORT_URL, communityQuestions } from './catalog';
 import { ShareCard } from './ShareCard';
@@ -17,7 +17,7 @@ function QuestionCard({card, number, onNext, singleCard}: {card:Question; number
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(()=>{heading.current?.focus({preventScroll:true});},[]);
   return <article className={`question-card ${card.category.toLowerCase()}`}>
-    <div className="card-meta"><span>{moods[card.category].emoji} {moods[card.category].name}</span><span>第 {String(number).padStart(2,'0')} 題</span></div>
+    <div className="card-meta"><span>{moods[card.category].emoji} {moods[card.category].name}{card.level==='deeper' ? ' · 再深一點' : ''}</span><span>第 {String(number).padStart(2,'0')} 題</span></div>
     <div className="question-body"><span className="question-emoji" aria-hidden="true">{card.emoji}</span>
       <h1 tabIndex={-1} ref={heading}>{card.zh.title}</h1>
       {card.author && <p className="contributor">玩家提供 · {card.author}</p>}
@@ -37,6 +37,7 @@ const initialCard = questionFromUrl(window.location.href);
 function App() {
   const [page, setPage] = useState<Page>(initialCard ? 'play' : 'home');
   const [mode, setMode] = useState<Category>(initialCard?.category ?? 'Couple');
+  const [level, setLevel] = useState<Level>(initialCard?.level ?? 'classic');
   const [size, setSize] = useState<GroupSize>(initialCard?.groupSize ?? 'small');
   const [card, setCard] = useState<Question|null>(initialCard);
   const [number, setNumber] = useState(initialCard ? 1 : 0);
@@ -47,20 +48,20 @@ function App() {
   const pageHeading = useRef<HTMLHeadingElement>(null);
   useEffect(()=>{if(page!=='play')pageHeading.current?.focus({preventScroll:true});},[page]);
   useEffect(()=>{
-    function sync(){const found=questionFromUrl(window.location.href);setCard(found);setPage(found?'play':'home');setNumber(found?1:0);setSharedArrival(Boolean(found));setCommunityMode(Boolean(found?.id.startsWith('community-')));if(found){setMode(found.category);setSize(found.groupSize??'small');}}
+    function sync(){const found=questionFromUrl(window.location.href);setCard(found);setPage(found?'play':'home');setNumber(found?1:0);setSharedArrival(Boolean(found));setCommunityMode(Boolean(found?.id.startsWith('community-')));if(found){setMode(found.category);setLevel(found.level ?? 'classic');setSize(found.groupSize??'small');}}
     window.addEventListener('popstate',sync);return()=>window.removeEventListener('popstate',sync);
   },[]);
   function top(){window.scrollTo({top:0});}
   function go(nextPage:Page){updateQuestionUrl();setPage(nextPage);setCopyMessage('');top();}
   function start(category:Category, groupSize=size){
-    const chosen=drawQuestion(category,undefined,category==='Party'?groupSize:undefined);
+    const chosen=drawQuestion(category,undefined,category==='Party'?groupSize:undefined,level);
     setMode(category);setSize(groupSize);setCard(chosen);setNumber(1);setSharedArrival(false);setCommunityMode(false);setPage('play');updateQuestionUrl(chosen.id);top();
   }
   function choose(category:Category){if(category==='Party')go('party');else start(category);}
   function openCommunity(chosen:Question){setCard(chosen);setMode(chosen.category);setSize(chosen.groupSize??'small');setNumber(1);setCommunityMode(true);setSharedArrival(false);setPage('play');updateQuestionUrl(chosen.id);top();}
   function next(){
     if(communityMode){const available=communityQuestions.filter(q=>q.id!==card?.id);if(!available.length){go('community');return;}const chosen=available[Math.floor(Math.random()*available.length)];setCard(chosen);updateQuestionUrl(chosen.id);}
-    else {if(!card?.legacy && mode==='Party' && questionPool(mode,size).length===1){go('party');return;}const chosen=drawQuestion(mode,card?.id,mode==='Party'?size:undefined);setCard(chosen);updateQuestionUrl(chosen.id);}
+    else {if(!card?.legacy && mode==='Party' && questionPool(mode,size,level).length===1){go('party');return;}const chosen=drawQuestion(mode,card?.id,mode==='Party'?size:undefined,level);setCard(chosen);updateQuestionUrl(chosen.id);}
     setNumber(n=>n+1);setSharedArrival(false);top();
   }
   function feedback(target:Question|null){setFeedbackCard(target);go('feedback');}
@@ -74,15 +75,16 @@ function App() {
     {page==='home' && <section className="home-screen"><div className="intro"><span className="eyebrow intro-label">如果是你，你會怎樣選？</span><h1 ref={pageHeading} tabIndex={-1}>多想一點，<br/><span>靠近一點。</span></h1><p className="home-tagline" lang="en">Make real connections.</p><p>從可愛的假設，聊到心裡真正重視的事。<span lang="en" className="inline-en">Little what-ifs. Real connections.</span></p><div className="hero-art"><Tulip/><span className="art-caption">一起聊聊 <span lang="en">one question at a time</span></span></div></div>
       <aside className="support-panel" aria-labelledby="support-heading"><div><h2 id="support-heading">喜歡這次對話？支持 Ponder 繼續成長。</h2><p>Ponder 免費遊玩。你的自願支持，讓我們繼續用心整理題目。</p><p className="support-en" lang="en">Free to play. Optional support helps us keep creating thoughtful questions.</p></div><a className="support-cta" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer"><span>自願支持 <span lang="en">Support Ponder</span></span><span aria-hidden="true">↗</span></a><small>付款將於 Stripe 開啟；不付款也可使用所有題目。<span lang="en"> Opens Stripe. All questions remain free.</span></small></aside>
       <div className="pick-label"><h2>今日同邊個玩？<span lang="en">Who are you with?</span></h2><span>{questions.length} 題</span></div>
-      <div className="category-grid audience-grid">{categories.map(category=><button key={category} className={`category-tile ${category.toLowerCase()}`} onClick={()=>choose(category)}><span className="category-emoji" aria-hidden="true">{moods[category].emoji}</span><span className="category-copy"><strong>{moods[category].name}<span lang="en">{moods[category].en}</span></strong><span>{moods[category].description}</span><span className="audience-detail">{moods[category].detail}</span></span><span className="category-count">{questionPool(category).length} 題</span></button>)}</div>
+      <fieldset className="depth-picker"><legend>今日想聊到邊一層？ <span lang="en">Choose your depth</span></legend><div className="depth-options"><button type="button" aria-pressed={level==='classic'} onClick={()=>setLevel('classic')}><strong>輕鬆聊</strong><span lang="en">Start a conversation</span><small>每類 100 題 · 從小假設開始</small></button><button type="button" aria-pressed={level==='deeper'} onClick={()=>setLevel('deeper')}><strong>再深一點</strong><span lang="en">Go a little deeper</span><small>每類 100 題 · 聊聊取捨與內心</small></button></div><p>每類共 200 題。先選深度，再揀同行的人；兩種都可以隨時跳題。<span className="inline-en" lang="en">200 cards per group: 100 in each depth. You can always skip.</span></p></fieldset>
+      <div className="category-grid audience-grid">{categories.map(category=><button key={category} className={`category-tile ${category.toLowerCase()}`} onClick={()=>choose(category)}><span className="category-emoji" aria-hidden="true">{moods[category].emoji}</span><span className="category-copy"><strong>{moods[category].name}<span lang="en">{moods[category].en}</span></strong><span>{moods[category].description}</span><span className="audience-detail">{moods[category].detail}</span></span><span className="category-count">{questionPool(category,undefined,level).length} 題</span></button>)}</div>
       <p className="home-rule">先各自選，再聽聽對方為甚麼。沒有標準答案，也可以隨時跳過。<span className="inline-en" lang="en">Choose for yourself, then listen to each other. You can always skip.</span></p>
       <section className="community-section" aria-labelledby="community-heading"><div className="pick-label"><h2 id="community-heading">一起令 Ponder 更好玩<span lang="en">Made better with you</span></h2></div><div className="community-grid"><button onClick={()=>feedback(null)}><span aria-hidden="true">✎</span><strong>改善意見</strong><span>邊度難明？你想點改？</span><small lang="en">Give feedback →</small></button><button onClick={()=>go('submit')}><span aria-hidden="true">＋</span><strong>投稿題目</strong><span>你出題，我們先審核。</span><small lang="en">Suggest a question →</small></button><button onClick={()=>go('community')}><span aria-hidden="true">♡</span><strong>玩家題目</strong><span>{communityQuestions.length ? `${communityQuestions.length} 題已審核` : '認識大家想聊的事'}</span><small lang="en">Community questions →</small></button></div></section>
     </section>}
-    {page==='party' && <section className="utility-screen"><button className="text-button" onClick={()=>go('home')}>← 返回 Back</button><p className="eyebrow">FRIENDS, OLD & NEW</p><h1 tabIndex={-1} ref={pageHeading}>今次有幾多人？</h1><p>按人數揀玩法，唔使每個人都講好耐。<span className="inline-en" lang="en">Choose a group size for the right kind of game.</span></p><div className="size-grid">{groupSizes.map(group=><button key={group.id} onClick={()=>start('Party',group.id)}><strong>{group.name}</strong><span>{group.description}</span><small>{questionPool('Party',group.id).length} 題 <span aria-hidden="true">→</span></small></button>)}</div><p className="home-rule">可以輪流答、舉手或口頭選擇；唔想參與某題就跳過。</p></section>}
+    {page==='party' && <section className="utility-screen"><button className="text-button" onClick={()=>go('home')}>← 返回 Back</button><p className="eyebrow">FRIENDS, OLD & NEW</p><h1 tabIndex={-1} ref={pageHeading}>今次有幾多人？</h1><p className="depth-status">{level==='deeper'?'再深一點 · 100 題進階聚會題':'輕鬆聊 · 100 題聚會題'}</p><p>按人數揀玩法，唔使每個人都講好耐。<span className="inline-en" lang="en">Choose a group size for the right kind of game.</span></p><div className="size-grid">{groupSizes.map(group=><button key={group.id} onClick={()=>start('Party',group.id)}><strong>{group.name}</strong><span>{group.description}</span><small>{questionPool('Party',group.id,level).length} 題 <span aria-hidden="true">→</span></small></button>)}</div><p className="home-rule">可以輪流答、舉手或口頭選擇；唔想參與某題就跳過。</p></section>}
     {page==='play' && card && <section className="play-screen"><nav className="play-nav" aria-label="遊戲操作 / Game controls"><button className="text-button" onClick={()=>go(communityMode?'community':mode==='Party'?'party':'home')}>← 揀分類 <span lang="en">Back</span></button><span className="session-label">{moods[card.category].name}{card.category==='Party'&&card.groupSize ? ` · ${groupSizes.find(g=>g.id===card.groupSize)?.name}`:''}</span></nav>
       {sharedArrival && <p className="shared-arrival">有人想聽聽你嘅想法。<span lang="en" className="inline-en">Someone wants to hear your perspective.</span></p>}
       {card.legacy && <p className="legacy-note">呢張係之前分享嘅舊版題目。按「下一題」，試試新版題目。</p>}
-      <div className="card-enter" key={`${card.id}-${number}`}><QuestionCard card={card} number={number} onNext={next} singleCard={!card.legacy && !communityMode && mode==='Party' && questionPool(mode,size).length===1}/><ShareCard card={card}/></div>
+      <div className="card-enter" key={`${card.id}-${number}`}><QuestionCard card={card} number={number} onNext={next} singleCard={!card.legacy && !communityMode && mode==='Party' && questionPool(mode,size,level).length===1}/><ShareCard card={card}/></div>
       <button className="card-feedback" onClick={()=>feedback(card)}>呢題難明，或者想改一改？<span lang="en">Give feedback on this card ↗</span></button>
     </section>}
     {(page==='feedback'||page==='submit') && <section className="utility-screen"><button className="text-button" onClick={()=>go('home')}>← 返回 Back</button><p className="eyebrow">A LITTLE INPUT, A BETTER CONVERSATION</p><h1 tabIndex={-1} ref={pageHeading}>{page==='feedback'?'你嘅意見，我哋想聽。':'你有一條想問大家嘅題目？'}</h1><p>{page==='feedback'?'題目太難明、唔好答，定係有功能想改善？講一個例子就幫到手。':'想一個容易代入的假設，讓人可以有不同選擇。再加一句你真的想聽對方回答的追問；不用複雜設定，也不用有標準答案。'}</p>

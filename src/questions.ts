@@ -2,8 +2,9 @@ export const categories = ['Couple', 'Family', 'Party', 'Solo'] as const;
 export type Category = typeof categories[number];
 export type GroupSize = 'small' | 'medium' | 'large';
 export interface CardText { title: string; scenario: string; question: string; twist: string; deeperQuestion: string; }
-export interface Question extends CardText { id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
-// Connection-first edition: 100 cards per category, including the 12 approved originals.
+export type Level = 'classic' | 'deeper';
+export interface Question extends CardText { level?: Level; id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
+// 100 original + 100 deeper cards per category. Existing share IDs remain unchanged.
 export const questions: Question[] = [
   {
     "id": "ponder-v4-couple-001",
@@ -6904,5 +6905,7305 @@ export const questions: Question[] = [
       "twist": "",
       "deeperQuestion": "你會怎樣讓現在的需要，也值得被認真聽見？"
     }
+  },
+  {
+    "category": "Couple",
+    "zh": {
+      "title": "夢想在另一個城市",
+      "scenario": "伴侶得到一直想要的機會，要到外地一年。你目前的生活也很好，搬走會放棄自己重要的事。對方說不會要求你同行，但你知道，遠距離不會輕鬆。",
+      "question": "你會怎樣一起決定：同行、遠距離，還是放棄這次機會？",
+      "deeperQuestion": "你願意為這段關係改變甚麼？又有甚麼，如果現在答應了，日後可能會埋怨？",
+      "twist": ""
+    },
+    "title": "A dream in another city",
+    "scenario": "Your partner gets a long-awaited opportunity abroad for a year. Your life is going well too, and moving would mean giving up something important. They will not ask you to follow, but you know distance would not be easy.",
+    "question": "How would you decide together between moving, living apart or passing on the opportunity?",
+    "deeperQuestion": "What would you willingly change for the relationship, and what might you resent agreeing to later?",
+    "twist": "",
+    "id": "ponder-v5-couple-001",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "zh": {
+      "title": "用自己的錢，也要商量嗎？",
+      "scenario": "你想借兩萬元給一位遇到困難的好友。這是你的私人儲蓄，不影響共同開支，但可能收不回來。伴侶知道後說：「不是不讓你借，只是我希望你先跟我談。」",
+      "question": "你覺得這件事需要通知、商量，還是兩人都同意才做？",
+      "deeperQuestion": "在哪一類決定上，你希望保留最後決定權？對方也保留同樣的權利，你會舒服嗎？",
+      "twist": ""
+    },
+    "title": "My money, our conversation?",
+    "scenario": "You want to lend HK$20,000 to a close friend in difficulty. It comes from personal savings, does not affect shared expenses and might never be repaid. Your partner says, “I am not forbidding it. I wish you had talked to me first.”",
+    "question": "Does this call for informing, discussing or getting agreement from both of you?",
+    "deeperQuestion": "Which decisions do you want the final say over? Would you feel comfortable giving your partner the same freedom?",
+    "twist": "",
+    "id": "ponder-v5-couple-002",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "zh": {
+      "title": "好了，但回不到以前",
+      "scenario": "你們曾因一件事失去信任。對方已道歉，也持續用行動改變；你願意繼續一起，卻仍會在某些時候不安。對方問：「我還要做多久，你才會再相信我？」",
+      "question": "如果你也不知道要多久，你會怎樣回答？",
+      "deeperQuestion": "對你來說，「原諒」和「重新信任」有甚麼不同？",
+      "twist": ""
+    },
+    "title": "Better, but not back to before",
+    "scenario": "Something damaged trust between you. Your partner has apologised and consistently changed their behaviour. You want to stay, yet still feel uneasy sometimes. They ask, “How much longer before you trust me again?”",
+    "question": "How would you answer if you do not know the timeline either?",
+    "deeperQuestion": "What is the difference between forgiving and trusting again for you?",
+    "twist": "",
+    "id": "ponder-v5-couple-003",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A quiet celebration",
+    "scenario": "You get promoted on the day your partner is rejected for a role. They say to keep your celebration dinner.",
+    "question": "How would you make room for both feelings tonight?",
+    "deeperQuestion": "If you were disappointed, what support would let you stop pretending to be happy?",
+    "twist": "",
+    "zh": {
+      "title": "安靜的慶祝",
+      "scenario": "你終於升職，伴侶也很開心，但同一天收到落選通知。你已訂好餐廳，對方說照去就好。",
+      "question": "你會怎樣過這一晚，讓兩人的感受都有位置？",
+      "deeperQuestion": "如果你是失落的人，怎樣的陪伴不會令你覺得要勉強開心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-004",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An unannounced relationship",
+    "scenario": "You want to post a couple photo. Your partner keeps private life offline, and friends question their commitment.",
+    "question": "Are you seeking shared joy or recognition, and how would you tell?",
+    "deeperQuestion": "What other action would reassure you?",
+    "twist": "",
+    "zh": {
+      "title": "一段沒公開的戀愛",
+      "scenario": "你想把合照放上社交平台，伴侶卻一直不喜歡公開私生活。朋友開始問你，對方是不是不認真。",
+      "question": "你會怎樣分辨，自己想要的是分享喜悅，還是被承認？",
+      "deeperQuestion": "除了公開照片，甚麼行動會讓你安心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-005",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An extra key",
+    "scenario": "Your partner gives their parents a spare key to feed the cat. You appreciate the help but feel uneasy about access.",
+    "question": "What arrangement would protect both help and privacy?",
+    "deeperQuestion": "Would your standard be the same for your own parents?",
+    "twist": "",
+    "zh": {
+      "title": "多出來的一把鑰匙",
+      "scenario": "伴侶把你們家的備用鑰匙交給父母，方便幫忙餵貓。你感激有人照應，卻不喜歡家人隨時能進來。",
+      "question": "你會提出怎樣的安排，讓幫忙和私人空間都保留下來？",
+      "deeperQuestion": "如果是你自己的父母，你的標準會一樣嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-006",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A complaint that needs hearing",
+    "scenario": "Your partner complains about a colleague again. You offer solutions; they ask you simply to be on their side.",
+    "question": "How would you respond if you did not entirely agree?",
+    "deeperQuestion": "Does supporting someone include challenging them?",
+    "twist": "",
+    "zh": {
+      "title": "想被聽見的抱怨",
+      "scenario": "你第三次聽伴侶抱怨同一位同事，想幫他想辦法。他卻說：「我只是想你站在我這邊。」",
+      "question": "如果你其實不完全同意，你會怎樣回應？",
+      "deeperQuestion": "對你來說，支持一個人是否包括指出他的問題？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-007",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Two retirement maps",
+    "scenario": "Life together is happy, but one imagines retirement near family and the other travelling. Both mean it.",
+    "question": "Would you seek alignment now or allow different answers for a while?",
+    "deeperQuestion": "Which disagreement about the future cannot stay unresolved?",
+    "twist": "",
+    "zh": {
+      "title": "兩張不同的退休地圖",
+      "scenario": "你們暫時生活愉快，談到將來才發現：一人想住近家人，一人想四處旅居。離退休還很遠，卻沒有誰只是隨口說說。",
+      "question": "你會現在找共同方向，還是容許答案暫時不同？",
+      "deeperQuestion": "甚麼未來分歧，你覺得不能一直擱著？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-008",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A gift that remains",
+    "scenario": "You still use a good camera from an ex. Your partner feels uncomfortable but has not asked you to discard it.",
+    "question": "How would you explain what the camera means to you now?",
+    "deeperQuestion": "Where is the boundary between reassurance and giving something up?",
+    "twist": "",
+    "zh": {
+      "title": "留下來的禮物",
+      "scenario": "你仍在用前任送的相機，因為它很好用，也陪你拍過很多作品。伴侶看到後有點介意，但沒有要求你丟掉。",
+      "question": "你會怎樣談這件物品對你現在的意義？",
+      "deeperQuestion": "安慰對方和放棄自己的東西，界線在哪裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-009",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An answer given for you",
+    "scenario": "Your partner volunteers you to help a friend move. You had planned to rest and now feel guilty refusing.",
+    "question": "How would you handle this promise and future ones?",
+    "deeperQuestion": "Does being called kind make it harder to say no?",
+    "twist": "",
+    "zh": {
+      "title": "一次替你答應",
+      "scenario": "伴侶替你答應週末幫朋友搬家，說你一向樂意幫忙。你本來打算休息，也不想讓朋友失望。",
+      "question": "你會怎樣處理這次承諾，以及以後的同類事情？",
+      "deeperQuestion": "被說「你人那麼好」，會令你更難拒絕嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-010",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different speeds of repair",
+    "scenario": "After an argument, your partner wants to talk immediately while you need a night. Each reaction unsettles the other.",
+    "question": "What agreement could make a pause feel different from abandonment?",
+    "deeperQuestion": "What sentence would reassure you while waiting?",
+    "twist": "",
+    "zh": {
+      "title": "不一樣的道歉速度",
+      "scenario": "吵架後，伴侶想立即談清楚，你需要一晚冷靜。你越沉默，他越害怕你要離開；他越追問，你越想躲開。",
+      "question": "你們可以約定甚麼，讓暫停不等於被丟下？",
+      "deeperQuestion": "等待期間，哪一句話會讓你安心一點？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-011",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A tighter season",
+    "scenario": "Your partner's income falls and they suggest staying in for every date. You can afford occasional outings.",
+    "question": "How would you offer to pay more without creating a debt between you?",
+    "deeperQuestion": "What do you fear losing when accepting care?",
+    "twist": "",
+    "zh": {
+      "title": "第一次真正沒錢",
+      "scenario": "伴侶收入突然減少，提議所有約會都在家。你願意節省，但也很想偶爾出門，而你暫時負擔得起。",
+      "question": "你會怎樣提出多付一點，而不讓對方覺得欠你？",
+      "deeperQuestion": "接受照顧時，你最怕失去甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-012",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "The one receiving praise",
+    "scenario": "Friends praise your partner's talent but overlook your support. Your partner has not claimed your work or noticed your discomfort.",
+    "question": "What recognition do you want, and how would you ask?",
+    "deeperQuestion": "How do private thanks differ from public acknowledgement for you?",
+    "twist": "",
+    "zh": {
+      "title": "被稱讚的那一個",
+      "scenario": "朋友總說伴侶很有才華，卻很少提到你在背後付出的時間。伴侶沒有搶功，也不知道你開始不舒服。",
+      "question": "你想要怎樣的肯定，又會怎樣開口？",
+      "deeperQuestion": "私下感謝和當眾承認，對你的意義有何不同？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-013",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A changing partner",
+    "scenario": "Your partner discovers a hobby and new friends while remaining caring. You miss doing almost everything together.",
+    "question": "How would you connect with this change while keeping your own life?",
+    "deeperQuestion": "Do you fear less time together or no longer understanding them best?",
+    "twist": "",
+    "zh": {
+      "title": "喜歡的人變了",
+      "scenario": "伴侶最近投入一種你完全沒興趣的活動，也交了新朋友。他沒有少關心你，你卻懷念以前凡事都一起的日子。",
+      "question": "你會怎樣靠近他的改變，又保留自己的生活？",
+      "deeperQuestion": "你害怕的是少了相處，還是不再是最懂他的人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-014",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An equal split",
+    "scenario": "You split rent equally. Your partner gets a large raise while your income stays the same, and the arrangement strains you.",
+    "question": "Would you suggest splitting by income or keeping the agreement?",
+    "deeperQuestion": "Should an arrangement stay unchanged because it used to be fair?",
+    "twist": "",
+    "zh": {
+      "title": "說好的平分",
+      "scenario": "你們一直平分房租，最近伴侶加薪很多，你的收入卻沒變。原本公平的安排，開始令你的生活很緊。",
+      "question": "你會提議按收入分，還是維持原約定？",
+      "deeperQuestion": "一個安排曾經公平，代表它應該一直不變嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-015",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A holiday alone",
+    "scenario": "You want a week travelling alone. Your partner wonders whether travelling together is no longer enough.",
+    "question": "How would you explain the wish without making it a verdict on your relationship?",
+    "deeperQuestion": "What would your first reaction be if they asked instead?",
+    "twist": "",
+    "zh": {
+      "title": "一個人的假期",
+      "scenario": "你很想獨自旅行一星期，伴侶聽完卻問：「跟我一起不好嗎？」你喜歡一起旅行，也真的想試試只照顧自己。",
+      "question": "你會怎樣說明這個願望，讓它不變成對關係的評分？",
+      "deeperQuestion": "如果換成對方提出，你會有甚麼第一反應？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-016",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different ways of doing chores",
+    "scenario": "Your partner cleans differently, so you often redo it. They stop offering, while you feel you are maintaining standards.",
+    "question": "Which standards could you release, and which need agreement?",
+    "deeperQuestion": "How do you distinguish a need from a familiar method?",
+    "twist": "",
+    "zh": {
+      "title": "家務做得不同",
+      "scenario": "伴侶主動整理廚房，方法跟你不同，你常忍不住重做。他漸漸不想動手，你則覺得自己只是維持整潔。",
+      "question": "你願意放下哪些標準，哪些需要一起訂清楚？",
+      "deeperQuestion": "怎樣分辨真正需要，和只是習慣了自己那一套？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-017",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Who hears first?",
+    "scenario": "Your partner discusses major news with an old friend before telling you. You value the friendship but feel outside the circle.",
+    "question": "Do you want to hear first, or to be more involved?",
+    "deeperQuestion": "What would you also need to discuss with someone else first?",
+    "twist": "",
+    "zh": {
+      "title": "好消息先告訴誰",
+      "scenario": "伴侶遇到大事總先找老朋友談，想清楚才告訴你。你知道那段友誼很重要，仍有點像被放在外面。",
+      "question": "你希望改變的是先後次序，還是參與的程度？",
+      "deeperQuestion": "哪些事情，你也需要先找伴侶以外的人談？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-018",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different romance",
+    "scenario": "You plan elaborate surprises, but your partner prefers a quiet meal. They are grateful, yet you feel unseen.",
+    "question": "How would you plan next time so both of you feel loved?",
+    "deeperQuestion": "When giving, how much do you need your effort to be seen?",
+    "twist": "",
+    "zh": {
+      "title": "不是同一種浪漫",
+      "scenario": "你花很多心思準備驚喜，伴侶卻最喜歡平靜吃一餐飯。你知道他有感謝，還是覺得自己的心意沒有被接住。",
+      "question": "下一次你會怎樣安排，讓兩個人都能感受到愛？",
+      "deeperQuestion": "付出時，你更想對方開心，還是想他看見你花了多少心思？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-019",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "The message boundary",
+    "scenario": "You send an argument screenshot to a friend for advice. Your partner feels exposed; you need outside support.",
+    "question": "What boundary would protect privacy without isolating either person?",
+    "deeperQuestion": "Would describing your feelings without screenshots be enough?",
+    "twist": "",
+    "zh": {
+      "title": "聊天紀錄的界線",
+      "scenario": "你把一次爭執的聊天截圖傳給好友求意見。伴侶知道後覺得私人對話被公開，你則覺得自己也需要支持。",
+      "question": "你們會怎樣訂一條不令任何人孤立的界線？",
+      "deeperQuestion": "不傳截圖，只說自己的感受，對你來說足夠嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-020",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Not business partners",
+    "scenario": "Your partner dreams of opening a shop together. You like the idea but worry work and love would become inseparable.",
+    "question": "How involved could you be without forcing yourself?",
+    "deeperQuestion": "How could you decline the partnership while showing belief in them?",
+    "twist": "",
+    "zh": {
+      "title": "不想一起創業",
+      "scenario": "伴侶很想跟你開一間小店，覺得一起追夢很浪漫。你喜歡這個想法，卻怕工作和感情再也分不開。",
+      "question": "你會參與到甚麼程度，才不會勉強自己？",
+      "deeperQuestion": "拒絕一起創業，怎樣仍能表達你相信對方？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-021",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An unintended comparison",
+    "scenario": "Your partner praises a friend's partner for planning trips. You hear it as a comparison and want to defend your own efforts.",
+    "question": "Would you clarify the meaning or first share how it felt?",
+    "deeperQuestion": "Which comparisons are especially sensitive for you?",
+    "twist": "",
+    "zh": {
+      "title": "一句無心的比較",
+      "scenario": "伴侶說朋友的另一半很會安排旅行，沒有明說你不好。你卻想到自己平日做的事，突然很想反駁。",
+      "question": "你會先問他的意思，還是直接說出你的感受？",
+      "deeperQuestion": "哪一類比較特別容易刺中你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-022",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Care without asking",
+    "scenario": "Your partner cancels an event for you because you seem exhausted. You are tired, but had been looking forward to it.",
+    "question": "How would you respond to both the care and the overstep?",
+    "deeperQuestion": "How many decisions would you want someone to make when you are tired?",
+    "twist": "",
+    "zh": {
+      "title": "照顧到忘了問",
+      "scenario": "伴侶替你取消一場活動，因為覺得你最近太累。你確實疲倦，但那是你一直期待的見面。",
+      "question": "你會怎樣回應這份好意和這次越界？",
+      "deeperQuestion": "你希望別人在你累的時候，替你做多少決定？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-023",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Before moving in",
+    "scenario": "You plan to move in but have not discussed leaving if it does not work. One finds that pessimistic; the other reassuring.",
+    "question": "How could discussing an exit become part of caring for each other?",
+    "deeperQuestion": "How much certainty does commitment need for you?",
+    "twist": "",
+    "zh": {
+      "title": "同住前的小字",
+      "scenario": "你們準備同住，談過家具和租金，卻沒談過若不合適怎樣搬走。一人覺得先談退路很掃興，另一人因此更安心。",
+      "question": "你會怎樣把退路談成照顧彼此的一部分？",
+      "deeperQuestion": "對你來說，承諾需要多少確定，又容許多少未知？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-024",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Someone else's timeline",
+    "scenario": "Friends are marrying. You want a date; your partner wants a future together but cannot say when they want marriage.",
+    "question": "What do you need to understand before deciding whether to wait?",
+    "deeperQuestion": "Would your timeline change without outside pressure?",
+    "twist": "",
+    "zh": {
+      "title": "別人的婚禮節奏",
+      "scenario": "身邊朋友接連結婚，你開始想訂日期。伴侶說一直想跟你走下去，但還不想結婚，也說不出何時會想。",
+      "question": "你需要問清楚甚麼，才知道自己能否繼續等？",
+      "deeperQuestion": "如果沒有任何人催促，你的時間表會不同嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-025",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An unwanted dinner",
+    "scenario": "Your partner's friends drain you without doing anything clearly wrong. They matter deeply to your partner.",
+    "question": "How would you decide how much to join in?",
+    "deeperQuestion": "Does loving someone require liking everyone they love?",
+    "twist": "",
+    "zh": {
+      "title": "一個不想赴的飯局",
+      "scenario": "伴侶的朋友每次聚會都讓你很累，但沒有誰明顯做錯事。對方希望你多參與，因為那是他重要的一群人。",
+      "question": "你會怎樣安排參與的程度？",
+      "deeperQuestion": "愛一個人，需要喜歡他喜歡的所有人嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-026",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "When work takes over",
+    "scenario": "Your partner's work pressure is real, but repeated cancelled dinners have hurt you for weeks.",
+    "question": "What small, realistic change would you ask for?",
+    "deeperQuestion": "How do you distinguish a busy season from always coming last?",
+    "twist": "",
+    "zh": {
+      "title": "忙碌不是藉口嗎",
+      "scenario": "伴侶連續幾週加班，答應的晚餐又取消。他的壓力是真的，你的失望也累積了很久。",
+      "question": "你會提出哪一個小而實際的改變？",
+      "deeperQuestion": "你怎樣分辨一段忙碌期，和一直被放到最後？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-027",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A forgotten date",
+    "scenario": "Your caring partner forgets an important anniversary and offers to make it up. Having to remind them still hurts.",
+    "question": "What feeling, beyond a replacement dinner, do you want restored?",
+    "deeperQuestion": "How much does needing a reminder change the meaning of care?",
+    "twist": "",
+    "zh": {
+      "title": "想不起來的紀念日",
+      "scenario": "伴侶忘記你重視的紀念日，平日卻一直很照顧你。他願意補過，你還是難過，覺得提醒了就不一樣。",
+      "question": "你最想補回的是一頓飯，還是哪一種感覺？",
+      "deeperQuestion": "對方需要被提醒，會令那份心意失去多少分量？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-028",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A changed promise",
+    "scenario": "You once agreed to get a dog. Now adoption is possible, you fear the commitment; your partner feels let down.",
+    "question": "How would you own your change of mind and the disappointment it causes?",
+    "deeperQuestion": "Which promises can be renegotiated, and which carry more weight?",
+    "twist": "",
+    "zh": {
+      "title": "答應了卻變心",
+      "scenario": "交往初期你說願意養狗，真正有機會領養時才發現自己怕長期責任。伴侶已期待很久，覺得你反口。",
+      "question": "你會怎樣承認改變，也承擔讓對方失望的部分？",
+      "deeperQuestion": "哪些承諾可以重新談，哪些不能輕易改？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-029",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "If incomes reversed",
+    "scenario": "You earn more and make more decisions. Imagining the incomes reversed makes you reluctant to give up that influence.",
+    "question": "Which decisions should not depend on income?",
+    "deeperQuestion": "How can you tell whether your good intentions include their voice?",
+    "twist": "",
+    "zh": {
+      "title": "假如收入倒轉",
+      "scenario": "現在收入較高的你，習慣替兩人作較多決定。假如明年換成伴侶收入較高，你才發現自己不想交出這些決定權。",
+      "question": "哪些決定其實不應該由收入決定？",
+      "deeperQuestion": "你怎樣知道自己的「為大家好」也有聽取對方？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-030",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A habit under discussion",
+    "scenario": "Your partner unwinds on their phone before bed. You miss talking; they need a break from thinking.",
+    "question": "What could you try without turning rest into another duty?",
+    "deeperQuestion": "Do you need more time or a little undivided attention?",
+    "twist": "",
+    "zh": {
+      "title": "想改變的習慣",
+      "scenario": "伴侶常在睡前滑手機，你覺得少了聊天時間。他說那是一天唯一不用思考的時候。",
+      "question": "你們可以試甚麼安排，而不把休息變成另一項任務？",
+      "deeperQuestion": "你需要的是更多時間，還是某一段完整的注意力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-031",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Borrowing your story",
+    "scenario": "Your partner shares an embarrassing story about you. Everyone finds it endearing; later you realise you disliked it.",
+    "question": "How would you express the discomfort you did not show then?",
+    "deeperQuestion": "Does laughing at the time remove your right to object later?",
+    "twist": "",
+    "zh": {
+      "title": "借用你的故事",
+      "scenario": "伴侶在飯桌上講你一次出糗的經歷，大家覺得可愛。你也笑了，但回家後發現自己不喜歡那件事被當笑話。",
+      "question": "你會怎樣補說當時沒說出口的感受？",
+      "deeperQuestion": "當時笑了，是否代表之後不能說介意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-032",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An evening without fixing",
+    "scenario": "You feel low and want company. Your partner keeps seeking solutions and feels exhausted by not helping.",
+    "question": "What clear, manageable kind of company could you request?",
+    "deeperQuestion": "How could a supporter express tiredness without making you feel burdensome?",
+    "twist": "",
+    "zh": {
+      "title": "不想被修好的晚上",
+      "scenario": "你很低落，伴侶努力找原因和辦法，你卻只想有人陪。他也累了，覺得怎樣做都幫不了你。",
+      "question": "你可以提出甚麼清楚又做得到的陪伴方式？",
+      "deeperQuestion": "陪伴者可以怎樣說累了，而不讓你覺得自己是負擔？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-033",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A third traveller",
+    "scenario": "Your partner wants a heartbroken friend to join a long-planned couple trip. You care, but value that time alone together.",
+    "question": "Would you agree, decline or change part of the trip?",
+    "deeperQuestion": "Would protecting this time feel selfish or like a boundary?",
+    "twist": "",
+    "zh": {
+      "title": "二人旅行加一人",
+      "scenario": "你們計劃很久的旅行，伴侶想邀剛失戀的好友同行。你同情朋友，也捨不得難得的二人時間。",
+      "question": "你會答應、拒絕，還是修改部分行程？",
+      "deeperQuestion": "不願分享這次時間，對你來說是自私還是界線？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-034",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different beliefs",
+    "scenario": "Your partner embraces a faith and wants occasional company. You respect it but do not want to perform rituals you do not believe in.",
+    "question": "How would you participate, and where would you stop?",
+    "deeperQuestion": "Does respect require participation?",
+    "twist": "",
+    "zh": {
+      "title": "沒有相同的信念",
+      "scenario": "伴侶開始投入一種信仰，希望你偶爾一起參與。你尊重它，卻不想為了陪伴而做自己不相信的儀式。",
+      "question": "你願意怎樣參與，又會停在哪裡？",
+      "deeperQuestion": "尊重一件事，是否需要親自參與？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-035",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Savings of your own",
+    "scenario": "You want savings only you can access. Your partner sees distrust; you feel safer having options.",
+    "question": "How would you explain that need without making it a contest over trust?",
+    "deeperQuestion": "Would having options make commitment weaker or freer?",
+    "twist": "",
+    "zh": {
+      "title": "留給自己的存款",
+      "scenario": "你想保留一筆只有自己能動用的錢，伴侶問是不是不信任他。你不是準備離開，只是有退路才安心。",
+      "question": "你會怎樣談這份安全感，而不需要證明誰對誰錯？",
+      "deeperQuestion": "兩個人都有退路，會令承諾更弱還是更自由？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-036",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A new friendship",
+    "scenario": "Your partner messages a new friend daily and welcomes introductions. Nothing is hidden, but the closeness unsettles you.",
+    "question": "What would you request, and which feelings would you work through yourself?",
+    "deeperQuestion": "Would you accept the same boundary for your friendships?",
+    "twist": "",
+    "zh": {
+      "title": "新朋友的界線",
+      "scenario": "伴侶跟新朋友每天聊天，也願意讓你認識對方。你沒有發現隱瞞，仍然因那份親近感而不安。",
+      "question": "你會要求甚麼，又願意自己處理哪部分不安？",
+      "deeperQuestion": "你提出的界線，也願意用在自己的友誼上嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-037",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An expensive surprise",
+    "scenario": "Your partner borrows to buy an expensive gift. You are touched but worry your delight will encourage more debt.",
+    "question": "How would you acknowledge the love and discuss the financial strain?",
+    "deeperQuestion": "Would returning it feel like rejecting them or protecting the relationship?",
+    "twist": "",
+    "zh": {
+      "title": "拒絕昂貴的驚喜",
+      "scenario": "伴侶送你一件昂貴禮物，你很感動，卻知道他為此透支。你怕表現開心會鼓勵他再這樣做。",
+      "question": "你會怎樣接受心意，同時談清楚金錢壓力？",
+      "deeperQuestion": "退回禮物對你來說，是拒絕人還是保護關係？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-038",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An invisible job",
+    "scenario": "Chores look equal, but you remember every supply and appointment. Your partner is willing if reminded.",
+    "question": "How would you share remembering, not only doing?",
+    "deeperQuestion": "How much imperfection could you allow when they take over?",
+    "twist": "",
+    "zh": {
+      "title": "未說出口的分工",
+      "scenario": "家務表看起來很平均，但每次買甚麼、何時補貨、誰要預約，都是你記著。伴侶說只要你提醒，他一定做。",
+      "question": "你會怎樣讓「記得要做」也成為可分擔的工作？",
+      "deeperQuestion": "如果對方用不同方法接手，你能容許多少失誤？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-039",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An empty weekend",
+    "scenario": "Your partner treats unplanned weekends as free time. You assume you will be together, so you often feel disappointed.",
+    "question": "What shared default would stop both of you guessing?",
+    "deeperQuestion": "Would you prefer spontaneous invitations or reliable scheduled time?",
+    "twist": "",
+    "zh": {
+      "title": "週末的空位",
+      "scenario": "伴侶把沒有約會的週末都當作可自由安排，你卻以為預設會一起過。沒有誰爽約，但你常突然落空。",
+      "question": "你們需要建立甚麼預設，而不是每次猜？",
+      "deeperQuestion": "你希望被主動邀請，還是有穩定的固定時間？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-040",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Facing family together",
+    "scenario": "Your family pressures your partner to change jobs. Speaking up may sour dinner; silence may look like agreement.",
+    "question": "What would you say clearly without speaking over your partner?",
+    "deeperQuestion": "How would you want support in front of your family?",
+    "twist": "",
+    "zh": {
+      "title": "替對方擋家人",
+      "scenario": "你的家人在飯局上催伴侶換工作，你知道對方很不舒服。當場反駁可能讓飯局僵住，沉默又像默認。",
+      "question": "你會當場說甚麼，既清楚又不替伴侶發言太多？",
+      "deeperQuestion": "你希望伴侶在你的家人面前怎樣支持你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-041",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "No more posing",
+    "scenario": "Photos matter to you, but your partner feels every outing becomes a shoot and cannot relax.",
+    "question": "How would you preserve memories while being present together?",
+    "deeperQuestion": "What makes a day memorable without pictures?",
+    "twist": "",
+    "zh": {
+      "title": "不想再打卡",
+      "scenario": "你很喜歡拍合照，伴侶覺得每次出門都要配合鏡頭，很難放鬆。這些照片對你又確實是重要回憶。",
+      "question": "你會怎樣留下回憶，也讓當下真正屬於你們？",
+      "deeperQuestion": "如果沒有照片，怎樣的一天仍會被你記住？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-042",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A caring no",
+    "scenario": "Your partner declines an event to rest alone and offers another day together. You understand but feel hurt.",
+    "question": "How would you express disappointment without punishing the refusal?",
+    "deeperQuestion": "What makes a no still feel loving?",
+    "twist": "",
+    "zh": {
+      "title": "一次很好的拒絕",
+      "scenario": "你想伴侶陪你出席活動，他說那天需要獨處，並主動提議另一天陪你。你明白他的需要，心裡仍有點失落。",
+      "question": "你會怎樣表達失落，而不把拒絕變成懲罰？",
+      "deeperQuestion": "甚麼會讓一句「不行」仍然有被愛的感覺？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-043",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A secret surprise",
+    "scenario": "A small lie meant to hide a surprise leaves you worried all day. The reveal does not erase that feeling.",
+    "question": "How would you explain which surprise tactics do not work for you?",
+    "deeperQuestion": "Can good intentions soften harm without settling it?",
+    "twist": "",
+    "zh": {
+      "title": "關係裡的秘密驚喜",
+      "scenario": "伴侶為你策劃驚喜，故意說了一個小謊。結果你因為那個謊擔心了一整天，揭曉後也笑不出來。",
+      "question": "你會怎樣告訴對方，驚喜裡哪些方法不適合你？",
+      "deeperQuestion": "好意能減輕傷害，但是否足以讓事情過去？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-044",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Two memories of one day",
+    "scenario": "You remember a trip fondly; your partner remembers constantly accommodating you and never mentioned it.",
+    "question": "How would you hear their version without defending your happy memory?",
+    "deeperQuestion": "Can both memories be true?",
+    "twist": "",
+    "zh": {
+      "title": "同一件事的兩段回憶",
+      "scenario": "你記得某次旅行很浪漫，伴侶卻記得自己當時一直遷就。你沒有察覺，他以前也從未說過。",
+      "question": "你會怎樣聽這個版本，而不急著保住美好回憶？",
+      "deeperQuestion": "兩段不同的回憶，可以同時是真的嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-045",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A new responsibility",
+    "scenario": "Your partner needs two evenings weekly to care for family. You want to help without your time being assumed.",
+    "question": "What would you offer, and what needs discussion first?",
+    "deeperQuestion": "What help could you offer willingly over the long term?",
+    "twist": "",
+    "zh": {
+      "title": "突然多出的責任",
+      "scenario": "伴侶需要每週照顧家人兩晚，你們原本的安排因此打亂。你願意幫忙，但不想自己的時間自動被算進去。",
+      "question": "你會主動承擔甚麼，哪些要先討論？",
+      "deeperQuestion": "怎樣的幫忙，你能長期真心做下去？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-046",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Is calm distance?",
+    "scenario": "You rarely argue, but rarely discuss difficult things either. Some disagreements seem quietly avoided.",
+    "question": "What small disagreement would you start with?",
+    "deeperQuestion": "Do you fear conflict or that speaking will change nothing?",
+    "twist": "",
+    "zh": {
+      "title": "平靜是否等於疏遠",
+      "scenario": "你們很少吵架，也很少談難題。最近你發現，有些不同意只是被兩人默默避開。",
+      "question": "你會先拿哪一件小事試著談真話？",
+      "deeperQuestion": "你更怕衝突，還是怕說了也不會改變？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-047",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An unsent letter",
+    "scenario": "You find an old unsent letter about disappointments. Most have improved, but one part remains true.",
+    "question": "Would you share the whole letter or only what matters now?",
+    "deeperQuestion": "Do old feelings need acknowledgement or full reopening?",
+    "twist": "",
+    "zh": {
+      "title": "一封沒寄出的信",
+      "scenario": "整理舊物時，你找到自己以前寫給伴侶的失望長信。事情大部分已改善，但有一段至今仍是真的。",
+      "question": "你會分享整封信，還是只談現在仍重要的部分？",
+      "deeperQuestion": "舊情緒應該被理解，還是每一件都需要重新處理？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-048",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "After a sacrifice",
+    "scenario": "Your partner willingly gave up an opportunity for you but now mentions it in arguments. Gratitude is turning into an endless debt.",
+    "question": "How would you discuss the sacrifice without letting it become leverage?",
+    "deeperQuestion": "Have you quietly expected repayment for your own sacrifices?",
+    "twist": "",
+    "zh": {
+      "title": "為你放棄之後",
+      "scenario": "伴侶曾為你放棄一次機會，當時說是自願。如今每逢爭執，他都會提起，你既感激又覺得無法還清。",
+      "question": "你會怎樣談那次犧牲，讓它不再成為每次爭執的籌碼？",
+      "deeperQuestion": "你自己作出的犧牲，有沒有偷偷期待某種回報？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-049",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A familiar pattern",
+    "scenario": "A missed reply alarms you. It was a dead phone, but it recalls someone disappearing from your past.",
+    "question": "How would you explain the reaction without making your partner responsible for the past?",
+    "deeperQuestion": "What support could they offer, and what needs your own care?",
+    "twist": "",
+    "zh": {
+      "title": "太像另一個人",
+      "scenario": "伴侶一晚沒有回訊息，你突然很慌。後來知道只是手機沒電，你才想起以前曾被人無故消失。",
+      "question": "你會怎樣說明這個反應，又不讓現任替別人的事負全責？",
+      "deeperQuestion": "對方可以幫你甚麼，哪些部分需要你慢慢照顧自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-050",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Slowing down together",
+    "scenario": "Your partner wants less work and income to regain energy. You support rest but fear carrying more pressure.",
+    "question": "What conditions would make a trial feel safe for both?",
+    "deeperQuestion": "Do you most need a timeline, shared duties or recognition of your load?",
+    "twist": "",
+    "zh": {
+      "title": "一起慢下來",
+      "scenario": "伴侶想少做一點工作，收入會下降，但情緒和精神可能好很多。你支持他休息，也擔心生活壓力落到自己身上。",
+      "question": "你們要先談清楚哪些條件，才可以安心試行？",
+      "deeperQuestion": "你最需要的是期限、分工，還是有人承認你的負擔？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-051",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "The version friends hear",
+    "scenario": "Your partner tells friends only their hurt side of an argument. They now seem distant toward you.",
+    "question": "What repair would you ask for while preserving their outside support?",
+    "deeperQuestion": "When seeking comfort, how easily do you omit your own part?",
+    "twist": "",
+    "zh": {
+      "title": "對朋友說的版本",
+      "scenario": "你發現伴侶向朋友講爭執時，只說了自己受傷的部分。那些人現在對你有點冷淡。",
+      "question": "你希望伴侶怎樣處理，而不要求他只能向你求助？",
+      "deeperQuestion": "向朋友求安慰時，你有多容易漏掉自己的部分？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-052",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Not ready yet",
+    "scenario": "Your partner wants children within two years. You are unsure and do not want fear of losing them to decide for you.",
+    "question": "What exploration would help you respond honestly rather than delay?",
+    "deeperQuestion": "How would you distinguish uncertainty from fear of saying no?",
+    "twist": "",
+    "zh": {
+      "title": "一個尚未準備好的願望",
+      "scenario": "伴侶想在兩年內有孩子，你還沒有答案。你不想失去這段關係，也知道不能只為了留住對方而答應。",
+      "question": "你需要怎樣探索，才能給出誠實而不是拖延的回應？",
+      "deeperQuestion": "怎樣區分「還不知道」和「不敢說不想」？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-053",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A nickname that hurts",
+    "scenario": "Your partner uses a nickname affectionately. You have never liked it but kept quiet to avoid seeming sensitive.",
+    "question": "How would you speak up without feeling bound by past silence?",
+    "deeperQuestion": "How large must a small discomfort become before you feel entitled to mention it?",
+    "twist": "",
+    "zh": {
+      "title": "不喜歡的稱呼",
+      "scenario": "伴侶一直用一個暱稱叫你，以為很親密。你從來沒喜歡過，只是怕顯得小題大做而沒說。",
+      "question": "你會怎樣開口，讓過去的沉默不再綁住現在？",
+      "deeperQuestion": "小事要累積到多大，你才覺得自己有資格提出？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-054",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Help by invitation",
+    "scenario": "Your partner improves your presentation without asking. You appreciate it and feel your competence was doubted.",
+    "question": "How would you discuss the result separately from the method?",
+    "deeperQuestion": "How could they offer help in a way you could welcome?",
+    "twist": "",
+    "zh": {
+      "title": "需要被邀請的幫忙",
+      "scenario": "伴侶替你修改工作簡報，改得更好了，但沒有先問。你同時覺得被幫助，也覺得自己的能力被否定。",
+      "question": "你會怎樣分開談成果和做法？",
+      "deeperQuestion": "對方怎樣提出幫忙，你會更願意接受？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-055",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Always your choice",
+    "scenario": "Your partner always lets you choose. What felt considerate now feels like carrying every decision.",
+    "question": "How would you invite their preferences without punishing a poor choice?",
+    "deeperQuestion": "Have you quickly dismissed their suggestions before?",
+    "twist": "",
+    "zh": {
+      "title": "每次都由你選",
+      "scenario": "伴侶常說吃甚麼、去哪裡都可以，你以前覺得很體貼。現在你希望偶爾不用負責決定，也想知道他的喜好。",
+      "question": "你會怎樣邀請對方表達，而不把選錯當成問題？",
+      "deeperQuestion": "你是否曾在對方提出想法時，很快把它否決？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-056",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Too many reminders",
+    "scenario": "Daily reminders about water, sleep and sweets come from care, but you increasingly resent them.",
+    "question": "Which reminders would you welcome, and which should stop?",
+    "deeperQuestion": "What distinguishes care from being managed for you?",
+    "twist": "",
+    "zh": {
+      "title": "好意的提醒太多",
+      "scenario": "伴侶每天提醒你喝水、早睡、少吃甜食。你知道他關心，卻開始對每句提醒都反感。",
+      "question": "哪些提醒你願意保留，哪些希望停止？",
+      "deeperQuestion": "被照顧和被管理，對你差在哪裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-057",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Joy outside the relationship",
+    "scenario": "You downplay a wonderful trip with friends, afraid your partner will feel inadequate. They want the full story.",
+    "question": "How could you share joy without shrinking it first?",
+    "deeperQuestion": "Do you trust your partner to enjoy your independent happiness?",
+    "twist": "",
+    "zh": {
+      "title": "兩人以外的快樂",
+      "scenario": "你在朋友旅行裡特別開心，回家後怕伴侶覺得自己比不上，講得很輕描淡寫。他其實想聽完整故事。",
+      "question": "你能怎樣分享快樂，而不用先把它縮小？",
+      "deeperQuestion": "你相信對方能為你的獨立快樂高興嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-058",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different comfort levels",
+    "scenario": "You lower the heating to save money; your partner feels cold. A small bill becomes a debate over who is reasonable.",
+    "question": "How would you include physical comfort in the cost?",
+    "deeperQuestion": "Do you ever treat your tolerance as a standard others should meet?",
+    "twist": "",
+    "zh": {
+      "title": "一個人想節省",
+      "scenario": "你想把家裡溫度調低來省電，伴侶覺得冷得不舒服。金額不大，但每次爭論都像在談誰比較合理。",
+      "question": "你們怎樣把身體感受也算進成本？",
+      "deeperQuestion": "你有沒有把自己的「可以忍」當成別人也該忍？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-059",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Different appetites for risk",
+    "scenario": "You want to fund a project with personal savings. Your partner worries failure could still affect your shared life.",
+    "question": "How would you set an affordable, understood limit on the risk?",
+    "deeperQuestion": "Would you offer equal support for a dream you doubted?",
+    "twist": "",
+    "zh": {
+      "title": "不同的冒險程度",
+      "scenario": "你想拿部分儲蓄試一個新計劃，伴侶擔心失敗。即使是你的錢，失敗後兩人的生活也可能受影響。",
+      "question": "你會怎樣訂一個自己負得起、對方也知情的風險上限？",
+      "deeperQuestion": "如果對方的夢想換成你不看好的事，你會同樣支持嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-060",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A wedding without an audience",
+    "scenario": "The same budget buys a private wedding or a gathering of loved ones. You value quiet vows; your partner values witnesses.",
+    "question": "What must be kept, and what could happen separately?",
+    "deeperQuestion": "What do you hope the wedding will affirm or complete?",
+    "twist": "",
+    "zh": {
+      "title": "一場沒有觀眾的婚禮",
+      "scenario": "你們可以辦一場只屬於兩人的婚禮，也可以用同一筆錢請所有重要的人。你很想安靜承諾，伴侶很想被大家見證。",
+      "question": "哪些部分一定要保留，哪些可以分開實現？",
+      "deeperQuestion": "你希望婚禮替你證明或完成甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-061",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An honest answer",
+    "scenario": "You ask for your partner's opinion on new work. Their honest confusion hurts because you wanted encouragement.",
+    "question": "How would you clarify your need without asking them to pretend?",
+    "deeperQuestion": "Can you ask directly for encouragement?",
+    "twist": "",
+    "zh": {
+      "title": "不是你想聽的答案",
+      "scenario": "你問伴侶喜不喜歡你的新作品，他誠實說有些地方不明白。你本來想聽鼓勵，卻沒有先說。",
+      "question": "你會怎樣補充自己的需要，又不要求對方假裝喜歡？",
+      "deeperQuestion": "想被鼓勵時，你能否直接說出來？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-062",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A joke after forgiveness",
+    "scenario": "You agreed to forgive a mistake but still joke about it. Your partner says it feels endlessly held against them.",
+    "question": "How would you tell whether you have let go or still have something to say?",
+    "deeperQuestion": "If it still hurts, could you say that directly instead?",
+    "twist": "",
+    "zh": {
+      "title": "原諒後的玩笑",
+      "scenario": "你們已談好一次失誤，也說了原諒。後來你仍偶爾拿它開玩笑，伴侶終於說這讓他覺得事情永遠沒完。",
+      "question": "你會怎樣確認自己是真的放下，還是還有話沒說？",
+      "deeperQuestion": "如果仍然痛，你願意用直接的話代替玩笑嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-063",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "One evening to protect",
+    "scenario": "You can protect only one evening together. You want it work-free; your partner sometimes needs an important call.",
+    "question": "How would you define important so it is not renegotiated every time?",
+    "deeperQuestion": "Do occasional exceptions feel flexible or unreliable to you?",
+    "twist": "",
+    "zh": {
+      "title": "只能救一個晚上",
+      "scenario": "你們都很忙，只能固定保留一晚。你想那晚完全不碰工作，伴侶偶爾需要接一通重要電話。",
+      "question": "你們怎樣定義「重要」，才不會每次都重新爭？",
+      "deeperQuestion": "少量例外會讓你自在，還是讓承諾失去可靠感？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-064",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Public support, private doubts",
+    "scenario": "At dinner your partner shares a view you disagree with. Friends ask for your opinion.",
+    "question": "How would you answer honestly and respectfully?",
+    "deeperQuestion": "Do you want public support for you or for everything you say?",
+    "twist": "",
+    "zh": {
+      "title": "公開支持與私下反對",
+      "scenario": "聚會上伴侶提出一個你不同意的觀點，朋友轉頭問你。你不想假裝認同，也不想令他覺得被拆台。",
+      "question": "你會怎樣誠實回答，也保留彼此的尊重？",
+      "deeperQuestion": "你希望伴侶在外人面前支持你這個人，還是支持你的每句話？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-065",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Admitting uncertainty",
+    "scenario": "Your partner asks whether you will love them forever. You love them but struggle to guarantee future feelings.",
+    "question": "What sincere, meaningful commitment could you make?",
+    "deeperQuestion": "Is commitment a guarantee of feelings or a choice of actions?",
+    "twist": "",
+    "zh": {
+      "title": "第一次說不確定",
+      "scenario": "伴侶問你會不會永遠愛他，你很愛他，卻不擅長保證一輩子的感受。直接說不確定，又怕讓人心寒。",
+      "question": "你能給出甚麼真誠而有分量的承諾？",
+      "deeperQuestion": "對你來說，承諾是保證感覺，還是選擇怎樣行動？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-066",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A change for yourself",
+    "scenario": "Morning exercise improves your energy but shortens shared evenings. Your partner supports you and misses the old routine.",
+    "question": "How would you adjust without treating your growth as a debt?",
+    "deeperQuestion": "Which connections matter most when routines diverge?",
+    "twist": "",
+    "zh": {
+      "title": "照顧自己的改變",
+      "scenario": "你開始早起運動，精神好了，但少了你們晚上的相處時間。伴侶支持你，也坦白說有點想念以前。",
+      "question": "你會怎樣調整，而不把自己的成長當成虧欠？",
+      "deeperQuestion": "兩人生活不同步時，哪些連結最值得保留？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-067",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Not fighting on your behalf",
+    "scenario": "A friend hurts you. Your partner wants to confront them, but you want time and control over the response.",
+    "question": "How would you invite support without handing over control?",
+    "deeperQuestion": "Can protecting someone include choosing not to act?",
+    "twist": "",
+    "zh": {
+      "title": "不能替你出氣",
+      "scenario": "你被朋友傷了心，伴侶想立即去理論。你只想慢慢處理，卻又怕拒絕他的保護會讓他失落。",
+      "question": "你會怎樣讓對方陪在身邊，而不是接管事情？",
+      "deeperQuestion": "保護一個人，有時是否包括忍住不行動？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-068",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Keeping score",
+    "scenario": "Tracking chores improves accuracy but leads to counting every small task. Fairness feels more tense.",
+    "question": "What tracking would you keep, and what counting would you release?",
+    "deeperQuestion": "Do you need exact equality or evidence of willing effort?",
+    "twist": "",
+    "zh": {
+      "title": "被記錄的努力",
+      "scenario": "你們開始記錄家務，希望公平，後來連誰多倒一次垃圾都會比較。帳目清楚了，氣氛卻差了。",
+      "question": "你會保留甚麼記錄，放下甚麼計較？",
+      "deeperQuestion": "你需要的是完全相等，還是知道對方也在主動付出？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-069",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A less busy life",
+    "scenario": "A cheaper move could reduce work but separate you from friends and familiar life. You would each miss different things.",
+    "question": "How could you trial the change without deciding the whole future at once?",
+    "deeperQuestion": "Which losses could neither money nor time replace?",
+    "twist": "",
+    "zh": {
+      "title": "一起變得沒那麼忙",
+      "scenario": "你們有機會搬到便宜的地方，少工作一些，但會離朋友和熟悉的生活很遠。兩人都想慢下來，卻捨不得不同的東西。",
+      "question": "你們會怎樣試住或試行，避免一次決定所有未來？",
+      "deeperQuestion": "哪些失去，是金錢和時間都補不回來的？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-070",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Growing at different speeds",
+    "scenario": "You learn to state your needs directly. Your partner experiences this as more demands and needs time to adjust.",
+    "question": "How would you explain your change and hear their adjustment difficulties?",
+    "deeperQuestion": "What time would you give, and what would you no longer surrender?",
+    "twist": "",
+    "zh": {
+      "title": "一個人先成長",
+      "scenario": "你最近學會更直接表達需要，伴侶卻覺得你變得要求很多。你不想退回沉默，也知道他需要時間適應。",
+      "question": "你會怎樣解釋改變，也聽見他的不適應？",
+      "deeperQuestion": "你願意給時間，但不願再放棄甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-071",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An uncomfortable envy",
+    "scenario": "Your partner makes friends easily while you struggle to belong. You feel happy for them and privately envious.",
+    "question": "How would you share the envy without asking them to shine less?",
+    "deeperQuestion": "Do you want company, introductions or acknowledgement of loneliness?",
+    "twist": "",
+    "zh": {
+      "title": "一次不漂亮的嫉妒",
+      "scenario": "伴侶很容易交到朋友，你努力融入卻常被忽略。你為他高興，也有一點不想承認的嫉妒。",
+      "question": "你會怎樣說出這份感受，而不要求他變得不耀眼？",
+      "deeperQuestion": "你希望得到的是陪伴、介紹，還是有人承認你的孤單？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-072",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An interest they dislike",
+    "scenario": "You collect something within your budget. Your partner does not stop you but repeatedly calls it a waste.",
+    "question": "How would you ask for respect without asking for shared enthusiasm?",
+    "deeperQuestion": "Can you comfortably keep a joy your partner does not understand?",
+    "twist": "",
+    "zh": {
+      "title": "不被接受的興趣",
+      "scenario": "你很喜歡一種伴侶覺得浪費錢的收藏，支出在自己的預算內。他沒有阻止，只是每次都取笑。",
+      "question": "你會怎樣要求尊重，而不要求對方也喜歡？",
+      "deeperQuestion": "對方不理解的快樂，你是否仍能安心保留？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-073",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A late admission",
+    "scenario": "Your partner reveals an old work mistake they hid to spare you worry. It is resolved, but the secrecy unsettles you.",
+    "question": "Do you most need facts, reasons or an agreement for next time?",
+    "deeperQuestion": "Did sparing worry also remove your chance to choose how to support them?",
+    "twist": "",
+    "zh": {
+      "title": "一場遲來的坦白",
+      "scenario": "伴侶坦白，幾個月前為免你擔心，隱瞞了一次工作失誤。事情已解決，你卻開始懷疑還有甚麼不知道。",
+      "question": "你最需要知道事實、理由，還是以後會怎樣做？",
+      "deeperQuestion": "保護你不擔心，是否也剝奪了你選擇怎樣陪伴的機會？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-074",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Expected enthusiasm",
+    "scenario": "Your partner shares hobbies excitedly. You listen with care but cannot always match that energy.",
+    "question": "How would you distinguish quiet care from indifference?",
+    "deeperQuestion": "What small response makes you feel heard more than loud praise?",
+    "twist": "",
+    "zh": {
+      "title": "被期待的熱情",
+      "scenario": "伴侶每次分享興趣都很投入，你願意聽，卻沒辦法每次都同樣興奮。他因此覺得你不在乎。",
+      "question": "你們會怎樣分辨安靜的在乎和敷衍？",
+      "deeperQuestion": "哪一個小反應，比大聲讚好更讓你覺得被聽見？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-075",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Whose dream is it?",
+    "scenario": "You call opening a café a shared dream, but most research and excitement come from your partner. You may enjoy imagining more than owning.",
+    "question": "How would you clarify the role you genuinely want?",
+    "deeperQuestion": "How does supporting a dream differ from adopting it?",
+    "twist": "",
+    "zh": {
+      "title": "共同夢想的名字",
+      "scenario": "你們一直說要開咖啡店，仔細一想，選址、研究和期待都來自伴侶。你喜歡陪他想像，未必真的想當店主。",
+      "question": "你會怎樣重新說明自己的角色？",
+      "deeperQuestion": "陪一個人追夢，跟把夢想變成自己的，有甚麼不同？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-076",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An imperfect weekend",
+    "scenario": "Weather ruins your planned trip. Your partner wants to improvise; you want to salvage the schedule and your effort.",
+    "question": "How would you choose between rescuing the plan and protecting the mood?",
+    "deeperQuestion": "If they are already happy, what still needs finishing before you can relax?",
+    "twist": "",
+    "zh": {
+      "title": "一個不完美的周末",
+      "scenario": "你安排的旅行因天氣全亂了，伴侶想臨時找小店坐坐。你仍想趕完行程，怕自己的心思全部白費。",
+      "question": "你會怎樣決定，保住計劃還是保住當下的心情？",
+      "deeperQuestion": "如果對方已經開心，你還需要完成甚麼才肯放鬆？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-077",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Praise you cannot receive",
+    "scenario": "You dismiss your partner's compliments or list your shortcomings. They no longer know how to show appreciation.",
+    "question": "How could you receive praise without needing to believe every word immediately?",
+    "deeperQuestion": "Why can receiving appreciation feel harder than criticism?",
+    "twist": "",
+    "zh": {
+      "title": "難以接受的稱讚",
+      "scenario": "伴侶說很欣賞你，你卻總回答「沒有啦」，或解釋自己其實做得不好。他開始不知道怎樣表達。",
+      "question": "你能試著怎樣接住一句稱讚，而不必立即相信全部？",
+      "deeperQuestion": "接受欣賞，為甚麼有時比接受批評更難？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-078",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A month of honesty",
+    "scenario": "You stop hiding small disappointments behind “fine.” The first week feels harder, making you doubt the experiment.",
+    "question": "What signs would show progress rather than exhaustion?",
+    "deeperQuestion": "What must follow honesty for it to create closeness?",
+    "twist": "",
+    "zh": {
+      "title": "一個月的真話練習",
+      "scenario": "你們約定一個月內，不用「沒事」掩飾小失望。第一週反而談了更多不舒服，兩人都開始懷疑這是否有用。",
+      "question": "你會看甚麼跡象，判斷這是在變好還是彼此消耗？",
+      "deeperQuestion": "坦白之後，還需要甚麼才會讓人更靠近？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-079",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Hard-to-share good news",
+    "scenario": "A wonderful invitation conflicts with an important day together. Delaying the news has made it harder to share.",
+    "question": "What would you acknowledge before discussing options?",
+    "deeperQuestion": "Do you fear their disappointment or owning your choice?",
+    "twist": "",
+    "zh": {
+      "title": "說不出口的好消息",
+      "scenario": "你獲得一個很棒的邀請，但會佔去原定陪伴伴侶的重要日子。你拖了幾天沒說，現在更難開口。",
+      "question": "你會先承認哪一部分，再一起談選擇？",
+      "deeperQuestion": "你怕的是對方失望，還是怕自己要為選擇負責？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-080",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Trading burdens",
+    "scenario": "You can swap a day's responsibilities, including worries. You realise you do not know what your partner carries mentally.",
+    "question": "What three things would you ask before taking over?",
+    "deeperQuestion": "Which burdens have you never let them see?",
+    "twist": "",
+    "zh": {
+      "title": "如果交換一天負擔",
+      "scenario": "你們可以交換一天的責任，但不能只交換工作，還要接手對方一直記在心裡的事。你發現自己不知道他每天在擔心甚麼。",
+      "question": "你會先問哪三件事，才真正接得住這一天？",
+      "deeperQuestion": "有哪些負擔，你自己也從沒讓對方知道？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-081",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Improvement by surprise",
+    "scenario": "Your partner gifts an unsolicited self-improvement course. You cannot tell whether it means support or dissatisfaction.",
+    "question": "How would you clarify the intention and express your reaction?",
+    "deeperQuestion": "What encouragement energises you, and what makes you retreat?",
+    "twist": "",
+    "zh": {
+      "title": "被安排的進步",
+      "scenario": "伴侶送你一套你沒提過的自我提升課程，說想陪你變得更好。你不知道這是支持，還是在暗示現在的你不夠好。",
+      "question": "你會怎樣確認他的意思，也說出自己的感受？",
+      "deeperQuestion": "怎樣的鼓勵讓你有力量，怎樣的鼓勵讓你想躲？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-082",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Everyone approves",
+    "scenario": "Everyone thinks you are well matched. Life works, yet you have nowhere to share some important thoughts.",
+    "question": "Which kind of conversation would you try to change first?",
+    "deeperQuestion": "Does others' approval make your needs harder to admit?",
+    "twist": "",
+    "zh": {
+      "title": "朋友都說很合適",
+      "scenario": "大家都說你們很合適，生活也沒有大問題。只有你知道，某些重要的想法一直找不到地方說。",
+      "question": "你會先嘗試改變哪一種對話？",
+      "deeperQuestion": "外界的肯定，有沒有令你更難承認自己的需要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-083",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A favour between partners",
+    "scenario": "Your partner offers a useful job introduction. You want independence but worry that refusing will hurt them.",
+    "question": "Which help would you accept, and what would you do yourself?",
+    "deeperQuestion": "Does accepting an opportunity diminish the work you do afterwards?",
+    "twist": "",
+    "zh": {
+      "title": "不想欠一個人情",
+      "scenario": "伴侶願意用自己的人脈幫你找工作，你卻想靠自己。你怕拒絕讓他受傷，也怕接受後很難分清成就屬於誰。",
+      "question": "你會接受哪一部分幫助，保留哪一部分自己完成？",
+      "deeperQuestion": "接受機會，是否等於否定後來自己的努力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-084",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Uneven energy",
+    "scenario": "You have energy for outings while your partner needs quiet. You want neither abandonment nor a pause on all your joy.",
+    "question": "How would you arrange separate and shared time?",
+    "deeperQuestion": "Do you need them to feel happy before allowing yourself to?",
+    "twist": "",
+    "zh": {
+      "title": "一段不同步的低潮",
+      "scenario": "你最近狀態很好，很想安排活動；伴侶卻需要安靜。你不想丟下他，也不想把自己的快樂全部暫停。",
+      "question": "你們會怎樣安排各自和一起的時間？",
+      "deeperQuestion": "你是否需要對方同樣開心，才容許自己開心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-085",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A shared account surprise",
+    "scenario": "Your partner buys a useful, reasonably priced appliance from shared funds. The missing consultation bothers you.",
+    "question": "Which expenses need discussion, and which can be independent?",
+    "deeperQuestion": "Does the amount or the meaning of being included matter more?",
+    "twist": "",
+    "zh": {
+      "title": "共同帳戶的意外",
+      "scenario": "伴侶用共同帳戶買了一件家電，價格合理，也確實需要。你不滿的不是物品，而是自己沒有參與。",
+      "question": "以後哪些支出要先談，哪些可以各自決定？",
+      "deeperQuestion": "金額和決定的象徵意義，哪個對你更重要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-086",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An uneven invitation",
+    "scenario": "Your partner's family excludes you from a trip because you are unmarried. Your partner wants to go but dislikes the reason.",
+    "question": "How would you want them to respond without deciding attendance for them?",
+    "deeperQuestion": "Do you most need an invitation or a clear sign of solidarity?",
+    "twist": "",
+    "zh": {
+      "title": "一份不夠公平的邀請",
+      "scenario": "伴侶的家人只邀他去旅行，說你們還沒結婚。他想去，也覺得這個理由不舒服。",
+      "question": "你希望他怎樣回應，而不是替他直接決定去留？",
+      "deeperQuestion": "你最在乎被邀請，還是被清楚地站在身邊？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-087",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Winning the point",
+    "scenario": "You prove your memory was correct. Your partner agrees, but the tension remains.",
+    "question": "What still needs discussion after settling the facts?",
+    "deeperQuestion": "Behind wanting to be right, do you also want to be trusted?",
+    "twist": "",
+    "zh": {
+      "title": "爭執中的正確答案",
+      "scenario": "你找到資料，證明爭執時自己的記憶沒錯。伴侶承認了，但兩人的氣氛仍然很差。",
+      "question": "確認事實之後，你還需要談甚麼？",
+      "deeperQuestion": "你想被證明沒錯，背後是否也想被相信？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-088",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Preparing differently",
+    "scenario": "You plan for worst cases; your partner waits for information. Each sees the other's coping style as a problem.",
+    "question": "What timing and conditions could make planning manageable for both?",
+    "deeperQuestion": "What has anticipating trouble protected, and what has it cost?",
+    "twist": "",
+    "zh": {
+      "title": "對未來的不同準備",
+      "scenario": "你遇到不確定的事就想先做最壞打算，伴侶則想等更多資訊。你覺得他逃避，他覺得你把今天也弄得很累。",
+      "question": "你們可以訂甚麼時間和條件，再一起處理擔心？",
+      "deeperQuestion": "預先擔心曾經保護你甚麼，又花掉你甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-089",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "When understanding becomes silence",
+    "scenario": "Your partner is busy with something important, so you minimise your own difficulties until resentment grows.",
+    "question": "How would you bring your needs back into the conversation?",
+    "deeperQuestion": "How do you tell understanding from waiting to be noticed?",
+    "twist": "",
+    "zh": {
+      "title": "別讓懂事變沉默",
+      "scenario": "伴侶正在忙重要的事，你一直把自己的困難說成小事。某天他問起，你才發現自己已經很委屈。",
+      "question": "你會怎樣重新把自己的事放回對話裡？",
+      "deeperQuestion": "你怎樣知道自己是真心體諒，還是在等待被猜中？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-090",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "An unexpected reunion",
+    "scenario": "Someone once important invites you to dinner. You want only to catch up, but expect your partner may feel uneasy.",
+    "question": "How would you handle both the invitation and telling your partner?",
+    "deeperQuestion": "Are you seeking understanding, agreement or simply openness?",
+    "twist": "",
+    "zh": {
+      "title": "意外的重逢邀請",
+      "scenario": "一位曾經很重要的人邀你單獨吃飯，你沒有想復合，只想知道對方近況。你知道伴侶可能會不安。",
+      "question": "你會怎樣處理邀請和告知的方式？",
+      "deeperQuestion": "你希望得到理解、同意，還是只是把事情說清楚？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-091",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A shared object, divided meaning",
+    "scenario": "Only you still use an instrument bought together. Your partner wants space; you see a symbol of shared effort.",
+    "question": "How would you separate practical use from memory?",
+    "deeperQuestion": "Can keeping an object preserve the closeness it represents?",
+    "twist": "",
+    "zh": {
+      "title": "不再一起用的東西",
+      "scenario": "你們一起買的樂器，現在只有你在用。伴侶想賣掉換空間，你卻把它看成兩人曾經共同投入的證明。",
+      "question": "你會怎樣分開談實際用途和回憶？",
+      "deeperQuestion": "保留一件物品，是否一定能保留當時的親近？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-092",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "How often to check in?",
+    "scenario": "During work trips you want daily calls; your partner finds messages enough. Affection remains, but expression differs.",
+    "question": "What arrangement would you trial and revisit?",
+    "deeperQuestion": "What do you most need to hear in those calls?",
+    "twist": "",
+    "zh": {
+      "title": "關心的頻率",
+      "scenario": "出差時你希望每天通話，伴侶覺得幾句訊息就足夠。你們都沒有少愛，只是想念的表達不同。",
+      "question": "你們會試一個怎樣的安排，之後再一起調整？",
+      "deeperQuestion": "你從通話裡最需要聽見的是甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-093",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Not the only outlet",
+    "scenario": "Your partner shares every worry only with you. You value the trust but cannot always carry it.",
+    "question": "How would you communicate your capacity while remaining caring?",
+    "deeperQuestion": "Could outside support make the relationship stronger?",
+    "twist": "",
+    "zh": {
+      "title": "不想當唯一出口",
+      "scenario": "伴侶只願意跟你談所有煩惱，你很珍惜信任，卻開始覺得每天都接不住。他又不想找其他人。",
+      "question": "你會怎樣表達自己的容量，又保留關心？",
+      "deeperQuestion": "一段關係需要其他支持，是否反而更穩固？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-094",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Guilt after care",
+    "scenario": "After being cared for while ill, you try to repay every favour. Your partner says there is no debt.",
+    "question": "How could gratitude exist without immediate repayment?",
+    "deeperQuestion": "Where did you learn that receiving creates a debt?",
+    "twist": "",
+    "zh": {
+      "title": "被照顧後的內疚",
+      "scenario": "你生病時伴侶很用心照顧，康復後你急著把所有家務包下。他說不用還，你卻很難自在地接受。",
+      "question": "你會怎樣讓感謝不必立即變成還款？",
+      "deeperQuestion": "你從哪裡學會，接受多一點就會欠人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-095",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Facing awkwardness together",
+    "scenario": "Your partner correctly fixes a factual mistake you make among friends, leaving you embarrassed.",
+    "question": "How would you want them to handle it next time?",
+    "deeperQuestion": "When could dignity and accuracy be addressed in a different order?",
+    "twist": "",
+    "zh": {
+      "title": "一起面對尷尬",
+      "scenario": "你在伴侶朋友面前說錯一件事，他立即糾正，資料是對的，你卻覺得很難堪。",
+      "question": "你希望下次他怎樣處理？",
+      "deeperQuestion": "保住面子和說清事實，哪種情況下可以先後有別？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-096",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A Sunday worth keeping",
+    "scenario": "Your weekly family lunch feels grounding to you but inflexible to your partner, who wants occasional spontaneity.",
+    "question": "How would you preserve the tradition and make room for something new?",
+    "deeperQuestion": "Does changing frequency feel like reducing love?",
+    "twist": "",
+    "zh": {
+      "title": "不願放棄的週日",
+      "scenario": "你每週日跟家人吃飯，伴侶希望偶爾可以臨時出去玩。對你來說那是根，對他來說卻像永遠不能碰的時段。",
+      "question": "你會怎樣保留傳統，也留下新的空間？",
+      "deeperQuestion": "改變頻率，對你是否像減少了愛？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-097",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Only the good parts",
+    "scenario": "You share only happy relationship stories. Now you need support and fear people will think the earlier picture was false.",
+    "question": "Whom would you approach, and how would you tell a fuller story?",
+    "deeperQuestion": "How does protecting privacy differ from maintaining a perfect image?",
+    "twist": "",
+    "zh": {
+      "title": "只說了好的一面",
+      "scenario": "朋友羨慕你們的關係，你總只說好的一面。當你真的需要求助時，反而怕別人覺得你之前都在裝。",
+      "question": "你會找誰，怎樣開始一段比較完整的描述？",
+      "deeperQuestion": "保護關係的私隱，和維持完美形象，差在哪裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-098",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "Stay and repair?",
+    "scenario": "A recurring small issue improves slowly after each discussion, but you remain exhausted without one dramatic cause.",
+    "question": "What changes would help you assess your capacity to continue?",
+    "deeperQuestion": "Can you admit exhaustion without proving the other person is bad?",
+    "twist": "",
+    "zh": {
+      "title": "留下還是修補",
+      "scenario": "一個反覆出現的小問題，伴侶每次都願意談，也改善了一點，但你仍很累。沒有單一大事能解釋你的疲倦。",
+      "question": "你會看哪些改變，判斷自己還有沒有力氣繼續？",
+      "deeperQuestion": "你可以承認很累，而不用先證明對方很壞嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-099",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Couple",
+    "title": "A future thank-you",
+    "scenario": "Imagine a thank-you card from you both in ten years, naming one difficult decision made today.",
+    "question": "Which decision would you hope the card names?",
+    "deeperQuestion": "What fear currently stops you from starting that conversation?",
+    "twist": "",
+    "zh": {
+      "title": "未來的我們會謝謝誰",
+      "scenario": "假如十年後的你們能寄回一張感謝卡，只能感謝今天一個不容易的決定。它可能是留下、改變，也可能是放慢。",
+      "question": "你希望卡片上寫的是甚麼決定？",
+      "deeperQuestion": "現在有哪個害怕，讓你一直不敢開始談？",
+      "twist": ""
+    },
+    "id": "ponder-v5-couple-100",
+    "level": "deeper",
+    "emoji": "💗"
+  },
+  {
+    "category": "Family",
+    "zh": {
+      "title": "一樣多，才算公平嗎？",
+      "scenario": "家裡有一筆額外的錢，原本打算平均給兩名成年子女。一人收入穩定，另一人剛失業、急需付房租。父母想暫時多幫後者，卻又怕前者覺得一直努力的人反而吃虧。",
+      "question": "如果要一起商量，你會怎樣分配這筆錢？",
+      "deeperQuestion": "如果你是得到較少的那個人，你最希望家人先跟你說清楚甚麼？",
+      "twist": ""
+    },
+    "title": "Does fair mean equal?",
+    "scenario": "A family planned to divide some extra money equally between two adult children. One has a steady income; the other has just lost a job and needs rent money. Their parents want to offer extra help without making the first feel penalised for doing well.",
+    "question": "How would you discuss dividing the money?",
+    "deeperQuestion": "If you received less, what would you most want your family to explain first?",
+    "twist": "",
+    "id": "ponder-v5-family-001",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "zh": {
+      "title": "為你好，但不是你想要的",
+      "scenario": "家人願意幫你付進修費，但只支持他們覺得穩定實用的課程。你真正想讀的是另一個方向，並非一時衝動，只是出路沒那麼確定。你也可以自己慢慢存錢，延後兩年再讀。",
+      "question": "你會接受有條件的幫助，還是等自己負擔得起？",
+      "deeperQuestion": "對你來說，關心到哪一步會變成替你做決定？你會怎樣讓家人知道？",
+      "twist": ""
+    },
+    "title": "Help, with a direction attached",
+    "scenario": "Your family offers to fund further study, but only a course they consider practical and secure. You have carefully chosen another path with less certain prospects. Alternatively, you could save for two years and pay yourself.",
+    "question": "Would you accept conditional help or wait until you can afford your own choice?",
+    "deeperQuestion": "When does care become deciding for you, and how would you explain that boundary?",
+    "twist": "",
+    "id": "ponder-v5-family-002",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "zh": {
+      "title": "陪伴沒有平均分",
+      "scenario": "兄弟姊妹都想照顧年長家人。一人住得近，經常陪診；另一人住得遠，負擔較多費用。住得近的人說自己快沒力了，住得遠的人也覺得已經盡力。兩邊都是真的。",
+      "question": "你會先重新分配甚麼，讓這種照顧可以持續？",
+      "deeperQuestion": "如果自己已經很累，你會怎樣說「我做不到更多」，又不把它說成「都是你做得太少」？",
+      "twist": ""
+    },
+    "title": "Care is not evenly divided",
+    "scenario": "Siblings want to support an older relative. One lives nearby and attends appointments; another lives far away and pays more of the costs. Both feel they are reaching their limits, and both are telling the truth.",
+    "question": "What would you redistribute first to make the care sustainable?",
+    "deeperQuestion": "How could you say “I cannot do more” without turning it into “You do too little”?",
+    "twist": "",
+    "id": "ponder-v5-family-003",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An empty room",
+    "scenario": "After you move out, your parents want your room as a studio. You understand but feel your place at home shrinking.",
+    "question": "What would preserve your sense of coming home?",
+    "deeperQuestion": "Must a space remain unchanged to show you still matter?",
+    "twist": "",
+    "zh": {
+      "title": "一間空下來的房",
+      "scenario": "你搬走後，父母想把你的房間改成工作室。你知道房子是他們在住，聽見消息卻有點像失去回家的位置。",
+      "question": "你希望保留甚麼，才仍然有回家的感覺？",
+      "deeperQuestion": "一個位置必須原封不動，才代表你仍然重要嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-004",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Changing a family recipe",
+    "scenario": "You adapt a family recipe. An elder says it is no longer the same dish; you want both continuity and your own touch.",
+    "question": "How could a tradition make room for change?",
+    "deeperQuestion": "What matters more to preserve: the flavour or the story?",
+    "twist": "",
+    "zh": {
+      "title": "家傳食譜的改動",
+      "scenario": "你把家傳菜式改成自己喜歡的口味，長輩說已經不是原來那道菜。你想延續它，也想留下自己的部分。",
+      "question": "你會怎樣讓傳承容得下改變？",
+      "deeperQuestion": "對你來說，這道菜最不能失去的是味道還是故事？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-005",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Missing the holiday",
+    "scenario": "Your only long leave could fund a long-awaited trip, but you would miss a family holiday. Relatives say they will miss you.",
+    "question": "How would you choose and care for what you leave out?",
+    "deeperQuestion": "Is guilt reminding you of love or making the decision for you?",
+    "twist": "",
+    "zh": {
+      "title": "不能赴約的節日",
+      "scenario": "你今年只能請一次長假，很想去一趟期待已久的旅行，卻會錯過家族節日。家人沒反對，只說少了你會冷清。",
+      "question": "你會怎樣選，也怎樣照顧沒選到的那一邊？",
+      "deeperQuestion": "內疚是提醒你重視家人，還是替你作決定？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-006",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "The considerate one yields",
+    "scenario": "On a family trip, everyone assumes you will take the worse room because you never mind. This time you do.",
+    "question": "How would you state your preference?",
+    "deeperQuestion": "Does praise for being considerate make wanting things harder?",
+    "twist": "",
+    "zh": {
+      "title": "懂事的人先讓",
+      "scenario": "家庭旅行剩兩間條件不同的房，大家很自然地叫你住較差的一間，因為你一向不計較。這次你其實很想要好的。",
+      "question": "你會怎樣提出自己的選擇？",
+      "deeperQuestion": "被稱讚懂事，有沒有令你更難說自己也想要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-007",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A parent's new companion",
+    "scenario": "Your widowed father finds companionship. You are glad and fear your mother's place in family memories may fade.",
+    "question": "How could both attachments have room?",
+    "deeperQuestion": "What remembrance could you preserve without keeping others in the past?",
+    "twist": "",
+    "zh": {
+      "title": "爸爸的新朋友",
+      "scenario": "喪偶多年的父親交了新朋友，看起來很開心。你替他高興，也突然害怕母親在家裡的回憶會被取代。",
+      "question": "你會怎樣讓兩份感情同時存在？",
+      "deeperQuestion": "你最希望保留哪一種紀念，而不要求別人停在過去？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-008",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A well-meant remark",
+    "scenario": "Relatives repeatedly comment on your body out of concern. You want neither endless explanations nor ruined dinners.",
+    "question": "What clear response would you prepare?",
+    "deeperQuestion": "How would you hold your boundary if called too sensitive?",
+    "twist": "",
+    "zh": {
+      "title": "一句沒有惡意的評論",
+      "scenario": "家人每次見面都評論你的身形，說只是關心。你已不想再解釋，也不想每次飯局都因此鬧僵。",
+      "question": "你會準備哪一句清楚的回應？",
+      "deeperQuestion": "如果對方說你太敏感，你會怎樣守住原本的意思？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-009",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Money you hesitate to accept",
+    "scenario": "Your parents offer unconditional money, but past help made it hard to disagree with them.",
+    "question": "What boundaries would you clarify before accepting the money?",
+    "deeperQuestion": "What actions make unconditional support believable?",
+    "twist": "",
+    "zh": {
+      "title": "一筆不想收的錢",
+      "scenario": "父母想給你一筆錢，說沒有條件。但你記得以前收過幫助後，重要選擇都很難不聽他們的。",
+      "question": "你會先談清楚甚麼，才決定收不收？",
+      "deeperQuestion": "口頭說沒有條件，還需要哪些行動才能令人相信？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-010",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Who says the hard thing?",
+    "scenario": "Everyone asks you to raise a difficult issue with an elder because they listen to you. You worry about the relationship too.",
+    "question": "How far would you speak on everyone's behalf?",
+    "deeperQuestion": "How could others share responsibility for the conversation?",
+    "twist": "",
+    "zh": {
+      "title": "誰來說那句真話",
+      "scenario": "全家都知道長輩做的某件事令大家困擾，卻總叫你去談，因為他最聽你的。你也怕破壞你們的關係。",
+      "question": "你願意代表大家說到哪裡？",
+      "deeperQuestion": "家人可以怎樣分擔這次談話的責任？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-011",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Missing from the album",
+    "scenario": "A family album barely shows the person who organised and photographed everything.",
+    "question": "How would you preserve their story too?",
+    "deeperQuestion": "Which other familiar contributions have become invisible?",
+    "twist": "",
+    "zh": {
+      "title": "相簿裡缺少的人",
+      "scenario": "整理家庭相簿時，你發現某位照顧大家很多的人幾乎不在照片裡，因為他一直在拍照和張羅。",
+      "question": "你會怎樣讓他的故事也被留下？",
+      "deeperQuestion": "家裡還有哪些付出，因為太習慣而沒被看見？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-012",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different visits home",
+    "scenario": "You visit twice yearly from far away; a sibling visits weekly and says you miss daily realities. Your concern feels no smaller.",
+    "question": "How could you discuss the difference without ranking love?",
+    "deeperQuestion": "What practical involvement could you add?",
+    "twist": "",
+    "zh": {
+      "title": "不同的回家頻率",
+      "scenario": "你住得遠，一年回家兩次；兄弟姊妹住得近，每週到訪。他說你不了解日常，你覺得自己的牽掛也不比較少。",
+      "question": "你們可以怎樣談差別，而不比較誰更愛家？",
+      "deeperQuestion": "你能補上哪一種實際參與？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-013",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Whose secret is it?",
+    "scenario": "A relative shares another family member's private news and asks for secrecy. The person concerned never wanted it shared.",
+    "question": "How would you handle information you should not have received?",
+    "deeperQuestion": "Does knowing more always mean being closer?",
+    "twist": "",
+    "zh": {
+      "title": "不是大家的秘密",
+      "scenario": "親戚告訴你另一位家人的私事，叮囑別說出去。你知道當事人根本不希望這件事在家族流傳。",
+      "question": "你會怎樣處理自己已經知道的事？",
+      "deeperQuestion": "在家人之間，知道更多是否就代表更親近？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-014",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A childhood role",
+    "scenario": "You have always been the family joker. This time you need to be heard seriously, but everyone assumes you are joking.",
+    "question": "How would you signal that this time needs another response?",
+    "deeperQuestion": "What do you fear if you stop playing your familiar role?",
+    "twist": "",
+    "zh": {
+      "title": "從小的角色",
+      "scenario": "你從小是家裡負責逗大家笑的人，難過時也會先講笑話。這次你真的想有人認真聽，大家卻以為你又在玩。",
+      "question": "你會怎樣讓家人知道，這次需要不同的回應？",
+      "deeperQuestion": "如果不再扮演熟悉的角色，你怕家人會怎樣看你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-015",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "The shop you do not want",
+    "scenario": "Your parents want you to take over the shop you grew up in. You treasure it but want a different life.",
+    "question": "How would you express gratitude and decline?",
+    "deeperQuestion": "What could you help preserve without taking everything on?",
+    "twist": "",
+    "zh": {
+      "title": "不想接手的店",
+      "scenario": "家裡的小店陪你長大，父母希望你接手。你珍惜它，卻不想把往後的生活放在這裡。",
+      "question": "你會怎樣表達感謝和拒絕？",
+      "deeperQuestion": "你願意幫忙留下甚麼，而不必接手全部？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-016",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A name choice",
+    "scenario": "You want a name that fits you better. Family sees the change as weakening a bond.",
+    "question": "How would you explain the difference between a name and a relationship?",
+    "deeperQuestion": "Which family connections would you actively choose to keep?",
+    "twist": "",
+    "zh": {
+      "title": "改掉的姓氏",
+      "scenario": "家人對你的姓名安排有強烈期待，你卻想用一個更符合自己的名字。對你是認同，對他們像切斷連結。",
+      "question": "你會怎樣說明名字和關係不是同一件事？",
+      "deeperQuestion": "哪些家族連結，你會主動選擇保留？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-017",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Constant comparisons",
+    "scenario": "Relatives use a cousin's achievements as encouragement, making your own good news feel inadequate.",
+    "question": "How would you ask for a different kind of encouragement?",
+    "deeperQuestion": "Have you adopted the same comparisons internally?",
+    "twist": "",
+    "zh": {
+      "title": "一直被比較的成績",
+      "scenario": "家人說表親的成就只是用來鼓勵你，卻令你每次分享好消息都先想自己還差多少。",
+      "question": "你會怎樣請他們換一種鼓勵方式？",
+      "deeperQuestion": "你有沒有也把這種比較方式帶到自己心裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-018",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An elder's choice",
+    "scenario": "An elder does daily tasks slowly but wants independence. Doing them yourself is faster, yet may take something away.",
+    "question": "How would you ask how much help they want?",
+    "deeperQuestion": "When is preserving independence worth the extra time?",
+    "twist": "",
+    "zh": {
+      "title": "需要幫忙的長輩",
+      "scenario": "長輩有些日常事做得慢，但很想自己來。你替他完成會快很多，也擔心不幫看起來不關心。",
+      "question": "你會怎樣問他希望你幫到哪一步？",
+      "deeperQuestion": "效率和保留自主，這次哪一個更值得等？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-019",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Help declined",
+    "scenario": "You plan an outing for your parents; they prefer staying home. You feel hurt by the rejection.",
+    "question": "How would you separate your effort from their preference?",
+    "deeperQuestion": "Would asking first make the gesture feel less special?",
+    "twist": "",
+    "zh": {
+      "title": "一份被拒絕的好意",
+      "scenario": "你花心思替父母安排活動，他們卻寧願留在家。你覺得失落，甚至想說自己以後不再安排。",
+      "question": "你會怎樣分開自己的心意和他們的選擇？",
+      "deeperQuestion": "付出之前先問，會不會讓你覺得少了驚喜的意義？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-020",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Silence in the group chat",
+    "scenario": "You cannot keep up with family messages. An elder reads slow replies as lack of care.",
+    "question": "What contact rhythm would work better for everyone?",
+    "deeperQuestion": "What contact matters more than daily emoji replies?",
+    "twist": "",
+    "zh": {
+      "title": "家族群組的沉默",
+      "scenario": "家族群組每天很多訊息，你常來不及回。長輩覺得你不關心，你卻不想把回覆速度當成愛的證明。",
+      "question": "你會提議甚麼更適合彼此的聯絡方式？",
+      "deeperQuestion": "哪一種聯繫，比每天回貼圖更有意義？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-021",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A story you outgrew",
+    "scenario": "Family gatherings repeat a childhood embarrassment. Others find it warm; you have already said you dislike it.",
+    "question": "How would you make the boundary clearer this time?",
+    "deeperQuestion": "How should shared storytelling respect the person in the story?",
+    "twist": "",
+    "zh": {
+      "title": "一段不願再聽的故事",
+      "scenario": "家人聚會總講你小時候的一次糗事，大家覺得溫馨，你卻每次都想躲。你已說過一次不喜歡。",
+      "question": "這次你會怎樣回應，讓界線更清楚？",
+      "deeperQuestion": "共同回憶的講述權，應該怎樣照顧當事人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-022",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "No longer the mediator",
+    "scenario": "Two relatives use you to relay complaints after arguments. You love both but dread their calls.",
+    "question": "Which role would you stop, and what support would you keep?",
+    "deeperQuestion": "Does refusing to repair their relationship mean you do not care?",
+    "twist": "",
+    "zh": {
+      "title": "不想當和事佬",
+      "scenario": "兩位家人吵架後總各自找你訴苦，要你傳話。你很愛兩人，卻開始害怕接電話。",
+      "question": "你會停止哪一種角色，保留哪一種陪伴？",
+      "deeperQuestion": "不替他們修好關係，是否就等於不關心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-023",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Two reasons to leave",
+    "scenario": "You want to study abroad for the course and distance from family expectations. Only the first reason feels acceptable at home.",
+    "question": "Must you explain every reason, or only what you are ready to share?",
+    "deeperQuestion": "Does honesty require total disclosure?",
+    "twist": "",
+    "zh": {
+      "title": "留學的兩種理由",
+      "scenario": "你想去外地讀書，一部分是課程好，一部分是想離開家人的期待。家人只接受第一個理由。",
+      "question": "你需要說出全部理由，還是先說自己準備好的部分？",
+      "deeperQuestion": "誠實是否一定等於毫無保留？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-024",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An overlooked birthday",
+    "scenario": "One relative gets a big celebration; you receive a message. Circumstances differ, but you feel less valued.",
+    "question": "What do you most want them to understand?",
+    "deeperQuestion": "Do you need identical plans or equal thoughtfulness?",
+    "twist": "",
+    "zh": {
+      "title": "一個被忽略的生日",
+      "scenario": "家裡為某位成員大肆慶生，輪到你時卻只傳了訊息。你知道情況不同，還是感到自己比較不重要。",
+      "question": "你最想家人理解哪一部分？",
+      "deeperQuestion": "你需要相同的安排，還是相同程度的用心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-025",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Things in the old home",
+    "scenario": "Family is clearing the old home. You want keepsakes but lack space and cannot ask others to store everything.",
+    "question": "How would you decide what to keep and release?",
+    "deeperQuestion": "Are you protecting objects or afraid of forgetting a time?",
+    "twist": "",
+    "zh": {
+      "title": "老家的物品",
+      "scenario": "家人準備搬屋，想清走舊物。你很想保留很多，卻沒有空間帶走，也不能一直叫別人替你存著。",
+      "question": "你會用甚麼方式決定留下和告別？",
+      "deeperQuestion": "捨不得的是物品，還是怕忘記那段日子？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-026",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different parenting views",
+    "scenario": "An elder helping with a child quietly overrides your rules out of affection. You appreciate help but need consistency.",
+    "question": "How would you distinguish flexible choices from necessary consistency?",
+    "deeperQuestion": "What cost would you accept if less help were needed?",
+    "twist": "",
+    "zh": {
+      "title": "不同的教養方式",
+      "scenario": "你照顧孩子時訂了清楚規則，長輩卻偷偷放寬，說疼小孩就是這樣。你感謝幫忙，也不想規則每天重來。",
+      "question": "你會怎樣談哪些事情可以彈性，哪些必須一致？",
+      "deeperQuestion": "如果需要減少幫忙，你願意承擔甚麼代價？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-027",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "The successful one",
+    "scenario": "Being called the family's success story makes it hard to admit work struggles.",
+    "question": "Whom would you tell one less polished update first?",
+    "deeperQuestion": "Can family pride include your ordinary, struggling self?",
+    "twist": "",
+    "zh": {
+      "title": "被稱為最成功的人",
+      "scenario": "家人常介紹你是全家最成功的人，你卻因此不敢說工作不順。你怕一開口，連他們的希望也會落空。",
+      "question": "你會先向誰說一件不那麼光彩的近況？",
+      "deeperQuestion": "你想家人為你的成績驕傲，還是也能接住普通的你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-028",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Unequal rules",
+    "scenario": "Family rules differ by gender in the name of protection. You face more restrictions for the same activity.",
+    "question": "What concrete example would open a discussion about fairness?",
+    "deeperQuestion": "How could a genuinely protective rule apply to everyone?",
+    "twist": "",
+    "zh": {
+      "title": "無意中的差別待遇",
+      "scenario": "同一件事，家人對不同性別的孩子有不同要求，說是保護。被限制較多的你，想知道為甚麼風險只由你避開。",
+      "question": "你會提出哪一個具體例子來討論公平？",
+      "deeperQuestion": "如果規則真的為安全，怎樣才能適用於每個人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-029",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A parent's fresh start",
+    "scenario": "Your mother wants to study something new. Others question the cost at her age; she values finally having time.",
+    "question": "How would you respond to their definition of worthwhile?",
+    "deeperQuestion": "Do you also expect older people's wishes to be practical?",
+    "twist": "",
+    "zh": {
+      "title": "媽媽想重新開始",
+      "scenario": "母親想花一筆錢學新技能，家人覺得這個年紀不值得。她說不是為了賺錢，只是終於有時間。",
+      "question": "你會怎樣回應家人對「值得」的定義？",
+      "deeperQuestion": "你是否也要求長輩的願望一定要實用？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-030",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Checking in as an adult",
+    "scenario": "Living independently, you still face daily requests for your whereabouts. Concern starts to feel like permission.",
+    "question": "What would you share, and what would you keep private?",
+    "deeperQuestion": "What expression of concern would make you more open?",
+    "twist": "",
+    "zh": {
+      "title": "成年後的報備",
+      "scenario": "你已獨立生活，父母仍希望每天知道你在哪裡。你明白他們擔心，卻覺得自己的生活像需要批准。",
+      "question": "你願意分享甚麼，又想保留甚麼？",
+      "deeperQuestion": "家人怎樣表達擔心，你會更願意靠近？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-031",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Repeated loans",
+    "scenario": "A relative requests another loan before repaying the first. Family urges help while you save for something important.",
+    "question": "How would you choose the form and limit of help?",
+    "deeperQuestion": "What other support could you offer without overextending?",
+    "twist": "",
+    "zh": {
+      "title": "借了又借的親戚",
+      "scenario": "親戚再次借錢，上一次還未還清。家人說彼此應該幫忙，你也知道他有困難，但你正在存自己的重要費用。",
+      "question": "你會怎樣決定幫忙的形式和上限？",
+      "deeperQuestion": "不借錢，還有哪些不勉強自己的支持？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-032",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Shared household work",
+    "scenario": "Adults sharing a home call chores “helping you,” as if one person owns all the work.",
+    "question": "How would you redistribute responsibility, not just tasks?",
+    "deeperQuestion": "How should the work of noticing needs be recognised?",
+    "twist": "",
+    "zh": {
+      "title": "家裡的工作不是幫忙",
+      "scenario": "一起住的成年人做家務時總說「我幫你」，彷彿家務原本屬於某一個人。那個人已經很累。",
+      "question": "你會怎樣重新分配責任，而不只是分配任務？",
+      "deeperQuestion": "誰在發現事情需要做，這部分該怎樣被看見？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-033",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An unasked wish",
+    "scenario": "Halfway through planning a big birthday, you learn the elder wants a small meal. Cancelling costs a deposit.",
+    "question": "Would you protect the plan or reshape it around their wish?",
+    "deeperQuestion": "How does effort already spent affect your willingness to listen?",
+    "twist": "",
+    "zh": {
+      "title": "未被問過的願望",
+      "scenario": "你想替長輩辦盛大生日會，準備到一半才知道他只想跟幾個人吃飯。取消會損失訂金。",
+      "question": "你會保住計劃，還是改成他真正想要的樣子？",
+      "deeperQuestion": "已經花掉的心思，會怎樣影響你聽取對方？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-034",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Coming home after failure",
+    "scenario": "After a failed plan abroad, you need a stay at home. Family welcomes you, but you fear daily hindsight lectures.",
+    "question": "What would you discuss before returning?",
+    "deeperQuestion": "Does temporary dependence make you feel less adult?",
+    "twist": "",
+    "zh": {
+      "title": "失敗後才回家",
+      "scenario": "你在外地的計劃失敗，想回家住一段時間。家人願意接納，你卻怕每頓飯都要聽「早就跟你說過」。",
+      "question": "你會在回家前談清楚甚麼？",
+      "deeperQuestion": "接受暫時的依靠，是否讓你覺得失去成年人的資格？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-035",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different holiday needs",
+    "scenario": "A relative avoids gatherings after intrusive questions. Others call them distant; you cannot share their private reasons.",
+    "question": "How could you improve the atmosphere without exposing them?",
+    "deeperQuestion": "Does togetherness mean attendance or making return feel welcome?",
+    "twist": "",
+    "zh": {
+      "title": "不是每個人都想團圓",
+      "scenario": "家族聚會有人總缺席，大家說他冷淡。你知道他每次來都被追問私事，但他沒有授權你替他解釋。",
+      "question": "你可以怎樣改善氣氛，而不公開他的事？",
+      "deeperQuestion": "團圓需要人到齊，還是讓人願意回來？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-036",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A brief apology",
+    "scenario": "An elder finally admits being too harsh with a brief apology. You waited years and do not know whether it is enough.",
+    "question": "What else would you say, or not do yet?",
+    "deeperQuestion": "Must accepting an apology mean immediate closeness?",
+    "twist": "",
+    "zh": {
+      "title": "家人的道歉很短",
+      "scenario": "長輩第一次承認以前對你太嚴厲，只說了一句「那時不懂」。你等了很久，卻不知道這句是否足夠。",
+      "question": "你還想說甚麼，或暫時不想做甚麼？",
+      "deeperQuestion": "接受道歉，是否一定要立即表現得親近？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-037",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A family move",
+    "scenario": "A move lowers costs for most of the family but separates one person from vital support.",
+    "question": "How would you give weight to the minority's loss?",
+    "deeperQuestion": "Is majority agreement enough for a decision affecting everyone?",
+    "twist": "",
+    "zh": {
+      "title": "一場全家的搬遷",
+      "scenario": "家人想搬到生活成本較低的地方，對大部分人都好，卻會讓其中一人失去重要的支持圈。",
+      "question": "你們會怎樣讓少數人的損失也有分量？",
+      "deeperQuestion": "多數人同意，是否就足以決定所有人的生活？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-038",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Privacy under one roof",
+    "scenario": "While staying with family, people enter without knocking. You need privacy even in a shared home.",
+    "question": "What simple rule could apply to everyone?",
+    "deeperQuestion": "Does staying in someone else's home remove your right to boundaries?",
+    "twist": "",
+    "zh": {
+      "title": "同一屋簷的私隱",
+      "scenario": "你暫住家裡，家人習慣不敲門就進房，覺得一家人不用分得那麼清。你很需要一個能關門的地方。",
+      "question": "你會怎樣提出一條簡單、大家都能遵守的規則？",
+      "deeperQuestion": "住在別人的房子，是否就不能有自己的界線？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-039",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "The family calendar",
+    "scenario": "The family organiser stops managing birthdays and appointments. Missed events reveal how much they carried.",
+    "question": "What would you take over instead of asking for another reminder?",
+    "deeperQuestion": "How could this work stop depending on one person's goodwill?",
+    "twist": "",
+    "zh": {
+      "title": "誰記得大家的事",
+      "scenario": "家裡總有一個人記住所有生日、約診和聚會。今年他說累了，不想再提醒，大家才發現事情接連漏掉。",
+      "question": "你會主動接手哪一部分，而不是只叫他再提醒一次？",
+      "deeperQuestion": "你怎樣讓這份工作不再靠一個人的熱心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-040",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A choice you doubt",
+    "scenario": "An adult sibling plans a risky career change. They want no money, only an end to repeated discouragement.",
+    "question": "How would you voice concern once and still support the person?",
+    "deeperQuestion": "Can you allow family to make choices you would not make?",
+    "twist": "",
+    "zh": {
+      "title": "未必同意的選擇",
+      "scenario": "成年手足想轉行，你覺得風險很高。他沒有問你借錢，只希望你不要每次見面都勸退。",
+      "question": "你會怎樣表達一次擔心，之後仍然支持他這個人？",
+      "deeperQuestion": "你能容許家人作你不會作的決定嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-041",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "News not ready to share",
+    "scenario": "Your parents excitedly share a plan you told only them. You were not ready for everyone's questions.",
+    "question": "How would you handle this disclosure and set future expectations?",
+    "deeperQuestion": "Does good news also require permission to share?",
+    "twist": "",
+    "zh": {
+      "title": "一個不想公開的消息",
+      "scenario": "你只告訴父母一件新計劃，他們開心地通知全家。你還沒準備好，現在每個人都來問進度。",
+      "question": "你會怎樣處理這次公開，並訂下以後的約定？",
+      "deeperQuestion": "好消息是否也需要得到當事人同意才能分享？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-042",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "No contest of hardship",
+    "scenario": "When you mention tiredness, an elder describes harder times. Their history is real, but your feelings seem erased.",
+    "question": "How would you acknowledge both generations' difficulties?",
+    "deeperQuestion": "Does someone else's greater hardship cancel your need for care?",
+    "twist": "",
+    "zh": {
+      "title": "辛苦不必比大小",
+      "scenario": "你說最近很累，長輩立即說他們以前辛苦得多。你知道那是真的，卻覺得自己的感受被取消。",
+      "question": "你會怎樣同時承認兩代人的辛苦？",
+      "deeperQuestion": "聽見別人更苦，是否就不能再照顧自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-043",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different holiday beliefs",
+    "scenario": "You no longer believe in a family ritual but value gathering together. You want neither pretence nor hurt.",
+    "question": "Which parts would you join, and which boundaries would you explain?",
+    "deeperQuestion": "Do they most want shared belief or your presence?",
+    "twist": "",
+    "zh": {
+      "title": "不同的節日信仰",
+      "scenario": "家裡重要的儀式，你已不再相信，卻仍珍惜一起的時間。你不想假裝，也不想把缺席變成傷害。",
+      "question": "你會參與哪些部分，坦白哪些界線？",
+      "deeperQuestion": "家人最想要的是相同信念，還是你的陪伴？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-044",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Gratitude and hurt",
+    "scenario": "Your family gave you much and also hurt you in some ways. Gratitude makes those hurts hard to discuss.",
+    "question": "How could gratitude and hurt both be expressed?",
+    "deeperQuestion": "Does acknowledging hurt erase someone's contributions?",
+    "twist": "",
+    "zh": {
+      "title": "不必感恩一切",
+      "scenario": "家人為你付出很多，也有一些做法曾傷害你。每次想談受傷的部分，你都怕自己像不懂感恩。",
+      "question": "你會怎樣讓感謝和難過一起被說出來？",
+      "deeperQuestion": "承認受過傷，是否一定會抹去別人的付出？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-045",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An unexpected letter",
+    "scenario": "An old letter reveals an elder's unfamiliar youthful dreams. You are curious but want to respect possible regret.",
+    "question": "How would you invite the story while leaving control with them?",
+    "deeperQuestion": "Could you accept their choosing not to explain?",
+    "twist": "",
+    "zh": {
+      "title": "一份意外的家書",
+      "scenario": "你找到長輩年輕時寫的信，裡面的夢想跟你認識的他很不同。你很想問，也怕碰到他不想再談的遺憾。",
+      "question": "你會怎樣開啟這段對話，讓他可以選擇說多少？",
+      "deeperQuestion": "如果他只想保留那封信的沉默，你能接受嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-046",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Outside the family reputation",
+    "scenario": "Family describes your work with a more prestigious label to avoid relatives' judgement. You feel hidden.",
+    "question": "How would you want them to introduce you?",
+    "deeperQuestion": "Do you most need understanding of the work or respect for your choice?",
+    "twist": "",
+    "zh": {
+      "title": "把家人放在履歷外",
+      "scenario": "你想做的工作不容易向親戚解釋，家人總替你改成比較體面的名稱。你知道是怕被批評，仍覺得自己被藏起來。",
+      "question": "你會希望他們怎樣介紹你？",
+      "deeperQuestion": "你最需要家人理解工作內容，還是尊重你的選擇？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-047",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Old sibling scores",
+    "scenario": "As the older sibling you always yielded. Adults still expect it, and today's dispute carries years of feeling.",
+    "question": "How would you separate today's request from older resentment?",
+    "deeperQuestion": "If fairness starts today, what acknowledgement does the past need?",
+    "twist": "",
+    "zh": {
+      "title": "手足間的舊帳",
+      "scenario": "你小時候常讓著弟妹，現在大家成年，家人仍希望你先退一步。你想談的似乎不只是眼前這件事。",
+      "question": "你會怎樣把現在的要求和過去的委屈分開談？",
+      "deeperQuestion": "如果從今天開始公平，過去的部分還需要甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-048",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "One family keepsake",
+    "scenario": "Two relatives want one keepsake: one provided care, the other has childhood memories. It has little resale value.",
+    "question": "How would you decide without pricing affection?",
+    "deeperQuestion": "What meaning could shared custody or a replica preserve?",
+    "twist": "",
+    "zh": {
+      "title": "最後一份家族物品",
+      "scenario": "一件家族物品有兩人都想要，一人常照顧長輩，另一人有很深的童年回憶。它不能分開，也不值得很多錢。",
+      "question": "你會怎樣找一個不把感情標價的方法？",
+      "deeperQuestion": "輪流保管或製作複本，能保留哪部分意義？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-049",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A newcomer at the table",
+    "scenario": "A relative's partner joins for the first time while everyone shares inside jokes. They remain quiet.",
+    "question": "What small change would make inclusion less of a test?",
+    "deeperQuestion": "Can family closeness become a closed door to others?",
+    "twist": "",
+    "zh": {
+      "title": "家裡的新成員",
+      "scenario": "一位家人的伴侶第一次參加聚會，不熟悉你們的習慣。大家忙著講只有家人才懂的笑話，他一直安靜。",
+      "question": "你會改變哪一個小習慣，讓他不用努力證明自己合群？",
+      "deeperQuestion": "家的親密，有時會不會變成別人進不來的門？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-050",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A city you want to leave",
+    "scenario": "Family wants you nearby, but another city suits who you are. Moving back would change more than your address.",
+    "question": "How would you discuss distance without treating it as less love?",
+    "deeperQuestion": "What reliable actions would keep the connection alive?",
+    "twist": "",
+    "zh": {
+      "title": "不想留下的城市",
+      "scenario": "家人希望你住近一點，你在另一個城市卻更像自己。兩邊都有重要的人，搬回去不是單純換地址。",
+      "question": "你會怎樣談距離和關心，而不把它們當成反比？",
+      "deeperQuestion": "你願意用甚麼穩定行動維持連結？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-051",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Letting children see disagreement",
+    "scenario": "One adult wants disagreements hidden from children; another wants them to see respectful repair.",
+    "question": "Which conversations could children witness, and which need privacy?",
+    "deeperQuestion": "What did childhood examples of conflict teach you?",
+    "twist": "",
+    "zh": {
+      "title": "讓孩子看見分歧",
+      "scenario": "家裡有人認為大人不應在孩子面前有分歧，另一人覺得孩子也需要看到怎樣和好。",
+      "question": "哪些對話適合讓孩子看見，哪些需要私下談？",
+      "deeperQuestion": "你小時候看到的衝突，教會你甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-052",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A skill with a cost",
+    "scenario": "Family expects free design work for events. Endless revisions now affect your paid work.",
+    "question": "How would you set scope, deadlines or payment?",
+    "deeperQuestion": "Should closeness increase respect for the cost of your time?",
+    "twist": "",
+    "zh": {
+      "title": "不能再免費的專長",
+      "scenario": "你擅長設計，家族每次有活動都找你免費做。你願意幫，卻因修改太多而影響自己的工作。",
+      "question": "你會怎樣訂範圍、期限或收費？",
+      "deeperQuestion": "親近的人是否更應該理解你的時間有成本？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-053",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Praise that divides",
+    "scenario": "An elder calls you the most devoted child. You appreciate praise but see a sibling hurt by the comparison.",
+    "question": "How would you receive praise without accepting a ranking?",
+    "deeperQuestion": "What less visible contributions does your sibling make?",
+    "twist": "",
+    "zh": {
+      "title": "好意變成比較",
+      "scenario": "長輩當著手足稱讚你最孝順，你很想被肯定，也看見另一人表情僵住。你知道他的付出方式不同。",
+      "question": "你會怎樣接住稱讚，又不讓它變成排名？",
+      "deeperQuestion": "你知道手足有哪些不容易被看見的付出嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-054",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Whose wallet?",
+    "scenario": "After you start earning, family expects a say in your income. You want to contribute without scrutiny of every purchase.",
+    "question": "How would you separate shared responsibility from personal freedom?",
+    "deeperQuestion": "What agreement would replace guessing with clarity?",
+    "twist": "",
+    "zh": {
+      "title": "一家人的錢包",
+      "scenario": "你開始賺錢後，家人覺得你的收入也應該共同規劃。你願意分擔家用，卻不想每筆消費都被審視。",
+      "question": "你會怎樣分開共同責任和個人自由？",
+      "deeperQuestion": "什麼安排能讓彼此都不用靠猜來安心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-055",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different capacities to care",
+    "scenario": "Relatives contribute company, paperwork or money, but only physical presence gets recognised.",
+    "question": "How would you include different strengths in care arrangements?",
+    "deeperQuestion": "Which contribution do you tend to undervalue?",
+    "twist": "",
+    "zh": {
+      "title": "不一樣的照顧能力",
+      "scenario": "同樣是家人，有人很會陪伴，有人擅長處理文件，有人只能出錢。大家卻只看得到陪在身邊的人。",
+      "question": "你會怎樣把不同的能力放進分工？",
+      "deeperQuestion": "哪一種貢獻最常被你低估？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-056",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A crowded visit home",
+    "scenario": "A week home fills with family dinners. You also want quiet time with parents and a day without plans.",
+    "question": "Which gaps would you protect, and how would you explain them?",
+    "deeperQuestion": "How does time together differ from genuine connection?",
+    "twist": "",
+    "zh": {
+      "title": "回家不想被安排滿",
+      "scenario": "你難得回家一星期，親戚把每天排滿飯局。你想見大家，也想跟父母安靜待著，甚至有一天甚麼都不做。",
+      "question": "你會保留哪些空白，又怎樣告知大家？",
+      "deeperQuestion": "相處的數量和真正有交流，對你有甚麼差別？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-057",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An unapproved interest",
+    "scenario": "A hobby does not affect your responsibilities, but family dismisses it as having no future.",
+    "question": "Would you keep explaining or allow temporary misunderstanding?",
+    "deeperQuestion": "How much approval do you need to enjoy something freely?",
+    "twist": "",
+    "zh": {
+      "title": "一個不被祝福的興趣",
+      "scenario": "你想花時間練一項家人覺得沒前途的興趣，沒有影響工作。他們仍常說別浪費人生。",
+      "question": "你會繼續解釋，還是容許他們暫時不理解？",
+      "deeperQuestion": "你需要多少認同，才能放心喜歡一件事？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-058",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Speaking for you",
+    "scenario": "Parents answer questions about your life before you can, sometimes using outdated views.",
+    "question": "How would you gently reclaim your voice?",
+    "deeperQuestion": "Which changed part of yourself do you want them to know?",
+    "twist": "",
+    "zh": {
+      "title": "誰有權替你答",
+      "scenario": "聚會上有人問你的近況，父母總比你先回答，而且有些已不是你的想法。你想自己說，又怕像當眾糾正他們。",
+      "question": "你會怎樣自然地拿回自己的發言權？",
+      "deeperQuestion": "你想讓家人認識哪個已經改變的部分？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-059",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A difficult thank-you",
+    "scenario": "A relative quietly helps in an important way. Your family rarely expresses affection, and an emoji feels too small.",
+    "question": "What expression would feel sincere in your own style?",
+    "deeperQuestion": "What difference did their help make that you want them to know?",
+    "twist": "",
+    "zh": {
+      "title": "難以說出口的謝謝",
+      "scenario": "家人默默為你做了一件重要的事，你很感激，但你們平常不說肉麻的話。只傳一個貼圖又覺得不夠。",
+      "question": "你會用甚麼符合自己性格的方式表達？",
+      "deeperQuestion": "你最想讓對方知道，他的幫忙改變了甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-060",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Posting family photos",
+    "scenario": "An elder shares family photos publicly. You want more control over your household's privacy.",
+    "question": "What simple sharing agreement would you propose?",
+    "deeperQuestion": "What other way could they share their joy?",
+    "twist": "",
+    "zh": {
+      "title": "照片要不要公開",
+      "scenario": "長輩喜歡把全家照片公開，你不想自己的孩子或生活細節被放上網。他覺得你把事情想得太嚴重。",
+      "question": "你會訂甚麼簡單的分享約定？",
+      "deeperQuestion": "如果對方只想分享喜悅，有沒有別的方法？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-061",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An inherited expectation",
+    "scenario": "Family sees you as the one who can create opportunities for everyone. Their belief feels both loving and heavy.",
+    "question": "What would you promise, and what would you not?",
+    "deeperQuestion": "How could hope and responsibility avoid resting on one person?",
+    "twist": "",
+    "zh": {
+      "title": "被留下來的期待",
+      "scenario": "家人說你是最有能力離開的人，也希望你將來把大家帶出去。你感到被相信，同時背上很大的責任。",
+      "question": "你願意承諾甚麼，不願承諾甚麼？",
+      "deeperQuestion": "希望和責任，怎樣才不會全部壓在一人身上？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-062",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Not answering the pressure",
+    "scenario": "Family again asks when you will marry. You have explained repeatedly and want a peaceful meal.",
+    "question": "How would you end the topic without defending your life again?",
+    "deeperQuestion": "Can declining a question be a mature response?",
+    "twist": "",
+    "zh": {
+      "title": "第一次不回應催促",
+      "scenario": "家人又問你何時結婚，你已解釋很多次。這次你不想辯論，只想好好吃飯。",
+      "question": "你會怎樣結束話題，而不是再證明自己的生活合理？",
+      "deeperQuestion": "不回答每一個問題，是否也可以是一種成熟？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-063",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different family memories",
+    "scenario": "You remember a childhood move as painful; a sibling remembers happiness. Family tries to decide who is wrong.",
+    "question": "How would you make room for both experiences?",
+    "deeperQuestion": "Does sharing a home mean sharing the same childhood?",
+    "twist": "",
+    "zh": {
+      "title": "保留不一樣的記憶",
+      "scenario": "你說童年某次搬家很難過，手足卻記得那段日子很開心。家人想決定究竟誰記錯了。",
+      "question": "你會怎樣讓不同經歷都被聽見？",
+      "deeperQuestion": "同住一個家，是否就代表有相同的童年？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-064",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Parents with their own plans",
+    "scenario": "You research retirement plans for your parents. They have their own preferences and accept risks you dislike.",
+    "question": "What information would you offer before returning the decision to them?",
+    "deeperQuestion": "Can you give them the freedom you once wanted from them?",
+    "twist": "",
+    "zh": {
+      "title": "不需要被拯救的父母",
+      "scenario": "你替父母查了退休安排，他們卻有自己的想法，而且願意承擔一些你不放心的風險。",
+      "question": "你會提出哪些資訊，之後把決定交還他們？",
+      "deeperQuestion": "當角色倒轉，你能給他們當年你想要的自由嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-065",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A shared-home timeline",
+    "scenario": "A one-month family stay becomes three months. Their difficulty is real, and so is your need for space.",
+    "question": "How would you discuss a new timeline and practical next step?",
+    "deeperQuestion": "Can open-ended help erode the goodwill behind it?",
+    "twist": "",
+    "zh": {
+      "title": "一起住的期限",
+      "scenario": "家人暫住你家，原本說一個月，現在三個月了。對方有困難，你也開始需要自己的空間。",
+      "question": "你會怎樣談新的期限和可行的下一步？",
+      "deeperQuestion": "無限期幫忙，是否會慢慢傷到原本的好意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-066",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Admitting a closer bond",
+    "scenario": "You naturally connect more with one relative. Another feels excluded, and equal closeness cannot be forced.",
+    "question": "How could you show care without pretending identical intimacy?",
+    "deeperQuestion": "Must fairness use identical time and gestures?",
+    "twist": "",
+    "zh": {
+      "title": "不好意思說的偏愛",
+      "scenario": "你跟其中一位家人特別談得來，另一位覺得被冷落。你不想假裝所有關係一樣，也不想傷人。",
+      "question": "你能怎樣關心對方，而不假裝相同的親密？",
+      "deeperQuestion": "公平是否一定要用同樣的時間和方式？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-067",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "One person's family duty",
+    "scenario": "Relatives assume you have more time because you are single. Your commitments are less visible, not less real.",
+    "question": "How would you assert that your time deserves equal respect?",
+    "deeperQuestion": "Which life choices are mistaken for fewer responsibilities?",
+    "twist": "",
+    "zh": {
+      "title": "一個人的家族責任",
+      "scenario": "親戚有事總先找未婚的你，認為你比較有空。你的生活其實也很滿，只是沒有被看見的家庭安排。",
+      "question": "你會怎樣說明自己的時間同樣需要被尊重？",
+      "deeperQuestion": "哪些生活選擇，常被誤當成比較少責任？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-068",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An old label",
+    "scenario": "A childhood label persists even though you have changed. It makes you feel frozen in the past.",
+    "question": "How would you ask them to update their picture of you?",
+    "deeperQuestion": "Do you also hold relatives inside old labels?",
+    "twist": "",
+    "zh": {
+      "title": "不再用舊名字叫你",
+      "scenario": "家人仍叫你「小懶蟲」，因為你小時候不愛收拾。如今你很負責，這個玩笑卻像讓你永遠長不大。",
+      "question": "你會怎樣請他們更新對你的認識？",
+      "deeperQuestion": "你自己有沒有也用舊標籤看家人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-069",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Curious about the past",
+    "scenario": "A relative offers to explain an old decision that may change your family story.",
+    "question": "What would you ask first to make the conversation manageable?",
+    "deeperQuestion": "Are you seeking facts, understanding or an apology?",
+    "twist": "",
+    "zh": {
+      "title": "想知道又怕知道",
+      "scenario": "你想問家人當年為何作某個決定，知道答案可能改變你一直相信的故事。對方願意談，但問你是否準備好。",
+      "question": "你會先問甚麼，讓這次談話有承受的空間？",
+      "deeperQuestion": "你想找的是完整事實、理解，還是一個道歉？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-070",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Who hosts the gathering?",
+    "scenario": "The same household hosts every holiday. This year they need rest, and everyone is unsure how to gather.",
+    "question": "What new format would you suggest?",
+    "deeperQuestion": "What should change if a tradition depends on one person's exhaustion?",
+    "twist": "",
+    "zh": {
+      "title": "家庭聚會的工作表",
+      "scenario": "節日聚會每年都由同一戶準備，其他人只帶禮物。今年主人說想休息，大家卻不知道還能怎樣團聚。",
+      "question": "你會提議怎樣的新形式？",
+      "deeperQuestion": "如果傳統要靠一個人很累才能維持，應該改哪部分？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-071",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "One kind of support",
+    "scenario": "You can offer regular time or a larger one-off sum, not both. You have not asked which is needed.",
+    "question": "How would you learn their need before choosing what is easiest to offer?",
+    "deeperQuestion": "How would you discuss a mismatch without drowning in guilt?",
+    "twist": "",
+    "zh": {
+      "title": "只能給一種支持",
+      "scenario": "家人遇到困難，你只能選擇固定每週陪伴，或一次提供較多金錢，無法兩樣都做。對方還沒說最需要甚麼。",
+      "question": "你會先怎樣了解需要，而不是選自己最容易給的？",
+      "deeperQuestion": "對方需要的和你能給的不同時，怎樣談才不內疚？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-072",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An inconvenient truth",
+    "scenario": "A relative lovingly makes a dish you no longer enjoy. You have stayed quiet to spare them.",
+    "question": "How would you introduce your current preference kindly?",
+    "deeperQuestion": "What can be lost through endless accommodation?",
+    "twist": "",
+    "zh": {
+      "title": "一個不方便的真相",
+      "scenario": "家人一直以為你喜歡某道菜，每次都特意做。其實你口味早已改變，只是不忍心說。",
+      "question": "你會怎樣讓對方知道現在的你？",
+      "deeperQuestion": "為了不傷人而一直配合，最後會失去甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-073",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Advice without obedience",
+    "scenario": "You seek advice but choose another path. The relative feels asking should mean following it.",
+    "question": "How would you explain listening versus obeying?",
+    "deeperQuestion": "Can you accept your own advice being declined?",
+    "twist": "",
+    "zh": {
+      "title": "不是所有建議都要採用",
+      "scenario": "你向家人請教，最後選了另一條路。他覺得既然不聽，當初就不應該問。",
+      "question": "你會怎樣說明聽取和服從的差別？",
+      "deeperQuestion": "你給別人建議時，能接受他不採用嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-074",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A delayed celebration",
+    "scenario": "You finish study later in life. Family sees no need for a celebration, but you want to mark the effort.",
+    "question": "How would you invite them to recognise the milestone?",
+    "deeperQuestion": "How would you celebrate yourself even if they did not join?",
+    "twist": "",
+    "zh": {
+      "title": "一場遲到的畢業禮",
+      "scenario": "你完成多年後才回去讀的課程，家人覺得成年人不用特別慶祝。你卻很想讓這段努力有一個結尾。",
+      "question": "你會怎樣邀請他們參與這個對你重要的時刻？",
+      "deeperQuestion": "即使他們不來，你還會怎樣替自己慶祝？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-075",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Different timelines for forgiveness",
+    "scenario": "After a family conflict, one person wants to move on while another still hurts. Others pressure them to preserve harmony.",
+    "question": "How could harmony avoid requiring someone to swallow their feelings?",
+    "deeperQuestion": "Does repair begin with sharing a table or changing behaviour?",
+    "twist": "",
+    "zh": {
+      "title": "不同的原諒期限",
+      "scenario": "家人之間發生爭執，有人很快想翻篇，有人仍受傷。大家催後者不要破壞團圓氣氛。",
+      "question": "你會怎樣讓聚會不以某個人吞下感受為代價？",
+      "deeperQuestion": "和好需要同桌吃飯，還是先改變某些做法？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-076",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A tradition to reconsider",
+    "scenario": "A longstanding family custom no longer fits your values. You want change without dismissing earlier generations.",
+    "question": "What original meaning could you preserve through a new practice?",
+    "deeperQuestion": "Is the form or intention more worth continuing?",
+    "twist": "",
+    "zh": {
+      "title": "不想跟隨的家族傳統",
+      "scenario": "家裡每年有一個你不再認同的習慣，大家說一直如此。你想改，卻不想把前人的心意全部否定。",
+      "question": "你會保留它原本想表達的甚麼，再換一種做法？",
+      "deeperQuestion": "傳統最值得延續的是形式還是用意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-077",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A day for yourself",
+    "scenario": "Family asks for non-urgent help after weeks without your own rest. You could squeeze it in but feel depleted.",
+    "question": "How much would you agree to, or what alternative time would you offer?",
+    "deeperQuestion": "Does an empty calendar slot mean available energy?",
+    "twist": "",
+    "zh": {
+      "title": "先照顧自己的一天",
+      "scenario": "家人週末需要幫忙，你其實可以擠出時間，但已連續幾週沒有休息。事情不緊急，只是大家習慣你會答應。",
+      "question": "你會答應多少，或提出甚麼替代時間？",
+      "deeperQuestion": "有空檔是否就代表有力氣？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-078",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Two languages at home",
+    "scenario": "Younger relatives struggle with an elder's language and speak less. Corrections make trying feel risky.",
+    "question": "How would you make connection possible without fluency?",
+    "deeperQuestion": "Could being heard patiently matter more than speaking correctly?",
+    "twist": "",
+    "zh": {
+      "title": "一個家庭兩種語言",
+      "scenario": "家中年輕一代不太會說長輩熟悉的語言，聊天越來越少。有人責怪孩子不努力，孩子則怕每次開口都被糾正。",
+      "question": "你會怎樣讓不流利也能有真正的交流？",
+      "deeperQuestion": "被耐心聽完，會比說得正確更重要嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-079",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "An ordinary parental life",
+    "scenario": "A parent says their youthful dream was simply family stability, not a grand ambition.",
+    "question": "What would you ask to understand that ordinary-sounding wish?",
+    "deeperQuestion": "Do you mistake dramatic stories for the only stories worth hearing?",
+    "twist": "",
+    "zh": {
+      "title": "父母的普通人生",
+      "scenario": "你問父母年輕時的夢想，他說沒有甚麼大夢，只希望家人安穩。你一時不知道怎樣接話。",
+      "question": "你會再問甚麼，去理解這個看似普通的願望？",
+      "deeperQuestion": "你是否只把精彩的故事當成值得聽的故事？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-080",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Who decides the help?",
+    "scenario": "Family arranges jobs for an unemployed relative who wants two weeks to recover. They see refusal as ingratitude.",
+    "question": "How would you include them in setting the pace of help?",
+    "deeperQuestion": "Whose anxiety might urgent helping be relieving?",
+    "twist": "",
+    "zh": {
+      "title": "該誰決定怎樣幫",
+      "scenario": "全家想替失業的成員安排工作機會，對方卻想先休息兩週。他們覺得他不珍惜幫忙。",
+      "question": "你會怎樣把幫助的速度交回當事人一起決定？",
+      "deeperQuestion": "急著幫忙，有時是在減輕誰的焦慮？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-081",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Keeping a voice",
+    "scenario": "You want to record an elder's stories, but recording makes them tense. Casual chats are easy.",
+    "question": "How would you respect their comfort and explain your wish?",
+    "deeperQuestion": "If you cannot preserve everything, what moment would you fully experience?",
+    "twist": "",
+    "zh": {
+      "title": "留下一段聲音",
+      "scenario": "你想錄下長輩講故事，他一看到錄音就拘謹，平常聊天卻很自在。你很怕以後忘記他的聲音。",
+      "question": "你會怎樣尊重他的自在，也表達你想保存回憶的心？",
+      "deeperQuestion": "如果不能完整保存，你最想好好經歷哪一刻？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-082",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Support without supervision",
+    "scenario": "Family support becomes daily monitoring and advice. You share less, increasing their worry.",
+    "question": "What update rhythm and response style would you suggest?",
+    "deeperQuestion": "How much do they need to know to support without taking over?",
+    "twist": "",
+    "zh": {
+      "title": "一份沒有附帶指導的支持",
+      "scenario": "家人說願意支持你的新計劃，但每天都追問進度、提出做法。你漸漸不想分享，讓他們更擔心。",
+      "question": "你會提議怎樣的更新頻率和回應方式？",
+      "deeperQuestion": "他們需要知道多少，才能支持而不接管？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-083",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Bringing a partner home",
+    "scenario": "Family expects your partner to follow every household custom. You want welcome to include room for difference.",
+    "question": "Which adaptable custom would you discuss first?",
+    "deeperQuestion": "Does joining a family include bringing new ways of living?",
+    "twist": "",
+    "zh": {
+      "title": "把伴侶帶進家的方式",
+      "scenario": "家人希望你的伴侶完全跟隨家中習慣，你想讓對方感到被歡迎，也不希望他只能一直配合。",
+      "question": "你會先跟家人談哪一個可以調整的習慣？",
+      "deeperQuestion": "加入一個家，是學懂所有規矩，還是也能帶來新的做法？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-084",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Family by choice",
+    "scenario": "Someone without blood ties has cared for you like family. A relative objects to including them in a family occasion.",
+    "question": "How would you explain their place in your life?",
+    "deeperQuestion": "What makes someone family to you?",
+    "twist": "",
+    "zh": {
+      "title": "沒有血緣的家人",
+      "scenario": "一位沒有血緣的人多年來像家人般照顧你，你想邀他參加家族重要聚會，有親戚覺得不合傳統。",
+      "question": "你會怎樣說明他在你生命中的位置？",
+      "deeperQuestion": "對你來說，甚麼讓一個人有家的資格？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-085",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Options they never had",
+    "scenario": "Your wish for a career break prompts parents to say they never had that freedom. It may carry regret as well as criticism.",
+    "question": "How would you keep your choice while acknowledging their life?",
+    "deeperQuestion": "Can you enjoy freedoms they lacked without treating them as a debt?",
+    "twist": "",
+    "zh": {
+      "title": "過去沒有的選擇",
+      "scenario": "你想暫停工作去探索，父母說他們當年沒有這種自由。你聽到的是責備，也可能是他們未說過的遺憾。",
+      "question": "你會怎樣回應，既不放棄選擇，也不忽略他們的人生？",
+      "deeperQuestion": "你能享受上一代沒有的自由，而不把它當成虧欠嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-086",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Company without agreement",
+    "scenario": "A relative seeks comfort and agreement that another person is awful. You understand the hurt but not the judgement.",
+    "question": "How would you support the feeling without endorsing the judgement?",
+    "deeperQuestion": "How can disagreement still feel understanding?",
+    "twist": "",
+    "zh": {
+      "title": "不用答應的陪伴",
+      "scenario": "家人向你抱怨另一位親戚，你理解他的傷心，卻不認同他對對方的判斷。他問你是不是也覺得對方很差。",
+      "question": "你會怎樣陪伴感受，而不附和評價？",
+      "deeperQuestion": "不同意對方的結論，還可以怎樣讓他感到被理解？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-087",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A relationship needing space",
+    "scenario": "You want fewer exhausting visits with a relative. Others say family bonds should override that need.",
+    "question": "How would you choose a sustainable amount of contact?",
+    "deeperQuestion": "Could less contact make each meeting more genuine?",
+    "twist": "",
+    "zh": {
+      "title": "一段需要距離的關係",
+      "scenario": "每次跟某位家人見面都很累，你想減少頻率。其他人說家人只有這些，不應該疏遠。",
+      "question": "你會怎樣選擇一個自己能持續的距離？",
+      "deeperQuestion": "少見一點，是否可能讓每次見面更真心？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-088",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Asking differently",
+    "scenario": "Family updates revolve around jobs, money and relationships. You want to hear about recent joy instead.",
+    "question": "What question would invite more than a progress report?",
+    "deeperQuestion": "What meaningful thing without an achievement could you share first?",
+    "twist": "",
+    "zh": {
+      "title": "好好問一次近況",
+      "scenario": "家人每次見面只問工作、收入和感情，你想知道他最近開心過甚麼，卻不知道怎樣轉開。",
+      "question": "你會問哪一個具體問題，讓彼此不只交換成績？",
+      "deeperQuestion": "你願意先分享哪件沒有成果、卻很重要的小事？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-089",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Uncertainty together",
+    "scenario": "A major family change is uncertain. Some research constantly, some avoid it, and some act as if nothing is happening.",
+    "question": "What small shared action could you agree on first?",
+    "deeperQuestion": "Under uncertainty, do you need information, company or a break?",
+    "twist": "",
+    "zh": {
+      "title": "一家人的不確定",
+      "scenario": "家裡將有一個重大改變，資訊還不完整。有人一直查資料，有人不想談，有人假裝一切沒事。",
+      "question": "你們可以先約定哪一件共同能做的小事？",
+      "deeperQuestion": "你在不確定時，需要資訊、陪伴還是暫時休息？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-090",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Misunderstood thrift",
+    "scenario": "An elder declines a comfort purchase as wasteful. You wonder whether they truly do not want it or struggle to spend on themselves.",
+    "question": "How would you ask without deciding their needs for them?",
+    "deeperQuestion": "Could you respect a refusal after they understand the options?",
+    "twist": "",
+    "zh": {
+      "title": "被誤會的節省",
+      "scenario": "長輩捨不得花錢，你想替他買舒服一點的用品，他卻覺得浪費。你不知道他是真的不需要，還是不習慣為自己花。",
+      "question": "你會怎樣問，而不直接替他決定需要甚麼？",
+      "deeperQuestion": "如果他了解選擇後仍拒絕，你能尊重嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-091",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Redistributing home life",
+    "scenario": "Someone returns to study and needs chores redistributed. Others say a personal choice should not affect them.",
+    "question": "How would you balance personal growth and shared workload?",
+    "deeperQuestion": "What adjustment would you hope for when your opportunity comes?",
+    "twist": "",
+    "zh": {
+      "title": "一個需要重新分工的家",
+      "scenario": "家裡一位成員開始讀書，時間少了，原本做的家務需要重分。其他人說那是他自己的選擇，不應影響大家。",
+      "question": "你會怎樣談支持個人成長和共同負擔？",
+      "deeperQuestion": "如果下次是你的機會，你希望家人怎樣調整？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-092",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Hearing another answer",
+    "scenario": "An elder says they would repeat a difficult life choice you expected them to regret.",
+    "question": "How would you stay curious instead of arguing for regret?",
+    "deeperQuestion": "Can others define a good life differently from you?",
+    "twist": "",
+    "zh": {
+      "title": "願意聽不同的答案",
+      "scenario": "你問長輩是否後悔某個決定，原以為他會認同你。他卻說即使辛苦，也會再選一次。",
+      "question": "你會怎樣繼續好奇，而不試著說服他後悔？",
+      "deeperQuestion": "你是否容許別人用不同方式定義好的人生？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-093",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Specific gratitude",
+    "scenario": "Everyone writes “thank you for your hard work” for a retiring relative. You want a more personal message.",
+    "question": "Which moment would you name and explain its impact?",
+    "deeperQuestion": "Did they know you noticed at the time?",
+    "twist": "",
+    "zh": {
+      "title": "把感謝說得具體",
+      "scenario": "全家要寫一句話送給退休的家人，大家都寫「辛苦了」。你想寫得更像只有你們之間才懂的事。",
+      "question": "你會提起哪一個具體時刻，說明它怎樣影響你？",
+      "deeperQuestion": "那件事發生時，他知道你有留意嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-094",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A changing gathering",
+    "scenario": "Departures and new arrivals change a family gathering. Some want the old format; others want a fresh one.",
+    "question": "What would you keep, and what would you add?",
+    "deeperQuestion": "Does moving forward ever feel disloyal to the past?",
+    "twist": "",
+    "zh": {
+      "title": "改變了的團圓",
+      "scenario": "今年有人離開、有人加入，家族聚會不可能跟以前一樣。有人堅持照舊，有人想換個方式開始。",
+      "question": "你會保留一件甚麼，再新增一件甚麼？",
+      "deeperQuestion": "讓生活繼續向前，會不會讓你覺得對過去不夠忠誠？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-095",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A family right to pause",
+    "scenario": "A proposed family rule lets anyone pause a topic without explaining immediately. Some fear growing distance.",
+    "question": "How could a right to pause preserve the possibility of talking later?",
+    "deeperQuestion": "Could knowing you may decline make you more willing to speak?",
+    "twist": "",
+    "zh": {
+      "title": "一家人的告假權",
+      "scenario": "你們想訂一條新家規：任何人都可以說今天不想聊某個話題，不必當場解釋。有人擔心這會讓大家越來越疏遠。",
+      "question": "你會怎樣讓這個暫停權同時保留日後再談的可能？",
+      "deeperQuestion": "知道可以拒絕，會不會反而更願意開口？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-096",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "A rule for the next generation",
+    "scenario": "You can pass on one family rule and retire another, explaining both choices.",
+    "question": "What would you keep, and what would you release?",
+    "deeperQuestion": "How could gratitude for the past coexist with change for the future?",
+    "twist": "",
+    "zh": {
+      "title": "想留給下一代的規矩",
+      "scenario": "假如你只能把家裡一條規矩留給下一代，也可以刪掉一條。你會有機會說明兩個選擇的原因。",
+      "question": "你會留下甚麼，放下甚麼？",
+      "deeperQuestion": "你如何讓感謝上一代和改變下一代同時成立？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-097",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "Payment nobody wants",
+    "scenario": "A relative regularly cares for your pet but refuses payment. You worry the unpaid role has no clear limits.",
+    "question": "How would you agree on breaks and handovers?",
+    "deeperQuestion": "How could unpaid help avoid becoming permanently on demand?",
+    "twist": "",
+    "zh": {
+      "title": "大家都不想收的酬勞",
+      "scenario": "你請家人長期幫忙照顧寵物，想付酬勞，他堅持一家人不用。你怕不付錢，工作就沒有清楚的範圍。",
+      "question": "你會怎樣訂下休息日和交接安排？",
+      "deeperQuestion": "不收錢的幫忙，怎樣才不會被當成隨時可以要求？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-098",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "The first dissenting vote",
+    "scenario": "Everyone wants the same family destination except you. You have no dramatic reason, just a different preference.",
+    "question": "Would you object, make separate plans or join this time?",
+    "deeperQuestion": "Is a simple dislike enough to deserve a hearing?",
+    "twist": "",
+    "zh": {
+      "title": "家裡的第一個反對票",
+      "scenario": "全家選旅行地點，其他人都想去同一處，只有你不想。你沒有更重要的理由，只是真的不感興趣。",
+      "question": "你會表達反對、另作安排，還是這次配合？",
+      "deeperQuestion": "一個普通的「不喜歡」，是否已值得被聽見？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-099",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Family",
+    "title": "More than worry",
+    "scenario": "Family responds to every new venture with warnings. You understand the care but share less good news.",
+    "question": "What response would you request before discussing risks?",
+    "deeperQuestion": "Would shared excitement make their caution easier to hear?",
+    "twist": "",
+    "zh": {
+      "title": "想看見的不只是擔心",
+      "scenario": "你每次分享新嘗試，家人第一反應都是提醒風險。你知道那是關心，卻越來越少告訴他們好消息。",
+      "question": "你會請他們先給你哪一種回應，再一起談風險？",
+      "deeperQuestion": "如果他們先陪你開心，你會更願意聽提醒嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-family-100",
+    "level": "deeper",
+    "emoji": "🏠"
+  },
+  {
+    "category": "Party",
+    "zh": {
+      "title": "答應保密之後",
+      "scenario": "朋友告訴你，他不想再跟另一位共同朋友來往，請你暫時保密。幾天後，被疏遠的人問你：「是不是我做錯了甚麼？你知道原因嗎？」你知道一些，但也答應過不代人說。",
+      "question": "你會怎樣回應，既不說謊，也不替朋友公開私下的話？",
+      "deeperQuestion": "如果你是被疏遠的人，你能接受朋友說「我不能代他解釋」嗎？還希望他做甚麼？",
+      "twist": ""
+    },
+    "title": "After promising privacy",
+    "scenario": "A friend privately says they no longer want contact with a mutual friend. Days later, that person asks whether they did something wrong and whether you know why. You know something but promised not to speak for the other person.",
+    "question": "How would you respond without lying or revealing the private conversation?",
+    "deeperQuestion": "If you were the person being distanced, could you accept “I cannot explain for them”? What else would you want?",
+    "twist": "",
+    "id": "ponder-v5-party-001",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "zh": {
+      "title": "最後取消的人",
+      "scenario": "你們訂了不能退款的旅行住宿，原本平均分錢。出發前，一位朋友因家中突發事情不能去，也找不到人補位。他說願意照付，但你知道他最近手頭很緊；其他朋友也各有預算。",
+      "question": "你們會怎樣處理他的那份？先各自選，再聽理由。",
+      "deeperQuestion": "如果這次幫他分擔，你希望把它當成一次心意，還是以後大家都能用的規則？",
+      "twist": ""
+    },
+    "title": "The person who cancels last",
+    "scenario": "You booked non-refundable accommodation to split equally. A friend cannot come because of a family emergency, and no replacement is available. They offer to pay, but you know money is tight; everyone else has budget limits too.",
+    "question": "How would you handle their share? Choose individually first, then hear each other's reasons.",
+    "deeperQuestion": "Would covering it be a one-time gesture or a rule everyone could use in future?",
+    "twist": "",
+    "id": "ponder-v5-party-002",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "zh": {
+      "title": "好玩的玩笑，誰決定？",
+      "scenario": "聚會裡有人講了一個關於朋友的笑話，大部分人都笑了，被講的人也笑了一下，之後卻變安靜。你不確定他介不介意，也怕當眾問會令他更尷尬。",
+      "question": "先兩人一組聊：你會當下轉話題、出聲提醒、私下問，還是先觀察？",
+      "deeperQuestion": "如果你就是被開玩笑的人，你最希望旁邊的人做甚麼？",
+      "twist": ""
+    },
+    "title": "Who decides whether a joke is fun?",
+    "scenario": "At a gathering, a joke about a friend gets laughs. That friend smiles briefly, then goes quiet. You do not know whether they mind and worry that asking publicly could embarrass them more.",
+    "question": "Discuss in pairs: would you change the subject, speak up, ask privately or observe first?",
+    "deeperQuestion": "If you were the subject of the joke, what would you want someone nearby to do?",
+    "twist": "",
+    "id": "ponder-v5-party-003",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A friend's questionable idea",
+    "scenario": "A friend proudly shares a project. You notice a serious weakness but do not know whether they want encouragement or critique.",
+    "question": "How would you begin your response?",
+    "deeperQuestion": "Would you raise the concern if they only wanted encouragement?",
+    "twist": "",
+    "zh": {
+      "title": "朋友的壞點子",
+      "scenario": "好友很興奮地向你介紹新計劃，已投入不少心血。你看見一個明顯問題，卻不知道他現在想聽鼓勵還是意見。",
+      "question": "你會怎樣開始回應？",
+      "deeperQuestion": "如果他只想被鼓勵，你還會提醒那個問題嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-004",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "The last seat",
+    "scenario": "Two rare tickets are available for three close friends. You can use them or do something else together.",
+    "question": "How would you decide without making the excluded person pretend not to mind?",
+    "deeperQuestion": "Does friendship require everyone every time, or room for different pairings?",
+    "twist": "",
+    "zh": {
+      "title": "留下最後一個位",
+      "scenario": "你和朋友得到兩張難得的票，第三位好友也很想去。票不能加買，你們可以兩人去，或一起改做別的事。",
+      "question": "你會怎樣決定，讓落單的人不用假裝不介意？",
+      "deeperQuestion": "友誼需要每次都一起，還是能容許不同組合？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-005",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "An uneven conversation",
+    "scenario": "A struggling friend contacts you only for support and rarely asks about you. You are growing tired.",
+    "question": "How would you ask to be heard too?",
+    "deeperQuestion": "How would you distinguish a hard season from lasting one-way effort?",
+    "twist": "",
+    "zh": {
+      "title": "一段不再對等的聊天",
+      "scenario": "朋友最近只在有煩惱時找你，你的近況卻很少被問起。你知道他正經歷難關，但自己也開始疲倦。",
+      "question": "你會怎樣提出自己也想被聽見？",
+      "deeperQuestion": "怎樣分辨暫時失衡，和長期只有單向付出？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-006",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "An unwanted cover story",
+    "scenario": "A friend asks you to confirm a false story about last night without explaining why.",
+    "question": "How would you decline while leaving room for honest help?",
+    "deeperQuestion": "What limits does loyalty have for you?",
+    "twist": "",
+    "zh": {
+      "title": "不想幫忙圓謊",
+      "scenario": "朋友請你說他昨晚跟你一起，理由只是他不想解釋自己的去向。你不想追問，也不想替他說謊。",
+      "question": "你會怎樣拒絕，又留下他可以坦白求助的空間？",
+      "deeperQuestion": "朋友之間的忠誠，對你有甚麼界線？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-007",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Shared too soon",
+    "scenario": "A friend excitedly spreads your tentative good news before you are ready.",
+    "question": "How would you handle the public news and the trust between you?",
+    "deeperQuestion": "What repair does an unintentional boundary crossing need?",
+    "twist": "",
+    "zh": {
+      "title": "被分享的好消息",
+      "scenario": "你把尚未確定的好消息告訴好友，他太開心，傳給了其他人。大家開始祝賀，你卻還不想公開。",
+      "question": "你會怎樣處理公開的部分和朋友之間的信任？",
+      "deeperQuestion": "無心的越界，需要怎樣的修補？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-008",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Different friendship speeds",
+    "scenario": "A new friend shares deeply every day. You like them but build closeness more slowly.",
+    "question": "How would you adjust the pace without communicating only rejection?",
+    "deeperQuestion": "Do time, shared experiences or openness build trust for you?",
+    "twist": "",
+    "zh": {
+      "title": "友誼的不同速度",
+      "scenario": "新朋友很快把你當知己，每天分享很多，你卻需要慢慢熟悉。你喜歡他，但跟不上這個速度。",
+      "question": "你會怎樣調整節奏，而不讓對方只聽見拒絕？",
+      "deeperQuestion": "你通常靠時間、經歷還是坦白來建立信任？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-009",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A job introduction",
+    "scenario": "A friend asks for a job referral. You like them but doubt the fit, and your reputation is involved.",
+    "question": "What help would you offer, and what would you not guarantee?",
+    "deeperQuestion": "Does declining a referral necessarily mean disbelief in the person?",
+    "twist": "",
+    "zh": {
+      "title": "幫朋友介紹工作",
+      "scenario": "好友請你推薦他到公司，你喜歡他，卻不確定他的工作習慣適合。推薦會用到你的信譽。",
+      "question": "你願意提供哪種幫忙，又不願保證甚麼？",
+      "deeperQuestion": "不作推薦，是否一定代表你不相信這個人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-010",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Someone left out",
+    "scenario": "You are invited to a small gathering that a mutual friend is not. They ask about your evening.",
+    "question": "How would you answer honestly without explaining someone else's guest list?",
+    "deeperQuestion": "How much would you want to know if excluded?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒被邀請的人",
+      "scenario": "你獲邀參加小聚會，另一位共同好友沒有。你知道主人只是人數有限，但對方問你晚上去哪裡。",
+      "question": "你會怎樣誠實回答，而不把自己變成邀請名單的解釋者？",
+      "deeperQuestion": "如果你是沒被邀請的人，你希望知道多少？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-011",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A joke you have outgrown",
+    "scenario": "An old running joke no longer feels good, although you used to laugh along.",
+    "question": "How would you explain that boundaries can change?",
+    "deeperQuestion": "Can a mature friendship accept “I used to, but not now”?",
+    "twist": "",
+    "zh": {
+      "title": "不想再做的玩笑",
+      "scenario": "朋友一直拿你的某個特點開玩笑，以前你也會笑。現在你不喜歡了，卻怕他說你突然變小器。",
+      "question": "你會怎樣告訴他，界線也會改變？",
+      "deeperQuestion": "一段成熟的友誼，能否接受「以前可以，現在不想」？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-012",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Company after losing",
+    "scenario": "A friend loses a competition. You want to find a lesson, but they are simply sad.",
+    "question": "How would you stay with them without turning failure into a positive?",
+    "deeperQuestion": "What reassurance has ever rushed past your sadness?",
+    "twist": "",
+    "zh": {
+      "title": "只想被陪著輸一次",
+      "scenario": "朋友比賽落敗，你想說「至少學到很多」，但他只是很難過。你也不擅長陪著一個沒有解法的失落。",
+      "question": "你會怎樣陪他，而不急著把失敗變成好事？",
+      "deeperQuestion": "甚麼安慰曾讓你覺得別人太快跳過你的難過？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-013",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Another side of a friend",
+    "scenario": "A close friend treats service staff impatiently, unlike how they treat you. One incident feels both limited and important.",
+    "question": "How would you discuss what you saw?",
+    "deeperQuestion": "How much does treatment of others shape your view of someone?",
+    "twist": "",
+    "zh": {
+      "title": "朋友的另一面",
+      "scenario": "你偶然看見好友對服務人員很不耐煩，跟平日對你很不同。你不想只憑一次判斷，也不能當沒看見。",
+      "question": "你會怎樣跟他談這件事？",
+      "deeperQuestion": "你用一個人對你以外的人怎樣，來認識他多少？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-014",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Growing apart in direction",
+    "scenario": "An old friend stays with old stories while you want to share present life. They say you have changed.",
+    "question": "How would you help the friendship meet who you are now?",
+    "deeperQuestion": "Does this friendship need distance or a new way of meeting?",
+    "twist": "",
+    "zh": {
+      "title": "一起長大的不同路",
+      "scenario": "老朋友聚會仍聊以前的事，你卻很想談現在的生活。他覺得你變了，你也怕自己像嫌棄過去。",
+      "question": "你會怎樣讓友誼跟得上現在的你們？",
+      "deeperQuestion": "有些友情需要變淡，還是只需要新的相處方式？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-015",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Speaking over someone",
+    "scenario": "A friend answers your stories with bigger ones. You cannot tell whether they are connecting or competing.",
+    "question": "How would you return to the part you had not finished?",
+    "deeperQuestion": "How do you ensure your related stories still leave room for listening?",
+    "twist": "",
+    "zh": {
+      "title": "無意的搶先發言",
+      "scenario": "每次你分享故事，朋友都接著講更精彩的經歷。你不確定他想共鳴，還是根本沒聽完你。",
+      "question": "你會怎樣把話題帶回自己還沒說完的部分？",
+      "deeperQuestion": "你自己分享相似經歷時，怎樣確認仍有在聽？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-016",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Friends across disagreement",
+    "scenario": "You and a friend respectfully disagree on an important social issue. You wonder whether the difference is too large.",
+    "question": "What would you understand before judging its impact on the friendship?",
+    "deeperQuestion": "Which differences can coexist, and which cross a boundary?",
+    "twist": "",
+    "zh": {
+      "title": "不同意也能做朋友",
+      "scenario": "你和好友對一件重要的社會議題看法不同，但雙方都願意談，也沒有辱罵。你不知道這個分歧是否太大。",
+      "question": "你會先了解甚麼，才決定這個分歧對友誼的影響？",
+      "deeperQuestion": "哪些是能共存的不同，哪些碰到你的底線？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-017",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Contact fading slowly",
+    "scenario": "You always initiate meetings, though your friend is engaged when you meet. No conflict explains the imbalance.",
+    "question": "Would you keep initiating, ask directly or pause?",
+    "deeperQuestion": "Do you need equal initiation or confidence that you matter?",
+    "twist": "",
+    "zh": {
+      "title": "慢慢消失的聯絡",
+      "scenario": "你們沒有吵架，只是每次約見面都由你開始。朋友來了仍很投入，平時卻很少主動。",
+      "question": "你會繼續主動、直接問，還是先停一停？",
+      "deeperQuestion": "你需要相同的主動次數，還是確定自己被珍惜？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-018",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "An awkward repayment",
+    "scenario": "A friend forgets a modest amount you paid for them. You believe it was accidental but feel awkward asking.",
+    "question": "How would you ask clearly without dismissing your own need?",
+    "deeperQuestion": "Does a small amount mean you should not care?",
+    "twist": "",
+    "zh": {
+      "title": "不好意思追的錢",
+      "scenario": "你替好友墊了一筆不算大的錢，他忘了還。你知道他不是故意，卻每次想提醒都覺得尷尬。",
+      "question": "你會怎樣提醒，既清楚也不先貶低自己的需要？",
+      "deeperQuestion": "金額小，是否代表你應該不在乎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-019",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A story not yours to tell",
+    "scenario": "A friend's private story fits the conversation perfectly, but you never asked permission to share it.",
+    "question": "Would you hold back, anonymise it or ask first?",
+    "deeperQuestion": "Does removing a name necessarily protect the person?",
+    "twist": "",
+    "zh": {
+      "title": "不適合分享的故事",
+      "scenario": "聚會話題剛好適合講好友的一段趣事，大家也會喜歡。但那是他私下告訴你的，你沒問過能否說。",
+      "question": "你會忍住、匿名講，還是先問本人？",
+      "deeperQuestion": "去掉名字，是否就一定保護到當事人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-020",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Different senses of safety",
+    "scenario": "A travel friend wants to follow new acquaintances elsewhere. You feel uneasy; they see an opportunity.",
+    "question": "How would you arrange things without forcing either person along?",
+    "deeperQuestion": "Must you prove danger before expressing discomfort?",
+    "twist": "",
+    "zh": {
+      "title": "兩人不同的安全感",
+      "scenario": "旅行時朋友想臨時跟剛認識的人去另一個地方，你覺得不安心。他覺得你太保守，也不想錯過體驗。",
+      "question": "你們會怎樣安排，讓任何人都不必勉強同行？",
+      "deeperQuestion": "說出不安心，需要先證明真的有危險嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-021",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A gift you cannot keep",
+    "scenario": "A thoughtful gift does not suit you, and the giver keeps asking about it.",
+    "question": "How would you remain grateful and honest?",
+    "deeperQuestion": "Does giving include releasing control over how a gift is used?",
+    "twist": "",
+    "zh": {
+      "title": "一份不想收的禮物",
+      "scenario": "好友送你一件很用心但你不會用的禮物，還常問你用了沒有。你不想說謊，也不想讓他的心意落空。",
+      "question": "你會怎樣回應，保留感謝也說出真實情況？",
+      "deeperQuestion": "禮物送出後，是否也要把使用方式交給收禮的人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-022",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Not deciding for a friend",
+    "scenario": "A friend says they will end a relationship if you tell them to. You know much, but do not live their life.",
+    "question": "How would you help them think without taking the decision?",
+    "deeperQuestion": "Which question do you most want them to answer for themselves?",
+    "twist": "",
+    "zh": {
+      "title": "不想替朋友作主",
+      "scenario": "好友問你應不應該分手，說只要你說一句，他就照做。你知道很多細節，但終究不是過那段生活的人。",
+      "question": "你會怎樣陪他想，而不接下決定權？",
+      "deeperQuestion": "你最希望他自己回答哪一個問題？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-023",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Familiar but unasked",
+    "scenario": "After ten years of friendship, you realise you do not know their proudest achievement or current fear.",
+    "question": "What concrete question would help you know them anew?",
+    "deeperQuestion": "Can familiarity make you stop being curious?",
+    "twist": "",
+    "zh": {
+      "title": "熟悉卻沒問過",
+      "scenario": "你認識朋友十年，突然發現不知道他最在乎的成就，也不知道他最近在害怕甚麼。你們其實一直有見面。",
+      "question": "你會從哪一個具體問題重新認識他？",
+      "deeperQuestion": "熟悉一個人，會不會讓你停止好奇？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-024",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A request for praise",
+    "scenario": "A friend requests honesty about their work but feels hurt by every suggestion.",
+    "question": "How would you clarify the kind of response they want next time?",
+    "deeperQuestion": "When asking for honesty, which parts are you actually ready to hear?",
+    "twist": "",
+    "zh": {
+      "title": "一個只想聽好話的請求",
+      "scenario": "朋友請你看作品，說要誠實，但你一提建議他就很受傷。你不想騙，也不想每次變成批評的人。",
+      "question": "下次你會怎樣先確認他想要哪一種回應？",
+      "deeperQuestion": "你自己說想聽真話時，真的準備好聽哪些部分？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-025",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Does support need scheduling?",
+    "scenario": "A friend often calls late for support while you need early sleep. Scheduling feels unkind to you.",
+    "question": "What sustainable way of staying available would you propose?",
+    "deeperQuestion": "Could bounded support be more reliable than always saying yes?",
+    "twist": "",
+    "zh": {
+      "title": "陪伴需要預約嗎",
+      "scenario": "朋友常深夜打來談心，你很在乎，但隔天要早起。你怕說改天會像把他排在行程表上。",
+      "question": "你會怎樣提出一個能長期維持的方式？",
+      "deeperQuestion": "有界線的陪伴，是否比隨時答應更可靠？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-026",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Unequal success",
+    "scenario": "You win an opportunity you both applied for. Your friend congratulates you but needs a break from the details.",
+    "question": "How would you share joy while respecting their space?",
+    "deeperQuestion": "Can a friend be happy for you and sad for themselves at once?",
+    "twist": "",
+    "zh": {
+      "title": "朋友之間的成功差距",
+      "scenario": "你和好友一起申請機會，只有你獲選。他真心祝賀，也坦白暫時不想聽太多細節。",
+      "question": "你會怎樣分享喜悅，又尊重他的空間？",
+      "deeperQuestion": "你能接受朋友同時替你開心和替自己難過嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-027",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "An honest cancellation",
+    "scenario": "A friend cancels honestly because they lack social energy. You value honesty and feel disappointed after keeping time free.",
+    "question": "How would you respond to both legitimate feelings?",
+    "deeperQuestion": "What rescheduling effort would help you feel valued?",
+    "twist": "",
+    "zh": {
+      "title": "一次真誠的取消",
+      "scenario": "朋友臨時取消，坦白說今天沒有社交力氣。你欣賞誠實，也因為特意空出時間而失落。",
+      "question": "你會怎樣回應兩種都合理的感受？",
+      "deeperQuestion": "怎樣的補約行動會讓你覺得被重視？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-028",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Pushed into the spotlight",
+    "scenario": "A friend volunteers you to speak publicly, believing in your ability. You may manage it but dislike not being asked.",
+    "question": "Would you take the opportunity or undo the arrangement?",
+    "deeperQuestion": "What consent should encouragement beyond comfort require?",
+    "twist": "",
+    "zh": {
+      "title": "被推去當主角",
+      "scenario": "朋友替你報名上台分享，覺得你其實很有能力，只是害羞。你可能做得到，卻不喜歡沒被問過。",
+      "question": "你會接下機會，還是先撤回這個安排？",
+      "deeperQuestion": "鼓勵一個人走出舒適圈，需要先得到甚麼同意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-029",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Not positive every day",
+    "scenario": "A friend's positive reframing usually helps. Today you need to admit something is simply awful.",
+    "question": "How would you ask them to stay with that feeling for a while?",
+    "deeperQuestion": "How can hope coexist with acknowledging pain?",
+    "twist": "",
+    "zh": {
+      "title": "不能每天都積極",
+      "scenario": "好友習慣把所有困難說成成長機會，你平常很受鼓舞，今天卻只想承認事情很糟。",
+      "question": "你會怎樣請他暫時陪你停在這裡？",
+      "deeperQuestion": "希望和承認痛苦，怎樣可以同時存在？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-030",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A request to repost",
+    "scenario": "A friend asks you to promote a business whose product you have not tried.",
+    "question": "How would you help without making claims you cannot support?",
+    "deeperQuestion": "Can you hold a boundary when a friend may be disappointed?",
+    "twist": "",
+    "zh": {
+      "title": "一個不想轉發的請求",
+      "scenario": "好友請你轉發他的生意，你願意支持，但沒有試過產品，也不想讓自己的朋友以為你保證品質。",
+      "question": "你會怎樣幫忙而不作自己無法確認的承諾？",
+      "deeperQuestion": "朋友會失望時，你還能說清楚自己的界線嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-031",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "A ranking you never wanted",
+    "scenario": "A friend calls you their second-best friend, introducing a comparison you never wanted.",
+    "question": "How would you discuss how that wording landed?",
+    "deeperQuestion": "Do you need a unique place or the highest place?",
+    "twist": "",
+    "zh": {
+      "title": "不想知道的排名",
+      "scenario": "好友說你是他第二好的朋友，以為很親密。你本來沒有比較，聽完卻開始在意第一名是誰。",
+      "question": "你會怎樣談這句話帶來的感覺？",
+      "deeperQuestion": "友誼對你需要獨特的位置，還是最高的位置？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-032",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Permission to challenge",
+    "scenario": "A friend repeats a choice that hurt them before, without asking for advice.",
+    "question": "How would you ask for room to discuss it?",
+    "deeperQuestion": "How would you remain a friend if they still choose it?",
+    "twist": "",
+    "zh": {
+      "title": "友誼裡的提醒權",
+      "scenario": "你發現朋友重複一個曾令他受傷的選擇。他沒問意見，你也不確定現在提醒是否越界。",
+      "question": "你會怎樣先取得談這件事的空間？",
+      "deeperQuestion": "如果他聽完仍照做，你能怎樣繼續做朋友？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-033",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Making room for difference",
+    "scenario": "Monthly plans leave either the lively friend or the quieter friend feeling they always accommodate.",
+    "question": "How would you alternate plans without keeping a grievance score?",
+    "deeperQuestion": "Which compromises feel willing, and which erode the friendship?",
+    "twist": "",
+    "zh": {
+      "title": "一起保留不同",
+      "scenario": "你們想固定每月見面，一人喜歡熱鬧，一人容易疲倦。兩種安排都有人覺得自己在遷就。",
+      "question": "你會怎樣輪流安排，而不計較誰吃虧？",
+      "deeperQuestion": "哪一種遷就你願意做，哪一種會慢慢消耗友誼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-034",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Money left after the event",
+    "scenario": "An event has money left over. Options are refunds, future plans or a donation; some may not return.",
+    "question": "Choose a plan individually, then name a condition that makes it fair.",
+    "deeperQuestion": "Can a popular good intention decide how someone else's money is used?",
+    "twist": "",
+    "zh": {
+      "title": "一筆聚會餘款",
+      "scenario": "活動剩下一筆共同款項，可以平均退回，也可以留作下次，或捐出去。有人下次不一定參加。",
+      "question": "每人先選一個方案，再說要加甚麼條件才公平。",
+      "deeperQuestion": "大家喜歡的善意，能否直接決定別人的錢？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-035",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Who gets the space?",
+    "scenario": "Two groups share a free space: quiet conversation and music. Neither has priority under existing rules.",
+    "question": "Would you rotate time, divide space or relocate?",
+    "deeperQuestion": "Which matters more to you: arriving first or having more people?",
+    "twist": "",
+    "zh": {
+      "title": "誰先用場地",
+      "scenario": "你們共享一個免費場地，一組想安靜聊天，另一組想放音樂。兩邊都提早到了，也沒有先訂規則。",
+      "question": "你們會訂輪流時段、分區，還是另找地方？",
+      "deeperQuestion": "先到和人多，哪個理由對你更有說服力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-036",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "small"
+  },
+  {
+    "category": "Party",
+    "title": "Playing without drinking",
+    "scenario": "A game uses alcohol penalties. Someone does not drink and does not want repeated explanations.",
+    "question": "Change one rule so opting out does not attract attention.",
+    "deeperQuestion": "Should participation allow private reasons to remain private?",
+    "twist": "",
+    "zh": {
+      "title": "不喝酒也能玩",
+      "scenario": "聚會遊戲用喝酒作懲罰，有人不喝，但不想逐次解釋原因。大家原本只想熱鬧。",
+      "question": "一起改一條規則，讓拒絕不需要特別被注意。",
+      "deeperQuestion": "加入活動，是否應該不用交代私人理由？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-037",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "More work, more reward?",
+    "scenario": "A fundraiser does unexpectedly well. Some worked longer; others brought customers. Rewards were not discussed.",
+    "question": "Propose a distribution rule, then identify whom it overlooks.",
+    "deeperQuestion": "How should effort, results and need each count?",
+    "twist": "",
+    "zh": {
+      "title": "多做的人多分嗎",
+      "scenario": "你們一起辦義賣，收入比預期多。有人花很多時間，有人帶來最多客人，最初卻沒談怎樣分配回饋。",
+      "question": "每人提出一個分配原則，再找出它會忽略誰。",
+      "deeperQuestion": "努力、成果和需要，哪個最應被算進去？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-038",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "An expensive suggestion",
+    "scenario": "An expensive restaurant gets polite agreement, though some budgets are tight.",
+    "question": "How would you reopen the choice without identifying who cannot afford it?",
+    "deeperQuestion": "What makes an invitation safe to decline?",
+    "twist": "",
+    "zh": {
+      "title": "一個人的昂貴提議",
+      "scenario": "朋友提議去高級餐廳，大家表面都說可以，但你知道有人預算很緊。沒人想當掃興的人。",
+      "question": "你會怎樣重開選擇，而不點名誰付不起？",
+      "deeperQuestion": "怎樣的邀約會讓人真的敢說不？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-039",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "The quiet contributor",
+    "scenario": "A loud voice steers a group plan. A quieter member later shares a strong alternative.",
+    "question": "What process would let ideas matter without winning airtime?",
+    "deeperQuestion": "Do quieter people need encouragement or a different way to contribute?",
+    "twist": "",
+    "zh": {
+      "title": "合作時的安靜成員",
+      "scenario": "小組要想一個活動點子，說話最多的人主導了方向。安靜的人會後才告訴你，他有另一個很好的想法。",
+      "question": "你們會改哪一步，讓想法不只靠搶到話筒？",
+      "deeperQuestion": "安靜的人需要被鼓勵，還是需要不同的參與方式？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-040",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A trip with trade-offs",
+    "scenario": "Four travellers each have a must-see, but only two fit. One person always offers to yield.",
+    "question": "How would you choose while noticing habitual compromise?",
+    "deeperQuestion": "Does a voluntary concession mean no disappointment?",
+    "twist": "",
+    "zh": {
+      "title": "不能全員滿意的旅行",
+      "scenario": "四位朋友各有一個最想去的地方，行程只能選兩個。有人願意退讓，但你怕他每次都在退。",
+      "question": "你們會用甚麼方法選，並照顧常讓步的人？",
+      "deeperQuestion": "自願退讓是否一定代表沒有失落？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-041",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Who cleans up?",
+    "scenario": "A successful party ends with the host facing all the cleanup. Guests brought food but no cleanup plan.",
+    "question": "How would you divide the ending before the party starts?",
+    "deeperQuestion": "Should invisible preparation and cleanup count as contributions?",
+    "twist": "",
+    "zh": {
+      "title": "誰負責收尾",
+      "scenario": "聚會很成功，結束時大部分人準備離開，只剩主人收拾。大家都帶了食物，卻沒談清理。",
+      "question": "你們會怎樣在開始前分配收尾？",
+      "deeperQuestion": "看不見的準備和收拾，應該算進每人的付出嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-042",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "After the vote",
+    "scenario": "A vote wins four to one, but the chosen activity clearly does not suit the lone dissenter.",
+    "question": "Would you follow the vote or add protection for the minority?",
+    "deeperQuestion": "When should a decision require more than a vote?",
+    "twist": "",
+    "zh": {
+      "title": "投票後的少數",
+      "scenario": "你們投票選活動，結果四比一。少數那位說願意跟，卻明顯不適合那個活動。",
+      "question": "你們會照結果走，還是加一條照顧少數的規則？",
+      "deeperQuestion": "一個選擇何時不應只靠票數？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-043",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A loophole in the game",
+    "scenario": "A legal loophole lets one player win repeatedly. Others stop enjoying the game.",
+    "question": "Would you change the rule now or next time?",
+    "deeperQuestion": "How do rule-following and shared enjoyment relate to fairness?",
+    "twist": "",
+    "zh": {
+      "title": "遊戲裡的漏洞",
+      "scenario": "有人找到規則沒禁止的技巧，幾乎每局都贏。其他人覺得沒趣，他說自己沒有作弊。",
+      "question": "你們會中途改規則，還是下次才改？",
+      "deeperQuestion": "守規則和顧及大家的體驗，哪個更接近公平？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-044",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Missing credit",
+    "scenario": "A shared project's post credits only visible participants, omitting those behind the scenes.",
+    "question": "How would you restore credit without making the omitted people fight for it?",
+    "deeperQuestion": "Which contributions disappear because they are not photographed?",
+    "twist": "",
+    "zh": {
+      "title": "被省略的功勞",
+      "scenario": "你們共同完成一個作品，發帖的人只標記了出鏡的朋友，忘了幕後幫忙的人。帖子已很多人看過。",
+      "question": "你們會怎樣補上功勞，而不讓被漏掉的人自己爭取？",
+      "deeperQuestion": "哪些貢獻最容易因為沒被拍到而消失？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-045",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Different views of punctuality",
+    "scenario": "Some read a seven o'clock invitation as arrival time, others as a loose starting point. The same people wait.",
+    "question": "What practical arrangement would reduce blame and waiting?",
+    "deeperQuestion": "Who bears the cost of flexibility?",
+    "twist": "",
+    "zh": {
+      "title": "不同程度的準時",
+      "scenario": "聚會約七點，有人當成七點到，有人當成七點後開始出門。每次都是同一批人等。",
+      "question": "你們會訂甚麼實際安排，減少責怪也減少等待？",
+      "deeperQuestion": "彈性應由大家共享，還是由準時的人承擔？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-046",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A borrowed item breaks",
+    "scenario": "Shared equipment breaks while borrowed. Wear or misuse may be responsible, but nobody knows.",
+    "question": "How would you share repair costs and set future rules?",
+    "deeperQuestion": "How can responsibility be shared without clear fault?",
+    "twist": "",
+    "zh": {
+      "title": "借出去的東西壞了",
+      "scenario": "朋友借用共同買的器材，正常使用時壞了。可能是老化，也可能操作不當，沒法確定。",
+      "question": "你們會怎樣分擔修理費，並訂下之後的借用規則？",
+      "deeperQuestion": "沒有明確過錯時，責任可以怎樣分？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-047",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "The default driver",
+    "scenario": "You always drive everyone and receive drinks as thanks, but get home last. This time you want a break.",
+    "question": "How would you reset the arrangement before resentment erupts?",
+    "deeperQuestion": "Does gratitude equal sharing the cost?",
+    "twist": "",
+    "zh": {
+      "title": "不想當固定司機",
+      "scenario": "每次聚會你都開車接送，大家會請你喝飲料，但你總最晚回家。這次你想不用負責交通。",
+      "question": "你會怎樣重新安排，而不等到自己爆發？",
+      "deeperQuestion": "感謝是否就等於公平分擔了成本？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-048",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Private votes or raised hands?",
+    "scenario": "Some want anonymous voting to avoid social pressure; others think friends should speak openly.",
+    "question": "Which method would you choose, and why?",
+    "deeperQuestion": "Can a little anonymity make honesty safer?",
+    "twist": "",
+    "zh": {
+      "title": "匿名票還是舉手",
+      "scenario": "你們要選下一次活動，有人提議匿名投票，怕大家跟著最有影響力的人選。另一人覺得朋友應該直接說。",
+      "question": "你們會選哪種方式，為甚麼？",
+      "deeperQuestion": "安全感是否有時需要一點匿名？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-049",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "An uneven discount",
+    "scenario": "One person's private discount saves the group money. They want a larger share of the saving.",
+    "question": "How would you divide the saving without souring the gesture?",
+    "deeperQuestion": "Should bringing a resource earn an extra benefit?",
+    "twist": "",
+    "zh": {
+      "title": "一個不公平的折扣",
+      "scenario": "其中一人有私人折扣，替全組省下不少錢。他想自己少付一點，其他人以為折扣應平均分享。",
+      "question": "你們會怎樣處理，避免把好意變成爭執？",
+      "deeperQuestion": "提供資源的人，是否應有額外回報？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-050",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "The first item on the list",
+    "scenario": "The group's top activity is something one friend fears. You want neither pressure nor automatic cancellation.",
+    "question": "How would you make both joining and opting out comfortable?",
+    "deeperQuestion": "How could someone still belong while missing an activity?",
+    "twist": "",
+    "zh": {
+      "title": "共同清單的第一名",
+      "scenario": "你們寫下今年一起想做的事，最受歡迎的一項恰好是其中一人最害怕的活動。大家不想逼他，也不想整項取消。",
+      "question": "你們會怎樣安排參與和不參與都自在？",
+      "deeperQuestion": "不參加一次，怎樣仍能保有歸屬感？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-051",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A friend's new shop",
+    "scenario": "A friend's new shop needs improvement, but they ask the group for five-star reviews.",
+    "question": "How would you support them while remaining truthful?",
+    "deeperQuestion": "Should friendship change the standard for a public recommendation?",
+    "twist": "",
+    "zh": {
+      "title": "朋友開的店",
+      "scenario": "朋友開店，大家約好支持。你試過後覺得還需改善，他請你們留下五星評價。",
+      "question": "你們會怎樣支持，同時保留真實評價？",
+      "deeperQuestion": "友情是否應影響公開推薦的標準？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-052",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Names on a shared gift",
+    "scenario": "One contributor has not paid or replied before a shared gift is given.",
+    "question": "How would you handle this occasion and improve the next?",
+    "deeperQuestion": "What do inclusion on the card and payment each mean to you?",
+    "twist": "",
+    "zh": {
+      "title": "共同禮物的名字",
+      "scenario": "大家合資買禮物，有一人忘了付款，送出前仍未回覆。你們不想漏名，也不想其他人一直補差額。",
+      "question": "你們會怎樣處理這次，並改善下一次安排？",
+      "deeperQuestion": "把名字寫上去和實際出資，對你代表甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-053",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Help with a deadline",
+    "scenario": "A one-day favour grows into much more work as the organiser struggles.",
+    "question": "What task would each keep, and how would you cap further work?",
+    "deeperQuestion": "How can emergency help avoid becoming permanent duty?",
+    "twist": "",
+    "zh": {
+      "title": "一次有期限的協助",
+      "scenario": "你們幫朋友籌辦活動，原本只答應一天，後來工作越加越多。朋友壓力很大，也沒有其他人手。",
+      "question": "每人會留下哪一項工作，又怎樣說明不能再加？",
+      "deeperQuestion": "救急之後，怎樣避免成為沒有期限的責任？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-054",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "An unpopular reminder",
+    "scenario": "The party runs past venue limits. Speaking up may spoil the mood; silence leaves the host responsible.",
+    "question": "How would you raise it and share responsibility?",
+    "deeperQuestion": "Who usually carries the role of spoilsport?",
+    "twist": "",
+    "zh": {
+      "title": "一個不受歡迎的提醒",
+      "scenario": "大家玩得很開心，你注意到時間已超過場地限制。提醒可能掃興，不提醒又會讓主人被追責。",
+      "question": "你會怎樣提醒，讓責任不只落在一個人身上？",
+      "deeperQuestion": "群體裡誰最常承擔「掃興的人」這個角色？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-055",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Who owns the failure?",
+    "scenario": "A group plan fails and people blame the original proposer, though everyone agreed.",
+    "question": "How would you distinguish learning from assigning a scapegoat?",
+    "deeperQuestion": "How much responsibility comes with agreeing to a plan?",
+    "twist": "",
+    "zh": {
+      "title": "把失敗算給誰",
+      "scenario": "你們一起決定的活動沒成功，事後大家開始說最初是哪個人的主意。當時其實都同意了。",
+      "question": "你們會怎樣分開檢討和找人背責任？",
+      "deeperQuestion": "同意一個計劃，代表要一起承擔多少結果？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-056",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Choosing a leader",
+    "scenario": "One friend has expertise; another has willingness to organise. The expert lacks time, while the organiser faces comparison.",
+    "question": "How would you divide roles instead of choosing one best person?",
+    "deeperQuestion": "Which do you undervalue: skill or willingness to take responsibility?",
+    "twist": "",
+    "zh": {
+      "title": "誰最適合當領隊",
+      "scenario": "一位朋友最有經驗，另一位最願意花時間安排。前者不想太忙，後者卻常被拿來比較。",
+      "question": "你們會怎樣分配角色，而不是只選一個最厲害的人？",
+      "deeperQuestion": "能力和願意負責，哪個常被你低估？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-057",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Can someone leave midway?",
+    "scenario": "A friend wants to leave a group course, risking everyone's discount.",
+    "question": "What exit arrangement would you propose?",
+    "deeperQuestion": "Does commitment mean finishing or also leaving responsibly?",
+    "twist": "",
+    "zh": {
+      "title": "可以中途退出嗎",
+      "scenario": "你們報名長期共同課程，有人上了幾次發現不喜歡。退出會影響團體折扣，但勉強留下也不快樂。",
+      "question": "你們會訂怎樣的退出安排？",
+      "deeperQuestion": "承諾應該保證完成，還是也包括負責任地離開？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-058",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A changed theme",
+    "scenario": "A relaxed gathering shifts toward competition, though some came for conversation.",
+    "question": "How would you check that the loudest preference is actually shared?",
+    "deeperQuestion": "When should silence not count as agreement?",
+    "twist": "",
+    "zh": {
+      "title": "一個被改掉的主題",
+      "scenario": "聚會原定是輕鬆聊天，幾個人臨時想改成競賽。其他人不太想玩，卻怕打斷興致。",
+      "question": "你們會怎樣確認這是大家的選擇，而非最響亮的選擇？",
+      "deeperQuestion": "沉默何時不能被當成同意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-059",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Making room for newcomers",
+    "scenario": "A newcomer cannot join a game built entirely on old shared memories.",
+    "question": "What questions would let both old and new friends contribute?",
+    "deeperQuestion": "How much nostalgia would you trade for a new connection?",
+    "twist": "",
+    "zh": {
+      "title": "讓新朋友也有位置",
+      "scenario": "固定朋友圈來了一位新朋友，遊戲題目卻全是過往共同回憶。他很難參與，又不想讓大家改玩法。",
+      "question": "你們會加入哪一種題目，讓熟人和新人都能貢獻？",
+      "deeperQuestion": "你願意少聊多少舊故事，換來一段新的連結？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-060",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A contest without a winner?",
+    "scenario": "A small contest can fund one winner's prize or small keepsakes for everyone.",
+    "question": "Choose individually, then hear someone who chose differently.",
+    "deeperQuestion": "Do you want performance recognised or participation remembered?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒有冠軍的比賽",
+      "scenario": "大家辦小比賽，有人想保留獎品只給冠軍，有人覺得每人都應有紀念。預算只能選一種。",
+      "question": "先各自選，再聽一個不同選擇的人說理由。",
+      "deeperQuestion": "你參加時更想被肯定表現，還是被記得有參與？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-061",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Conflict in the group chat",
+    "scenario": "Two people argue in a group chat. Others want calm but worry about burying the issue.",
+    "question": "Where should the conversation continue, and who should join?",
+    "deeperQuestion": "When should bystanders help, and when should they step back?",
+    "twist": "",
+    "zh": {
+      "title": "群組裡的衝突",
+      "scenario": "兩人在群組吵起來，其他人想轉話題，卻又怕問題只是被壓下。當事人都覺得自己沒被聽懂。",
+      "question": "你們會把對話移到哪裡，由誰參與？",
+      "deeperQuestion": "旁觀者何時應幫忙，何時應退後？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-062",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A private budget",
+    "scenario": "An anonymous extra contribution could improve the outing, but some worry about hidden obligations.",
+    "question": "Would you accept, and what must be clear first?",
+    "deeperQuestion": "Can generosity without conditions still feel uncomfortable?",
+    "twist": "",
+    "zh": {
+      "title": "聚會預算的秘密",
+      "scenario": "一位朋友願意多付，讓大家去更好的地方，但希望其他人不知道是誰補貼。有人擔心這會形成不平等。",
+      "question": "你們會接受嗎？需要先說清楚哪些事？",
+      "deeperQuestion": "沒有回報要求的慷慨，是否仍可能讓人不自在？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-063",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Absent from the photo",
+    "scenario": "A great group photo includes someone who does not want it posted. Cropping looks awkward.",
+    "question": "Would you choose another photo, obscure a face or keep it private?",
+    "deeperQuestion": "Can one person's refusal determine a shared photo's use?",
+    "twist": "",
+    "zh": {
+      "title": "照片裡的缺席者",
+      "scenario": "聚會大合照很好看，但一位朋友說不想被公開。裁掉他會很奇怪，其他人又很想分享。",
+      "question": "你們會選另一張、遮臉，還是保留作私人回憶？",
+      "deeperQuestion": "一個人的拒絕，能否決定一張共同照片的用途？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-064",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "The final activity",
+    "scenario": "Everyone is tired on the last day, but one friend's only must-see is still ahead.",
+    "question": "Would you split up, shorten it or finish together?",
+    "deeperQuestion": "Should earlier compromises influence the final choice?",
+    "twist": "",
+    "zh": {
+      "title": "最後一項行程",
+      "scenario": "旅行最後一天，大家都累了，但有人為唯一想去的景點等了整趟。取消很輕鬆，繼續也確實辛苦。",
+      "question": "你們會分開行動、縮短行程，還是一起完成？",
+      "deeperQuestion": "先前的遷就，應不應該在最後被算進去？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-065",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A gathering without proving yourself",
+    "scenario": "You ban questions about careers, money and relationship progress for one gathering. Conversation suddenly feels unfamiliar.",
+    "question": "Each offer a question that reveals a person without requesting achievements.",
+    "deeperQuestion": "Which details would you like people to know you through?",
+    "twist": "",
+    "zh": {
+      "title": "一場不用證明的聚會",
+      "scenario": "你們決定辦一次聚會，不問工作、收入或感情進度。起初大家反而不知道可以聊甚麼。",
+      "question": "每人提出一個能認識對方、又不需要成績的問題。",
+      "deeperQuestion": "你最希望別人從哪些細節認識你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-066",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "A shared fund for ten",
+    "scenario": "Ten people pay equally, while two organise. The group considers fee reductions or priority choices for them.",
+    "question": "Vote, then hear one reason from each position.",
+    "deeperQuestion": "How can time and money be balanced without turning friendship into invoices?",
+    "twist": "",
+    "zh": {
+      "title": "十個人的共同基金",
+      "scenario": "十個人各出一樣的錢辦活動，有兩人願意多做準備。大家要決定，他們是否可以少付或優先選活動。",
+      "question": "先投票，再請不同選擇各派一人說理由。",
+      "deeperQuestion": "金錢和時間怎樣交換，才不會讓人情變成帳單？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-067",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "Everyone waiting for an invitation",
+    "scenario": "Anonymous notes reveal many people wish others would initiate plans.",
+    "question": "In small groups, design a way to meet without relying on the most outgoing person.",
+    "deeperQuestion": "What do you worry about while waiting for someone else to initiate?",
+    "twist": "",
+    "zh": {
+      "title": "一張匿名心願牆",
+      "scenario": "你們匿名寫下希望朋友多做的一件事，出現好幾張「希望有人主動約我」。原來不少人都在等。",
+      "question": "分小組設計一個不用等最外向的人發起的辦法。",
+      "deeperQuestion": "你等待主動時，心裡通常在擔心甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-068",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "medium"
+  },
+  {
+    "category": "Party",
+    "title": "An awkward award",
+    "scenario": "A party award for “most trustworthy” sounds fun until people consider those receiving no votes.",
+    "question": "Would you keep it, rename it or avoid ranking?",
+    "deeperQuestion": "Which qualities change meaning when ranked?",
+    "twist": "",
+    "zh": {
+      "title": "一個讓人猶豫的獎項",
+      "scenario": "聚會要頒「最值得信任的人」，大家原本覺得好玩，有人卻擔心沒票的人會難受。",
+      "question": "你們會保留、改名，還是換成不排名的玩法？",
+      "deeperQuestion": "哪些特質一旦拿來排名，就改變了原本的意思？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-069",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Someone who will not perform",
+    "scenario": "A player declines a performance challenge while others urge them to be a good sport.",
+    "question": "Each group invent a response that accepts the no and keeps the game moving.",
+    "deeperQuestion": "Does being at ease include feeling safe to decline?",
+    "twist": "",
+    "zh": {
+      "title": "不想上台的人",
+      "scenario": "遊戲抽中一位不想表演的人，大家起哄說玩得起才好玩。他笑著拒絕，氣氛開始尷尬。",
+      "question": "每組想一句能接住拒絕、又讓遊戲繼續的話。",
+      "deeperQuestion": "真正放得開，是否也包括安心說不？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-070",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Choosing a cause together",
+    "scenario": "Group proceeds could help a larger number of people or a cause deeply tied to one friend's life.",
+    "question": "Choose, then argue one reason for the alternative.",
+    "deeperQuestion": "Do numbers or personal stories move you more?",
+    "twist": "",
+    "zh": {
+      "title": "共同決定捐款",
+      "scenario": "你們有一筆活動收入要捐，一個機構幫助更多人，另一個與某位朋友的經歷有深刻關係。",
+      "question": "先選一個，再交換立場替另一選擇說一句理由。",
+      "deeperQuestion": "數字和個人故事，哪個比較容易改變你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-071",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "The first dissent",
+    "scenario": "A popular plan has hidden dissent that appears only after someone speaks.",
+    "question": "Design a process that makes the first disagreement easier.",
+    "deeperQuestion": "What response would help you speak differently from the group?",
+    "twist": "",
+    "zh": {
+      "title": "群體裡的第一句反對",
+      "scenario": "一個提議獲得很多附和，你其實不同意。你一開口，才發現其他人也只是怕掃興。",
+      "question": "分組想一個讓第一句反對更容易出現的流程。",
+      "deeperQuestion": "你最需要哪種反應，才敢說跟大家不同的話？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-072",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Editing a shared memory",
+    "scenario": "The funniest clip in an event video makes an absent friend look foolish.",
+    "question": "Would you keep it, ask first or replace it? Explain your boundary.",
+    "deeperQuestion": "Does popularity make something worth publishing?",
+    "twist": "",
+    "zh": {
+      "title": "共同回憶的剪接",
+      "scenario": "你們做聚會影片，最好笑的片段剛好讓一位朋友看起來很笨。他本人不在剪接現場。",
+      "question": "你們會保留、先問，還是換掉？說明自己的界線。",
+      "deeperQuestion": "一段內容很受歡迎，是否足以讓它值得公開？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-073",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "The cost of inclusion",
+    "scenario": "The cheap venue has stairs; an accessible one costs more than planned.",
+    "question": "Would you cut extras, raise contributions or change the format?",
+    "deeperQuestion": "Is access an extra kindness or part of the basic plan?",
+    "twist": "",
+    "zh": {
+      "title": "人多就應該便宜嗎",
+      "scenario": "大聚會要選場地，便宜地方有樓梯，較貴地方才方便行動不便的朋友。預算本來已緊。",
+      "question": "你們會減少其他項目、增加費用，還是改形式？",
+      "deeperQuestion": "讓每個人能參加，應算額外照顧還是基本安排？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-074",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "One minute each?",
+    "scenario": "One-minute turns suit fast speakers better than those who need time to form thoughts.",
+    "question": "How would you balance the schedule and participation?",
+    "deeperQuestion": "How do identical treatment and fair opportunity differ here?",
+    "twist": "",
+    "zh": {
+      "title": "每人一分鐘夠嗎",
+      "scenario": "分享環節每人一分鐘，有人需要較長時間組織語言，有人說得很快。完全一樣的時間未必帶來一樣的機會。",
+      "question": "你們會怎樣調整規則，兼顧時間和參與？",
+      "deeperQuestion": "相同待遇和公平機會，這裡差在哪裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-075",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A very popular friend",
+    "scenario": "A friendly, popular person draws most attention while quieter guests drift to the edge.",
+    "question": "Suggest a way to mix people without singling anyone out.",
+    "deeperQuestion": "Does unintentional exclusion still call for action?",
+    "twist": "",
+    "zh": {
+      "title": "一個很受歡迎的朋友",
+      "scenario": "大家總圍著同一位朋友聊天，他也很友善。幾個比較安靜的人漸漸站到外圍，沒有人刻意排斥。",
+      "question": "每組想一個不點名、不尷尬的重新混合方式。",
+      "deeperQuestion": "沒有惡意的冷落，仍需要有人主動改變嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-076",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "An unexpected guest",
+    "scenario": "An unannounced guest creates a seating shortage. They did not know prior permission was needed.",
+    "question": "How would you handle the immediate situation and later responsibility?",
+    "deeperQuestion": "Does protecting the guest prevent addressing the inviter's decision?",
+    "twist": "",
+    "zh": {
+      "title": "意外多出一位客人",
+      "scenario": "有人帶朋友來，令預訂座位不夠。新客人不知道原本需要先問，主人也不想讓他難堪。",
+      "question": "你們會先怎樣處理現場，再怎樣談責任？",
+      "deeperQuestion": "照顧新客人的感受，是否代表不能追問帶人者？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-077",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Collective lateness",
+    "scenario": "Most guests are late; punctual ones have waited thirty minutes. Some suggest waiting longer.",
+    "question": "Vote to start or wait, then explain how to consider the other side.",
+    "deeperQuestion": "Should a rule favour the majority or those who kept the agreement?",
+    "twist": "",
+    "zh": {
+      "title": "一次集體遲到",
+      "scenario": "大半人遲到，準時的人已等了半小時。有人提議等齊才開始，怕遲到的人錯過重點。",
+      "question": "先投票決定開始或等待，再說怎樣照顧另一方。",
+      "deeperQuestion": "規則應照顧最多人，還是守約的人？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-078",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A forwarded sentence",
+    "scenario": "A message is forwarded without context and can be misunderstood. The sender meant it as a joke.",
+    "question": "How would you repair misunderstanding already caused?",
+    "deeperQuestion": "What should the forwarder do beyond apologising?",
+    "twist": "",
+    "zh": {
+      "title": "被轉傳的一句話",
+      "scenario": "群組有人截取一位朋友的一句話轉傳，離開原本語境後很容易被誤會。轉傳者說只是覺得好笑。",
+      "question": "你們會怎樣修補已經發生的誤解？",
+      "deeperQuestion": "道歉之外，轉傳者需要做甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-079",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Mixed skill levels",
+    "scenario": "Experienced players dominate while beginners lose interest. Skilled players still want a real challenge.",
+    "question": "Design a format enjoyable for both groups.",
+    "deeperQuestion": "Must including beginners mean asking skilled players to lose deliberately?",
+    "twist": "",
+    "zh": {
+      "title": "一起玩但不同程度",
+      "scenario": "遊戲裡有人很熟練，有人第一次玩。強者一直贏，新手漸漸不想加入。強者也想認真玩。",
+      "question": "分組設計一個雙方都有樂趣的玩法。",
+      "deeperQuestion": "照顧新手是否一定要讓強者故意輸？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-080",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Who speaks for the group?",
+    "scenario": "An outgoing member drafts a message on everyone's behalf, including points not agreed by all.",
+    "question": "How would you verify what can speak for everyone?",
+    "deeperQuestion": "When does efficient representation become deciding for others?",
+    "twist": "",
+    "zh": {
+      "title": "誰代表我們發言",
+      "scenario": "你們要向場地方提出意見，最外向的人很快寫好一封代表全體的訊息，但有幾點並非大家共識。",
+      "question": "你們會怎樣確認哪些能代表全體？",
+      "deeperQuestion": "效率很高的代表，何時會變成替人作主？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-081",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Work talk at the party",
+    "scenario": "Most guests share a profession and get absorbed in work talk, leaving others outside.",
+    "question": "Would you change topics or make this one accessible?",
+    "deeperQuestion": "Could you share the human part of the professional story?",
+    "twist": "",
+    "zh": {
+      "title": "聚會裡的工作話題",
+      "scenario": "大部分人做同一行，越聊越投入，其他行業的朋友插不上話。專業話題很有趣，也真的把人隔開了。",
+      "question": "你們會換題目，還是把話題翻成大家都能加入的問題？",
+      "deeperQuestion": "你能把專業故事裡最有人情味的部分說出來嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-082",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A vote with consequences",
+    "scenario": "After a deposit is paid, someone admits voting yes only to avoid spoiling things.",
+    "question": "How would you share the consequence and prevent a repeat?",
+    "deeperQuestion": "How are responsibility for honesty and safety to be honest shared?",
+    "twist": "",
+    "zh": {
+      "title": "一個不能重來的投票",
+      "scenario": "大家投票後已付訂金，有人這才說自己不喜歡，但之前為怕掃興投了贊成。改動會有損失。",
+      "question": "你們會怎樣分擔這次後果，也避免下次再發生？",
+      "deeperQuestion": "說真話的責任，和讓人敢說真話的責任，各佔多少？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-083",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A new group tradition",
+    "scenario": "You invent an annual friends' day with one recurring ritual: achievements, failures or simply a meal.",
+    "question": "Design a ritual and explain whom it helps connect.",
+    "deeperQuestion": "Should friendship record highlights or a fuller life?",
+    "twist": "",
+    "zh": {
+      "title": "一個全新的節日",
+      "scenario": "你們可以創立一年一次的朋友節，只留一個固定環節。有人想表揚成就，有人想分享失敗，有人只想好好吃飯。",
+      "question": "每組設計一個環節，說明它會讓誰更容易靠近。",
+      "deeperQuestion": "你希望友誼記錄的是高光，還是完整的人生？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-084",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "The weight of anonymous feedback",
+    "scenario": "Anonymous feedback says some guests felt overlooked but names nobody.",
+    "question": "What observable part would you improve without tracing the writer?",
+    "deeperQuestion": "Does anonymity make a feeling less worth hearing?",
+    "twist": "",
+    "zh": {
+      "title": "匿名意見的分量",
+      "scenario": "活動收到匿名意見，說有些人被忽略。沒有具體名字，主辦者不知道該怎樣回應，也有人覺得不用理會。",
+      "question": "你們會先改哪一個可觀察的安排，而不追查是誰？",
+      "deeperQuestion": "一個人不願署名，是否就令感受不值得聽？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-085",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Trading positions",
+    "scenario": "The group divides over packed versus open travel plans. Each person must offer a reason for the other side.",
+    "question": "Which reason is hardest to voice, and which surprises you with agreement?",
+    "deeperQuestion": "Did understanding the other side shift your choice at all?",
+    "twist": "",
+    "zh": {
+      "title": "交換一個立場",
+      "scenario": "你們討論旅行應該排滿還是留白，分成兩派。現在每人要替相反的一方說出一個自己也認同的理由。",
+      "question": "哪個理由最難說，哪個令你意外地點頭？",
+      "deeperQuestion": "理解另一邊之後，你的選擇有沒有改一點？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-086",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A gift for the next host",
+    "scenario": "A few people always host. You want a three-point guide for the next host that does not add demands.",
+    "question": "Write three points, including at least one guest responsibility.",
+    "deeperQuestion": "Is a good gathering the host's creation or everyone's collaboration?",
+    "twist": "",
+    "zh": {
+      "title": "給下一位主人的禮物",
+      "scenario": "每次聚會都由少數人主辦，你們想留一份指南給下一位。只能寫三條，不能只是要求對方做更多。",
+      "question": "每組寫三條，至少一條要說客人會負責甚麼。",
+      "deeperQuestion": "一個好的聚會，是主人的作品還是大家的合作？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-087",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Differences on the bill",
+    "scenario": "Some order expensive drinks while others have water. Equal splitting is easy; itemising takes time.",
+    "question": "What simple rule would you agree on before ordering?",
+    "deeperQuestion": "Could unspoken cost affect whether someone returns?",
+    "twist": "",
+    "zh": {
+      "title": "共同帳單裡的差別",
+      "scenario": "一桌人點餐，有人喝昂貴飲品，有人只喝水。平均分最方便，逐項算又很花時間。",
+      "question": "你們會在點餐前訂甚麼簡單規則？",
+      "deeperQuestion": "為了氣氛而少說的那筆錢，會不會影響下次想不想來？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-088",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Letting silence participate",
+    "scenario": "A friend wants to listen, but people keep prompting them to speak out of concern.",
+    "question": "How would you check inclusion without measuring words spoken?",
+    "deeperQuestion": "When is silence comfort, and when is it exclusion?",
+    "twist": "",
+    "zh": {
+      "title": "讓沉默也參與",
+      "scenario": "一位朋友說今天想聽多過說，大家卻輪流催他回答，怕他悶。其實他正在享受旁聽。",
+      "question": "你們會怎樣確認參與感，而不把發言量當標準？",
+      "deeperQuestion": "安靜什麼時候是自在，什麼時候是被排除？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-089",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A photo-free gathering",
+    "scenario": "A photo-free gathering relaxes some guests but leaves others missing a record.",
+    "question": "Would you keep the rule or allow one shared photo moment?",
+    "deeperQuestion": "What does an undocumented gathering lose or gain for you?",
+    "twist": "",
+    "zh": {
+      "title": "不能拍照的聚會",
+      "scenario": "你們試一次全程不拍照的聚會。有人更放鬆，有人覺得沒有紀錄很可惜。",
+      "question": "你們會保留這個規則，還是留一個共同拍照時段？",
+      "deeperQuestion": "沒有公開紀錄的一次見面，對你少了甚麼或多了甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-090",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A group apology",
+    "scenario": "A repeated group joke hurt someone for a long time. No one person was the sole instigator.",
+    "question": "How would each person take responsibility instead of appointing one apologiser?",
+    "deeperQuestion": "What change could acknowledge hurt ignored by a whole group?",
+    "twist": "",
+    "zh": {
+      "title": "一次集體道歉",
+      "scenario": "你們發現曾經一起取笑的一件事，讓某位朋友難過很久。沒有人單獨做得最過分，但每個人都笑過。",
+      "question": "你們會怎樣各自負責，而不只派一人說對不起？",
+      "deeperQuestion": "被很多人一起忽略的感受，需要怎樣的改變才被接住？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-091",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "The next invitation list",
+    "scenario": "The circle outgrows the venue. Familiar invitations are comfortable, but rotation may feel like a ranking.",
+    "question": "How would you avoid turning capacity into a friendship ranking?",
+    "deeperQuestion": "What explanation would help you understand missing one invitation?",
+    "twist": "",
+    "zh": {
+      "title": "誰來決定下次邀誰",
+      "scenario": "朋友圈越來越大，場地只能容納一半。每次邀同一群很舒服，輪替又怕有人覺得被降級。",
+      "question": "你們會怎樣設計邀約方式，避免把容量變成親疏榜？",
+      "deeperQuestion": "沒被邀一次，怎樣的說明會讓你容易理解？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-092",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A shared gift of time",
+    "scenario": "Everyone offers two hours to support a friend, with different practical and emotional strengths.",
+    "question": "Plan the gift in groups, starting with what you would ask the recipient.",
+    "deeperQuestion": "How would you avoid confusing what you want to give with what they need?",
+    "twist": "",
+    "zh": {
+      "title": "一份共同的時間禮物",
+      "scenario": "你們想送朋友一份支持，每人可以出兩小時，但有人擅長實際幫忙，有人只會陪伴。",
+      "question": "分組安排這份禮物，先說你們會問收禮者甚麼。",
+      "deeperQuestion": "怎樣避免把大家想給的，當成對方需要的？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-093",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "No organiser next time",
+    "scenario": "The regular organiser wants to be a guest next time, while everyone else claims not to be good at planning.",
+    "question": "Each take one small task to build a gathering without a sole organiser.",
+    "deeperQuestion": "Could doing something imperfectly be a form of care?",
+    "twist": "",
+    "zh": {
+      "title": "如果下次沒有主辦人",
+      "scenario": "你們收到一句話：「下次我想當客人。」一直主辦的人終於想休息，其他人卻都說自己不擅長安排。",
+      "question": "每人認領一件小事，組成不用一個人包辦的聚會。",
+      "deeperQuestion": "願意做得不完美，是否也是照顧朋友的一種方式？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-094",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Changing one rule together",
+    "scenario": "You may add one achievable agreement to help people be themselves in this friend group.",
+    "question": "Propose one per group, then choose one to trial for a month.",
+    "deeperQuestion": "What would show after a month whether it helped?",
+    "twist": "",
+    "zh": {
+      "title": "一起改變一條規則",
+      "scenario": "你們可以替這個朋友圈加一條新約定，目的是讓大家更敢做自己。它必須是每個人都做得到的行動。",
+      "question": "每組提出一條，再選出最想試一個月的版本。",
+      "deeperQuestion": "一個月後，你會看甚麼來判斷它有沒有幫助？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-095",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A game with a pass",
+    "scenario": "Someone passes three questions after the group agreed no explanation was needed.",
+    "question": "How would you continue so the promise of a pass stays real?",
+    "deeperQuestion": "Can curiosity make you overlook an existing no?",
+    "twist": "",
+    "zh": {
+      "title": "一場可以跳題的遊戲",
+      "scenario": "你們玩問答，有人連續跳過三題。其他人很好奇原因，但原本已說好可以不解釋。",
+      "question": "你們會怎樣繼續，讓跳題的承諾真的有效？",
+      "deeperQuestion": "你會因為好奇，而忘記對方已經說了不想談嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-096",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "The cheapest group order",
+    "scenario": "A group purchase gets cheaper with more buyers, including someone who does not need the item.",
+    "question": "How would you make declining free of social debt?",
+    "deeperQuestion": "Is the saving worth someone buying what they do not need?",
+    "twist": "",
+    "zh": {
+      "title": "最省錢的團購",
+      "scenario": "團購越多人越便宜，但有人只因怕大家失去折扣而想買，自己其實不需要。",
+      "question": "你們會怎樣讓退出不變成欠大家的人情？",
+      "deeperQuestion": "省下的錢，是否值得讓一個人買不需要的東西？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-097",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "A late good idea",
+    "scenario": "A newcomer offers a better idea after plans are settled. Changing adds work but may improve the event.",
+    "question": "What conditions would determine whether change is worthwhile?",
+    "deeperQuestion": "Does late arrival make you undervalue an idea?",
+    "twist": "",
+    "zh": {
+      "title": "一個遲來的好點子",
+      "scenario": "活動方案已決定，新加入的人提出更好的點子。改動會增加準備工作，也可能令活動更適合大家。",
+      "question": "你們會用甚麼條件判斷值不值得改？",
+      "deeperQuestion": "你會因為點子來得晚，而低估它本身的價值嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-098",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Private appreciation",
+    "scenario": "Appreciation notes are read only by recipients. Some miss the excitement; others write more honestly.",
+    "question": "Would you choose public sharing or private exchange? Give a reason.",
+    "deeperQuestion": "Is appreciation without an audience easier for you to trust?",
+    "twist": "",
+    "zh": {
+      "title": "一份只有本人看見的讚賞",
+      "scenario": "你們各寫一張欣賞朋友的卡，只交給本人，不公開讀。有人覺得少了熱鬧，有人因此敢寫得更真。",
+      "question": "你會選公開分享還是私人交換？各說一個理由。",
+      "deeperQuestion": "沒有觀眾的肯定，對你是否更容易相信？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-099",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Party",
+    "title": "Who gets the next chance?",
+    "scenario": "An experienced organiser could repeat the event, or a newcomer could try with some mistakes likely.",
+    "question": "How would you pass on the opportunity and offer support?",
+    "deeperQuestion": "How much imperfection would you accept for broader participation?",
+    "twist": "",
+    "zh": {
+      "title": "把下一次留給誰",
+      "scenario": "這次每個活動都是熟悉的人帶領，下次有新人想試。舊主辦很有經驗，新人可能會做得不太順。",
+      "question": "你們會怎樣交出機會，也提供支援？",
+      "deeperQuestion": "你願意接受多少不完美，來換取更多人的參與？",
+      "twist": ""
+    },
+    "id": "ponder-v5-party-100",
+    "level": "deeper",
+    "emoji": "🎉",
+    "groupSize": "large"
+  },
+  {
+    "category": "Solo",
+    "zh": {
+      "title": "喜歡的生活，沒有漂亮頭銜",
+      "scenario": "你有兩個工作選擇，薪水都足夠生活。第一份頭銜普通，內容卻合你心意，也有時間見喜歡的人；第二份更受羨慕，工作你做得來，但每星期會多佔兩個晚上。你對兩份都有一點心動。",
+      "question": "你會選哪份？哪個代價是你願意長期接受的？",
+      "deeperQuestion": "如果沒有人會知道你的職位和公司，你的選擇會改變嗎？",
+      "twist": ""
+    },
+    "title": "A good life without an impressive title",
+    "scenario": "Two jobs both cover your needs. One has an ordinary title, work you enjoy and time for people you love. The other is admired and within your abilities, but takes two more evenings each week. Both appeal to you in some way.",
+    "question": "Which would you choose, and which cost could you accept over time?",
+    "deeperQuestion": "Would your choice change if nobody would know your role or employer?",
+    "twist": "",
+    "id": "ponder-v5-solo-001",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "zh": {
+      "title": "已經花了兩年",
+      "scenario": "你為一個目標投入了兩年，也取得不錯進展。家人朋友都以為你會繼續，但你最近發現，自己真正想過的生活可能不需要它。再做下去有機會成功，停下來卻要重新找方向。",
+      "question": "你會怎樣判斷，自己是暫時累了，還是真的想改變？",
+      "deeperQuestion": "如果今天才第一次遇到這個目標，沒有過去兩年的投入，你還會選它嗎？",
+      "twist": ""
+    },
+    "title": "Two years already invested",
+    "scenario": "You have worked toward a goal for two years and made good progress. People expect you to continue, but you suspect the life you want may not need it. Success is possible if you stay; stopping means finding a new direction.",
+    "question": "How would you tell temporary tiredness from a genuine change of heart?",
+    "deeperQuestion": "If you encountered the goal for the first time today, without the two years invested, would you choose it?",
+    "twist": "",
+    "id": "ponder-v5-solo-002",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "zh": {
+      "title": "幫忙之後，沒有人知道",
+      "scenario": "你有一個下午，可以做一件很需要有人做、但沒有人會知道是你做的好事；也可以參與一個較小的幫忙，會有人真心感謝你，並邀你加入他們的圈子。兩邊都確實有幫助，你只能選一邊。",
+      "question": "你會怎樣選？你想從這次付出得到甚麼？",
+      "deeperQuestion": "希望被感謝、被接納，會令一份好意變得比較不真誠嗎？你為甚麼這樣想？",
+      "twist": ""
+    },
+    "title": "Helping without being seen",
+    "scenario": "You have an afternoon for either an important anonymous act of help or a smaller helpful act where people will thank you and welcome you into their circle. Both genuinely help, but you can choose only one.",
+    "question": "Which would you choose, and what would you hope to receive from giving?",
+    "deeperQuestion": "Does wanting gratitude or belonging make kindness less sincere? Why?",
+    "twist": "",
+    "id": "ponder-v5-solo-003",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A choice nobody will see",
+    "scenario": "Imagine changing work, city or study without explaining it to anyone. Practical costs remain, but others' opinions disappear.",
+    "question": "Which choice would you reconsider?",
+    "deeperQuestion": "Which remaining concerns are genuinely yours?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒人會知道的選擇",
+      "scenario": "假如你換工作、搬城市或重新學習，都不需要向任何人交代。原本讓你猶豫的目光暫時消失，但實際代價仍在。",
+      "question": "你會重新考慮哪一個選擇？",
+      "deeperQuestion": "留下來的顧慮，哪些才真正屬於你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-004",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An ordinary day you like",
+    "scenario": "You can choose the basic rhythm of ten ordinary years, with growth but no spectacular success.",
+    "question": "Which three things must a day contain?",
+    "deeperQuestion": "Do your current goals move you toward or away from that day?",
+    "twist": "",
+    "zh": {
+      "title": "普通但喜歡的一天",
+      "scenario": "你可以重複過一種普通的日子十年，沒有驚人成功，也不會停滯。生活會慢慢變化，但基本節奏由你選。",
+      "question": "你希望一天裡一定有哪三件事？",
+      "deeperQuestion": "你現在追求的目標，會把你帶向還是帶離這種日子？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-005",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Nothing left to prove",
+    "scenario": "Someone who underestimated you sincerely admits they were wrong. Tomorrow still needs a direction.",
+    "question": "Which goal would remain, and which might fall away?",
+    "deeperQuestion": "How much effort is addressed to someone no longer present?",
+    "twist": "",
+    "zh": {
+      "title": "不再需要證明的事",
+      "scenario": "假如曾經看輕你的人，真心承認自己看錯了。你終於被肯定，但明天仍要決定怎樣過。",
+      "question": "哪一個目標你仍會繼續，哪一個可能放下？",
+      "deeperQuestion": "你有多少努力，是在跟一個已不在場的人說話？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-006",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "After a rejection",
+    "scenario": "A wanted opportunity rejects you without detail. You start filling the silence with harsh explanations.",
+    "question": "What do you know, and what are you only guessing?",
+    "deeperQuestion": "How could you avoid letting guesses define your worth?",
+    "twist": "",
+    "zh": {
+      "title": "一封拒絕信之後",
+      "scenario": "你很想要的機會被拒絕，理由只是這次不合適。沒有詳細解釋，你開始替空白寫出最差的故事。",
+      "question": "你確實知道哪些事，哪些只是自己的猜測？",
+      "deeperQuestion": "如果暫時得不到答案，你怎樣不讓猜測替你定價？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-007",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Good at it, not drawn to it",
+    "scenario": "You are repeatedly chosen for something you do well but do not enjoy.",
+    "question": "How would you reduce its place in your life?",
+    "deeperQuestion": "Must every strength be maximised to avoid waste?",
+    "twist": "",
+    "zh": {
+      "title": "做得好卻不喜歡",
+      "scenario": "你很擅長一件事，因此一直被推去做。它帶來肯定，卻沒有讓你期待下一次。",
+      "question": "你會怎樣減少它在生活裡的位置？",
+      "deeperQuestion": "能力是否一定要被用到最多，才不算浪費？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-008",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A problem to sit with",
+    "scenario": "More research on an uncertain choice increases anxiety without adding information.",
+    "question": "What would you pause, and when would you revisit it?",
+    "deeperQuestion": "When does thinking shift from helping to delaying action?",
+    "twist": "",
+    "zh": {
+      "title": "一個不想立即解決的問題",
+      "scenario": "你遇到一個沒有立即答案的選擇，越查資料越焦躁。再多一晚思考，也未必有新資訊。",
+      "question": "你會暫停甚麼，並用甚麼條件決定何時再想？",
+      "deeperQuestion": "思考在甚麼時候從幫忙變成拖延行動？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-009",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "More than the object",
+    "scenario": "An expensive purchase feels like entry into a desired life, though what you own works well.",
+    "question": "What feeling do you hope it will bring?",
+    "deeperQuestion": "Could another route bring you closer to that feeling?",
+    "twist": "",
+    "zh": {
+      "title": "想買的不是物品",
+      "scenario": "你很想買一件昂貴物品，想到擁有它就覺得自己終於跟得上某種生活。其實你現在的用品仍很好用。",
+      "question": "你真正希望它帶來哪一種感覺？",
+      "deeperQuestion": "如果不買，有沒有另一種方法接近那份感覺？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-010",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A hobby without achievement",
+    "scenario": "You enjoy drawing until friends suggest selling it. Monetising feels tense, but ignoring potential feels wasteful.",
+    "question": "What boundary would you protect around this hobby?",
+    "deeperQuestion": "Is enjoyment enough reason to invest time?",
+    "twist": "",
+    "zh": {
+      "title": "一段不必變成成就的興趣",
+      "scenario": "你開始喜歡畫畫，朋友說可以賣作品。你一想變現就緊張，卻又怕不把握機會很浪費。",
+      "question": "你想替這個興趣保留甚麼界線？",
+      "deeperQuestion": "快樂本身，對你夠不夠成為投入時間的理由？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-011",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Rest you can accept",
+    "scenario": "A free day fills with learning, exercise and chores, leaving you tired.",
+    "question": "What kind of day would actually restore you?",
+    "deeperQuestion": "Could a day without outputs still feel valuable?",
+    "twist": "",
+    "zh": {
+      "title": "理想中的休息",
+      "scenario": "你突然有一整天不用工作，卻忍不住安排進修、運動和整理。忙完仍累，也不知道自己有沒有休息。",
+      "question": "怎樣的一天，才真的讓你恢復？",
+      "deeperQuestion": "如果沒有任何成果，你能否仍把這天當成有價值？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-012",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A dream that no longer fits",
+    "scenario": "An old dream is within reach, but your values have changed. Letting go feels disloyal to your younger self.",
+    "question": "How would you explain the turn to your younger self?",
+    "deeperQuestion": "Is loyalty to yourself loyalty to an early wish or a present truth?",
+    "twist": "",
+    "zh": {
+      "title": "一個不再適合的夢",
+      "scenario": "你終於接近年輕時想要的生活，卻發現現在最在乎的事已不同。放下它像背叛以前很努力的自己。",
+      "question": "你會怎樣向以前的自己解釋這次轉向？",
+      "deeperQuestion": "忠於自己，是忠於最早的願望，還是現在誠實的感受？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-013",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The version people like",
+    "scenario": "A pleasing version of you gains approval while tiredness and disagreement stay hidden.",
+    "question": "Where could you safely accommodate a little less?",
+    "deeperQuestion": "Do you fear losing the relationship or the image you maintain?",
+    "twist": "",
+    "zh": {
+      "title": "被喜歡的版本",
+      "scenario": "某種表現特別容易得到喜歡，你開始每次都演得很像。沒有說謊，卻越來越少讓人看到疲倦和不同意。",
+      "question": "你會在哪一段安全的關係裡，先少配合一點？",
+      "deeperQuestion": "你害怕失去的是關係，還是自己一直維持的形象？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-014",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "One chance to revisit",
+    "scenario": "You can revisit a decision using only information available then, not hindsight.",
+    "question": "How would this change your judgement of your past self?",
+    "deeperQuestion": "Are you demanding knowledge your past self could not have had?",
+    "twist": "",
+    "zh": {
+      "title": "只有一次的重來",
+      "scenario": "你能回到一個過去的決定，但只能帶著當時知道的資訊，不能帶未來答案。你可能仍然作同一選擇。",
+      "question": "這會怎樣改變你對當時自己的評價？",
+      "deeperQuestion": "你是否要求以前的自己知道他不可能知道的事？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-015",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Ambition at another pace",
+    "scenario": "You still want a major goal but prefer five years over two. Others call that insufficient desire.",
+    "question": "How would you judge the right pace for you?",
+    "deeperQuestion": "What else would a slower pace protect?",
+    "twist": "",
+    "zh": {
+      "title": "慢下來的野心",
+      "scenario": "你仍想完成一個大目標，但願意用五年而不是兩年。旁人說這代表你不夠想要。",
+      "question": "你會怎樣判斷速度是否真的適合自己？",
+      "deeperQuestion": "慢一點能保留哪些你也不想失去的東西？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-016",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The quiet after success",
+    "scenario": "After a long-sought achievement, excitement fades and the absence of another goal feels unsettling.",
+    "question": "How would you live through the gap without rushing to fill it?",
+    "deeperQuestion": "Where else could your identity come from without a pursuit?",
+    "twist": "",
+    "zh": {
+      "title": "成功之後的空白",
+      "scenario": "你完成一個努力很久的目標，開心幾天後卻很空。下一個目標還沒出現，你有點不知道自己是誰。",
+      "question": "你會怎樣過這段空白，而不急著填上新的任務？",
+      "deeperQuestion": "沒有正在追趕的事，你還能從哪裡認識自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-017",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An affordable freedom",
+    "scenario": "Dropping one recurring expense could reduce your work slightly, but the expense brings real pleasure.",
+    "question": "How would you compare that pleasure with the time gained?",
+    "deeperQuestion": "Which spending is least worth your time?",
+    "twist": "",
+    "zh": {
+      "title": "最便宜的自由",
+      "scenario": "你不需要突然有很多錢，只需要每月少一項固定支出，就能減少一點工作。那項支出也確實帶來快樂。",
+      "question": "你會怎樣比較它帶來的快樂和換來的時間？",
+      "deeperQuestion": "你最不想用時間換取哪一種消費？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-018",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The silence after no",
+    "scenario": "You decline a request and receive a simple “okay.” You imagine anger and want to over-explain.",
+    "question": "What would you do before inventing their feelings?",
+    "deeperQuestion": "Could you allow them some disappointment if it were real?",
+    "twist": "",
+    "zh": {
+      "title": "說不之後的安靜",
+      "scenario": "你拒絕一個不想接的請求，對方只回了「好」。你開始反覆想他是不是生氣，想補很多解釋。",
+      "question": "你會先做甚麼，避免替對方猜出一整段心情？",
+      "deeperQuestion": "如果對方真的有點失望，你能容許那份失望存在嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-019",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Wanting and should",
+    "scenario": "Every sensible item on your list feels flat. The one you want is postponed indefinitely.",
+    "question": "What tiny beginning would you allow it?",
+    "deeperQuestion": "Whose approval makes a wish feel eligible for your calendar?",
+    "twist": "",
+    "zh": {
+      "title": "想要與應該之間",
+      "scenario": "你列出想做的事，發現每一項都很合理，卻沒有一項讓你期待。真正想做的一件，反而被你寫成「以後再說」。",
+      "question": "你願意給那件事多小的一個開始？",
+      "deeperQuestion": "你需要誰批准，才覺得自己的想要有資格排進日程？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-020",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A less obvious courage",
+    "scenario": "Others celebrate leaving as brave. Your challenge is staying long enough for a difficult conversation.",
+    "question": "How would you define courage in this situation?",
+    "deeperQuestion": "Can an undramatic change deserve recognition?",
+    "twist": "",
+    "zh": {
+      "title": "沒有標準答案的勇敢",
+      "scenario": "別人覺得勇敢是辭職遠行，你現在最難的是留下來，把一段對話談清楚。外表看起來什麼都沒變。",
+      "question": "你會怎樣定義這次自己的勇敢？",
+      "deeperQuestion": "沒有戲劇性的改變，是否也值得被你肯定？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-021",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "How much for later?",
+    "scenario": "Extra income could build security or fund a meaningful present experience. Neither is frivolous.",
+    "question": "How would you divide it without always making your present self wait?",
+    "deeperQuestion": "What would help you believe the present deserves care too?",
+    "twist": "",
+    "zh": {
+      "title": "替未來留多少",
+      "scenario": "你有一筆額外收入，可以存起來減少未來焦慮，也可以用一部分完成現在很重要的體驗。兩者都不浪費。",
+      "question": "你會怎樣分配，才不會總叫現在的自己等？",
+      "deeperQuestion": "你需要甚麼證據，才相信現在也值得被照顧？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-022",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The cost of visibility",
+    "scenario": "Sharing your work could bring opportunity and criticism. Revisions continue, but readiness never arrives.",
+    "question": "What concrete standard would make it ready to share?",
+    "deeperQuestion": "Are you waiting for better work or for fear to disappear?",
+    "twist": "",
+    "zh": {
+      "title": "被看見的代價",
+      "scenario": "你有機會公開分享作品，可能帶來機會，也會讓更多人批評。你已修改很多次，還是想再等。",
+      "question": "你會用甚麼具體標準決定可以發表？",
+      "deeperQuestion": "你在等作品更好，還是在等自己不再害怕？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-023",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A plan you may leave",
+    "scenario": "Starting a new path feels permanent. A three-month review changes how it feels.",
+    "question": "How would you design a trial that teaches you something useful?",
+    "deeperQuestion": "Which decisions could be tested without resolving your whole life?",
+    "twist": "",
+    "zh": {
+      "title": "一個可以退出的計劃",
+      "scenario": "你想試新方向，卻總把開始想成一輩子的承諾。假如允許三個月後重新決定，感覺突然不同。",
+      "question": "你會怎樣設計這次試行，知道自己學到了甚麼？",
+      "deeperQuestion": "甚麼決定其實可以先試，不必先想通一生？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-024",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Applause you outgrew",
+    "scenario": "You no longer share a group's values, yet their criticism still hurts deeply.",
+    "question": "Whose judgement would you choose as a reference now, and why?",
+    "deeperQuestion": "Should an opinion's weight depend on how well someone knows you?",
+    "twist": "",
+    "zh": {
+      "title": "不再需要的掌聲",
+      "scenario": "你曾很在乎某一群人的認同，如今價值觀已不同，但他們的批評仍會讓你難過很久。",
+      "question": "你希望改用誰的意見作參考，為甚麼？",
+      "deeperQuestion": "一個人的意見有多重，是否應跟他多了解你有關？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-025",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A comfortable fallback",
+    "scenario": "A safe fallback helps you feel secure but tempts you at every difficulty.",
+    "question": "What conditions would guide staying or leaving?",
+    "deeperQuestion": "How would you assess the difficulty without anything to prove?",
+    "twist": "",
+    "zh": {
+      "title": "看起來很好的退路",
+      "scenario": "你保留一條安全退路，但每次新計劃遇到困難，就立即想退回去。你不知道這是智慧還是害怕。",
+      "question": "你會先設定哪些條件，才決定留下或退出？",
+      "deeperQuestion": "如果沒有需要向人證明，你會怎樣評估這次困難？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-026",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not every regret needs repair",
+    "scenario": "An old opportunity returns at a high cost. You may want it, or only want the regret gone.",
+    "question": "How would you distinguish those motives?",
+    "deeperQuestion": "Would you choose it if some regret would always remain?",
+    "twist": "",
+    "zh": {
+      "title": "不是每個遺憾都要補回",
+      "scenario": "你錯過年輕時的一個機會，現在可以重來，但代價很大。你不確定自己仍想要，還是只想消除遺憾。",
+      "question": "你會怎樣分辨這兩種動機？",
+      "deeperQuestion": "如果遺憾永遠不會完全消失，你還會選這條路嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-027",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An imperfect beginning",
+    "scenario": "You want a skill but dislike being seen as a beginner. Equipment research replaces practice.",
+    "question": "What first attempt would let you be awkward safely?",
+    "deeperQuestion": "Whose view makes looking inexperienced most frightening?",
+    "twist": "",
+    "zh": {
+      "title": "一次不必最好看的開始",
+      "scenario": "你想學一項技能，卻不喜歡別人看到自己很生疏。你甚至花更多時間研究裝備，而不是開始練。",
+      "question": "你能安排一個怎樣的第一次，讓自己容許笨拙？",
+      "deeperQuestion": "你最怕的「看起來很差」，在誰眼裡最重要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-028",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not every explanation is owed",
+    "scenario": "A considered choice becomes exhausting as you defend it to everyone who questions it.",
+    "question": "Who gets the full explanation, and what would you tell others?",
+    "deeperQuestion": "Do understanding and approval sometimes blur for you?",
+    "twist": "",
+    "zh": {
+      "title": "不欠所有人一個解釋",
+      "scenario": "你作了一個慎重的生活選擇，每遇到不理解的人就重新辯護。解釋越多，你越懷疑自己。",
+      "question": "你會把完整解釋留給誰，對其他人說到哪裡？",
+      "deeperQuestion": "被理解和被批准，對你是否有時混在一起？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-029",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Time without a purpose",
+    "scenario": "Two weekly hours could serve no productivity or caretaking purpose. Your first reaction is waste.",
+    "question": "How would you use it, or allow it to remain purposeless?",
+    "deeperQuestion": "When did time begin needing a measurable return?",
+    "twist": "",
+    "zh": {
+      "title": "一段沒有用途的時間",
+      "scenario": "你可以每週保留兩小時，不進修、不賺錢，也不為別人安排。第一反應卻是這樣很浪費。",
+      "question": "你會怎樣使用它，或容許它暫時沒有用途？",
+      "deeperQuestion": "你從甚麼時候開始，覺得時間必須交出成果？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-030",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Appealing but unsuitable",
+    "scenario": "An exciting opportunity conflicts with the rhythm you want. Scarcity makes declining frightening.",
+    "question": "Which everyday realities would you use to assess it?",
+    "deeperQuestion": "Does rarity mean suitability?",
+    "twist": "",
+    "zh": {
+      "title": "心動但不適合",
+      "scenario": "一個機會很令人興奮，卻跟你想保留的生活節奏衝突。你怕拒絕後，再也沒有同樣好的。",
+      "question": "你會拿哪幾個具體日常來衡量它？",
+      "deeperQuestion": "稀有是否就代表適合你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-031",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An envy worth admitting",
+    "scenario": "Someone else's life sparks envy, followed by self-criticism. The envy may point to an unspoken wish.",
+    "question": "Which specific part do you envy?",
+    "deeperQuestion": "Could a smaller version fit your own life?",
+    "twist": "",
+    "zh": {
+      "title": "一個願意承認的嫉妒",
+      "scenario": "你看見別人過得很好，心裡一酸，隨即責怪自己小器。但那份羨慕可能指向你一直沒承認的願望。",
+      "question": "你究竟羨慕哪一個具體部分？",
+      "deeperQuestion": "那個部分有沒有一個適合自己生活的小版本？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-032",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Losing interest is not failure",
+    "scenario": "A once-loved community no longer excites you. Leaving means losing a familiar identity.",
+    "question": "Which people or experiences would you keep, and which involvement release?",
+    "deeperQuestion": "Do you miss the activity or who you used to be there?",
+    "twist": "",
+    "zh": {
+      "title": "失去興趣不等於失敗",
+      "scenario": "你曾很投入一個圈子，現在活動仍然不錯，你卻不再期待。離開會少了一個熟悉的身份。",
+      "question": "你想保留哪些人或經驗，放下哪些參與？",
+      "deeperQuestion": "你是在捨不得活動，還是捨不得曾經的自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-033",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Forgiveness without a deadline",
+    "scenario": "You believe an apology but are not ready to restore the relationship.",
+    "question": "What distance and time feel right now?",
+    "deeperQuestion": "Does forgiveness necessarily include reopening access?",
+    "twist": "",
+    "zh": {
+      "title": "一個不必立即原諒的人",
+      "scenario": "有人真誠道歉，你也相信他，但你還不想恢復以前的往來。你擔心這樣顯得不夠大方。",
+      "question": "你現在願意給的距離和時間是甚麼？",
+      "deeperQuestion": "原諒對你是否一定包括重新開門？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-034",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "One comparison to keep",
+    "scenario": "You may keep one measure of living well, excluding other people's pace and achievements.",
+    "question": "What observable measure would you choose?",
+    "deeperQuestion": "Would it change your view of the past month?",
+    "twist": "",
+    "zh": {
+      "title": "只剩一個比較標準",
+      "scenario": "假如你只能保留一個衡量自己過得好不好的標準，其他人的速度和成果都暫時不能算。",
+      "question": "你會選甚麼可以真實觀察的標準？",
+      "deeperQuestion": "它會讓你對最近一個月有不同評價嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-035",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Something you may be bad at",
+    "scenario": "An enjoyable activity may remain ordinary despite practice. There is no contest or career requirement.",
+    "question": "How much time would you still give it?",
+    "deeperQuestion": "Which gets more say in your life: enjoyment or skill?",
+    "twist": "",
+    "zh": {
+      "title": "可以不擅長的事",
+      "scenario": "你想做一件讓你開心的事，即使練很久也可能只是普通。沒有比賽，也沒有工作需要。",
+      "question": "你還願意投入多少時間？",
+      "deeperQuestion": "喜歡和擅長，在你的生活裡誰比較有發言權？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-036",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Smaller for more freedom",
+    "scenario": "A smaller home and fewer purchases could buy a free day weekly. It may look like a step backwards.",
+    "question": "How would you distinguish decline from reprioritising?",
+    "deeperQuestion": "Who sees your life, and who has to live it?",
+    "twist": "",
+    "zh": {
+      "title": "換來自由的縮小",
+      "scenario": "你可以住小一點、少買一些，換取每週一天自由。你擔心生活看起來像倒退，實際上卻可能更喜歡。",
+      "question": "你會怎樣判斷這是退步還是重新排序？",
+      "deeperQuestion": "你的生活是給誰看的，又是給誰過的？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-037",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Kindness without return",
+    "scenario": "Your help made a difference but went unacknowledged. You feel disappointed.",
+    "question": "What part did you want recognised?",
+    "deeperQuestion": "Would you change how much you give or clarify your needs?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒有回報的善意",
+      "scenario": "你幫過的人沒有記得，也沒有特別感謝。事情確實幫到他，你卻發現自己很失落。",
+      "question": "你希望被看見的是哪一部分？",
+      "deeperQuestion": "下次你會改變付出的份量，還是先說清楚自己的需要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-038",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not reliable at any cost",
+    "scenario": "Being dependable brings trust and endless responsibility, leaving little room to breathe.",
+    "question": "Which task does not truly need you and could go first?",
+    "deeperQuestion": "What value do you fear losing if you are not the most dependable?",
+    "twist": "",
+    "zh": {
+      "title": "不必每次都可靠",
+      "scenario": "大家都相信你一定做到，所以重要的事總落到你身上。你也喜歡被需要，直到自己沒有喘息的空間。",
+      "question": "你會先卸下哪一件其實不必由你完成的事？",
+      "deeperQuestion": "如果不再最可靠，你怕自己還剩下甚麼價值？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-039",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A trial without a result",
+    "scenario": "A trial produces no work or income, but reveals the path is wrong for you.",
+    "question": "What learning could spare a future mistake?",
+    "deeperQuestion": "Can learning what you do not want count as progress?",
+    "twist": "",
+    "zh": {
+      "title": "一次沒有成果的嘗試",
+      "scenario": "你試了一個新方向，最後沒有作品或收入，卻清楚知道自己不喜歡。你很難把這段時間說成有收穫。",
+      "question": "你學到的哪件事，能替未來省下一個錯誤？",
+      "deeperQuestion": "知道自己不要甚麼，能不能也算前進？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-040",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Success that leaves room",
+    "scenario": "Faster success costs regular time with loved ones. Slower progress may lose opportunities.",
+    "question": "Which connection deserves time you will not trade?",
+    "deeperQuestion": "How do you know “making it up later” will be possible?",
+    "twist": "",
+    "zh": {
+      "title": "記得休息的成功",
+      "scenario": "你可以更快成功，但要長期取消跟重要的人相處。慢一點則可能錯過某些機會，沒有保證兩全。",
+      "question": "你願意為哪一種相處保留不可交換的時間？",
+      "deeperQuestion": "你怎樣知道自己說的「以後補回」真的可能？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-041",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A label that can change",
+    "scenario": "You identify as cautious, but a new wish challenges the label before risks are even assessed.",
+    "question": "How would you replace identity labels with a specific decision?",
+    "deeperQuestion": "Which description of yourself is overdue for an update?",
+    "twist": "",
+    "zh": {
+      "title": "一個可以改變的標籤",
+      "scenario": "你一直說自己不是會冒險的人，最近卻有一件很想試的事。舊標籤比實際風險更快把你攔住。",
+      "question": "你會怎樣把「我是怎樣的人」改成這次具體的選擇？",
+      "deeperQuestion": "哪個關於自己的說法，已經很久沒有更新？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-042",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The apology you want",
+    "scenario": "An apology you want cannot restore a lost opportunity. Your future still needs care.",
+    "question": "What would the apology affirm for you?",
+    "deeperQuestion": "If it never comes, where could you reclaim some agency?",
+    "twist": "",
+    "zh": {
+      "title": "真正想要的道歉",
+      "scenario": "你一直想聽某人道歉，但即使他今天說了，失去的機會也不會回來。你仍需要處理往後的生活。",
+      "question": "那句道歉最希望替你確認甚麼？",
+      "deeperQuestion": "如果等不到，你能從哪裡開始替自己拿回一點力量？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-043",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "When curiosity turns competitive",
+    "scenario": "Searching for inspiration turns into comparison and leaves you less able to act.",
+    "question": "How would you change the scope or timing of the search?",
+    "deeperQuestion": "Which content invites action, and which invites proving yourself?",
+    "twist": "",
+    "zh": {
+      "title": "當好奇心變成比較",
+      "scenario": "你本來上網找靈感，半小時後卻只覺得別人都比自己快。資訊沒有幫你行動，反而讓你停住。",
+      "question": "你會怎樣改變這次搜尋的範圍或時間？",
+      "deeperQuestion": "什麼內容讓你想開始，什麼內容只讓你想證明？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-044",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Stability as a choice",
+    "scenario": "You enjoy stable work while peers pursue dramatic changes. Contentment starts feeling like insufficient ambition.",
+    "question": "How would you distinguish contentment from fear of change?",
+    "deeperQuestion": "What could chosen stability make room for?",
+    "twist": "",
+    "zh": {
+      "title": "安穩也可以是選擇",
+      "scenario": "你喜歡現在穩定的工作，身邊的人卻不停談轉職和創業。你開始懷疑滿足是不是不夠上進。",
+      "question": "你會怎樣分辨滿足和害怕改變？",
+      "deeperQuestion": "如果穩定是你主動選的，它能為生活騰出甚麼？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-045",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A promise after excitement fades",
+    "scenario": "You committed while excited. The actual work appeals less, but others now rely on you.",
+    "question": "Would you finish, hand over or renegotiate, and how?",
+    "deeperQuestion": "Must responsibility mean staying trapped until the end?",
+    "twist": "",
+    "zh": {
+      "title": "一個失去興奮的承諾",
+      "scenario": "你答應參與一個計劃，當時很興奮。現在知道實際工作後沒那麼想做，但別人已依賴你的部分。",
+      "question": "你會怎樣完成、交接或重新協商？",
+      "deeperQuestion": "負責任是否一定要把自己困到最後？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-046",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A sacrifice you do not want praised",
+    "scenario": "People praise your self-sacrifice just as you realise it is hurting you.",
+    "question": "How would you respond to that praise?",
+    "deeperQuestion": "What strength would you rather they appreciate?",
+    "twist": "",
+    "zh": {
+      "title": "不想被稱讚的犧牲",
+      "scenario": "別人稱讚你總把自己放最後，你卻開始覺得這不是優點。這份稱讚反而讓你更難改變。",
+      "question": "你想怎樣回應這種稱讚？",
+      "deeperQuestion": "你希望別人改為欣賞你的哪一種能力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-047",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A plan with empty space",
+    "scenario": "A fully planned six months leaves no room for a welcome opportunity.",
+    "question": "What would you remove to leave room for the unexpected?",
+    "deeperQuestion": "Does a full schedule mean security or being needed to you?",
+    "twist": "",
+    "zh": {
+      "title": "一份保留空間的計劃",
+      "scenario": "你把半年安排得很完整，突然出現一個很想抓住的小機會。行程沒有任何空白，連好事也變成壓力。",
+      "question": "你會拿掉甚麼，讓未知也有位置？",
+      "deeperQuestion": "安排得滿，對你代表安心還是被需要？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-048",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Yourself after a mistake",
+    "scenario": "You repair a mistake but keep replaying it, as if continued distress proves accountability.",
+    "question": "What action would count as taking responsibility?",
+    "deeperQuestion": "Does ending self-blame really mean not caring?",
+    "twist": "",
+    "zh": {
+      "title": "做錯之後的自己",
+      "scenario": "你犯了一個可以補救的錯，已道歉和修正，腦裡卻仍不停重播。你像是在用難過證明自己有反省。",
+      "question": "怎樣的行動已足夠表示你有負責？",
+      "deeperQuestion": "停止責怪自己，是否真的等於不在乎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-049",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A declined kindness",
+    "scenario": "Someone declines your help, and it unexpectedly feels like you are not needed.",
+    "question": "How would you separate the declined offer from your worth?",
+    "deeperQuestion": "Do you sometimes use helping to confirm your place in a relationship?",
+    "twist": "",
+    "zh": {
+      "title": "被拒絕的一次善意",
+      "scenario": "你主動幫忙，對方說不用。你知道他有權拒絕，仍突然覺得自己不被需要。",
+      "question": "你會怎樣把被拒絕的提議，和自己的價值分開？",
+      "deeperQuestion": "你是否有時透過幫忙，確認自己在關係裡的位置？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-050",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Progress without display",
+    "scenario": "You rest, decline and speak honestly better, but none of it is visible on a résumé.",
+    "question": "What small example would help you recognise this change?",
+    "deeperQuestion": "Which quiet forms of progress do you overlook?",
+    "twist": "",
+    "zh": {
+      "title": "一條不用展示的進步",
+      "scenario": "你最近更能休息、拒絕和坦白，但這些改變沒有照片，也不好寫在履歷上。你幾乎忘記自己已經不同。",
+      "question": "你會用哪一件具體小事記住這份改變？",
+      "deeperQuestion": "哪些進步因為太安靜，最容易被你忽略？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-051",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A private boundary",
+    "scenario": "A useful opportunity requires something you do not quite believe in. Others may never know, but you will.",
+    "question": "What question would guide your decision?",
+    "deeperQuestion": "Which costs concern your own view of yourself rather than reputation?",
+    "twist": "",
+    "zh": {
+      "title": "只有自己知道的底線",
+      "scenario": "一個機會很有利，但需要你做一件不太認同的事。別人可能永遠不知道，你卻會記得。",
+      "question": "你會問自己哪一個問題來作決定？",
+      "deeperQuestion": "哪些代價不是別人的評價，而是你怎樣看自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-052",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Letting go of control",
+    "scenario": "Preparation is complete and the outcome belongs to others. Checking messages cannot move it forward.",
+    "question": "Where would you return a small part of your attention while waiting?",
+    "deeperQuestion": "Does looking away feel like not trying hard enough?",
+    "twist": "",
+    "zh": {
+      "title": "放下最後的控制",
+      "scenario": "你已完成能做的準備，結果要等別人決定。你不斷檢查訊息，卻沒有任何能推進的事。",
+      "question": "你會把等待期間的一小段注意力還給甚麼？",
+      "deeperQuestion": "不再盯著結果，是否讓你覺得自己不夠努力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-053",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An ordinary happiness",
+    "scenario": "Your happiest moments often involve breakfast, walks and casual conversation rather than major achievements.",
+    "question": "How would you make those moments more frequent?",
+    "deeperQuestion": "Do you undervalue happiness because it is accessible?",
+    "twist": "",
+    "zh": {
+      "title": "一份普通的幸福",
+      "scenario": "你發現最開心的時刻常是吃早餐、散步和跟人亂聊，跟一直追求的大成就沒有直接關係。",
+      "question": "你會怎樣讓這些時刻更常發生？",
+      "deeperQuestion": "你是否把容易得到的快樂看得太輕？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-054",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not understanding yourself yet",
+    "scenario": "You cannot describe life in five years but know what you no longer want now.",
+    "question": "What small decision could that incomplete clarity support?",
+    "deeperQuestion": "Must you know the destination before beginning?",
+    "twist": "",
+    "zh": {
+      "title": "不必立刻懂自己",
+      "scenario": "有人問你五年後想怎樣，你暫時沒有答案，但知道現在不想再怎樣過。這種清楚很不完整。",
+      "question": "你能根據這份不完整的清楚，作哪一個小決定？",
+      "deeperQuestion": "不知道終點，是否就不能開始走？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-055",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The hidden audience",
+    "scenario": "You rehearse explaining a choice to someone barely involved in your daily life.",
+    "question": "Why does their imagined opinion occupy so much space?",
+    "deeperQuestion": "Would centring those who live with the outcome change your answer?",
+    "twist": "",
+    "zh": {
+      "title": "選擇的隱藏觀眾",
+      "scenario": "你正考慮一個選擇，腦裡一直演練怎樣向某個人交代。那個人其實沒有參與你的日常。",
+      "question": "他的想法為甚麼仍佔這麼大的位置？",
+      "deeperQuestion": "如果把真正會承擔結果的人放到前面，答案會變嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-056",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An evening without replies",
+    "scenario": "No urgent duty prevents an offline evening, but possible disappointment keeps you reachable.",
+    "question": "How would you arrange a reassuring offline evening?",
+    "deeperQuestion": "Has constant availability become a condition of being liked for you?",
+    "twist": "",
+    "zh": {
+      "title": "一個可以不回覆的晚上",
+      "scenario": "你想關掉訊息休息一晚，沒有緊急工作，卻擔心別人找不到你會失望。你已很久沒有完整離線。",
+      "question": "你會怎樣安排一次讓自己放心的離線？",
+      "deeperQuestion": "隨時找得到你，是否已被你當成值得被喜歡的條件？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-057",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not a renovation project",
+    "scenario": "Your improvement list is long; what you want to preserve barely appears.",
+    "question": "Which three present qualities or habits would you keep?",
+    "deeperQuestion": "Can growth begin with appreciation rather than rejection?",
+    "twist": "",
+    "zh": {
+      "title": "不把自己當計劃改造",
+      "scenario": "你列了很多要改善的地方，卻很少寫想保留的部分。生活像永遠在修一個不夠好的自己。",
+      "question": "你想保留哪三個現在已經有的特質或習慣？",
+      "deeperQuestion": "成長可不可以從欣賞開始，而不只從嫌棄開始？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-058",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A promise to yourself",
+    "scenario": "Promises to others hold firm while promises to yourself repeatedly disappear.",
+    "question": "Which small, achievable promise to yourself would you keep first?",
+    "deeperQuestion": "Why are your own expectations easier to cancel?",
+    "twist": "",
+    "zh": {
+      "title": "一句想對自己守的話",
+      "scenario": "你很重視答應別人的事，答應自己休息或學習卻常被擠走。自己的承諾總排在最後。",
+      "question": "你會先守住哪一個小到做得到的承諾？",
+      "deeperQuestion": "為甚麼自己的期待比較容易被取消？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-059",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Leaving without failure",
+    "scenario": "Something is going well, but leaving would make room for another priority. You wait for a bad reason to justify it.",
+    "question": "What could a good ending look like?",
+    "deeperQuestion": "Must you prove staying is bad before leaving?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒有失敗的離開",
+      "scenario": "一件事仍做得不錯，你卻想結束，好把時間交給另一件重要的事。你一直等到有壞理由才敢離開。",
+      "question": "好好完成一段，對你可以是甚麼樣子？",
+      "deeperQuestion": "離開是否一定要先證明留下不好？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-060",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Someone else's urgency",
+    "scenario": "Someone demands work tonight, but the deadline is their preference rather than a real constraint.",
+    "question": "How would you clarify the need and offer a realistic time?",
+    "deeperQuestion": "Does urgency trigger responsibility or fear of blame first?",
+    "twist": "",
+    "zh": {
+      "title": "別人的急不一定是你的急",
+      "scenario": "對方說事情很急，希望你今晚完成，但你發現期限只是他自己臨時訂的。你本來有重要安排。",
+      "question": "你會怎樣確認需要，再提出自己能做到的時間？",
+      "deeperQuestion": "你聽到「很急」時，最先被觸動的是責任還是害怕被怪？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-061",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Room for average work",
+    "scenario": "Several tasks compete, and only one can be excellent while others are sufficient.",
+    "question": "Which task deserves the highest standard, and why?",
+    "deeperQuestion": "Is good enough a practical judgement or an uncomfortable verdict?",
+    "twist": "",
+    "zh": {
+      "title": "給普通表現的位置",
+      "scenario": "你有幾件事同時要做，只能選一件做到很好，其他做到足夠。你卻習慣每件都用最高標準。",
+      "question": "你會把最高標準放在哪一件，為甚麼？",
+      "deeperQuestion": "足夠好對你是實際判斷，還是難以接受的評語？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-062",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Different life timelines",
+    "scenario": "Friends reach visible milestones while your life develops differently. Satisfaction fades after gatherings.",
+    "question": "Which real need could help you reorient yourself?",
+    "deeperQuestion": "Being behind assumes a shared destination. Do you have one?",
+    "twist": "",
+    "zh": {
+      "title": "沒有共同進度的朋友",
+      "scenario": "朋友開始買房、結婚或升職，你的生活在另一個方向發展。你本來滿意，聚會後卻覺得落後。",
+      "question": "你會用哪一件自己的真實需要重新定位？",
+      "deeperQuestion": "落後必須有同一個終點，你們真的在去同一處嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-063",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A fear you do not want to inherit",
+    "scenario": "Your fears about money or failure echo family lessons from different circumstances.",
+    "question": "Which lessons still help, and which need rechecking?",
+    "deeperQuestion": "Must respecting their experience mean inheriting their fear?",
+    "twist": "",
+    "zh": {
+      "title": "不想繼承的恐懼",
+      "scenario": "你發現自己對金錢或失敗的擔心，很像家人常說的話。他們的經驗有道理，但你的處境已不同。",
+      "question": "哪些提醒仍有用，哪些需要重新驗證？",
+      "deeperQuestion": "尊重家人的經驗，是否一定要照著害怕？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-064",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Standing through misunderstanding",
+    "scenario": "Someone misreads an important decision and remains unconvinced after your explanation.",
+    "question": "How much more would you explain, and where would attention go next?",
+    "deeperQuestion": "What grounds you when not everyone understands?",
+    "twist": "",
+    "zh": {
+      "title": "被誤會也能站穩",
+      "scenario": "你作了一個對自己重要的決定，有人誤會你的動機。解釋過一次後，他仍不相信。",
+      "question": "你會再說多少，然後把注意力放回哪裡？",
+      "deeperQuestion": "不是每個人都理解你時，你靠甚麼站穩？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-065",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Your own receipt",
+    "scenario": "Write a private receipt for time, courage or money invested in yourself, without listing only outcomes.",
+    "question": "Which investment do you most easily forget?",
+    "deeperQuestion": "Would seeing the cost soften your judgement of your pace?",
+    "twist": "",
+    "zh": {
+      "title": "一張自己的收據",
+      "scenario": "你可以寫一張不用給別人看的收據，記下今年為自己付出的時間、勇氣或金錢。不能只寫成果。",
+      "question": "哪一筆你最容易忘記自己曾經付過？",
+      "deeperQuestion": "看見成本之後，你會對自己的速度溫柔一點嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-066",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Escape or attraction?",
+    "scenario": "A new place looks lighter in your imagination, though some problems would travel with you.",
+    "question": "What three things do you actually want to move toward?",
+    "deeperQuestion": "Which changes could begin without moving?",
+    "twist": "",
+    "zh": {
+      "title": "想逃離還是想靠近",
+      "scenario": "你很想搬到新地方，想像裡一切都比較輕。你知道有些問題會跟著自己一起搬。",
+      "question": "你真正想靠近的三件事是甚麼？",
+      "deeperQuestion": "有哪些改變，即使不搬也可以先開始？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-067",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A skill beyond earning",
+    "scenario": "People suggest turning your listening skill into paid work. You fear losing its natural place in your life.",
+    "question": "Where would you want this ability to live?",
+    "deeperQuestion": "Must every valuable ability become income?",
+    "twist": "",
+    "zh": {
+      "title": "一個不必收費的能力",
+      "scenario": "你很會安慰人，朋友說應該把它變成工作。你卻怕一旦成為職責，就失去原本自然的關心。",
+      "question": "你想讓這個能力在哪裡發揮？",
+      "deeperQuestion": "有價值的能力，是否都需要變成收入？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-068",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Truth inside tiredness",
+    "scenario": "Exhaustion makes you want to quit everything; rest restores willingness.",
+    "question": "How would you care for your state before making a major decision?",
+    "deeperQuestion": "Which messages of fatigue need hearing without immediate action?",
+    "twist": "",
+    "zh": {
+      "title": "疲倦裡的真心話",
+      "scenario": "很累的時候，你想放棄一切；休息後卻又願意繼續。你不確定哪個才是真正的自己。",
+      "question": "你會怎樣先照顧狀態，再作重要決定？",
+      "deeperQuestion": "疲倦的聲音有哪些需要被聽，哪些不必立即照做？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-069",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Beyond being useful",
+    "scenario": "Unable to help others for a while, you struggle to visit friends without bringing some usefulness.",
+    "question": "How could you try simply showing up and being together?",
+    "deeperQuestion": "Could you believe someone enjoys you without needing your help?",
+    "twist": "",
+    "zh": {
+      "title": "被需要以外的關係",
+      "scenario": "你暫時沒有能力幫別人，才發現自己不知道怎樣只是去見朋友。你總想帶點用處才安心。",
+      "question": "你可以怎樣試一次只是出現、一起待著？",
+      "deeperQuestion": "如果有人只喜歡跟你相處，你能相信嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-070",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A list you may revise",
+    "scenario": "Your annual list remains unfinished, but unexpected events demanded real care and effort.",
+    "question": "What would you remove, and what unlisted effort would you add?",
+    "deeperQuestion": "Should plans serve life or should life validate plans?",
+    "twist": "",
+    "zh": {
+      "title": "一個可以不完成的清單",
+      "scenario": "年初清單還有很多未完成，但你今年遇到一些原本沒預料的事，也照顧了很多當時不存在的需要。",
+      "question": "你會刪掉哪項，補記哪項原本沒列出的事？",
+      "deeperQuestion": "計劃應該服務生活，還是生活要證明計劃沒錯？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-071",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "No longer discounting yourself",
+    "scenario": "You minimise your efforts until others assume they cost nothing.",
+    "question": "How would you state the time and difficulty of an effort plainly?",
+    "deeperQuestion": "Why does acknowledging effort feel uncomfortable?",
+    "twist": "",
+    "zh": {
+      "title": "一份不再接受的折扣",
+      "scenario": "你總說自己的付出只是小事，別人也開始當作不費力。你不是想邀功，只是不想繼續被低估。",
+      "question": "你會怎樣客觀說明一次付出的時間和難度？",
+      "deeperQuestion": "承認自己付出了很多，為甚麼會讓你不自在？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-072",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The course you want",
+    "scenario": "A free course could improve your résumé or satisfy a longstanding curiosity. No career move is urgent.",
+    "question": "Which would you choose, and which benefit would you forgo?",
+    "deeperQuestion": "Do you postpone curiosity until all practical things are done?",
+    "twist": "",
+    "zh": {
+      "title": "真正想學的課",
+      "scenario": "你可以免費上一門課，一門能增加履歷價值，一門只是讓你長期好奇。你目前沒有急迫的轉職需要。",
+      "question": "你會選哪門，願意放棄哪種收穫？",
+      "deeperQuestion": "你是否常把好奇推遲到所有實用事情做完之後？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-073",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Redefining success",
+    "scenario": "Half your old definition of success still matters; half sounds borrowed.",
+    "question": "Which sentence would you remove and which add?",
+    "deeperQuestion": "What would the new definition change next week?",
+    "twist": "",
+    "zh": {
+      "title": "可以被改寫的成功",
+      "scenario": "五年前你寫過成功的定義，現在讀來有一半仍重要，一半像別人的願望。你不必一次全部推翻。",
+      "question": "你會先刪哪一句，補哪一句？",
+      "deeperQuestion": "這個新定義會改變你下星期哪一個安排？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-074",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Rest without permission",
+    "scenario": "Necessary work is done, but you wait for permission to stop that nobody will give.",
+    "question": "What personal standard would make today enough?",
+    "deeperQuestion": "Whom have you given the right to let you stop?",
+    "twist": "",
+    "zh": {
+      "title": "一個沒有人批准的休息日",
+      "scenario": "你已完成必要工作，卻仍等著有人說今天可以停了。沒有人會來批准，你也不敢先走。",
+      "question": "你會用甚麼自己的標準宣布今天足夠？",
+      "deeperQuestion": "你把停止的權利交給誰多久了？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-075",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Stepping back from another story",
+    "scenario": "A successful person's method appeals until you notice different resources and responsibilities.",
+    "question": "Which principle would you keep and which method adapt?",
+    "deeperQuestion": "What distinguishes learning from copying?",
+    "twist": "",
+    "zh": {
+      "title": "從別人的故事退後一步",
+      "scenario": "你聽了別人的成功方法，很想完全照做。細看才發現，他的資源、責任和承受力跟你不同。",
+      "question": "你會留下哪個原則，改掉哪個做法？",
+      "deeperQuestion": "借鏡和複製，對你差在哪裡？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-076",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An answer you stop chasing",
+    "scenario": "Long after a relationship ends, you still want their explanation. Asking may clarify or reopen pain.",
+    "question": "Do you need information or permission to stop waiting?",
+    "deeperQuestion": "Which part of closure can you choose yourself?",
+    "twist": "",
+    "zh": {
+      "title": "一個不再追究的答案",
+      "scenario": "一段關係結束很久，你仍想知道對方當時真正怎樣想。再問一次可能有答案，也可能重新打開傷口。",
+      "question": "你現在需要的是新資訊，還是容許自己結束等待？",
+      "deeperQuestion": "哪一部分結束，可以由你自己決定？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-077",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Space for your future self",
+    "scenario": "A secure three-year plan leaves little room to change. Flexibility costs certainty.",
+    "question": "Where would you deliberately preserve options?",
+    "deeperQuestion": "Do you trust that your future self may want different things?",
+    "twist": "",
+    "zh": {
+      "title": "給未來自己的空間",
+      "scenario": "你可以把未來三年安排得很穩妥，但幾乎沒有改變方向的餘地。留白則意味少一點確定。",
+      "question": "你會在哪一部分刻意留下選擇？",
+      "deeperQuestion": "你相信未來的自己可能想要不同的東西嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-078",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not always beating your past",
+    "scenario": "Changed circumstances mean you cannot match a former peak.",
+    "question": "How would you set a standard suited to your current life?",
+    "deeperQuestion": "Should past achievement encourage you or permanently demand from you?",
+    "twist": "",
+    "zh": {
+      "title": "不是每次都要贏過以前",
+      "scenario": "你曾經在某件事做到很好，現在生活不同，無法維持同樣水平。每次做都拿來跟以前比較。",
+      "question": "你會怎樣設定符合現在生活的標準？",
+      "deeperQuestion": "以前的成績應該鼓勵你，還是永遠要求你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-079",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A cost you choose",
+    "scenario": "Freedom may bring instability; security may bring less variety. Seeking a regret-free path prevents choosing.",
+    "question": "Which inconvenience would you willingly live with?",
+    "deeperQuestion": "Does choosing include accepting other good things left behind?",
+    "twist": "",
+    "zh": {
+      "title": "一個願意承擔的代價",
+      "scenario": "每個想要的生活都有不方便：自由可能不穩，安穩可能少變化。你想找一條完全不後悔的路，卻一直沒選。",
+      "question": "哪一種不方便，你最願意長期承擔？",
+      "deeperQuestion": "選擇是否也包括接受自己放棄了別的好東西？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-080",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Liking without justification",
+    "scenario": "You enjoy something harmless and affordable that others call childish, then rush to justify its usefulness.",
+    "question": "How could you simply say you enjoy it?",
+    "deeperQuestion": "Which pleasures make you feel most defensive?",
+    "twist": "",
+    "zh": {
+      "title": "不為合理而喜歡",
+      "scenario": "你喜歡一件別人覺得幼稚的事，沒有傷害誰，也負擔得起。每次被問，你卻急著找實用理由。",
+      "question": "你能怎樣只說「因為我喜歡」？",
+      "deeperQuestion": "哪種快樂最容易讓你覺得需要辯護？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-081",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Not ready to share",
+    "scenario": "Sharing an experience might help others, but you are not ready despite encouragement.",
+    "question": "How would you choose timing, audience and scope?",
+    "deeperQuestion": "Should possible benefit to others outweigh your readiness?",
+    "twist": "",
+    "zh": {
+      "title": "還沒準備好的分享",
+      "scenario": "你有一段重要經歷，知道分享可能幫到別人，但自己還沒整理好。有人鼓勵你勇敢說出來。",
+      "question": "你會怎樣決定分享的時間、對象和範圍？",
+      "deeperQuestion": "幫助別人的可能，是否應該壓過自己的準備程度？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-082",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A worthwhile inconvenience",
+    "scenario": "A slow habit gives life a personal rhythm even though faster alternatives exist.",
+    "question": "Which inconvenience would you preserve, and why?",
+    "deeperQuestion": "Does time saved by efficiency actually return to you?",
+    "twist": "",
+    "zh": {
+      "title": "一件值得保留的麻煩",
+      "scenario": "某個習慣很花時間，例如煮飯、寫信或慢慢走路，但它讓你覺得生活有自己的節奏。更快的方法一直存在。",
+      "question": "你想保留哪一種不方便，為甚麼？",
+      "deeperQuestion": "效率省下的時間，通常真的交回你手上嗎？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-083",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An invitation to make",
+    "scenario": "You wait to be invited because initiating would reveal how much you want connection.",
+    "question": "What small invitation could you make without needing a guaranteed yes?",
+    "deeperQuestion": "Could one refusal become a mistaken verdict on your worth?",
+    "twist": "",
+    "zh": {
+      "title": "不想再等待的邀請",
+      "scenario": "你一直希望有人邀你做某件事，因為自己開口像承認很需要。你其實已想到可以找誰。",
+      "question": "你會怎樣發出一個不必保證成功的小邀請？",
+      "deeperQuestion": "被拒絕一次，會不會被你誤讀成自己不值得被選？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-084",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An account without comparison",
+    "scenario": "You can see only your own savings, not anyone else's. Real responsibilities remain.",
+    "question": "Which practical needs would define enough?",
+    "deeperQuestion": "How much of your target comes from need versus fear of falling behind?",
+    "twist": "",
+    "zh": {
+      "title": "一個不必比較的帳戶",
+      "scenario": "你只能看到自己的儲蓄進度，看不到任何人的數字。你仍要負責生活，但少了比較的參照。",
+      "question": "你會用哪些實際需要設定「足夠」？",
+      "deeperQuestion": "你現在的目標，有多少是需要，有多少是怕落後？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-085",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Caring for an imperfect self",
+    "scenario": "You must care for someone exactly like you for a week, without fixing them.",
+    "question": "What pressure would you reduce and what support add?",
+    "deeperQuestion": "Why have you not offered yourself that care yet?",
+    "twist": "",
+    "zh": {
+      "title": "照顧一個不完美的自己",
+      "scenario": "如果你要照顧一個跟自己一模一樣的人，他同樣拖延、害怕，也同樣努力。你不能改造他，只能陪他過一週。",
+      "question": "你會先減少哪一種壓力，增加哪一種支持？",
+      "deeperQuestion": "你為甚麼還沒把這種照顧給自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-086",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The future will not suddenly begin",
+    "scenario": "You postpone living until work, savings or readiness reach a threshold that keeps moving.",
+    "question": "What part of that life could have ten minutes today?",
+    "deeperQuestion": "Does the beginning you await have an actual date?",
+    "twist": "",
+    "zh": {
+      "title": "未來不會突然開始",
+      "scenario": "你常想等忙完、存夠、準備好才開始真正生活。每一個條件完成後，總會再多一個。",
+      "question": "哪一件想過的生活，可以今天先有十分鐘？",
+      "deeperQuestion": "你一直等待的開始，有沒有一個真正的日期？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-087",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Proof you no longer need",
+    "scenario": "You keep evidence of effort against an imagined accusation that you did not try enough.",
+    "question": "To whom are you proving what?",
+    "deeperQuestion": "Which records could go if you kept only what helps you live?",
+    "twist": "",
+    "zh": {
+      "title": "一份不再需要的證明",
+      "scenario": "你保存很多能證明自己努力過的紀錄，怕有一天別人說你不夠用心。其實沒有人正在審查你。",
+      "question": "你最想向誰證明，證明甚麼？",
+      "deeperQuestion": "如果只保留能幫助生活的紀錄，哪些可以放下？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-088",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Kindness has limits",
+    "scenario": "Many causes matter to you, but your capacity cannot meet all of them.",
+    "question": "Which would you support consistently, and how would you release the rest for now?",
+    "deeperQuestion": "Can limited kindness still be sincere?",
+    "twist": "",
+    "zh": {
+      "title": "自己的善意也有限",
+      "scenario": "你想關心很多事情，卻沒有力氣對每件都作出行動。不回應時，又覺得自己不夠好。",
+      "question": "你會選哪一件持續投入，其他怎樣暫時放下？",
+      "deeperQuestion": "有限的善意，是否仍然是真誠的善意？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-089",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Changing before a crisis",
+    "scenario": "Life is tolerable but steadily draining. You feel change requires a major problem.",
+    "question": "What small arrangement could change before you reach a breaking point?",
+    "deeperQuestion": "Is wanting a better life already a sufficient reason?",
+    "twist": "",
+    "zh": {
+      "title": "不靠危機才改變",
+      "scenario": "現在的生活沒有壞到不能過，只是慢慢失去精神。你總覺得沒有大問題，就不應該調整。",
+      "question": "你會先改哪一個小安排，不必等到撐不住？",
+      "deeperQuestion": "想過得更好，本身是否已是一個理由？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-090",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An ordinary ending you accept",
+    "scenario": "A project ends with moderate results, learning and connections rather than triumph or failure.",
+    "question": "How would you judge whether it was worthwhile?",
+    "deeperQuestion": "Do only the best outcomes count as effort well spent for you?",
+    "twist": "",
+    "zh": {
+      "title": "一個你願意接受的普通結局",
+      "scenario": "假如某個計劃最後只做到中等，沒有失敗，也沒有驚人成果。過程裡你學到東西，認識了人。",
+      "question": "你會如何決定它是否值得？",
+      "deeperQuestion": "你是否只給最好的結局頒發「沒有白做」的資格？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-091",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A feeling is not a verdict",
+    "scenario": "You feel like a failure one day and lighter the next, though circumstances are unchanged.",
+    "question": "How would you hear a feeling without treating it as the whole truth?",
+    "deeperQuestion": "Which concrete facts could ground you?",
+    "twist": "",
+    "zh": {
+      "title": "不把情緒當判決",
+      "scenario": "你某天覺得自己很失敗，第二天事情沒變，心情卻輕了一點。兩天的感受都真實，結論卻不同。",
+      "question": "你會怎樣聽情緒提供的訊息，而不把它當全部事實？",
+      "deeperQuestion": "你需要哪些具體事實幫自己站穩？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-092",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A private honest sentence",
+    "scenario": "Write one private sentence about what you actually want or do not want, without using should.",
+    "question": "Which sentence are you most hesitant to write?",
+    "deeperQuestion": "Does admitting it require immediate action?",
+    "twist": "",
+    "zh": {
+      "title": "一段只對自己誠實的話",
+      "scenario": "你可以寫一句不必給任何人看的真話，不能寫應該，只能寫現在真的想要或不想要的事。",
+      "question": "你最猶豫寫下哪一句？",
+      "deeperQuestion": "承認它，是否真的代表你必須立即照做？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-093",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Keeping a little margin",
+    "scenario": "Extra work would use every spare hour. Those hours have no fixed purpose but keep you steady.",
+    "question": "How would you value that margin?",
+    "deeperQuestion": "Can unscheduled time quietly care for you?",
+    "twist": "",
+    "zh": {
+      "title": "把一點餘裕留下",
+      "scenario": "你有機會多接一份工作，收入會增加，卻會用盡目前所有空檔。那些空檔沒有固定用途，但讓你比較不慌。",
+      "question": "你會怎樣替這份餘裕估價？",
+      "deeperQuestion": "沒有排定用途的時間，是否也在默默照顧你？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-094",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A question to revisit",
+    "scenario": "A life you once rejected now interests you. Changing your mind feels like admitting an error.",
+    "question": "How would you explore again without dismissing your past view?",
+    "deeperQuestion": "Could a changed answer simply reflect more experience?",
+    "twist": "",
+    "zh": {
+      "title": "一個願意重新問的問題",
+      "scenario": "你曾很肯定自己不要某種生活，幾年後卻開始好奇。你怕改口像承認以前說錯。",
+      "question": "你會怎樣重新探索，而不急著否定以前？",
+      "deeperQuestion": "答案改變，是否也可能只是你得到更多經驗？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-095",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "The person your choices build",
+    "scenario": "Two reasonable choices offer external gain or alignment with the way you want to live.",
+    "question": "How would you choose while acknowledging value in the alternative?",
+    "deeperQuestion": "Repeated for a year, which version of you would this choice develop?",
+    "twist": "",
+    "zh": {
+      "title": "留下你想成為的人",
+      "scenario": "你有兩個都合理的選擇，一個帶來較多外在收穫，另一個更符合你想練習的做人方式。沒有誰能替你打分。",
+      "question": "你會怎樣作決定，並承認沒有選的那邊也有價值？",
+      "deeperQuestion": "重複這個選擇一年，你會更像哪一種自己？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-096",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "Redistributing attention",
+    "scenario": "Criticism stays vivid while sincere appreciation fades, though both happened.",
+    "question": "What concrete fact could restore the neglected side?",
+    "deeperQuestion": "Do you treat criticism as information or as inherently more truthful than praise?",
+    "twist": "",
+    "zh": {
+      "title": "重新分配注意力",
+      "scenario": "你記得很多別人對你的負面評語，卻很難想起真心的肯定。兩種都曾發生，只是停留時間不同。",
+      "question": "你會找哪一件具體事實，補回被忽略的一邊？",
+      "deeperQuestion": "你把批評當資訊，還是當比讚賞更可靠的真相？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-097",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A problem you can share",
+    "scenario": "You delay asking for offered help until you can present the problem neatly, perhaps until help is unnecessary.",
+    "question": "How could you begin with an incomplete explanation?",
+    "deeperQuestion": "Do you feel you must appear capable even while asking for help?",
+    "twist": "",
+    "zh": {
+      "title": "一個可以共享的難題",
+      "scenario": "你卡在一件事很久，有人願意幫忙，你卻想等自己整理好才開口。等到整理好，可能也不再需要幫助。",
+      "question": "你能怎樣用不完整的話開始？",
+      "deeperQuestion": "你是否覺得連求助也要表現得很有能力？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-098",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "An honest unpopular answer",
+    "scenario": "Everyone expects you to welcome an opportunity, but you do not feel drawn to it.",
+    "question": "How much private time would you give yourself before answering?",
+    "deeperQuestion": "How do you hear your quieter answer amid others' excitement?",
+    "twist": "",
+    "zh": {
+      "title": "一個不受歡迎但誠實的答案",
+      "scenario": "大家期待你對一個機會很興奮，你卻沒有。你怕讓人失望，差點替自己答應了。",
+      "question": "你會先給自己多久，才對外回答？",
+      "deeperQuestion": "別人的期待很熱烈時，你怎樣聽見自己的小聲答案？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-099",
+    "level": "deeper",
+    "emoji": "🌿"
+  },
+  {
+    "category": "Solo",
+    "title": "A thank-you from next month",
+    "scenario": "Imagine next month's self thanking you for one small action today that made life slightly easier.",
+    "question": "What would you hope it was, and what step could happen today?",
+    "deeperQuestion": "Why is that step worth taking even unseen?",
+    "twist": "",
+    "zh": {
+      "title": "下個月想謝謝今天什麼",
+      "scenario": "想像下個月的你寄來一句謝謝，感謝今天一個很小但真實的行動。它不必改變人生，只需要讓生活好過一點。",
+      "question": "你希望那件事是甚麼，今天能做哪一步？",
+      "deeperQuestion": "這一步為甚麼值得做，即使沒有人看見？",
+      "twist": ""
+    },
+    "id": "ponder-v5-solo-100",
+    "level": "deeper",
+    "emoji": "🌿"
   }
 ];

@@ -1,4 +1,4 @@
-import { questions, type Category, type GroupSize, type Question } from './questions';
+import { questions, type Category, type GroupSize, type Level, type Question } from './questions';
 const KEY = 'ponder.seen.v2';
 let memory: string[] = [];
 function readHistory(): string[] {
@@ -7,11 +7,11 @@ function readHistory(): string[] {
     return Array.isArray(value) ? value.filter((id): id is string=>typeof id==='string') : memory;
   } catch { return memory; }
 }
-export function questionPool(category: Category, groupSize?: GroupSize): Question[] {
-  return questions.filter(q=>q.category===category && (category!=='Party' || !groupSize || q.groupSize===groupSize));
+export function questionPool(category: Category, groupSize?: GroupSize, level?: Level): Question[] {
+  return questions.filter(q=>q.category===category && (!level || (q.level ?? 'classic')===level) && (category!=='Party' || !groupSize || q.groupSize===groupSize));
 }
-export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize): Question {
-  const pool = questionPool(category,groupSize);
+export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize, level?: Level): Question {
+  const pool = questionPool(category,groupSize,level);
   if (!pool.length) throw new Error('No questions for this selection');
   let history = readHistory();
   let available = pool.filter(q=>!history.includes(q.id));
