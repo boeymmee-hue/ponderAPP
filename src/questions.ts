@@ -8674,13 +8674,13 @@ export const questions: Question[] = [
     "category": "Couple",
     "title": "A wish each year",
     "scenario": "You decide to write one shared wish each year and choose one to pursue. This year you want to save for a distant trip; your partner wants a weekly evening learning to cook together. Both are possible, but starting both would strain your time and budget.",
-    "question": "Which would you choose first this year? Does a shared hope need to be special or to happen often?",
+    "question": "Which wish would you choose first this year? What appeals more right now: a memorable trip or cooking together every week?",
     "deeperQuestion": "If the other wish lost out next year too, how would you revisit the arrangement?",
     "twist": "",
     "zh": {
       "title": "每年交換一個願望",
       "scenario": "你們決定每年各寫一個想一起完成的願望，再選一個實行。今年你想存錢去遠方旅行，伴侶想每週留一晚一起學煮飯。兩件事都做得到，但同時開始會令時間和預算很緊。",
-      "question": "今年你想先選哪一個？你覺得共同的期待，需要特別，還是經常出現？",
+      "question": "今年你想先選哪個願望？一次難忘的旅行和每週一起煮飯，哪個現在更吸引你？",
       "deeperQuestion": "如果未被選中的願望明年也落選，你們要怎樣重新談這個安排？",
       "twist": ""
     },
