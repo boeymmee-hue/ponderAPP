@@ -1,4 +1,4 @@
-export const categories = ['Couple', 'Family', 'Party', 'Solo'] as const;
+export const categories = ['Couple', 'Family', 'Party', 'Solo', 'Crush'] as const;
 export type Category = typeof categories[number];
 export type GroupSize = 'small' | 'medium' | 'large';
 export interface CardText { title: string; scenario: string; question: string; twist: string; deeperQuestion: string; }
@@ -14205,5 +14205,685 @@ export const questions: Question[] = [
     "id": "ponder-v5-solo-100",
     "level": "deeper",
     "emoji": "🌿"
+  },
+  {
+    "id": "ponder-crush-001",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Before the last train",
+    "scenario": "On your first outing alone together, you have forty minutes before the last train. There is a riverside path and a bookshop about to close. Going home now would work too.",
+    "question": "How would you spend those forty minutes? What would make you reluctant to say goodbye?",
+    "twist": "",
+    "deeperQuestion": "If the other person wanted to go home, how would you read that? How would you want them to say it?",
+    "zh": {
+      "title": "最後一班車之前",
+      "scenario": "你們第一次單獨出門，晚飯後發現還有四十分鐘才到最後一班車。附近有河邊步道，也有一間快打烊的小書店。現在回家也剛剛好。",
+      "question": "你想怎樣用這四十分鐘？甚麼會讓你捨不得說再見？",
+      "twist": "",
+      "deeperQuestion": "如果對方想先回家，你會怎樣理解？你希望他怎樣說？"
+    }
+  },
+  {
+    "id": "ponder-crush-002",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Two very different breakfasts",
+    "scenario": "On a trip you each choose breakfast at a guesthouse: one familiar, one a complete mystery. The host says you can swap or share a bite.",
+    "question": "Which would you choose? When would you be willing to try the other person's choice?",
+    "twist": "",
+    "deeperQuestion": "If one of you always wanted novelty and the other loved familiar places, how would you plan the next meal?",
+    "zh": {
+      "title": "兩份完全不同的早餐",
+      "scenario": "你們一起住進旅行民宿，各自選了早餐：一份是每天吃慣的味道，另一份完全不知道會端來甚麼。店主說可以交換，也可以分享一口。",
+      "question": "你猜你會選哪份？在甚麼情況下，你願意試對方的選擇？",
+      "twist": "",
+      "deeperQuestion": "如果對方總想試新東西，而你喜歡固定的愛店，你會怎樣安排下次吃飯？"
+    }
+  },
+  {
+    "id": "ponder-crush-003",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A thousand in your pocket",
+    "scenario": "You each receive a thousand dollars to use freely. While out together, you see a show you would love and a useful item that would last years. You can also save the money.",
+    "question": "What use comes to mind first? How do you know a purchase is worthwhile?",
+    "twist": "",
+    "deeperQuestion": "If you made completely different choices, what would you ask each other first?",
+    "zh": {
+      "title": "口袋裡的一千元",
+      "scenario": "你們各得到一千元，可以自己決定用途。今天一起逛街，看見一場很想看的演出，也看到一件能用很久的日用品。錢也可以留著不花。",
+      "question": "你會先想到哪種用法？你怎樣知道一筆錢花得值得？",
+      "twist": "",
+      "deeperQuestion": "如果你們選得完全不同，你最想先問對方甚麼？"
+    }
+  },
+  {
+    "id": "ponder-crush-004",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Wear comfortable shoes",
+    "scenario": "The other person plans a half-day surprise and tells you to wear comfortable shoes. You will be back before evening and need no extra money. You can ask about one thing in advance.",
+    "question": "What would you ask, or would you keep the whole surprise?",
+    "twist": "",
+    "deeperQuestion": "If you were planning it, how would you tell whether they were excited or hesitant to refuse?",
+    "zh": {
+      "title": "只知道要穿舒服的鞋",
+      "scenario": "對方想替你安排半天的小驚喜，只說穿舒服的鞋，傍晚前會回來。活動不用另外花錢，你也可以先問清楚一件事。",
+      "question": "你會問甚麼，還是想保留全部驚喜？",
+      "twist": "",
+      "deeperQuestion": "如果換成你安排，你會怎樣知道對方是期待，還是不好意思拒絕？"
+    }
+  },
+  {
+    "id": "ponder-crush-005",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "The unedited photo",
+    "scenario": "On a walk, the other person catches a photo of you laughing. You like the moment but not quite how you look. They ask whether they may keep it.",
+    "question": "Would you let them keep it, ask them to delete it, or take another together? Why?",
+    "twist": "",
+    "deeperQuestion": "How would your answer differ between keeping it on their phone and posting it online?",
+    "zh": {
+      "title": "那張沒有修過的照片",
+      "scenario": "散步時，對方拍到你笑得很開心的一刻。你喜歡當時的氣氛，卻不太喜歡照片裡自己的樣子。對方問可不可以留著。",
+      "question": "你會讓他留著、請他刪掉，還是想一起再拍一張？為甚麼？",
+      "twist": "",
+      "deeperQuestion": "如果只留在他的手機，跟放上社交平台，你的答案有甚麼不同？"
+    }
+  },
+  {
+    "id": "ponder-crush-006",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A message ends with a smile",
+    "scenario": "You have been chatting eagerly. The other person sends a smile, then nothing for hours. You know they have plans today but wonder whether the conversation is over.",
+    "question": "Would you share something else, arrange another chat, or wait for them?",
+    "twist": "",
+    "deeperQuestion": "Do you prefer frequent short messages or a proper conversation when free? What rhythm feels comfortable?",
+    "zh": {
+      "title": "訊息停在一個笑臉",
+      "scenario": "你們聊得很投入，對方最後傳來一個笑臉，幾小時沒有再回覆。你知道他今天有自己的安排，但也在想對話是不是結束了。",
+      "question": "你會再分享一件事、直接約下次聊，還是等他開口？",
+      "twist": "",
+      "deeperQuestion": "你喜歡隨時短聊，還是有空時完整聊一段？怎樣的聯絡會讓你舒服？"
+    }
+  },
+  {
+    "id": "ponder-crush-007",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A walk through childhood",
+    "scenario": "You can take the other person down a childhood street, stopping at three places. No tourist sights: perhaps a breakfast stall, a staircase or a place you waited after school.",
+    "question": "Which three stops would you choose? What part of your younger self would you want them to know?",
+    "twist": "",
+    "deeperQuestion": "If one place had disappeared, how would you tell its story?",
+    "zh": {
+      "title": "一起走進童年的街道",
+      "scenario": "你可以帶對方到你小時候常去的一條街，只能停三個地方。熱門景點不算，可能是一個早餐檔、一段樓梯，或以前放學會等人的位置。",
+      "question": "你會選哪三站？最想讓他認識哪一段以前的你？",
+      "twist": "",
+      "deeperQuestion": "如果其中一個地方已經消失，你會怎樣把它的故事講給對方聽？"
+    }
+  },
+  {
+    "id": "ponder-crush-008",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Who speaks first when it rains?",
+    "scenario": "You planned a picnic, but rain begins just before leaving. The food is ready; nearby alternatives are an ordinary café and a mall. You had looked forward to the plan, while the other person says anywhere is fine.",
+    "question": "Where would you go instead? Would you mention your disappointment now or wait until you felt better?",
+    "twist": "",
+    "deeperQuestion": "What response helps most when you feel disappointed?",
+    "zh": {
+      "title": "下雨時誰先開口",
+      "scenario": "你們約好去野餐，出門前突然下雨。食物已準備好，附近卻只有普通咖啡店和商場。你很期待原本的安排，對方則說去哪裡都可以。",
+      "question": "你會改去哪裡？你想先說自己的失望，還是等心情好了再聊？",
+      "twist": "",
+      "deeperQuestion": "當你失望時，對方怎樣回應會最有幫助？"
+    }
+  },
+  {
+    "id": "ponder-crush-009",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A good weekend alone",
+    "scenario": "You have met every weekend lately. They ask if you are free this week. You have no other plans, but have wanted a day to browse, read or do nothing alone.",
+    "question": "Would you keep the day to yourself or invite them? How would you say it?",
+    "twist": "",
+    "deeperQuestion": "If they wanted time alone, would you want another date arranged or no need to make it up?",
+    "zh": {
+      "title": "一個人的週末也很好",
+      "scenario": "你們最近每個週末都有見面。這星期對方問你有沒有空，你確實沒有約人，卻一直想留一天自己逛街、看書或發呆。",
+      "question": "你會保留自己的時間，還是想約他一起？你會怎樣說？",
+      "twist": "",
+      "deeperQuestion": "如果是對方想獨處，你希望他另外約好見面時間，還是不用特別補回？"
+    }
+  },
+  {
+    "id": "ponder-crush-010",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "The drink missing from the bill",
+    "scenario": "After dinner you notice a drink missing from the bill. The restaurant is busy and the server has moved on. It costs little, but you both noticed.",
+    "question": "What would you do? If the other person chose differently, would you discuss it there?",
+    "twist": "",
+    "deeperQuestion": "Would you care as much if you had paid for an extra drink instead?",
+    "zh": {
+      "title": "一杯忘記算的飲品",
+      "scenario": "你們吃完飯，發現帳單少算了一杯飲品。店裡很忙，店員已轉身招呼下一桌。那杯不貴，但你們都看到了。",
+      "question": "你會怎樣做？如果對方的選擇跟你不同，你會想當場聊嗎？",
+      "twist": "",
+      "deeperQuestion": "如果今天是你多付了一杯，你會不會同樣在意？"
+    }
+  },
+  {
+    "id": "ponder-crush-011",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "The first bill together",
+    "scenario": "On your first meal alone together, the restaurant they chose costs more than your usual place. At the end they offer to pay, though you had not discussed it.",
+    "question": "Would you accept, split it, or offer to pay next time? What feels most comfortable?",
+    "twist": "",
+    "deeperQuestion": "If you began meeting often, how would you want to handle costs without guessing each time?",
+    "zh": {
+      "title": "第一次一起付帳",
+      "scenario": "你們第一次單獨吃飯，餐廳是對方提議的，比你平日吃的貴一點。結帳時對方說「這次我請」，但之前沒有談過。",
+      "question": "你會接受、分帳，還是提議下次由你請？哪種最自在？",
+      "twist": "",
+      "deeperQuestion": "如果之後常常見面，你希望怎樣安排花費，不用每次猜？"
+    }
+  },
+  {
+    "id": "ponder-crush-012",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A letter written long ago",
+    "scenario": "You find a wish list from years ago. Some wishes came true; others now make you laugh. The other person would like to hear one, but you can choose not to share.",
+    "question": "Which would you read? Why are you different from who you were then?",
+    "twist": "",
+    "deeperQuestion": "If the wish had not changed, how would you want someone to help you move towards it?",
+    "zh": {
+      "title": "一封很早就寫好的信",
+      "scenario": "你找到自己幾年前寫的願望清單，裡面有些已經實現，有些現在看來很好笑。對方想聽其中一項，也可以由你選不分享。",
+      "question": "你願意讀哪一項？現在的你為甚麼跟當時不一樣？",
+      "twist": "",
+      "deeperQuestion": "如果那個願望仍然沒變，你希望有人怎樣陪你靠近它？"
+    }
+  },
+  {
+    "id": "ponder-crush-013",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A friend joins unexpectedly",
+    "scenario": "You looked forward to dinner for two, but they ask if a close friend nearby can join. You would like to meet that friend, though it changes the evening you imagined.",
+    "question": "Would you welcome the friend tonight or suggest another time? How would you explain your hopes?",
+    "twist": "",
+    "deeperQuestion": "Do you like meeting someone's friends early, or having more time together first?",
+    "zh": {
+      "title": "朋友突然加入",
+      "scenario": "你很期待今晚兩個人吃飯，對方卻問能不能帶一位剛好在附近的好友。這位朋友你也想認識，只是原本期待的氣氛不太一樣。",
+      "question": "你會答應這次加入，還是想另外安排？你會怎樣讓對方知道你的期待？",
+      "twist": "",
+      "deeperQuestion": "你喜歡很早認識對方的朋友圈，還是先多一點兩人相處？"
+    }
+  },
+  {
+    "id": "ponder-crush-014",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A collection with little practical use",
+    "scenario": "At a market you find a collectible you love and can afford. The other person does not quite see its appeal but wants to hear about it.",
+    "question": "How would you explain its appeal? Do you want them to love it too, or simply understand why you do?",
+    "twist": "",
+    "deeperQuestion": "If their interest made no sense to you, what would you ask first?",
+    "zh": {
+      "title": "不太有用的小收藏",
+      "scenario": "你們逛市集時，你看上一件很喜歡的小收藏，價錢在預算內。對方不太明白它有甚麼好，但願意聽你介紹。",
+      "question": "你會怎樣說明它吸引你的地方？你希望對方喜歡它，還是理解你喜歡就夠？",
+      "twist": "",
+      "deeperQuestion": "換成對方的興趣你完全不懂，你會從甚麼問題開始認識？"
+    }
+  },
+  {
+    "id": "ponder-crush-015",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A small success after dinner",
+    "scenario": "You have finished something you worked on for a long time and want to celebrate. They ask if you want a good meal, a walk, or a quiet night with plans tomorrow.",
+    "question": "How would you spend the evening? What kind of congratulations feels genuinely shared?",
+    "twist": "",
+    "deeperQuestion": "If they were having a bad day, would you want to listen first or also make room for your good news?",
+    "zh": {
+      "title": "晚餐後的小成功",
+      "scenario": "你剛完成一件努力了很久的小事，想跟對方慶祝。對方問你想吃頓好的、去走走，還是回家好好休息，明天再約。",
+      "question": "你想怎樣過？被人怎樣祝賀，最讓你覺得他真的替你開心？",
+      "twist": "",
+      "deeperQuestion": "如果對方當天心情不好，你會想先聽他的事，還是希望自己的開心也有位置？"
+    }
+  },
+  {
+    "id": "ponder-crush-016",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A film you disagree about",
+    "scenario": "A film's lead leaves a secure job to open a shop. The ending never reveals whether it succeeds. Afterwards, one of you thinks it was worth trying; the other thinks more preparation was needed.",
+    "question": "Which view is closer to yours? What background would you want before judging the choice?",
+    "twist": "",
+    "deeperQuestion": "When views differ, do you enjoy debate or first asking whose experience shaped their view?",
+    "zh": {
+      "title": "一起看一部有爭議的電影",
+      "scenario": "電影裡的主角放棄穩定工作去開小店，結局沒有交代成功與否。你們散場後發現，一人覺得值得試，另一人覺得準備不足。",
+      "question": "你比較接近哪個想法？你最想知道主角甚麼背景，才作判斷？",
+      "twist": "",
+      "deeperQuestion": "聽到不同看法時，你喜歡慢慢辯論，還是先了解對方想到誰的經歷？"
+    }
+  },
+  {
+    "id": "ponder-crush-017",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "An unplanned hour",
+    "scenario": "You arrive an hour early. Nearby are a familiar shop and a path neither of you knows. You cannot miss your booking, but there is time to explore a little and return.",
+    "question": "Where would you go? Do you like deciding together or taking turns leading?",
+    "twist": "",
+    "deeperQuestion": "If your choice turned out dull, how would you want them to respond?",
+    "zh": {
+      "title": "不按計劃的一小時",
+      "scenario": "你們提早到目的地一小時，附近有你熟悉的小店，也有一條沒走過的小路。原本的預約不能遲到，但走一小段再回來來得及。",
+      "question": "你想去哪邊？你喜歡兩人一起決定，還是輪流帶路？",
+      "twist": "",
+      "deeperQuestion": "如果你選的地方不好玩，你希望對方怎樣回應？"
+    }
+  },
+  {
+    "id": "ponder-crush-018",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A small secret between you",
+    "scenario": "You discover a little shop you both love. They joke about keeping it just for the two of you, while you want to recommend it to friends. Business is modest and new customers are welcome.",
+    "question": "Would you share it or keep it to yourselves for a while? What makes a place special?",
+    "twist": "",
+    "deeperQuestion": "If friends started going often, would it mean less to the two of you?",
+    "zh": {
+      "title": "兩個人的小秘密",
+      "scenario": "你們偶然發現一間很喜歡的小店。對方笑說想把它留作只有你們知道的地方，你原本卻很想推薦給朋友。小店生意普通，也歡迎新客。",
+      "question": "你會想分享出去，還是先保留一陣？一個地方怎樣會變得特別？",
+      "twist": "",
+      "deeperQuestion": "如果朋友也開始常去，你覺得它對你們的意義會少一點嗎？"
+    }
+  },
+  {
+    "id": "ponder-crush-019",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A call when you are tired",
+    "scenario": "Just before bed, you receive a message: today was rough; could we talk? You want to listen, but have something important early tomorrow.",
+    "question": "How would you reply? Could you offer ten minutes, messages, or a time tomorrow?",
+    "twist": "",
+    "deeperQuestion": "If you were the one reaching out, what response would still make you feel cared for?",
+    "zh": {
+      "title": "很累時的一通電話",
+      "scenario": "你正準備睡覺，對方傳來「今天有點難過，可以聊一會嗎？」你想陪他，但明天一早要處理重要的事。",
+      "question": "你會怎樣回覆？今晚你可以給的是十分鐘、一些文字，還是約好明天再談？",
+      "twist": "",
+      "deeperQuestion": "如果你是想找人聊的那一方，怎樣的回應會讓你仍感到被放在心上？"
+    }
+  },
+  {
+    "id": "ponder-crush-020",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "The unsent draft",
+    "scenario": "You have typed that you enjoyed today and would like to meet again, but have not sent it. Things are going well, though you do not know how they see the connection.",
+    "question": "Would you send it directly, make it more casual, or wait for them?",
+    "twist": "",
+    "deeperQuestion": "What invitation would show you their interest while leaving you comfortable to answer?",
+    "zh": {
+      "title": "留在手機裡的草稿",
+      "scenario": "你打好一句「今天跟你一起很開心，下次想再見」，卻還沒按送出。你們相處不錯，但還不知道對方怎樣看這段關係。",
+      "question": "你會直接送出、換個輕鬆說法，還是等對方先開口？",
+      "twist": "",
+      "deeperQuestion": "你想收到怎樣的邀請，既知道對方有心，又可以自在回答？"
+    }
+  },
+  {
+    "id": "ponder-crush-021",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "An invitation far away",
+    "scenario": "You get a six-month job opportunity abroad, with similar pay and a chance to try a life you have wanted. You have just begun getting to know each other, want to keep meeting, and have made no promises.",
+    "question": "Would you discuss it before deciding? Would you want to hear their feelings or plan how to stay in touch?",
+    "twist": "",
+    "deeperQuestion": "If they supported you leaving without asking you to stay, how would you read that?",
+    "zh": {
+      "title": "半年後的遠方邀請",
+      "scenario": "你得到一個半年外地工作機會，收入相近，卻能試一直想過的生活。你們剛開始認識，很想繼續見面，也沒有承諾將來會怎樣。",
+      "question": "你會在決定前跟對方聊嗎？你想了解他的感受，還是一起想聯絡的方法？",
+      "twist": "",
+      "deeperQuestion": "如果對方很支持你走，但沒有挽留，你會怎樣理解？"
+    }
+  },
+  {
+    "id": "ponder-crush-022",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Weekends at different prices",
+    "scenario": "You want to meet weekly. One loves new restaurants; the other is saving for something important. Both can afford occasional spending, but disagree on what occasional means.",
+    "question": "How would you arrange a month's dates? What spending would you not want to stretch for?",
+    "twist": "",
+    "deeperQuestion": "If they offered to pay more, would you feel comfortable or still prefer cheaper plans?",
+    "zh": {
+      "title": "不同價錢的週末",
+      "scenario": "你們想固定每週見面，一人喜歡試新餐廳，一人正在存一筆重要的錢。兩個人都負擔得起偶爾花費，但對「偶爾」的意思不太一樣。",
+      "question": "你會提議怎樣安排一個月的約會？有哪種花費你不想勉強？",
+      "twist": "",
+      "deeperQuestion": "如果對方願意多付一點，你會比較自在，還是仍想選便宜的活動？"
+    }
+  },
+  {
+    "id": "ponder-crush-023",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Strong feelings, different directions",
+    "scenario": "Talking about five years ahead, one wants to live in different cities; the other wants a steady routine near family. You like being together now and know people can change.",
+    "question": "Would you keep getting to know each other, and what would you want to discuss first? How much uncertainty feels okay?",
+    "twist": "",
+    "deeperQuestion": "What would you be willing to explore, and what already feels clear to you?",
+    "zh": {
+      "title": "很喜歡，也有不同方向",
+      "scenario": "你們聊起五年後，一人很想在不同城市生活，另一人想住近家人，慢慢建立固定的日常。你們都喜歡現在的相處，也知道人可能改變。",
+      "question": "你會繼續認識，還是想先聊清楚甚麼？你願意保留多少不確定？",
+      "twist": "",
+      "deeperQuestion": "哪一部分是你願意探索的，哪一部分現在已很確定？"
+    }
+  },
+  {
+    "id": "ponder-crush-024",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Telling family the good news",
+    "scenario": "You get an opportunity you wanted and would like to celebrate before telling family, who usually ask about risks first. The other person says they always call home with good news immediately.",
+    "question": "How would you explain your choice? Which decisions do you most want family involved in?",
+    "twist": "",
+    "deeperQuestion": "If you shared a life with someone, how much influence should family advice have?",
+    "zh": {
+      "title": "要不要把好消息告訴家人",
+      "scenario": "你拿到一個很想要的機會，想先慶祝再告訴家人，因為他們通常先問風險。對方卻說自己有好消息一定第一時間打回家。",
+      "question": "你會怎樣解釋自己的選擇？你最希望家人參與人生的哪些決定？",
+      "twist": "",
+      "deeperQuestion": "如果將來一起生活，家人的建議對你應有多大影響？"
+    }
+  },
+  {
+    "id": "ponder-crush-025",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A notification on the table",
+    "scenario": "At dinner, their phone lights up with a warm message from someone you do not know. You see one sentence and have no idea how they know each other.",
+    "question": "Would you ask casually, wait for them to mention it, or let it go? What would make you want to know more?",
+    "twist": "",
+    "deeperQuestion": "Before defining the relationship, how would you want to talk about dating other people?",
+    "zh": {
+      "title": "一張開著的通知畫面",
+      "scenario": "你們吃飯時，對方放在桌上的手機亮了，一位你不認識的人傳來很親切的訊息。你只看到一句，也不知道他們的關係。",
+      "question": "你會自然地問、等對方提起，還是先不在意？甚麼會令你想了解多一點？",
+      "twist": "",
+      "deeperQuestion": "在還沒說好關係之前，你希望彼此怎樣談跟其他人的約會？"
+    }
+  },
+  {
+    "id": "ponder-crush-026",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "I thought you wanted advice",
+    "scenario": "You share a disappointment at work. They carefully suggest three ways to improve things. The advice makes sense, but you had wanted someone to acknowledge a hard day.",
+    "question": "How would you tell them what you need in that moment?",
+    "twist": "",
+    "deeperQuestion": "If your advice missed the mark, how would you want them to respond?",
+    "zh": {
+      "title": "我以為你想聽意見",
+      "scenario": "你分享一件工作上的失落，對方很認真地提出三個改善方法。那些方法有道理，但你原本只想有人說一句「今天辛苦了」。",
+      "question": "你會怎樣告訴他這一刻想要甚麼？",
+      "twist": "",
+      "deeperQuestion": "如果是你給建議卻沒幫上忙，你希望對方怎樣回應你？"
+    }
+  },
+  {
+    "id": "ponder-crush-027",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Where a joke stops",
+    "scenario": "They joke about a small habit of yours and you laugh too. At home you realise it bothered you a little. They message that they enjoyed the day.",
+    "question": "Would you mention it now, next time, or first work out what bothered you?",
+    "twist": "",
+    "deeperQuestion": "If they said they had not realised it bothered you, what next step would reassure you?",
+    "zh": {
+      "title": "一句玩笑停在哪裡",
+      "scenario": "對方用你一個小習慣開玩笑，你當時也笑了。回家後才發現自己有點介意，而對方傳訊息說今天玩得很開心。",
+      "question": "你會現在說、下次見面提，還是先想清楚自己介意甚麼？",
+      "twist": "",
+      "deeperQuestion": "如果他說「我不知道你會介意」，接下來怎樣做會讓你放心？"
+    }
+  },
+  {
+    "id": "ponder-crush-028",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A favour with no debt",
+    "scenario": "You are moving and they spend a whole day helping, bringing dinner too. They say no repayment is needed. You are grateful and aware you have only recently met.",
+    "question": "How would you express thanks? Does receiving a lot of care bring you closer or make you need time?",
+    "twist": "",
+    "deeperQuestion": "If romantic feelings did not develop, would that favour make it harder to say so?",
+    "zh": {
+      "title": "一個不用還的人情",
+      "scenario": "你忙著搬屋，對方花了一整天幫忙，還帶來晚餐。他說不用回報，你很感激，也想起你們才認識不久。",
+      "question": "你會怎樣表達感謝？接受很多照顧會讓你更親近，還是需要一點時間？",
+      "twist": "",
+      "deeperQuestion": "如果你後來發現沒有戀愛的感覺，這份幫忙會令你更難開口嗎？"
+    }
+  },
+  {
+    "id": "ponder-crush-029",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A month when you are both busy",
+    "scenario": "You will both be busy for a month, making full dates difficult. You could meet briefly when possible or wait for longer time together and keep in touch by message.",
+    "question": "Which arrangement would you prefer? What would make you feel the connection was still developing?",
+    "twist": "",
+    "deeperQuestion": "If they needed a different frequency of meetings, what would you be willing to try first?",
+    "zh": {
+      "title": "兩個人都很忙的月份",
+      "scenario": "接下來一個月你們都很忙，完整約會很難安排。可以偶爾見半小時，也可以等忙完再好好相處，期間靠訊息聯絡。",
+      "question": "你比較希望哪種安排？怎樣的相處會讓你覺得這段認識仍在前進？",
+      "twist": "",
+      "deeperQuestion": "如果對方需要的見面次數跟你不同，你願意先試甚麼方法？"
+    }
+  },
+  {
+    "id": "ponder-crush-030",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Two events you both want",
+    "scenario": "You have plans for Saturday, then each receive a rare invitation: a show you love and a friend's exhibition opening they want to attend. The events start together and each allows a guest.",
+    "question": "Would you go separately, accompany one person, or make another plan? What matters most about your original arrangement?",
+    "twist": "",
+    "deeperQuestion": "If you went separately, how would you show you still looked forward to seeing them again?",
+    "zh": {
+      "title": "一場各自都想去的活動",
+      "scenario": "你們約好星期六見面，後來各自收到很難得的邀請：你想去演出，對方想去朋友的作品開幕。兩個活動同時開始，也都可以帶一人。",
+      "question": "你會各自去、陪其中一人，還是想其他安排？你最看重原本約好的哪一部分？",
+      "twist": "",
+      "deeperQuestion": "如果這次各自去，你想怎樣讓對方知道你仍期待下次見面？"
+    }
+  },
+  {
+    "id": "ponder-crush-031",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Hearing about an ex",
+    "scenario": "They mention a previous relationship, explaining some mismatches and acknowledging their own mistakes. Then they ask whether you would like to hear more.",
+    "question": "What would you want to know, and what could wait?",
+    "twist": "",
+    "deeperQuestion": "Would you rather know what happened or how they would handle the same situation today?",
+    "zh": {
+      "title": "聽見他怎樣說前任",
+      "scenario": "聊天時，對方提起上一段關係。他說有些地方不適合，也承認自己有做得不好的部分，然後問你想不想聽更多。",
+      "question": "你想了解哪些部分，哪些可以暫時不談？",
+      "twist": "",
+      "deeperQuestion": "你更想知道過去發生了甚麼，還是他現在會怎樣處理同樣的事？"
+    }
+  },
+  {
+    "id": "ponder-crush-032",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A risk you pay for yourself",
+    "scenario": "They want to fund a small business from their savings, with six months of living costs set aside and no money needed from you. You admire their enthusiasm but would not take that much risk yourself.",
+    "question": "How would you discuss the plan? Which differences attract you, and which make you hesitate?",
+    "twist": "",
+    "deeperQuestion": "If you later shared living costs, what would you want agreed beforehand?",
+    "zh": {
+      "title": "一份自己負擔的冒險",
+      "scenario": "對方想用自己的存款做一個小生意，已留好半年生活費，不需要你出錢。你欣賞他的熱情，也覺得風險比自己願意接受的大。",
+      "question": "你會怎樣跟他聊這個計劃？哪些差異對你是吸引，哪些會令你猶豫？",
+      "twist": "",
+      "deeperQuestion": "如果將來需要共同負擔生活費，你希望先談好甚麼？"
+    }
+  },
+  {
+    "id": "ponder-crush-033",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Ten minutes after a disagreement",
+    "scenario": "You have your first disagreement. There is no shouting, but both feel unhappy. One wants to talk immediately; the other wants a ten-minute walk before returning to it.",
+    "question": "Which person are you more like? How would you arrange those ten minutes?",
+    "twist": "",
+    "deeperQuestion": "What agreement would make talking later feel reliable to you?",
+    "zh": {
+      "title": "爭執後的十分鐘",
+      "scenario": "你們第一次有點爭執，沒有大吵，卻都不太開心。一人想立即說清楚，另一人想走一圈，十分鐘後再回來談。",
+      "question": "你比較像哪一個人？你會怎樣安排這十分鐘？",
+      "twist": "",
+      "deeperQuestion": "甚麼樣的約定，會讓「晚點談」對你聽起來可靠？"
+    }
+  },
+  {
+    "id": "ponder-crush-034",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "People think you are together",
+    "scenario": "Mutual friends notice your frequent outings and ask whether you are dating. You have not discussed it. You look at each other and neither answers immediately.",
+    "question": "How would you want to respond in that moment? Would you bring it up privately afterwards?",
+    "twist": "",
+    "deeperQuestion": "What would you need before wanting a clear name for the relationship?",
+    "zh": {
+      "title": "別人以為你們已經一起",
+      "scenario": "共同朋友看見你們經常單獨出門，笑著問是不是拍拖了。你們還沒談過，當下對看了一眼，誰也沒有立即回答。",
+      "question": "你希望當下怎樣回應？之後你想主動聊這件事嗎？",
+      "twist": "",
+      "deeperQuestion": "你需要甚麼，才會想替一段關係取一個明確的名字？"
+    }
+  },
+  {
+    "id": "ponder-crush-035",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "They answered for you",
+    "scenario": "A friend asks where you want to travel, and the person you are seeing answers for you. It is a place you once mentioned, though your preference has changed.",
+    "question": "Would you add your answer there or mention it later? What kind of being remembered feels good to you?",
+    "twist": "",
+    "deeperQuestion": "When you think you know someone well, what helps you remember to ask anyway?",
+    "zh": {
+      "title": "他替你答了那個問題",
+      "scenario": "朋友問你想去哪裡旅行，對方很自然地替你答了一個地方。那是你曾提過想去的，但最近你的想法已改變。",
+      "question": "你會當場補充，還是之後再跟他說？你喜歡被記住到甚麼程度？",
+      "twist": "",
+      "deeperQuestion": "如果你也以為很了解對方，怎樣提醒自己仍然可以問一問？"
+    }
+  },
+  {
+    "id": "ponder-crush-036",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Two versions of an ideal home",
+    "scenario": "Browsing a furniture shop, you each choose a table for an imagined home. One picks a large table for friends; the other a small one by a window, happy with two or three people.",
+    "question": "Which would you choose? How many people and how much sound fill your imagined home?",
+    "twist": "",
+    "deeperQuestion": "If you lived with someone, when would you want guests discussed in advance?",
+    "zh": {
+      "title": "兩個版本的理想家",
+      "scenario": "你們逛家具店，各自選一張想像中的餐桌。一人選可坐很多朋友的大桌，另一人選靠窗的小桌，覺得兩三個人已很舒服。",
+      "question": "你會選哪張？你想像的家，平常有多少人和聲音？",
+      "twist": "",
+      "deeperQuestion": "如果一起住，哪些時候你會希望先問過才邀人來？"
+    }
+  },
+  {
+    "id": "ponder-crush-037",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Strong feelings and the question of children",
+    "scenario": "Talking about the future, one of you hopes to have children while the other is uncertain and may not want them. There is no immediate decision, but the connection is becoming meaningful.",
+    "question": "What reasons would you want to understand? Is this something to discuss now or explore gradually?",
+    "twist": "",
+    "deeperQuestion": "If your answers still differed years later, what would you hope you had made clear now?",
+    "zh": {
+      "title": "很喜歡，但未必想做父母",
+      "scenario": "你們聊到未來，發現一人希望有孩子，另一人還沒確定，也可能不想。現在沒有急著決定，但你們都開始認真看待這段認識。",
+      "question": "你想先了解對方哪些原因？這件事對你是現在要聊，還是可以慢慢認識？",
+      "twist": "",
+      "deeperQuestion": "如果幾年後答案仍不同，你希望現在的彼此有說清楚甚麼？"
+    }
+  },
+  {
+    "id": "ponder-crush-038",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A celebration new to you",
+    "scenario": "They invite you to a family or faith celebration that matters to them. You are curious about its unfamiliar rituals but unsure about joining every part.",
+    "question": "What would you ask first? How could you join comfortably and understand them better?",
+    "twist": "",
+    "deeperQuestion": "Would joining the meal and conversation feel enough to them? How would you ask?",
+    "zh": {
+      "title": "一個原本不屬於你的節日",
+      "scenario": "對方邀你參加一個對他很重要的家庭或信仰節日。你不熟悉其中的儀式，很想了解，也有些部分不確定自己是否願意參與。",
+      "question": "你會先問甚麼？你希望怎樣參加才自在，也能了解對方？",
+      "twist": "",
+      "deeperQuestion": "如果你只參與吃飯和聊天，對方會覺得足夠嗎？你會怎樣問？"
+    }
+  },
+  {
+    "id": "ponder-crush-039",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "A message read differently",
+    "scenario": "You send what feels like a casual reply, but they read it as not wanting to meet again. You later realise the tone was misunderstood and both feel awkward.",
+    "question": "Would you call, meet, or clear it up through messages?",
+    "twist": "",
+    "deeperQuestion": "Next time a message feels unclear, what could you ask each other before assuming?",
+    "zh": {
+      "title": "被誤會的一句短訊",
+      "scenario": "你傳了一句自己覺得輕鬆的回覆，對方卻以為你不想再見。後來你們發現只是語氣被看錯，兩人都有點尷尬。",
+      "question": "你會想打電話、見面聊，還是用文字慢慢說清楚？",
+      "twist": "",
+      "deeperQuestion": "下次不確定對方的意思時，你希望彼此用哪一句話先確認？"
+    }
+  },
+  {
+    "id": "ponder-crush-040",
+    "category": "Crush",
+    "emoji": "♡",
+    "title": "Leaving an answer open",
+    "scenario": "After a long conversation, some views feel close and others very different. They ask which answer surprised you most. There is one of your own you still want to think about.",
+    "question": "Which question would you return to together? What new curiosity do you have about them?",
+    "twist": "",
+    "deeperQuestion": "If they changed their answer next time, would you want to hear what changed their mind?",
+    "zh": {
+      "title": "留一個未決定的答案",
+      "scenario": "今晚你們聊了很多，發現有些想法很接近，有些完全不同。對方問你最意外的是哪一題，而你有一個答案還想再想想。",
+      "question": "你想帶走哪個問題，之後再一起聊？你對對方多了一個甚麼好奇？",
+      "twist": "",
+      "deeperQuestion": "如果對方下次改了答案，你會想知道是甚麼令他改變嗎？"
+    }
   }
 ];

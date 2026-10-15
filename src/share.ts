@@ -21,8 +21,8 @@ export function updateQuestionUrl(id?: string) {
   window.history.replaceState(null, '', url);
 }
 
-const palettes = {Couple:'#f1dce6', Family:'#f6e8b4', Party:'#dbe9ea', Solo:'#e4e8d7'};
-const names = {Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
+const palettes = {Crush:'#eee0ef', Couple:'#f1dce6', Family:'#f6e8b4', Party:'#dbe9ea', Solo:'#e4e8d7'};
+const names = {Crush:'心動之間', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
 const sans = 'Arial, "PingFang TC", "Microsoft JhengHei", sans-serif';
 const serif = 'Georgia, "Songti TC", serif';
 
