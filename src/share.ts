@@ -21,7 +21,7 @@ export function updateQuestionUrl(id?: string) {
   window.history.replaceState(null, '', url);
 }
 
-const palettes = {Crush:'#eee0ef', Couple:'#f1dce6', Family:'#f6e8b4', Party:'#dbe9ea', Solo:'#e4e8d7'};
+const palettes = {Crush:'#eee0ef', Couple:'#f6e0e8', Family:'#f7eadc', Party:'#e9e2f4', Solo:'#e4ece5'};
 const names = {Crush:'心動之間', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
 const sans = 'Arial, "PingFang TC", "Microsoft JhengHei", sans-serif';
 const serif = 'Georgia, "Songti TC", serif';
@@ -68,25 +68,29 @@ export async function makeShareImage(card: Question, language: 'zh' | 'en'): Pro
   const bottom = questionY + question.length * 68 + 76;
   canvas.width = 1080;
   canvas.height = Math.max(1350, bottom + 270);
-  ctx.fillStyle = '#fff9e9'; ctx.fillRect(0, 0, 1080, canvas.height);
+  ctx.fillStyle = '#fff8fb'; ctx.fillRect(0, 0, 1080, canvas.height);
   ctx.fillStyle = palettes[card.category];
-  ctx.beginPath(); ctx.roundRect(48, 188, 984, canvas.height - 390, 36); ctx.fill();
-  ctx.fillStyle = '#54243d'; ctx.textBaseline = 'top';
+  ctx.beginPath(); ctx.roundRect(48, 188, 984, canvas.height - 390, 48); ctx.fill();
+  const pearl = ctx.createLinearGradient(48, 188, 1032, canvas.height - 202);
+  pearl.addColorStop(0, '#ffffffb3'); pearl.addColorStop(.55, '#ffffff26'); pearl.addColorStop(1, '#ffffff66');
+  ctx.fillStyle = pearl; ctx.fill();
+  ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 3; ctx.stroke();
+  ctx.fillStyle = '#573449'; ctx.textBaseline = 'top';
   ctx.font = `900 48px ${sans}`; ctx.fillText('PONDER', 64, 64);
   ctx.font = `24px ${sans}`; ctx.fillText('MAKE REAL CONNECTIONS', 610, 79);
-  ctx.strokeStyle = '#54243d33'; ctx.lineWidth = 2;
+  ctx.strokeStyle = '#57344933'; ctx.lineWidth = 2;
   ctx.beginPath(); ctx.moveTo(64, 145); ctx.lineTo(1016, 145); ctx.stroke();
   ctx.font = `24px ${sans}`; ctx.fillText(`${names[card.category]} / ${card.category.toUpperCase()}`, 128, 244);
   ctx.textAlign = 'right'; ctx.fillText('換個角度 · A NEW PERSPECTIVE', 952, 244); ctx.textAlign = 'left';
   ctx.font = `bold 48px ${sans}`; title.forEach((line,i) => ctx.fillText(line, 128, titleY + i*66));
-  ctx.fillStyle = '#67515b'; ctx.font = `34px ${sans}`;
+  ctx.fillStyle = '#675364'; ctx.font = `34px ${sans}`;
   scenario.forEach((line,i) => ctx.fillText(line, 128, scenarioY + i*55));
-  ctx.strokeStyle = '#54243d33'; ctx.beginPath(); ctx.moveTo(128, questionY-38); ctx.lineTo(952, questionY-38); ctx.stroke();
-  ctx.fillStyle = '#54243d'; ctx.font = `46px ${serif}`;
+  ctx.strokeStyle = '#57344933'; ctx.beginPath(); ctx.moveTo(128, questionY-38); ctx.lineTo(952, questionY-38); ctx.stroke();
+  ctx.fillStyle = '#573449'; ctx.font = `46px ${serif}`;
   question.forEach((line,i) => ctx.fillText(line, 128, questionY+i*68));
   const footerY = canvas.height - 145;
   ctx.font = `bold 30px ${sans}`; ctx.fillText(language === 'zh' ? '如果是你，你會怎樣選？' : 'What would you choose?', 64, footerY);
-  ctx.font = `22px ${sans}`; ctx.fillStyle = '#826570';
+  ctx.font = `22px ${sans}`; ctx.fillStyle = '#795d72';
   ctx.fillText('Overthinking → perspective → connection', 64, footerY+53);
   ctx.textAlign = 'right'; ctx.font = `22px ${sans}`; ctx.fillText('PONDER / LET’S TALK', 1016, footerY+53);
   return new Promise((resolve,reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Image unavailable')), 'image/png'));
