@@ -218,7 +218,7 @@ export const questions: Question[] = [
     "scenario": "You each have five magical minutes in which the other fully understands you, without misreading your tone or rushing to respond. Afterwards, you still work things out together.",
     "question": "What would you use those five minutes to say?",
     "twist": "",
-    "deeperQuestion": "What would you most want your partner to understand?",
+    "deeperQuestion": "If you could say just one sentence now, what would you most want your partner to hear?",
     "zh": {
       "title": "五分鐘的心聲",
       "scenario": "你們可以各用一次魔法，讓對方完整聽懂自己五分鐘，期間不會誤會語氣，也不急著反駁。講完後，仍要一起慢慢處理事情。",
@@ -1663,7 +1663,7 @@ export const questions: Question[] = [
     "scenario": "You take turns sharing a small concern. For five minutes the listener may ask questions but give no advice; afterwards the speaker chooses whether to hear suggestions.",
     "question": "What would you share, and what would you most like to be asked?",
     "twist": "",
-    "deeperQuestion": "How could you ask in a way that shows curiosity without making your partner feel questioned?",
+    "deeperQuestion": "What kind of question would help you feel understood rather than interrogated?",
     "zh": {
       "title": "只問不建議",
       "scenario": "你們輪流講一件最近困擾自己的小事，另一人頭五分鐘只能問問題，不能給建議。時間到後，再由分享的人決定要不要聽辦法。",
