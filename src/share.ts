@@ -85,7 +85,7 @@ export async function makeShareImage(card: Question, language: 'zh' | 'en'): Pro
   ctx.fillStyle = '#54243d'; ctx.font = `46px ${serif}`;
   question.forEach((line,i) => ctx.fillText(line, 128, questionY+i*68));
   const footerY = canvas.height - 145;
-  ctx.font = `bold 30px ${sans}`; ctx.fillText(language === 'zh' ? '我想聽聽，你會怎樣想？' : 'I’d love to hear your perspective.', 64, footerY);
+  ctx.font = `bold 30px ${sans}`; ctx.fillText(language === 'zh' ? '如果是你，你會怎樣選？' : 'What would you choose?', 64, footerY);
   ctx.font = `22px ${sans}`; ctx.fillStyle = '#826570';
   ctx.fillText('Overthinking → perspective → connection', 64, footerY+53);
   ctx.textAlign = 'right'; ctx.font = `22px ${sans}`; ctx.fillText('PONDER / LET’S TALK', 1016, footerY+53);
