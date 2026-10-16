@@ -221,10 +221,10 @@ export const questions: Question[] = [
     "deeperQuestion": "If you could say just one sentence now, what would you most want your partner to hear?",
     "zh": {
       "title": "五分鐘的心聲",
-      "scenario": "你們可以各用一次魔法，讓對方完整聽懂自己五分鐘，期間不會誤會語氣，也不急著反駁。講完後，仍要一起慢慢處理事情。",
-      "question": "你最想用這五分鐘講甚麼？",
+      "scenario": "你們各有一次使用魔法的機會：在五分鐘內，對方能完全理解你想說的話，不會誤會語氣，也不急著回應。魔法結束後，你們仍需要一起處理問題。",
+      "question": "你最想用這五分鐘說甚麼？",
       "twist": "",
-      "deeperQuestion": "如果現在只講一句，你希望對方先聽見甚麼？"
+      "deeperQuestion": "如果現在只說一句，你希望對方先聽見甚麼？"
     }
   },
   {
@@ -324,7 +324,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "戀愛重播室",
       "scenario": "一間小影院可以重播你們相處過的一個下午，連當時的聲音和氣味也在。你們只能看，不能改變，也不能帶走影片。",
-      "question": "你想揀哪個下午，陪對方再看一次？",
+      "question": "你想選哪個下午，陪對方再看一次？",
       "twist": "",
       "deeperQuestion": "當時有甚麼你沒留意，現在卻想看清楚？"
     }
@@ -493,7 +493,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Who usually makes the small decisions, and do they enjoy it?",
     "zh": {
       "title": "今天不做決定",
-      "scenario": "有間餐廳替客人安排整晚，菜式、座位和飯後活動都不用選。伴侶覺得終於可以休息，你卻怕安排不合心意。",
+      "scenario": "有一家餐廳替客人安排整晚，菜式、座位和飯後活動都不用選。伴侶覺得終於可以休息，你卻怕安排不合心意。",
       "question": "你願意把哪些決定交出去？",
       "twist": "",
       "deeperQuestion": "你們平常誰負責最多小決定？那個人喜歡嗎？"
@@ -545,7 +545,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "收藏清理日",
       "scenario": "你們要清出一個櫃子。裡面有你不再用、卻很捨不得的東西，也有伴侶覺得可以丟掉的舊紀念品。",
-      "question": "你會挑哪件東西，先跟對方講它的故事？",
+      "question": "你會挑哪件東西，先跟對方分享它的故事？",
       "twist": "",
       "deeperQuestion": "知道一件物品的來歷，會改變你對保留它的看法嗎？"
     }
@@ -782,7 +782,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What needs to be agreed in advance for a surprise to feel good?",
     "zh": {
       "title": "偷偷準備的驚喜",
-      "scenario": "伴侶準備了一個驚喜，最近總是避開你講電話。你還不知道原因，開始有點不安；對方又很想保密到最後。",
+      "scenario": "伴侶準備了一個驚喜，最近總是避開你通電話。你還不知道原因，開始有點不安；對方又很想保密到最後。",
       "question": "你希望對方在不揭曉內容下，怎樣讓你放心？",
       "twist": "",
       "deeperQuestion": "你喜歡的驚喜，通常需要哪些事先說好？"
@@ -1020,7 +1020,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If their answer surprised you, how would you want to follow it up?",
     "zh": {
       "title": "最想被問的一題",
-      "scenario": "有間咖啡店讓你們自己出題給對方，不准問是非題。你可以揀一件自己很想聊、卻通常沒有機會開始的事。",
+      "scenario": "有一家咖啡店讓你們自己出題給對方，不准問是非題。你可以選擇一件自己很想聊、卻通常沒有機會開始的事。",
       "question": "你會把哪條問題放到桌上？",
       "twist": "",
       "deeperQuestion": "如果對方回答得跟你預期不同，你最想怎樣接下去？"
@@ -1054,8 +1054,8 @@ export const questions: Question[] = [
     "deeperQuestion": "What story do you think they would use to introduce you?",
     "zh": {
       "title": "寫給朋友的介紹",
-      "scenario": "你要向一位從未見過伴侶的朋友介紹對方。不能說職業、外貌或「對我很好」，只能講一件小故事。",
-      "question": "你會講哪一件事？",
+      "scenario": "你要向一位從未見過伴侶的朋友介紹對方。不能說職業、外貌或「對我很好」，只能分享一個小故事。",
+      "question": "你會分享哪一件事？",
       "twist": "",
       "deeperQuestion": "你猜伴侶會用甚麼故事介紹你？"
     }
@@ -1122,7 +1122,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Would you prefer a quick acknowledgement or a fuller reply later?",
     "zh": {
       "title": "回覆訊息的節奏",
-      "scenario": "你們去不同地方旅行三天。你喜歡隨手分享照片，伴侶喜歡晚上一次過講；沒有人故意不理對方。",
+      "scenario": "你們去不同地方旅行三天。你喜歡隨手分享照片，伴侶喜歡晚上一次說完；沒有人故意不理對方。",
       "question": "你希望先約好甚麼，避免亂猜？",
       "twist": "",
       "deeperQuestion": "收到一句簡短回覆和晚點收到完整分享，你較需要哪個？"
@@ -1394,7 +1394,7 @@ export const questions: Question[] = [
     "deeperQuestion": "How might your relationship look different from the outside?",
     "zh": {
       "title": "如果寵物會說話",
-      "scenario": "假設你們一起照顧的寵物會說話一天，而且只會講平常觀察到的小事。你們可以各問牠一條問題。",
+      "scenario": "假設你們一起照顧的寵物有一天能開口說話，而且只會分享平常觀察到的小事。你們可以各問牠一個問題。",
       "question": "你想問牠甚麼？猜牠會怎樣形容你們？",
       "twist": "",
       "deeperQuestion": "別人眼中你們的相處，跟你自己的感覺會有甚麼不同？"
@@ -1632,7 +1632,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What makes “Give me ten minutes” feel worth waiting for?",
     "zh": {
       "title": "有空聽我說嗎",
-      "scenario": "你帶著一件很想分享的事回家，伴侶正在做需要專心的工作。事情不緊急，但你怕等一下就沒了想講的興致。",
+      "scenario": "你帶著一件很想分享的事回家，伴侶正在做需要專心的工作。事情不緊急，但你怕等一下就沒了想說的興致。",
       "question": "你希望對方怎樣回應？你願意把分享留到甚麼時候？",
       "twist": "",
       "deeperQuestion": "一句「等我十分鐘」後，甚麼會讓你真的願意等？"
@@ -1666,7 +1666,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What kind of question would help you feel understood rather than interrogated?",
     "zh": {
       "title": "只問不建議",
-      "scenario": "你們輪流講一件最近困擾自己的小事，另一人頭五分鐘只能問問題，不能給建議。時間到後，再由分享的人決定要不要聽辦法。",
+      "scenario": "你們輪流分享一件最近困擾自己的小事，另一人前五分鐘只能問問題，不能給建議。時間到後，再由分享的人決定要不要聽辦法。",
       "question": "你會帶來哪件事，最希望被問甚麼？",
       "twist": "",
       "deeperQuestion": "怎樣的問題會讓你感到被了解，而不是被盤問？"
@@ -1700,7 +1700,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What about you has changed since your partner first knew you?",
     "zh": {
       "title": "還想慢慢認識你",
-      "scenario": "有間小店送你們一本空白書，封面寫著「關於你，我還不知道的事」。每月可以添一頁，不用是秘密，也不必很深刻。",
+      "scenario": "有一家小店送你們一本空白書，封面寫著「關於你，我還不知道的事」。每月可以添一頁，不用是秘密，也不必很深刻。",
       "question": "你想第一頁從哪件事開始？",
       "twist": "",
       "deeperQuestion": "有哪個現在的你，跟對方剛認識時已經不一樣？"
@@ -1751,7 +1751,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Is there something you have wanted to ask this person today but have never found the moment?",
     "zh": {
       "title": "十八歲的飯局",
-      "scenario": "有間餐廳可以讓一家人以十八歲的樣子吃一頓飯。大家保留十八歲以前的記憶，暫時不知道後來發生的事；你則可以帶著現在的自己去見他們。這晚不用改變歷史，只是認識一下當時的彼此。",
+      "scenario": "有一家餐廳可以讓一家人以十八歲的樣子吃一頓飯。大家保留十八歲以前的記憶，暫時不知道後來發生的事；你則可以帶著現在的自己去見他們。這晚不用改變歷史，只是認識一下當時的彼此。",
       "question": "你最想坐在誰旁邊？第一個想問甚麼？",
       "twist": "",
       "deeperQuestion": "現在的你，有甚麼一直想問這位家人，卻未找到機會開口？"
@@ -1975,7 +1975,7 @@ export const questions: Question[] = [
       "scenario": "今晚電視、手機和遊戲機一起放假兩小時，但家裡有紙筆、食物和普通家具。大家不用全程聊天，也可以一起動手。",
       "question": "你想發起甚麼活動？",
       "twist": "",
-      "deeperQuestion": "哪一種相處不用講很多話，你也覺得親近？"
+      "deeperQuestion": "哪一種相處不用說很多話，你也覺得親近？"
     }
   },
   {
@@ -2109,7 +2109,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "一封沒有建議的信",
       "scenario": "你可以寫信給一位較年輕的家人，分享一段自己的經歷。信裡不寫「所以你應該怎樣做」，讓對方讀完後，自己想想有甚麼感受。",
-      "question": "你想講哪段經歷？",
+      "question": "你想分享哪段經歷？",
       "twist": "",
       "deeperQuestion": "如果你是收信的人，最想知道長輩當年哪種心情？"
     }
@@ -2346,7 +2346,7 @@ export const questions: Question[] = [
     "deeperQuestion": "When do you find yourself telling family only the good news?",
     "zh": {
       "title": "回家不用報喜",
-      "scenario": "有間茶室歡迎全家來坐，規矩是今天不用交代成績或成果。可以講沒做成的事、普通的小發現，或只是坐著。",
+      "scenario": "有一家茶室歡迎全家來坐坐，唯一的規則是今天不必談成績或成果。你們可以分享尚未完成的事、日常的小發現，或只是安靜地坐著。",
       "question": "你會帶來哪個最近的小發現？",
       "twist": "",
       "deeperQuestion": "甚麼時候，你最容易只跟家人報喜？"
@@ -2448,8 +2448,8 @@ export const questions: Question[] = [
     "deeperQuestion": "How does it feel to hear that adults were once nervous or made mistakes too?",
     "zh": {
       "title": "不一樣的睡前故事",
-      "scenario": "今晚的睡前故事不讀書，由家人各講一件自己小時候闖過的小禍。不能借故事訓人，只講當時發生甚麼。",
-      "question": "你會講哪件小事？",
+      "scenario": "今晚的睡前故事不讀書，由家人各自分享一件自己小時候闖過的小禍。不能借故事訓話，只說當時發生甚麼。",
+      "question": "你會分享哪件小事？",
       "twist": "",
       "deeperQuestion": "聽到大人也曾慌張或犯錯，會讓你有甚麼感覺？"
     }
@@ -2839,7 +2839,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What detail would you ask about after hearing another version?",
     "zh": {
       "title": "一件事兩種回憶",
-      "scenario": "你們談起同一次旅行，發現每人記住的重點不同。今天不用決定哪個版本最準，只各講一個自己記得的畫面。",
+      "scenario": "你們談起同一次旅行，發現每個人記住的重點都不同。今天不必決定哪個版本最準確，只需各自分享一個記得的畫面。",
       "question": "你的畫面是甚麼？",
       "twist": "",
       "deeperQuestion": "聽到另一個版本後，你想再問哪個細節？"
@@ -2958,7 +2958,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do you think your family would choose the same parcel? Guess first, then hear their answer.",
     "zh": {
       "title": "關心的不同包裝",
-      "scenario": "有間小郵局可以把家人的關心變成一份包裹。打開時，可能收到一句貼心的話、一頓飯、一個擁抱，或一段安靜、不被打擾的時間。",
+      "scenario": "有一家小郵局可以把家人的關心變成一份包裹。打開時，可能收到一句貼心的話、一頓飯、一個擁抱，或一段安靜、不被打擾的時間。",
       "question": "今天你想收到哪種包裹？",
       "twist": "",
       "deeperQuestion": "你猜家人會選跟你一樣的包裹嗎？可以先猜，再聽他說。"
@@ -3043,7 +3043,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If you were the guide, which part of your past life would you want them to get to know?",
     "zh": {
       "title": "不熟悉的城市一日",
-      "scenario": "你可以陪一位家人去他曾住過、你卻沒去過的城市一天。交通有人安排，目的不是觀光，而是聽他邊走邊講。",
+      "scenario": "你可以陪一位家人去他曾住過、你卻沒去過的城市一天。交通有人安排，目的不是觀光，而是聽他邊走邊分享。",
       "question": "你想跟誰去，第一站想看甚麼？",
       "twist": "",
       "deeperQuestion": "如果換成你帶家人走一趟，你最想讓他認識自己哪一段以前的生活？"
@@ -3148,7 +3148,7 @@ export const questions: Question[] = [
       "scenario": "你們把每人的一個優點寫在不署名的卡上，再請本人猜哪張是自己的。不能只寫聰明、乖或努力，要附小例子。",
       "question": "你想替一位家人寫甚麼？",
       "twist": "",
-      "deeperQuestion": "如果有人寫了你從沒留意過的優點，你會想請他多講哪個細節？"
+      "deeperQuestion": "如果有人寫了你從沒留意過的優點，你會想請他多談哪個細節？"
     }
   },
   {
@@ -3213,7 +3213,7 @@ export const questions: Question[] = [
     "deeperQuestion": "What reaction is hardest for you to hold back when family shares a worry?",
     "zh": {
       "title": "一個不急著解決的晚上",
-      "scenario": "家人可以各講一件最近的小煩惱，其他人先不提供辦法。講的人可以只講一半，也可以說今天不想談。",
+      "scenario": "家人可以各自分享一件最近的小煩惱，其他人先不提供辦法。分享的人可以只說一半，也可以說今天不想談。",
       "question": "你覺得怎樣開始，大家才不會有壓力？",
       "twist": "",
       "deeperQuestion": "聽到家人有煩惱時，你最難忍住的是甚麼反應？"
@@ -3264,7 +3264,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Which relative would you like to try it with next time?",
     "zh": {
       "title": "普通晚餐的主題",
-      "scenario": "今晚晚餐有個小主題：「最近第一次」。每人只需講一件第一次遇到、學到或嘗試的事，小到一種新口味也可以。",
+      "scenario": "今晚晚餐有個小主題：「最近第一次」。每人只需分享一件第一次遇到、學到或嘗試的事，小到一種新口味也可以。",
       "question": "你會帶來哪個第一次？",
       "twist": "",
       "deeperQuestion": "你想跟哪位家人一起再試一次？"
@@ -3298,7 +3298,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Whom would you like to hear without them having to fight for a turn?",
     "zh": {
       "title": "讓我把話說完",
-      "scenario": "家裡每人都有一張「讓我講完」卡，聊天被打斷時可以放在桌上。大家先聽完，再決定要不要回應。",
+      "scenario": "家裡每人都有一張「讓我說完」卡，聊天被打斷時可以放在桌上。大家先聽完，再決定要不要回應。",
       "question": "你覺得自己會常用，還是很少用？",
       "twist": "",
       "deeperQuestion": "你想讓哪位家人有更多不用爭取的說話時間？"
@@ -3939,7 +3939,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Which do you usually need when sharing a concern?",
     "zh": {
       "title": "別急著幫我解決",
-      "scenario": "朋友講一件小煩惱，你手上剛好有一個很好的建議。但你們約定先問清楚對方想要聆聽、想法還是實際幫忙。",
+      "scenario": "朋友分享一件小煩惱，你手上剛好有一個很好的建議。但你們約定先問清楚對方想要聆聽、想法還是實際幫忙。",
       "question": "你會怎樣自然地問？",
       "twist": "",
       "deeperQuestion": "你分享煩惱時，最常需要哪一種？"
@@ -4281,7 +4281,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do you choose music to share yourself or suit the group mood?",
     "zh": {
       "title": "一張共同歌單",
-      "scenario": "你們要為一趟兩小時車程做歌單，每人先放兩首。別人不熟悉也要聽一小段，再由推薦的人講一句原因。",
+      "scenario": "你們要為一趟兩小時車程做歌單，每人先放兩首。別人不熟悉也要聽一小段，再由推薦的人說一句原因。",
       "question": "你會放哪首開場？",
       "twist": "",
       "deeperQuestion": "你選歌時比較想分享自己，還是照顧全場氣氛？"
@@ -4857,7 +4857,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does your character's choice resemble your own travel style?",
     "zh": {
       "title": "共同故事的轉彎",
-      "scenario": "各組講一個朋友出遊的小故事，每人加一句。走到岔路時，下一個人要選角色繼續探索還是回熟悉的地方。",
+      "scenario": "各組分享一個朋友出遊的小故事，每人加一句。走到岔路時，下一個人要選角色繼續探索還是回熟悉的地方。",
       "question": "輪到你，你會讓故事怎樣走？",
       "twist": "",
       "deeperQuestion": "你替角色做的選擇，跟自己旅行時像嗎？"
@@ -5269,7 +5269,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "不用介紹職業",
       "scenario": "你到一個小聚會，大家約好介紹自己時不提工作、學歷或收入。你有一分鐘，讓別人知道現在的你是怎樣的人。",
-      "question": "你會先講甚麼？",
+      "question": "你會先說甚麼？",
       "twist": "",
       "deeperQuestion": "有哪個你很在意的部分，平常很少放進自我介紹？"
     }
@@ -5455,7 +5455,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Did you stop from dislike or because the circumstances were wrong then?",
     "zh": {
       "title": "再試一次的小店",
-      "scenario": "街角有間小店，可以替你安排一次以前放棄過的體驗。老師會陪你重新開始，費用也不用擔心，但不保證這次一定做得好。",
+      "scenario": "街角有一家小店，可以替你安排一次以前放棄過的體驗。老師會陪你重新開始，費用也不用擔心，但不保證這次一定做得好。",
       "question": "你想再試哪件事？這次想用甚麼不同的方法？",
       "twist": "",
       "deeperQuestion": "上次離開時，是覺得不喜歡，還是當時的情況不適合？"
@@ -5489,7 +5489,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Do you most lack time, choices or room not to explain yourself?",
     "zh": {
       "title": "自由，先選哪一種？",
-      "scenario": "有間小店送你一張一個月有效的自由券。可以選每天自由安排時間、到一個想試住的地方生活，或做日常決定時不用向別人交代。工作和家務仍會妥善完成，不用擔心給人添麻煩。",
+      "scenario": "有一家小店送你一張一個月有效的自由券。可以選每天自由安排時間、到一個想試住的地方生活，或做日常決定時不用向別人交代。工作和家務仍會妥善完成，不用擔心給人添麻煩。",
       "question": "你最想換哪一種自由？得到之後，第一件事會做甚麼？",
       "deeperQuestion": "你現在最缺的，是時間、選擇，還是不必交代的空間？",
       "twist": ""
@@ -6288,8 +6288,8 @@ export const questions: Question[] = [
     "deeperQuestion": "What feeling do you usually make sound smaller than it is?",
     "zh": {
       "title": "有人願意聽完整版",
-      "scenario": "你有一小時，可以把一件常被你用「沒甚麼」帶過的事完整講出來。聽的人不趕時間，也不會立刻評價。",
-      "question": "你會講哪件事？",
+      "scenario": "你有一小時，可以把一件常被你用「沒甚麼」帶過的事完整說出來。聽的人不趕時間，也不會立刻評價。",
+      "question": "你會分享哪件事？",
       "twist": "",
       "deeperQuestion": "你平常把哪個感受說得比實際小？"
     }
@@ -6713,7 +6713,7 @@ export const questions: Question[] = [
     "deeperQuestion": "Does it still help you, or has it simply never changed?",
     "zh": {
       "title": "把習慣借出去",
-      "scenario": "有人想借用你的一個日常習慣一星期，看看生活會有甚麼不同。你要連它的方便和麻煩一起介紹，不能只講好處。",
+      "scenario": "有人想借用你的一個日常習慣一星期，看看生活會有甚麼不同。你要連它的方便和麻煩一起介紹，不能只說好處。",
       "question": "你會借出哪個習慣？",
       "twist": "",
       "deeperQuestion": "這個習慣現在仍在幫你，還是只是一直沒換過？"
@@ -9561,7 +9561,7 @@ export const questions: Question[] = [
     "twist": "",
     "zh": {
       "title": "沒有姓氏的家譜",
-      "scenario": "你們要做一本新的家庭紀念冊，除了親屬，也可以放進多年來像家人一樣的人。頁數只夠每人介紹一位，不能只寫姓名，要講一件真正相處過的小事。",
+      "scenario": "你們要做一本新的家庭紀念冊，除了親屬，也可以放進多年來像家人一樣的人。頁數只夠每人介紹一位，不能只寫姓名，要分享一件真正相處過的小事。",
       "question": "你會介紹誰？你覺得一個人怎樣慢慢成為「自己人」？",
       "deeperQuestion": "如果那個人跟其他家人並不熟，你想安排怎樣的一次見面？",
       "twist": ""
@@ -10548,7 +10548,7 @@ export const questions: Question[] = [
     "category": "Party",
     "zh": {
       "title": "好玩的玩笑，誰決定？",
-      "scenario": "聚會裡有人講了一個關於朋友的笑話，大部分人都笑了，被講的人也笑了一下，之後卻變安靜。你不確定他介不介意，也怕當眾問會令他更尷尬。",
+      "scenario": "聚會中，有人拿一位朋友開玩笑。大部分人都笑了，那位朋友也笑了一下，之後卻變得安靜。你不確定他是否介意，也擔心當眾詢問會讓他更尷尬。",
       "question": "先兩人一組聊：你會當下轉話題、出聲提醒、私下問，還是先觀察？",
       "deeperQuestion": "如果你就是被開玩笑的人，你最希望旁邊的人做甚麼？",
       "twist": ""
@@ -11865,7 +11865,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "晚餐可以多坐一個人",
       "scenario": "你們有一頓免費晚餐，可以多邀一人：一位能解答大家共同疑問的專家、一位多年沒見的老朋友，或一位帶著有趣人生故事的陌生人。三人都樂意來。",
-      "question": "每組選一人，並準備第一條問題。你們最想得到答案、重逢，還是新鮮感？",
+      "question": "每組選一人，並準備第一個問題。你們最想得到答案、重逢，還是新鮮感？",
       "deeperQuestion": "如果這頓飯不能再約第二次，你們會更難選，還是更清楚想見誰？",
       "twist": ""
     },
@@ -12227,7 +12227,7 @@ export const questions: Question[] = [
       "title": "可以重播但不能保存的笑聲",
       "scenario": "你們可以重聽一次朋友之間笑得最開心的五分鐘，連當時忘記的小細節也聽得到。大家先各自提名一段回憶，再一起選一段播放；只能聽一次，不能錄下來。",
       "question": "先各自想一段，再看看有沒有相同答案。你最想重聽甚麼？",
-      "deeperQuestion": "如果大家選的回憶都不同，你最想聽誰多講一點？",
+      "deeperQuestion": "如果大家選的回憶都不同，你最想聽誰多說一點？",
       "twist": ""
     },
     "id": "ponder-v5-party-091",
@@ -12396,8 +12396,8 @@ export const questions: Question[] = [
     "twist": "",
     "zh": {
       "title": "十年後還想再玩的一晚",
-      "scenario": "今晚的聚會可以在十年後重辦一次，地點、食物和遊戲都能照舊，但每個人已經過了不同的生活。你們可以留一條問題，到時才一起回答。",
-      "question": "各組留下一條問題。你最想知道大家改變了甚麼，還是仍然珍惜甚麼？",
+      "scenario": "今晚的聚會可以在十年後重辦一次，地點、食物和遊戲都能照舊，但每個人已經過了不同的生活。你們可以留一個問題，到時才一起回答。",
+      "question": "各組留下一個問題。你最想知道大家改變了甚麼，還是仍然珍惜甚麼？",
       "deeperQuestion": "從現在開始，你們想養成哪個小習慣，讓十年後真的有機會再聚？",
       "twist": ""
     },
@@ -14234,7 +14234,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If something fun happened to them tomorrow and they invited you along, would you change your plans?",
     "zh": {
       "title": "明天的早餐店",
-      "scenario": "有間早餐店，吃甚麼會決定你明天怎樣過。選熟悉的早餐，就會過平穩的一天；選店主特製，明天就會遇上一件意想不到的事。你們可以各自選一份。",
+      "scenario": "有一家早餐店，吃甚麼會決定你明天怎樣過。選熟悉的早餐，就會過平穩的一天；選店主特製，明天就會遇上一件意想不到的事。你們可以各自選一份。",
       "question": "你會點哪份？你想像中，那件意料之外的事最好是甚麼？",
       "twist": "",
       "deeperQuestion": "如果對方明天遇到一件有趣的事，邀你臨時加入，你會改變原本的安排嗎？"
@@ -14319,7 +14319,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If you could take one thing from the film home afterwards, what would it be?",
     "zh": {
       "title": "借你看一個下午",
-      "scenario": "有間小戲院可以播放你童年某個普通下午。沒有大事發生，可能只是放學、吃飯或在家玩；你可以帶身邊這個人坐進去看。",
+      "scenario": "有一家小戲院可以播放你童年某個普通下午。沒有大事發生，可能只是放學、吃飯或在家玩；你可以帶身邊這個人坐進去看。",
       "question": "你會選哪個下午？畫面裡有甚麼小細節，你會特別指給他看？",
       "twist": "",
       "deeperQuestion": "散場後，如果能帶走畫面裡的一件東西，你會拿甚麼？"
@@ -14439,7 +14439,7 @@ export const questions: Question[] = [
     "zh": {
       "title": "口袋博物館",
       "scenario": "你們各獲得一個小展櫃，可以展出三件別人看來不值錢、你卻捨不得丟的東西。今晚博物館只開給彼此參觀，每件展品都由主人介紹。",
-      "question": "你的第一件展品是甚麼？介紹它時，你會講哪段回憶？",
+      "question": "你的第一件展品是甚麼？介紹它時，你會分享哪段回憶？",
       "twist": "",
       "deeperQuestion": "如果對方想送你一件新展品，你希望它跟舊回憶有關，還是代表新的開始？"
     }
@@ -14591,7 +14591,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If you could try a place for one month, which of their choices would you visit?",
     "zh": {
       "title": "會移動的家",
-      "scenario": "有間小屋每年可以搬到任何地方，屋內的東西全部跟著走。你們各自標好三個想停留的地方，攤開地圖後，發現有一人畫的地方全都很近，另一人跨了幾個國家。",
+      "scenario": "有一間小屋每年可以搬到任何地方，屋內的東西都會跟著移動。你們各自標出三個想停留的地方，攤開地圖後，發現一人選的地方都很近，另一人卻跨了幾個國家。",
       "question": "你會選哪三個地方？除了屋裡的東西，每次搬家你最捨不得離開甚麼？",
       "twist": "",
       "deeperQuestion": "如果只能先試住一個月，你最願意去對方選的哪一站？"
@@ -14727,7 +14727,7 @@ export const questions: Question[] = [
     "deeperQuestion": "If your old self made a choice you would not make now, what note would you add?",
     "zh": {
       "title": "舊故事的新一頁",
-      "scenario": "有間圖書館把每個人的過去寫成一本本故事，有些溫暖，有些結局不太好。你可以挑自己的一本，讓身邊的人讀一頁；也可以只讓他看你最近正在寫的新故事。",
+      "scenario": "有一座圖書館把每個人的過去寫成一本本故事，有些溫暖，有些結局不太好。你可以挑一本自己的故事，讓身邊的人讀一頁；也可以只讓他看你最近開始寫的新故事。",
       "question": "你會給他看哪一頁？希望他讀完後問你甚麼？",
       "twist": "",
       "deeperQuestion": "如果舊故事中的你做了現在不會做的選擇，你會在旁邊加甚麼註解？"

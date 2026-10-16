@@ -32,30 +32,30 @@ export function ShareCard({card}: {card: Question}) {
     return () => { cancelled = true; if (url) URL.revokeObjectURL(url); };
   }, [open, card, language]);
   async function copyLink() {
-    try { await navigator.clipboard.writeText(link); setMessage('連結已複製。傳畀朋友，就可以一齊傾呢題。 Link copied. Send it to a friend to start talking.'); }
+    try { await navigator.clipboard.writeText(link); setMessage('連結已複製。傳給朋友，就能一起聊聊這一題。 Link copied. Send it to a friend to start talking.'); }
     catch { setMessage('請選取下方網址，再複製分享。 Select and copy the link below.'); }
   }
   async function share() {
     setMessage(''); setSharing(true);
     try {
-      const text = language === 'zh' ? `我想聽聽你嘅想法：${card.zh.title}\n${card.zh.question}` : `What would you choose? ${card.title}\n${card.question}`;
+      const text = language === 'zh' ? `我想聽聽你的想法：${card.zh.title}\n${card.zh.question}` : `What would you choose? ${card.title}\n${card.question}`;
       const data: ShareData = {title:`Ponder · ${card.zh.title}`, text, url:link};
       if (image && navigator.canShare?.({files:[image.file]})) data.files = [image.file];
       if (typeof navigator.share === 'function') await navigator.share(data);
       else await copyLink();
     } catch (error) {
-      if (!(error instanceof DOMException && error.name === 'AbortError')) setMessage('未能開啟分享選單；可以儲存圖片，再複製連結傳畀朋友。 Save the image and copy the link instead.');
+      if (!(error instanceof DOMException && error.name === 'AbortError')) setMessage('未能開啟分享選單；可以儲存圖片，再複製連結傳給朋友。 Save the image and copy the link instead.');
     } finally { setSharing(false); }
   }
   return <>
-    <button ref={trigger} className="share-trigger" onClick={()=>setOpen(true)}><span aria-hidden="true">↗</span><span>分享畀朋友 <span lang="en">Share with friends</span></span><span aria-hidden="true">♡</span></button>
+    <button ref={trigger} className="share-trigger" onClick={()=>setOpen(true)}><span aria-hidden="true">↗</span><span>分享給朋友 <span lang="en">Share with friends</span></span><span aria-hidden="true">♡</span></button>
     {open && <dialog ref={dialog} className="share-dialog" aria-labelledby="share-title" onCancel={event=>{event.preventDefault();setOpen(false);}} onClick={event=>{if(event.target===event.currentTarget)setOpen(false);}}>
-      <div className="share-panel"><div className="share-top"><div><p className="eyebrow">A THOUGHT WORTH SHARING</p><h2 id="share-title">這一題，想聽你說。</h2><p>傳畀一個你想更了解嘅人。<span lang="en" className="inline-en">Send this to someone you want to know better.</span></p></div><button className="close-share" onClick={()=>setOpen(false)} aria-label="關閉分享 / Close share">×</button></div>
-      <div className="share-languages" role="group" aria-label="分享圖片語言 / Image language"><button aria-pressed={language==='zh'} onClick={()=>setLanguage('zh')}>繁體中文</button><button aria-pressed={language==='en'} onClick={()=>setLanguage('en')}>English</button></div>
-      <div className="share-preview">{image ? <img src={image.url} alt={`Ponder 分享卡：${language==='zh' ? card.zh.title : card.title}。${language==='zh' ? card.zh.scenario : card.scenario} ${language==='zh' ? card.zh.question : card.question}`}/> : <p role="status">{imageError ? '暫時未能製作圖片，你仍然可以分享題目連結。' : '正在製作分享卡……'}</p>}</div>
+      <div className="share-panel"><div className="share-top"><div><p className="eyebrow">值得分享的一個問題<span lang="en" className="inline-en">A THOUGHT WORTH SHARING</span></p><h2 id="share-title">這一題，想聽你說。<span lang="en" className="inline-en">Your thoughts on this one?</span></h2><p>傳給一位你想更了解的人。<span lang="en" className="inline-en">Send this to someone you want to know better.</span></p></div><button className="close-share" onClick={()=>setOpen(false)} aria-label="關閉分享 / Close share">×</button></div>
+      <div className="share-languages" role="group" aria-label="分享圖片語言 / Image language"><button aria-pressed={language==='zh'} onClick={()=>setLanguage('zh')}>繁體中文 / Chinese</button><button aria-pressed={language==='en'} onClick={()=>setLanguage('en')}>英文 / English</button></div>
+      <div className="share-preview">{image ? <img src={image.url} alt={`Ponder 分享卡：${language==='zh' ? card.zh.title : card.title}。${language==='zh' ? card.zh.scenario : card.scenario} ${language==='zh' ? card.zh.question : card.question}`}/> : <p role="status">{imageError ? '暫時無法製作圖片，你仍可分享題目連結。 Image unavailable. You can still share the card link.' : '正在製作分享卡…… Creating your card…'}</p>}</div>
       <button className="primary" disabled={sharing || (!image && !imageError)} onClick={share}><span>分享這一題 <span className="button-en" lang="en">Share this card</span></span><span aria-hidden="true">↗</span></button>
       <div className="share-options"><button onClick={copyLink}>複製連結 <span lang="en">Copy link</span></button>{image && <a href={image.url} download={`ponder-${card.id}-${language}.png`}>儲存圖片 <span lang="en">Save image</span></a>}</div>
-      <p className="share-hint">朋友打開連結，就會見到同一題。<span lang="en" className="inline-en">The link opens this exact card. Send it with your image.</span></p>
+      <p className="share-hint">朋友開啟連結，就會看到同一題。<span lang="en" className="inline-en">The link opens this exact card. Send it with your image.</span></p>
       <label className="share-link-label" htmlFor="share-link">題目連結 <span lang="en">Card link</span></label><input id="share-link" className="share-link" readOnly value={link} onFocus={event=>event.currentTarget.select()}/>
       <p className="share-status" role="status">{message}</p></div>
     </dialog>}

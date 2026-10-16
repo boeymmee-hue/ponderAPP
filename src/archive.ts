@@ -5880,7 +5880,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Can a shared identity preserve separate histories?",
     "zh": {
       "title": "名稱選擇",
-      "scenario": "你和伴侶婚後都不想改姓。原本看似簡單的選擇，隨著雙方家人講起姓氏背後的歷史，變得更有分量。你們要討論，建立共同的家是否需要同一個名字，以及如何保留各自的來處。",
+      "scenario": "你和伴侶婚後都不想改姓。原本看似簡單的選擇，隨著雙方家人談起姓氏背後的歷史，變得更有分量。你們要討論，建立共同的家是否需要同一個名字，以及如何保留各自的來處。",
       "question": "你會選擇什麼？",
       "twist": "這兩個家族都對自己的名字賦予了深刻的意義。",
       "deeperQuestion": "建立共同身分的同時，能否保留彼此各自的過去？"
@@ -10815,7 +10815,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "你放工後很累，伴侶卻想聊天。",
       "question": "你希望對方怎樣陪你？",
       "twist": "",
-      "deeperQuestion": "你會用哪一句話講清楚自己的需要？"
+      "deeperQuestion": "你會用哪一句話說清楚自己的需要？"
     },
     "legacy": true
   },
@@ -11083,7 +11083,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "生日想要",
       "scenario": "生日快到了，伴侶問你想要甚麼。",
-      "question": "你會直接講，還是想留點驚喜？",
+      "question": "你會直接說，還是想留點驚喜？",
       "twist": "",
       "deeperQuestion": "有甚麼慶祝方式是你不喜歡的？"
     },
@@ -11263,7 +11263,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "忘記小事",
       "scenario": "伴侶忘了你提過的小願望。",
-      "question": "你會再講一次，還是有點失望？",
+      "question": "你會再說一次，還是有點失望？",
       "twist": "",
       "deeperQuestion": "有甚麼事是你很希望對方記得的？"
     },
@@ -11622,7 +11622,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "What follow-up would show you they are listening?",
     "zh": {
       "title": "被打斷",
-      "scenario": "你講到一半，伴侶接過話題說自己的故事。",
+      "scenario": "你說到一半，伴侶接過話題說自己的故事。",
       "question": "你會怎樣繼續？",
       "twist": "",
       "deeperQuestion": "你想聽到對方問哪一句跟進問題？"
@@ -11805,7 +11805,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "最近三次約會都是你安排的。",
       "question": "你想怎樣請對方也參與？",
       "twist": "",
-      "deeperQuestion": "如果輪流安排，你們需要先講清楚甚麼？"
+      "deeperQuestion": "如果輪流安排，你們需要先說清楚甚麼？"
     },
     "legacy": true
   },
@@ -12091,7 +12091,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "臨時訪客",
       "scenario": "伴侶突然帶朋友回家，而你原本想休息。",
-      "question": "你會怎樣講？",
+      "question": "你會怎樣說？",
       "twist": "",
       "deeperQuestion": "家裡有訪客前，你希望提早知道哪些事？"
     },
@@ -12378,7 +12378,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "What stories would you like them to ask about before sharing?",
     "zh": {
       "title": "知道分寸",
-      "scenario": "伴侶在朋友面前講了你一件糗事。",
+      "scenario": "伴侶在朋友面前提到你一件糗事。",
       "question": "你覺得不舒服，會怎樣提醒？",
       "twist": "",
       "deeperQuestion": "哪些故事你希望先問過再分享？"
@@ -12413,11 +12413,11 @@ export const archivedQuestions: Question[] = [
     "twist": "",
     "deeperQuestion": "Which shared expense would you clarify first?",
     "zh": {
-      "title": "講錢的方式",
+      "title": "談錢的方式",
       "scenario": "你想跟伴侶談開支，但怕氣氛尷尬。",
       "question": "你會怎樣開始？",
       "twist": "",
-      "deeperQuestion": "你最想先講清楚哪一筆共同開支？"
+      "deeperQuestion": "你最想先說清楚哪一筆共同開支？"
     },
     "legacy": true
   },
@@ -13369,7 +13369,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "借用東西",
       "scenario": "你想借家人的一件物品。",
-      "question": "你會先講清楚甚麼？",
+      "question": "你會先說清楚甚麼？",
       "twist": "",
       "deeperQuestion": "甚麼東西你希望別人一定先問過？"
     },
@@ -13656,7 +13656,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Who gave you a little courage then?",
     "zh": {
       "title": "一次勇敢",
-      "scenario": "請家人講一件曾經不敢做、後來試了的事。",
+      "scenario": "請家人分享一件曾經不敢做、後來試了的事。",
       "question": "你想先分享哪件？",
       "twist": "",
       "deeperQuestion": "當時誰給了你一點勇氣？"
@@ -13855,7 +13855,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "認識新朋友",
       "scenario": "你想帶朋友回家吃飯。",
-      "question": "會先跟家人講清楚甚麼？",
+      "question": "會先跟家人說清楚甚麼？",
       "twist": "",
       "deeperQuestion": "有甚麼話題你希望飯桌上先不要問？"
     },
@@ -14034,8 +14034,8 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "What detail from someone else's story would you ask about?",
     "zh": {
       "title": "一起聽故事",
-      "scenario": "今晚每人講一件今天的小事。",
-      "question": "你想先講哪件？",
+      "scenario": "今晚每人分享一件今天的小事。",
+      "question": "你想先分享哪件？",
       "twist": "",
       "deeperQuestion": "你想追問別人的哪個細節？"
     },
@@ -14253,7 +14253,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "你有件事需要家人幫忙。",
       "question": "你最想怎樣開口？",
       "twist": "",
-      "deeperQuestion": "講清楚時間和內容，會不會更容易幫忙？"
+      "deeperQuestion": "說清楚時間和內容，會不會更容易幫忙？"
     },
     "legacy": true
   },
@@ -14451,7 +14451,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "一個冷知識",
       "scenario": "輪流分享一件你最近才知道的小事。",
-      "question": "你會講甚麼？",
+      "question": "你會說甚麼？",
       "twist": "",
       "deeperQuestion": "哪個部分讓你最意外？"
     },
@@ -14545,7 +14545,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Could you demonstrate it now?",
     "zh": {
       "title": "沒用的小本領",
-      "scenario": "輪流講一項沒甚麼用、但你很拿手的技能。",
+      "scenario": "輪流分享一項沒甚麼用、但你很拿手的技能。",
       "question": "你的答案是甚麼？",
       "twist": "",
       "deeperQuestion": "可以現場示範一下嗎？"
@@ -14602,8 +14602,8 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "What detail could your friend ask about?",
     "zh": {
       "title": "真實小故事",
-      "scenario": "你有三十秒講一件最近的趣事。",
-      "question": "你會講哪件？",
+      "scenario": "你有三十秒分享一件最近的趣事。",
+      "question": "你會分享哪件？",
       "twist": "",
       "deeperQuestion": "朋友可以再問你哪個細節？"
     },
@@ -14888,7 +14888,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "互相介紹",
       "scenario": "你要把朋友介紹給新朋友。",
-      "question": "你會先講哪個有趣優點？",
+      "question": "你會先談哪個有趣優點？",
       "twist": "",
       "deeperQuestion": "被介紹的人想補充哪一句？"
     },
@@ -15438,7 +15438,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Which could you do right now?",
     "zh": {
       "title": "三樣小幸福",
-      "scenario": "大家各講一件不用太多錢的快樂。",
+      "scenario": "大家各自分享一件不用太多錢的快樂。",
       "question": "你們會選哪三件排進週末？",
       "twist": "",
       "deeperQuestion": "哪一件現在就能做到？"
@@ -15707,7 +15707,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "大家同時選早起或晚睡。",
       "question": "哪一邊人比較多？",
       "twist": "",
-      "deeperQuestion": "各請一人講一個喜歡那段時間的理由。"
+      "deeperQuestion": "各請一人分享一個喜歡那段時間的理由。"
     },
     "groupSize": "large",
     "legacy": true
@@ -15723,7 +15723,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Which answer would you like to hear more about later?",
     "zh": {
       "title": "一句近況",
-      "scenario": "每人只用一句話講最近的小發現。",
+      "scenario": "每人只用一句話分享最近的小發現。",
       "question": "你會分享甚麼？",
       "twist": "",
       "deeperQuestion": "有哪個答案讓你想稍後再聊？"
@@ -16104,7 +16104,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "十秒介紹",
       "scenario": "跟身旁的人各用十秒介紹一項興趣。",
-      "question": "你想講甚麼？",
+      "question": "你想說甚麼？",
       "twist": "",
       "deeperQuestion": "你記得對方最想讓你知道哪一點？"
     },
@@ -16198,7 +16198,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Do the answers share any elements?",
     "zh": {
       "title": "想重來的一天",
-      "scenario": "每人只講一種想再過一次的好日子。",
+      "scenario": "每人只說一種想再過一次的好日子。",
       "question": "你會選甚麼？",
       "twist": "",
       "deeperQuestion": "大家的答案裡，有沒有共同元素？"
@@ -17017,7 +17017,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "有人願意幫你做一件事。",
       "question": "你最難放心交出去的是哪部分？",
       "twist": "",
-      "deeperQuestion": "講清楚哪個要求後，你會放心一點？"
+      "deeperQuestion": "說清楚哪個要求後，你會放心一點？"
     },
     "legacy": true
   },
@@ -17734,7 +17734,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Does it ask for action, or simply acknowledgment?",
     "zh": {
       "title": "一句真話",
-      "scenario": "如果今天只對自己講一句真話。",
+      "scenario": "如果今天只對自己說一句真話。",
       "question": "你會說甚麼？",
       "twist": "",
       "deeperQuestion": "這句話需要你做甚麼，還是只需要承認？"
@@ -18169,7 +18169,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "你得到一座夢想小島，但伴侶要五年後才能搬來。\n\n船明早出發，島上已替你留好工作和小屋。伴侶沒有叫你留下，只問了一句：「那我們平常怎樣吃晚飯？」",
       "question": "你會先去住嗎？",
       "twist": "",
-      "deeperQuestion": "如果留低就永遠失去小島呢？"
+      "deeperQuestion": "如果留下就永遠失去小島呢？"
     },
     "legacy": true
   },
@@ -18526,7 +18526,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Could their wish make you change yours?",
     "zh": {
       "title": "願望不同路",
-      "scenario": "你們各許一個願，精靈說兩個只能成真一個。\n\n精靈已經打開記錄本，說一旦講出來就不能改。你突然發現，先開口的人可能不用承受讓對方失望的那一下。",
+      "scenario": "你們各許一個願，精靈說兩個只能成真一個。\n\n精靈已經打開記錄本，說一旦說出來就不能改。你突然發現，先開口的人可能不用承受讓對方失望的那一下。",
       "question": "你先說出自己的，還是先聽對方的？",
       "twist": "",
       "deeperQuestion": "你會因為聽過對方的願望而改口嗎？"
@@ -20542,7 +20542,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "After what argument would you refuse?",
     "zh": {
       "title": "自動和好鐘",
-      "scenario": "鐘聲一響全家就和好，卻沒人解決問題。\n\n鐘一響，大家又能坐在一起，氣氛很快恢復。只有那個一直被打斷的人還記得，自己根本沒講完。",
+      "scenario": "鐘聲一響全家就和好，卻沒人解決問題。\n\n鐘一響，大家又能坐在一起，氣氛很快恢復。只有那個一直被打斷的人還記得，自己根本沒說完。",
       "question": "你會每天敲嗎？",
       "twist": "",
       "deeperQuestion": "你會在哪次爭執後拒絕敲鐘？"
@@ -21136,7 +21136,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Would you support someone leaving first?",
     "zh": {
       "title": "永遠團圓",
-      "scenario": "一年一度的聚會能延長到永遠，但每人都要放下外面的生活。\n\n菜永遠不會冷，故事也講不完，沒人要趕末班車。窗外卻還有朋友、工作和一些只屬於各自的人生。",
+      "scenario": "一年一度的聚會能延長到永遠，但每人都要放下外面的生活。\n\n菜永遠不會冷，故事也說不完，沒人要趕末班車。窗外卻還有朋友、工作和一些只屬於各自的人生。",
       "question": "你會留下嗎？",
       "twist": "",
       "deeperQuestion": "你會支持想先離開的人嗎？"
@@ -21903,7 +21903,7 @@ export const archivedQuestions: Question[] = [
     "zh": {
       "title": "笑話收費站",
       "scenario": "橋的過路費是一個能逗守衛笑的故事。\n\n守衛已笑了一整天，普通笑話都聽膩了。朋友在旁邊看著你，似乎猜到你手上有一個特別好笑的秘密。",
-      "question": "你會講自己的糗事嗎？",
+      "question": "你會分享自己的糗事嗎？",
       "twist": "",
       "deeperQuestion": "你會不會借用朋友的糗事？"
     },
@@ -22988,7 +22988,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "全場選：拿一袋金幣，或重過一個快樂下午。\n\n金幣袋是實實在在的，下午卻連一張新照片也帶不回。大家先不要解釋，同時指向自己選的那一邊。",
       "question": "你站哪邊？",
       "twist": "",
-      "deeperQuestion": "兩邊各請一人講最想換到甚麼。"
+      "deeperQuestion": "兩邊各請一人分享最想換到甚麼。"
     },
     "groupSize": "large",
     "legacy": true
@@ -23026,7 +23026,7 @@ export const archivedQuestions: Question[] = [
       "scenario": "全城投票要不要永遠春天，代價是再沒有雪。\n\n賣花的人已在慶祝，造雪人的小孩卻把手套放下了。這不是好天氣對壞天氣，而是誰最喜歡的日子會消失。",
       "question": "你投贊成嗎？",
       "twist": "",
-      "deeperQuestion": "請一位少數派講想保留甚麼。"
+      "deeperQuestion": "請一位少數派分享想保留甚麼。"
     },
     "groupSize": "large",
     "legacy": true
@@ -24530,7 +24530,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Might you overlook the sounds on your own path?",
     "zh": {
       "title": "選擇的回音",
-      "scenario": "每次選擇後，你都能聽見沒選那邊的歡笑。\n\n笑聲隔著一道牆傳來，你分不清是在慶祝，還是有人講了個爛笑話。你自己這邊的茶也剛泡好，只是還沒喝。",
+      "scenario": "每次選擇後，你都能聽見沒選那邊的歡笑。\n\n笑聲隔著一道牆傳來，你分不清是在慶祝，還是有人說了一個爛笑話。你自己這邊的茶也剛泡好，只是還沒喝。",
       "question": "你還想要這種能力嗎？",
       "twist": "",
       "deeperQuestion": "你會忘記自己這邊也有聲音嗎？"
@@ -25070,7 +25070,7 @@ export const archivedQuestions: Question[] = [
     "deeperQuestion": "Would you keep trying to explain yourself?",
     "zh": {
       "title": "不必被懂",
-      "scenario": "小島上的人不完全理解你，卻一直善待你。\n\n島民記得你的口味，也會在下雨前替你收衣服。只是你講起某個最深的想法時，他們會認真聽，卻始終不太明白。",
+      "scenario": "小島上的人不完全理解你，卻一直善待你。\n\n島民記得你的口味，也會在下雨前替你收衣服。只是你談起某個最深的想法時，他們會認真聽，卻始終不太明白。",
       "question": "你願意住下嗎？",
       "twist": "",
       "deeperQuestion": "你會繼續解釋自己嗎？"
