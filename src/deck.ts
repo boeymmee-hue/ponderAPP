@@ -8,7 +8,7 @@ function readHistory(): string[] {
   } catch { return memory; }
 }
 export function questionPool(category: Category, groupSize?: GroupSize, level?: Level): Question[] {
-  return questions.filter(q=>q.category===category && (category==='Crush' || !level || (q.level ?? 'classic')===level) && (category!=='Party' || !groupSize || q.groupSize===groupSize));
+  return questions.filter(q=>q.category===category && (category==='Crush' || category==='Girls' || !level || (q.level ?? 'classic')===level) && (category!=='Party' || !groupSize || q.groupSize===groupSize));
 }
 export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize, level?: Level): Question {
   const pool = questionPool(category,groupSize,level);

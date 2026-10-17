@@ -1,6 +1,7 @@
 import { categories, type Category, type GroupSize, type Question } from './questions';
 import approved from './approved-questions.json';
 export const moods: Record<Category, {emoji:string;name:string;en:string;description:string;detail:string;descriptionEn:string;detailEn:string}> = {
+  Girls:{emoji:'🍸',name:'閨蜜夜話',en:'Girls’ Talk',description:'今晚，聊一點平時不說的。',detail:'24 題 · 感情、職場、金錢',descriptionEn:'Tonight, say the things you usually keep to yourself.',detailEn:'24 cards · Love, careers and money'},
   Crush:{emoji:'♡',name:'心動之間',en:'Crush',description:'從一個假設，認識眼前的你。',detail:'2 人 · 好奇、相處、彼此的方向',descriptionEn:'Explore a what-if and get to know each other.',detailEn:'2 people · Curiosity, connection and life choices'},
   Couple:{emoji:'💗',name:'情侶',en:'Couples',description:'從日常的小選擇，慢慢讀懂彼此。',detail:'2 人 · 愛情、信任、一起的未來',descriptionEn:'Understand each other through small everyday choices.',detailEn:'2 people · Love, trust and a shared future'},
   Family:{emoji:'🏠',name:'家庭',en:'Family',description:'從熟悉的小事，聊到未聽過的故事。',detail:'2 人以上 · 關心、自由、公平',descriptionEn:'Start with familiar moments. Discover untold stories.',detailEn:'2+ people · Care, freedom and fairness'},

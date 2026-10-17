@@ -1,4 +1,5 @@
-export const categories = ['Couple', 'Family', 'Party', 'Solo', 'Crush'] as const;
+import { girlsQuestions } from './girls';
+export const categories = ['Couple', 'Family', 'Party', 'Solo', 'Crush', 'Girls'] as const;
 export type Category = typeof categories[number];
 export type GroupSize = 'small' | 'medium' | 'large';
 export interface CardText { title: string; scenario: string; question: string; twist: string; deeperQuestion: string; }
@@ -6,6 +7,7 @@ export type Level = 'classic' | 'deeper';
 export interface Question extends CardText { level?: Level; id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
 // 100 original + 100 deeper cards per category. Existing share IDs remain unchanged.
 export const questions: Question[] = [
+  ...girlsQuestions,
   {
     "id": "ponder-v4-couple-001",
     "category": "Couple",
