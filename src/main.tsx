@@ -7,10 +7,6 @@ import { ShareCard } from './ShareCard';
 import { questionFromUrl, updateQuestionUrl, questionUrl } from './share';
 import './style.css';
 
-function Tulip() {
-  return <svg className="tulip" viewBox="0 0 180 200" aria-hidden="true"><path d="M88 183Q93 126 88 88" fill="none" stroke="#63754c" strokeWidth="8" strokeLinecap="round"/><path d="M88 165Q37 170 32 126Q75 124 88 165M91 143Q134 145 146 108Q106 107 91 143" fill="#63754c"/><path d="M49 32Q53 17 69 42L91 16L110 42Q139 13 134 42L133 71Q133 109 91 111Q48 108 48 72Z" fill="#c35e76"/><path d="M68 44Q71 72 88 82Q110 70 113 44" fill="none" stroke="#a9425d" strokeWidth="3"/><path d="M27 54L21 42M146 78L158 73M137 21L145 10" stroke="#c49c52" strokeWidth="3" strokeLinecap="round"/></svg>;
-}
-
 function QuestionCard({card, number, onNext, singleCard}: {card:Question; number:number; onNext:()=>void; singleCard:boolean}) {
   const [follow, setFollow] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
@@ -71,7 +67,7 @@ function App() {
   }
   return <div className="app"><header className="site-header"><button className="wordmark" onClick={()=>go('home')} aria-label="Ponder 首頁 / Home">PONDER <span>🌷</span></button><span className="header-note">把想太多，變成更懂彼此。<span className="inline-en" lang="en">Turn overthinking into perspective.</span></span><a className="support-header" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer" aria-label="自願支持 Ponder / Support Ponder (opens Stripe)"><span aria-hidden="true">♡</span> 支持 Ponder <span lang="en" className="support-label-en">Support</span></a></header>
     <main>
-    {page==='home' && <section className="home-screen"><div className="intro intro-compact"><h1 ref={pageHeading} tabIndex={-1}>多想一點，靠近一點。<span lang="en" className="hero-translation">A little thought. A little closer.</span></h1><p>有些小事，總會讓人多想一點。<br/>從一個假設開始，聊聊彼此在意的事。<span lang="en" className="inline-en">Some little things give us plenty to think about.<br/>Start with a what-if. Discover what matters to each other.</span></p><div className="hero-art"><Tulip/></div></div>
+    {page==='home' && <section className="home-screen"><div className="intro liquid-intro"><h1 ref={pageHeading} tabIndex={-1} lang="en">Ponder together, Real connections in a digital world.</h1></div>
 
       <aside className="support-panel" aria-labelledby="support-heading"><div><h2 id="support-heading">喜歡這次對話？支持 Ponder 繼續成長。<span lang="en" className="inline-en">Enjoying the conversation? Help Ponder grow.</span></h2><p>Ponder 免費遊玩。你的自願支持，讓我們繼續用心整理題目。</p><p className="support-en" lang="en">Free to play. Optional support helps us keep creating thoughtful questions.</p></div><a className="support-cta" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer"><span>自願支持 <span lang="en">Support Ponder</span></span><span aria-hidden="true">↗</span></a><small>付款將於 Stripe 開啟；不付款也可使用所有題目。<span lang="en"> Opens Stripe. All questions remain free.</span></small></aside>
       <div className="pick-label"><h2>今天想和誰一起玩？<span lang="en">Who are you with?</span></h2><span>{questions.length} 題 / cards</span></div>
