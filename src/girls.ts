@@ -333,7 +333,7 @@ export const girlsQuestions: Question[] = [
     "deeperQuestion": "Would you explain what the money was for or simply say it is over budget? Why?",
     "twist": "",
     "zh": {
-      "title": "閨蜜旅行的預算",
+      "title": "老BEST 旅行的預算",
       "scenario": "朋友們想住每晚三千元的酒店，說難得一起旅行就不要計較。你負擔得起，但那筆錢原本是你存了很久的課程費。你不想被當成掃興的人。",
       "question": "你會提出便宜一點的方案，自己住別處，還是跟大家一次？",
       "deeperQuestion": "你會坦白真正原因，還是只說超出預算？為甚麼？",

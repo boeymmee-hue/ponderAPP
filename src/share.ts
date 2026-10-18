@@ -22,7 +22,7 @@ export function updateQuestionUrl(id?: string) {
 }
 
 const palettes = {Girls:'#efdbe8',Crush:'#eee0ef', Couple:'#f6e0e8', Family:'#f7eadc', Party:'#e9e2f4', Solo:'#e4ece5'};
-const names = {Girls:'閨蜜夜話',Crush:'心動之間', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
+const names = {Girls:'老BEST 夜話',Crush:'心動之間', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
 const sans = 'Arial, "PingFang TC", "Microsoft JhengHei", sans-serif';
 const serif = 'Georgia, "Songti TC", serif';
 
