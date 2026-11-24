@@ -1,12 +1,15 @@
+import { expansionQuestions } from './expansion';
+import { retiredIds } from './retired';
 import { girlsQuestions } from './girls';
 export const categories = ['Couple', 'Family', 'Party', 'Solo', 'Crush', 'Girls'] as const;
 export type Category = typeof categories[number];
 export type GroupSize = 'small' | 'medium' | 'large';
 export interface CardText { title: string; scenario: string; question: string; twist: string; deeperQuestion: string; }
+export type PartyMood = 'personality' | 'spark' | 'dilemma';
 export type Level = 'classic' | 'deeper';
-export interface Question extends CardText { level?: Level; id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
+export interface Question extends CardText { level?: Level; partyMood?: PartyMood; id: string; category: Category; emoji: string; zh: CardText; groupSize?: GroupSize; legacy?: boolean; author?: string; }
 // 100 original + 100 deeper cards per category. Existing share IDs remain unchanged.
-export const questions: Question[] = [
+const originalQuestions: Question[] = [
   ...girlsQuestions,
   {
     "id": "ponder-v4-couple-001",
@@ -14889,3 +14892,6 @@ export const questions: Question[] = [
     }
   }
 ];
+
+export const retiredQuestions: Question[] = originalQuestions.filter(q=>retiredIds.has(q.id)).map(q=>({...q,legacy:true}));
+export const questions: Question[] = [...originalQuestions.filter(q=>!retiredIds.has(q.id)),...expansionQuestions];

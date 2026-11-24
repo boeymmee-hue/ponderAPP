@@ -1,10 +1,10 @@
-import { questions, type Question } from './questions';
+import { questions, retiredQuestions, type Question } from './questions';
 import { archivedQuestions } from './archive';
 import { communityQuestions } from './catalog';
 
 export function questionFromUrl(href: string): Question | null {
   const id = new URL(href).searchParams.get('q');
-  return [...questions, ...communityQuestions, ...archivedQuestions].find(card => card.id === id) ?? null;
+  return [...questions, ...communityQuestions, ...retiredQuestions, ...archivedQuestions].find(card => card.id === id) ?? null;
 }
 export function questionUrl(id: string, href = window.location.href): string {
   const url = new URL(href);

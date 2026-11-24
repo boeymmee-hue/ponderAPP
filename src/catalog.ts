@@ -1,17 +1,17 @@
-import { categories, type Category, type GroupSize, type Question } from './questions';
+import { categories, type Category, type PartyMood, type Question } from './questions';
 import approved from './approved-questions.json';
 export const moods: Record<Category, {emoji:string;name:string;en:string;description:string;detail:string;descriptionEn:string;detailEn:string}> = {
   Girls:{emoji:'🍸',name:'老BEST 夜話',en:'BESTIE Night Talk',description:'今晚，聊一點平時不說的。',detail:'24 題 · 感情、職場、金錢',descriptionEn:'Tonight, say the things you usually keep to yourself.',detailEn:'24 cards · Love, careers and money'},
   Crush:{emoji:'♡',name:'心動之間',en:'Crush',description:'從一個假設，認識眼前的你。',detail:'2 人 · 好奇、相處、彼此的方向',descriptionEn:'Explore a what-if and get to know each other.',detailEn:'2 people · Curiosity, connection and life choices'},
   Couple:{emoji:'💗',name:'情侶',en:'Couples',description:'從日常的小選擇，慢慢讀懂彼此。',detail:'2 人 · 愛情、信任、一起的未來',descriptionEn:'Understand each other through small everyday choices.',detailEn:'2 people · Love, trust and a shared future'},
   Family:{emoji:'🏠',name:'家庭',en:'Family',description:'從熟悉的小事，聊到未聽過的故事。',detail:'2 人以上 · 關心、自由、公平',descriptionEn:'Start with familiar moments. Discover untold stories.',detailEn:'2+ people · Care, freedom and fairness'},
-  Party:{emoji:'🎉',name:'朋友聚會',en:'Friends',description:'一起想像、一起選，發現朋友的另一面。',detail:'按人數選玩法 · 不熟也能加入',descriptionEn:'Imagine, choose and discover another side of your friends.',detailEn:'Choose by group size · New friends welcome'},
+  Party:{emoji:'🎉',name:'朋友聚會',en:'Friends',description:'一起想像、一起選，發現朋友的另一面。',detail:'性格、心動與兩難 · 選擇今晚的程度',descriptionEn:'Imagine, choose and discover another side of your friends.',detailEn:'Personality, sparks and dilemmas · Choose your intensity'},
   Solo:{emoji:'🌿',name:'一人思考',en:'Solo',description:'從一個假設，看看自己如何成為現在的自己。',detail:'1 人 · 性格、家庭影響、人生意義',descriptionEn:'Explore a what-if and what makes you who you are.',detailEn:'1 person · Identity, family influences and meaning'},
 };
-export const groupSizes: {id:GroupSize;name:string;description:string;nameEn:string;descriptionEn:string}[] = [
-  {id:'small',name:'2–3 人',description:'輪流分享，慢慢了解',nameEn:'2–3 people',descriptionEn:'Take turns and get to know each other.'},
-  {id:'medium',name:'4–6 人',description:'各自選擇，一起分享理由',nameEn:'4–6 people',descriptionEn:'Make your choices, then share your reasons.'},
-  {id:'large',name:'7 人以上',description:'快速投票或分小組',nameEn:'7+ people',descriptionEn:'Take a quick vote or split into smaller groups.'},
+export const partyMoods: {id:PartyMood;name:string;en:string;description:string;descriptionEn:string}[] = [
+  {id:'personality',name:'看見性格',en:'Get to know each other',description:'從小選擇出發，看看朋友跟你哪裡不一樣。',descriptionEn:'Small choices reveal surprisingly different ways of seeing things.'},
+  {id:'spark',name:'有點刺激',en:'Turn up the spark',description:'心動、嫉妒、面子與野心，聊一點平時不說的。',descriptionEn:'Attraction, envy, pride and ambition—the things usually left unsaid.'},
+  {id:'dilemma',name:'兩難考驗',en:'Dilemmas & human nature',description:'當友情、公平和自己的利益撞在一起，你會怎樣選？',descriptionEn:'What happens when friendship, fairness and self-interest collide?'},
 ];
 export const SUPPORT_URL = 'https://buy.stripe.com/bJe4gA9Elaksbq33hc2Fa0c';
 export const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf7J6WV1a64O9N4-Arg4FwbjWrL8KAF3j-e1gpLExUR8QHlCQ/viewform';
