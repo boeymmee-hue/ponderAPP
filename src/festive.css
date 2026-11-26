@@ -1,7 +1,7 @@
 /* Shared seasonal backdrop for the game and every reading page. */
 body.festive-theme{position:relative;isolation:isolate;background:radial-gradient(ellipse at 5% 5%,#f4d9e4,transparent 50%),radial-gradient(ellipse at 95% 65%,#dcebe2,transparent 55%),linear-gradient(135deg,#faf2ec,#f5eaf1 55%,#e9f2ec);}
 body.festive-theme::before{content:"";position:fixed;inset:-180px 0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,#fff 2px,transparent 3px),radial-gradient(circle,#fff 3px,transparent 4px),radial-gradient(circle,#ffffffb8 1.5px,transparent 2.5px);background-size:97px 137px,173px 193px,61px 89px;background-position:10px 0,70px 30px,25px 60px;animation:ponder-snow 18s linear infinite;opacity:.85;}
-body.festive-theme::after{content:"";position:fixed;top:0;left:0;right:0;height:53px;z-index:20;pointer-events:none;background-image:radial-gradient(ellipse at 15px 27px,#fff3d6 0 3px,#d7a950 4px 6px,transparent 7px),radial-gradient(ellipse at 55px 35px,#ffeced 0 3px,#cb8193 4px 6px,transparent 7px),radial-gradient(ellipse at 95px 27px,#ecfff1 0 3px,#79a58c 4px 6px,transparent 7px),radial-gradient(ellipse at 15px 27px,#e8c57255 0,transparent 20px),radial-gradient(ellipse at 55px 35px,#e9a7bb55 0,transparent 20px),radial-gradient(ellipse at 95px 27px,#9dcab155 0,transparent 20px),linear-gradient(#738678,#738678);background-size:120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,100% 2px;background-position:0 0,0 0,0 0,0 0,0 0,0 0,0 17px;background-repeat:repeat-x;filter:drop-shadow(0 2px 3px #fff9);}
+body.festive-theme::after{content:"";position:fixed;top:0;left:0;right:0;height:53px;z-index:20;pointer-events:none;background-image:radial-gradient(ellipse 7px 10px at 15px 27px,#fff3d6 0 25%,#d7a950 45% 70%,transparent 80%),radial-gradient(ellipse 7px 10px at 55px 35px,#ffeced 0 25%,#cb8193 45% 70%,transparent 80%),radial-gradient(ellipse 7px 10px at 95px 27px,#ecfff1 0 25%,#79a58c 45% 70%,transparent 80%),radial-gradient(ellipse at 15px 27px,#e8c57255 0,transparent 20px),radial-gradient(ellipse at 55px 35px,#e9a7bb55 0,transparent 20px),radial-gradient(ellipse at 95px 27px,#9dcab155 0,transparent 20px),linear-gradient(#738678,#738678);background-size:120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,100% 2px;background-position:0 0,0 0,0 0,0 0,0 0,0 0,0 17px;background-repeat:repeat-x;filter:drop-shadow(0 2px 3px #fff9);}
 body.festive-theme .site-header,body.festive-theme>header{padding-top:60px;}
 .festive-app::before{display:none;}
 .festive-app .question-card{background:linear-gradient(130deg,#fffdf5f5,#fff8fcf5 55%,#edf5eff5);}
@@ -10,3 +10,6 @@ body.festive-theme .site-header,body.festive-theme>header{padding-top:60px;}
 @keyframes ponder-snow{from{transform:translateY(-90px)}to{transform:translateY(90px)}}
 @media(prefers-reduced-motion:reduce){body.festive-theme::before{animation:none;}}
 @media(forced-colors:active){body.festive-theme::before,body.festive-theme::after{display:none;}}
+
+body.festive-theme .site-header{height:140px;padding-top:40px;}
+@media(max-width:650px){body.festive-theme .site-header{height:120px;padding-top:40px;}}
