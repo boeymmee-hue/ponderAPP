@@ -1,3 +1,4 @@
+import { isQuestionAvailable } from './season';
 import { questions, type Category, type GroupSize, type Level, type PartyMood, type Question } from './questions';
 const KEY = 'ponder.seen.v2';
 let memory: string[] = [];
@@ -10,13 +11,14 @@ function readHistory(): string[] {
 export function partyMoodFor(card: Question): PartyMood {
   return card.partyMood ?? (card.level==='deeper' ? 'dilemma' : 'personality');
 }
-export function questionPool(category: Category, _groupSize?: GroupSize, level?: Level, partyMood?: PartyMood): Question[] {
-  return questions.filter(q=>q.category===category && (category==='Party'
-    ? !partyMood || partyMoodFor(q)===partyMood
-    : category==='Crush' || category==='Girls' || !level || (q.level ?? 'classic')===level));
+export function questionPool(category: Category, _groupSize?: GroupSize, level?: Level, partyMood?: PartyMood, festiveOnly = false, now = new Date()): Question[] {
+  return questions.filter(q=>q.category===category && isQuestionAvailable(q,now) && (festiveOnly
+    ? q.season==='festive'
+    : !q.season && (category==='Party' ? !partyMood || partyMoodFor(q)===partyMood
+      : category==='Crush' || category==='Girls' || !level || (q.level ?? 'classic')===level)));
 }
-export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize, level?: Level, partyMood?: PartyMood): Question {
-  const pool = questionPool(category,groupSize,level,partyMood);
+export function drawQuestion(category: Category, previousId?: string, groupSize?: GroupSize, level?: Level, partyMood?: PartyMood, festiveOnly = false): Question {
+  const pool = questionPool(category,groupSize,level,partyMood,festiveOnly);
   if (!pool.length) throw new Error('No questions for this selection');
   let history = readHistory();
   let available = pool.filter(q=>!history.includes(q.id));

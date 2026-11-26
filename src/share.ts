@@ -1,10 +1,11 @@
+import { isQuestionAvailable } from './season';
 import { questions, retiredQuestions, type Question } from './questions';
 import { archivedQuestions } from './archive';
 import { communityQuestions } from './catalog';
 
-export function questionFromUrl(href: string): Question | null {
+export function questionFromUrl(href: string, now = new Date()): Question | null {
   const id = new URL(href).searchParams.get('q');
-  return [...questions, ...communityQuestions, ...retiredQuestions, ...archivedQuestions].find(card => card.id === id) ?? null;
+  return [...questions, ...communityQuestions, ...retiredQuestions, ...archivedQuestions].find(card => card.id === id && isQuestionAvailable(card,now)) ?? null;
 }
 export function questionUrl(id: string, href = window.location.href): string {
   const url = new URL(href);
@@ -22,7 +23,7 @@ export function updateQuestionUrl(id?: string) {
 }
 
 const palettes = {Girls:'#efdbe8',Crush:'#eee0ef', Couple:'#f6e0e8', Family:'#f7eadc', Party:'#e9e2f4', Solo:'#e4ece5'};
-const names = {Girls:'老BEST 夜話',Crush:'心動之間', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
+const names = {Girls:'老BEST 夜話',Crush:'First date / Crush', Couple:'情侶', Family:'家庭', Party:'朋友聚會', Solo:'一人思考'};
 const sans = 'Arial, "PingFang TC", "Microsoft JhengHei", sans-serif';
 const serif = 'Georgia, "Songti TC", serif';
 
