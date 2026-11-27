@@ -1,4 +1,3 @@
-import './festive.css';
 import { isFestiveSeason, isQuestionAvailable } from './season';
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -8,6 +7,7 @@ import { moods, partyMoods, FORM_URL, SUPPORT_URL, communityQuestions } from './
 import { ShareCard } from './ShareCard';
 import { questionFromUrl, updateQuestionUrl, questionUrl } from './share';
 import './style.css';
+import './festive.css';
 
 function QuestionCard({card, number, onNext, singleCard}: {card:Question; number:number; onNext:()=>void; singleCard:boolean}) {
   const [follow, setFollow] = useState(false);
@@ -32,6 +32,8 @@ type Page = 'home' | 'depth' | 'play' | 'feedback' | 'submit' | 'community';
 const initialCard = questionFromUrl(window.location.href);
 function App() {
   const [festive, setFestive] = useState(()=>isFestiveSeason());
+  const [motionPaused, setMotionPaused] = useState(false);
+  useEffect(()=>{document.body.classList.toggle('festive-paused',motionPaused);return()=>document.body.classList.remove('festive-paused');},[motionPaused]);
   const [festiveOnly, setFestiveOnly] = useState(initialCard?.season==='festive');
   useEffect(()=>{
     const refresh=()=>setFestive(isFestiveSeason());
@@ -80,8 +82,9 @@ function App() {
     try{await navigator.clipboard.writeText(`${feedbackCard.zh.title}\n${questionUrl(feedbackCard.id)}`);setCopyMessage('已複製。請貼到表單的「補充資料」。 Copied. Paste it into the form’s additional information field.');}
     catch{setCopyMessage('未能自動複製，請選取下方連結並手動複製。 Please select and copy the link below.');}
   }
-  return <div className={`app ${festive?'festive-app':''}`}><header className="site-header"><button className="wordmark" onClick={()=>go('home')} aria-label="Ponder 首頁 / Home">PONDER <span>{festive?'🎄':'🌷'}</span></button><span className="header-note">把想太多，變成更懂彼此。<span className="inline-en" lang="en">Turn overthinking into perspective.</span></span><a className="support-header" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer" aria-label="自願支持 Ponder / Support Ponder (opens Stripe)"><span aria-hidden="true">♡</span> 支持 Ponder <span lang="en" className="support-label-en">Support</span></a></header>
+  return <div className={`app ${festive?'festive-app':''}`}>{festive && <div className="festive-flight" aria-hidden="true"><div className="festive-santa" /></div>}<header className="site-header"><button className="wordmark" onClick={()=>go('home')} aria-label="Ponder 首頁 / Home">PONDER <span>{festive?'🎄':'🌷'}</span></button><span className="header-note">把想太多，變成更懂彼此。<span className="inline-en" lang="en">Turn overthinking into perspective.</span></span><a className="support-header" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer" aria-label="自願支持 Ponder / Support Ponder (opens Stripe)"><span aria-hidden="true">♡</span> 支持 Ponder <span lang="en" className="support-label-en">Support</span></a></header>
     <main>
+    {festive && <button className="festive-motion" type="button" aria-pressed={motionPaused} onClick={()=>setMotionPaused(v=>!v)}>{motionPaused?'播放節日動畫 / Play animation':'暫停節日動畫 / Pause animation'}</button>}
     {festive && <div className="season-ribbon"><span aria-hidden="true">✧</span><span>聖誕到新年，留一點時間給彼此。<span lang="en" className="inline-en">A little time together, from Christmas to New Year.</span></span><span aria-hidden="true">✧</span></div>}
     {!festive && new URLSearchParams(window.location.search).get('q')?.startsWith('ponder-festive-') && <p role="status" className="season-notice">這張節日卡每年 11 月 26 日至 1 月 1 日開放。先選一個平日題目繼續聊。<span lang="en" className="inline-en">This festive card is available November 26–January 1 each year. Choose a year-round conversation below.</span></p>}
     {page==='home' && <section className="home-screen"><div className="intro liquid-intro"><h1 ref={pageHeading} tabIndex={-1} lang="en">Real connections in a digital world.</h1></div>

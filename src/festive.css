@@ -1,15 +1,59 @@
-/* Shared seasonal backdrop for the game and every reading page. */
-body.festive-theme{position:relative;isolation:isolate;background:radial-gradient(ellipse at 5% 5%,#f4d9e4,transparent 50%),radial-gradient(ellipse at 95% 65%,#dcebe2,transparent 55%),linear-gradient(135deg,#faf2ec,#f5eaf1 55%,#e9f2ec);}
-body.festive-theme::before{content:"";position:fixed;inset:-180px 0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,#fff 2px,transparent 3px),radial-gradient(circle,#fff 3px,transparent 4px),radial-gradient(circle,#ffffffb8 1.5px,transparent 2.5px);background-size:97px 137px,173px 193px,61px 89px;background-position:10px 0,70px 30px,25px 60px;animation:ponder-snow 18s linear infinite;opacity:.85;}
-body.festive-theme::after{content:"";position:fixed;top:0;left:0;right:0;height:53px;z-index:20;pointer-events:none;background-image:radial-gradient(ellipse 7px 10px at 15px 27px,#fff3d6 0 25%,#d7a950 45% 70%,transparent 80%),radial-gradient(ellipse 7px 10px at 55px 35px,#ffeced 0 25%,#cb8193 45% 70%,transparent 80%),radial-gradient(ellipse 7px 10px at 95px 27px,#ecfff1 0 25%,#79a58c 45% 70%,transparent 80%),radial-gradient(ellipse at 15px 27px,#e8c57255 0,transparent 20px),radial-gradient(ellipse at 55px 35px,#e9a7bb55 0,transparent 20px),radial-gradient(ellipse at 95px 27px,#9dcab155 0,transparent 20px),linear-gradient(#738678,#738678);background-size:120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,120px 53px,100% 2px;background-position:0 0,0 0,0 0,0 0,0 0,0 0,0 17px;background-repeat:repeat-x;filter:drop-shadow(0 2px 3px #fff9);}
-body.festive-theme .site-header,body.festive-theme>header{padding-top:60px;}
+/* Generated artwork supplies the visual design; these rules place and animate it. */
+body.festive-theme{--ink:#17263c;--muted:#d5dfed;position:relative;isolation:isolate;background:#071429 url('/christmas-night-sky.png') center bottom/cover fixed no-repeat;color:#f6e9c9;}
+body.festive-theme::before{content:"";position:fixed;inset:-400px 0;z-index:-1;pointer-events:none;background:url('/christmas-fine-snow.png') 0 0/400px 400px repeat;opacity:.6;animation:ponder-snow 32s linear infinite;}
+body.festive-theme::after{content:"";position:fixed;top:-64px;left:0;right:0;height:200px;z-index:20;pointer-events:none;background:url('/christmas-golden-lights.png') center center/850px auto repeat-x;animation:ponder-lights 4.8s ease-in-out infinite;}
+.festive-flight,.festive-motion{display:none}
+body.festive-theme .festive-flight{display:block;position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none;}
+body.festive-theme .festive-santa{position:absolute;top:130px;left:0;width:520px;height:180px;background:url('/christmas-santa-flight.png') center/contain no-repeat;animation:ponder-flight 70s linear infinite;animation-delay:-18s;filter:drop-shadow(0 0 10px #eac78445);}
+body.festive-theme .festive-motion{display:block;align-self:flex-end;position:relative;margin:12px 0 0;padding:9px 13px;min-height:36px;border:1px solid #c7aa6b80;border-radius:20px;background:#0b2039dd;color:#f5dfad;font:12px/1.5 Arial,sans-serif;cursor:pointer;}
+body.festive-theme> .festive-motion{position:absolute;right:20px;top:110px;z-index:2;}
+body.festive-theme .site-header{height:145px;padding-top:48px;border-color:#d6b96855;}
+body.festive-theme>header{padding-top:100px;}
 .festive-app::before{display:none;}
-.festive-app .question-card{background:linear-gradient(130deg,#fffdf5f5,#fff8fcf5 55%,#edf5eff5);}
-.festive-app .holiday-collection{border-top:3px solid #92af99;background:linear-gradient(130deg,#fffc,#f6e2eacc,#e4efe7dd);}
-.festive-app .holiday-collection h2{color:#496653;}
-@keyframes ponder-snow{from{transform:translateY(-90px)}to{transform:translateY(90px)}}
-@media(prefers-reduced-motion:reduce){body.festive-theme::before{animation:none;}}
-@media(forced-colors:active){body.festive-theme::before,body.festive-theme::after{display:none;}}
-
-body.festive-theme .site-header{height:140px;padding-top:40px;}
-@media(max-width:650px){body.festive-theme .site-header{height:120px;padding-top:40px;}}
+body.festive-theme .wordmark,body.festive-theme .brand{color:#f4d88e;}
+body.festive-theme .header-note,body.festive-theme .season-ribbon,body.festive-theme .season-ribbon .inline-en,body.festive-theme .pick-label>span,body.festive-theme .home-rule,body.festive-theme .play-note,body.festive-theme .girls-note,body.festive-theme footer,body.festive-theme .session-label,body.festive-theme .text-button,body.festive-theme .text-button>span,body.festive-theme .site-info-nav a{color:#dce4ef;}
+body.festive-theme .season-ribbon>span:first-child,body.festive-theme .season-ribbon>span:last-child{color:#f4d88e;}
+body.festive-theme .support-header{background:#152b43d9;color:#f4d88e;border-color:#c9ab68;box-shadow:none;}
+body.festive-theme .home-screen>.intro.liquid-intro{background:#0b2039a6;border-color:#c6aa655c;box-shadow:inset 0 1px 0 #f4df9826,0 12px 38px #0003;backdrop-filter:blur(7px);}
+body.festive-theme .intro.liquid-intro::before{display:none;}
+body.festive-theme .intro.liquid-intro h1{color:#f6dea2;background:none;-webkit-text-fill-color:#f6dea2;text-shadow:0 0 20px #dfba5355;filter:none;}
+/* The gold is an image-generated material, not a procedural illustration. */
+body.festive-theme .category-tile,body.festive-theme .question-card,body.festive-theme .crush-entry,body.festive-theme .girls-entry,body.festive-theme .community-grid button,body.festive-theme .depth-options button,body.festive-theme .reading-card,body.festive-theme .category-list a{background:#eed398 url('/christmas-gold-paper.png') center/cover no-repeat;color:#17263c;border:1px solid #f6df9f;box-shadow:inset 0 1px 0 #fff2c4,0 14px 40px #0004;backdrop-filter:none;-webkit-backdrop-filter:none;}
+body.festive-theme .category-tile:hover,body.festive-theme .crush-entry:hover,body.festive-theme .girls-entry:hover,body.festive-theme .depth-options button:hover{box-shadow:0 0 0 1px #f6df9f,0 14px 40px #0005;}
+body.festive-theme .category-tile::before,body.festive-theme .category-tile::after,body.festive-theme .question-card::before,body.festive-theme .question-card::after,body.festive-theme .crush-entry::before,body.festive-theme .crush-entry::after{display:none;}
+body.festive-theme .category-copy strong,body.festive-theme .category-copy>span,body.festive-theme .category-copy .audience-detail,body.festive-theme .category-count,body.festive-theme .category-arrow,body.festive-theme .crush-invite strong,body.festive-theme .crush-invite>span,body.festive-theme .crush-invite .crush-invite-action,body.festive-theme .girls-entry .inline-en,body.festive-theme .girls-entry small,body.festive-theme .community-grid button>span,body.festive-theme .community-grid small{color:#26364b;}
+body.festive-theme .question-card h1,body.festive-theme .question-card h2,body.festive-theme .question-card .english-heading,body.festive-theme .question-card .simple-scenario,body.festive-theme .question-card .english-question,body.festive-theme .question-card .card-meta,body.festive-theme .question-card .card-meta span,body.festive-theme .question-card .bilingual-text{color:#17263c;}
+body.festive-theme .card-meta{border-color:#71581c40;}
+body.festive-theme .primary,body.festive-theme .play-link{background:#152b43;color:#fff0ca;border:1px solid #263c53;box-shadow:none;}
+body.festive-theme .primary:hover{background:#233e5a;}
+body.festive-theme .follow-button,body.festive-theme .follow-button[aria-expanded=true]{background:#fff0c4;border-color:#947334;box-shadow:0 3px 0 #8e702d25;}
+body.festive-theme .follow-button::before{display:none;}
+body.festive-theme .follow-button .follow-title,body.festive-theme .follow-button .follow-subtitle,body.festive-theme .follow-button .follow-symbol{color:#26364b;}
+body.festive-theme .follow-button .follow-symbol{background:#ead18e;border-color:#a38643;}
+body.festive-theme .follow-copy{background:#fff3d4;color:#17263c;}
+body.festive-theme .follow-copy .english-question{color:#34465b;}
+body.festive-theme .holiday-collection,body.festive-theme .depth-picker,body.festive-theme .review-explainer,body.festive-theme .submission-example,body.festive-theme .reference-card,body.festive-theme .jump{background:#102640eb;border:1px solid #c8a85d88;color:#f2e4c4;box-shadow:0 16px 40px #0003;}
+body.festive-theme .holiday-collection h2,body.festive-theme .holiday-collection .english-heading,body.festive-theme .holiday-collection small,body.festive-theme .depth-picker legend,body.festive-theme .depth-picker legend span,body.festive-theme .depth-picker>p,body.festive-theme .utility-screen h1,body.festive-theme .utility-screen h1 .english-heading{color:#f3dfac;}
+body.festive-theme .holiday-choices button{background:#efd79f url('/christmas-gold-paper.png') center/cover;color:#17263c;border-color:#f6df9f;}
+body.festive-theme .holiday-choices button:hover{filter:brightness(1.08);}
+body.festive-theme .season-card-label,body.festive-theme .season-notice,body.festive-theme .share-trigger,body.festive-theme .content-links a{background:#112943e8;color:#f3dfac;border-color:#c8a85d88;}
+body.festive-theme .share-trigger:hover{background:#213c59;}
+body.festive-theme .share-trigger>span:last-child{color:#f5d58f;}
+body.festive-theme .site-info-nav,body.festive-theme .community-section,body.festive-theme footer{border-color:#cfb16b50;}
+body.festive-theme .utility-screen>p,body.festive-theme .utility-screen>.eyebrow{color:#dce4ef;}
+body.festive-theme .share-dialog{background:#102640;color:#f5e6c3;border-color:#c8a85d;}
+body.festive-theme .share-dialog .inline-en,body.festive-theme .share-dialog .eyebrow,body.festive-theme .share-dialog label,body.festive-theme .share-dialog p{color:#dce4ef;}
+body.festive-theme .share-dialog button,body.festive-theme .share-options a{color:#f5e6c3;border-color:#c8a85d;}
+body.festive-theme .share-dialog input{background:#071a2e;color:#f5e6c3;border-color:#c8a85d;}
+body.festive-theme .share-languages button[aria-pressed=true]{background:#ead093;color:#17263c;}
+body.festive-theme .share-preview{background:#071a2e;}
+body.festive-theme>header a,body.festive-theme>footer a,body.festive-theme>main>p .en,body.festive-theme>main>h1 .en,body.festive-theme>main>h2 .en,body.festive-theme>main>.kicker,body.festive-theme>main>.jump a{color:#e6d8b4;}
+body.festive-theme .reading-card .en,body.festive-theme .reading-card a:not(.play-link),body.festive-theme .category-list a,body.festive-theme .category-list .en{color:#26364b;}
+body.festive-theme button:focus-visible,body.festive-theme a:focus-visible,body.festive-theme summary:focus-visible{outline:3px solid #f2c55e;outline-offset:5px;}
+@keyframes ponder-flight{0%{transform:translateX(-540px) translateY(15px)}50%{transform:translateX(calc(50vw - 260px)) translateY(-18px)}100%{transform:translateX(calc(100vw + 20px)) translateY(12px)}}
+@keyframes ponder-snow{from{transform:translateY(0)}to{transform:translateY(400px)}}
+@keyframes ponder-lights{0%,100%{opacity:1;filter:brightness(1.15)}42%{opacity:.65;filter:brightness(.65)}66%{opacity:1;filter:brightness(1.35)}84%{opacity:.72;filter:brightness(.8)}}
+body.festive-paused::before,body.festive-paused::after,body.festive-paused .festive-santa{animation-play-state:paused;}
+@media(max-width:650px){body.festive-theme{background-attachment:fixed;}body.festive-theme .site-header{height:120px;padding-top:35px;}body.festive-theme::after{top:-55px;height:165px;background-size:690px auto;}body.festive-theme .festive-santa{top:150px;width:340px;height:120px;}body.festive-theme .festive-motion{font-size:11px;padding:7px 11px;}body.festive-theme .header-note{display:none;}}
+@media(prefers-reduced-motion:reduce){body.festive-theme::before,body.festive-theme::after,body.festive-theme .festive-santa{animation:none!important;}body.festive-theme .festive-santa{transform:translateX(60vw);opacity:.65;}body.festive-theme .festive-motion{display:none;}}
+@media(forced-colors:active){body.festive-theme::before,body.festive-theme::after,body.festive-theme .festive-flight{display:none;}body.festive-theme,body.festive-theme .category-tile,body.festive-theme .question-card{background:Canvas;color:CanvasText;}}
