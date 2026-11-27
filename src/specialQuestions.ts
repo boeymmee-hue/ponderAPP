@@ -1164,13 +1164,13 @@ export const specialQuestions: Question[] = [
     "season": "festive",
     "emoji": "♡",
     "level": "classic",
-    "title": "New Year's wishes without nouns",
+    "title": "New Year wishes beyond things",
     "scenario": "Café wish cards forbid nouns like house, partner or job. Describe how you want to spend a day instead.",
     "question": "What day would you describe?",
     "deeperQuestion": "Could you try any part of both cards together?",
     "twist": "",
     "zh": {
-      "title": "元旦願望不能用名詞",
+      "title": "不寫物品的新年願望",
       "scenario": "咖啡店的許願卡不能寫房子、伴侶或工作，只能寫想怎樣度過一天。你們各拿一張。",
       "question": "你想寫怎樣的一天？",
       "deeperQuestion": "你們兩張卡有沒有哪一段可以真的一起試？",
@@ -1362,7 +1362,7 @@ export const specialQuestions: Question[] = [
     "zh": {
       "title": "聖誕老人借一個缺點",
       "scenario": "聖誕老人想借你的一個缺點一天，試試不同生活。借走後，你們今晚約會時就暫時沒有它。",
-      "question": "你最想借走哪個？沒有它，你會怎樣約會？",
+      "question": "你最想把哪個缺點借給他？暫時沒有它，你會怎樣約會？",
       "deeperQuestion": "如果對方其實喜歡那個有點笨拙的你，你還想永久改掉嗎？",
       "twist": ""
     }
