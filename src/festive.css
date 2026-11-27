@@ -62,3 +62,11 @@ body.festive-theme .festive-app .category-tile,body.festive-theme .festive-app .
 body.festive-theme .category-count,body.festive-theme .pick-label>span{background:#172b43;color:#f6e3b2;border-color:#d5b96f;}
 body.festive-theme .category-copy .inline-en,body.festive-theme .category-copy strong>span{color:#34465b;}
 body.festive-theme .category-emoji{background:#fff0c380;border-color:#f5dfa4;}
+html:has(body.festive-theme){background:#071429;}
+body.festive-theme::after{position:absolute;}
+body.festive-theme .card-feedback{color:#dce4ef;}
+body.festive-theme .shared-arrival{background:#112943;color:#f3dfac;border-color:#c8a85d;}
+body.festive-theme .shared-arrival .inline-en{color:#dce4ef;}
+body.festive-theme .en{color:#dce4ef;}
+body.festive-theme .reading-card .en,body.festive-theme .category-list .en{color:#26364b;}
+body.festive-theme .session-label{background:#112943;border-color:#c8a85d;}
