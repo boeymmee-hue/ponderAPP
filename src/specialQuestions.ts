@@ -5953,5 +5953,365 @@ export const specialQuestions: Question[] = [
       "deeperQuestion": "如果一直由你邀請，你會在甚麼時候請她也走近一步？",
       "twist": ""
     }
+  },
+  {
+    "id": "ponder-crush-care-001",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Your guide to being cared for",
+    "scenario": "After a long day, you finally sit down. Your favourite drink is waiting, a text says “Call if you want to talk,” and someone offers to take a small task off your hands. Three kinds of care, no correct answer.",
+    "question": "Which feels most like being looked after to you? You can name a kind of care that isn't here.",
+    "deeperQuestion": "How do people often show care that isn't quite what you need in the moment?",
+    "twist": "",
+    "zh": {
+      "title": "你的照顧說明書",
+      "scenario": "你忙了一整天，終於坐下來。桌上有一杯喜歡的飲料，手機收到「想說就打給我」，旁邊還有人問要不要替你處理一件小事。三種關心，沒有標準答案。",
+      "question": "對你來說，「被好好照顧」最像哪一幕？也可以說一種這裡沒有的方式。",
+      "deeperQuestion": "別人常用哪種方式關心你，卻未必是你當下最需要的？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-002",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Low-battery mode",
+    "scenario": "You're on five percent battery, and you have a date with someone you like. You still want to see them, but haven't the energy for much talking or planning.",
+    "question": "Choose a low-battery date: a quiet walk, a meal, or doing your own things in the same space. Got a better idea?",
+    "deeperQuestion": "How would you show that “I'm tired” doesn't mean “I don't want to see you”?",
+    "twist": "",
+    "zh": {
+      "title": "低電量模式",
+      "scenario": "今天你的電量只剩百分之五，卻剛好約了喜歡的人見面。你還想見他，只是不太想說話，也沒有心力想節目。",
+      "question": "替今晚選一個低電量約會：安靜散步、一起吃飯，還是各做各的也待在一起？你有更好的提案嗎？",
+      "deeperQuestion": "你怎樣讓對方知道「我很累」不等於「我不想見你」？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-003",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "The comfort menu",
+    "scenario": "You text “Today was awful.” They send a homemade menu: one, listen; two, grumble with you; three, find a fix; four, get you fed. Mixing options is allowed.",
+    "question": "What do you order first? Add a signature dish to your own comfort menu.",
+    "deeperQuestion": "When comforting someone, do you tend to serve your own favourite even when they might want something else?",
+    "twist": "",
+    "zh": {
+      "title": "安慰選單",
+      "scenario": "你傳了一句「今天真的很糟」，對方回覆一張自製選單：一號聽你說，二號一起罵兩句，三號想辦法，四號先帶你吃東西。你可以混搭。",
+      "question": "你先點哪一道？替自己的安慰選單加一道招牌菜。",
+      "deeperQuestion": "你安慰別人時，會不會習慣端出自己最喜歡、對方卻未必想要的那一道？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-004",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Fifty dollars of thoughtfulness",
+    "scenario": "For this date, you may bring one little thing costing under fifty dollars. No contest for romance or spending. It could be breakfast, something useful, or a terribly drawn card.",
+    "question": "Guess what the other person would like, then reveal what would actually make you happy.",
+    "deeperQuestion": "What moves you about a gift: surprise, usefulness, or realising they remembered?",
+    "twist": "",
+    "zh": {
+      "title": "五十元的心意",
+      "scenario": "這次見面只准帶一份五十元以內的小東西，不求浪漫，也不比誰花得多。可以是一份早餐、一件實用小物，或一張畫得很醜的卡。",
+      "question": "先猜對方想收到哪種，再各自說出真正會開心的一份。",
+      "deeperQuestion": "禮物讓你感動，是因為驚喜、實用，還是「原來你有記住」？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-005",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "No essay required",
+    "scenario": "At lunch, you get either a thoughtful message about missing you or a photo of a ridiculous sign with “This made me think of you.” Both are sincere.",
+    "question": "Which is more likely to make you smile? Reply with a line you'd actually send.",
+    "deeperQuestion": "Do you say you miss someone directly or tuck it into everyday sharing? How can they tell?",
+    "twist": "",
+    "zh": {
+      "title": "訊息不用寫論文",
+      "scenario": "午休時收到兩種訊息：一段認真說想你的文字，或一張路邊怪招牌，配上「看到這個就想到你」。兩種都出自真心。",
+      "question": "哪一種更容易讓你嘴角上揚？拿起想像中的手機，回一句你真的會說的話。",
+      "deeperQuestion": "你喜歡把想念說清楚，還是藏在日常分享裡？對方怎樣才看得懂？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-006",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Helping or taking over?",
+    "scenario": "You're halfway through an annoying task when they say, “Leave it to me. I'll sort it out.” It's reassuring, but you've already put work into it.",
+    "question": "What offer of help would land well with you? Rewrite their line so it feels right.",
+    "deeperQuestion": "Where is the line between sharing your load and treating you as though you can't manage?",
+    "twist": "",
+    "zh": {
+      "title": "幫忙，還是接管？",
+      "scenario": "你正在處理一件麻煩的小事，對方說：「交給我，我很快弄好。」聽起來很可靠，但你其實已經做了一半。",
+      "question": "哪一句邀請幫忙的話最合你心意？替對方把那句話改得剛剛好。",
+      "deeperQuestion": "你想被分擔，又不想被當成做不到，兩者的界線在哪裡？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-007",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Your pre-date weather report",
+    "scenario": "Before meeting, send a weather symbol for your mood: sunny, cloudy, stormy, or “clear skies outside, small storm within.” No explanation is required straight away.",
+    "question": "What's your weather today, and what response would you like?",
+    "deeperQuestion": "When you're low, should they check in or wait for you to speak? What kind of check-in feels comfortable?",
+    "twist": "",
+    "zh": {
+      "title": "約會前的天氣預報",
+      "scenario": "見面前，你可以發一個代表心情的天氣符號：晴天、陰天、雷雨，或「外表晴朗，內有小風暴」。不用立即交代原因。",
+      "question": "今天你會發甚麼天氣？你希望收到哪種回覆？",
+      "deeperQuestion": "你心情不好時，希望對方主動問一問，還是等你準備好再說？怎樣問最舒服？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-008",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "The opening line for holding hands",
+    "scenario": "On a quiet stretch of your walk, your hands occasionally brush. Some enjoy a gentle approach; others relax when they hear “Can I hold your hand?”",
+    "question": "What approach do you like? What would help you comfortably say you'd rather take it slowly?",
+    "deeperQuestion": "Apart from holding hands, what kind of closeness feels intimate without pressure?",
+    "twist": "",
+    "zh": {
+      "title": "牽手的開場白",
+      "scenario": "散步走到一段安靜的路，兩人的手偶爾碰到。有人喜歡自然靠近，有人聽到一句「可以牽你的手嗎」才會放鬆。",
+      "question": "你喜歡怎樣的開場？想慢一點時，用哪句話能讓你自在地說出來？",
+      "deeperQuestion": "除了牽手，還有哪種靠近會讓你覺得親密，又不會有壓力？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-009",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "Small wins count too",
+    "scenario": "You finally finish a small task you've put off for ages. No certificate, and nobody notices. When your date hears, they suggest a proper celebration, maybe even cake.",
+    "question": "Would you want a celebration, a high-five, or simply “I know that wasn't easy for you”?",
+    "deeperQuestion": "What effort would you like someone to notice, beyond the result?",
+    "twist": "",
+    "zh": {
+      "title": "小事也值得慶祝",
+      "scenario": "你終於完成一件拖了很久的小事，沒有獎狀，也沒人發現。對方得知後，提議鄭重地替你慶祝，甚至打算買一塊蛋糕。",
+      "question": "你會想認真慶祝、互相擊掌，還是收下一句「我知道這對你不容易」就夠？",
+      "deeperQuestion": "你希望對方看見你哪些努力，而不只是最後做成了甚麼？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-010",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "classic",
+    "title": "What makes time together count?",
+    "scenario": "You can only meet for an hour this week: a meal with your full attention, everyday errands together, or an episode of a show. None automatically means more effort.",
+    "question": "Which hour would feel most like time well spent together? How would you plan it?",
+    "deeperQuestion": "Do you value how often you meet, undivided attention, or feeling included in their everyday life?",
+    "twist": "",
+    "zh": {
+      "title": "見面時間的含金量",
+      "scenario": "這星期只能見一小時。可以專心吃一頓飯、陪你辦生活雜事，或一起看一集劇。每個選項都沒有誰比較有誠意。",
+      "question": "哪一小時最能讓你覺得「我們有好好在一起」？你會怎樣安排？",
+      "deeperQuestion": "你需要的是見面的次數、完整的注意力，還是被放進對方日常的感覺？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-011",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "A signal for busy days",
+    "scenario": "On days when you're both busy, there's no time for a long chat. Choose a small signal meaning “You're on my mind; today's just full.” It can be a sticker, a word, or a photo.",
+    "question": "What signal would you choose? How could it stay warm rather than become a daily assignment?",
+    "deeperQuestion": "What reassures you when replies aren't immediate? How would you express that need?",
+    "twist": "",
+    "zh": {
+      "title": "忙碌日的暗號",
+      "scenario": "兩人都忙的那天，沒時間長聊，但可以約定一個小暗號，意思是「我還記著你，只是今天有點滿」。它可以是貼圖、一個字，或一張照片。",
+      "question": "你們會選甚麼暗號？怎樣用才溫暖，而不會變成每天交功課？",
+      "deeperQuestion": "沒有即時回覆時，甚麼會讓你安心？你願意怎樣說明自己的需要？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-012",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "What kind of compliment lands?",
+    "scenario": "They want to compliment you, with three versions: “You look great,” “I love listening to you,” or “The way you considered that server's feelings was really attractive.”",
+    "question": "Which would stay with you? Name a quality you'd like someone to notice in you.",
+    "deeperQuestion": "Do specific compliments or direct affection feel more believable? What kind makes you want to hide?",
+    "twist": "",
+    "zh": {
+      "title": "漂亮話，說到哪裡？",
+      "scenario": "對方想讚你，卻有三種版本：「你今天很好看」、「我很喜歡聽你說話」、「剛才你照顧店員感受的樣子很吸引我」。",
+      "question": "哪一句最容易留在你心裡？換你說一句希望對方看見的優點。",
+      "deeperQuestion": "你比較容易相信具體的讚美，還是直接的喜歡？甚麼說法會讓你反而想躲？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-013",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "Your little details",
+    "scenario": "You casually mentioned disliking very sweet drinks, getting cold on transport and finding loud restaurants tiring. Next time, they remember one detail but get another backwards.",
+    "question": "Which remembered detail means the most? How would you gently correct the mix-up?",
+    "deeperQuestion": "Would you most like someone to remember your habits, your dreams, or how you felt? Why?",
+    "twist": "",
+    "zh": {
+      "title": "記住你的小細節",
+      "scenario": "你隨口說過不愛太甜、搭車容易冷，還有最怕餐廳太吵。下一次見面，對方記得其中一件，卻把另一件記反了。",
+      "question": "哪件小事被記住最加分？記錯時，你會怎樣輕鬆提醒？",
+      "deeperQuestion": "你想被記住的是習慣、說過的夢想，還是當時的感受？為甚麼？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-014",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "An under-the-weather day",
+    "scenario": "You're feeling under the weather and cancel your date. They could leave food at your door, check in occasionally, or let you rest until you reach out.",
+    "question": "What care would suit you? What well-meant gestures might tire you out more?",
+    "deeperQuestion": "Is accepting care easy for you? Do you worry about owing someone or needing too much?",
+    "twist": "",
+    "zh": {
+      "title": "不舒服的那一天",
+      "scenario": "你只是有點不舒服，已取消今天的約會。對方可以送食物到門口、隔一段時間問候，或讓你安心休息，等你主動聯絡。",
+      "question": "哪種照顧最適合你？有哪些「好意」反而會令你更累？",
+      "deeperQuestion": "接受照顧對你容易嗎？你會擔心欠人情，還是擔心自己的需要太多？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-015",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "Public or just between you?",
+    "scenario": "For your birthday, they could say something heartfelt in front of friends or give you a private card once everyone leaves. Both take thought.",
+    "question": "Which would you prefer? What amount of public affection delights you, and what gets awkward?",
+    "deeperQuestion": "What is the difference between being cherished and being shown off to you?",
+    "twist": "",
+    "zh": {
+      "title": "公開還是悄悄的？",
+      "scenario": "對方想慶祝你的生日：可以在朋友面前說一段真心話，也可以在人群散去後，給你一張只寫給你的卡。兩種都準備得很認真。",
+      "question": "你想收到哪一種？甚麼程度的公開示愛會讓你開心，甚麼程度會令你尷尬？",
+      "deeperQuestion": "被珍惜和被展示，對你來說有甚麼分別？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-016",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "Care can take turns",
+    "scenario": "You're good at preparing, reminding and tidying up for others. For this date, they say, “Let me handle it. Just show up.” Your hands are free, but you don't quite know what to do with them.",
+    "question": "What would you happily hand over, and what would you struggle not to take back?",
+    "deeperQuestion": "Does being the carer bring you joy, a sense of security, or a feeling of being needed?",
+    "twist": "",
+    "zh": {
+      "title": "照顧也可以輪流",
+      "scenario": "你很擅長替別人準備、提醒和收拾。這次約會，對方說：「今天讓我來，你只要出現。」你空下來了，卻有點不知道手該放哪裡。",
+      "question": "你最願意交出哪件事，又最忍不住想插手哪件？",
+      "deeperQuestion": "一直做照顧人的那位，帶給你的是快樂、安心，還是一種不可缺少的感覺？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-017",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "The first words after being late",
+    "scenario": "Your date is twenty minutes late and has let you know in advance. On arriving, they could explain, apologise, or check whether you're cold and adjust your plans.",
+    "question": "What opening makes you feel considered? What action would you want to follow it?",
+    "deeperQuestion": "After an upset, how much do words and changed behaviour each matter to you?",
+    "twist": "",
+    "zh": {
+      "title": "遲到之後的第一句",
+      "scenario": "對方遲到二十分鐘，已提早通知你。見面時，可以先解釋原因、認真道歉，或問你等得冷不冷，再把原定安排調整好。",
+      "question": "甚麼開場最讓你感到被重視？你希望接下來有甚麼實際行動？",
+      "deeperQuestion": "不愉快之後，你需要聽到的話和看見的改變，各佔多重要？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-018",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "Needs don't need a guessing game",
+    "scenario": "You want company but type “I'm fine, do your thing.” Before sending, you get a chance to rewrite it honestly, without handing the whole decision to them.",
+    "question": "How would you rewrite it to express what you want while leaving room for their response?",
+    "deeperQuestion": "Do you fear rejection more, or that care no longer feels spontaneous once you've asked for it?",
+    "twist": "",
+    "zh": {
+      "title": "不用猜中的需要",
+      "scenario": "你很想有人陪，卻打了「沒事，你忙吧」。送出前，手機給你一次改寫機會：可以誠實，但不用把決定全部交給對方。",
+      "question": "你會怎樣改這句訊息，讓對方知道你想要甚麼，也有空間回應？",
+      "deeperQuestion": "你比較怕被拒絕，還是怕說出口後，收到的關心就不算自發？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-019",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "The care translator",
+    "scenario": "You show affection by doing things; they tend to use words. You fix something for them, and they say lovely things to you. Both are giving, yet each is still waiting for a different response.",
+    "question": "Translate for each side: “When I do this, I'm trying to tell you…” Which side feels familiar?",
+    "deeperQuestion": "What less familiar way of showing care would you be willing to learn so it reaches the other person?",
+    "twist": "",
+    "zh": {
+      "title": "關心的翻譯機",
+      "scenario": "你表達喜歡的方法是幫忙做事，對方卻常用說話表達。你替他修好東西，他說了很多好聽的話；兩人都付出了，卻各自還在等另一種回應。",
+      "question": "替兩邊各翻譯一句：「我這樣做，其實是想告訴你……」你最熟悉哪一邊？",
+      "deeperQuestion": "你願意多學哪一種不太自然、卻能讓對方接收到的關心方式？",
+      "twist": ""
+    }
+  },
+  {
+    "id": "ponder-crush-care-020",
+    "category": "Crush",
+    "emoji": "♡",
+    "level": "deeper",
+    "title": "A guide you can update",
+    "scenario": "Before the date ends, leave each other a three-line card: “When I'm happy, feel free to…”, “When I'm low, first…”, and “When I need space, it doesn't mean…” You can update it later.",
+    "question": "How would you fill in the three lines? Which answer differs from what you expected of each other?",
+    "deeperQuestion": "How has the way you like to be cared for changed in the past year? What changed it?",
+    "twist": "",
+    "zh": {
+      "title": "一張可以更新的說明卡",
+      "scenario": "約會結束前，你們各留一張三行小卡：「我開心時，歡迎……」「我低落時，請先……」「我需要空間時，不代表……」。答案以後可以改。",
+      "question": "你會怎樣填這三行？對方哪個答案和你原本猜的不一樣？",
+      "deeperQuestion": "過去一年，你喜歡被關心的方式有甚麼改變？甚麼讓它變了？",
+      "twist": ""
+    }
   }
 ];
